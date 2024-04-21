@@ -1,0 +1,40 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_acw_flag_army"
+		texturefile = "gfx/interface/prof_flag_army.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_flag_army_back"
+		texturefile = "gfx/interface/prof_flag_army_back.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_acw_flag_navy"
+		texturefile = "gfx/interface/prof_flag_navy.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_flag_navy_back"
+		texturefile = "gfx/interface/prof_flag_navy_back.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_power_bar_9"
+		texturefile = "gfx/interface/power_bar_9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_power_bar_purple"
+		texturefile = "gfx/interface/bar_purple.dds"
+		
+	}
+	
+	spriteType = {
+		name = "GFX_acw_army_background"
+		texturefile = "gfx/interface/prof_army_background.dds"
+		transparencecheck = yes
+	}
+}

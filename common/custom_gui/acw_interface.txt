@@ -1,0 +1,42 @@
+custom_icon = {
+	name = acw_background_is_open
+	potential = {
+		has_country_flag = acw_background_open_already
+	}
+}
+
+custom_button = {
+	name = acw_army_button_that_opens_menu 
+    potential = {} 
+  	trigger = { } 
+  	effect = { 
+		set_country_flag = acw_background_open_already
+	}
+}
+
+custom_button = {
+	name = acw_army_button_close 
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = { }
+  	effect = { 
+		clr_country_flag = acw_background_open_already
+	}
+}
+
+custom_button = {
+	name = acw_navy_button_that_opens_menu 
+    potential = {} 
+  	trigger = { } 
+  	effect = { 
+		set_country_flag = acw_background_open_already
+	}
+}
+
+custom_button = {
+	name = acw_navy_button_close 
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = { }
+  	effect = { 
+		clr_country_flag = acw_background_open_already
+	}
+}
