@@ -37,4 +37,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/prof_army_background.dds"
 		transparencecheck = yes
 	}
+	
+	spriteType = {
+		name = "GFX_acw_stratagem"
+		texturefile = "gfx/interface/acw_stratagem.dds"
+		transparencecheck = yes
+	}
 }

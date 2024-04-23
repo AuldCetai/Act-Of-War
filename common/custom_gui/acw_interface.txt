@@ -40,3 +40,17 @@ custom_button = {
 		clr_country_flag = acw_background_open_already
 	}
 }
+
+custom_button = {
+	name = acw_stratagem
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = { }
+  	effect = {
+		add_prestige = 10
+	}
+}
+
+custom_text_box = {
+	name = acw_army_window_title
+    potential = {has_country_flag = acw_background_open_already} 
+		}

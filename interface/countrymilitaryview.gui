@@ -1844,7 +1844,7 @@ guiTypes = {
 				scale = 1.1
 			}
 			guiButtonType = {
-				name = acw_army_button_that_opens_menu
+				name = "acw_army_button_that_opens_menu"
 				position = { x=10 y =600}
 				spriteType ="GFX_acw_flag_army"
 				Orientation = "UPPER_LEFT"
@@ -1861,14 +1861,35 @@ guiTypes = {
 				scale = 1.1
 			}
 			guiButtonType = {
-				name = acw_navy_button_that_opens_menu
+				name = "acw_navy_button_that_opens_menu"
 				position = { x=70 y =600}
 				spriteType ="GFX_acw_flag_navy"
 				Orientation = "UPPER_LEFT"
 				scripted = yes
 				scale = 1.2
 			}			
-		
+			guiButtonType = {
+				name = "acw_stratagem"
+				position = { x=580 y =460}
+				spriteType ="GFX_acw_stratagem"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+				scale = 2
+				pdx_tooltip = "acw_stratagem_none"
+			}	
+			
+			instantTextBoxType = {
+				name = "acw_army_window_title"
+				position = { x = 750 y =40 }
+				format = centre
+				font = "vic_22s"
+				maxWidth = 420
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+				text = "acw_military_conduct"
+				format = centre
+				scripted = yes
+			}
 		
 		windowType = {
 			name = "army_professionalism"
