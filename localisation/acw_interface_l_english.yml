@@ -1,0 +1,20 @@
+﻿l_english:
+ acw_army_window_title:0"Military Conduct"
+ acw_stratagem_none:0"No stratagem selected yet."
+ acw_stratagem_sfp_selected_text:0"§OSuperior firepower I§!\n\nThis stratagem grants us the following effects:\n$acw_stratagem_sfp_selected$"
+ acw_stratagem_sfp_t1:0"No stratagem selected yet."
+ acw_stratagem_sfp_t2:0"No stratagem selected yet."
+ acw_stratagem_sfp_t3:0"No stratagem selected yet."
+ acw_stratagem_sfp_t4:0"No stratagem selected yet."
+ acw_army_window_armaments_text:0"Armaments"
+ acw_army_window_hd_text:0"Historic deeds"
+ acw_army_upgrades_title:0"Army upgrades"
+ acw_stratagems_title:0"Stratagems"
+ acw_camp_followers_title:0"Camp followers"
+ acw_army_window_infantry_levels_indicator_text:0"Infantry upgrades"
+ acw_army_window_cavalry_levels_indicator_text:0"Cavalry upgrades"
+ acw_army_window_artillery_levels_indicator_text:0"Artillery upgrades"
+ acw_army_window_camp_followers_text:0"Chevauchee"
+ acw_army_stratagem_text:"$acw_stratagem_text_loc$"
+
+ 

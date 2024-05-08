@@ -1,16 +1,1559 @@
-custom_icon = {
-	name = acw_background_is_open
-	potential = {
-		has_country_flag = acw_background_open_already
-	}
-}
-
+#Open Military conduct window - army
 custom_button = {
 	name = acw_army_button_that_opens_menu 
     potential = {} 
   	trigger = { } 
   	effect = { 
 		set_country_flag = acw_background_open_already
+	}
+}
+
+custom_text_box = {
+	name = acw_army_window_title
+    potential = {has_country_flag = acw_background_open_already} 
+		}
+		
+custom_text_box = {
+	name = acw_army_stratagem_text
+    potential = {has_country_flag = acw_background_open_already} 
+		}
+	
+
+#camp followers
+custom_icon = {
+	name = acw_cf_title_banner
+    potential = {has_country_flag = acw_background_open_already} 
+	}
+
+custom_text_box = {
+	name = acw_army_window_camp_followers_text
+    potential = {has_country_flag = acw_background_open_already} 
+		}
+
+custom_button = {
+	name = acw_cf_slot_1
+    potential = {has_country_flag = acw_background_open_already} 
+}		
+
+custom_button = {
+	name = acw_cf_slot_2
+    potential = {has_country_flag = acw_background_open_already} 
+}	
+
+custom_button = {
+	name = acw_cf_slot_3
+    potential = {has_country_flag = acw_background_open_already} 
+}	
+
+custom_button = {
+	name = acw_cf_slot_4
+    potential = {has_country_flag = acw_background_open_already} 
+}	
+#unit levels - box 
+custom_text_box = {
+	name = acw_army_window_infantry_levels_indicator_text
+    potential = {has_country_flag = acw_background_open_already} 
+		}
+		
+custom_icon = {
+	name = acw_infantry_levels_indicator_text_banner
+    potential = {has_country_flag = acw_background_open_already} 
+	}
+
+custom_icon = {
+	name = acw_cavalry_levels_indicator_text_banner
+    potential = {has_country_flag = acw_background_open_already} 
+	}
+	
+custom_icon = {
+	name = acw_artillery_levels_indicator_text_banner
+    potential = {has_country_flag = acw_background_open_already} 
+	}
+		
+custom_text_box = {
+	name = acw_army_window_cavalry_levels_indicator_text
+    potential = {has_country_flag = acw_background_open_already} 
+		}
+		
+custom_text_box = {
+	name = acw_army_window_artillery_levels_indicator_text
+    potential = {has_country_flag = acw_background_open_already} 
+		}
+
+#infantry plus button
+custom_button = {
+	name = acw_infantry_upgrade_plus
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = {	
+				NOT = {has_country_modifier = acw_infantry_upgrade_t9 }
+				if = {limit = {has_country_modifier=acw_infantry_upgrade_t1}
+					army_professionalism = 0.10 }
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t2}
+					army_professionalism = 0.15 }
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t3}
+					army_professionalism = 0.20 }
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t4}
+					army_professionalism = 0.25 }
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t5}
+					army_professionalism = 0.30 }
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t6}
+					army_professionalism = 0.35 }
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t7}
+					army_professionalism = 0.40 }
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t8}
+					army_professionalism = 0.50 }
+				else = {army_professionalism = 0.05}
+			 }
+		
+  	effect = {
+				if = {limit = {has_country_modifier=acw_infantry_upgrade_t8}
+					add_army_professionalism = -0.5
+					remove_country_modifier = acw_infantry_upgrade_t8
+					add_country_modifier = {name = acw_infantry_upgrade_t9
+											duration = -1
+											hidden = yes}					
+					}
+											
+				if = {limit = {has_country_modifier=acw_infantry_upgrade_t7}
+					add_army_professionalism = -0.4
+					remove_country_modifier = acw_infantry_upgrade_t7
+					add_country_modifier = {name = acw_infantry_upgrade_t8
+											duration = -1
+											hidden = yes}					
+					}
+				
+				if = {limit = {has_country_modifier=acw_infantry_upgrade_t6}
+					add_army_professionalism = -0.35
+					remove_country_modifier = acw_infantry_upgrade_t6
+					add_country_modifier = {name = acw_infantry_upgrade_t7
+											duration = -1
+											hidden = yes}					
+					}
+
+				if = {limit = {has_country_modifier=acw_infantry_upgrade_t5}
+					add_army_professionalism = -0.30
+					remove_country_modifier = acw_infantry_upgrade_t5
+					add_country_modifier = {name = acw_infantry_upgrade_t6
+											duration = -1
+											hidden = yes}					
+					}			
+				
+				if = {limit = {has_country_modifier=acw_infantry_upgrade_t4}
+					add_army_professionalism = -0.25
+					remove_country_modifier = acw_infantry_upgrade_t4
+					add_country_modifier = {name = acw_infantry_upgrade_t5
+											duration = -1
+											hidden = yes}					
+					}	
+				
+				if = {limit = {has_country_modifier=acw_infantry_upgrade_t3}
+					add_army_professionalism = -0.20
+					remove_country_modifier = acw_infantry_upgrade_t3
+					add_country_modifier = {name = acw_infantry_upgrade_t4
+											duration = -1
+											hidden = yes}					
+					}		
+					
+				if = {limit = {has_country_modifier=acw_infantry_upgrade_t2}
+					add_army_professionalism = -0.15
+					remove_country_modifier = acw_infantry_upgrade_t2
+					add_country_modifier = {name = acw_infantry_upgrade_t3
+											duration = -1
+											hidden = yes}					
+					}		
+					
+				if = {limit = {has_country_modifier=acw_infantry_upgrade_t1}
+					add_army_professionalism = -0.10
+					remove_country_modifier = acw_infantry_upgrade_t1
+					add_country_modifier = {name = acw_infantry_upgrade_t2
+											duration = -1
+											hidden = yes}					
+					}		
+					
+				if = {limit = {
+								NOT = {
+									OR = {	has_country_modifier	= 	acw_infantry_upgrade_t9
+											has_country_modifier	=	acw_infantry_upgrade_t8
+											has_country_modifier	=	acw_infantry_upgrade_t7
+											has_country_modifier	=	acw_infantry_upgrade_t6
+											has_country_modifier	=	acw_infantry_upgrade_t5
+											has_country_modifier	=	acw_infantry_upgrade_t4
+											has_country_modifier	=	acw_infantry_upgrade_t3
+											has_country_modifier	=	acw_infantry_upgrade_t2
+											has_country_modifier	=	acw_infantry_upgrade_t1
+											}	
+										}
+								}
+					add_army_professionalism = -0.05
+					add_country_modifier = {name = acw_infantry_upgrade_t1
+											duration = -1
+											hidden = yes}					
+					}		
+	}
+}
+
+
+#level indicators 
+custom_icon = {
+		name = acw_infantry_levels_indicator_t1
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = { OR = {  has_country_modifier = acw_infantry_upgrade_t1 
+										has_country_modifier = acw_infantry_upgrade_t2 
+										has_country_modifier = acw_infantry_upgrade_t3 
+										has_country_modifier = acw_infantry_upgrade_t4 
+										has_country_modifier = acw_infantry_upgrade_t5 
+										has_country_modifier = acw_infantry_upgrade_t6 
+										has_country_modifier = acw_infantry_upgrade_t7 
+										has_country_modifier = acw_infantry_upgrade_t8 
+										has_country_modifier = acw_infantry_upgrade_t9 } 
+										}
+				}
+		
+}
+
+custom_icon = {
+		name = acw_infantry_levels_indicator_t2
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = { OR = {   
+										has_country_modifier = acw_infantry_upgrade_t2 
+										has_country_modifier = acw_infantry_upgrade_t3 
+										has_country_modifier = acw_infantry_upgrade_t4 
+										has_country_modifier = acw_infantry_upgrade_t5 
+										has_country_modifier = acw_infantry_upgrade_t6 
+										has_country_modifier = acw_infantry_upgrade_t7 
+										has_country_modifier = acw_infantry_upgrade_t8 
+										has_country_modifier = acw_infantry_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_infantry_levels_indicator_t3
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = { OR = {   
+										has_country_modifier = acw_infantry_upgrade_t3 
+										has_country_modifier = acw_infantry_upgrade_t4 
+										has_country_modifier = acw_infantry_upgrade_t5 
+										has_country_modifier = acw_infantry_upgrade_t6 
+										has_country_modifier = acw_infantry_upgrade_t7 
+										has_country_modifier = acw_infantry_upgrade_t8 
+										has_country_modifier = acw_infantry_upgrade_t9 } 
+										}
+				}
+		
+}
+
+custom_icon = {
+		name = acw_infantry_levels_indicator_t4
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = { OR = {  
+										has_country_modifier = acw_infantry_upgrade_t4 
+										has_country_modifier = acw_infantry_upgrade_t5 
+										has_country_modifier = acw_infantry_upgrade_t6 
+										has_country_modifier = acw_infantry_upgrade_t7 
+										has_country_modifier = acw_infantry_upgrade_t8 
+										has_country_modifier = acw_infantry_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_infantry_levels_indicator_t5
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = { OR = {   
+										has_country_modifier = acw_infantry_upgrade_t5 
+										has_country_modifier = acw_infantry_upgrade_t6 
+										has_country_modifier = acw_infantry_upgrade_t7 
+										has_country_modifier = acw_infantry_upgrade_t8 
+										has_country_modifier = acw_infantry_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_infantry_levels_indicator_t6
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = { OR = {  
+										has_country_modifier = acw_infantry_upgrade_t6 
+										has_country_modifier = acw_infantry_upgrade_t7 
+										has_country_modifier = acw_infantry_upgrade_t8 
+										has_country_modifier = acw_infantry_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_infantry_levels_indicator_t7
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = { OR = {   
+										has_country_modifier = acw_infantry_upgrade_t7 
+										has_country_modifier = acw_infantry_upgrade_t8 
+										has_country_modifier = acw_infantry_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_infantry_levels_indicator_t8
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = { OR = {   
+										has_country_modifier = acw_infantry_upgrade_t8 
+										has_country_modifier = acw_infantry_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_infantry_levels_indicator_t9
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = { has_country_modifier	=	acw_infantry_upgrade_t9 }
+				}
+		
+}
+
+#downgrade button
+
+custom_button = {
+	name = acw_infantry_upgrade_minus
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = {	
+						OR = {	has_country_modifier	= 	acw_infantry_upgrade_t9
+								has_country_modifier	=	acw_infantry_upgrade_t8
+								has_country_modifier	=	acw_infantry_upgrade_t7
+								has_country_modifier	=	acw_infantry_upgrade_t6
+								has_country_modifier	=	acw_infantry_upgrade_t5
+								has_country_modifier	=	acw_infantry_upgrade_t4
+								has_country_modifier	=	acw_infantry_upgrade_t3
+								has_country_modifier	=	acw_infantry_upgrade_t2
+								has_country_modifier	=	acw_infantry_upgrade_t1
+								}	
+			}
+		
+  	effect = {	
+				if = {limit = {has_country_modifier=acw_infantry_upgrade_t1}
+						add_army_professionalism = 0.02
+						remove_country_modifier = acw_infantry_upgrade_t1					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t2}
+					add_army_professionalism = 0.07
+					remove_country_modifier = acw_infantry_upgrade_t2
+					add_country_modifier = {name = acw_infantry_upgrade_t1
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t3}
+					add_army_professionalism = 0.1
+					remove_country_modifier = acw_infantry_upgrade_t3
+					add_country_modifier = {name = acw_infantry_upgrade_t2
+											duration = -1
+											hidden = yes}					
+					}
+				
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t4}
+					add_army_professionalism = 0.125
+					remove_country_modifier = acw_infantry_upgrade_t4
+					add_country_modifier = {name = acw_infantry_upgrade_t3
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t5}
+					add_army_professionalism = 0.15
+					remove_country_modifier = acw_infantry_upgrade_t5
+					add_country_modifier = {name = acw_infantry_upgrade_t4
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t6}
+					add_army_professionalism = 0.175
+					remove_country_modifier = acw_infantry_upgrade_t6
+					add_country_modifier = {name = acw_infantry_upgrade_t5
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t7}
+					add_army_professionalism = 0.2
+					remove_country_modifier = acw_infantry_upgrade_t7
+					add_country_modifier = {name = acw_infantry_upgrade_t6
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t8}
+					add_army_professionalism = 0.22
+					remove_country_modifier = acw_infantry_upgrade_t8
+					add_country_modifier = {name = acw_infantry_upgrade_t7
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t9}
+					add_army_professionalism = 0.25
+					remove_country_modifier = acw_infantry_upgrade_t9
+					add_country_modifier = {name = acw_infantry_upgrade_t8
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else = {}
+		}
+}
+
+#cavalry plus button
+custom_button = {
+	name = acw_cavalry_upgrade_plus
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = {	
+				AND = { 
+					NOT = {has_country_modifier = acw_cavalry_upgrade_t9 }
+					if = {limit = {has_country_modifier=acw_cavalry_upgrade_t1}
+						army_professionalism = 0.10 }
+					else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t2}
+						army_professionalism = 0.15 }
+					else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t3}
+						army_professionalism = 0.20 }
+					else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t4}
+						army_professionalism = 0.25 }
+					else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t5}
+						army_professionalism = 0.30 }
+					else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t6}
+						army_professionalism = 0.35 }
+					else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t7}
+						army_professionalism = 0.40 }
+					else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t8}
+						army_professionalism = 0.50 }
+					else = {army_professionalism = 0.05 }
+				}
+			 }
+		
+  	effect = {
+				if = {limit = {has_country_modifier=acw_cavalry_upgrade_t8}
+					add_army_professionalism = -0.5
+					remove_country_modifier = acw_cavalry_upgrade_t8
+					add_country_modifier = {name = acw_cavalry_upgrade_t9
+											duration = -1
+											hidden = yes}					
+					}
+											
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t7}
+					add_army_professionalism = -0.4
+					remove_country_modifier = acw_cavalry_upgrade_t7
+					add_country_modifier = {name = acw_cavalry_upgrade_t8
+											duration = -1
+											hidden = yes}					
+					}
+				
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t6}
+					add_army_professionalism = -0.35
+					remove_country_modifier = acw_cavalry_upgrade_t6
+					add_country_modifier = {name = acw_cavalry_upgrade_t7
+											duration = -1
+											hidden = yes}					
+					}
+
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t5}
+					add_army_professionalism = -0.30
+					remove_country_modifier = acw_cavalry_upgrade_t5
+					add_country_modifier = {name = acw_cavalry_upgrade_t6
+											duration = -1
+											hidden = yes}					
+					}			
+				
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t4}
+					add_army_professionalism = -0.25
+					remove_country_modifier = acw_cavalry_upgrade_t4
+					add_country_modifier = {name = acw_cavalry_upgrade_t5
+											duration = -1
+											hidden = yes}					
+					}	
+				
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t3}
+					add_army_professionalism = -0.20
+					remove_country_modifier = acw_cavalry_upgrade_t3
+					add_country_modifier = {name = acw_cavalry_upgrade_t4
+											duration = -1
+											hidden = yes}					
+					}		
+					
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t2}
+					add_army_professionalism = -0.15
+					remove_country_modifier = acw_cavalry_upgrade_t2
+					add_country_modifier = {name = acw_cavalry_upgrade_t3
+											duration = -1
+											hidden = yes}					
+					}		
+					
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t1}
+					add_army_professionalism = -0.10
+					remove_country_modifier = acw_cavalry_upgrade_t1
+					add_country_modifier = {name = acw_cavalry_upgrade_t2
+											duration = -1
+											hidden = yes}					
+					}		
+					
+				else = {
+					add_army_professionalism = -0.05
+					add_country_modifier = {name = acw_cavalry_upgrade_t1
+											duration = -1
+											hidden = yes}					
+					}		
+	}
+}
+
+#level indicators 
+custom_icon = {
+		name = acw_cavalry_levels_indicator_t1
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = { OR = {  has_country_modifier = acw_cavalry_upgrade_t1 
+										has_country_modifier = acw_cavalry_upgrade_t2 
+										has_country_modifier = acw_cavalry_upgrade_t3 
+										has_country_modifier = acw_cavalry_upgrade_t4 
+										has_country_modifier = acw_cavalry_upgrade_t5 
+										has_country_modifier = acw_cavalry_upgrade_t6 
+										has_country_modifier = acw_cavalry_upgrade_t7 
+										has_country_modifier = acw_cavalry_upgrade_t8 
+										has_country_modifier = acw_cavalry_upgrade_t9 } }
+				}
+	
+}
+
+custom_icon = {
+		name = acw_cavalry_levels_indicator_t2
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = {  
+										has_country_modifier = acw_cavalry_upgrade_t2 
+										has_country_modifier = acw_cavalry_upgrade_t3 
+										has_country_modifier = acw_cavalry_upgrade_t4 
+										has_country_modifier = acw_cavalry_upgrade_t5 
+										has_country_modifier = acw_cavalry_upgrade_t6 
+										has_country_modifier = acw_cavalry_upgrade_t7 
+										has_country_modifier = acw_cavalry_upgrade_t8 
+										has_country_modifier = acw_cavalry_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_cavalry_levels_indicator_t3
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = {  
+										has_country_modifier = acw_cavalry_upgrade_t3 
+										has_country_modifier = acw_cavalry_upgrade_t4 
+										has_country_modifier = acw_cavalry_upgrade_t5 
+										has_country_modifier = acw_cavalry_upgrade_t6 
+										has_country_modifier = acw_cavalry_upgrade_t7 
+										has_country_modifier = acw_cavalry_upgrade_t8 
+										has_country_modifier = acw_cavalry_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_cavalry_levels_indicator_t4
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = { 
+										has_country_modifier = acw_cavalry_upgrade_t4 
+										has_country_modifier = acw_cavalry_upgrade_t5 
+										has_country_modifier = acw_cavalry_upgrade_t6 
+										has_country_modifier = acw_cavalry_upgrade_t7 
+										has_country_modifier = acw_cavalry_upgrade_t8 
+										has_country_modifier = acw_cavalry_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_cavalry_levels_indicator_t5
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = {  
+										has_country_modifier = acw_cavalry_upgrade_t5 
+										has_country_modifier = acw_cavalry_upgrade_t6 
+										has_country_modifier = acw_cavalry_upgrade_t7 
+										has_country_modifier = acw_cavalry_upgrade_t8 
+										has_country_modifier = acw_cavalry_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_cavalry_levels_indicator_t6
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = {  
+										has_country_modifier = acw_cavalry_upgrade_t6 
+										has_country_modifier = acw_cavalry_upgrade_t7 
+										has_country_modifier = acw_cavalry_upgrade_t8 
+										has_country_modifier = acw_cavalry_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_cavalry_levels_indicator_t7
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = { 
+										has_country_modifier = acw_cavalry_upgrade_t7 
+										has_country_modifier = acw_cavalry_upgrade_t8 
+										has_country_modifier = acw_cavalry_upgrade_t9 }}
+				}
+		
+}
+
+custom_icon = {
+		name = acw_cavalry_levels_indicator_t8
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = {  
+										has_country_modifier = acw_cavalry_upgrade_t8 
+										has_country_modifier = acw_cavalry_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_cavalry_levels_indicator_t9
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = { has_country_modifier	=	acw_cavalry_upgrade_t9 }
+				}
+		
+}
+
+custom_button = {
+	name = acw_cavalry_upgrade_minus
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = {	
+						OR = {	has_country_modifier	= 	acw_cavalry_upgrade_t9
+								has_country_modifier	=	acw_cavalry_upgrade_t8
+								has_country_modifier	=	acw_cavalry_upgrade_t7
+								has_country_modifier	=	acw_cavalry_upgrade_t6
+								has_country_modifier	=	acw_cavalry_upgrade_t5
+								has_country_modifier	=	acw_cavalry_upgrade_t4
+								has_country_modifier	=	acw_cavalry_upgrade_t3
+								has_country_modifier	=	acw_cavalry_upgrade_t2
+								has_country_modifier	=	acw_cavalry_upgrade_t1
+								}	
+			}
+		
+  	effect = {	
+				if = {limit = {has_country_modifier=acw_cavalry_upgrade_t1}
+						add_army_professionalism = 0.02
+						remove_country_modifier = acw_cavalry_upgrade_t1					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t2}
+					add_army_professionalism = 0.07
+					remove_country_modifier = acw_cavalry_upgrade_t2
+					add_country_modifier = {name = acw_cavalry_upgrade_t1
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t3}
+					add_army_professionalism = 0.1
+					remove_country_modifier = acw_cavalry_upgrade_t3
+					add_country_modifier = {name = acw_cavalry_upgrade_t2
+											duration = -1
+											hidden = yes}					
+					}
+				
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t4}
+					add_army_professionalism = 0.125
+					remove_country_modifier = acw_cavalry_upgrade_t4
+					add_country_modifier = {name = acw_cavalry_upgrade_t3
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t5}
+					add_army_professionalism = 0.15
+					remove_country_modifier = acw_cavalry_upgrade_t5
+					add_country_modifier = {name = acw_cavalry_upgrade_t4
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t6}
+					add_army_professionalism = 0.175
+					remove_country_modifier = acw_cavalry_upgrade_t6
+					add_country_modifier = {name = acw_cavalry_upgrade_t5
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t7}
+					add_army_professionalism = 0.2
+					remove_country_modifier = acw_cavalry_upgrade_t7
+					add_country_modifier = {name = acw_cavalry_upgrade_t6
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t8}
+					add_army_professionalism = 0.22
+					remove_country_modifier = acw_cavalry_upgrade_t8
+					add_country_modifier = {name = acw_cavalry_upgrade_t7
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t9}
+					add_army_professionalism = 0.25
+					remove_country_modifier = acw_cavalry_upgrade_t9
+					add_country_modifier = {name = acw_cavalry_upgrade_t8
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else = {}
+		}
+}
+
+#artillery plus button
+
+custom_button = {
+	name = acw_artillery_upgrade_plus
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = {	
+				NOT = {has_country_modifier = acw_artillery_upgrade_t9 }
+				if = {limit = {has_country_modifier=acw_artillery_upgrade_t1}
+					army_professionalism = 0.10 }
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t2}
+					army_professionalism = 0.15 }
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t3}
+					army_professionalism = 0.20 }
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t4}
+					army_professionalism = 0.25 }
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t5}
+					army_professionalism = 0.30 }
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t6}
+					army_professionalism = 0.35 }
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t7}
+					army_professionalism = 0.40 }
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t8}
+					army_professionalism = 0.50 }
+				else = {army_professionalism = 0.05 }
+			 }
+		
+  	effect = {
+				if = {limit = {has_country_modifier=acw_artillery_upgrade_t8}
+					add_army_professionalism = -0.5
+					remove_country_modifier = acw_artillery_upgrade_t8
+					add_country_modifier = {name = acw_artillery_upgrade_t9
+											duration = -1
+											hidden = yes}					
+					}
+											
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t7}
+					add_army_professionalism = -0.4
+					remove_country_modifier = acw_artillery_upgrade_t7
+					add_country_modifier = {name = acw_artillery_upgrade_t8
+											duration = -1
+											hidden = yes}					
+					}
+				
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t6}
+					add_army_professionalism = -0.35
+					remove_country_modifier = acw_artillery_upgrade_t6
+					add_country_modifier = {name = acw_artillery_upgrade_t7
+											duration = -1
+											hidden = yes}					
+					}
+
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t5}
+					add_army_professionalism = -0.30
+					remove_country_modifier = acw_artillery_upgrade_t5
+					add_country_modifier = {name = acw_artillery_upgrade_t6
+											duration = -1
+											hidden = yes}					
+					}			
+				
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t4}
+					add_army_professionalism = -0.25
+					remove_country_modifier = acw_artillery_upgrade_t4
+					add_country_modifier = {name = acw_artillery_upgrade_t5
+											duration = -1
+											hidden = yes}					
+					}	
+				
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t3}
+					add_army_professionalism = -0.20
+					remove_country_modifier = acw_artillery_upgrade_t3
+					add_country_modifier = {name = acw_artillery_upgrade_t4
+											duration = -1
+											hidden = yes}					
+					}		
+					
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t2}
+					add_army_professionalism = -0.15
+					remove_country_modifier = acw_artillery_upgrade_t2
+					add_country_modifier = {name = acw_artillery_upgrade_t3
+											duration = -1
+											hidden = yes}					
+					}		
+					
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t1}
+					add_army_professionalism = -0.10
+					remove_country_modifier = acw_artillery_upgrade_t1
+					add_country_modifier = {name = acw_artillery_upgrade_t2
+											duration = -1
+											hidden = yes}					
+					}		
+					
+				else = {
+					add_army_professionalism = -0.05
+					add_country_modifier = {name = acw_artillery_upgrade_t1
+											duration = -1
+											hidden = yes}					
+					}		
+	}
+}
+
+#level indicators 
+custom_icon = {
+		name = acw_artillery_levels_indicator_t1
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = {  has_country_modifier = acw_artillery_upgrade_t1 
+										has_country_modifier = acw_artillery_upgrade_t2 
+										has_country_modifier = acw_artillery_upgrade_t3 
+										has_country_modifier = acw_artillery_upgrade_t4 
+										has_country_modifier = acw_artillery_upgrade_t5 
+										has_country_modifier = acw_artillery_upgrade_t6 
+										has_country_modifier = acw_artillery_upgrade_t7 
+										has_country_modifier = acw_artillery_upgrade_t8 
+										has_country_modifier = acw_artillery_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_artillery_levels_indicator_t2
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = {   
+										has_country_modifier = acw_artillery_upgrade_t2 
+										has_country_modifier = acw_artillery_upgrade_t3 
+										has_country_modifier = acw_artillery_upgrade_t4 
+										has_country_modifier = acw_artillery_upgrade_t5 
+										has_country_modifier = acw_artillery_upgrade_t6 
+										has_country_modifier = acw_artillery_upgrade_t7 
+										has_country_modifier = acw_artillery_upgrade_t8 
+										has_country_modifier = acw_artillery_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_artillery_levels_indicator_t3
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = {   
+										has_country_modifier = acw_artillery_upgrade_t3 
+										has_country_modifier = acw_artillery_upgrade_t4 
+										has_country_modifier = acw_artillery_upgrade_t5 
+										has_country_modifier = acw_artillery_upgrade_t6 
+										has_country_modifier = acw_artillery_upgrade_t7 
+										has_country_modifier = acw_artillery_upgrade_t8 
+										has_country_modifier = acw_artillery_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_artillery_levels_indicator_t4
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = { 
+										has_country_modifier = acw_artillery_upgrade_t4 
+										has_country_modifier = acw_artillery_upgrade_t5 
+										has_country_modifier = acw_artillery_upgrade_t6 
+										has_country_modifier = acw_artillery_upgrade_t7 
+										has_country_modifier = acw_artillery_upgrade_t8 
+										has_country_modifier = acw_artillery_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_artillery_levels_indicator_t5
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = {  
+										has_country_modifier = acw_artillery_upgrade_t5 
+										has_country_modifier = acw_artillery_upgrade_t6 
+										has_country_modifier = acw_artillery_upgrade_t7 
+										has_country_modifier = acw_artillery_upgrade_t8 
+										has_country_modifier = acw_artillery_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_artillery_levels_indicator_t6
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = {  
+										has_country_modifier = acw_artillery_upgrade_t6 
+										has_country_modifier = acw_artillery_upgrade_t7 
+										has_country_modifier = acw_artillery_upgrade_t8 
+										has_country_modifier = acw_artillery_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_artillery_levels_indicator_t7
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = {   
+										has_country_modifier = acw_artillery_upgrade_t7 
+										has_country_modifier = acw_artillery_upgrade_t8 
+										has_country_modifier = acw_artillery_upgrade_t9 } }
+				}
+		
+}
+
+custom_icon = {
+		name = acw_artillery_levels_indicator_t8
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = {  OR = {  
+										has_country_modifier = acw_artillery_upgrade_t8 
+										has_country_modifier = acw_artillery_upgrade_t9 }}
+				}
+		
+}
+
+custom_icon = {
+		name = acw_artillery_levels_indicator_t9
+		potential = {has_country_flag = acw_background_open_already} 
+		
+		frame = { 	number = 2 
+					trigger = { has_country_modifier	=	acw_artillery_upgrade_t9 }
+				}
+		
+}
+
+custom_button = {
+	name = acw_artillery_upgrade_minus
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = {	
+						OR = {	has_country_modifier	= 	acw_artillery_upgrade_t9
+								has_country_modifier	=	acw_artillery_upgrade_t8
+								has_country_modifier	=	acw_artillery_upgrade_t7
+								has_country_modifier	=	acw_artillery_upgrade_t6
+								has_country_modifier	=	acw_artillery_upgrade_t5
+								has_country_modifier	=	acw_artillery_upgrade_t4
+								has_country_modifier	=	acw_artillery_upgrade_t3
+								has_country_modifier	=	acw_artillery_upgrade_t2
+								has_country_modifier	=	acw_artillery_upgrade_t1
+								}	
+			}
+		
+  	effect = {	
+				if = {limit = {has_country_modifier=acw_artillery_upgrade_t1}
+						add_army_professionalism = 0.02
+						remove_country_modifier = acw_artillery_upgrade_t1					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t2}
+					add_army_professionalism = 0.07
+					remove_country_modifier = acw_artillery_upgrade_t2
+					add_country_modifier = {name = acw_artillery_upgrade_t1
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t3}
+					add_army_professionalism = 0.1
+					remove_country_modifier = acw_artillery_upgrade_t3
+					add_country_modifier = {name = acw_artillery_upgrade_t2
+											duration = -1
+											hidden = yes}					
+					}
+				
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t4}
+					add_army_professionalism = 0.125
+					remove_country_modifier = acw_artillery_upgrade_t4
+					add_country_modifier = {name = acw_artillery_upgrade_t3
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t5}
+					add_army_professionalism = 0.15
+					remove_country_modifier = acw_artillery_upgrade_t5
+					add_country_modifier = {name = acw_artillery_upgrade_t4
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t6}
+					add_army_professionalism = 0.175
+					remove_country_modifier = acw_artillery_upgrade_t6
+					add_country_modifier = {name = acw_artillery_upgrade_t5
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t7}
+					add_army_professionalism = 0.2
+					remove_country_modifier = acw_artillery_upgrade_t7
+					add_country_modifier = {name = acw_artillery_upgrade_t6
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t8}
+					add_army_professionalism = 0.22
+					remove_country_modifier = acw_artillery_upgrade_t8
+					add_country_modifier = {name = acw_artillery_upgrade_t7
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t9}
+					add_army_professionalism = 0.25
+					remove_country_modifier = acw_artillery_upgrade_t9
+					add_country_modifier = {name = acw_artillery_upgrade_t8
+											duration = -1
+											hidden = yes}					
+					}
+					
+				else = {}
+		}
+}
+
+#upgrade skills 
+#infantry
+custom_button = {
+	name = acw_infantry_levels_bar_t1a
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_infantry_temp_skill_t1_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_infantry_upgrade_t3
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t1a
+					duration = 10650 }
+				set_country_flag = acw_infantry_temp_skill_t1_picked
+			}
+}
+
+custom_button = {
+	name = acw_infantry_levels_bar_t1b
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_infantry_temp_skill_t1_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_infantry_upgrade_t3
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t1b
+					duration = 10650 }
+				set_country_flag = acw_infantry_temp_skill_t1_picked
+			}
+}				
+
+custom_button = {
+	name = acw_infantry_levels_bar_t2a
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_infantry_temp_skill_t2_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_infantry_upgrade_t6
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t2a
+					duration = 10650 }
+				set_country_flag = acw_infantry_temp_skill_t2_picked
+			}
+}	
+
+custom_button = {
+	name = acw_infantry_levels_bar_t2b
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_infantry_temp_skill_t2_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_infantry_upgrade_t6
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t2b
+					duration = 10650 }
+				set_country_flag = acw_infantry_temp_skill_t2_picked
+			}
+}
+
+custom_button = {
+	name = acw_infantry_levels_bar_t3a
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_infantry_temp_skill_t3_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_infantry_upgrade_t9
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t3a
+					duration = 10650 }
+				set_country_flag = acw_infantry_temp_skill_t3_picked
+			}
+}	
+
+custom_button = {
+	name = acw_infantry_levels_bar_t3b
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_infantry_temp_skill_t3_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_infantry_upgrade_t9
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t3b
+					duration = 10650 }
+				set_country_flag = acw_infantry_temp_skill_t3_picked
+			}
+}		
+
+#cavalry
+custom_button = {
+	name = acw_cavalry_levels_bar_t1a
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_cavalry_upgrade_t3
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t1a
+					duration = 10650 }
+				set_country_flag = acw_cavalry_temp_skill_t1_picked
+			}
+}
+
+custom_button = {
+	name = acw_cavalry_levels_bar_t1b
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_cavalry_upgrade_t3
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t1b
+					duration = 10650 }
+				set_country_flag = acw_cavalry_temp_skill_t1_picked
+			}
+}				
+
+custom_button = {
+	name = acw_cavalry_levels_bar_t2a
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_cavalry_temp_skill_t2_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_cavalry_upgrade_t6
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t2a
+					duration = 10650 }
+				set_country_flag = acw_cavalry_temp_skill_t2_picked
+			}
+}	
+
+custom_button = {
+	name = acw_cavalry_levels_bar_t2b
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_cavalry_temp_skill_t2_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_cavalry_upgrade_t6
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t2b
+					duration = 10650 }
+				set_country_flag = acw_cavalry_temp_skill_t2_picked
+			}
+}
+
+custom_button = {
+	name = acw_cavalry_levels_bar_t3a
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_cavalry_temp_skill_t3_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_cavalry_upgrade_t9
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t3a
+					duration = 10650 }
+				set_country_flag = acw_cavalry_temp_skill_t3_picked
+			}
+}	
+
+custom_button = {
+	name = acw_cavalry_levels_bar_t3b
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_cavalry_temp_skill_t3_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_cavalry_upgrade_t9
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t3b
+					duration = 10650 }
+				set_country_flag = acw_cavalry_temp_skill_t3_picked
+			}
+}		
+	
+#artillery
+custom_button = {
+	name = acw_artillery_levels_bar_t1a
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_artillery_temp_skill_t1_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_artillery_upgrade_t3
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t1a
+					duration = 10650 }
+				set_country_flag = acw_artillery_temp_skill_t1_picked
+			}
+}
+
+custom_button = {
+	name = acw_artillery_levels_bar_t1b
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_artillery_temp_skill_t1_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_artillery_upgrade_t3
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t1b
+					duration = 10650 }
+				set_country_flag = acw_artillery_temp_skill_t1_picked
+			}
+}				
+
+custom_button = {
+	name = acw_artillery_levels_bar_t2a
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_artillery_temp_skill_t2_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_artillery_upgrade_t6
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t2a
+					duration = 10650 }
+				set_country_flag = acw_artillery_temp_skill_t2_picked
+			}
+}	
+
+custom_button = {
+	name = acw_artillery_levels_bar_t2b
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_artillery_temp_skill_t2_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_artillery_upgrade_t6
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t2b
+					duration = 10650 }
+				set_country_flag = acw_artillery_temp_skill_t2_picked
+			}
+}
+
+custom_button = {
+	name = acw_artillery_levels_bar_t3a
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_artillery_temp_skill_t3_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_artillery_upgrade_t9
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t3a
+					duration = 10650 }
+				set_country_flag = acw_artillery_temp_skill_t3_picked
+			}
+}	
+
+custom_button = {
+	name = acw_artillery_levels_bar_t3b
+	potential = {has_country_flag = acw_background_open_already} 
+	trigger = {
+				AND = {
+					NOT = { had_country_flag = { flag = acw_artillery_temp_skill_t3_picked
+												days = 10650}
+												}
+					has_country_modifier = acw_artillery_upgrade_t9
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t3b
+					duration = 10650 }
+				set_country_flag = acw_artillery_temp_skill_t3_picked
+			}
+}		
+	
+#arm text+buttons
+custom_text_box = {
+	name = acw_army_window_armaments_text
+    potential = {has_country_flag = acw_background_open_already} 
+		}
+custom_icon = {
+	name = acw_arma_title_banner
+    potential = {has_country_flag = acw_background_open_already} 
+	}
+
+custom_button = {
+	name = acw_arm_slot_1 
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = { }
+  	effect = { 
+		
+	}
+}
+
+custom_button = {
+	name = acw_arm_slot_2
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = { }
+  	effect = { 
+		
+	}
+}
+
+custom_button = {
+	name = acw_arm_slot_3 
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = { }
+  	effect = { 
+		
+	}
+}
+
+custom_button = {
+	name = acw_arm_slot_4
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = { }
+  	effect = { 
+		
+	}
+}	
+		
+		
+#hd text+buttons
+custom_text_box = {
+	name = acw_army_window_hd_text
+    potential = {has_country_flag = acw_background_open_already} 
+		}		
+	
+custom_icon = {
+	name = acw_hd_title_banner
+    potential = {has_country_flag = acw_background_open_already} 
+	}
+	
+#hd_arma selector window
+custom_icon = {
+	name = acw_hd_arma_selector_window_bg
+	potential = {has_country_flag = acw_hd_arma_bg_open} 
+	}
+
+custom_button = {
+	name = acw_hd_arma_selector_window_close
+    potential = {has_country_flag = acw_hd_arma_bg_open} 
+  	trigger = { 
+				has_country_flag = acw_hd_arma_bg_open
+				}
+  	effect = { 
+		clr_country_flag = acw_hd_arma_bg_open
+	}
+}
+
+custom_button = {
+	name = acw_hd_slot_1 
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = { NOT = {has_country_flag = acw_hd_slot_1_x}
+				NOT = {has_country_flag = acw_hd_arma_bg_open}
+				}
+  	effect = { 
+		set_country_flag = acw_hd_arma_bg_open
+	}
+}
+
+custom_button = {
+	name = acw_hd_slot_2
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = { }
+  	effect = { 
+		
+	}
+}
+
+custom_button = {
+	name = acw_hd_slot_3 
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = { }
+  	effect = { 
+		
+	}
+}
+
+custom_button = {
+	name = acw_hd_slot_4
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = { }
+  	effect = { 
+		
+	}
+}	
+		
+
+
+#background window
+custom_icon = {
+	name = acw_background_is_open
+	potential = {
+		has_country_flag = acw_background_open_already
 	}
 }
 
@@ -22,7 +1565,7 @@ custom_button = {
 		clr_country_flag = acw_background_open_already
 	}
 }
-
+#Open Military conduct window - navy
 custom_button = {
 	name = acw_navy_button_that_opens_menu 
     potential = {} 
@@ -41,16 +1584,495 @@ custom_button = {
 	}
 }
 
+#open strategems window if none picked
 custom_button = {
-	name = acw_stratagem
-    potential = {has_country_flag = acw_background_open_already} 
+	name = acw_stratagem_selector_button
+    potential = {
+			AND = {
+					has_country_flag = acw_background_open_already
+					acw_has_stratagem = no
+					} 
+				}
   	trigger = { }
   	effect = {
-		add_prestige = 10
+		set_country_flag = acw_stratagem_window_open_flag
 	}
 }
 
-custom_text_box = {
-	name = acw_army_window_title
-    potential = {has_country_flag = acw_background_open_already} 
+
+#stratagem selector menu
+custom_button = {
+	name = acw_stratagem_exit_button
+    potential = {has_country_flag = acw_stratagem_window_open_flag
+				OR = { 	
+					NOT = { has_country_flag = acw_stratagem_sfp_selected 
+							has_country_flag = acw_stratagem_trc_selected
+							has_country_flag = acw_stratagem_rom_selected
+							has_country_flag = acw_stratagem_dod_selected
+							has_country_flag = acw_stratagem_has_selected
+							}
+						}
+					}
+  	trigger = { }
+  	effect = { 
+		clr_country_flag = acw_stratagem_window_open_flag
+	}
+}
+
+#lock the icon
+custom_icon = {
+	name = acw_stratagem_selector_button_sfp
+	potential = {has_country_flag = acw_stratagem_sfp_selected} 
+	}
+custom_icon = {
+	name = acw_stratagem_selector_button_trc
+	potential = {has_country_flag = acw_stratagem_trc_selected} 
+	
+	}
+custom_icon = {
+	name = acw_stratagem_selector_button_rom
+	potential = {has_country_flag = acw_stratagem_rom_selected} 
+	
+	}
+custom_icon = {
+	name = acw_stratagem_selector_button_dod
+	potential = {has_country_flag = acw_stratagem_dod_selected} 
+	
+	}
+custom_icon = {
+	name = acw_stratagem_selector_button_has
+	potential = {has_country_flag = acw_stratagem_has_selected} 
+	
+	}
+
+#set the actual stratagem
+custom_button = {
+	name = acw_stratagem_sfp_button
+    potential = {has_country_flag = acw_stratagem_window_open_flag} 
+  	trigger = { }
+  	effect = { 
+		clr_country_flag = acw_stratagem_window_open_flag
+		set_country_flag = acw_stratagem_sfp_selected
+		set_country_flag = acw_stratagem_selected_already
+		add_country_modifier = {
+								name = acw_stratagem_sfp_selected 
+								duration = -1
+								hidden = yes    
+								}
+		
+	}
+}
+
+custom_button = {
+	name = acw_stratagem_dod_button
+    potential = {has_country_flag = acw_stratagem_window_open_flag} 
+  	trigger = { }
+  	effect = { 
+		clr_country_flag = acw_stratagem_window_open_flag
+		set_country_flag = acw_stratagem_dod_selected
+		set_country_flag = acw_stratagem_selected_already
+		add_country_modifier = {
+								name = acw_stratagem_dod_selected 
+								duration = -1
+								hidden = yes    
+								}
+		
+	}
+}
+
+custom_button = {
+	name = acw_stratagem_rom_button
+    potential = {has_country_flag = acw_stratagem_window_open_flag} 
+  	trigger = { }
+  	effect = { 
+		clr_country_flag = acw_stratagem_window_open_flag
+		set_country_flag = acw_stratagem_rom_selected
+		set_country_flag = acw_stratagem_selected_already
+		add_country_modifier = {
+								name = acw_stratagem_rom_selected 
+								duration = -1
+								hidden = yes    
+								}
+		
+	}
+}
+
+custom_button = {
+	name = acw_stratagem_has_button
+    potential = {has_country_flag = acw_stratagem_window_open_flag} 
+  	trigger = { }
+  	effect = { 
+		clr_country_flag = acw_stratagem_window_open_flag
+		set_country_flag = acw_stratagem_has_selected
+		set_country_flag = acw_stratagem_selected_already
+		add_country_modifier = {
+								name = acw_stratagem_has_selected 
+								duration = -1
+								hidden = yes    
+								}
+		
+	}
+}
+
+custom_button = {
+	name = acw_stratagem_trc_button
+    potential = {has_country_flag = acw_stratagem_window_open_flag} 
+  	trigger = { }
+  	effect = { 
+		clr_country_flag = acw_stratagem_window_open_flag
+		set_country_flag = acw_stratagem_trc_selected
+		set_country_flag = acw_stratagem_selected_already
+		add_country_modifier = {
+								name = acw_stratagem_trc_selected 
+								duration = -1
+								hidden = yes
+								}
+	}
+}
+
+#reset stratage
+custom_button = {
+	name = acw_stratagem_discontinue_button
+    potential = {	AND = {
+						acw_has_stratagem = yes
+						has_country_flag = acw_background_open_already
+						}		
+				} 
+  	trigger = { }
+  	effect = { 
+		clr_country_flag = acw_stratagem_selected_already
+		clr_country_flag = acw_stratagem_dod_selected
+		clr_country_flag = acw_stratagem_trc_selected
+		clr_country_flag = acw_stratagem_rom_selected
+		clr_country_flag = acw_stratagem_has_selected
+		clr_country_flag = acw_stratagem_sfp_selected	
+		remove_country_modifier = acw_stratagem_rom_selected 
+		remove_country_modifier = acw_stratagem_rom_t1 
+		remove_country_modifier = acw_stratagem_rom_t2 
+		remove_country_modifier = acw_stratagem_rom_t3 
+		remove_country_modifier = acw_stratagem_rom_t4 
+
+		remove_country_modifier = acw_stratagem_trc_selected 
+		remove_country_modifier = acw_stratagem_trc_t1 
+		remove_country_modifier = acw_stratagem_trc_t2 
+		remove_country_modifier = acw_stratagem_trc_t3 
+		remove_country_modifier = acw_stratagem_trc_t4 
+
+		remove_country_modifier = acw_stratagem_has_selected 
+		remove_country_modifier = acw_stratagem_has_t1 
+		remove_country_modifier = acw_stratagem_has_t2 
+		remove_country_modifier = acw_stratagem_has_t3 
+		remove_country_modifier = acw_stratagem_has_t4 
+
+		remove_country_modifier = acw_stratagem_sfp_selected 
+		remove_country_modifier = acw_stratagem_sfp_t1 
+		remove_country_modifier = acw_stratagem_sfp_t2 
+		remove_country_modifier = acw_stratagem_sfp_t3 
+		remove_country_modifier = acw_stratagem_sfp_t4 
+
+		remove_country_modifier = acw_stratagem_dod_selected 
+		remove_country_modifier = acw_stratagem_dod_t1 
+		remove_country_modifier = acw_stratagem_dod_t2 
+		remove_country_modifier = acw_stratagem_dod_t3 
+		remove_country_modifier = acw_stratagem_dod_t4 
+	}
+}
+
+#level up
+custom_button = {
+	name = acw_stratagem_level_up_button
+    potential = {
+					AND = {
+						acw_has_stratagem = yes
+						has_country_flag = acw_background_open_already
+						}
+				}
+				
+  	trigger = { AND = {
+						army_professionalism = 0
+						NOT = {
+							OR = {
+								has_country_modifier = acw_stratagem_sfp_t4
+								has_country_modifier = acw_stratagem_has_t4
+								has_country_modifier = acw_stratagem_dod_t4
+								has_country_modifier = acw_stratagem_rom_t4
+								has_country_modifier = acw_stratagem_trc_t4
+								}
+							}
+				}
+			}
+  	effect = { 
+	#remove previous tier modifier, add next tier
+		IF = { limit = { has_country_modifier = acw_stratagem_sfp_t3 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_sfp_t3
+							add_country_modifier = {
+									name = acw_stratagem_sfp_t4
+									duration = -1
+									hidden = yes    
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_sfp_t2 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_sfp_t2
+							add_country_modifier = {
+									name = acw_stratagem_sfp_t3
+									duration = -1
+									hidden = yes    
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_sfp_t1 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_sfp_t1
+							add_country_modifier = {
+									name = acw_stratagem_sfp_t2
+									duration = -1
+									hidden = yes    
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_sfp_selected }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_sfp_selected
+							add_country_modifier = {
+									name = acw_stratagem_sfp_t1
+									duration = -1
+									hidden = yes  
+								}
+							}
+								
+		#remove previous tier modifier, add next tier
+		IF = { limit = { has_country_modifier = acw_stratagem_dod_t3 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_dod_t3
+							add_country_modifier = {
+									name = acw_stratagem_dod_t4
+									duration = -1
+									hidden = yes
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_dod_t2 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_dod_t2
+							add_country_modifier = {
+									name = acw_stratagem_dod_t3
+									duration = -1
+									hidden = yes
+								}
+							}
+		IF = { limit = {  has_country_modifier = acw_stratagem_dod_t1 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_dod_t1
+							add_country_modifier = {
+									name = acw_stratagem_dod_t2
+									duration = -1
+									hidden = yes
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_dod_selected }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_dod_selected
+							add_country_modifier = {
+									name = acw_stratagem_dod_t1
+									duration = -1
+									hidden = yes
+								}
+							}
+								
+		#remove previous tier modifier, add next tier
+		IF = { limit = { has_country_modifier = acw_stratagem_trc_t3 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_trc_t3
+							add_country_modifier = {
+									name = acw_stratagem_trc_t4
+									duration = -1
+									hidden = yes
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_trc_t2 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_trc_t2
+							add_country_modifier = {
+									name = acw_stratagem_trc_t3
+									duration = -1
+									hidden = yes
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_trc_t1 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_trc_t1
+							add_country_modifier = {
+									name = acw_stratagem_trc_t2
+									duration = -1
+									hidden = yes
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_trc_selected }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_trc_selected
+							add_country_modifier = {
+									name = acw_stratagem_trc_t1
+									duration = -1
+									hidden = yes
+								}
+							}
+
+		#remove previous tier modifier, add next tier
+		IF = { limit = { has_country_modifier = acw_stratagem_has_t3 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_has_t3
+							add_country_modifier = {
+									name = acw_stratagem_has_t4
+									duration = -1
+									hidden = yes
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_has_t2 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_has_t2
+							add_country_modifier = {
+									name = acw_stratagem_has_t3
+									duration = -1
+									hidden = yes
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_has_t1 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_has_t1
+							add_country_modifier = {
+									name = acw_stratagem_has_t2
+									duration = -1
+									hidden = yes
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_has_selected }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_has_selected
+							add_country_modifier = {
+									name = acw_stratagem_has_t1
+									duration = -1
+									hidden = yes
+								}
+							}
+								
+		#remove previous tier modifier, add next tier
+		IF = { limit = { has_country_modifier = acw_stratagem_rom_t3 }
+							remove_country_modifier = acw_stratagem_rom_t3
+							add_country_modifier = {
+									name = acw_stratagem_rom_t4
+									duration = -1
+									hidden = yes
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_rom_t2 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_rom_t2
+							add_country_modifier = {
+									name = acw_stratagem_rom_t3
+									duration = -1
+									hidden = yes
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_rom_t1 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_rom_t1
+							add_country_modifier = {
+									name = acw_stratagem_rom_t2
+									duration = -1
+									hidden = yes
+								}
+							}
+		IF = { limit = { has_country_modifier = acw_stratagem_rom_selected }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_rom_selected
+							add_country_modifier = {
+									name = acw_stratagem_rom_t1
+									duration = -1
+									hidden = yes
+								}
+							}
+	
 		}
+	
+	}
+
+
+
+#stratagem bg
+custom_icon = {
+	name = acw_stratagem_window
+	potential = {
+		has_country_flag = acw_stratagem_window_open_flag
+	}
+}
+
+#stratagems level up bars
+# visible only when there is at least t1 (leveled up once)
+custom_icon = {
+	name = acw_stratagem_level_bar
+	potential = {
+		AND = {
+			has_country_flag = acw_background_open_already
+			has_country_flag = acw_stratagem_selected_already
+			NOT = {
+				OR = { 
+						has_country_modifier = acw_stratagem_rom_selected
+						has_country_modifier = acw_stratagem_sfp_selected
+						has_country_modifier = acw_stratagem_dod_selected
+						has_country_modifier = acw_stratagem_trc_selected
+						has_country_modifier = acw_stratagem_has_selected
+						}
+				}
+		}
+	}
+	
+	frame = { number = 1
+		trigger = {
+				OR = {
+						has_country_modifier = acw_stratagem_rom_t1
+						has_country_modifier = acw_stratagem_sfp_t1
+						has_country_modifier = acw_stratagem_dod_t1
+						has_country_modifier = acw_stratagem_trc_t1
+						has_country_modifier = acw_stratagem_has_t1
+						}
+			}
+		}
+		
+	frame = { number = 2
+		trigger = {
+				OR = {
+						has_country_modifier = acw_stratagem_rom_t2
+						has_country_modifier = acw_stratagem_sfp_t2
+						has_country_modifier = acw_stratagem_dod_t2
+						has_country_modifier = acw_stratagem_trc_t2
+						has_country_modifier = acw_stratagem_has_t2
+						}
+			}
+		}
+		
+	frame = { number = 3
+		trigger = {
+				OR = {
+						has_country_modifier = acw_stratagem_rom_t3
+						has_country_modifier = acw_stratagem_sfp_t3
+						has_country_modifier = acw_stratagem_dod_t3
+						has_country_modifier = acw_stratagem_trc_t3
+						has_country_modifier = acw_stratagem_has_t3
+						}
+			}
+		}
+	
+	frame = { number = 4
+		trigger = {
+				OR = {
+						has_country_modifier = acw_stratagem_rom_t4
+						has_country_modifier = acw_stratagem_sfp_t4
+						has_country_modifier = acw_stratagem_dod_t4
+						has_country_modifier = acw_stratagem_trc_t4
+						has_country_modifier = acw_stratagem_has_t4
+						}
+			}
+		}
+
+}
+
+

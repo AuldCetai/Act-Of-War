@@ -1,0 +1,362 @@
+#stratagem modifiers
+acw_stratagem_rom_selected = { 	
+								free_leader_pool = 1}
+acw_stratagem_rom_t1 = {		
+								free_leader_pool = 1
+								merc_maintenance_modifier = 0.5
+						}
+acw_stratagem_rom_t2 = {		
+								free_leader_pool = 1
+								merc_maintenance_modifier = 0.5
+								merc_leader_army_tradition = 0.5
+						}
+acw_stratagem_rom_t3 = {		
+								free_leader_pool = 1
+								merc_maintenance_modifier = 0.5
+								merc_leader_army_tradition = 0.5
+								merc_independent_from_trade_range = yes
+						}
+acw_stratagem_rom_t4 = {		
+								
+								free_leader_pool = 1
+								merc_maintenance_modifier = 0.5
+								merc_leader_army_tradition = 0.5
+								merc_independent_from_trade_range = yes
+								enable_forced_march = yes
+						}
+
+acw_stratagem_trc_selected = {		
+								
+								army_tradition_decay = -0.05
+						}
+acw_stratagem_trc_t1 = {		
+								
+								army_tradition_decay = -0.05
+								cav_to_inf_ratio = 0.5
+						}
+acw_stratagem_trc_t2 = {		
+								
+								army_tradition_decay = -0.05
+								cav_to_inf_ratio = 0.5
+								vassal_forcelimit_bonus = 0.2
+						}
+acw_stratagem_trc_t3 = {		
+								
+								army_tradition_decay = -0.05
+								cav_to_inf_ratio = 0.5
+								vassal_forcelimit_bonus = 0.2
+								special_unit_forcelimit = 1
+						}
+acw_stratagem_trc_t4 = {		
+								
+								army_tradition_decay = -0.05
+								cav_to_inf_ratio = 0.5
+								vassal_forcelimit_bonus = 0.2
+								special_unit_forcelimit = 1
+						}
+
+acw_stratagem_has_selected = {		
+								
+								prestige_from_land = 0.3
+						}
+acw_stratagem_has_t1 = {		
+								
+								prestige_from_land = 0.3
+								assault_fort_cost_modifier = -0.2
+						}
+acw_stratagem_has_t2 = {		
+								
+								prestige_from_land = 0.3
+								assault_fort_cost_modifier = -0.2
+								morale_damage_received = -0.1
+						}
+acw_stratagem_has_t3 = {		
+								
+								prestige_from_land = 0.3
+								assault_fort_cost_modifier = -0.2
+								morale_damage_received = -0.1
+								assault_fort_ability = 0.1
+						}
+acw_stratagem_has_t4 = {		
+								
+								prestige_from_land = 0.3
+								assault_fort_cost_modifier = -0.2
+								morale_damage_received = -0.1
+								assault_fort_ability = 0.1
+								military_tactics = 0.2
+						}
+
+acw_stratagem_sfp_selected = {		
+								
+								backrow_artillery_damage = 0.1
+						}
+acw_stratagem_sfp_t1 = {		
+								
+								backrow_artillery_damage = 0.1
+								artillery_barrage_cost = -0.1
+						}
+acw_stratagem_sfp_t2 = {		
+								
+								backrow_artillery_damage = 0.1
+								artillery_barrage_cost = -0.1
+								shock_damage_received = -0.1
+						}
+acw_stratagem_sfp_t3 = {		
+								
+								backrow_artillery_damage = 0.1
+								artillery_barrage_cost = -0.1
+								shock_damage_received = -0.1
+								siege_ability = 0.1
+								}
+acw_stratagem_sfp_t4 = {		
+								
+								backrow_artillery_damage = 0.1
+								artillery_barrage_cost = -0.1
+								shock_damage_received = -0.1
+								siege_ability = 0.1
+								artillery_fire = 1
+						}
+
+acw_stratagem_dod_selected = {		
+								
+								garrison_size = 0.25
+						}
+acw_stratagem_dod_t1 = {		
+								
+								garrison_size = 0.25
+								defensiveness = 0.2
+						}
+acw_stratagem_dod_t2 = {		
+								
+								garrison_size = 0.25
+								defensiveness = 0.2
+								garrison_damage = 0.25
+						}
+acw_stratagem_dod_t3 = {		
+								
+								garrison_size = 0.25
+								defensiveness = 0.2
+								garrison_damage = 0.25
+								fire_damage_received = -0.15
+						}
+acw_stratagem_dod_t4 = {		
+								
+								garrison_size = 0.25
+								defensiveness = 0.2
+								garrison_damage = 0.25
+								fire_damage_received = -0.15
+								max_hostile_attrition = 3
+						}
+						
+#infantry
+acw_infantry_upgrade_t1  = {	
+	infantry_power = 0.1
+	infantry_cost = 0.1
+	}
+
+acw_infantry_upgrade_t2  = {	
+	infantry_power = 0.2
+	infantry_cost = 0.2
+	}
+
+acw_infantry_upgrade_t3  = {	
+	infantry_power = 0.3
+	infantry_cost = 0.3
+	}
+
+acw_infantry_upgrade_t4  = {	
+	infantry_power = 0.4
+	infantry_cost = 0.4
+	}
+
+acw_infantry_upgrade_t5  = {	
+	infantry_power = 0.5
+	infantry_cost = 0.5
+	}
+
+acw_infantry_upgrade_t6  = {	
+	infantry_power = 0.6
+	infantry_cost = 0.6
+	}
+
+acw_infantry_upgrade_t7  = {	
+	infantry_power = 0.7
+	infantry_cost = 0.7
+	}
+
+acw_infantry_upgrade_t8  = {	
+	infantry_power = 0.85
+	infantry_cost = 0.85
+	}
+
+acw_infantry_upgrade_t9  = {	
+	infantry_power = 1
+	infantry_cost = 1
+	}
+
+#cav
+acw_cavalry_upgrade_t1  = {	
+	cavalry_power = 0.1
+	cavalry_cost = 0.1
+	}
+
+acw_cavalry_upgrade_t2  = {	
+	cavalry_power = 0.2
+	cavalry_cost = 0.2
+	}
+
+acw_cavalry_upgrade_t3  = {	
+	cavalry_power = 0.3
+	cavalry_cost = 0.3
+	}
+
+acw_cavalry_upgrade_t4  = {	
+	cavalry_power = 0.4
+	cavalry_cost = 0.4
+	}
+
+acw_cavalry_upgrade_t5  = {	
+	cavalry_power = 0.5
+	cavalry_cost = 0.5
+	}
+
+acw_cavalry_upgrade_t6  = {	
+	cavalry_power = 0.6
+	cavalry_cost = 0.6
+	}
+
+acw_cavalry_upgrade_t7  = {	
+	cavalry_power = 0.7
+	cavalry_cost = 0.7
+	}
+
+acw_cavalry_upgrade_t8  = {	
+	cavalry_power = 0.85
+	cavalry_cost = 0.85
+	}
+
+acw_cavalry_upgrade_t9  = {	
+	cavalry_power = 1
+	cavalry_cost = 1
+	}
+	
+#artillery
+acw_artillery_upgrade_t1  = {	
+	artillery_power = 0.1
+	artillery_cost = 0.1
+	}
+
+acw_artillery_upgrade_t2  = {	
+	artillery_power = 0.2
+	artillery_cost = 0.2
+	}
+
+acw_artillery_upgrade_t3  = {	
+	artillery_power = 0.3
+	artillery_cost = 0.3
+	}
+
+acw_artillery_upgrade_t4  = {	
+	artillery_power = 0.4
+	artillery_cost = 0.4
+	}
+
+acw_artillery_upgrade_t5  = {	
+	artillery_power = 0.5
+	artillery_cost = 0.5
+	}
+
+acw_artillery_upgrade_t6  = {	
+	artillery_power = 0.6
+	artillery_cost = 0.6
+	}
+
+acw_artillery_upgrade_t7  = {	
+	artillery_power = 0.7
+	artillery_cost = 0.7
+	}
+
+acw_artillery_upgrade_t8  = {	
+	artillery_power = 0.85
+	artillery_cost = 0.85
+	}
+
+acw_artillery_upgrade_t9  = {	
+	artillery_power = 1
+	artillery_cost = 1
+	}	
+	
+#acw skills infantry
+acw_infantry_temp_skill_t1a = {
+				assault_fort_cost_modifier = -0.1
+					}	
+
+acw_infantry_temp_skill_t1b = {
+				drill_gain_modifier = 0.1
+					}	
+
+acw_infantry_temp_skill_t2a = {
+				infantry_fire = 1
+					}	
+
+acw_infantry_temp_skill_t2b = {
+				infantry_shock = 1
+					}	
+					
+acw_infantry_temp_skill_t3a = {
+				leader_land_shock = 1
+					}	
+					
+acw_infantry_temp_skill_t3b = {
+				manpower_recovery_speed = 0.1
+					}	
+					
+#acw skills cav
+acw_cavalry_temp_skill_t1a = {
+				cavalry_flanking = 0.5
+					}	
+
+acw_cavalry_temp_skill_t1b = {
+				movement_speed = 0.1
+					}	
+
+acw_cavalry_temp_skill_t2a = {
+				cavalry_fire = 1
+					}	
+
+acw_cavalry_temp_skill_t2b = {
+				cavalry_shock = 1
+					}	
+					
+acw_cavalry_temp_skill_t3a = {
+				army_tradition = 0.05
+					}	
+					
+acw_cavalry_temp_skill_t3b = {
+				shock_damage_received = -0.05
+					}	
+					
+#acw skills arty
+acw_artillery_temp_skill_t1a = {
+				artillery_power = 0.1
+					}	
+
+acw_artillery_temp_skill_t1b = {
+				backrow_artillery_damage = 0.1
+					}	
+
+acw_artillery_temp_skill_t2a = {
+				artillery_fire = 1
+					}	
+
+acw_artillery_temp_skill_t2b = {
+				artillery_shock = 1
+					}	
+					
+acw_artillery_temp_skill_t3a = {
+				artillery_barrage_cost = -0.1
+					}	
+					
+acw_artillery_temp_skill_t3b = {
+				siege_ability = 0.1
+					}	

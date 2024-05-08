@@ -22,7 +22,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_power_bar_9"
+		name = "GFX_acw_power_bar_9"
 		texturefile = "gfx/interface/power_bar_9.dds"
 	}
 	
@@ -37,10 +37,111 @@ spriteTypes = {
 		texturefile = "gfx/interface/prof_army_background.dds"
 		transparencecheck = yes
 	}
-	
+	#Stratagem icons
 	spriteType = {
-		name = "GFX_acw_stratagem"
+		name = "GFX_acw_stratagem_placeholder"
 		texturefile = "gfx/interface/acw_stratagem.dds"
 		transparencecheck = yes
 	}
+	
+	spriteType = {
+		name = "GFX_acw_stratagem_dod"
+		texturefile = "gfx/interface/acw_stratagem_dod.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_stratagem_rom"
+		texturefile = "gfx/interface/acw_stratagem_rom.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_stratagem_has"
+		texturefile = "gfx/interface/acw_stratagem_has.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_stratagem_sfp"
+		texturefile = "gfx/interface/acw_stratagem_sfp.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_stratagem_trc"
+		texturefile = "gfx/interface/acw_stratagem_trc.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_stratagem_non"
+		texturefile = "gfx/interface/acw_stratagem_non.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_stratagem_stars"
+		texturefile = "gfx/interface/acw_stratagem_stars.dds"
+		transparencecheck = yes
+		noOfFrames = 4
+	}
+	
+	spriteType = {
+		name = "GFX_acw_stratagem_bg"
+		texturefile = "gfx/interface/acw_stratagem_bg.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_add_to_que"
+		texturefile = "gfx/interface/add_to_que.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_remove_from_que"
+		texturefile = "gfx/interface/remove_from_que.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_band_reorg_musketeer"
+		texturefile = "gfx/interface/band_reorg_musketeer.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_band_reorg_purple"
+		texturefile = "gfx/interface/band_reorg_purple.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_band_reorg_qizilbash"
+		texturefile = "gfx/interface/band_reorg_qizilbash.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_banner_right"
+		texturefile = "gfx/interface/banner_right_2.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_band_reorg_carolean"
+		texturefile = "gfx/interface/band_reorg_carolean.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_unit_levels_indicator"
+		texturefile = "gfx/interface/cont_focus_check_icon.dds"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	
+	
 }

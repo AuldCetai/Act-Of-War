@@ -1,0 +1,10 @@
+#check if player has any stratagem unlocked already
+acw_has_stratagem = {
+		OR = {
+							has_country_flag = acw_stratagem_rom_selected
+							has_country_flag = acw_stratagem_sfp_selected
+							has_country_flag = acw_stratagem_dod_selected
+							has_country_flag = acw_stratagem_trc_selected
+							has_country_flag = acw_stratagem_has_selected
+							}
+}
