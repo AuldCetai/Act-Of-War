@@ -10,31 +10,31 @@ defined_text = {
 				has_country_modifier = acw_stratagem_rom_t2
 				has_country_modifier = acw_stratagem_rom_t3
 				has_country_modifier = acw_stratagem_rom_t4
-				has_country_modifier = acw_stratagem_rom_t5
+				has_country_modifier = acw_stratagem_rom_t1
 			
 				has_country_modifier = acw_stratagem_sfp_selected 
 				has_country_modifier = acw_stratagem_sfp_t2
 				has_country_modifier = acw_stratagem_sfp_t3
 				has_country_modifier = acw_stratagem_sfp_t4
-				has_country_modifier = acw_stratagem_sfp_t5
+				has_country_modifier = acw_stratagem_sfp_t1
 				
 				has_country_modifier = acw_stratagem_trc_selected 
 				has_country_modifier = acw_stratagem_trc_t2
 				has_country_modifier = acw_stratagem_trc_t3
 				has_country_modifier = acw_stratagem_trc_t4
-				has_country_modifier = acw_stratagem_trc_t5
+				has_country_modifier = acw_stratagem_trc_t1
 				
 				has_country_modifier = acw_stratagem_has_selected 
 				has_country_modifier = acw_stratagem_has_t2
 				has_country_modifier = acw_stratagem_has_t3
 				has_country_modifier = acw_stratagem_has_t4
-				has_country_modifier = acw_stratagem_has_t5
+				has_country_modifier = acw_stratagem_has_t1
 				
 				has_country_modifier = acw_stratagem_dod_selected 
 				has_country_modifier = acw_stratagem_dod_t2
 				has_country_modifier = acw_stratagem_dod_t3
 				has_country_modifier = acw_stratagem_dod_t4
-				has_country_modifier = acw_stratagem_dod_t5
+				has_country_modifier = acw_stratagem_dod_t1
 			
 			}
 		}

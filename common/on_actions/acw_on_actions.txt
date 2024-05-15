@@ -1,0 +1,8 @@
+#on_new_age = {
+#	#remove all armament bonuses
+#	
+#	if = {limit = {current_age = age_of_discovery} remove_country_modifier = }
+#	if = {limit = {current_age = age_of_reformation} remove_country_modifier = }
+#	if = {limit = {current_age = age_of_reformation} remove_country_modifier = }
+#	if = {limit = {current_age = age_of_reformation} remove_country_modifier = }
+#}

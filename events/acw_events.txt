@@ -1,0 +1,64 @@
+namespace = acw
+
+#Feats of Horsemanship
+country_event = {
+	id = acw_hd_1 
+	title = acw_hd_1.t 
+	desc = acw_hd_1.d
+	picture = KING_SICK_IN_BED_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_1.a"
+		custom_tooltip = acw_hd_1.tt
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_1
+					add_country_modifier = { 
+										hidden = yes
+										name = acw_hd_feats_of_horsemanship
+										duration = -1
+						}
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_1
+					add_country_modifier = { 
+										hidden = yes
+										name = acw_hd_feats_of_horsemanship
+										duration = -1
+						}
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_1
+					add_country_modifier = { 
+										hidden = yes
+										name = acw_hd_feats_of_horsemanship
+										duration = -1
+						}
+				}	
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_1.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+}

@@ -16,5 +16,15 @@
  acw_army_window_artillery_levels_indicator_text:0"Artillery upgrades"
  acw_army_window_camp_followers_text:0"Chevauchee"
  acw_army_stratagem_text:"$acw_stratagem_text_loc$"
-
+ acw_hd_arma_back_button_text:0"Back"
+ acw_infantry_levels_bar_t1a:0"Infantry Skill Tier I A"
+ acw_infantry_levels_bar_t1b:0"Infantry Skill Tier I B"  
+ 
+ 
+ #heroic deeds events
+ acw_hd_1.t:0"Feats of Horsemanship"
+ acw_hd_1.d:0"'Amongst their feats of riding, there is one that has astonished me more than anything of the kind I have ever seen, or expect to see, in my life - a stratagem of war, learned and practiced by every young man in the tribe....'\n\n§YComanche Feats of Horsemanship§! is a 1834-35 oil on canvas painting by artist §GGeorge Catlin§!"
+ acw_hd_1.tt:0"Country gains §YFeats of Horsemanship§! until the end of the game, granting the following bonus: \n§G+10%§! Cavalry combat ability"
+ acw_hd_1.a:0"Comission a masterwork!"
+ acw_hd_1.b:0"Marvelous!"
  

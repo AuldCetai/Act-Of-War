@@ -1071,6 +1071,52 @@ custom_button = {
 }
 
 #upgrade skills 
+#dividers
+custom_icon = {
+	name = acw_divider_inf_t1
+	potential = {has_country_flag = acw_background_open_already} 
+	}
+
+custom_icon = {
+	name = acw_divider_inf_t2
+	potential = {has_country_flag = acw_background_open_already} 
+	}
+	
+custom_icon = {
+	name = acw_divider_inf_t3
+	potential = {has_country_flag = acw_background_open_already} 
+	}
+
+custom_icon = {
+	name = acw_divider_cav_t1
+	potential = {has_country_flag = acw_background_open_already} 
+	}
+
+custom_icon = {
+	name = acw_divider_cav_t2
+	potential = {has_country_flag = acw_background_open_already} 
+	}
+	
+custom_icon = {
+	name = acw_divider_cav_t3
+	potential = {has_country_flag = acw_background_open_already} 
+	}
+	
+custom_icon = {
+	name = acw_divider_arty_t1
+	potential = {has_country_flag = acw_background_open_already} 
+	}
+
+custom_icon = {
+	name = acw_divider_arty_t2
+	potential = {has_country_flag = acw_background_open_already} 
+	}
+	
+custom_icon = {
+	name = acw_divider_arty_t3
+	potential = {has_country_flag = acw_background_open_already} 
+	}
+	
 #infantry
 custom_button = {
 	name = acw_infantry_levels_bar_t1a
@@ -1078,7 +1124,7 @@ custom_button = {
 	trigger = {
 				AND = {
 					NOT = { had_country_flag = { flag = acw_infantry_temp_skill_t1_picked
-												days = 10650}
+												days = 9150}
 												}
 					has_country_modifier = acw_infantry_upgrade_t3
 					army_professionalism = 0.2
@@ -1087,7 +1133,7 @@ custom_button = {
 	effect = { add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_infantry_temp_skill_t1a
-					duration = 10650 }
+					duration = 3650 }
 				set_country_flag = acw_infantry_temp_skill_t1_picked
 			}
 }
@@ -1449,7 +1495,7 @@ custom_button = {
     potential = {has_country_flag = acw_background_open_already} 
   	trigger = { }
   	effect = { 
-		
+		set_country_flag = acw_hd_arma_bg_open
 	}
 }
 
@@ -1458,7 +1504,7 @@ custom_button = {
     potential = {has_country_flag = acw_background_open_already} 
   	trigger = { }
   	effect = { 
-		
+		set_country_flag = acw_hd_arma_bg_open
 	}
 }
 
@@ -1467,7 +1513,7 @@ custom_button = {
     potential = {has_country_flag = acw_background_open_already} 
   	trigger = { }
   	effect = { 
-		
+		set_country_flag = acw_hd_arma_bg_open
 	}
 }
 
@@ -1476,7 +1522,7 @@ custom_button = {
     potential = {has_country_flag = acw_background_open_already} 
   	trigger = { }
   	effect = { 
-		
+		set_country_flag = acw_hd_arma_bg_open
 	}
 }	
 		
@@ -1489,18 +1535,22 @@ custom_text_box = {
 	
 custom_icon = {
 	name = acw_hd_title_banner
-    potential = {has_country_flag = acw_background_open_already} 
+    potential = {has_country_flag = acw_background_open_already}
+	
 	}
 	
 #hd_arma selector window
 custom_icon = {
 	name = acw_hd_arma_selector_window_bg
-	potential = {has_country_flag = acw_hd_arma_bg_open} 
+	potential = {	has_country_flag = acw_hd_arma_bg_open
+					has_country_flag = acw_background_open_already} 
 	}
 
 custom_button = {
 	name = acw_hd_arma_selector_window_close
-    potential = {has_country_flag = acw_hd_arma_bg_open} 
+    potential = {
+						has_country_flag = acw_hd_arma_bg_open
+						has_country_flag = acw_background_open_already} 
   	trigger = { 
 				has_country_flag = acw_hd_arma_bg_open
 				}
@@ -1509,45 +1559,43 @@ custom_button = {
 	}
 }
 
-custom_button = {
-	name = acw_hd_slot_1 
-    potential = {has_country_flag = acw_background_open_already} 
-  	trigger = { NOT = {has_country_flag = acw_hd_slot_1_x}
-				NOT = {has_country_flag = acw_hd_arma_bg_open}
-				}
-  	effect = { 
-		set_country_flag = acw_hd_arma_bg_open
-	}
+custom_text_box = {
+	name = acw_hd_arma_back_button_text
+	potential ={has_country_flag = acw_hd_arma_bg_open
+						has_country_flag = acw_background_open_already}
 }
 
-custom_button = {
+#heroic deeds icons
+custom_icon = {
+	name = acw_hd_slot_1 
+    potential = {has_country_flag = acw_background_open_already}
+	
+	
+}
+
+custom_icon = {
 	name = acw_hd_slot_2
     potential = {has_country_flag = acw_background_open_already} 
-  	trigger = { }
-  	effect = { 
-		
-	}
 }
 
-custom_button = {
-	name = acw_hd_slot_3 
+custom_icon = {
+	name = acw_hd_slot_3
     potential = {has_country_flag = acw_background_open_already} 
-  	trigger = { }
-  	effect = { 
-		
-	}
 }
 
-custom_button = {
-	name = acw_hd_slot_4
-    potential = {has_country_flag = acw_background_open_already} 
-  	trigger = { }
-  	effect = { 
-		
-	}
-}	
-		
 
+
+#hd pictures
+
+custom_icon = {
+	name = acw_hd_test_1
+    potential = {	has_country_flag = acw_background_open_already} 
+	frame = {	number = 2
+				trigger = {has_country_flag = acw_hd_s1_1}
+				}
+					
+					
+}
 
 #background window
 custom_icon = {
@@ -1603,15 +1651,16 @@ custom_button = {
 #stratagem selector menu
 custom_button = {
 	name = acw_stratagem_exit_button
-    potential = {has_country_flag = acw_stratagem_window_open_flag
-				OR = { 	
-					NOT = { has_country_flag = acw_stratagem_sfp_selected 
-							has_country_flag = acw_stratagem_trc_selected
-							has_country_flag = acw_stratagem_rom_selected
-							has_country_flag = acw_stratagem_dod_selected
-							has_country_flag = acw_stratagem_has_selected
+    potential = {	has_country_flag = acw_background_open_already
+					has_country_flag = acw_stratagem_window_open_flag
+					OR = { 	
+						NOT = { has_country_flag = acw_stratagem_sfp_selected 
+								has_country_flag = acw_stratagem_trc_selected
+								has_country_flag = acw_stratagem_rom_selected
+								has_country_flag = acw_stratagem_dod_selected
+								has_country_flag = acw_stratagem_has_selected
+								}
 							}
-						}
 					}
   	trigger = { }
   	effect = { 
@@ -1622,26 +1671,36 @@ custom_button = {
 #lock the icon
 custom_icon = {
 	name = acw_stratagem_selector_button_sfp
-	potential = {has_country_flag = acw_stratagem_sfp_selected} 
+	potential = {
+				has_country_flag = acw_background_open_already
+				has_country_flag = acw_stratagem_sfp_selected} 
 	}
 custom_icon = {
 	name = acw_stratagem_selector_button_trc
-	potential = {has_country_flag = acw_stratagem_trc_selected} 
+	potential = {	
+				has_country_flag = acw_background_open_already
+				has_country_flag = acw_stratagem_trc_selected} 
 	
 	}
 custom_icon = {
 	name = acw_stratagem_selector_button_rom
-	potential = {has_country_flag = acw_stratagem_rom_selected} 
+	potential = {
+				has_country_flag = acw_background_open_already
+				has_country_flag = acw_stratagem_rom_selected} 
 	
 	}
 custom_icon = {
 	name = acw_stratagem_selector_button_dod
-	potential = {has_country_flag = acw_stratagem_dod_selected} 
+	potential = {
+				has_country_flag = acw_background_open_already
+				has_country_flag = acw_stratagem_dod_selected} 
 	
 	}
 custom_icon = {
 	name = acw_stratagem_selector_button_has
-	potential = {has_country_flag = acw_stratagem_has_selected} 
+	potential = {
+				has_country_flag = acw_background_open_already
+				has_country_flag = acw_stratagem_has_selected} 
 	
 	}
 
@@ -2002,6 +2061,7 @@ custom_icon = {
 	name = acw_stratagem_window
 	potential = {
 		has_country_flag = acw_stratagem_window_open_flag
+		has_country_flag = acw_background_open_already
 	}
 }
 
