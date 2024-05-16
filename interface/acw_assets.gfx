@@ -275,10 +275,10 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_acw_hd_test_1"
+		name = "GFX_acw_hd_image"
 		texturefile = "gfx/interface/acw_hd_test_1.dds"
 		transparencecheck = yes
-		noOfFrames = 2
+		noOfFrames = 21
 	}
 	
 	
