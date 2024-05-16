@@ -2684,7 +2684,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "acw_hd_image_1"
-				position = { x=1100 y =360}
+				position = { x=1110 y =370}
 				quadTextureSprite ="GFX_acw_hd_image"
 				Orientation = "UPPER_LEFT"
 				scripted = yes
@@ -2694,7 +2694,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "acw_hd_image_2"
-				position = { x=1100 y =440}
+				position = { x=1110 y =450}
 				quadTextureSprite ="GFX_acw_hd_image"
 				Orientation = "UPPER_LEFT"
 				scripted = yes
@@ -2704,7 +2704,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "acw_hd_image_3"
-				position = { x=1100 y =520}
+				position = { x=1110 y =530}
 				quadTextureSprite ="GFX_acw_hd_image"
 				Orientation = "UPPER_LEFT"
 				scripted = yes

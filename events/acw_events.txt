@@ -2,10 +2,10 @@ namespace = acw
 
 #Feats of Horsemanship
 country_event = {
-	id = acw_hd_1 
+	id = acw_hd.1 
 	title = acw_hd_1.t 
 	desc = acw_hd_1.d
-	picture = KING_SICK_IN_BED_eventPicture #replace
+	picture = GFX_acw_hd_feats_of_horsemanship
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -32,9 +32,11 @@ country_event = {
 		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
 					set_country_flag = acw_hd_s3_1
 				}
+				
+		ELSE = {}
 		
 		add_country_modifier = { 
-										name = _acw_hd_feats_of_horsemanship
+										name = acw_hd_feats_of_horsemanship
 										duration = -1
 						}
 				
@@ -50,14 +52,15 @@ country_event = {
 		ai_chance = {
 			factor = 50	
 		}	
+	}
 }
 
 #The Winged Hussars Arrive
 country_event = {
-	id = acw_hd_2 
+	id = acw_hd.2 
 	title = acw_hd_2.t 
 	desc = acw_hd_2.d
-	picture = KING_SICK_IN_BED_eventPicture #replace
+	picture = GFX_acw_hd_winged_hussars_arrive
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -101,14 +104,15 @@ country_event = {
 		ai_chance = {
 			factor = 50	
 		}	
+	}
 }
 
 #The Surrender of Breda
 country_event = {
-	id = acw_hd_3 
+	id = acw_hd.3 
 	title = acw_hd_3.t 
 	desc = acw_hd_3.d
-	picture = KING_SICK_IN_BED_eventPicture #replace
+	picture = GFX_acw_hd_surrender_of_breda
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -153,4 +157,5 @@ country_event = {
 		ai_chance = {
 			factor = 50	
 		}	
+	}
 }

@@ -23,8 +23,20 @@
  
  #heroic deeds events
  acw_hd_1.t:0"Feats of Horsemanship"
- acw_hd_1.d:0"'Amongst their feats of riding, there is one that has astonished me more than anything of the kind I have ever seen, or expect to see, in my life - a stratagem of war, learned and practiced by every young man in the tribe....'\n\n§YComanche Feats of Horsemanship§! is a 1834-35 oil on canvas painting by artist §GGeorge Catlin§!"
+ acw_hd_1.d:0"'Amongst their feats of riding, there is one that has astonished me more than anything of the kind I have ever seen, or expect to see, in my life - a stratagem of war, learned and practiced by every young man in the tribe....'\n\n§BComanche Feats of Horsemanship§! is a 1834-35 oil on canvas painting by artist §GGeorge Catlin§!"
  acw_hd_1.tt:0"Country gains §YFeats of Horsemanship§! until the end of the game, granting the following bonus: \n§G+10%§! Cavalry combat ability"
  acw_hd_1.a:0"Comission a masterwork!"
  acw_hd_1.b:0"Marvelous!"
+ acw_hd_feats_of_horsemanship:0"Feats of Horsemanship"
+ acw_hd_2.t:0"The Winged Hussars Arrive"
+ acw_hd_2.d:0"'A cry for help in time of need, await relief from holy league\n60 days of siege, outnumbered and weak\nSent a message to the sky, wounded soldiers left to die\nWill they hold the wall or will the city fall'\n §RSabaton - Winged Hussars§!\n\n§BJan Sobieski at Vienna§! painting by §GJan Matejko§!, 1883."
+ acw_hd_2.a:0"Comission a masterwork!"
+ acw_hd_2.b:0"Marvelous!"
+ acw_hd_winged_hussars_arrive:0"The Winged Hussars Arrive"
+ acw_hd_3.t:0"The Surrender of Breda"
+ acw_hd_3.d:0"'According to the statement made by eye-witnesses, both generals had dismounted and Spinola awaited the arrival of Justin surrounded by a 'crown' of princes and officers of high birth. The governor then presented himself with his family, kinsfolk and distinguished students of the military academy, who had been shut up in the place during the siege. Spinola greeted and embraced his vanquished opponent with a kindly expression and still more kindly words, in which praised the courage and endurance of the protracted defense.'\n\n§BLa rendición de Breda§! is a painting by the @SPA Spanish Golden Age painter §GDiego Velázquez§!, completed in 1635."
+ acw_hd_3.a:0"Comission a masterwork!"
+ acw_hd_3.b:0"Marvelous!"
+ acw_hd_surrender_of_breda:0"The Surrender of Breda"
+ 
  

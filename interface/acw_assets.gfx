@@ -281,5 +281,22 @@ spriteTypes = {
 		noOfFrames = 21
 	}
 	
+	spriteType = {
+		name = "GFX_acw_hd_feats_of_horsemanship"
+		texturefile = "gfx/event_pictures/acw_hd_feats_of_horsemanship.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_hd_winged_hussars_arrive"
+		texturefile = "gfx/event_pictures/acw_hd_winged_hussars_arrive.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_hd_surrender_of_breda"
+		texturefile = "gfx/event_pictures/acw_hd_surrender_of_breda.dds"
+		transparencecheck = yes
+	}
 	
 }

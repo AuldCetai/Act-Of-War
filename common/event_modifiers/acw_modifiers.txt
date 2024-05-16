@@ -385,5 +385,13 @@ acw_arma_slot_4_armprof = {
 acw_hd_feats_of_horsemanship = {
 				cavalry_power = 0.10
 		}
+		
+acw_hd_winged_hussars_arrive = {
+				cavalry_shock = 1
+		}
+		
+acw_hd_surrender_of_breda = {
+				assault_fort_ability = 0.05
+		}
 
 				
