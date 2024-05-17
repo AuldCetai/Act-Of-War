@@ -365,19 +365,7 @@ acw_artillery_temp_skill_t3b = {
 					}
 					
 #armaments
-acw_arma_slot_1_armprof = {
-				yearly_army_professionalism = 0.01
-				}
-
-acw_arma_slot_2_armprof = {
-				yearly_army_professionalism = 0.01
-				}
-				
-acw_arma_slot_3_armprof = {
-				yearly_army_professionalism = 0.01
-				}
-				
-acw_arma_slot_4_armprof = {
+acw_arma_armprof = {
 				yearly_army_professionalism = 0.01
 				}
 				
@@ -394,4 +382,42 @@ acw_hd_surrender_of_breda = {
 				assault_fort_ability = 0.05
 		}
 
-				
+acw_hd_consequences_of_war = {
+				war_exhaustion = -0.03
+		}
+
+acw_hd_death_of_major_peirson = {
+				yearly_army_professionalism = 0.01
+		}
+		
+acw_hd_revolt_in_cairo  = {
+				prestige_from_land = 0.10
+		}
+		
+acw_hd_third_of_may	= {
+				garrison_damage = 0.5
+		}
+		
+acw_hd_crossing_the_delaware = {
+				movement_speed = 0.10
+		}
+		
+acw_hd_charge_of_lancers = {
+				cav_to_inf_ratio = 0.10
+		}
+		
+acw_hd_tahmuras_Defeating_the_Divs = {
+				army_tradition_from_battle = 0.01
+		}
+		
+acw_hd_conquista_de_mexico_por_cortes = {
+				leader_land_fire = 1
+		}
+		
+acw_hd_die_schlacht_bei_den_pyramiden = {
+				artillery_barrage_cost = -0.05
+		}
+
+acw_hd_battle_of_carnal	= {
+				loot_amount = 0.20
+		}	

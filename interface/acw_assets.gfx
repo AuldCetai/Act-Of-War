@@ -299,4 +299,65 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	
+	spriteType = {
+		name = "GFX_acw_hd_consequences_of_war"
+		texturefile = "gfx/event_pictures/acw_hd_consequences_of_war.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_hd_death_of_major_peirson"
+		texturefile = "gfx/event_pictures/acw_hd_death_of_major_peirson.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_hd_revolt_in_cairo"
+		texturefile = "gfx/event_pictures/acw_hd_revolt_in_cairo.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_hd_third_of_may"
+		texturefile = "gfx/event_pictures/acw_hd_third_of_may.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_hd_crossing_the_delaware"
+		texturefile = "gfx/event_pictures/acw_hd_crossing_the_delaware.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_hd_charge_of_lancers"
+		texturefile = "gfx/event_pictures/acw_hd_charge_of_lancers.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_hd_tahmuras_Defeating_the_Divs"
+		texturefile = "gfx/event_pictures/acw_hd_tahmuras_Defeating_the_Divs.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_hd_conquista_de_mexico_por_cortes"
+		texturefile = "gfx/event_pictures/acw_hd_conquista_de_mexico_por_cortes.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_hd_die_schlacht_bei_den_pyramiden"
+		texturefile = "gfx/event_pictures/acw_hd_die_schlacht_bei_den_pyramiden.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_hd_battle_of_carnal"
+		texturefile = "gfx/event_pictures/acw_hd_battle_of_carnal.dds"
+		transparencecheck = yes
+	}
+	
+	
 }
