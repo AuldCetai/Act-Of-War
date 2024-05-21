@@ -359,5 +359,46 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	
+	spriteType = {
+		name = "GFX_acw_hd_battle_of_carnal"
+		texturefile = "gfx/event_pictures/acw_hd_battle_of_carnal.dds"
+		transparencecheck = yes
+	}
 	
+	SpriteType = {		
+		name = "GFX_acw_hd_hadik_in_berlin"
+		texturefile = "gfx/event_pictures/acw_hd_hadik_in_berlin.dds"
+		transparencecheck = yes
+	}	
+
+	SpriteType = {		
+		name = "GFX_acw_hd_siege_of_constantinople"
+		texturefile = "gfx/event_pictures/acw_hd_siege_of_constantinople.dds"
+		transparencecheck = yes
+	}	
+
+	SpriteType = {		
+		name = "GFX_acw_hd_night_attack_on_targoviste"
+		texturefile = "gfx/event_pictures/acw_hd_night_attack_on_targoviste.dds"
+		transparencecheck = yes
+	}	
+	
+	SpriteType = {		
+		name = "GFX_acw_hd_battle_of_kartarpur"
+		texturefile = "gfx/event_pictures/acw_hd_battle_of_kartarpur.dds"
+		transparencecheck = yes
+	}	
+
+	SpriteType = {		
+		name = "GFX_acw_hd_battle_of_adwa"
+		texturefile = "gfx/event_pictures/acw_hd_battle_of_adwa.dds"
+		transparencecheck = yes
+	}	
+
+	SpriteType = {		
+		name = "GFX_acw_hd_battle_of_badr"
+		texturefile = "gfx/event_pictures/acw_hd_battle_of_badr.dds"
+		transparencecheck = yes
+	}	
+
 }

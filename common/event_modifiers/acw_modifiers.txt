@@ -421,3 +421,28 @@ acw_hd_die_schlacht_bei_den_pyramiden = {
 acw_hd_battle_of_carnal	= {
 				loot_amount = 0.20
 		}	
+
+acw_hd_hadik_in_berlin = {
+				movement_speed = 0.10
+		}
+		
+acw_hd_siege_of_constantinople	 = {			
+				reinforce_speed = 0.05
+	}			
+
+acw_hd_night_attack_on_targoviste	 = {			
+				infantry_power = 0.10
+	}			
+
+acw_hd_battle_of_kartarpur	 = {			
+				manpower_in_true_faith_provinces= 0.10
+	}			
+
+acw_hd_battle_of_adwa	 = {			
+				leader_land_shock = 1
+	}			
+		
+		
+acw_hd_battle_of_mactan	 = {	
+				leader_land_manuever = 1
+	}	
