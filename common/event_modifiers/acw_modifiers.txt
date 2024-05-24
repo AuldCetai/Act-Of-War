@@ -407,7 +407,7 @@ acw_hd_charge_of_lancers = {
 		}
 		
 acw_hd_tahmuras_Defeating_the_Divs = {
-				army_tradition_from_battle = 0.01
+				army_tradition_from_battle = 0.33
 		}
 		
 acw_hd_conquista_de_mexico_por_cortes = {
@@ -441,7 +441,10 @@ acw_hd_battle_of_kartarpur	 = {
 acw_hd_battle_of_adwa	 = {			
 				leader_land_shock = 1
 	}			
-		
+
+acw_hd_battle_of_badr	 = {			
+				morale_damage_received = -0.025
+	}			
 		
 acw_hd_battle_of_mactan	 = {	
 				leader_land_manuever = 1

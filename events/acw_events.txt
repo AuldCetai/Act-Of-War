@@ -1,4 +1,4 @@
-namespace = acw
+namespace = acw_hd
 
 #Feats of Horsemanship
 country_event = {
@@ -111,6 +111,7 @@ country_event = {
 country_event = {
 	id = acw_hd.3 
 	title = acw_hd_3.t 
+	
 	desc = acw_hd_3.d
 	picture = GFX_acw_hd_surrender_of_breda
 	is_triggered_only = yes
@@ -159,3 +160,1032 @@ country_event = {
 		}	
 	}
 }
+
+
+#Consequences of War
+country_event = {
+	id = acw_hd.4
+	title = acw_hd_4.t 
+	desc = acw_hd_4.d
+	picture = GFX_acw_hd_consequences_of_war
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_4.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_4
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_4
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_4
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_consequences_of_war
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_4.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+#The Death of Major Peirson
+
+country_event = {
+	id = acw_hd.5 
+	title = acw_hd_5.t 
+	desc = acw_hd_5.d
+	picture = GFX_acw_hd_death_of_major_peirson
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_5.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_5
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_5
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_5
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_death_of_major_peirson
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_5.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#Revolt of Cairo
+
+country_event = {
+	id = acw_hd.6
+	title = acw_hd_6.t 
+	desc = acw_hd_6.d
+	picture = GFX_acw_hd_revolt_in_cairo
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_6.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_6
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_6
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_6
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_revolt_in_cairo
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_6.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#The Third of May
+country_event = {
+	id = acw_hd.7
+	title = acw_hd_7.t 
+	desc = acw_hd_7.d
+	picture = GFX_acw_hd_third_of_may
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_7.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_7
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_7
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_5
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_third_of_may
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_7.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#Crossing the Delaware
+
+country_event = {
+	id = acw_hd.8
+	title = acw_hd_8.t 
+	desc = acw_hd_8.d
+	picture = GFX_acw_hd_crossing_the_delaware
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_8.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_8
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_8
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_8
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_crossing_the_delaware
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_8.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#The Charge of Lancers
+
+country_event = {
+	id = acw_hd.9
+	title = acw_hd_9.t 
+	desc = acw_hd_9.d
+	picture = GFX_acw_hd_charge_of_lancers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_9.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_9
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_9
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_9
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_charge_of_lancers
+
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_9.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#Tahmuras Defeating the Divs
+
+country_event = {
+	id = acw_hd.10
+	title = acw_hd_10.t 
+	desc = acw_hd_10.d
+	picture = GFX_acw_hd_tahmuras_Defeating_the_Divs
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_10.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_10
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_10
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_10
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_tahmuras_Defeating_the_Divs
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_10.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#Conquista de México por Cortés
+country_event = {
+	id = acw_hd.11
+	title = acw_hd_11.t 
+	desc = acw_hd_11.d
+	picture = GFX_acw_hd_conquista_de_mexico_por_cortes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_11.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_11
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_11
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_11
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_conquista_de_mexico_por_cortes
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_11.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#Die Schlacht bei den Pyramiden
+
+country_event = {
+	id = acw_hd.12
+	title = acw_hd_12.t 
+	desc = acw_hd_12.d
+	picture = GFX_acw_hd_die_schlacht_bei_den_pyramiden
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_12.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_12
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_12
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_12
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_die_schlacht_bei_den_pyramiden
+
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_12.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#	Battle of Karnal
+
+country_event = {
+	id = acw_hd.13 
+	title = acw_hd_13.t 
+	desc = acw_hd_13.d
+	picture = GFX_acw_hd_battle_of_carnal
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_13.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_13
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_13
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_13
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_battle_of_carnal
+
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_13.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+
+#Hadik in Berlin
+country_event = {
+	id = acw_hd.14 
+	title = acw_hd_14.t 
+	desc = acw_hd_14.d
+	picture = GFX_acw_hd_hadik_in_berlin
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_14.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_14
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_14
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_14
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_hadik_in_berlin
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_14.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#The Siege of Constantinople
+
+country_event = {
+	id = acw_hd.15
+	title = acw_hd_15.t 
+	desc = acw_hd_15.d
+	picture = GFX_acw_hd_siege_of_constantinople
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_15.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_15
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_15
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_15
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_siege_of_constantinople
+
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_15.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#The Night Attack of Târgovişte
+
+country_event = {
+	id = acw_hd.16 
+	title = acw_hd_16.t 
+	desc = acw_hd_16.d
+	picture = GFX_acw_hd_night_attack_on_targoviste
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_16.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_16
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_16
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_16
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_night_attack_on_targoviste
+
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_16.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#The Battle of Kartarpur
+
+country_event = {
+	id = acw_hd.17
+	title = acw_hd_17.t 
+	desc = acw_hd_17.d
+	picture = GFX_acw_hd_battle_of_kartarpur
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_17.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_17
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_17
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_17
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_battle_of_kartarpur
+
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_17.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#The Battle of Adwa
+
+country_event = {
+	id = acw_hd.18 
+	title = acw_hd_18.t 
+	desc = acw_hd_18.d
+	picture = GFX_acw_hd_battle_of_adwa
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_18.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_18
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_18
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_18
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_battle_of_adwa
+
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_18.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#The Battle of Badr
+
+country_event = {
+	id = acw_hd.19
+	title = acw_hd_19.t 
+	desc = acw_hd_19.d
+	picture = GFX_acw_hd_battle_of_badr
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_19.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_19
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_19
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_19
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_battle_of_badr
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_19.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#The Battle of Mactan
+country_event = {
+	id = acw_hd.20
+	title = acw_hd_20.t 
+	desc = acw_hd_20.d
+	picture = GFX_acw_hd_battle_of_mactan
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_20.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_20
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_20
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_20
+				}
+		
+		add_country_modifier = { 
+										name = acw_hd_battle_of_mactan
+
+										duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_20.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+}
+
+
+#removeall
+country_event = {
+	id = acw_hd.21
+	title = acw_hd_21.t 
+	desc = acw_hd_21.d
+	picture = GFX_acw_hd_die_schlacht_bei_den_pyramiden
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = "acw_hd_21.a"
+			clr_country_flag = acw_hd_s1_1
+			clr_country_flag = acw_hd_s1_2
+			clr_country_flag = acw_hd_s1_3
+			clr_country_flag = acw_hd_s1_4
+			clr_country_flag = acw_hd_s1_5
+			clr_country_flag = acw_hd_s1_6
+			clr_country_flag = acw_hd_s1_7
+			clr_country_flag = acw_hd_s1_8
+			clr_country_flag = acw_hd_s1_9
+			clr_country_flag = acw_hd_s1_10
+			clr_country_flag = acw_hd_s1_11
+			clr_country_flag = acw_hd_s1_12
+			clr_country_flag = acw_hd_s1_13
+			clr_country_flag = acw_hd_s1_14
+			clr_country_flag = acw_hd_s1_15
+			clr_country_flag = acw_hd_s1_16
+			clr_country_flag = acw_hd_s1_17
+			clr_country_flag = acw_hd_s1_18
+			clr_country_flag = acw_hd_s1_19
+			clr_country_flag = acw_hd_s1_20
+
+			clr_country_flag = acw_hd_s2_1
+			clr_country_flag = acw_hd_s2_2
+			clr_country_flag = acw_hd_s2_3
+			clr_country_flag = acw_hd_s2_4
+			clr_country_flag = acw_hd_s2_5
+			clr_country_flag = acw_hd_s2_6
+			clr_country_flag = acw_hd_s2_7
+			clr_country_flag = acw_hd_s2_8
+			clr_country_flag = acw_hd_s2_9
+			clr_country_flag = acw_hd_s2_10
+			clr_country_flag = acw_hd_s2_11
+			clr_country_flag = acw_hd_s2_12
+			clr_country_flag = acw_hd_s2_13
+			clr_country_flag = acw_hd_s2_14
+			clr_country_flag = acw_hd_s2_15
+			clr_country_flag = acw_hd_s2_16
+			clr_country_flag = acw_hd_s2_17
+			clr_country_flag = acw_hd_s2_18
+			clr_country_flag = acw_hd_s2_19
+			clr_country_flag = acw_hd_s2_20
+			
+			clr_country_flag = acw_hd_s3_1
+			clr_country_flag = acw_hd_s3_2
+			clr_country_flag = acw_hd_s3_3
+			clr_country_flag = acw_hd_s3_4
+			clr_country_flag = acw_hd_s3_5
+			clr_country_flag = acw_hd_s3_6
+			clr_country_flag = acw_hd_s3_7
+			clr_country_flag = acw_hd_s3_8
+			clr_country_flag = acw_hd_s3_9
+			clr_country_flag = acw_hd_s3_10
+			clr_country_flag = acw_hd_s3_11
+			clr_country_flag = acw_hd_s3_12
+			clr_country_flag = acw_hd_s3_13
+			clr_country_flag = acw_hd_s3_14
+			clr_country_flag = acw_hd_s3_15
+			clr_country_flag = acw_hd_s3_16
+			clr_country_flag = acw_hd_s3_17
+			clr_country_flag = acw_hd_s3_18
+			clr_country_flag = acw_hd_s3_19
+			clr_country_flag = acw_hd_s3_20
+	}		
+}
+
+

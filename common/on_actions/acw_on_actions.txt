@@ -6,3 +6,86 @@
 #	if = {limit = {current_age = age_of_reformation} remove_country_modifier = }
 #	if = {limit = {current_age = age_of_reformation} remove_country_modifier = }
 #}
+
+
+# country
+# root = winning country, from = location
+on_siege_won_country = {
+	if = {
+		limit = {
+			from = { 	province_id = 50
+						controlled_by = HUN}
+			}
+			
+			HUN = { country_event = { id = acw_hd.14 } } # Hadik in Berlin
+	}
+	
+	if = {
+		limit = {
+			from = { 	province_id = 95
+						controlled_by = SPA}
+			}
+			
+			SPA = { country_event = { id = acw_hd.3 } } # Surrender of Breda
+		}
+}
+
+# country
+# root = winning country, from = loser country
+on_battle_won_country = {
+		on_battle_ended_effect = yes
+		on_battle_won_country_effect = yes
+		
+		if = {
+			limit = {	
+				from = TUR
+				has_global_flag = acw_turks_lost_at_wien
+				root = { 
+					is_in_war = {attackers = TUR}
+					}
+				}
+		country_event = { id = acw_hd.2  }  # Winged Hussars
+		clr_global_flag = acw_turks_lost_at_wien
+		}
+		
+		if = {
+			limit = {	
+				from = 	{ primitives = no }
+				root = 	{ primitives = yes }
+				}
+			root = { country_event = { id = acw_hd.1  } } #Feats of Horsemanship
+			}
+			
+		if = {
+			limit = {	
+				from = GBR
+				has_global_flag = acw_french_lost_in_america
+				root = { 
+					is_in_war = {attackers = FRA}
+					}
+				}
+		root = { country_event = { id = acw_hd.5  } } # The Death of Major Peirson
+		clr_global_flag = acw_french_lost_in_america
+		}
+			
+		
+}
+				
+# province
+# root = location  from = loser
+on_battle_won_province = {
+	if = {
+		limit = {
+			root = { province_id = 134}
+			from = TUR }
+		set_global_flag = acw_turks_lost_at_wien
+	}
+	
+	if = {
+		limit = {
+			root = { superregion = north_america_superregion }
+			from = FRA }
+		set_global_flag = acw_french_lost_in_america
+	}
+}
+		

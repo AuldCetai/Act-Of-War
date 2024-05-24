@@ -1123,10 +1123,18 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_infantry_temp_skill_t1_picked
+					had_country_flag = { flag = acw_infantry_temp_skill_t1_picked
 												days = 9150}
-												}
-					has_country_modifier = acw_infantry_upgrade_t3
+												
+					OR = {
+								has_country_modifier = acw_infantry_upgrade_t3
+								has_country_modifier = acw_infantry_upgrade_t4
+								has_country_modifier = acw_infantry_upgrade_t5
+								has_country_modifier = acw_infantry_upgrade_t6
+								has_country_modifier = acw_infantry_upgrade_t7
+								has_country_modifier = acw_infantry_upgrade_t8
+								has_country_modifier = acw_infantry_upgrade_t9
+						}
 					army_professionalism = 0.2
 					}
 			}
@@ -1143,10 +1151,18 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_infantry_temp_skill_t1_picked
+					had_country_flag = { flag = acw_infantry_temp_skill_t1_picked
 												days = 10650}
-												}
-					has_country_modifier = acw_infantry_upgrade_t3
+												
+					OR = {
+								has_country_modifier = acw_infantry_upgrade_t3
+								has_country_modifier = acw_infantry_upgrade_t4
+								has_country_modifier = acw_infantry_upgrade_t5
+								has_country_modifier = acw_infantry_upgrade_t6
+								has_country_modifier = acw_infantry_upgrade_t7
+								has_country_modifier = acw_infantry_upgrade_t8
+								has_country_modifier = acw_infantry_upgrade_t9
+						}
 					army_professionalism = 0.2
 					}
 			}
@@ -1163,10 +1179,15 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_infantry_temp_skill_t2_picked
+					had_country_flag = { flag = acw_infantry_temp_skill_t2_picked
 												days = 10650}
-												}
-					has_country_modifier = acw_infantry_upgrade_t6
+												
+					OR = {
+								has_country_modifier = acw_infantry_upgrade_t6
+								has_country_modifier = acw_infantry_upgrade_t7
+								has_country_modifier = acw_infantry_upgrade_t8
+								has_country_modifier = acw_infantry_upgrade_t9
+						}
 					army_professionalism = 0.2
 					}
 			}
@@ -1183,10 +1204,15 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_infantry_temp_skill_t2_picked
+					had_country_flag = { flag = acw_infantry_temp_skill_t2_picked
 												days = 10650}
-												}
-					has_country_modifier = acw_infantry_upgrade_t6
+												
+					OR = {
+								has_country_modifier = acw_infantry_upgrade_t6
+								has_country_modifier = acw_infantry_upgrade_t7
+								has_country_modifier = acw_infantry_upgrade_t8
+								has_country_modifier = acw_infantry_upgrade_t9
+						}
 					army_professionalism = 0.2
 					}
 			}
@@ -1203,9 +1229,9 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_infantry_temp_skill_t3_picked
+					had_country_flag = { flag = acw_infantry_temp_skill_t3_picked
 												days = 10650}
-												}
+												
 					has_country_modifier = acw_infantry_upgrade_t9
 					army_professionalism = 0.2
 					}
@@ -1223,9 +1249,9 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_infantry_temp_skill_t3_picked
+					had_country_flag = { flag = acw_infantry_temp_skill_t3_picked
 												days = 10650}
-												}
+												
 					has_country_modifier = acw_infantry_upgrade_t9
 					army_professionalism = 0.2
 					}
@@ -1244,10 +1270,18 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked
+					had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked
 												days = 10650}
-												}
-					has_country_modifier = acw_cavalry_upgrade_t3
+												
+					OR = {
+								has_country_modifier = acw_cavalry_upgrade_t3
+								has_country_modifier = acw_cavalry_upgrade_t4
+								has_country_modifier = acw_cavalry_upgrade_t5
+								has_country_modifier = acw_cavalry_upgrade_t6
+								has_country_modifier = acw_cavalry_upgrade_t7
+								has_country_modifier = acw_cavalry_upgrade_t8
+								has_country_modifier = acw_cavalry_upgrade_t9
+						}
 					army_professionalism = 0.2
 					}
 			}
@@ -1264,10 +1298,18 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked
+					had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked
 												days = 10650}
-												}
-					has_country_modifier = acw_cavalry_upgrade_t3
+												
+					OR = {
+								has_country_modifier = acw_cavalry_upgrade_t3
+								has_country_modifier = acw_cavalry_upgrade_t4
+								has_country_modifier = acw_cavalry_upgrade_t5
+								has_country_modifier = acw_cavalry_upgrade_t6
+								has_country_modifier = acw_cavalry_upgrade_t7
+								has_country_modifier = acw_cavalry_upgrade_t8
+								has_country_modifier = acw_cavalry_upgrade_t9
+						}
 					army_professionalism = 0.2
 					}
 			}
@@ -1284,10 +1326,15 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_cavalry_temp_skill_t2_picked
+					had_country_flag = { flag = acw_cavalry_temp_skill_t2_picked
 												days = 10650}
-												}
-					has_country_modifier = acw_cavalry_upgrade_t6
+												
+					OR = {
+								has_country_modifier = acw_cavalry_upgrade_t6
+								has_country_modifier = acw_cavalry_upgrade_t7
+								has_country_modifier = acw_cavalry_upgrade_t8
+								has_country_modifier = acw_cavalry_upgrade_t9
+						}
 					army_professionalism = 0.2
 					}
 			}
@@ -1304,10 +1351,15 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_cavalry_temp_skill_t2_picked
+					had_country_flag = { flag = acw_cavalry_temp_skill_t2_picked
 												days = 10650}
-												}
-					has_country_modifier = acw_cavalry_upgrade_t6
+												
+					OR = {
+								has_country_modifier = acw_cavalry_upgrade_t6
+								has_country_modifier = acw_cavalry_upgrade_t7
+								has_country_modifier = acw_cavalry_upgrade_t8
+								has_country_modifier = acw_cavalry_upgrade_t9
+						}
 					army_professionalism = 0.2
 					}
 			}
@@ -1324,9 +1376,9 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_cavalry_temp_skill_t3_picked
+					had_country_flag = { flag = acw_cavalry_temp_skill_t3_picked
 												days = 10650}
-												}
+												
 					has_country_modifier = acw_cavalry_upgrade_t9
 					army_professionalism = 0.2
 					}
@@ -1344,9 +1396,9 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_cavalry_temp_skill_t3_picked
+					had_country_flag = { flag = acw_cavalry_temp_skill_t3_picked
 												days = 10650}
-												}
+												
 					has_country_modifier = acw_cavalry_upgrade_t9
 					army_professionalism = 0.2
 					}
@@ -1365,10 +1417,18 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_artillery_temp_skill_t1_picked
+					had_country_flag = { flag = acw_artillery_temp_skill_t1_picked
 												days = 10650}
-												}
-					has_country_modifier = acw_artillery_upgrade_t3
+												
+					OR = {
+								has_country_modifier = acw_artillery_upgrade_t3
+								has_country_modifier = acw_artillery_upgrade_t4
+								has_country_modifier = acw_artillery_upgrade_t5
+								has_country_modifier = acw_artillery_upgrade_t6
+								has_country_modifier = acw_artillery_upgrade_t7
+								has_country_modifier = acw_artillery_upgrade_t8
+								has_country_modifier = acw_artillery_upgrade_t9
+						}
 					army_professionalism = 0.2
 					}
 			}
@@ -1385,10 +1445,18 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_artillery_temp_skill_t1_picked
+					had_country_flag = { flag = acw_artillery_temp_skill_t1_picked
 												days = 10650}
-												}
-					has_country_modifier = acw_artillery_upgrade_t3
+												
+					OR = {
+								has_country_modifier = acw_artillery_upgrade_t3
+								has_country_modifier = acw_artillery_upgrade_t4
+								has_country_modifier = acw_artillery_upgrade_t5
+								has_country_modifier = acw_artillery_upgrade_t6
+								has_country_modifier = acw_artillery_upgrade_t7
+								has_country_modifier = acw_artillery_upgrade_t8
+								has_country_modifier = acw_artillery_upgrade_t9
+						}
 					army_professionalism = 0.2
 					}
 			}
@@ -1405,10 +1473,15 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_artillery_temp_skill_t2_picked
+					had_country_flag = { flag = acw_artillery_temp_skill_t2_picked
 												days = 10650}
-												}
-					has_country_modifier = acw_artillery_upgrade_t6
+												
+					OR = {
+								has_country_modifier = acw_artillery_upgrade_t6
+								has_country_modifier = acw_artillery_upgrade_t7
+								has_country_modifier = acw_artillery_upgrade_t8
+								has_country_modifier = acw_artillery_upgrade_t9
+						}
 					army_professionalism = 0.2
 					}
 			}
@@ -1425,10 +1498,15 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_artillery_temp_skill_t2_picked
+					had_country_flag = { flag = acw_artillery_temp_skill_t2_picked
 												days = 10650}
-												}
-					has_country_modifier = acw_artillery_upgrade_t6
+												
+					OR = {
+								has_country_modifier = acw_artillery_upgrade_t6
+								has_country_modifier = acw_artillery_upgrade_t7
+								has_country_modifier = acw_artillery_upgrade_t8
+								has_country_modifier = acw_artillery_upgrade_t9
+						}
 					army_professionalism = 0.2
 					}
 			}
@@ -1445,9 +1523,9 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_artillery_temp_skill_t3_picked
+					had_country_flag = { flag = acw_artillery_temp_skill_t3_picked
 												days = 10650}
-												}
+												
 					has_country_modifier = acw_artillery_upgrade_t9
 					army_professionalism = 0.2
 					}
@@ -1465,9 +1543,9 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already} 
 	trigger = {
 				AND = {
-					NOT = { had_country_flag = { flag = acw_artillery_temp_skill_t3_picked
+					had_country_flag = { flag = acw_artillery_temp_skill_t3_picked
 												days = 10650}
-												}
+												
 					has_country_modifier = acw_artillery_upgrade_t9
 					army_professionalism = 0.2
 					}
@@ -1665,7 +1743,7 @@ custom_icon = {
 				trigger = {has_country_flag = acw_hd_s1_19}
 				}
 	
-	frame = {	number = 17
+	frame = {	number = 21
 				trigger = {has_country_flag = acw_hd_s1_20}
 				}
 }
@@ -1750,7 +1828,7 @@ custom_icon = {
 				trigger = {has_country_flag = acw_hd_s2_19}
 				}
 	
-	frame = {	number = 17
+	frame = {	number = 21
 				trigger = {has_country_flag = acw_hd_s2_20}
 				}
 }
@@ -1835,7 +1913,7 @@ custom_icon = {
 				trigger = {has_country_flag = acw_hd_s3_19}
 				}
 	
-	frame = {	number = 17
+	frame = {	number = 21
 				trigger = {has_country_flag = acw_hd_s3_20}
 				}
 }

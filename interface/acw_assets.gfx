@@ -359,12 +359,6 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	
-	spriteType = {
-		name = "GFX_acw_hd_battle_of_carnal"
-		texturefile = "gfx/event_pictures/acw_hd_battle_of_carnal.dds"
-		transparencecheck = yes
-	}
-	
 	SpriteType = {		
 		name = "GFX_acw_hd_hadik_in_berlin"
 		texturefile = "gfx/event_pictures/acw_hd_hadik_in_berlin.dds"
@@ -398,6 +392,12 @@ spriteTypes = {
 	SpriteType = {		
 		name = "GFX_acw_hd_battle_of_badr"
 		texturefile = "gfx/event_pictures/acw_hd_battle_of_badr.dds"
+		transparencecheck = yes
+	}	
+
+	SpriteType = {		
+		name = "GFX_acw_hd_battle_of_mactan"
+		texturefile = "gfx/event_pictures/acw_hd_battle_of_mactan.dds"
 		transparencecheck = yes
 	}	
 
