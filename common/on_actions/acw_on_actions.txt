@@ -1,11 +1,43 @@
-#on_new_age = {
-#	#remove all armament bonuses
-#	
-#	if = {limit = {current_age = age_of_discovery} remove_country_modifier = }
-#	if = {limit = {current_age = age_of_reformation} remove_country_modifier = }
-#	if = {limit = {current_age = age_of_reformation} remove_country_modifier = }
-#	if = {limit = {current_age = age_of_reformation} remove_country_modifier = }
-#}
+on_new_age = {
+	#remove all armament bonuses
+	
+	if = {limit = {current_age = age_of_absolutism} 
+							remove_country_modifier = acw_arma_maasai_shield
+							remove_country_modifier = acw_arma_bakuba_spears
+							remove_country_modifier = acw_arma_arquebus
+							remove_country_modifier = acw_arma_arquebus_a_croc
+							remove_country_modifier = acw_arma_zweihander
+							remove_country_modifier = acw_arma_longsword
+							remove_country_modifier = acw_arma_morion_helmet
+							remove_country_modifier = acw_arma_dha_sword
+							remove_country_modifier = acw_arma_khanda_sword
+							remove_country_modifier = acw_arma_barong_sword
+		}
+	if = {limit = {current_age = age_of_reformation} 
+							remove_country_modifier = acw_arma_spanish_steel
+							remove_country_modifier = acw_arma_wagenburg
+							remove_country_modifier = acw_arma_fo_lang_ji
+							remove_country_modifier = acw_arma_iron_fan
+							remove_country_modifier = acw_arma_macuahuitl
+							remove_country_modifier = acw_arma_yatagan
+							remove_country_modifier = acw_arma_mandau
+							remove_country_modifier = acw_arma_khopesh
+							remove_country_modifier = acw_arma_naginata
+							remove_country_modifier = acw_arma_kpinga
+		}
+	if = {limit = {current_age = age_of_revolutions}
+							remove_country_modifier = acw_arma_crouching_tiger_cannon
+							remove_country_modifier = acw_arma_iklwa
+							remove_country_modifier = acw_arma_shamshir
+							remove_country_modifier = acw_arma_jezail
+							remove_country_modifier = acw_arma_mughal_talwar
+							remove_country_modifier = acw_arma_petronel
+							remove_country_modifier = acw_arma_bayonet
+							remove_country_modifier = acw_arma_katar
+							remove_country_modifier = acw_arma_katana
+							remove_country_modifier = acw_arma_african_throwing_knives
+		}
+}
 
 
 # country
@@ -13,8 +45,9 @@
 on_siege_won_country = {
 	if = {
 		limit = {
-			from = { 	province_id = 50
-						controlled_by = HUN}
+			AND = { from = {	province_id = 50 }
+					from = {	controlled_by = HUN }
+				}
 			}
 			
 			HUN = { country_event = { id = acw_hd.14 } } # Hadik in Berlin
@@ -44,8 +77,8 @@ on_battle_won_country = {
 					is_in_war = {attackers = TUR}
 					}
 				}
-		country_event = { id = acw_hd.2  }  # Winged Hussars
-		clr_global_flag = acw_turks_lost_at_wien
+			root = { country_event = { id = acw_hd.2  } }  # Winged Hussars
+			clr_global_flag = acw_turks_lost_at_wien
 		}
 		
 		if = {

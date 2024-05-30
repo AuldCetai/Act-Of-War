@@ -152,12 +152,12 @@ spriteTypes = {
 		transparencecheck = yes
 		noOfFrames = 2
 	}
-	
+	#armament icons
 	spriteType = {
 		name = "GFX_acw_n_icon_none"
 		texturefile = "gfx/interface/acw_n_icon_none.dds"
 		transparencecheck = yes
-		noOfFrames = 2
+		noOfFrames = 42
 	}
 	
 	spriteType = {

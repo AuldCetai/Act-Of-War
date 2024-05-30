@@ -449,3 +449,182 @@ acw_hd_battle_of_badr	 = {
 acw_hd_battle_of_mactan	 = {	
 				leader_land_manuever = 1
 	}	
+
+#ARMAMENTS
+
+acw_arma_crouching_tiger_cannon = {
+				fire_damage = 0.10
+				}
+
+acw_arma_iklwa = {
+				shock_damage = 0.10
+				}
+				
+acw_arma_shamshir = { 	
+				shock_damage = 0.10
+}	
+
+acw_arma_jezail = { 				
+				fire_damage = 0.10
+}				
+
+acw_arma_mughal_talwar = { 				
+				shock_damage = 0.10
+}				
+
+acw_arma_petronel = { 				
+				cavalry_power = 0.10
+}				
+
+acw_arma_bayonet = { 				
+				infantry_power = 0.05
+}				
+
+acw_arma_katar = { 				
+				leader_land_shock = 1
+}				
+
+acw_arma_katana = { 				
+				prestige_from_land = 0.10
+				}				
+
+acw_arma_african_throwing_knives = { 				
+				infantry_fire = 1
+				}				
+
+acw_arma_spanish_steel = { 
+				shock_damage = 0.1
+				}
+				
+acw_arma_wagenburg = { 
+				shock_damage_received = -0.10 
+				}
+				
+acw_arma_fo_lang_ji = { 
+				fire_damage = 0.10 
+				}
+				
+acw_arma_iron_fan = { 
+				military_tactics = 0.1 
+				}
+				
+acw_arma_macuahuitl = { 
+				shock_damage = 0.10 
+				}
+				
+acw_arma_yatagan = { 
+				drill_decay_modifier = -0.10 
+				}
+				
+acw_arma_mandau = { 
+				infantry_shock = 1 
+				}
+				
+acw_arma_khopesh = { 
+				shock_damage = 0.10 
+				}
+				
+acw_arma_naginata = { 
+				shock_damage = 0.10 
+				}
+				
+acw_arma_kpinga = { 
+				morale_damage = 0.025 
+				}
+				
+acw_arma_maasai_shield = { 
+				shock_damage_received = -0.10 
+				}
+				
+acw_arma_bakuba_spears = { 
+				morale_damage = 0.025 
+				}
+				
+acw_arma_arquebus = { 
+				fire_damage = 0.05 
+				}
+				
+acw_arma_arquebus_a_croc = { 
+				fire_damage = 0.10 
+				}
+				
+acw_arma_zweihander = {
+				mercenary_discipline = 0.10 
+				}
+				
+acw_arma_longsword = { 
+				army_tradition_from_battle = 0.01 
+				}
+				
+acw_arma_morion_helmet = { 
+				shock_damage_received = -0.10 
+				}
+				
+acw_arma_dha_sword = {
+				leader_land_shock = 1
+				}
+				
+acw_arma_khanda_sword = { 
+				leader_cost = -0.10 
+				}
+				
+acw_arma_barong_sword = { 
+				regiment_manpower_usage = -0.1 
+				}
+				
+acw_arma_qama = { 
+				shock_damage = 0.10 
+				}
+				
+acw_arma_french_charleville_musket = {
+				fire_damage = 0.10 
+				}
+				
+acw_arma_grapeshot = { 
+				backrow_artillery_damage = 0.10 
+				}
+				
+acw_arma_howitzer = { 
+				artillery_power = 0.10 
+				}
+				
+acw_arma_brown_bess_musket = { 
+				morale_damage = 0.025 
+				}
+				
+acw_arma_bowie_knife = { 
+				land_attrition = -0.10 
+				}
+				
+acw_arma_kukri = { 
+				infantry_power = 0.05 
+				}
+				
+acw_arma_chu_ko_nu = { 
+				fort_maintenance_modifier = -0.10 
+				}
+				
+acw_arma_nock_gun = { 
+				leader_land_fire = 1 
+				}
+				
+acw_arma_dragoon_musket = { 
+				leader_land_manuever = 1 
+				}
+
+acw_arma_slot_1_xp = {
+				yearly_army_professionalism = 0.01
+				yearly_corruption = 0.025
+				}
+acw_arma_slot_2_xp = {
+				yearly_army_professionalism = 0.01
+				yearly_corruption = 0.025
+				}
+acw_arma_slot_3_xp = {
+				yearly_army_professionalism = 0.01
+				yearly_corruption = 0.025
+				}
+acw_arma_slot_4_xp = {
+				yearly_army_professionalism = 0.01
+				yearly_corruption = 0.025
+				}

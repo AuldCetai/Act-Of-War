@@ -2668,6 +2668,8 @@ guiTypes = {
 				scale = 1
 			}
 			
+			
+			
 			#heroic deeds window
 			instantTextBoxType = {
 				name = "acw_army_window_hd_text"
@@ -2959,7 +2961,96 @@ guiTypes = {
 				scripted = yes
 			}		
 			
-		
+			guiButtonType ={
+				name ="acw_arm_slot_row_1_1"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 620 y = 210 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_1_2"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 680 y = 210 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_1_3"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 740 y = 210 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_1_4"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 800 y = 210 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_1_5"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 860 y = 210 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_1_6"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 920 y = 210 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_1_7"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 980 y = 210 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_1_8"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 1040 y = 210 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_1_9"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 1100 y = 210 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_1_10"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 1160 y = 210 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
 		windowType = {
 			name = "army_professionalism"
 			backGround =""
