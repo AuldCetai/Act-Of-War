@@ -117,7 +117,15 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	trigger = {
+	trigger = {		
+				AND = {
+					95 = {is_controlled_by = SPA}
+					OR = { tag = SPA
+							is_in_war = {
+								participants = SPA
+								}
+							}
+						}		
 	}
 
 	option = {
@@ -725,6 +733,14 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+				AND = {
+					50 = {is_controlled_by = HUN}
+					OR = {  tag = HUN
+							is_in_war = {
+								participants = HUN
+								}
+							}
+						}
 	}
 
 	option = {

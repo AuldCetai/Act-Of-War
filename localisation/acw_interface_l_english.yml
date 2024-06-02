@@ -17,6 +17,7 @@
  acw_army_window_camp_followers_text:0"Chevauchee"
  acw_army_stratagem_text:"$acw_stratagem_text_loc$"
  acw_hd_arma_back_button_text:0"Back"
+ acw_hd_arma_title_arma_text:0"Armaments"
  acw_infantry_levels_bar_t1a:0"Infantry Skill Tier I A"
  acw_infantry_levels_bar_t1b:0"Infantry Skill Tier I B"  
  

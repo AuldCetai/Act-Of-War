@@ -18,37 +18,6 @@ custom_text_box = {
     potential = {has_country_flag = acw_background_open_already} 
 		}
 	
-
-#camp followers
-custom_icon = {
-	name = acw_cf_title_banner
-    potential = {has_country_flag = acw_background_open_already} 
-	}
-
-custom_text_box = {
-	name = acw_army_window_camp_followers_text
-    potential = {has_country_flag = acw_background_open_already} 
-		}
-
-custom_button = {
-	name = acw_cf_slot_1
-    potential = {has_country_flag = acw_background_open_already} 
-}		
-
-custom_button = {
-	name = acw_cf_slot_2
-    potential = {has_country_flag = acw_background_open_already} 
-}	
-
-custom_button = {
-	name = acw_cf_slot_3
-    potential = {has_country_flag = acw_background_open_already} 
-}	
-
-custom_button = {
-	name = acw_cf_slot_4
-    potential = {has_country_flag = acw_background_open_already} 
-}	
 #unit levels - box 
 custom_text_box = {
 	name = acw_army_window_infantry_levels_indicator_text
@@ -1588,6 +1557,7 @@ custom_text_box = {
 	name = acw_army_window_armaments_text
     potential = {has_country_flag = acw_background_open_already} 
 		}
+		
 custom_icon = {
 	name = acw_arma_title_banner
     potential = {has_country_flag = acw_background_open_already} 
@@ -1597,7 +1567,11 @@ custom_icon = {
 custom_button = {
 	name = acw_arm_slot_1 
     potential = {has_country_flag = acw_background_open_already} 
-  	trigger = { }
+  	trigger = { NOT = { has_country_flag = acw_arma_slot_2_open 
+						has_country_flag = acw_arma_slot_3_open 
+						has_country_flag = acw_arma_slot_4_open 
+						}
+					}
   	effect = { IF = {limit = {acw_arma_slot_1_filled = yes} }
 			   ELSE = { set_country_flag = acw_hd_arma_bg_open
 						set_country_flag = acw_arma_slot_1_open}
@@ -1770,7 +1744,12 @@ custom_button = {
 custom_button = {
 	name = acw_arm_slot_2
     potential = {has_country_flag = acw_background_open_already} 
-  	trigger = { }
+  	trigger = { 
+				NOT = { has_country_flag = acw_arma_slot_1_open 
+						has_country_flag = acw_arma_slot_3_open 
+						has_country_flag = acw_arma_slot_4_open 
+						} 
+				}
   	effect = { IF = {limit = {acw_arma_slot_2_filled = yes} }
 			   ELSE = { set_country_flag = acw_hd_arma_bg_open
 						set_country_flag = acw_arma_slot_2_open}
@@ -1942,7 +1921,12 @@ custom_button = {
 custom_button = {
 	name = acw_arm_slot_3
     potential = {has_country_flag = acw_background_open_already} 
-  	trigger = { }
+  	trigger = { 
+				NOT = { has_country_flag = acw_arma_slot_1_open 
+						has_country_flag = acw_arma_slot_2_open 
+						has_country_flag = acw_arma_slot_4_open 
+						} 
+				}
   	effect = { IF = {limit = {acw_arma_slot_3_filled = yes} }
 			   ELSE = { set_country_flag = acw_hd_arma_bg_open
 						set_country_flag = acw_arma_slot_3_open}
@@ -2114,7 +2098,12 @@ custom_button = {
 custom_button = {
 	name = acw_arm_slot_4
     potential = {has_country_flag = acw_background_open_already} 
-  	trigger = { }
+  	trigger = { 
+				NOT = { has_country_flag = acw_arma_slot_1_open 
+						has_country_flag = acw_arma_slot_2_open 
+						has_country_flag = acw_arma_slot_3_open 
+						} 
+				}
   	effect = { IF = {limit = {acw_arma_slot_4_filled = yes} }
 			   ELSE = { set_country_flag = acw_hd_arma_bg_open
 						set_country_flag = acw_arma_slot_4_open}
@@ -5704,6 +5693,8 @@ custom_button = {
 				trigger = {always = yes}							
 				}							
 }											
+
+
 		
 #arma text+buttons
 custom_text_box = {
@@ -5744,7 +5735,13 @@ custom_button = {
 custom_text_box = {
 	name = acw_hd_arma_back_button_text
 	potential ={has_country_flag = acw_hd_arma_bg_open
-						has_country_flag = acw_background_open_already}
+				has_country_flag = acw_background_open_already}
+}
+
+custom_text_box = {
+	name = acw_hd_arma_title_arma_text
+	potential ={has_country_flag = acw_hd_arma_bg_open
+				has_country_flag = acw_background_open_already}
 }
 
 #heroic deeds icons
@@ -6561,3 +6558,232 @@ custom_icon = {
 }
 
 
+	
+#cf selector window
+custom_icon = {
+	name = acw_cf_selector_window_bg
+	potential = {	has_country_flag = acw_cf_bg_open
+					has_country_flag = acw_background_open_already} 
+	}
+
+custom_button = {
+	name = acw_cf_selector_window_close
+    potential = {
+						has_country_flag = acw_cf_bg_open
+						has_country_flag = acw_background_open_already} 
+  	trigger = { 
+				has_country_flag = acw_cf_bg_open
+				}
+  	effect = { 
+		clr_country_flag = acw_cf_bg_open
+		clr_country_flag = acw_cf_slot_1_open
+		clr_country_flag = acw_cf_slot_2_open
+		clr_country_flag = acw_cf_slot_3_open
+		clr_country_flag = acw_cf_slot_4_open
+	}
+}
+
+custom_text_box = {
+	name = acw_cf_back_button_text
+	potential ={has_country_flag = acw_cf_bg_open
+				has_country_flag = acw_background_open_already}
+}
+
+
+
+custom_text_box = {
+	name = acw_cf_title_arma_text
+	potential ={has_country_flag = acw_cf_bg_open
+				has_country_flag = acw_background_open_already}
+}
+
+#camp followers
+custom_icon = {
+	name = acw_cf_title_banner
+    potential = {has_country_flag = acw_background_open_already} 
+	}
+
+custom_text_box = {
+	name = acw_army_window_camp_followers_text
+    potential = {has_country_flag = acw_background_open_already} 
+		}
+
+custom_button = {
+	name = acw_cf_slot_1
+    potential = {has_country_flag = acw_background_open_already}
+	trigger = { 
+				NOT = {
+					has_country_flag = acw_cf_slot_3_open
+					has_country_flag = acw_cf_slot_4_open
+					has_country_flag = acw_cf_slot_1_open
+					} 
+				}
+	effect = {		set_country_flag = acw_cf_bg_open
+					set_country_flag = acw_cf_slot_1_open}
+}		
+
+custom_button = {
+	name = acw_cf_slot_2
+     potential = {has_country_flag = acw_background_open_already}
+	 trigger = { NOT = {
+					has_country_flag = acw_cf_slot_3_open
+					has_country_flag = acw_cf_slot_4_open
+					has_country_flag = acw_cf_slot_1_open
+					} 
+				}
+	effect = {		set_country_flag = acw_cf_bg_open
+					set_country_flag = acw_cf_slot_2_open}
+}	
+
+custom_button = {
+	name = acw_cf_slot_3
+     potential = {has_country_flag = acw_background_open_already}
+	trigger = { NOT = {
+					has_country_flag = acw_cf_slot_3_open
+					has_country_flag = acw_cf_slot_4_open
+					has_country_flag = acw_cf_slot_1_open
+					} 
+				}
+	effect = {set_country_flag = acw_cf_bg_open
+			  set_country_flag = acw_cf_slot_3_open}
+}	
+
+#avaible only under special circumstances - like missions to unlock or smtg.dunno yet.
+custom_button = {
+	name = acw_cf_slot_4
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_unlocked_the_fourth_company
+				 }
+	trigger = { NOT = {
+					has_country_flag = acw_cf_slot_3_open
+					has_country_flag = acw_cf_slot_4_open
+					has_country_flag = acw_cf_slot_1_open
+					} 
+				}
+	effect = {		set_country_flag = acw_cf_bg_open
+					set_country_flag = acw_cf_slot_4_open}
+}	
+
+#and the actual camp followers
+#company 1 - suttlers (of catan)
+
+custom_button = {
+	name = acw_cf_company_1
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = {has_country_flag = acw_cf_company_1_picked}}		
+				
+	effect = {		set_country_flag = acw_cf_company_1_picked}
+	
+	frame = { number = 1
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_1_s_a
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_1_s_a_picked
+						has_country_flag = acw_cf_company_1_s_b_picked
+						}
+					}
+				}	
+				
+	effect = {		set_country_flag = acw_cf_company_1_s_a_picked}
+}	
+
+custom_button = {
+	name = acw_cf_company_1_s_b
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_1_s_a_picked
+						has_country_flag = acw_cf_company_1_s_b_picked
+						}
+					}
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_1_s_b_picked}
+}	
+
+custom_button = {
+	name = acw_cf_company_1_s_aa
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_1_s_aa_picked
+						has_country_flag = acw_cf_company_1_s_ab_picked
+						}
+					}
+				has_country_flag = acw_cf_company_1_s_a_picked
+			}
+				
+	effect = {	set_country_flag = acw_cf_company_1_s_aa_picked}
+}
+
+custom_button = {
+	name = acw_cf_company_1_s_ab
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_1_s_a_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_1_s_aa_picked
+						has_country_flag = acw_cf_company_1_s_ab_picked
+						}
+					}
+					has_country_flag = acw_cf_company_1_s_a_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_1_s_ab_picked}
+}
+
+custom_button = {
+	name = acw_cf_company_1_s_ba
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_1_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_1_s_ba_picked
+						has_country_flag = acw_cf_company_1_s_bb_picked
+						}
+					}
+					has_country_flag = acw_cf_company_1_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_1_s_ba_picked}
+}
+
+custom_button = {
+	name = acw_cf_company_1_s_bb
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_1_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_1_s_bb_picked
+						has_country_flag = acw_cf_company_1_s_ba_picked
+						}
+					}
+					has_country_flag = acw_cf_company_1_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_1_s_bb_picked}
+}

@@ -400,5 +400,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/acw_hd_battle_of_mactan.dds"
 		transparencecheck = yes
 	}	
-
+	
+	spriteType = {
+		name = "GFX_acw_cf_company_1"
+		texturefile = "gfx/interface/acw_cf_company_1.dds"
+		transparencecheck = yes
+		noOfFrames = 7
+	}
 }

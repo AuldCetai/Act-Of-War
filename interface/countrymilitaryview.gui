@@ -2947,7 +2947,20 @@ guiTypes = {
 				scale = 1.1
 				pdx_tooltip = ""
 			}
-
+			
+			instantTextBoxType = {
+				name = "acw_hd_arma_title_arma_text"
+				position = { x = 660 y =115 }
+				format = centre
+				font = "vic_29s"
+				maxWidth = 420
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+				text = ""
+				format = centre
+				scripted = yes
+			}		
+			
 			instantTextBoxType = {
 				name = "acw_hd_arma_back_button_text"
 				position = { x = 660 y =690 }
@@ -2965,7 +2978,7 @@ guiTypes = {
 				name ="acw_arm_slot_row_1_1"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_n_icon_none"
-				position = { x= 620 y = 210 }
+				position = { x= 630 y = 430 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -2974,7 +2987,7 @@ guiTypes = {
 				name ="acw_arm_slot_row_1_2"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_n_icon_none"
-				position = { x= 680 y = 210 }
+				position = { x= 690 y = 430 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -2983,7 +2996,7 @@ guiTypes = {
 				name ="acw_arm_slot_row_1_3"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_n_icon_none"
-				position = { x= 740 y = 210 }
+				position = { x= 750 y = 430 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -2992,7 +3005,7 @@ guiTypes = {
 				name ="acw_arm_slot_row_1_4"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_n_icon_none"
-				position = { x= 800 y = 210 }
+				position = { x= 810 y = 430 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3001,7 +3014,7 @@ guiTypes = {
 				name ="acw_arm_slot_row_1_5"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_n_icon_none"
-				position = { x= 860 y = 210 }
+				position = { x= 870 y = 430 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3010,7 +3023,7 @@ guiTypes = {
 				name ="acw_arm_slot_row_1_6"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_n_icon_none"
-				position = { x= 920 y = 210 }
+				position = { x= 930 y = 430 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3019,7 +3032,7 @@ guiTypes = {
 				name ="acw_arm_slot_row_1_7"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_n_icon_none"
-				position = { x= 980 y = 210 }
+				position = { x= 990 y = 430 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3028,7 +3041,7 @@ guiTypes = {
 				name ="acw_arm_slot_row_1_8"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_n_icon_none"
-				position = { x= 1040 y = 210 }
+				position = { x= 1050 y = 430 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3037,7 +3050,7 @@ guiTypes = {
 				name ="acw_arm_slot_row_1_9"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_n_icon_none"
-				position = { x= 1100 y = 210 }
+				position = { x= 630 y = 490 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3046,7 +3059,388 @@ guiTypes = {
 				name ="acw_arm_slot_row_1_10"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_n_icon_none"
-				position = { x= 1160 y = 210 }
+				position = { x= 690 y = 490 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_2_11"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 630 y = 190 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_2_12"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 690 y = 190 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_2_13"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 750 y = 190 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_2_14"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 810 y = 190 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_2_15"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 870 y = 190 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_2_16"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 930 y = 190 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_2_17"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 990 y = 190 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_2_18"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 1050 y = 190 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_2_19"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 630 y = 250 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_2_20"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 690 y = 250 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_3_21"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 630 y = 310 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_3_22"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 690 y = 310 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_3_23"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 750 y = 310 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_3_24"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 810 y = 310 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_3_25"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 870 y = 310 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_3_26"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 930 y = 310 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_3_27"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 990 y = 310 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_3_28"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 1050 y = 310 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_3_29"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 630 y = 370 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_3_30"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 690 y = 370 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_4_31"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 630 y = 550 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_4_32"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 690 y = 550 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_4_33"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 750 y = 550 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_4_34"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 810 y = 550 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_4_35"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 870 y = 550 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_4_36"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 930 y = 550 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_4_37"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 990 y = 550 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_4_38"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 1050 y = 550 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_4_39"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 630 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_4_40"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 690 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			#camp_followers
+			iconType = {
+				name = "acw_cf_selector_window_bg"
+				position = { x=600 y =100}
+				spriteType ="GFX_acw_stratagem_bg_2"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+				scale = 1.4
+				pdx_tooltip = "acw_stratagem_none"
+			}
+
+			guiButtonType = {
+				name = "acw_cf_selector_window_close"
+				position = { x=780 y =680}
+				spriteType ="GFX_buy_dlc_button"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+				scale = 1.1
+				pdx_tooltip = ""
+			}
+			
+			instantTextBoxType = {
+				name = "acw_cf_title_arma_text"
+				position = { x = 660 y =115 }
+				format = centre
+				font = "vic_29s"
+				maxWidth = 420
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+				text = ""
+				format = centre
+				scripted = yes
+			}		
+			
+			instantTextBoxType = {
+				name = "acw_cf_back_button_text"
+				position = { x = 660 y =690 }
+				format = centre
+				font = "vic_29s"
+				maxWidth = 420
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+				text = "SELECT_INFANTRY_TYPE"
+				format = centre
+				scripted = yes
+			}
+
+		#camp_followers
+			guiButtonType ={
+				name ="acw_cf_company_1"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_1"
+				position = { x= 690 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_1_s_a"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 780 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_1_s_b"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 780 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_1_s_aa"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 870 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_1_s_ab"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 870 y = 710 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_1_s_ba"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 870 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_1_s_bb"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 870 y = 910 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}

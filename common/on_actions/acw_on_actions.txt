@@ -43,24 +43,10 @@ on_new_age = {
 # country
 # root = winning country, from = location
 on_siege_won_country = {
-	if = {
-		limit = {
-			AND = { from = {	province_id = 50 }
-					from = {	controlled_by = HUN }
-				}
+	events = {
+				acw_hd.14	# Hadik in Berlin
+				acw_hd.3	# Surrender of Breda
 			}
-			
-			HUN = { country_event = { id = acw_hd.14 } } # Hadik in Berlin
-	}
-	
-	if = {
-		limit = {
-			from = { 	province_id = 95
-						controlled_by = SPA}
-			}
-			
-			SPA = { country_event = { id = acw_hd.3 } } # Surrender of Breda
-		}
 }
 
 # country
