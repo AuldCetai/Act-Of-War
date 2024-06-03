@@ -2973,7 +2973,7 @@ guiTypes = {
 				format = centre
 				scripted = yes
 			}		
-			
+		#armaments icons
 			guiButtonType ={
 				name ="acw_arm_slot_row_1_1"
 				scripted = yes
@@ -3394,7 +3394,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_cf_company_1_s_a"
 				scripted = yes
-				quadTextureSprite = "GFX_acw_n_icon_none"
+				quadTextureSprite = "GFX_acw_cf_company_1"
 				position = { x= 780 y = 610 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
@@ -3403,7 +3403,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_cf_company_1_s_b"
 				scripted = yes
-				quadTextureSprite = "GFX_acw_n_icon_none"
+				quadTextureSprite = "GFX_acw_cf_company_1"
 				position = { x= 780 y = 810 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
@@ -3412,7 +3412,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_cf_company_1_s_aa"
 				scripted = yes
-				quadTextureSprite = "GFX_acw_n_icon_none"
+				quadTextureSprite = "GFX_acw_cf_company_1"
 				position = { x= 870 y = 610 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
@@ -3421,7 +3421,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_cf_company_1_s_ab"
 				scripted = yes
-				quadTextureSprite = "GFX_acw_n_icon_none"
+				quadTextureSprite = "GFX_acw_cf_company_1"
 				position = { x= 870 y = 710 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
@@ -3430,7 +3430,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_cf_company_1_s_ba"
 				scripted = yes
-				quadTextureSprite = "GFX_acw_n_icon_none"
+				quadTextureSprite = "GFX_acw_cf_company_1"
 				position = { x= 870 y = 810 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
@@ -3439,11 +3439,13 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_cf_company_1_s_bb"
 				scripted = yes
-				quadTextureSprite = "GFX_acw_n_icon_none"
+				quadTextureSprite = "GFX_acw_cf_company_1"
 				position = { x= 870 y = 910 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
+			
+			
 			
 		windowType = {
 			name = "army_professionalism"

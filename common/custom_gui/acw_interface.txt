@@ -6665,7 +6665,7 @@ custom_button = {
 }	
 
 #and the actual camp followers
-#company 1 - suttlers (of catan)
+#company 1 - suttlers (of catan) / french suttlers (dont ask)
 
 custom_button = {
 	name = acw_cf_company_1
@@ -6675,6 +6675,10 @@ custom_button = {
 	trigger = { NOT = {has_country_flag = acw_cf_company_1_picked}}		
 				
 	effect = {		set_country_flag = acw_cf_company_1_picked}
+	
+	frame = { number = 8
+				trigger = {primary_culture = french}
+				}
 	
 	frame = { number = 1
 				trigger = {always = yes}
@@ -6695,6 +6699,9 @@ custom_button = {
 				}	
 				
 	effect = {		set_country_flag = acw_cf_company_1_s_a_picked}
+	frame = { number = 2
+				trigger = {always = yes}
+				}
 }	
 
 custom_button = {
@@ -6711,6 +6718,9 @@ custom_button = {
 				}
 				
 	effect = {	set_country_flag = acw_cf_company_1_s_b_picked}
+	frame = { number = 3
+				trigger = {always = yes}
+				}
 }	
 
 custom_button = {
@@ -6729,6 +6739,9 @@ custom_button = {
 			}
 				
 	effect = {	set_country_flag = acw_cf_company_1_s_aa_picked}
+	frame = { number = 4
+				trigger = {always = yes}
+				}
 }
 
 custom_button = {
@@ -6748,6 +6761,9 @@ custom_button = {
 				}
 				
 	effect = {	set_country_flag = acw_cf_company_1_s_ab_picked}
+	frame = { number = 5
+				trigger = {always = yes}
+				}
 }
 
 custom_button = {
@@ -6767,6 +6783,9 @@ custom_button = {
 				}
 				
 	effect = {	set_country_flag = acw_cf_company_1_s_ba_picked}
+	frame = { number = 6
+				trigger = {always = yes}
+				}
 }
 
 custom_button = {
@@ -6786,4 +6805,1635 @@ custom_button = {
 				}
 				
 	effect = {	set_country_flag = acw_cf_company_1_s_bb_picked}
+	frame = { number = 7
+				trigger = {always = yes}
+				}
+}
+
+#campw wives /zulu women
+
+custom_button = {
+	name = acw_cf_company_2
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = {has_country_flag = acw_cf_company_2_picked}}		
+				
+	effect = {		set_country_flag = acw_cf_company_2_picked}
+	
+	frame = { number = 8
+				trigger = {primary_culture = nguni}
+				}
+	
+	frame = { number = 1
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_2_s_a
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_2_s_a_picked
+						has_country_flag = acw_cf_company_2_s_b_picked
+						}
+					}
+				}	
+				
+	effect = {		set_country_flag = acw_cf_company_2_s_a_picked}
+	frame = { number = 2
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_2_s_b
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_2_s_a_picked
+						has_country_flag = acw_cf_company_2_s_b_picked
+						}
+					}
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_2_s_b_picked}
+	frame = { number = 3
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_2_s_aa
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_2_s_aa_picked
+						has_country_flag = acw_cf_company_2_s_ab_picked
+						}
+					}
+				has_country_flag = acw_cf_company_2_s_a_picked
+			}
+				
+	effect = {	set_country_flag = acw_cf_company_2_s_aa_picked}
+	frame = { number = 4
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_2_s_ab
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_2_s_a_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_2_s_aa_picked
+						has_country_flag = acw_cf_company_2_s_ab_picked
+						}
+					}
+					has_country_flag = acw_cf_company_2_s_a_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_2_s_ab_picked}
+	frame = { number = 5
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_2_s_ba
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_2_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_2_s_ba_picked
+						has_country_flag = acw_cf_company_2_s_bb_picked
+						}
+					}
+					has_country_flag = acw_cf_company_2_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_2_s_ba_picked}
+	frame = { number = 6
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_2_s_bb
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_2_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_2_s_bb_picked
+						has_country_flag = acw_cf_company_2_s_ba_picked
+						}
+					}
+					has_country_flag = acw_cf_company_2_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_2_s_bb_picked}
+	frame = { number = 7
+				trigger = {always = yes}
+				}
+}
+
+#baggage train guards
+
+custom_button = {
+	name = acw_cf_company_3
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = {has_country_flag = acw_cf_company_3_picked}}		
+				
+	effect = {		set_country_flag = acw_cf_company_3_picked}
+	
+	frame = { number = 1
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_3_s_a
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_3_s_a_picked
+						has_country_flag = acw_cf_company_3_s_b_picked
+						}
+					}
+				}	
+				
+	effect = {		set_country_flag = acw_cf_company_3_s_a_picked}
+	frame = { number = 2
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_3_s_b
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_3_s_a_picked
+						has_country_flag = acw_cf_company_3_s_b_picked
+						}
+					}
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_3_s_b_picked}
+	frame = { number = 3
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_3_s_aa
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_3_s_aa_picked
+						has_country_flag = acw_cf_company_3_s_ab_picked
+						}
+					}
+				has_country_flag = acw_cf_company_3_s_a_picked
+			}
+				
+	effect = {	set_country_flag = acw_cf_company_3_s_aa_picked}
+	frame = { number = 4
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_3_s_ab
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_3_s_a_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_3_s_aa_picked
+						has_country_flag = acw_cf_company_3_s_ab_picked
+						}
+					}
+					has_country_flag = acw_cf_company_3_s_a_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_3_s_ab_picked}
+	frame = { number = 5
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_3_s_ba
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_3_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_3_s_ba_picked
+						has_country_flag = acw_cf_company_3_s_bb_picked
+						}
+					}
+					has_country_flag = acw_cf_company_3_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_3_s_ba_picked}
+	frame = { number = 6
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_3_s_bb
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_3_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_3_s_bb_picked
+						has_country_flag = acw_cf_company_3_s_ba_picked
+						}
+					}
+					has_country_flag = acw_cf_company_3_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_3_s_bb_picked}
+	frame = { number = 7
+				trigger = {always = yes}
+				}
+}
+
+#native auxilia
+
+custom_button = {
+	name = acw_cf_company_4
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = {has_country_flag = acw_cf_company_4_picked}}		
+				
+	effect = {		set_country_flag = acw_cf_company_4_picked}
+	
+	frame = { number = 8
+				trigger = {
+							any_ally = { primitives = yes}
+							}
+				}
+	
+	frame = { number = 1
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_4_s_a
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_4_s_a_picked
+						has_country_flag = acw_cf_company_4_s_b_picked
+						}
+					}
+				}	
+				
+	effect = {		set_country_flag = acw_cf_company_4_s_a_picked}
+	frame = { number = 2
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_4_s_b
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_4_s_a_picked
+						has_country_flag = acw_cf_company_4_s_b_picked
+						}
+					}
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_4_s_b_picked}
+	frame = { number = 3
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_4_s_aa
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_4_s_aa_picked
+						has_country_flag = acw_cf_company_4_s_ab_picked
+						}
+					}
+				has_country_flag = acw_cf_company_4_s_a_picked
+			}
+				
+	effect = {	set_country_flag = acw_cf_company_4_s_aa_picked}
+	frame = { number = 4
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_4_s_ab
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_4_s_a_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_4_s_aa_picked
+						has_country_flag = acw_cf_company_4_s_ab_picked
+						}
+					}
+					has_country_flag = acw_cf_company_4_s_a_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_4_s_ab_picked}
+	frame = { number = 5
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_4_s_ba
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_4_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_4_s_ba_picked
+						has_country_flag = acw_cf_company_4_s_bb_picked
+						}
+					}
+					has_country_flag = acw_cf_company_4_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_4_s_ba_picked}
+	frame = { number = 6
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_4_s_bb
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_4_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_4_s_bb_picked
+						has_country_flag = acw_cf_company_4_s_ba_picked
+						}
+					}
+					has_country_flag = acw_cf_company_4_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_4_s_bb_picked}
+	frame = { number = 7
+				trigger = {always = yes}
+				}
+}
+
+#survey corps
+
+custom_button = {
+	name = acw_cf_company_5
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = {has_country_flag = acw_cf_company_5_picked}}		
+				
+	effect = {		set_country_flag = acw_cf_company_5_picked}
+	
+	frame = { number = 8
+				trigger = {
+							OR = {
+								culture_group = hindustani
+								culture_group = western_aryan
+							}
+				}
+			}
+	
+	frame = { number = 1
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_5_s_a
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_5_s_a_picked
+						has_country_flag = acw_cf_company_5_s_b_picked
+						}
+					}
+				}	
+				
+	effect = {		set_country_flag = acw_cf_company_5_s_a_picked}
+	frame = { number = 2
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_5_s_b
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_5_s_a_picked
+						has_country_flag = acw_cf_company_5_s_b_picked
+						}
+					}
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_5_s_b_picked}
+	frame = { number = 3
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_5_s_aa
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_5_s_aa_picked
+						has_country_flag = acw_cf_company_5_s_ab_picked
+						}
+					}
+				has_country_flag = acw_cf_company_5_s_a_picked
+			}
+				
+	effect = {	set_country_flag = acw_cf_company_5_s_aa_picked}
+	frame = { number = 4
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_5_s_ab
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_5_s_a_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_5_s_aa_picked
+						has_country_flag = acw_cf_company_5_s_ab_picked
+						}
+					}
+					has_country_flag = acw_cf_company_5_s_a_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_5_s_ab_picked}
+	frame = { number = 5
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_5_s_ba
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_5_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_5_s_ba_picked
+						has_country_flag = acw_cf_company_5_s_bb_picked
+						}
+					}
+					has_country_flag = acw_cf_company_5_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_5_s_ba_picked}
+	frame = { number = 6
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_5_s_bb
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_5_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_5_s_bb_picked
+						has_country_flag = acw_cf_company_5_s_ba_picked
+						}
+					}
+					has_country_flag = acw_cf_company_5_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_5_s_bb_picked}
+	frame = { number = 7
+				trigger = {always = yes}
+				}
+}
+
+#scouts
+
+custom_button = {
+	name = acw_cf_company_6
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = {has_country_flag = acw_cf_company_6_picked}}		
+				
+	effect = {		set_country_flag = acw_cf_company_6_picked}
+	
+	frame = { number = 8
+				trigger = {
+								has_estate = estate_cossacks
+				}
+			}
+	frame = { number = 9
+				trigger = {
+								culture_group = east_slavic
+				}
+			}
+	frame = { number = 10
+				trigger = {
+								primary_culture = mexican
+				}
+			}
+	frame = { number = 11
+				trigger = {
+								culture_group = carpathian
+				}
+			}
+	frame = { number = 12
+				trigger = {
+								primary_culture = maori
+				}
+			}
+	
+	frame = { number = 1
+				trigger = {always = yes}
+				}
+			
+}	
+
+custom_button = {
+	name = acw_cf_company_6_s_a
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_6_s_a_picked
+						has_country_flag = acw_cf_company_6_s_b_picked
+						}
+					}
+				}	
+				
+	effect = {		set_country_flag = acw_cf_company_6_s_a_picked}
+	frame = { number = 2
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_6_s_b
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_6_s_a_picked
+						has_country_flag = acw_cf_company_6_s_b_picked
+						}
+					}
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_6_s_b_picked}
+	frame = { number = 3
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_6_s_aa
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_6_s_aa_picked
+						has_country_flag = acw_cf_company_6_s_ab_picked
+						}
+					}
+				has_country_flag = acw_cf_company_6_s_a_picked
+			}
+				
+	effect = {	set_country_flag = acw_cf_company_6_s_aa_picked}
+	frame = { number = 4
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_6_s_ab
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_6_s_a_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_6_s_aa_picked
+						has_country_flag = acw_cf_company_6_s_ab_picked
+						}
+					}
+					has_country_flag = acw_cf_company_6_s_a_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_6_s_ab_picked}
+	frame = { number = 5
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_6_s_ba
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_6_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_6_s_ba_picked
+						has_country_flag = acw_cf_company_6_s_bb_picked
+						}
+					}
+					has_country_flag = acw_cf_company_6_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_6_s_ba_picked}
+	frame = { number = 6
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_6_s_bb
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_6_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_6_s_bb_picked
+						has_country_flag = acw_cf_company_6_s_ba_picked
+						}
+					}
+					has_country_flag = acw_cf_company_6_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_6_s_bb_picked}
+	frame = { number = 7
+				trigger = {always = yes}
+				}
+}
+
+
+#logistics corps
+
+custom_button = {
+	name = acw_cf_company_7
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = {has_country_flag = acw_cf_company_7_picked}}		
+				
+	effect = {		set_country_flag = acw_cf_company_7_picked}
+	
+	frame = { number = 9
+				trigger = {
+							tag = RUS
+				}
+			}
+	
+	frame = { number = 8
+				trigger = {
+							has_estate = estate_tribes
+				}
+			}	
+			
+	
+	frame = { number = 1
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_7_s_a
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_7_s_a_picked
+						has_country_flag = acw_cf_company_7_s_b_picked
+						}
+					}
+				}	
+				
+	effect = {		set_country_flag = acw_cf_company_7_s_a_picked}
+	frame = { number = 2
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_7_s_b
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_7_s_a_picked
+						has_country_flag = acw_cf_company_7_s_b_picked
+						}
+					}
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_7_s_b_picked}
+	frame = { number = 3
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_7_s_aa
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_7_s_aa_picked
+						has_country_flag = acw_cf_company_7_s_ab_picked
+						}
+					}
+				has_country_flag = acw_cf_company_7_s_a_picked
+			}
+				
+	effect = {	set_country_flag = acw_cf_company_7_s_aa_picked}
+	frame = { number = 4
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_7_s_ab
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_7_s_a_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_7_s_aa_picked
+						has_country_flag = acw_cf_company_7_s_ab_picked
+						}
+					}
+					has_country_flag = acw_cf_company_7_s_a_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_7_s_ab_picked}
+	frame = { number = 5
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_7_s_ba
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_7_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_7_s_ba_picked
+						has_country_flag = acw_cf_company_7_s_bb_picked
+						}
+					}
+					has_country_flag = acw_cf_company_7_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_7_s_ba_picked}
+	frame = { number = 6
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_7_s_bb
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_7_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_7_s_bb_picked
+						has_country_flag = acw_cf_company_7_s_ba_picked
+						}
+					}
+					has_country_flag = acw_cf_company_7_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_7_s_bb_picked}
+	frame = { number = 7
+				trigger = {always = yes}
+				}
+}
+
+
+
+#sappers
+
+custom_button = {
+	name = acw_cf_company_8
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = {has_country_flag = acw_cf_company_8_picked}}		
+				
+	effect = {		set_country_flag = acw_cf_company_8_picked}
+	
+	frame = { number = 1
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_8_s_a
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_8_s_a_picked
+						has_country_flag = acw_cf_company_8_s_b_picked
+						}
+					}
+				}	
+				
+	effect = {		set_country_flag = acw_cf_company_8_s_a_picked}
+	frame = { number = 2
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_8_s_b
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_8_s_a_picked
+						has_country_flag = acw_cf_company_8_s_b_picked
+						}
+					}
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_8_s_b_picked}
+	frame = { number = 3
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_8_s_aa
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_8_s_aa_picked
+						has_country_flag = acw_cf_company_8_s_ab_picked
+						}
+					}
+				has_country_flag = acw_cf_company_8_s_a_picked
+			}
+				
+	effect = {	set_country_flag = acw_cf_company_8_s_aa_picked}
+	frame = { number = 4
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_8_s_ab
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_8_s_a_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_8_s_aa_picked
+						has_country_flag = acw_cf_company_8_s_ab_picked
+						}
+					}
+					has_country_flag = acw_cf_company_8_s_a_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_8_s_ab_picked}
+	frame = { number = 5
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_8_s_ba
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_8_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_8_s_ba_picked
+						has_country_flag = acw_cf_company_8_s_bb_picked
+						}
+					}
+					has_country_flag = acw_cf_company_8_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_8_s_ba_picked}
+	frame = { number = 6
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_8_s_bb
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_8_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_8_s_bb_picked
+						has_country_flag = acw_cf_company_8_s_ba_picked
+						}
+					}
+					has_country_flag = acw_cf_company_8_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_8_s_bb_picked}
+	frame = { number = 7
+				trigger = {always = yes}
+				}
+}
+
+
+#medical corps
+
+custom_button = {
+	name = acw_cf_company_9
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = {has_country_flag = acw_cf_company_9_picked}}		
+				
+	effect = {		set_country_flag = acw_cf_company_9_picked}
+	
+	frame = { number = 1
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_9_s_a
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_9_s_a_picked
+						has_country_flag = acw_cf_company_9_s_b_picked
+						}
+					}
+				}	
+				
+	effect = {		set_country_flag = acw_cf_company_9_s_a_picked}
+	frame = { number = 2
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_9_s_b
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_9_s_a_picked
+						has_country_flag = acw_cf_company_9_s_b_picked
+						}
+					}
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_9_s_b_picked}
+	frame = { number = 3
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_9_s_aa
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_9_s_aa_picked
+						has_country_flag = acw_cf_company_9_s_ab_picked
+						}
+					}
+				has_country_flag = acw_cf_company_9_s_a_picked
+			}
+				
+	effect = {	set_country_flag = acw_cf_company_9_s_aa_picked}
+	frame = { number = 4
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_9_s_ab
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_9_s_a_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_9_s_aa_picked
+						has_country_flag = acw_cf_company_9_s_ab_picked
+						}
+					}
+					has_country_flag = acw_cf_company_9_s_a_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_9_s_ab_picked}
+	frame = { number = 5
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_9_s_ba
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_9_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_9_s_ba_picked
+						has_country_flag = acw_cf_company_9_s_bb_picked
+						}
+					}
+					has_country_flag = acw_cf_company_9_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_9_s_ba_picked}
+	frame = { number = 6
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_9_s_bb
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_9_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_9_s_bb_picked
+						has_country_flag = acw_cf_company_9_s_ba_picked
+						}
+					}
+					has_country_flag = acw_cf_company_9_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_9_s_bb_picked}
+	frame = { number = 7
+				trigger = {always = yes}
+				}
+}
+
+
+
+#repairmen
+
+custom_button = {
+	name = acw_cf_company_10
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = {has_country_flag = acw_cf_company_10_picked}}		
+				
+	effect = {		set_country_flag = acw_cf_company_10_picked}
+	
+	frame = { number = 8
+				trigger = {primary_culture = japanese}
+				}
+	
+	frame = { number = 1
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_10_s_a
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_10_s_a_picked
+						has_country_flag = acw_cf_company_10_s_b_picked
+						}
+					}
+				}	
+				
+	effect = {		set_country_flag = acw_cf_company_10_s_a_picked}
+	frame = { number = 2
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_10_s_b
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_10_s_a_picked
+						has_country_flag = acw_cf_company_10_s_b_picked
+						}
+					}
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_10_s_b_picked}
+	frame = { number = 3
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_10_s_aa
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_10_s_aa_picked
+						has_country_flag = acw_cf_company_10_s_ab_picked
+						}
+					}
+				has_country_flag = acw_cf_company_10_s_a_picked
+			}
+				
+	effect = {	set_country_flag = acw_cf_company_10_s_aa_picked}
+	frame = { number = 4
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_10_s_ab
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_10_s_a_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_10_s_aa_picked
+						has_country_flag = acw_cf_company_10_s_ab_picked
+						}
+					}
+					has_country_flag = acw_cf_company_10_s_a_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_10_s_ab_picked}
+	frame = { number = 5
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_10_s_ba
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_10_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_10_s_ba_picked
+						has_country_flag = acw_cf_company_10_s_bb_picked
+						}
+					}
+					has_country_flag = acw_cf_company_10_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_10_s_ba_picked}
+	frame = { number = 6
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_10_s_bb
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_10_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_10_s_bb_picked
+						has_country_flag = acw_cf_company_10_s_ba_picked
+						}
+					}
+					has_country_flag = acw_cf_company_10_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_10_s_bb_picked}
+	frame = { number = 7
+				trigger = {always = yes}
+				}
+}
+
+
+#slaves
+
+custom_button = {
+	name = acw_cf_company_11
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = {has_country_flag = acw_cf_company_11_picked}
+				any_owned_province = { trade_goods = slaves }
+				}		
+				
+	effect = {	set_country_flag = acw_cf_company_11_picked}
+	
+	frame = { number = 8
+				trigger = {culture_group = persian}
+				}
+	
+	frame = { number = 1
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_11_s_a
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_11_s_a_picked
+						has_country_flag = acw_cf_company_11_s_b_picked
+						}
+					}
+				}	
+				
+	effect = {		set_country_flag = acw_cf_company_11_s_a_picked}
+	frame = { number = 2
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_11_s_b
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_11_s_a_picked
+						has_country_flag = acw_cf_company_11_s_b_picked
+						}
+					}
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_11_s_b_picked}
+	frame = { number = 3
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_11_s_aa
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_11_s_aa_picked
+						has_country_flag = acw_cf_company_11_s_ab_picked
+						}
+					}
+				has_country_flag = acw_cf_company_11_s_a_picked
+			}
+				
+	effect = {	set_country_flag = acw_cf_company_11_s_aa_picked}
+	frame = { number = 4
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_11_s_ab
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_11_s_a_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_11_s_aa_picked
+						has_country_flag = acw_cf_company_11_s_ab_picked
+						}
+					}
+					has_country_flag = acw_cf_company_11_s_a_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_11_s_ab_picked}
+	frame = { number = 5
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_11_s_ba
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_11_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_11_s_ba_picked
+						has_country_flag = acw_cf_company_11_s_bb_picked
+						}
+					}
+					has_country_flag = acw_cf_company_11_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_11_s_ba_picked}
+	frame = { number = 6
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_11_s_bb
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_11_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_11_s_bb_picked
+						has_country_flag = acw_cf_company_11_s_ba_picked
+						}
+					}
+					has_country_flag = acw_cf_company_11_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_11_s_bb_picked}
+	frame = { number = 7
+				trigger = {always = yes}
+				}
+}
+
+
+
+
+custom_button = {
+	name = acw_cf_company_11
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = {has_country_flag = acw_cf_company_11_picked}}		
+				
+	effect = {		set_country_flag = acw_cf_company_11_picked}
+	
+	frame = { number = 1
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_11_s_a
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_11_s_a_picked
+						has_country_flag = acw_cf_company_11_s_b_picked
+						}
+					}
+				}	
+				
+	effect = {		set_country_flag = acw_cf_company_11_s_a_picked}
+	frame = { number = 2
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_11_s_b
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_11_s_a_picked
+						has_country_flag = acw_cf_company_11_s_b_picked
+						}
+					}
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_11_s_b_picked}
+	frame = { number = 3
+				trigger = {always = yes}
+				}
+}	
+
+custom_button = {
+	name = acw_cf_company_11_s_aa
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_11_s_aa_picked
+						has_country_flag = acw_cf_company_11_s_ab_picked
+						}
+					}
+				has_country_flag = acw_cf_company_11_s_a_picked
+			}
+				
+	effect = {	set_country_flag = acw_cf_company_11_s_aa_picked}
+	frame = { number = 4
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_11_s_ab
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_11_s_a_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_11_s_aa_picked
+						has_country_flag = acw_cf_company_11_s_ab_picked
+						}
+					}
+					has_country_flag = acw_cf_company_11_s_a_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_11_s_ab_picked}
+	frame = { number = 5
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_11_s_ba
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_11_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_11_s_ba_picked
+						has_country_flag = acw_cf_company_11_s_bb_picked
+						}
+					}
+					has_country_flag = acw_cf_company_11_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_11_s_ba_picked}
+	frame = { number = 6
+				trigger = {always = yes}
+				}
+}
+
+custom_button = {
+	name = acw_cf_company_11_s_bb
+    potential = {has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open
+				 has_country_flag = acw_cf_company_11_s_b_picked
+				} 
+				
+	trigger = { NOT = { 
+					OR = {
+						has_country_flag = acw_cf_company_11_s_bb_picked
+						has_country_flag = acw_cf_company_11_s_ba_picked
+						}
+					}
+					has_country_flag = acw_cf_company_11_s_b_picked
+				}
+				
+	effect = {	set_country_flag = acw_cf_company_11_s_bb_picked}
+	frame = { number = 7
+				trigger = {always = yes}
+				}
 }
