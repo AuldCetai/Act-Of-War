@@ -2292,6 +2292,13 @@ custom_button = {
 							has_country_flag = acw_arma_s4_1
 						}	
 					}
+					
+				AND = { 
+						owns_or_non_sovereign_subject_of = 674
+						owns_or_non_sovereign_subject_of = 2371
+						owns_or_non_sovereign_subject_of = 678
+					}
+				
 				current_age = age_of_absolutism
 			}
   	effect = {  	
@@ -2377,6 +2384,13 @@ custom_button = {
 							has_country_flag = acw_arma_s4_2
 						}	
 					}
+					
+					AND = {	
+						owns_or_non_sovereign_subject_of = 4040
+						owns_or_non_sovereign_subject_of = 1186
+						owns_or_non_sovereign_subject_of = 1185
+					}	
+
 					current_age = age_of_absolutism
 			}
   	effect = {  	
@@ -2463,6 +2477,13 @@ custom_button = {
 							has_country_flag = acw_arma_s4_3		
 						}						
 					}
+					
+					AND = {	
+						owns_or_non_sovereign_subject_of = 525
+						owns_or_non_sovereign_subject_of = 4509
+						owns_or_non_sovereign_subject_of = 2223
+					}	
+
 					current_age = age_of_absolutism
 			}						
   	effect = {  								
@@ -2549,6 +2570,13 @@ custom_button = {
 							has_country_flag = acw_arma_s4_4		
 						}			
 					}
+					
+					AND = {					
+						owns_or_non_sovereign_subject_of = 442
+						owns_or_non_sovereign_subject_of = 458
+						owns_or_non_sovereign_subject_of = 2226
+					}					
+
 					current_age = age_of_absolutism		
 			}						
   	effect = {  								
@@ -2634,6 +2662,14 @@ custom_button = {
 							has_country_flag = acw_arma_s4_5		
 						}			
 					}
+				
+				AND = {					
+					owns_or_non_sovereign_subject_of = 2077
+					owns_or_non_sovereign_subject_of = 4509
+					owns_or_non_sovereign_subject_of = 559
+					}
+				
+					
 				current_age = age_of_absolutism					
 			}						
   	effect = {  								
@@ -2719,7 +2755,14 @@ custom_button = {
 							has_country_flag = acw_arma_s4_6	
 						}		
 					}
-				current_age = age_of_absolutism	
+					
+					AND = {					
+						owns_or_non_sovereign_subject_of = 193
+						owns_or_non_sovereign_subject_of = 4386
+						owns_or_non_sovereign_subject_of = 172
+					}
+
+					current_age = age_of_absolutism	
 			}					
   	effect = {  							
 				if = { 				
@@ -2803,6 +2846,10 @@ custom_button = {
 							has_country_flag = acw_arma_s3_7			
 							has_country_flag = acw_arma_s4_7			
 						}				
+					}	
+					trade_goods_produced_amount = {
+							trade_goods = iron
+							amount = 3
 					}
 					current_age = age_of_absolutism		
 			}							
@@ -2889,6 +2936,13 @@ custom_button = {
 							has_country_flag = acw_arma_s4_8		
 						}			
 					}
+					
+					AND = {					
+						owns_or_non_sovereign_subject_of = 519
+						owns_or_non_sovereign_subject_of = 548
+						owns_or_non_sovereign_subject_of = 4462
+					}
+
 					current_age = age_of_absolutism		
 			}						
   	effect = {  								
@@ -2974,6 +3028,13 @@ custom_button = {
 							has_country_flag = acw_arma_s4_9		
 						}			
 					}
+					
+					AND = {					
+						owns_or_non_sovereign_subject_of = 2111
+						owns_or_non_sovereign_subject_of = 4186
+						owns_or_non_sovereign_subject_of = 1014
+					}	
+
 					current_age = age_of_absolutism	
 			}						
   	effect = {  								
@@ -3059,6 +3120,13 @@ custom_button = {
 							has_country_flag = acw_arma_s4_10	
 						}		
 					}
+					
+					AND = {						
+						owns_or_non_sovereign_subject_of = 1168
+						owns_or_non_sovereign_subject_of = 4086
+						owns_or_non_sovereign_subject_of = 4095
+					}		
+
 					current_age = age_of_absolutism
 			}					
   	effect = {  							
@@ -3145,7 +3213,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_11			
 							has_country_flag = acw_arma_s4_11			
 						}				
-					}					
+					}
+
+					AND = {						
+						owns_or_non_sovereign_subject_of = 219
+						owns_or_non_sovereign_subject_of = 210
+						owns_or_non_sovereign_subject_of = 214
+					}	
+
 					current_age = age_of_discovery					
 			}							
   	effect = {  									
@@ -3231,7 +3306,15 @@ custom_button = {
 							has_country_flag = acw_arma_s3_12		
 							has_country_flag = acw_arma_s4_12		
 						}			
-					}				
+					}	
+					
+					AND = {						
+						owns_or_non_sovereign_subject_of = 2971
+						owns_or_non_sovereign_subject_of = 1763
+						owns_or_non_sovereign_subject_of = 4478
+					}	
+
+					
 					current_age = age_of_discovery				
 			}						
   	effect = {  								
@@ -3317,7 +3400,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_13			
 							has_country_flag = acw_arma_s4_13			
 						}				
-					}					
+					}	
+					AND = {						
+						owns_or_non_sovereign_subject_of = 582
+						owns_or_non_sovereign_subject_of = 663
+						owns_or_non_sovereign_subject_of = 2162
+					}	
+
+					
 					current_age = age_of_discovery					
 			}							
   	effect = {  									
@@ -3403,7 +3493,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_14				
 							has_country_flag = acw_arma_s4_14				
 						}					
-					}						
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 1020
+						owns_or_non_sovereign_subject_of = 1030
+						owns_or_non_sovereign_subject_of = 1017
+					}	
+
+					
 					current_age = age_of_discovery						
 			}								
   	effect = {  										
@@ -3488,7 +3585,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_15			
 							has_country_flag = acw_arma_s4_15			
 						}				
-					}					
+					}
+					AND = {							
+						owns_or_non_sovereign_subject_of = 841	
+						owns_or_non_sovereign_subject_of = 2653	
+						owns_or_non_sovereign_subject_of = 4573	
+					}		
+
+					
 					current_age = age_of_discovery					
 			}							
   	effect = {  									
@@ -3573,7 +3677,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_16				
 							has_country_flag = acw_arma_s4_16				
 						}					
-					}						
+					}
+
+					AND = {						
+						owns_or_non_sovereign_subject_of = 3001
+						owns_or_non_sovereign_subject_of = 2305
+						owns_or_non_sovereign_subject_of = 325
+					}	
+					
 					current_age = age_of_discovery						
 			}								
   	effect = {  										
@@ -3658,7 +3769,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_17			
 							has_country_flag = acw_arma_s4_17			
 						}				
-					}					
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 2715
+						owns_or_non_sovereign_subject_of = 656
+						owns_or_non_sovereign_subject_of = 2702
+					}	
+
+					
 					current_age = age_of_discovery					
 			}							
   	effect = {  									
@@ -3743,7 +3861,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_18			
 							has_country_flag = acw_arma_s4_18			
 						}				
-					}					
+					}
+
+					AND = {						
+						owns_or_non_sovereign_subject_of = 382
+						owns_or_non_sovereign_subject_of = 2323
+						owns_or_non_sovereign_subject_of = 2322
+					}	
+		
 					current_age = age_of_discovery					
 			}							
   	effect = {  									
@@ -3828,7 +3953,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_19				
 							has_country_flag = acw_arma_s4_19				
 						}					
-					}						
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 1018
+						owns_or_non_sovereign_subject_of = 4184
+						owns_or_non_sovereign_subject_of = 4189
+					}	
+
+								
 					current_age = age_of_discovery						
 			}								
   	effect = {  										
@@ -3913,7 +4045,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_20				
 							has_country_flag = acw_arma_s4_20				
 						}					
-					}						
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 4067
+						owns_or_non_sovereign_subject_of = 4097
+						owns_or_non_sovereign_subject_of = 4055
+					}	
+
+					
 					current_age = age_of_discovery						
 			}								
   	effect = {  										
@@ -4000,7 +4139,15 @@ custom_button = {
 							has_country_flag = acw_arma_s3_21				
 							has_country_flag = acw_arma_s4_21				
 						}					
-					}						
+					}
+					
+					AND = {						
+						owns_or_non_sovereign_subject_of = 1925
+						owns_or_non_sovereign_subject_of = 1273
+						owns_or_non_sovereign_subject_of = 4051
+					}	
+
+					
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -4086,7 +4233,11 @@ custom_button = {
 							has_country_flag = acw_arma_s3_22				
 							has_country_flag = acw_arma_s4_22				
 						}					
-					}						
+					}
+					trade_goods_produced_amount = {
+							trade_goods = ivory
+							amount = 3
+					}
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -4172,7 +4323,15 @@ custom_button = {
 							has_country_flag = acw_arma_s3_23				
 							has_country_flag = acw_arma_s4_23				
 						}					
-					}						
+					}
+					OR = {						
+						owns_or_non_sovereign_subject_of = 151
+						owns_or_non_sovereign_subject_of = 96
+						owns_or_non_sovereign_subject_of = 4651
+						owns_or_non_sovereign_subject_of = 1012
+					}	
+
+					
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -4258,7 +4417,13 @@ custom_button = {
 							has_country_flag = acw_arma_s3_24				
 							has_country_flag = acw_arma_s4_24				
 						}					
-					}						
+					}	
+					AND = {						
+						owns_or_non_sovereign_subject_of = 2966
+						owns_or_non_sovereign_subject_of = 263
+						owns_or_non_sovereign_subject_of = 61
+					}	
+					
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -4344,7 +4509,15 @@ custom_button = {
 							has_country_flag = acw_arma_s3_25				
 							has_country_flag = acw_arma_s4_25				
 						}					
-					}						
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 189
+						owns_or_non_sovereign_subject_of = 1757
+						owns_or_non_sovereign_subject_of = 166
+					}	
+					
+
+					
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -4430,7 +4603,13 @@ custom_button = {
 							has_country_flag = acw_arma_s3_26				
 							has_country_flag = acw_arma_s4_26				
 						}					
-					}						
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 376
+						owns_or_non_sovereign_subject_of = 4363
+						owns_or_non_sovereign_subject_of = 4366
+					}	
+
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -4516,7 +4695,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_27				
 							has_country_flag = acw_arma_s4_27				
 						}					
-					}						
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 1851
+						owns_or_non_sovereign_subject_of = 222
+						owns_or_non_sovereign_subject_of = 4547
+					}	
+
+					
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -4601,7 +4787,13 @@ custom_button = {
 							has_country_flag = acw_arma_s3_28				
 							has_country_flag = acw_arma_s4_28				
 						}					
-					}						
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 602
+						owns_or_non_sovereign_subject_of = 2389
+						owns_or_non_sovereign_subject_of = 2402
+					}	
+
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -4687,7 +4879,13 @@ custom_button = {
 							has_country_flag = acw_arma_s3_29				
 							has_country_flag = acw_arma_s4_29				
 						}					
-					}						
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 2067
+						owns_or_non_sovereign_subject_of = 4509
+						owns_or_non_sovereign_subject_of = 528
+					}	
+
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -4772,7 +4970,13 @@ custom_button = {
 							has_country_flag = acw_arma_s3_30				
 							has_country_flag = acw_arma_s4_30				
 						}					
-					}						
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 644
+						owns_or_non_sovereign_subject_of = 652
+						owns_or_non_sovereign_subject_of = 4355
+					}	
+		
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -4859,7 +5063,13 @@ custom_button = {
 							has_country_flag = acw_arma_s3_31				
 							has_country_flag = acw_arma_s4_31				
 						}					
-					}						
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 2205
+						owns_or_non_sovereign_subject_of = 4301
+						owns_or_non_sovereign_subject_of = 4306
+					}	
+
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -4945,7 +5155,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_32				
 							has_country_flag = acw_arma_s4_32				
 						}					
-					}						
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 181
+						owns_or_non_sovereign_subject_of = 192
+						owns_or_non_sovereign_subject_of = 4112
+					}	
+
+					
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -5030,7 +5247,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_33					
 							has_country_flag = acw_arma_s4_33					
 						}						
-					}							
+					}	
+					AND = {						
+						owns_or_non_sovereign_subject_of = 183
+						owns_or_non_sovereign_subject_of = 929
+						owns_or_non_sovereign_subject_of = 4363
+					}	
+
+					
 					current_age = age_of_reformation							
 			}									
   	effect = {  											
@@ -5115,7 +5339,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_34				
 							has_country_flag = acw_arma_s4_34				
 						}					
-					}						
+					}	
+					
+					AND = {						
+						owns_or_non_sovereign_subject_of = 967
+						owns_or_non_sovereign_subject_of = 2970
+						owns_or_non_sovereign_subject_of = 2532
+					}	
+							
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -5199,7 +5430,13 @@ custom_button = {
 							has_country_flag = acw_arma_s3_35					
 							has_country_flag = acw_arma_s4_35					
 						}						
-					}							
+					}
+				
+					AND = {						
+						owns_or_non_sovereign_subject_of = 233
+						owns_or_non_sovereign_subject_of = 4378
+						owns_or_non_sovereign_subject_of = 1978
+					}	
 					current_age = age_of_reformation							
 			}									
   	effect = {  											
@@ -5284,7 +5521,14 @@ custom_button = {
 							has_country_flag = acw_arma_s3_36				
 							has_country_flag = acw_arma_s4_36				
 						}					
-					}						
+					}
+					
+					AND = {						
+						owns_or_non_sovereign_subject_of = 877
+						owns_or_non_sovereign_subject_of = 2484
+						owns_or_non_sovereign_subject_of = 2672
+					}	
+
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -5369,7 +5613,12 @@ custom_button = {
 							has_country_flag = acw_arma_s3_37				
 							has_country_flag = acw_arma_s4_37				
 						}					
-					}						
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 2069
+						owns_or_non_sovereign_subject_of = 4482
+						owns_or_non_sovereign_subject_of = 4485
+					}
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -5455,7 +5704,12 @@ custom_button = {
 							has_country_flag = acw_arma_s3_38				
 							has_country_flag = acw_arma_s4_38				
 						}					
-					}						
+					}
+					AND = {						
+						owns_or_non_sovereign_subject_of = 695
+						owns_or_non_sovereign_subject_of = 679
+						owns_or_non_sovereign_subject_of = 2157
+					}	
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -5541,7 +5795,13 @@ custom_button = {
 							has_country_flag = acw_arma_s3_39				
 							has_country_flag = acw_arma_s4_39				
 						}					
-					}						
+					}	
+					AND = {						
+						owns_or_non_sovereign_subject_of = 778
+						owns_or_non_sovereign_subject_of = 4788
+						owns_or_non_sovereign_subject_of = 4380
+					}	
+
 					current_age = age_of_reformation						
 			}								
   	effect = {  										
@@ -5627,7 +5887,11 @@ custom_button = {
 							has_country_flag = acw_arma_s3_40				
 							has_country_flag = acw_arma_s4_40				
 						}					
-					}						
+					}
+					trade_goods_produced_amount = {
+							trade_goods = grain
+							amount = 3
+					}
 					current_age = age_of_reformation						
 			}								
   	effect = {  										

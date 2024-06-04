@@ -605,7 +605,7 @@ acw_arma_chu_ko_nu = {
 				}
 				
 acw_arma_nock_gun = { 
-				leader_land_fire = 1 
+				allowed_marine_fraction = 0.1 
 				}
 				
 acw_arma_dragoon_musket = { 
