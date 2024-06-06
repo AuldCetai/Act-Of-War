@@ -3381,7 +3381,7 @@ guiTypes = {
 				scripted = yes
 			}
 
-		#camp_followers
+		#camp_followers - page 1
 			guiButtonType ={
 				name ="acw_cf_company_1"
 				scripted = yes
@@ -3445,7 +3445,651 @@ guiTypes = {
 				scale = 1
 			}
 			
+		#camp_followers - page 1 - c2
+			guiButtonType ={
+				name ="acw_cf_company_2"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_2"
+				position = { x= 690 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
 			
+			guiButtonType ={
+				name ="acw_cf_company_2_s_a"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_2"
+				position = { x= 780 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_2_s_b"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_2"
+				position = { x= 780 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_2_s_aa"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_2"
+				position = { x= 870 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_2_s_ab"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_2"
+				position = { x= 870 y = 710 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_2_s_ba"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_2"
+				position = { x= 870 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_2_s_bb"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_2"
+				position = { x= 870 y = 910 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}	
+			
+			#camp_followers - page 1 - c3
+			guiButtonType ={
+				name ="acw_cf_company_3"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_3"
+				position = { x= 690 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_3_s_a"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_3"
+				position = { x= 780 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_3_s_b"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_3"
+				position = { x= 780 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_3_s_aa"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_3"
+				position = { x= 870 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_3_s_ab"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_3"
+				position = { x= 870 y = 710 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_3_s_ba"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_3"
+				position = { x= 870 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_3_s_bb"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_3"
+				position = { x= 870 y = 910 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}	
+			
+			
+			#camp_followers - page 1 - c4
+			guiButtonType ={
+				name ="acw_cf_company_4"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_4"
+				position = { x= 690 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_4_s_a"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_4"
+				position = { x= 780 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_4_s_b"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_4"
+				position = { x= 780 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_4_s_aa"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_4"
+				position = { x= 870 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_4_s_ab"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_4"
+				position = { x= 870 y = 710 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_4_s_ba"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_4"
+				position = { x= 870 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_4_s_bb"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_4"
+				position = { x= 870 y = 910 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			
+			#camp_followers - page 2
+			guiButtonType ={
+				name ="acw_cf_company_5"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_5"
+				position = { x= 690 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_5_s_a"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_5"
+				position = { x= 780 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_5_s_b"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_5"
+				position = { x= 780 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_5_s_aa"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_5"
+				position = { x= 870 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_5_s_ab"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_5"
+				position = { x= 870 y = 710 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_5_s_ba"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_5"
+				position = { x= 870 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_5_s_bb"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_5"
+				position = { x= 870 y = 910 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+		#camp_followers - page 2 - c6
+			guiButtonType ={
+				name ="acw_cf_company_6"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_6"
+				position = { x= 690 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_6_s_a"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_6"
+				position = { x= 780 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_6_s_b"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_6"
+				position = { x= 780 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_6_s_aa"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_6"
+				position = { x= 870 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_6_s_ab"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_6"
+				position = { x= 870 y = 710 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_6_s_ba"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_6"
+				position = { x= 870 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_6_s_bb"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_6"
+				position = { x= 870 y = 910 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}	
+			
+			#camp_followers - page 2 - c7
+			guiButtonType ={
+				name ="acw_cf_company_7"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_7"
+				position = { x= 690 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_7_s_a"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_7"
+				position = { x= 780 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_7_s_b"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_7"
+				position = { x= 780 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_7_s_aa"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_7"
+				position = { x= 870 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_7_s_ab"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_7"
+				position = { x= 870 y = 710 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_7_s_ba"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_7"
+				position = { x= 870 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_7_s_bb"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_7"
+				position = { x= 870 y = 910 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}	
+			
+			
+			#camp_followers - page 2 - c8
+			guiButtonType ={
+				name ="acw_cf_company_8"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_8"
+				position = { x= 690 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_8_s_a"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_8"
+				position = { x= 780 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_8_s_b"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_8"
+				position = { x= 780 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_8_s_aa"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_8"
+				position = { x= 870 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_8_s_ab"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_8"
+				position = { x= 870 y = 710 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_8_s_ba"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_8"
+				position = { x= 870 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_8_s_bb"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_8"
+				position = { x= 870 y = 910 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			
+			#cf page 3
+			#camp_followers - page 3 - c9
+			guiButtonType ={
+				name ="acw_cf_company_9"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_9"
+				position = { x= 690 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_9_s_a"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_9"
+				position = { x= 780 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_9_s_b"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_9"
+				position = { x= 780 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_9_s_aa"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_9"
+				position = { x= 870 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_9_s_ab"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_9"
+				position = { x= 870 y = 710 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_9_s_ba"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_9"
+				position = { x= 870 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_9_s_bb"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_9"
+				position = { x= 870 y = 910 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}	
+			
+			#camp_followers - page 3 - c10
+			guiButtonType ={
+				name ="acw_cf_company_10"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_10"
+				position = { x= 690 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_10_s_a"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_10"
+				position = { x= 780 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_10_s_b"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_10"
+				position = { x= 780 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_10_s_aa"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_10"
+				position = { x= 870 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_10_s_ab"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_10"
+				position = { x= 870 y = 710 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_10_s_ba"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_10"
+				position = { x= 870 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_10_s_bb"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_10"
+				position = { x= 870 y = 910 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}	
+			
+			
+			#camp_followers - page 3 - c11
+			guiButtonType ={
+				name ="acw_cf_company_11"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_11"
+				position = { x= 690 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_11_s_a"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_11"
+				position = { x= 780 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_11_s_b"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_11"
+				position = { x= 780 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_11_s_aa"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_11"
+				position = { x= 870 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_11_s_ab"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_11"
+				position = { x= 870 y = 710 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_11_s_ba"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_11"
+				position = { x= 870 y = 810 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_cf_company_11_s_bb"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_cf_company_11"
+				position = { x= 870 y = 910 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
 			
 		windowType = {
 			name = "army_professionalism"
