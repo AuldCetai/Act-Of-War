@@ -7,11 +7,24 @@ country_event = {
 	desc = acw_hd_1.d
 	picture = GFX_acw_hd_feats_of_horsemanship
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	trigger = {
+			primitives = yes
+			is_in_war = {
+					OR ={	
+							attackers=GBR
+							attackers=USA			
+							attackers=SPA
+							attackers=POR
+							attackers=CAS
+							attackers=FRA
+							attackers=NOR
+						}
+					}
+			NOT = {has_country_flag = acw_hd_1_done}
 	}
 
+	after = {set_country_flag = acw_hd_1_done}
 	option = {
 		name = "acw_hd_1.a"
 		trigger = {
@@ -64,7 +77,9 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	trigger = {
+	trigger = {	
+					is_in_war = {attackers = TUR}
+					has_global_flag = acw_turks_lost_at_wien
 	}
 
 	option = {
@@ -92,6 +107,7 @@ country_event = {
 										name = acw_hd_winged_hussars_arrive
 										duration = -1
 						}
+		clr_global_flag = acw_turks_lost_at_wien
 		
 		ai_chance = {
 			factor = 50	
@@ -101,9 +117,11 @@ country_event = {
 	option = {
 		name = "acw_hd_2.b"
 		add_prestige = 20
+		clr_global_flag = acw_turks_lost_at_wien
 		ai_chance = {
 			factor = 50	
-		}	
+		}
+		
 	}
 }
 
@@ -115,9 +133,9 @@ country_event = {
 	desc = acw_hd_3.d
 	picture = GFX_acw_hd_surrender_of_breda
 	is_triggered_only = yes
-	fire_only_once = yes
+
 	
-	trigger = {		
+	trigger = {	NOT = {has_country_flag = acw_hd_3_done}
 				AND = {
 					95 = {is_controlled_by = SPA}
 					OR = { tag = SPA
@@ -127,6 +145,8 @@ country_event = {
 							}
 						}		
 	}
+	
+	after = {set_country_flag = acw_hd_3_done}
 
 	option = {
 		name = "acw_hd_3.a"
@@ -177,11 +197,12 @@ country_event = {
 	desc = acw_hd_4.d
 	picture = GFX_acw_hd_consequences_of_war
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	trigger = {
+			NOT = {has_country_flag = acw_hd_4_done}
 	}
 
+	after = {set_country_flag = acw_hd_4_done}
 	option = {
 		name = "acw_hd_4.a"
 		trigger = {
@@ -230,12 +251,18 @@ country_event = {
 	title = acw_hd_5.t 
 	desc = acw_hd_5.d
 	picture = GFX_acw_hd_death_of_major_peirson
-	is_triggered_only = yes
 	fire_only_once = yes
 	
 	trigger = {
+				is_in_war = {attackers = FRA}
+				has_global_flag = acw_french_lost_in_america
+				NOT = {has_country_flag = acw_hd_5_done}
 	}
-
+	
+	mean_time_to_happen = {days = 1 }
+	
+	after = {set_country_flag = acw_hd_5_done}
+	
 	option = {
 		name = "acw_hd_5.a"
 		trigger = {
@@ -261,6 +288,7 @@ country_event = {
 										name = acw_hd_death_of_major_peirson
 										duration = -1
 						}
+		clr_global_flag = acw_french_lost_in_america
 				
 		
 		ai_chance = {
@@ -271,6 +299,7 @@ country_event = {
 	option = {
 		name = "acw_hd_5.b"
 		add_prestige = 20
+		clr_global_flag = acw_french_lost_in_america
 		ai_chance = {
 			factor = 50	
 		}	
@@ -286,9 +315,9 @@ country_event = {
 	desc = acw_hd_6.d
 	picture = GFX_acw_hd_revolt_in_cairo
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	trigger = {
+			NOT = {tag = MAM}
+			NOT = {has_country_flag = acw_hd_6_done}
 	}
 
 	option = {
@@ -316,7 +345,7 @@ country_event = {
 										name = acw_hd_revolt_in_cairo
 										duration = -1
 						}
-				
+		set_country_flag = acw_hd_6_done	
 		
 		ai_chance = {
 			factor = 50	
@@ -326,6 +355,7 @@ country_event = {
 	option = {
 		name = "acw_hd_6.b"
 		add_prestige = 20
+		set_country_flag = acw_hd_6_done
 		ai_chance = {
 			factor = 50	
 		}	
@@ -340,9 +370,10 @@ country_event = {
 	desc = acw_hd_7.d
 	picture = GFX_acw_hd_third_of_may
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	trigger = {
+				NOT = {tag = CAS}
+				NOT = {has_country_flag = acw_hd_7_done}
 	}
 
 	option = {
@@ -371,7 +402,7 @@ country_event = {
 										duration = -1
 						}
 				
-		
+		set_country_flag = acw_hd_7_done
 		ai_chance = {
 			factor = 50	
 		}	
@@ -380,6 +411,7 @@ country_event = {
 	option = {
 		name = "acw_hd_7.b"
 		add_prestige = 20
+		set_country_flag = acw_hd_7_done
 		ai_chance = {
 			factor = 50	
 		}	
@@ -398,8 +430,14 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		NOT = {has_country_flag = acw_hd_8_done}
+		is_colonial_nation = yes
+		has_global_flag = acw_crossed_the_delaware
 	}
-
+	
+	mean_time_to_happen = {days = 1}
+	after = {set_country_flag = acw_hd_8_done}
+	
 	option = {
 		name = "acw_hd_8.a"
 		trigger = {
@@ -426,7 +464,7 @@ country_event = {
 										duration = -1
 						}
 				
-		
+		clr_global_flag = acw_crossed_the_delaware
 		ai_chance = {
 			factor = 50	
 		}	
@@ -435,6 +473,7 @@ country_event = {
 	option = {
 		name = "acw_hd_8.b"
 		add_prestige = 20
+		clr_global_flag = acw_crossed_the_delaware
 		ai_chance = {
 			factor = 50	
 		}	
@@ -454,8 +493,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		num_of_cavalry = 35
+		is_tribal = no
 	}
-
+	
 	option = {
 		name = "acw_hd_9.a"
 		trigger = {
@@ -510,7 +551,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+			NOT = { tag = TUR }
+			NOT = {has_country_flag = acw_hd_10_done}
 	}
+	
+	after = {set_country_flag = acw_hd_10_done}
 
 	option = {
 		name = "acw_hd_10.a"
@@ -562,10 +607,15 @@ country_event = {
 	picture = GFX_acw_hd_conquista_de_mexico_por_cortes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 	trigger = {
+			is_in_war = {participants = AZT}
+			is_colonial = no
+			primitives = no
+			NOT = {has_country_flag = acw_hd_11_done}
 	}
-
+	
+	after = {set_country_flag = acw_hd_11_done}
+	
 	option = {
 		name = "acw_hd_11.a"
 		trigger = {
@@ -617,11 +667,12 @@ country_event = {
 	picture = GFX_acw_hd_die_schlacht_bei_den_pyramiden
 
 	is_triggered_only = yes
-	fire_only_once = yes
 	
-	trigger = {
+	trigger = { NOT = {has_country_flag = acw_hd_12_done}
+				culture_group = french
 	}
 
+	after = {set_country_flag = acw_hd_12_done}
 	option = {
 		name = "acw_hd_12.a"
 		trigger = {
@@ -674,11 +725,21 @@ country_event = {
 	picture = GFX_acw_hd_battle_of_carnal
 
 	is_triggered_only = yes
-	fire_only_once = yes
 	
-	trigger = {
+	
+	trigger = { NOT = {has_country_flag = acw_hd_13_done} 
+				AND = {
+					522 = {is_controlled_by = PER}
+					OR = {  tag = PER
+							is_in_war = {
+								participants = PER
+								}
+							}
+						}
 	}
-
+	
+	after = {set_country_flag = acw_hd_13_done}
+	
 	option = {
 		name = "acw_hd_13.a"
 		trigger = {
@@ -730,7 +791,6 @@ country_event = {
 	desc = acw_hd_14.d
 	picture = GFX_acw_hd_hadik_in_berlin
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	trigger = {
 				AND = {
@@ -741,8 +801,10 @@ country_event = {
 								}
 							}
 						}
+				NOT = {has_country_flag = acw_hd_14_done}
 	}
-
+	after = {set_country_flag = acw_hd_14_done}
+	
 	option = {
 		name = "acw_hd_14.a"
 		trigger = {
@@ -797,6 +859,9 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+				culture_group = turkish
+				own = 151
+				year = 1453
 	}
 
 	option = {
@@ -854,8 +919,22 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+			OR = {
+				is_in_war = {participants = MOL}
+				is_in_war = {participants = WAL}
+				is_in_war = {participants = TRA}
+				is_in_war = {participants = RMN}
+				}
+			OR = {
+				alliance_with =  MOL
+				alliance_with =  WAL
+				alliance_with =  TRA
+				alliance_with =  RMN
+				}
+			NOT = {has_country_flag = acw_hd_16_done}
 	}
-
+	
+	after = {set_country_flag = acw_hd_16_done}
 	option = {
 		name = "acw_hd_16.a"
 		trigger = {
@@ -908,11 +987,12 @@ country_event = {
 	picture = GFX_acw_hd_battle_of_kartarpur
 
 	is_triggered_only = yes
-	fire_only_once = yes
-	
-	trigger = {
-	}
 
+	
+	trigger = { NOT = {has_country_flag = acw_hd_17_done}
+	}
+	
+	after = {set_country_flag = acw_hd_17_done}
 	option = {
 		name = "acw_hd_17.a"
 		trigger = {
@@ -965,11 +1045,15 @@ country_event = {
 	picture = GFX_acw_hd_battle_of_adwa
 
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	trigger = {
+				is_in_war = { participants = ETH}
+				alliance_with = ETH
+				NOT = {has_country_flag = acw_hd_18_done}
 	}
-
+	
+	after = {set_country_flag = acw_hd_18_done}
+	
 	option = {
 		name = "acw_hd_18.a"
 		trigger = {
@@ -1021,10 +1105,12 @@ country_event = {
 	desc = acw_hd_19.d
 	picture = GFX_acw_hd_battle_of_badr
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	trigger = {
+			NOT = {has_country_flag = acw_hd_19_done}
 	}
+	
+	after = {set_country_flag = acw_hd_19_done}
 
 	option = {
 		name = "acw_hd_19.a"
@@ -1076,11 +1162,12 @@ country_event = {
 	picture = GFX_acw_hd_battle_of_mactan
 
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	trigger = {
+		NOT = {has_country_flag = acw_hd_20_done}
 	}
-
+	
+	after = {set_country_flag = acw_hd_20_done}
 	option = {
 		name = "acw_hd_20.a"
 		trigger = {
