@@ -3347,7 +3347,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "acw_cf_selector_window_close"
-				position = { x=780 y =680}
+				position = { x=860 y =840}
 				spriteType ="GFX_buy_dlc_button"
 				Orientation = "UPPER_LEFT"
 				scripted = yes
@@ -3355,9 +3355,29 @@ guiTypes = {
 				pdx_tooltip = ""
 			}
 			
+			guiButtonType = {
+				name = "acw_cf_up_one_page"
+				position = { x=1160 y =840}
+				spriteType ="GFX_nation_designer_navigate_right"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+				scale = 1.5
+				pdx_tooltip = ""
+			}
+			
+			guiButtonType = {
+				name = "acw_cf_down_one_page"
+				position = { x=680 y =840}
+				spriteType ="GFX_nation_designer_navigate_left"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+				scale = 1.5
+				pdx_tooltip = ""
+			}
+			
 			instantTextBoxType = {
 				name = "acw_cf_title_arma_text"
-				position = { x = 660 y =115 }
+				position = { x = 720 y =125 }
 				format = centre
 				font = "vic_29s"
 				maxWidth = 420
@@ -3370,7 +3390,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "acw_cf_back_button_text"
-				position = { x = 660 y =690 }
+				position = { x = 750 y =850 }
 				format = centre
 				font = "vic_29s"
 				maxWidth = 420
@@ -3386,7 +3406,7 @@ guiTypes = {
 				name ="acw_cf_company_1"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_1"
-				position = { x= 690 y = 610 }
+				position = { x= 640 y = 210 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3395,7 +3415,7 @@ guiTypes = {
 				name ="acw_cf_company_1_s_a"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_1"
-				position = { x= 780 y = 610 }
+				position = { x= 720 y = 210 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3404,7 +3424,7 @@ guiTypes = {
 				name ="acw_cf_company_1_s_b"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_1"
-				position = { x= 780 y = 810 }
+				position = { x= 720 y = 270 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3413,7 +3433,7 @@ guiTypes = {
 				name ="acw_cf_company_1_s_aa"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_1"
-				position = { x= 870 y = 610 }
+				position = { x= 800 y = 210 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3422,7 +3442,7 @@ guiTypes = {
 				name ="acw_cf_company_1_s_ab"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_1"
-				position = { x= 870 y = 710 }
+				position = { x= 800 y = 270 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3431,7 +3451,7 @@ guiTypes = {
 				name ="acw_cf_company_1_s_ba"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_1"
-				position = { x= 870 y = 810 }
+				position = { x= 800 y = 330 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3440,7 +3460,7 @@ guiTypes = {
 				name ="acw_cf_company_1_s_bb"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_1"
-				position = { x= 870 y = 910 }
+				position = { x= 800 y = 390 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3450,7 +3470,7 @@ guiTypes = {
 				name ="acw_cf_company_2"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_2"
-				position = { x= 690 y = 610 }
+				position = { x= 690 y = 210 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3459,7 +3479,7 @@ guiTypes = {
 				name ="acw_cf_company_2_s_a"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_2"
-				position = { x= 780 y = 610 }
+				position = { x= 780 y = 210 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3468,7 +3488,7 @@ guiTypes = {
 				name ="acw_cf_company_2_s_b"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_2"
-				position = { x= 780 y = 810 }
+				position = { x= 780 y = 270 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3477,7 +3497,7 @@ guiTypes = {
 				name ="acw_cf_company_2_s_aa"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_2"
-				position = { x= 870 y = 610 }
+				position = { x= 870 y = 210 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3486,7 +3506,7 @@ guiTypes = {
 				name ="acw_cf_company_2_s_ab"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_2"
-				position = { x= 870 y = 710 }
+				position = { x= 870 y = 270 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3495,7 +3515,7 @@ guiTypes = {
 				name ="acw_cf_company_2_s_ba"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_2"
-				position = { x= 870 y = 810 }
+				position = { x= 870 y = 330 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3504,7 +3524,7 @@ guiTypes = {
 				name ="acw_cf_company_2_s_bb"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_2"
-				position = { x= 870 y = 910 }
+				position = { x= 870 y = 390 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}	
@@ -3514,7 +3534,7 @@ guiTypes = {
 				name ="acw_cf_company_3"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_3"
-				position = { x= 690 y = 610 }
+				position = { x= 640 y = 610 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3523,7 +3543,7 @@ guiTypes = {
 				name ="acw_cf_company_3_s_a"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_3"
-				position = { x= 780 y = 610 }
+				position = { x= 720 y = 610 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3532,7 +3552,7 @@ guiTypes = {
 				name ="acw_cf_company_3_s_b"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_3"
-				position = { x= 780 y = 810 }
+				position = { x= 720 y = 810 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3541,7 +3561,7 @@ guiTypes = {
 				name ="acw_cf_company_3_s_aa"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_3"
-				position = { x= 870 y = 610 }
+				position = { x= 800 y = 610 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3550,7 +3570,7 @@ guiTypes = {
 				name ="acw_cf_company_3_s_ab"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_3"
-				position = { x= 870 y = 710 }
+				position = { x= 800 y = 710 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3559,7 +3579,7 @@ guiTypes = {
 				name ="acw_cf_company_3_s_ba"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_3"
-				position = { x= 870 y = 810 }
+				position = { x= 800 y = 810 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3568,7 +3588,7 @@ guiTypes = {
 				name ="acw_cf_company_3_s_bb"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_3"
-				position = { x= 870 y = 910 }
+				position = { x= 800 y = 910 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}	
@@ -3644,7 +3664,7 @@ guiTypes = {
 				name ="acw_cf_company_5"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_5"
-				position = { x= 690 y = 610 }
+				position = { x= 640 y = 210 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3653,7 +3673,7 @@ guiTypes = {
 				name ="acw_cf_company_5_s_a"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_5"
-				position = { x= 780 y = 610 }
+				position = { x= 720 y = 210 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3662,7 +3682,7 @@ guiTypes = {
 				name ="acw_cf_company_5_s_b"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_5"
-				position = { x= 780 y = 810 }
+				position = { x= 720 y = 270 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3671,7 +3691,7 @@ guiTypes = {
 				name ="acw_cf_company_5_s_aa"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_5"
-				position = { x= 870 y = 610 }
+				position = { x= 800 y = 210 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3680,7 +3700,7 @@ guiTypes = {
 				name ="acw_cf_company_5_s_ab"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_5"
-				position = { x= 870 y = 710 }
+				position = { x= 800 y = 270 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3689,7 +3709,7 @@ guiTypes = {
 				name ="acw_cf_company_5_s_ba"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_5"
-				position = { x= 870 y = 810 }
+				position = { x= 800 y = 330 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3698,7 +3718,7 @@ guiTypes = {
 				name ="acw_cf_company_5_s_bb"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_5"
-				position = { x= 870 y = 910 }
+				position = { x= 800 y = 390 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3772,7 +3792,7 @@ guiTypes = {
 				name ="acw_cf_company_7"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_7"
-				position = { x= 690 y = 610 }
+				position = { x= 640 y = 610 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3781,7 +3801,7 @@ guiTypes = {
 				name ="acw_cf_company_7_s_a"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_7"
-				position = { x= 780 y = 610 }
+				position = { x= 720 y = 610 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3790,7 +3810,7 @@ guiTypes = {
 				name ="acw_cf_company_7_s_b"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_7"
-				position = { x= 780 y = 810 }
+				position = { x= 720 y = 810 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3799,7 +3819,7 @@ guiTypes = {
 				name ="acw_cf_company_7_s_aa"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_7"
-				position = { x= 870 y = 610 }
+				position = { x= 800 y = 610 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3808,7 +3828,7 @@ guiTypes = {
 				name ="acw_cf_company_7_s_ab"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_7"
-				position = { x= 870 y = 710 }
+				position = { x= 800 y = 710 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3817,7 +3837,7 @@ guiTypes = {
 				name ="acw_cf_company_7_s_ba"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_7"
-				position = { x= 870 y = 810 }
+				position = { x= 800 y = 810 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3826,7 +3846,7 @@ guiTypes = {
 				name ="acw_cf_company_7_s_bb"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_7"
-				position = { x= 870 y = 910 }
+				position = { x= 800 y = 910 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}	
@@ -3903,7 +3923,7 @@ guiTypes = {
 				name ="acw_cf_company_9"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_9"
-				position = { x= 690 y = 610 }
+				position = { x= 640 y = 210 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3912,7 +3932,7 @@ guiTypes = {
 				name ="acw_cf_company_9_s_a"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_9"
-				position = { x= 780 y = 610 }
+				position = { x= 720 y = 210 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3921,7 +3941,7 @@ guiTypes = {
 				name ="acw_cf_company_9_s_b"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_9"
-				position = { x= 780 y = 810 }
+				position = { x= 720 y = 270 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3930,7 +3950,7 @@ guiTypes = {
 				name ="acw_cf_company_9_s_aa"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_9"
-				position = { x= 870 y = 610 }
+				position = { x= 800 y = 210 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3939,7 +3959,7 @@ guiTypes = {
 				name ="acw_cf_company_9_s_ab"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_9"
-				position = { x= 870 y = 710 }
+				position = { x= 800 y = 270 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3948,7 +3968,7 @@ guiTypes = {
 				name ="acw_cf_company_9_s_ba"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_9"
-				position = { x= 870 y = 810 }
+				position = { x= 800 y = 330 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3957,7 +3977,7 @@ guiTypes = {
 				name ="acw_cf_company_9_s_bb"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_9"
-				position = { x= 870 y = 910 }
+				position = { x= 800 y = 390 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}	
@@ -4032,7 +4052,7 @@ guiTypes = {
 				name ="acw_cf_company_11"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_11"
-				position = { x= 690 y = 610 }
+				position = { x= 640 y = 610 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -4041,7 +4061,7 @@ guiTypes = {
 				name ="acw_cf_company_11_s_a"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_11"
-				position = { x= 780 y = 610 }
+				position = { x= 720 y = 610 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -4050,7 +4070,7 @@ guiTypes = {
 				name ="acw_cf_company_11_s_b"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_11"
-				position = { x= 780 y = 810 }
+				position = { x= 720 y = 810 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -4059,7 +4079,7 @@ guiTypes = {
 				name ="acw_cf_company_11_s_aa"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_11"
-				position = { x= 870 y = 610 }
+				position = { x= 800 y = 610 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -4068,7 +4088,7 @@ guiTypes = {
 				name ="acw_cf_company_11_s_ab"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_11"
-				position = { x= 870 y = 710 }
+				position = { x= 800 y = 710 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -4077,7 +4097,7 @@ guiTypes = {
 				name ="acw_cf_company_11_s_ba"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_11"
-				position = { x= 870 y = 810 }
+				position = { x= 800 y = 810 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -4086,7 +4106,7 @@ guiTypes = {
 				name ="acw_cf_company_11_s_bb"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_11"
-				position = { x= 870 y = 910 }
+				position = { x= 800 y = 910 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}

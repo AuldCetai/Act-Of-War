@@ -20,7 +20,8 @@
  acw_hd_arma_title_arma_text:0"Armaments"
  acw_infantry_levels_bar_t1a:0"Infantry Skill Tier I A"
  acw_infantry_levels_bar_t1b:0"Infantry Skill Tier I B"  
- 
+ acw_cf_title_arma_text:0"Chevauchee"
+ acw_cf_back_button_text:0"Back"
  
  #heroic deeds events
  acw_hd_1.t:0"Feats of Horsemanship"

@@ -492,7 +492,7 @@ acw_arma_african_throwing_knives = {
 				infantry_fire = 1
 				}				
 
-acw_arma_spanish_steel = { 
+acw_arma_falcata = { 
 				shock_damage = 0.1
 				}
 				
