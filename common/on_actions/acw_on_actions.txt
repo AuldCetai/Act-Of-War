@@ -54,7 +54,7 @@ on_siege_lost_province = {
 	if = {
 			limit = {ROOT = {province_id = 361}
 					 FROM = {culture_group = french}}
-			events = {acw_hd.1}
+			ROOT = {country_event = { id = acw_hd.1 days = 1}
 			}
 }
 
@@ -174,3 +174,12 @@ on_battle_won_province = {
 on_war_lost	 = {
 			events = { acw_hd.4 }
 			}
+			
+on_startup = {
+			events = {acw_hd.22}
+			}
+			
+on_mil_tech_taken = {
+			events = {acw_hd.23}
+			}
+	

@@ -263,3 +263,66 @@ acw_arma_slot_4_filled = {
 			has_country_flag = acw_arma_s4_40
 			}
 }
+
+acw_cf_slot_1_filled = {
+			has_country_flag = acw_cf_s1_1
+			has_country_flag = acw_cf_s1_2
+			has_country_flag = acw_cf_s1_3
+			has_country_flag = acw_cf_s1_4
+			has_country_flag = acw_cf_s1_5
+			has_country_flag = acw_cf_s1_6
+			has_country_flag = acw_cf_s1_7
+			has_country_flag = acw_cf_s1_8
+			has_country_flag = acw_cf_s1_9
+			has_country_flag = acw_cf_s1_10
+			has_country_flag = acw_cf_s1_11
+		}
+		
+acw_cf_slot_2_filled = {
+			has_country_flag = acw_cf_s2_1
+			has_country_flag = acw_cf_s2_2
+			has_country_flag = acw_cf_s2_3
+			has_country_flag = acw_cf_s2_4
+			has_country_flag = acw_cf_s2_5
+			has_country_flag = acw_cf_s2_6
+			has_country_flag = acw_cf_s2_7
+			has_country_flag = acw_cf_s2_8
+			has_country_flag = acw_cf_s2_9
+			has_country_flag = acw_cf_s2_10
+			has_country_flag = acw_cf_s2_11
+		}
+		
+acw_cf_slot_3_filled = {
+			has_country_flag = acw_cf_s3_1
+			has_country_flag = acw_cf_s3_2
+			has_country_flag = acw_cf_s3_3
+			has_country_flag = acw_cf_s3_4
+			has_country_flag = acw_cf_s3_5
+			has_country_flag = acw_cf_s3_6
+			has_country_flag = acw_cf_s3_7
+			has_country_flag = acw_cf_s3_8
+			has_country_flag = acw_cf_s3_9
+			has_country_flag = acw_cf_s3_10
+			has_country_flag = acw_cf_s3_11
+		}
+		
+acw_cf_slot_4_filled = {
+			has_country_flag = acw_cf_s4_1
+			has_country_flag = acw_cf_s4_2
+			has_country_flag = acw_cf_s4_3
+			has_country_flag = acw_cf_s4_4
+			has_country_flag = acw_cf_s4_5
+			has_country_flag = acw_cf_s4_6
+			has_country_flag = acw_cf_s4_7
+			has_country_flag = acw_cf_s4_8
+			has_country_flag = acw_cf_s4_9
+			has_country_flag = acw_cf_s4_10
+			has_country_flag = acw_cf_s4_11
+		}
+
+acw_cf_perkz_avaible_is = {
+		check_variable = {
+				which = acw_cf_perkz_points
+				value = 1
+			}
+}

@@ -628,3 +628,224 @@ acw_arma_slot_4_xp = {
 				yearly_army_professionalism = 0.01
 				yearly_corruption = 0.025
 				}
+				
+acw_cf_company_1_mod = {	
+				reinforce_cost_modifier = -0.05
+				loot_amount = 0.10
+				leader_land_fire = -1
+}	
+
+acw_cf_company_1_mod_1 = {	
+				reinforce_cost_modifier = -0.10
+				loot_amount = 0.10
+				leader_land_fire = -1
+}	
+				
+acw_cf_company_2_mod = {	
+	land_morale = 0.05
+	assault_fort_ability = -0.1
+	land_maintenance_modifier = -0.05
+}	
+
+acw_cf_company_2_mod_1 = {	
+	land_morale = 0.05
+	assault_fort_ability = -0.1
+	land_maintenance_modifier = -0.10
+}	
+
+acw_cf_company_3_mod = {	
+	reinforce_speed = 0.20
+	land_attrition = -0.05
+	movement_speed = -0.15
+}	
+
+acw_cf_company_4_mod = {	
+	reserves_organisation = 0.10
+	regiment_manpower_usage = -0.1
+	discipline = -0.05
+}	
+	
+acw_cf_company_4_mod_1 = {	
+	reserves_organisation = 0.20
+	regiment_manpower_usage = -0.1
+	discipline = -0.05
+}	
+
+acw_cf_company_5_mod = {	
+	global_supply_limit_modifier = 0.10
+	movement_speed = 0.10
+	land_forcelimit_modifier = -0.10
+}	
+
+acw_cf_company_5_mod_1 = {	
+	global_supply_limit_modifier = 0.2
+	movement_speed = 0.10
+	land_forcelimit_modifier = -0.10
+}	
+
+acw_cf_company_6_mod = {	
+	cavalry_power = 0.15
+	leader_land_manuever = 1
+	cavalry_cost = 0.10
+}	
+
+acw_cf_company_6_mod_1 = {	
+	cavalry_power = 0.10
+	leader_land_manuever = 1
+	cavalry_cost = 0.10
+}	
+
+acw_cf_company_6_mod_2 = {	
+	cavalry_power = 0.10
+	leader_land_manuever = 1
+	cavalry_cost = 0.10
+}	
+
+acw_cf_company_6_mod_3 = {	
+	cavalry_power = 0.1
+	leader_land_manuever = 1
+	cavalry_cost = 0.10
+}	
+
+acw_cf_company_6_mod_4 = {	
+	infantry_power = 0.05
+	leader_land_manuever = 1
+	cavalry_cost = 0.10
+}	
+
+acw_cf_company_6_mod_5 = {	
+	cavalry_power = 0.05
+	leader_land_manuever = 1
+	cavalry_cost = 0.10
+}
+
+acw_cf_company_7_mod = {	
+	global_regiment_recruit_speed = -0.15
+	land_attrition = -0.10
+	reinforce_cost_modifier = 0.15
+}	
+
+acw_cf_company_7_mod_1 = {	
+	global_regiment_recruit_speed = -0.2
+	land_attrition = -0.10
+	reinforce_cost_modifier = 0.15
+}	
+
+acw_cf_company_7_mod_2 = {	
+	global_regiment_recruit_speed = -0.1
+	land_attrition = -0.10
+	reinforce_cost_modifier = 0.15
+}
+
+acw_cf_company_8_mod = {	
+	artillery_power = 0.10
+	siege_ability = 0.05
+	artillery_barrage_cost = 0.2
+}	
+	
+acw_cf_company_9_mod = {	
+	war_exhaustion = -0.05
+	manpower_recovery_speed = 0.05
+	leader_land_shock = -1
+}	
+
+acw_cf_company_10_mod = {	
+	global_regiment_cost = -0.05
+	prestige_from_land = 0.10
+	leader_land_manuever = -1
+}	
+
+acw_cf_company_10_mod_1 = {	
+	global_regiment_cost = -0.10
+	prestige_from_land = 0.10
+	leader_land_manuever = -1
+}	
+
+acw_cf_company_11_mod = {	
+	assault_fort_cost_modifier = -0.15
+	assault_fort_ability = 0.1
+	global_unrest = 3
+}	
+
+acw_cf_company_11_mod_1 = {	
+	assault_fort_cost_modifier = -0.30
+	assault_fort_ability = 0.1
+	global_unrest = 3
+}	
+
+acw_cf_company_1_a_mod = {}
+acw_cf_company_1_b_mod = {}
+acw_cf_company_1_aa_mod = {}
+acw_cf_company_1_ab_mod = {}
+acw_cf_company_1_ba_mod = {}
+acw_cf_company_1_bb_mod = {}
+
+acw_cf_company_2_a_mod = {}
+acw_cf_company_2_b_mod = {}
+acw_cf_company_2_aa_mod = {}
+acw_cf_company_2_ab_mod = {}
+acw_cf_company_2_ba_mod = {}
+acw_cf_company_2_bb_mod = {}
+
+acw_cf_company_3_a_mod = {}
+acw_cf_company_3_b_mod = {}
+acw_cf_company_3_aa_mod = {}
+acw_cf_company_3_ab_mod = {}
+acw_cf_company_3_ba_mod = {}
+acw_cf_company_3_bb_mod = {}
+
+acw_cf_company_4_a_mod = {}
+acw_cf_company_4_b_mod = {}
+acw_cf_company_4_aa_mod = {}
+acw_cf_company_4_ab_mod = {}
+acw_cf_company_4_ba_mod = {}
+acw_cf_company_4_bb_mod = {}
+
+acw_cf_company_5_a_mod = {}
+acw_cf_company_5_b_mod = {}
+acw_cf_company_5_aa_mod = {}
+acw_cf_company_5_ab_mod = {}
+acw_cf_company_5_ba_mod = {}
+acw_cf_company_5_bb_mod = {}
+
+acw_cf_company_6_a_mod = {}
+acw_cf_company_6_b_mod = {}
+acw_cf_company_6_aa_mod = {}
+acw_cf_company_6_ab_mod = {}
+acw_cf_company_6_ba_mod = {}
+acw_cf_company_6_bb_mod = {}
+
+acw_cf_company_7_a_mod = {}
+acw_cf_company_7_b_mod = {}
+acw_cf_company_7_aa_mod = {}
+acw_cf_company_7_ab_mod = {}
+acw_cf_company_7_ba_mod = {}
+acw_cf_company_7_bb_mod = {}
+
+acw_cf_company_8_a_mod = {}
+acw_cf_company_8_b_mod = {}
+acw_cf_company_8_aa_mod = {}
+acw_cf_company_8_ab_mod = {}
+acw_cf_company_8_ba_mod = {}
+acw_cf_company_8_bb_mod = {}
+
+acw_cf_company_9_a_mod = {}
+acw_cf_company_9_b_mod = {}
+acw_cf_company_9_aa_mod = {}
+acw_cf_company_9_ab_mod = {}
+acw_cf_company_9_ba_mod = {}
+acw_cf_company_9_bb_mod = {}
+
+acw_cf_company_10_a_mod = {}
+acw_cf_company_10_b_mod = {}
+acw_cf_company_10_aa_mod = {}
+acw_cf_company_10_ab_mod = {}
+acw_cf_company_10_ba_mod = {}
+acw_cf_company_10_bb_mod = {}
+
+acw_cf_company_11_a_mod = {}
+acw_cf_company_11_b_mod = {}
+acw_cf_company_11_aa_mod = {}
+acw_cf_company_11_ab_mod = {}
+acw_cf_company_11_ba_mod = {}
+acw_cf_company_11_bb_mod = {}

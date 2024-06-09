@@ -10,17 +10,14 @@ country_event = {
 	
 	trigger = {
 			primitives = yes
-			is_in_war = {
-					OR ={	
-							attackers=GBR
-							attackers=USA			
-							attackers=SPA
-							attackers=POR
-							attackers=CAS
-							attackers=FRA
-							attackers=NOR
+			OR = { 	is_in_war = {attackers=GBR}
+					is_in_war = {attackers=CAS}
+					is_in_war = {attackers=ENG}
+					is_in_war = {attackers=FRA}
+					is_in_war = {attackers=POR}
+					is_in_war = {attackers=SPA}
+					is_in_war = {attackers=NOR}
 						}
-					}
 			NOT = {has_country_flag = acw_hd_1_done}
 	}
 
@@ -137,7 +134,7 @@ country_event = {
 	
 	trigger = {	NOT = {has_country_flag = acw_hd_3_done}
 				AND = {
-					95 = {is_controlled_by = SPA}
+					95 = {controlled_by = SPA}
 					OR = { tag = SPA
 							is_in_war = {
 								participants = SPA
@@ -609,7 +606,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 			is_in_war = {participants = AZT}
-			is_colonial = no
+			is_colonial_nation = no
 			primitives = no
 			NOT = {has_country_flag = acw_hd_11_done}
 	}
@@ -729,7 +726,7 @@ country_event = {
 	
 	trigger = { NOT = {has_country_flag = acw_hd_13_done} 
 				AND = {
-					522 = {is_controlled_by = PER}
+					522 = {controlled_by = PER}
 					OR = {  tag = PER
 							is_in_war = {
 								participants = PER
@@ -794,7 +791,7 @@ country_event = {
 	
 	trigger = {
 				AND = {
-					50 = {is_controlled_by = HUN}
+					50 = {controlled_by = HUN}
 					OR = {  tag = HUN
 							is_in_war = {
 								participants = HUN
@@ -859,9 +856,9 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-				culture_group = turkish
-				own = 151
-				year = 1453
+				culture_group = turko_semitic
+				151 = {owned_by = ROOT}
+				is_year = 1453
 	}
 
 	option = {
@@ -1292,3 +1289,71 @@ country_event = {
 }
 
 
+#setup perk points
+country_event = {
+	id = acw_hd.22
+	title = acw_hd_22.t 
+	desc = acw_hd_22.d
+	picture = GFX_acw_hd_siege_of_constantinople
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { ai = no
+	}
+	
+	option = {
+		name = "acw_hd_22.a"
+				set_variable = {
+					which = acw_cf_perkz_points
+					value = 0
+				}
+		}
+}
+
+#setup perk points
+country_event = {
+	id = acw_hd.23
+	title = acw_hd_23.t 
+	desc = acw_hd_23.d
+	picture = GFX_acw_hd_siege_of_constantinople
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {	ai = no
+				OR = {
+						mil_tech = 	6
+						mil_tech =	9
+						mil_tech =	12
+						mil_tech =	15
+						mil_tech =	18
+						mil_tech =	21
+						mil_tech =	24
+						mil_tech =	27
+						}
+	}
+	
+	option = {
+		name = "acw_hd_23.a"
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+		}
+}
+
+country_event = {
+	id = acw_hd.24
+	title = acw_hd_24.t 
+	desc = acw_hd_24.d
+	picture = GFX_acw_hd_siege_of_constantinople
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {	
+	}
+	
+	option = {
+		name = "acw_hd_24.a"
+		}
+}
