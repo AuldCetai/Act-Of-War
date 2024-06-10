@@ -304,7 +304,7 @@ acw_cf_slot_3_filled = {
 			has_country_flag = acw_cf_s3_9
 			has_country_flag = acw_cf_s3_10
 			has_country_flag = acw_cf_s3_11
-		}
+		}	
 		
 acw_cf_slot_4_filled = {
 			has_country_flag = acw_cf_s4_1

@@ -7007,35 +7007,39 @@ custom_button = {
 				acw_cf_perkz_avaible_is = yes}		
 				
 	effect = {		
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													acw_cf_decrease_perkz = yes
-													set_country_flag = acw_cf_s1_1 
-													} 
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													acw_cf_decrease_perkz = yes
-													set_country_flag = acw_cf_s2_1 
-													} 
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
-													acw_remove_all_from_slot3 = yes
-													acw_cf_decrease_perkz = yes
-													set_country_flag = acw_cf_s3_1 
-													} 
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													acw_cf_decrease_perkz = yes
-													set_country_flag = acw_cf_s4_1 
-													} 
-												}
 					set_country_flag = acw_cf_company_1_picked
+					IF = { limit = { 	
+							OR = { 
+											AND = {has_country_flag = acw_cf_slot_1_open
+													acw_cf_slot_1_filled = yes }
+											AND = {has_country_flag = acw_cf_slot_2_open
+													acw_cf_slot_2_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_3_open
+													acw_cf_slot_3_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_4_open
+													acw_cf_slot_4_filled = yes }
+											}											
+													
+								country_event = {name = acw_hd.25}
+							}
+					
+					ELSE = { 
+						IF = {limit = {primary_culture = french} 
+								add_country_modifier = {
+										name = acw_cf_company_1_mod_1
+										duration = -1
+													}
+								}					
+						ELSE = 	 {
+								add_country_modifier = {
+										name = acw_cf_company_1_mod
+										duration = -1
+													}	
+							}						
+												
+						acw_cf_decrease_perkz = yes							
+					}		
+							
 				}
 	
 	frame = { number = 8
@@ -7198,16 +7202,48 @@ custom_button = {
 }
 
 #campw wives /zulu women
+#company 2 
 
 custom_button = {
 	name = acw_cf_company_2
     potential = {has_country_flag = acw_background_open_already
-				 has_country_flag = acw_cf_bg_open 
+				 has_country_flag = acw_cf_bg_open
 				 has_country_flag = acw_cf_page_1
-				} 
-	trigger = { NOT = {has_country_flag = acw_cf_company_2_picked}}		
+				 } 
+	trigger = { NOT = {has_country_flag = acw_cf_company_2_picked}
+				acw_cf_perkz_avaible_is = yes}		
 				
-	effect = {		set_country_flag = acw_cf_company_2_picked}
+	effect = {		
+					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
+							IF = { limit = { acw_cf_slot_1_filled = yes } 
+													acw_remove_all_from_slot1 = yes
+													acw_cf_decrease_perkz = yes
+													set_country_flag = acw_cf_s1_2 
+													} 
+												}
+					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
+							IF = { limit = { acw_cf_slot_2_filled = yes } 
+													acw_remove_all_from_slot2 = yes
+													acw_cf_decrease_perkz = yes
+													set_country_flag = acw_cf_s2_2
+													} 
+												}
+					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
+							IF = { limit = { acw_cf_slot_3_filled = yes } 
+													acw_remove_all_from_slot3 = yes
+													acw_cf_decrease_perkz = yes
+													set_country_flag = acw_cf_s3_2 
+													} 
+												}
+					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
+							IF = { limit = { acw_cf_slot_4_filled = yes } 
+													acw_remove_all_from_slot4 = yes
+													acw_cf_decrease_perkz = yes
+													set_country_flag = acw_cf_s4_2 
+													} 
+												}
+					set_country_flag = acw_cf_company_2_picked
+				}
 	
 	frame = { number = 8
 				trigger = {primary_culture = nguni}
@@ -7231,9 +7267,14 @@ custom_button = {
 						}
 					}
 					has_country_flag = acw_cf_company_2_picked
+					acw_cf_perkz_avaible_is = yes
 				}	
 				
-	effect = {		set_country_flag = acw_cf_company_2_s_a_picked}
+	effect = {		
+					set_country_flag = acw_cf_company_2_s_a_picked
+					acw_cf_decrease_perkz = yes
+				}
+				
 	frame = { number = 2
 				trigger = {always = yes}
 				}
@@ -7252,9 +7293,13 @@ custom_button = {
 						}
 					}
 					has_country_flag = acw_cf_company_2_picked
+					acw_cf_perkz_avaible_is = yes
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_2_s_b_picked}
+	effect = {		
+					set_country_flag = acw_cf_company_2_s_b_picked
+					acw_cf_decrease_perkz = yes
+				}
 	frame = { number = 3
 				trigger = {always = yes}
 				}
@@ -7274,9 +7319,12 @@ custom_button = {
 						}
 					}
 				has_country_flag = acw_cf_company_2_s_a_picked
+				acw_cf_perkz_avaible_is = yes
 			}
 				
-	effect = {	set_country_flag = acw_cf_company_2_s_aa_picked}
+	effect = {	set_country_flag = acw_cf_company_2_s_aa_picked
+				acw_cf_decrease_perkz = yes
+				}
 	frame = { number = 4
 				trigger = {always = yes}
 				}
@@ -7296,9 +7344,12 @@ custom_button = {
 						}
 					}
 					has_country_flag = acw_cf_company_2_s_a_picked
+					acw_cf_perkz_avaible_is = yes
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_2_s_ab_picked}
+	effect = {	set_country_flag = acw_cf_company_2_s_ab_picked
+				acw_cf_decrease_perkz = yes
+				}
 	frame = { number = 5
 				trigger = {always = yes}
 				}
@@ -7318,9 +7369,12 @@ custom_button = {
 						}
 					}
 					has_country_flag = acw_cf_company_2_s_b_picked
+					acw_cf_perkz_avaible_is = yes
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_2_s_ba_picked}
+	effect = {	set_country_flag = acw_cf_company_2_s_ba_picked
+				acw_cf_decrease_perkz = yes
+				}
 	frame = { number = 6
 				trigger = {always = yes}
 				}
@@ -7340,25 +7394,59 @@ custom_button = {
 						}
 					}
 					has_country_flag = acw_cf_company_2_s_b_picked
+					acw_cf_perkz_avaible_is = yes
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_2_s_bb_picked}
+	effect = {	set_country_flag = acw_cf_company_2_s_bb_picked
+				acw_cf_decrease_perkz = yes}
 	frame = { number = 7
 				trigger = {always = yes}
 				}
 }
 
 #baggage train guards
+#company 3 -
 
 custom_button = {
 	name = acw_cf_company_3
     potential = {has_country_flag = acw_background_open_already
 				 has_country_flag = acw_cf_bg_open
 				 has_country_flag = acw_cf_page_1
-				} 
-	trigger = { NOT = {has_country_flag = acw_cf_company_3_picked}}		
+				 } 
+	trigger = { NOT = {has_country_flag = acw_cf_company_3_picked}
+				acw_cf_perkz_avaible_is = yes}		
 				
-	effect = {		set_country_flag = acw_cf_company_3_picked}
+	effect = {		
+					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
+							IF = { limit = { acw_cf_slot_1_filled = yes } 
+													acw_remove_all_from_slot1 = yes
+													acw_cf_decrease_perkz = yes
+													set_country_flag = acw_cf_s1_3
+													} 
+												}
+					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
+							IF = { limit = { acw_cf_slot_2_filled = yes } 
+													acw_remove_all_from_slot2 = yes
+													acw_cf_decrease_perkz = yes
+													set_country_flag = acw_cf_s2_3 
+													} 
+												}
+					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
+							IF = { limit = { acw_cf_slot_3_filled = yes } 
+													acw_remove_all_from_slot3 = yes
+													acw_cf_decrease_perkz = yes
+													set_country_flag = acw_cf_s3_3 
+													} 
+												}
+					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
+							IF = { limit = { acw_cf_slot_4_filled = yes } 
+													acw_remove_all_from_slot4 = yes
+													acw_cf_decrease_perkz = yes
+													set_country_flag = acw_cf_s4_3 
+													} 
+												}
+					set_country_flag = acw_cf_company_3_picked
+				}
 	
 	frame = { number = 1
 				trigger = {always = yes}
@@ -7378,9 +7466,14 @@ custom_button = {
 						}
 					}
 					has_country_flag = acw_cf_company_3_picked
+					acw_cf_perkz_avaible_is = yes
 				}	
 				
-	effect = {		set_country_flag = acw_cf_company_3_s_a_picked}
+	effect = {		
+					set_country_flag = acw_cf_company_3_s_a_picked
+					acw_cf_decrease_perkz = yes
+				}
+				
 	frame = { number = 2
 				trigger = {always = yes}
 				}
@@ -7399,9 +7492,13 @@ custom_button = {
 						}
 					}
 					has_country_flag = acw_cf_company_3_picked
+					acw_cf_perkz_avaible_is = yes
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_3_s_b_picked}
+	effect = {		
+					set_country_flag = acw_cf_company_3_s_b_picked
+					acw_cf_decrease_perkz = yes
+				}
 	frame = { number = 3
 				trigger = {always = yes}
 				}
@@ -7421,9 +7518,12 @@ custom_button = {
 						}
 					}
 				has_country_flag = acw_cf_company_3_s_a_picked
+				acw_cf_perkz_avaible_is = yes
 			}
 				
-	effect = {	set_country_flag = acw_cf_company_3_s_aa_picked}
+	effect = {	set_country_flag = acw_cf_company_3_s_aa_picked
+				acw_cf_decrease_perkz = yes
+				}
 	frame = { number = 4
 				trigger = {always = yes}
 				}
@@ -7443,9 +7543,12 @@ custom_button = {
 						}
 					}
 					has_country_flag = acw_cf_company_3_s_a_picked
+					acw_cf_perkz_avaible_is = yes
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_3_s_ab_picked}
+	effect = {	set_country_flag = acw_cf_company_3_s_ab_picked
+				acw_cf_decrease_perkz = yes
+				}
 	frame = { number = 5
 				trigger = {always = yes}
 				}
@@ -7465,9 +7568,12 @@ custom_button = {
 						}
 					}
 					has_country_flag = acw_cf_company_3_s_b_picked
+					acw_cf_perkz_avaible_is = yes
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_3_s_ba_picked}
+	effect = {	set_country_flag = acw_cf_company_3_s_ba_picked
+				acw_cf_decrease_perkz = yes
+				}
 	frame = { number = 6
 				trigger = {always = yes}
 				}
@@ -7476,7 +7582,7 @@ custom_button = {
 custom_button = {
 	name = acw_cf_company_3_s_bb
     potential = {has_country_flag = acw_background_open_already
-				 has_country_flag = acw_cf_bg_open 
+				 has_country_flag = acw_cf_bg_open
 				 has_country_flag = acw_cf_page_1
 				} 
 				
@@ -7487,9 +7593,11 @@ custom_button = {
 						}
 					}
 					has_country_flag = acw_cf_company_3_s_b_picked
+					acw_cf_perkz_avaible_is = yes
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_3_s_bb_picked}
+	effect = {	set_country_flag = acw_cf_company_3_s_bb_picked
+				acw_cf_decrease_perkz = yes}
 	frame = { number = 7
 				trigger = {always = yes}
 				}

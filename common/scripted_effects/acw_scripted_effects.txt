@@ -18,6 +18,7 @@ acw_remove_all_from_slot1 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s1_1}
 					remove_country_modifier = acw_cf_company_1_mod
+					remove_country_modifier = acw_cf_company_1_mod_1
 					remove_country_modifier = acw_cf_company_1_a_mod
 					remove_country_modifier = acw_cf_company_1_b_mod
 					remove_country_modifier = acw_cf_company_1_aa_mod
