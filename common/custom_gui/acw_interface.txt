@@ -7019,9 +7019,9 @@ custom_button = {
 											AND = {has_country_flag = acw_cf_slot_4_open
 													acw_cf_slot_4_filled = yes }
 											}											
-													
-								country_event = {name = acw_hd.25}
-							}
+							}				
+							country_event = {name = acw_hd.25}
+						}
 					
 					ELSE = { 
 						IF = {limit = {primary_culture = french} 
