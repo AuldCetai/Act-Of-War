@@ -153,139 +153,139 @@ acw_stratagem_dod_t4 = {
 						
 #infantry
 acw_infantry_upgrade_t1  = {	
-	infantry_power = 0.1
+	infantry_power =0.01
 	infantry_cost = 0.1
 	}
 
 acw_infantry_upgrade_t2  = {	
-	infantry_power = 0.2
+	infantry_power =0.02
 	infantry_cost = 0.2
 	}
 
 acw_infantry_upgrade_t3  = {	
-	infantry_power = 0.3
+	infantry_power =0.03
 	infantry_cost = 0.3
 	}
 
 acw_infantry_upgrade_t4  = {	
-	infantry_power = 0.4
+	infantry_power =0.04
 	infantry_cost = 0.4
 	}
 
 acw_infantry_upgrade_t5  = {	
-	infantry_power = 0.5
+	infantry_power =0.05
 	infantry_cost = 0.5
 	}
 
 acw_infantry_upgrade_t6  = {	
-	infantry_power = 0.6
+	infantry_power =0.06
 	infantry_cost = 0.6
 	}
 
 acw_infantry_upgrade_t7  = {	
-	infantry_power = 0.7
+	infantry_power =0.07
 	infantry_cost = 0.7
 	}
 
 acw_infantry_upgrade_t8  = {	
-	infantry_power = 0.85
+	infantry_power =0.085
 	infantry_cost = 0.85
 	}
 
 acw_infantry_upgrade_t9  = {	
-	infantry_power = 1
+	infantry_power = 0.1
 	infantry_cost = 1
 	}
 
 #cav
 acw_cavalry_upgrade_t1  = {	
-	cavalry_power = 0.1
+	cavalry_power =0.01
 	cavalry_cost = 0.1
 	}
 
 acw_cavalry_upgrade_t2  = {	
-	cavalry_power = 0.2
+	cavalry_power =0.02
 	cavalry_cost = 0.2
 	}
 
 acw_cavalry_upgrade_t3  = {	
-	cavalry_power = 0.3
+	cavalry_power =0.03
 	cavalry_cost = 0.3
 	}
 
 acw_cavalry_upgrade_t4  = {	
-	cavalry_power = 0.4
+	cavalry_power =0.04
 	cavalry_cost = 0.4
 	}
 
 acw_cavalry_upgrade_t5  = {	
-	cavalry_power = 0.5
+	cavalry_power =0.05
 	cavalry_cost = 0.5
 	}
 
 acw_cavalry_upgrade_t6  = {	
-	cavalry_power = 0.6
+	cavalry_power =0.06
 	cavalry_cost = 0.6
 	}
 
 acw_cavalry_upgrade_t7  = {	
-	cavalry_power = 0.7
+	cavalry_power =0.07
 	cavalry_cost = 0.7
 	}
 
 acw_cavalry_upgrade_t8  = {	
-	cavalry_power = 0.85
+	cavalry_power =0.085
 	cavalry_cost = 0.85
 	}
 
 acw_cavalry_upgrade_t9  = {	
-	cavalry_power = 1
+	cavalry_power = 0.1
 	cavalry_cost = 1
 	}
 	
 #artillery
 acw_artillery_upgrade_t1  = {	
-	artillery_power = 0.1
+	artillery_power =0.01
 	artillery_cost = 0.1
 	}
 
 acw_artillery_upgrade_t2  = {	
-	artillery_power = 0.2
+	artillery_power =0.02
 	artillery_cost = 0.2
 	}
 
 acw_artillery_upgrade_t3  = {	
-	artillery_power = 0.3
+	artillery_power =0.03
 	artillery_cost = 0.3
 	}
 
 acw_artillery_upgrade_t4  = {	
-	artillery_power = 0.4
+	artillery_power =0.04
 	artillery_cost = 0.4
 	}
 
 acw_artillery_upgrade_t5  = {	
-	artillery_power = 0.5
+	artillery_power =0.05
 	artillery_cost = 0.5
 	}
 
 acw_artillery_upgrade_t6  = {	
-	artillery_power = 0.6
+	artillery_power =0.06
 	artillery_cost = 0.6
 	}
 
 acw_artillery_upgrade_t7  = {	
-	artillery_power = 0.7
+	artillery_power =0.07
 	artillery_cost = 0.7
 	}
 
 acw_artillery_upgrade_t8  = {	
-	artillery_power = 0.85
+	artillery_power =0.085
 	artillery_cost = 0.85
 	}
 
 acw_artillery_upgrade_t9  = {	
-	artillery_power = 1
+	artillery_power = 0.1
 	artillery_cost = 1
 	}	
 	

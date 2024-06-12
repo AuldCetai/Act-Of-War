@@ -100,7 +100,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t8
 					add_country_modifier = {name = acw_infantry_upgrade_t9
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 											
 				if = {limit = {has_country_modifier=acw_infantry_upgrade_t7}
@@ -108,7 +108,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t7
 					add_country_modifier = {name = acw_infantry_upgrade_t8
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 				
 				if = {limit = {has_country_modifier=acw_infantry_upgrade_t6}
@@ -116,7 +116,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t6
 					add_country_modifier = {name = acw_infantry_upgrade_t7
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 
 				if = {limit = {has_country_modifier=acw_infantry_upgrade_t5}
@@ -124,7 +124,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t5
 					add_country_modifier = {name = acw_infantry_upgrade_t6
 											duration = -1
-											hidden = yes}					
+											}					
 					}			
 				
 				if = {limit = {has_country_modifier=acw_infantry_upgrade_t4}
@@ -132,7 +132,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t4
 					add_country_modifier = {name = acw_infantry_upgrade_t5
 											duration = -1
-											hidden = yes}					
+											}					
 					}	
 				
 				if = {limit = {has_country_modifier=acw_infantry_upgrade_t3}
@@ -140,7 +140,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t3
 					add_country_modifier = {name = acw_infantry_upgrade_t4
 											duration = -1
-											hidden = yes}					
+											}					
 					}		
 					
 				if = {limit = {has_country_modifier=acw_infantry_upgrade_t2}
@@ -148,7 +148,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t2
 					add_country_modifier = {name = acw_infantry_upgrade_t3
 											duration = -1
-											hidden = yes}					
+											}					
 					}		
 					
 				if = {limit = {has_country_modifier=acw_infantry_upgrade_t1}
@@ -156,7 +156,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t1
 					add_country_modifier = {name = acw_infantry_upgrade_t2
 											duration = -1
-											hidden = yes}					
+											}					
 					}		
 					
 				if = {limit = {
@@ -176,7 +176,7 @@ custom_button = {
 					add_army_professionalism = -0.05
 					add_country_modifier = {name = acw_infantry_upgrade_t1
 											duration = -1
-											hidden = yes}					
+											}					
 					}		
 	}
 }
@@ -347,7 +347,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t2
 					add_country_modifier = {name = acw_infantry_upgrade_t1
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t3}
@@ -355,7 +355,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t3
 					add_country_modifier = {name = acw_infantry_upgrade_t2
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 				
 				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t4}
@@ -363,7 +363,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t4
 					add_country_modifier = {name = acw_infantry_upgrade_t3
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t5}
@@ -371,7 +371,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t5
 					add_country_modifier = {name = acw_infantry_upgrade_t4
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t6}
@@ -379,7 +379,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t6
 					add_country_modifier = {name = acw_infantry_upgrade_t5
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t7}
@@ -387,7 +387,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t7
 					add_country_modifier = {name = acw_infantry_upgrade_t6
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t8}
@@ -395,7 +395,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t8
 					add_country_modifier = {name = acw_infantry_upgrade_t7
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_infantry_upgrade_t9}
@@ -403,7 +403,7 @@ custom_button = {
 					remove_country_modifier = acw_infantry_upgrade_t9
 					add_country_modifier = {name = acw_infantry_upgrade_t8
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else = {}
@@ -443,7 +443,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t8
 					add_country_modifier = {name = acw_cavalry_upgrade_t9
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 											
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t7}
@@ -451,7 +451,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t7
 					add_country_modifier = {name = acw_cavalry_upgrade_t8
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 				
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t6}
@@ -459,7 +459,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t6
 					add_country_modifier = {name = acw_cavalry_upgrade_t7
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t5}
@@ -467,7 +467,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t5
 					add_country_modifier = {name = acw_cavalry_upgrade_t6
 											duration = -1
-											hidden = yes}					
+											}					
 					}			
 				
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t4}
@@ -475,7 +475,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t4
 					add_country_modifier = {name = acw_cavalry_upgrade_t5
 											duration = -1
-											hidden = yes}					
+											}					
 					}	
 				
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t3}
@@ -483,7 +483,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t3
 					add_country_modifier = {name = acw_cavalry_upgrade_t4
 											duration = -1
-											hidden = yes}					
+											}					
 					}		
 					
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t2}
@@ -491,7 +491,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t2
 					add_country_modifier = {name = acw_cavalry_upgrade_t3
 											duration = -1
-											hidden = yes}					
+											}					
 					}		
 					
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t1}
@@ -499,14 +499,14 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t1
 					add_country_modifier = {name = acw_cavalry_upgrade_t2
 											duration = -1
-											hidden = yes}					
+											}					
 					}		
 					
 				else = {
 					add_army_professionalism = -0.05
 					add_country_modifier = {name = acw_cavalry_upgrade_t1
 											duration = -1
-											hidden = yes}					
+											}					
 					}		
 	}
 }
@@ -672,7 +672,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t2
 					add_country_modifier = {name = acw_cavalry_upgrade_t1
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t3}
@@ -680,7 +680,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t3
 					add_country_modifier = {name = acw_cavalry_upgrade_t2
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 				
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t4}
@@ -688,7 +688,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t4
 					add_country_modifier = {name = acw_cavalry_upgrade_t3
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t5}
@@ -696,7 +696,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t5
 					add_country_modifier = {name = acw_cavalry_upgrade_t4
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t6}
@@ -704,7 +704,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t6
 					add_country_modifier = {name = acw_cavalry_upgrade_t5
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t7}
@@ -712,7 +712,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t7
 					add_country_modifier = {name = acw_cavalry_upgrade_t6
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t8}
@@ -720,7 +720,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t8
 					add_country_modifier = {name = acw_cavalry_upgrade_t7
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t9}
@@ -728,7 +728,7 @@ custom_button = {
 					remove_country_modifier = acw_cavalry_upgrade_t9
 					add_country_modifier = {name = acw_cavalry_upgrade_t8
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else = {}
@@ -767,7 +767,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t8
 					add_country_modifier = {name = acw_artillery_upgrade_t9
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 											
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t7}
@@ -775,7 +775,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t7
 					add_country_modifier = {name = acw_artillery_upgrade_t8
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 				
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t6}
@@ -783,7 +783,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t6
 					add_country_modifier = {name = acw_artillery_upgrade_t7
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t5}
@@ -791,7 +791,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t5
 					add_country_modifier = {name = acw_artillery_upgrade_t6
 											duration = -1
-											hidden = yes}					
+											}					
 					}			
 				
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t4}
@@ -799,7 +799,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t4
 					add_country_modifier = {name = acw_artillery_upgrade_t5
 											duration = -1
-											hidden = yes}					
+											}					
 					}	
 				
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t3}
@@ -807,7 +807,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t3
 					add_country_modifier = {name = acw_artillery_upgrade_t4
 											duration = -1
-											hidden = yes}					
+											}					
 					}		
 					
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t2}
@@ -815,7 +815,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t2
 					add_country_modifier = {name = acw_artillery_upgrade_t3
 											duration = -1
-											hidden = yes}					
+											}					
 					}		
 					
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t1}
@@ -823,14 +823,14 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t1
 					add_country_modifier = {name = acw_artillery_upgrade_t2
 											duration = -1
-											hidden = yes}					
+											}					
 					}		
 					
 				else = {
 					add_army_professionalism = -0.05
 					add_country_modifier = {name = acw_artillery_upgrade_t1
 											duration = -1
-											hidden = yes}					
+											}					
 					}		
 	}
 }
@@ -996,7 +996,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t2
 					add_country_modifier = {name = acw_artillery_upgrade_t1
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t3}
@@ -1004,7 +1004,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t3
 					add_country_modifier = {name = acw_artillery_upgrade_t2
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 				
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t4}
@@ -1012,7 +1012,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t4
 					add_country_modifier = {name = acw_artillery_upgrade_t3
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t5}
@@ -1020,7 +1020,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t5
 					add_country_modifier = {name = acw_artillery_upgrade_t4
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t6}
@@ -1028,7 +1028,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t6
 					add_country_modifier = {name = acw_artillery_upgrade_t5
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t7}
@@ -1036,7 +1036,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t7
 					add_country_modifier = {name = acw_artillery_upgrade_t6
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t8}
@@ -1044,7 +1044,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t8
 					add_country_modifier = {name = acw_artillery_upgrade_t7
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else_if = {limit = {has_country_modifier=acw_artillery_upgrade_t9}
@@ -1052,7 +1052,7 @@ custom_button = {
 					remove_country_modifier = acw_artillery_upgrade_t9
 					add_country_modifier = {name = acw_artillery_upgrade_t8
 											duration = -1
-											hidden = yes}					
+											}					
 					}
 					
 				else = {}
@@ -6422,7 +6422,7 @@ custom_button = {
 		add_country_modifier = {
 								name = acw_stratagem_sfp_selected 
 								duration = -1
-								hidden = yes    
+								    
 								}
 		
 	}
@@ -6439,7 +6439,7 @@ custom_button = {
 		add_country_modifier = {
 								name = acw_stratagem_dod_selected 
 								duration = -1
-								hidden = yes    
+								    
 								}
 		
 	}
@@ -6456,7 +6456,7 @@ custom_button = {
 		add_country_modifier = {
 								name = acw_stratagem_rom_selected 
 								duration = -1
-								hidden = yes    
+								    
 								}
 		
 	}
@@ -6473,7 +6473,7 @@ custom_button = {
 		add_country_modifier = {
 								name = acw_stratagem_has_selected 
 								duration = -1
-								hidden = yes    
+								    
 								}
 		
 	}
@@ -6490,7 +6490,7 @@ custom_button = {
 		add_country_modifier = {
 								name = acw_stratagem_trc_selected 
 								duration = -1
-								hidden = yes
+								
 								}
 	}
 }
@@ -6574,7 +6574,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_sfp_t4
 									duration = -1
-									hidden = yes    
+									    
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_sfp_t2 }
@@ -6583,7 +6583,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_sfp_t3
 									duration = -1
-									hidden = yes    
+									    
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_sfp_t1 }
@@ -6592,7 +6592,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_sfp_t2
 									duration = -1
-									hidden = yes    
+									    
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_sfp_selected }
@@ -6601,7 +6601,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_sfp_t1
 									duration = -1
-									hidden = yes  
+									  
 								}
 							}
 								
@@ -6612,7 +6612,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_dod_t4
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_dod_t2 }
@@ -6621,7 +6621,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_dod_t3
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 		IF = { limit = {  has_country_modifier = acw_stratagem_dod_t1 }
@@ -6630,7 +6630,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_dod_t2
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_dod_selected }
@@ -6639,7 +6639,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_dod_t1
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 								
@@ -6650,7 +6650,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_trc_t4
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_trc_t2 }
@@ -6659,7 +6659,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_trc_t3
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_trc_t1 }
@@ -6668,7 +6668,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_trc_t2
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_trc_selected }
@@ -6677,7 +6677,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_trc_t1
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 
@@ -6688,7 +6688,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_has_t4
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_has_t2 }
@@ -6697,7 +6697,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_has_t3
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_has_t1 }
@@ -6706,7 +6706,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_has_t2
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_has_selected }
@@ -6715,7 +6715,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_has_t1
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 								
@@ -6725,7 +6725,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_rom_t4
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_rom_t2 }
@@ -6734,7 +6734,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_rom_t3
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_rom_t1 }
@@ -6743,7 +6743,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_rom_t2
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 		IF = { limit = { has_country_modifier = acw_stratagem_rom_selected }
@@ -6752,7 +6752,7 @@ custom_button = {
 							add_country_modifier = {
 									name = acw_stratagem_rom_t1
 									duration = -1
-									hidden = yes
+									
 								}
 							}
 	
@@ -7214,35 +7214,39 @@ custom_button = {
 				acw_cf_perkz_avaible_is = yes}		
 				
 	effect = {		
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													acw_cf_decrease_perkz = yes
-													set_country_flag = acw_cf_s1_2 
-													} 
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													acw_cf_decrease_perkz = yes
-													set_country_flag = acw_cf_s2_2
-													} 
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
-													acw_remove_all_from_slot3 = yes
-													acw_cf_decrease_perkz = yes
-													set_country_flag = acw_cf_s3_2 
-													} 
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													acw_cf_decrease_perkz = yes
-													set_country_flag = acw_cf_s4_2 
-													} 
-												}
 					set_country_flag = acw_cf_company_2_picked
+					IF = { limit = { 	
+							OR = { 
+											AND = {has_country_flag = acw_cf_slot_1_open
+													acw_cf_slot_1_filled = yes }
+											AND = {has_country_flag = acw_cf_slot_2_open
+													acw_cf_slot_2_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_3_open
+													acw_cf_slot_3_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_4_open
+													acw_cf_slot_4_filled = yes }
+											}											
+							}				
+							country_event = {name = acw_hd.25}
+						}
+					
+					ELSE = { 
+						IF = {limit = {primary_culture = nguni} 
+								add_country_modifier = {
+										name = acw_cf_company_2_mod_1
+										duration = -1
+													}
+								}					
+						ELSE = 	 {
+								add_country_modifier = {
+										name = acw_cf_company_2_mod
+										duration = -1
+													}	
+							}						
+												
+						acw_cf_decrease_perkz = yes							
+					}
+					
 				}
 	
 	frame = { number = 8
@@ -7417,36 +7421,33 @@ custom_button = {
 				acw_cf_perkz_avaible_is = yes}		
 				
 	effect = {		
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													acw_cf_decrease_perkz = yes
-													set_country_flag = acw_cf_s1_3
-													} 
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													acw_cf_decrease_perkz = yes
-													set_country_flag = acw_cf_s2_3 
-													} 
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
-													acw_remove_all_from_slot3 = yes
-													acw_cf_decrease_perkz = yes
-													set_country_flag = acw_cf_s3_3 
-													} 
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													acw_cf_decrease_perkz = yes
-													set_country_flag = acw_cf_s4_3 
-													} 
-												}
 					set_country_flag = acw_cf_company_3_picked
-				}
+					IF = { limit = { 	
+							OR = { 
+											AND = {has_country_flag = acw_cf_slot_1_open
+													acw_cf_slot_1_filled = yes }
+											AND = {has_country_flag = acw_cf_slot_2_open
+													acw_cf_slot_2_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_3_open
+													acw_cf_slot_3_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_4_open
+													acw_cf_slot_4_filled = yes }
+											}											
+							}				
+							country_event = {name = acw_hd.25}
+						}
+					
+					ELSE = { 
+							
+								add_country_modifier = {
+										name = acw_cf_company_3_mod
+										duration = -1
+													}
+								acw_cf_decrease_perkz = yes						
+							}					
+												
+												
+					}
 	
 	frame = { number = 1
 				trigger = {always = yes}
@@ -7613,7 +7614,39 @@ custom_button = {
 				} 
 	trigger = { NOT = {has_country_flag = acw_cf_company_4_picked}}		
 				
-	effect = {		set_country_flag = acw_cf_company_4_picked}
+	effect = {		set_country_flag = acw_cf_company_4_picked
+					IF = { limit = { 	
+							OR = { 
+											AND = {has_country_flag = acw_cf_slot_1_open
+													acw_cf_slot_1_filled = yes }
+											AND = {has_country_flag = acw_cf_slot_2_open
+													acw_cf_slot_2_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_3_open
+													acw_cf_slot_3_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_4_open
+													acw_cf_slot_4_filled = yes }
+											}											
+							}				
+							country_event = {name = acw_hd.25}
+						}
+					
+					ELSE = { 
+						IF = {limit = {any_ally = { primitives = yes}} 
+								add_country_modifier = {
+										name = acw_cf_company_4_mod
+										duration = -1
+													}
+								}					
+						ELSE = 	 {
+								add_country_modifier = {
+										name = acw_cf_company_4_mod_1
+										duration = -1
+													}	
+							}						
+												
+						acw_cf_decrease_perkz = yes							
+					}
+			}
 	
 	frame = { number = 8
 				trigger = {
@@ -7766,7 +7799,44 @@ custom_button = {
 				} 
 	trigger = { NOT = {has_country_flag = acw_cf_company_5_picked}}		
 				
-	effect = {		set_country_flag = acw_cf_company_5_picked}
+	effect = {	set_country_flag = acw_cf_company_5_picked
+					IF = { limit = { 	
+							OR = { 
+											AND = {has_country_flag = acw_cf_slot_1_open
+													acw_cf_slot_1_filled = yes }
+											AND = {has_country_flag = acw_cf_slot_2_open
+													acw_cf_slot_2_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_3_open
+													acw_cf_slot_3_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_4_open
+													acw_cf_slot_4_filled = yes }
+											}											
+							}				
+							country_event = {name = acw_hd.25}
+						}
+					
+					ELSE = { 
+						IF = {limit = {
+							OR = {
+								culture_group = hindustani
+								culture_group = western_aryan
+								}
+							} 
+								add_country_modifier = {
+										name = acw_cf_company_5_mod_1
+										duration = -1
+													}
+								}					
+						ELSE = 	 {
+								add_country_modifier = {
+										name = acw_cf_company_5_mod
+										duration = -1
+													}	
+							}						
+												
+						acw_cf_decrease_perkz = yes							
+					}
+		}
 	
 	frame = { number = 8
 				trigger = {
@@ -7922,7 +7992,68 @@ custom_button = {
 				} 
 	trigger = { NOT = {has_country_flag = acw_cf_company_6_picked}}		
 				
-	effect = {		set_country_flag = acw_cf_company_6_picked}
+	effect = {		set_country_flag = acw_cf_company_6_picked
+					IF = { limit = { 	
+							OR = { 
+											AND = {has_country_flag = acw_cf_slot_1_open
+													acw_cf_slot_1_filled = yes }
+											AND = {has_country_flag = acw_cf_slot_2_open
+													acw_cf_slot_2_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_3_open
+													acw_cf_slot_3_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_4_open
+													acw_cf_slot_4_filled = yes }
+											}											
+							}				
+							country_event = {name = acw_hd.25}
+						}
+					
+					ELSE = { 
+						IF = {limit = {has_estate = estate_cossacks} 
+								add_country_modifier = {
+										name = acw_cf_company_6_mod
+										duration = -1
+													}
+								}
+						ELSE_IF = {limit = {culture_group = east_slavic} 
+								add_country_modifier = {
+										name = acw_cf_company_6_mod_1
+										duration = -1
+													}
+								}		
+						ELSE_IF = {limit = {primary_culture = mexican} 
+								add_country_modifier = {
+										name = acw_cf_company_6_mod_2
+										duration = -1
+													}
+								}		
+								
+						ELSE_IF = {limit = {culture_group = carpathian}
+								add_country_modifier = {
+										name = acw_cf_company_6_mod_3
+										duration = -1
+													}
+								}		
+						
+						ELSE_IF = {limit = {primary_culture = maori}
+								add_country_modifier = {
+										name = acw_cf_company_6_mod_4
+										duration = -1
+													}
+								}
+						
+						ELSE = 	 {
+								add_country_modifier = {
+										name = acw_cf_company_6_mod_5
+										duration = -1
+													}	
+							}						
+												
+						acw_cf_decrease_perkz = yes							
+					}
+				
+				
+				}
 	
 	frame = { number = 8
 				trigger = {
@@ -8097,7 +8228,52 @@ custom_button = {
 				} 
 	trigger = { NOT = {has_country_flag = acw_cf_company_7_picked}}		
 				
-	effect = {		set_country_flag = acw_cf_company_7_picked}
+	effect = {		set_country_flag = acw_cf_company_7_picked
+					IF = { limit = { 	
+							OR = { 
+											AND = {has_country_flag = acw_cf_slot_1_open
+													acw_cf_slot_1_filled = yes }
+											AND = {has_country_flag = acw_cf_slot_2_open
+													acw_cf_slot_2_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_3_open
+													acw_cf_slot_3_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_4_open
+													acw_cf_slot_4_filled = yes }
+											}											
+							}				
+							country_event = {name = acw_hd.25}
+						}
+					
+					ELSE = { 
+						IF = {limit = {
+								tag = RUS
+							} 
+								add_country_modifier = {
+										name = acw_cf_company_7_mod_1
+										duration = -1
+													}
+								}
+						ELSE_IF = {limit = {
+								has_estate = estate_tribes
+							} 
+								add_country_modifier = {
+										name = acw_cf_company_7_mod_1
+										duration = -1
+													}
+								}		
+								
+								
+						ELSE = 	 {
+								add_country_modifier = {
+										name = acw_cf_company_7_mod
+										duration = -1
+													}	
+							}						
+												
+						acw_cf_decrease_perkz = yes							
+					}
+	
+				}
 	
 	frame = { number = 9
 				trigger = {
@@ -8259,7 +8435,32 @@ custom_button = {
 				} 
 	trigger = { NOT = {has_country_flag = acw_cf_company_8_picked}}		
 				
-	effect = {		set_country_flag = acw_cf_company_8_picked}
+	effect = {		set_country_flag = acw_cf_company_8_picked
+					IF = { limit = { 	
+							OR = { 
+											AND = {has_country_flag = acw_cf_slot_1_open
+													acw_cf_slot_1_filled = yes }
+											AND = {has_country_flag = acw_cf_slot_2_open
+													acw_cf_slot_2_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_3_open
+													acw_cf_slot_3_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_4_open
+													acw_cf_slot_4_filled = yes }
+											}											
+							}				
+							country_event = {name = acw_hd.25}
+						}
+					
+					ELSE = { 
+								add_country_modifier = {
+										name = acw_cf_company_8_mod
+										duration = -1
+													}	
+												
+												
+						acw_cf_decrease_perkz = yes							
+					}
+			}
 	
 	frame = { number = 1
 				trigger = {always = yes}
@@ -8407,7 +8608,33 @@ custom_button = {
 				} 
 	trigger = { NOT = {has_country_flag = acw_cf_company_9_picked}}		
 				
-	effect = {		set_country_flag = acw_cf_company_9_picked}
+	effect = {		set_country_flag = acw_cf_company_9_picked
+					IF = { limit = { 	
+							OR = { 
+											AND = {has_country_flag = acw_cf_slot_1_open
+													acw_cf_slot_1_filled = yes }
+											AND = {has_country_flag = acw_cf_slot_2_open
+													acw_cf_slot_2_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_3_open
+													acw_cf_slot_3_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_4_open
+													acw_cf_slot_4_filled = yes }
+											}											
+							}				
+							country_event = {name = acw_hd.25}
+						}
+					
+					ELSE = { 
+					
+								add_country_modifier = {
+										name = acw_cf_company_9_mod
+										duration = -1
+													}						
+												
+						acw_cf_decrease_perkz = yes							
+					}
+	
+				}
 	
 	frame = { number = 1
 				trigger = {always = yes}
@@ -8556,7 +8783,41 @@ custom_button = {
 				} 
 	trigger = { NOT = {has_country_flag = acw_cf_company_10_picked}}		
 				
-	effect = {		set_country_flag = acw_cf_company_10_picked}
+	effect = {		set_country_flag = acw_cf_company_10_picked
+					IF = { limit = { 	
+							OR = { 
+											AND = {has_country_flag = acw_cf_slot_1_open
+													acw_cf_slot_1_filled = yes }
+											AND = {has_country_flag = acw_cf_slot_2_open
+													acw_cf_slot_2_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_3_open
+													acw_cf_slot_3_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_4_open
+													acw_cf_slot_4_filled = yes }
+											}											
+							}				
+							country_event = {name = acw_hd.25}
+						}
+					
+					ELSE = { 
+								IF = {limit = {primary_culture = japanese}
+										add_country_modifier = {
+											name = acw_cf_company_10_mod_1
+											duration = -1
+													}
+								ELSE= {					
+										add_country_modifier = {
+											name = acw_cf_company_10_mod
+											duration = -1
+													}
+									}				
+												
+						acw_cf_decrease_perkz = yes							
+					}
+	
+					
+	
+	}
 	
 	frame = { number = 8
 				trigger = {primary_culture = japanese}
@@ -8710,7 +8971,39 @@ custom_button = {
 				any_owned_province = { trade_goods = slaves }
 				}		
 				
-	effect = {	set_country_flag = acw_cf_company_11_picked}
+	effect = {	set_country_flag = acw_cf_company_11_picked
+					IF = { limit = { 	
+							OR = { 
+											AND = {has_country_flag = acw_cf_slot_1_open
+													acw_cf_slot_1_filled = yes }
+											AND = {has_country_flag = acw_cf_slot_2_open
+													acw_cf_slot_2_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_3_open
+													acw_cf_slot_3_filled = yes }		
+											AND = {has_country_flag = acw_cf_slot_4_open
+													acw_cf_slot_4_filled = yes }
+											}											
+							}				
+							country_event = {name = acw_hd.25}
+						}
+					
+					ELSE = { 
+								IF = {limit = {culture_group = persian}
+										add_country_modifier = {
+											name = acw_cf_company_11_mod
+											duration = -1
+													}
+										}
+								ELSE= {					
+										add_country_modifier = {
+											name = acw_cf_company_11_mod_1
+											duration = -1
+													}
+									}				
+												
+						acw_cf_decrease_perkz = yes							
+							}
+					}
 	
 	frame = { number = 8
 				trigger = {culture_group = persian}
@@ -8836,7 +9129,7 @@ custom_button = {
 				 has_country_flag = acw_cf_page_3
 				} 
 				
-	trigger = { NOT = { 
+	trigger = { NOT = {  
 					OR = {
 						has_country_flag = acw_cf_company_11_s_bb_picked
 						has_country_flag = acw_cf_company_11_s_ba_picked
