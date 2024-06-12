@@ -38,6 +38,7 @@ acw_remove_all_from_slot1 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s1_2}
 					remove_country_modifier = acw_cf_company_2_mod
+					remove_country_modifier = acw_cf_company_2_mod_1
 					remove_country_modifier = acw_cf_company_2_a_mod
 					remove_country_modifier = acw_cf_company_2_b_mod
 					remove_country_modifier = acw_cf_company_2_aa_mod
@@ -76,6 +77,7 @@ acw_remove_all_from_slot1 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s1_4}
 					remove_country_modifier = acw_cf_company_4_mod
+					remove_country_modifier = acw_cf_company_4_mod_1
 					remove_country_modifier = acw_cf_company_4_a_mod
 					remove_country_modifier = acw_cf_company_4_b_mod
 					remove_country_modifier = acw_cf_company_4_aa_mod
@@ -95,6 +97,7 @@ acw_remove_all_from_slot1 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s1_5}
 					remove_country_modifier = acw_cf_company_5_mod
+					remove_country_modifier = acw_cf_company_5_mod_1
 					remove_country_modifier = acw_cf_company_5_a_mod
 					remove_country_modifier = acw_cf_company_5_b_mod
 					remove_country_modifier = acw_cf_company_5_aa_mod
@@ -114,6 +117,11 @@ acw_remove_all_from_slot1 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s1_6}
 					remove_country_modifier = acw_cf_company_6_mod
+					remove_country_modifier = acw_cf_company_6_mod_1
+					remove_country_modifier = acw_cf_company_6_mod_2
+					remove_country_modifier = acw_cf_company_6_mod_3
+					remove_country_modifier = acw_cf_company_6_mod_4
+					remove_country_modifier = acw_cf_company_6_mod_5
 					remove_country_modifier = acw_cf_company_6_a_mod
 					remove_country_modifier = acw_cf_company_6_b_mod
 					remove_country_modifier = acw_cf_company_6_aa_mod
@@ -133,6 +141,8 @@ acw_remove_all_from_slot1 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s1_7}
 					remove_country_modifier = acw_cf_company_7_mod
+					remove_country_modifier = acw_cf_company_7_mod_1
+					remove_country_modifier = acw_cf_company_7_mod_2
 					remove_country_modifier = acw_cf_company_7_a_mod
 					remove_country_modifier = acw_cf_company_7_b_mod
 					remove_country_modifier = acw_cf_company_7_aa_mod
@@ -190,6 +200,7 @@ acw_remove_all_from_slot1 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s1_10}
 					remove_country_modifier = acw_cf_company_10_mod
+					remove_country_modifier = acw_cf_company_10_mod_1
 					remove_country_modifier = acw_cf_company_10_a_mod
 					remove_country_modifier = acw_cf_company_10_b_mod
 					remove_country_modifier = acw_cf_company_10_aa_mod
@@ -209,6 +220,7 @@ acw_remove_all_from_slot1 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s1_11}
 					remove_country_modifier = acw_cf_company_11_mod
+					remove_country_modifier = acw_cf_company_11_mod_1
 					remove_country_modifier = acw_cf_company_11_a_mod
 					remove_country_modifier = acw_cf_company_11_b_mod
 					remove_country_modifier = acw_cf_company_11_aa_mod
@@ -226,10 +238,12 @@ acw_remove_all_from_slot1 = {
 			}
 }
 
+#remove support companies	
 acw_remove_all_from_slot2 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s2_1}
 					remove_country_modifier = acw_cf_company_1_mod
+					remove_country_modifier = acw_cf_company_1_mod_1
 					remove_country_modifier = acw_cf_company_1_a_mod
 					remove_country_modifier = acw_cf_company_1_b_mod
 					remove_country_modifier = acw_cf_company_1_aa_mod
@@ -249,6 +263,7 @@ acw_remove_all_from_slot2 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s2_2}
 					remove_country_modifier = acw_cf_company_2_mod
+					remove_country_modifier = acw_cf_company_2_mod_1
 					remove_country_modifier = acw_cf_company_2_a_mod
 					remove_country_modifier = acw_cf_company_2_b_mod
 					remove_country_modifier = acw_cf_company_2_aa_mod
@@ -287,6 +302,7 @@ acw_remove_all_from_slot2 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s2_4}
 					remove_country_modifier = acw_cf_company_4_mod
+					remove_country_modifier = acw_cf_company_4_mod_1
 					remove_country_modifier = acw_cf_company_4_a_mod
 					remove_country_modifier = acw_cf_company_4_b_mod
 					remove_country_modifier = acw_cf_company_4_aa_mod
@@ -306,6 +322,7 @@ acw_remove_all_from_slot2 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s2_5}
 					remove_country_modifier = acw_cf_company_5_mod
+					remove_country_modifier = acw_cf_company_5_mod_1
 					remove_country_modifier = acw_cf_company_5_a_mod
 					remove_country_modifier = acw_cf_company_5_b_mod
 					remove_country_modifier = acw_cf_company_5_aa_mod
@@ -325,6 +342,11 @@ acw_remove_all_from_slot2 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s2_6}
 					remove_country_modifier = acw_cf_company_6_mod
+					remove_country_modifier = acw_cf_company_6_mod_1
+					remove_country_modifier = acw_cf_company_6_mod_2
+					remove_country_modifier = acw_cf_company_6_mod_3
+					remove_country_modifier = acw_cf_company_6_mod_4
+					remove_country_modifier = acw_cf_company_6_mod_5
 					remove_country_modifier = acw_cf_company_6_a_mod
 					remove_country_modifier = acw_cf_company_6_b_mod
 					remove_country_modifier = acw_cf_company_6_aa_mod
@@ -344,6 +366,8 @@ acw_remove_all_from_slot2 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s2_7}
 					remove_country_modifier = acw_cf_company_7_mod
+					remove_country_modifier = acw_cf_company_7_mod_1
+					remove_country_modifier = acw_cf_company_7_mod_2
 					remove_country_modifier = acw_cf_company_7_a_mod
 					remove_country_modifier = acw_cf_company_7_b_mod
 					remove_country_modifier = acw_cf_company_7_aa_mod
@@ -401,6 +425,7 @@ acw_remove_all_from_slot2 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s2_10}
 					remove_country_modifier = acw_cf_company_10_mod
+					remove_country_modifier = acw_cf_company_10_mod_1
 					remove_country_modifier = acw_cf_company_10_a_mod
 					remove_country_modifier = acw_cf_company_10_b_mod
 					remove_country_modifier = acw_cf_company_10_aa_mod
@@ -420,6 +445,7 @@ acw_remove_all_from_slot2 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s2_11}
 					remove_country_modifier = acw_cf_company_11_mod
+					remove_country_modifier = acw_cf_company_11_mod_1
 					remove_country_modifier = acw_cf_company_11_a_mod
 					remove_country_modifier = acw_cf_company_11_b_mod
 					remove_country_modifier = acw_cf_company_11_aa_mod
@@ -437,10 +463,12 @@ acw_remove_all_from_slot2 = {
 			}
 }
 
+#remove support companies	
 acw_remove_all_from_slot3 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s3_1}
 					remove_country_modifier = acw_cf_company_1_mod
+					remove_country_modifier = acw_cf_company_1_mod_1
 					remove_country_modifier = acw_cf_company_1_a_mod
 					remove_country_modifier = acw_cf_company_1_b_mod
 					remove_country_modifier = acw_cf_company_1_aa_mod
@@ -460,6 +488,7 @@ acw_remove_all_from_slot3 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s3_2}
 					remove_country_modifier = acw_cf_company_2_mod
+					remove_country_modifier = acw_cf_company_2_mod_1
 					remove_country_modifier = acw_cf_company_2_a_mod
 					remove_country_modifier = acw_cf_company_2_b_mod
 					remove_country_modifier = acw_cf_company_2_aa_mod
@@ -498,6 +527,7 @@ acw_remove_all_from_slot3 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s3_4}
 					remove_country_modifier = acw_cf_company_4_mod
+					remove_country_modifier = acw_cf_company_4_mod_1
 					remove_country_modifier = acw_cf_company_4_a_mod
 					remove_country_modifier = acw_cf_company_4_b_mod
 					remove_country_modifier = acw_cf_company_4_aa_mod
@@ -517,6 +547,7 @@ acw_remove_all_from_slot3 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s3_5}
 					remove_country_modifier = acw_cf_company_5_mod
+					remove_country_modifier = acw_cf_company_5_mod_1
 					remove_country_modifier = acw_cf_company_5_a_mod
 					remove_country_modifier = acw_cf_company_5_b_mod
 					remove_country_modifier = acw_cf_company_5_aa_mod
@@ -536,6 +567,11 @@ acw_remove_all_from_slot3 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s3_6}
 					remove_country_modifier = acw_cf_company_6_mod
+					remove_country_modifier = acw_cf_company_6_mod_1
+					remove_country_modifier = acw_cf_company_6_mod_2
+					remove_country_modifier = acw_cf_company_6_mod_3
+					remove_country_modifier = acw_cf_company_6_mod_4
+					remove_country_modifier = acw_cf_company_6_mod_5
 					remove_country_modifier = acw_cf_company_6_a_mod
 					remove_country_modifier = acw_cf_company_6_b_mod
 					remove_country_modifier = acw_cf_company_6_aa_mod
@@ -555,6 +591,8 @@ acw_remove_all_from_slot3 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s3_7}
 					remove_country_modifier = acw_cf_company_7_mod
+					remove_country_modifier = acw_cf_company_7_mod_1
+					remove_country_modifier = acw_cf_company_7_mod_2
 					remove_country_modifier = acw_cf_company_7_a_mod
 					remove_country_modifier = acw_cf_company_7_b_mod
 					remove_country_modifier = acw_cf_company_7_aa_mod
@@ -612,6 +650,7 @@ acw_remove_all_from_slot3 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s3_10}
 					remove_country_modifier = acw_cf_company_10_mod
+					remove_country_modifier = acw_cf_company_10_mod_1
 					remove_country_modifier = acw_cf_company_10_a_mod
 					remove_country_modifier = acw_cf_company_10_b_mod
 					remove_country_modifier = acw_cf_company_10_aa_mod
@@ -631,6 +670,7 @@ acw_remove_all_from_slot3 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s3_11}
 					remove_country_modifier = acw_cf_company_11_mod
+					remove_country_modifier = acw_cf_company_11_mod_1
 					remove_country_modifier = acw_cf_company_11_a_mod
 					remove_country_modifier = acw_cf_company_11_b_mod
 					remove_country_modifier = acw_cf_company_11_aa_mod
@@ -648,10 +688,12 @@ acw_remove_all_from_slot3 = {
 			}
 }
 
+#remove support companies	
 acw_remove_all_from_slot4 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s4_1}
 					remove_country_modifier = acw_cf_company_1_mod
+					remove_country_modifier = acw_cf_company_1_mod_1
 					remove_country_modifier = acw_cf_company_1_a_mod
 					remove_country_modifier = acw_cf_company_1_b_mod
 					remove_country_modifier = acw_cf_company_1_aa_mod
@@ -671,6 +713,7 @@ acw_remove_all_from_slot4 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s4_2}
 					remove_country_modifier = acw_cf_company_2_mod
+					remove_country_modifier = acw_cf_company_2_mod_1
 					remove_country_modifier = acw_cf_company_2_a_mod
 					remove_country_modifier = acw_cf_company_2_b_mod
 					remove_country_modifier = acw_cf_company_2_aa_mod
@@ -709,6 +752,7 @@ acw_remove_all_from_slot4 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s4_4}
 					remove_country_modifier = acw_cf_company_4_mod
+					remove_country_modifier = acw_cf_company_4_mod_1
 					remove_country_modifier = acw_cf_company_4_a_mod
 					remove_country_modifier = acw_cf_company_4_b_mod
 					remove_country_modifier = acw_cf_company_4_aa_mod
@@ -728,6 +772,7 @@ acw_remove_all_from_slot4 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s4_5}
 					remove_country_modifier = acw_cf_company_5_mod
+					remove_country_modifier = acw_cf_company_5_mod_1
 					remove_country_modifier = acw_cf_company_5_a_mod
 					remove_country_modifier = acw_cf_company_5_b_mod
 					remove_country_modifier = acw_cf_company_5_aa_mod
@@ -747,6 +792,11 @@ acw_remove_all_from_slot4 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s4_6}
 					remove_country_modifier = acw_cf_company_6_mod
+					remove_country_modifier = acw_cf_company_6_mod_1
+					remove_country_modifier = acw_cf_company_6_mod_2
+					remove_country_modifier = acw_cf_company_6_mod_3
+					remove_country_modifier = acw_cf_company_6_mod_4
+					remove_country_modifier = acw_cf_company_6_mod_5
 					remove_country_modifier = acw_cf_company_6_a_mod
 					remove_country_modifier = acw_cf_company_6_b_mod
 					remove_country_modifier = acw_cf_company_6_aa_mod
@@ -766,6 +816,8 @@ acw_remove_all_from_slot4 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s4_7}
 					remove_country_modifier = acw_cf_company_7_mod
+					remove_country_modifier = acw_cf_company_7_mod_1
+					remove_country_modifier = acw_cf_company_7_mod_2
 					remove_country_modifier = acw_cf_company_7_a_mod
 					remove_country_modifier = acw_cf_company_7_b_mod
 					remove_country_modifier = acw_cf_company_7_aa_mod
@@ -823,6 +875,7 @@ acw_remove_all_from_slot4 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s4_10}
 					remove_country_modifier = acw_cf_company_10_mod
+					remove_country_modifier = acw_cf_company_10_mod_1
 					remove_country_modifier = acw_cf_company_10_a_mod
 					remove_country_modifier = acw_cf_company_10_b_mod
 					remove_country_modifier = acw_cf_company_10_aa_mod
@@ -842,6 +895,7 @@ acw_remove_all_from_slot4 = {
 			IF = {
 				limit = {has_country_flag = acw_cf_s4_11}
 					remove_country_modifier = acw_cf_company_11_mod
+					remove_country_modifier = acw_cf_company_11_mod_1
 					remove_country_modifier = acw_cf_company_11_a_mod
 					remove_country_modifier = acw_cf_company_11_b_mod
 					remove_country_modifier = acw_cf_company_11_aa_mod
