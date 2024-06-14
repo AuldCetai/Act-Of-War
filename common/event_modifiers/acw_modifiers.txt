@@ -801,79 +801,79 @@ acw_cf_company_11_mod_1 = {
 
 }	
 
-acw_cf_company_1_a_mod = {}
-acw_cf_company_1_b_mod = {}
-acw_cf_company_1_aa_mod = {}
-acw_cf_company_1_ab_mod = {burghers_influence_modifier = -0.2}
-acw_cf_company_1_ba_mod = {}
-acw_cf_company_1_bb_mod = {}
+acw_cf_company_1_a_mod = { war_taxes_cost_modifier = -0.10 }
+acw_cf_company_1_b_mod = { justify_trade_conflict_cost = -0.2 }
+acw_cf_company_1_aa_mod = { global_monthly_devastation = -0.1 }
+acw_cf_company_1_ab_mod = { burghers_influence_modifier = -0.2 }
+acw_cf_company_1_ba_mod = { global_trade_power = 0.1 }
+acw_cf_company_1_bb_mod = { merchants = 1 }
 
-acw_cf_company_2_a_mod = {}
-acw_cf_company_2_b_mod = {}
-acw_cf_company_2_aa_mod = {}
-acw_cf_company_2_ab_mod = {nobles_influence_modifier = -0.2}
-acw_cf_company_2_ba_mod = {}
-acw_cf_company_2_bb_mod = {}
+acw_cf_company_2_a_mod = { may_recruit_female_generals = yes }
+acw_cf_company_2_b_mod = { max_general_maneuver = 1 }
+acw_cf_company_2_aa_mod = { global_missionary_strength = 0.03 }
+acw_cf_company_2_ab_mod = { nobles_influence_modifier = -0.2 }
+acw_cf_company_2_ba_mod = { manpower_in_own_culture_provinces = 0.10 }
+acw_cf_company_2_bb_mod = { special_unit_cost_modifier = -0.2 }
 
-acw_cf_company_3_a_mod = {}
-acw_cf_company_3_b_mod = {}
-acw_cf_company_3_aa_mod = {}
-acw_cf_company_3_ab_mod = {}
-acw_cf_company_3_ba_mod = {}
-acw_cf_company_3_bb_mod = {}
+acw_cf_company_3_a_mod = { global_supply_limit_modifier = 0.1 }
+acw_cf_company_3_b_mod = { garrison_size = 0.10 }
+acw_cf_company_3_aa_mod = { merc_leader_army_tradition = 0.5 }
+acw_cf_company_3_ab_mod = { merc_maintenance_modifier = -0.10 }
+acw_cf_company_3_ba_mod = { fort_maintenance_modifier = -0.33 }
+acw_cf_company_3_bb_mod = { reserves_organisation = 0.10 }
 
-acw_cf_company_4_a_mod = {}
-acw_cf_company_4_b_mod = {}
-acw_cf_company_4_aa_mod = {}
-acw_cf_company_4_ab_mod = {}
-acw_cf_company_4_ba_mod = {}
-acw_cf_company_4_bb_mod = {}
+acw_cf_company_4_a_mod = { possible_condottieri = 0.5  }
+acw_cf_company_4_b_mod = { merc_maintenance_modifier = -0.1 }
+acw_cf_company_4_aa_mod = { possible_mercenaries = 1.0 }
+acw_cf_company_4_ab_mod = { vassal_forcelimit_bonus = 0.15 }
+acw_cf_company_4_ba_mod = { global_colonial_growth = 20 }
+acw_cf_company_4_bb_mod = { native_assimilation = 0.25 }
 
-acw_cf_company_5_a_mod = {}
-acw_cf_company_5_b_mod = {}
-acw_cf_company_5_aa_mod = {}
-acw_cf_company_5_ab_mod = {}
-acw_cf_company_5_ba_mod = {}
-acw_cf_company_5_bb_mod = {}
+acw_cf_company_5_a_mod = { yearly_army_professionalism = 0.01 }
+acw_cf_company_5_b_mod = { cav_to_inf_ratio = 0.10 }
+acw_cf_company_5_aa_mod = { land_attrition = -0.05 }
+acw_cf_company_5_ab_mod = { global_supply_limit_modifier = 0.10 }
+acw_cf_company_5_ba_mod = { discipline = 0.05 }
+acw_cf_company_5_bb_mod = { manpower_recovery_speed = 0.10 }
 
-acw_cf_company_6_a_mod = {}
-acw_cf_company_6_b_mod = {}
-acw_cf_company_6_aa_mod = {}
-acw_cf_company_6_ab_mod = {}
-acw_cf_company_6_ba_mod = {}
-acw_cf_company_6_bb_mod = {}
+acw_cf_company_6_b_mod = { power_projection_from_insults = 0.33 }
+acw_cf_company_6_aa_mod = { spy_offence = 0.2 }
+acw_cf_company_6_ab_mod = { fabricate_claims_cost = 0.20 }
+acw_cf_company_6_ba_mod = { cavalry_cost= -0.15 }
+acw_cf_company_6_bb_mod = { army_tradition = 0.15 }
 
-acw_cf_company_7_a_mod = {}
-acw_cf_company_7_b_mod = {}
-acw_cf_company_7_aa_mod = {}
-acw_cf_company_7_ab_mod = {}
-acw_cf_company_7_ba_mod = {}
-acw_cf_company_7_bb_mod = {}
+acw_cf_company_7_a_mod = { global_garrison_growth = 0.10 }
+acw_cf_company_7_b_mod = { global_supply_limit_modifier = 0.10 }
+acw_cf_company_7_aa_mod = { free_leader_pool = 1 }
+acw_cf_company_7_ab_mod = { manpower_in_own_culture_provinces = 0.05 }
+acw_cf_company_7_ba_mod = { drill_decay_modifier = -0.3 }
+acw_cf_company_7_bb_mod = { may_build_supply_depot = yes }
 
-acw_cf_company_8_a_mod = {}
-acw_cf_company_8_b_mod = {}
-acw_cf_company_8_aa_mod = {}
-acw_cf_company_8_ab_mod = {}
-acw_cf_company_8_ba_mod = {}
-acw_cf_company_8_bb_mod = {}
+acw_cf_company_8_a_mod = { land_attrition = -0.10 }
+acw_cf_company_8_b_mod = { garrison_size = 0.2 }
+acw_cf_company_8_aa_mod = { max_general_fire = 1 }
+acw_cf_company_8_ab_mod = { may_refill_garrison = yes }
+acw_cf_company_8_ba_mod = { production_efficiency = 0.1 }
+acw_cf_company_8_bb_mod = { artillery_fire = 1 }
 
-acw_cf_company_9_a_mod = {}
-acw_cf_company_9_b_mod = {}
-acw_cf_company_9_aa_mod = {}
-acw_cf_company_9_ab_mod = {church_influence_modifier = -0.2}
-acw_cf_company_9_ba_mod = {}
-acw_cf_company_9_bb_mod = {}
+acw_cf_company_9_a_mod = { special_unit_cost_modifier = -0.2 }
+acw_cf_company_9_b_mod = { manpower_in_true_faith_provinces= 0.10 }
+acw_cf_company_9_aa_mod = { drill_decay_modifier = -0.20 }
+acw_cf_company_9_ab_mod = { clergy_influence_modifier = -0.2 }
+acw_cf_company_9_ba_mod = { recover_army_morale_speed = 0.10 }
+acw_cf_company_9_bb_mod = { reinforce_speed = 0.10 }
 
-acw_cf_company_10_a_mod = {}
-acw_cf_company_10_b_mod = {}
-acw_cf_company_10_aa_mod = {}
-acw_cf_company_10_ab_mod = {}
-acw_cf_company_10_ba_mod = {}
-acw_cf_company_10_bb_mod = {}
+acw_cf_company_10_a_mod = { reserves_organisation = 0.10 }
+acw_cf_company_10_b_mod = { shock_damage_received = -0.10 }
+acw_cf_company_10_aa_mod = { warscore_from_battles_modifier = 0.1 }
+acw_cf_company_10_ab_mod = { military_tactics = 0.05 }
+acw_cf_company_10_ba_mod = { reinforce_speed = 0.10 }
+acw_cf_company_10_bb_mod = { reinforce_cost_modifier = -0.10 }
 
-acw_cf_company_11_a_mod = {}
-acw_cf_company_11_b_mod = {}
-acw_cf_company_11_aa_mod = {}
-acw_cf_company_11_ab_mod = {}
-acw_cf_company_11_ba_mod = {}
-acw_cf_company_11_bb_mod = {}
+acw_cf_company_11_a_mod = { war_exhaustion_cost = -0.10 }
+acw_cf_company_11_b_mod = { available_province_loot = 0.10 }
+acw_cf_company_11_aa_mod = { war_taxes_cost_modifier = -0.10 }
+acw_cf_company_11_ab_mod = { special_unit_forcelimit = 0.10 }
+acw_cf_company_11_ba_mod = { land_maintenance_modifier = -0.05 }
+acw_cf_company_11_bb_mod = { regiment_manpower_usage = -0.1 }
+
