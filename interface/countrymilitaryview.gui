@@ -2282,37 +2282,37 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_cf_slot_1"
 				scripted = yes
-				spriteType = "GFX_button_straight_96_32"
-				position = { x= 580 y = 675 }
+				quadTextureSprite = "GFX_acw_cf_company_base"
+				position = { x= 580 y = 665 }
 				Orientation = "UPPER_LEFT"
-				scale = 1.4
+				scale = 0.8
 			}	
 			
 			guiButtonType ={
 				name ="acw_cf_slot_2"
 				scripted = yes
-				spriteType = "GFX_button_straight_96_32"
-				position = { x= 580 y = 730 }
+				quadTextureSprite = "GFX_acw_cf_company_base"
+				position = { x= 580 y = 765 }
 				Orientation = "UPPER_LEFT"
-				scale = 1.4
+				scale = 0.8
 			}	
 			
 			guiButtonType ={
 				name ="acw_cf_slot_3"
 				scripted = yes
-				spriteType = "GFX_button_straight_96_32"
-				position = { x= 580 y = 780 }
+				quadTextureSprite = "GFX_acw_cf_company_base"
+				position = { x= 880 y = 665 }
 				Orientation = "UPPER_LEFT"
-				scale = 1.4
+				scale = 0.8
 			}	
 			
 			guiButtonType ={
 				name ="acw_cf_slot_4"
 				scripted = yes
-				spriteType = "GFX_button_straight_96_32"
-				position = { x= 580 y = 830 }
+				quadTextureSprite = "GFX_acw_cf_company_base"
+				position = { x= 880 y = 765 }
 				Orientation = "UPPER_LEFT"
-				scale = 1.4
+				scale = 0.8
 			}	
 
 			#improve levels buttons

@@ -413,4 +413,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/acw_cf_perkz_counter.dds"
 		transparencecheck = yes
 	}	
+	
+	SpriteType = {		
+		name = "GFX_acw_cf_company_base"
+		texturefile = "gfx/interface/acw_company_base.dds"
+		transparencecheck = yes
+		noOfFrames = 25
+	}	
 }

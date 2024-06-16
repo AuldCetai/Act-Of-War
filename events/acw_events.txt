@@ -1375,27 +1375,19 @@ country_event = {
 			IF = {
 				limit = {has_country_flag = acw_cf_company_1_picked}
 					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													} 
+												acw_remove_all_from_slot1 = yes
 												set_country_flag = acw_cf_s1_1
 											}	
 					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													}
+												acw_remove_all_from_slot2 = yes
 												set_country_flag = acw_cf_s2_1 	
 												}
 					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
 													acw_remove_all_from_slot3 = yes
-													}
-												set_country_flag = acw_cf_s3_1 	
+													set_country_flag = acw_cf_s3_1 	
 												}
 					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													}
+												acw_remove_all_from_slot4 = yes
 												set_country_flag = acw_cf_s4_1 	
 												}
 					IF = {limit = {primary_culture = french} 

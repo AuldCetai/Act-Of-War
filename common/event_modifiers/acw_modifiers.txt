@@ -836,6 +836,7 @@ acw_cf_company_5_ab_mod = { global_supply_limit_modifier = 0.10 }
 acw_cf_company_5_ba_mod = { discipline = 0.05 }
 acw_cf_company_5_bb_mod = { manpower_recovery_speed = 0.10 }
 
+acw_cf_company_6_a_mod = { vassal_forcelimit_bonus = 0.05 }
 acw_cf_company_6_b_mod = { power_projection_from_insults = 0.33 }
 acw_cf_company_6_aa_mod = { spy_offence = 0.2 }
 acw_cf_company_6_ab_mod = { fabricate_claims_cost = 0.20 }
@@ -859,7 +860,7 @@ acw_cf_company_8_bb_mod = { artillery_fire = 1 }
 acw_cf_company_9_a_mod = { special_unit_cost_modifier = -0.2 }
 acw_cf_company_9_b_mod = { manpower_in_true_faith_provinces= 0.10 }
 acw_cf_company_9_aa_mod = { drill_decay_modifier = -0.20 }
-acw_cf_company_9_ab_mod = { clergy_influence_modifier = -0.2 }
+acw_cf_company_9_ab_mod = { church_influence_modifier = -0.2 }
 acw_cf_company_9_ba_mod = { recover_army_morale_speed = 0.10 }
 acw_cf_company_9_bb_mod = { reinforce_speed = 0.10 }
 

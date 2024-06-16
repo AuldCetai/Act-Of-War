@@ -39,6 +39,9 @@ on_new_age = {
 		}
 }
 
+on_startup = {
+			events = { acw_hd.22}
+			}
 
 # country
 # root = winning country, from = location
@@ -76,16 +79,18 @@ on_battle_won_country = {
 					}
 				from = TUR
 				}
-			ROOT = { country_event = { id = acw_hd.16  } #Night in targoviste
+			events = { acw_hd.16  } #Night in targoviste
 			}
+		}
 		
 		if = {
 			limit = {	
 				from = 	{ is_great_power = yes }
 				root = 	{ culture_group = filipino }
 				}
-			ROOT = { country_event = { id = acw_hd.20  } #battle of mactan
+			events = { acw_hd.20  } #battle of mactan
 			}
+		}
 		
 		
 		if = {
@@ -93,24 +98,27 @@ on_battle_won_country = {
 				from = 	{ primitives = no }
 				root = 	{ primitives = yes }
 				}
-			ROOT = { country_event = { id = acw_hd.1  } #Feats of Horsemanship
+			events = { acw_hd.1  } #Feats of Horsemanship
 			}
+		}
 
 		if = {
 			limit = {	
 				from = 	{ religion_group = muslim }
 				root = 	{ NOT = {religion_group = muslim} }
 				}
-			ROOT = { country_event = { id = acw_hd.10  } #Tahmuras defeating the divs
+			events = { acw_hd.10  } #Tahmuras defeating the divs
 			}
+		}
 		
 		if = {
 			limit = {	
 				root = 	{ religion = sikh }
 				from = 	{ religion_group = hindu }
 				}
-			ROOT = { country_event = { id = acw_hd.17  } #Battle of karthanpur
-			}	
+			events = { acw_hd.17  } #Battle of karthanpur
+			}
+		}
 
 		if = {
 			limit = {	
@@ -118,16 +126,18 @@ on_battle_won_country = {
 				root = 	{ is_colonial = no
 						  primitives = no }
 				}
-			ROOT = { country_event = { id = acw_hd.11  } #Cortes
+			events = { acw_hd.11  } #Cortes
 			}
+		}
 
 		if = {
 			limit = {	
 				from = 	{ is_great_power = yes }
 				root = 	{ tag = ETH }
 				}
-			ROOT = { country_event = { id = acw_hd.18  } #Battle of adwa
-			}	
+			events = { acw_hd.18  } #Battle of adwa
+			}
+		}
 		
 }
 				
@@ -160,27 +170,29 @@ on_battle_won_province = {
 		limit = {
 			root = { province_id = 361 }
 			from = REB }
-		ROOT = { country_event = { id =acw_hd.6}
+		events = {acw_hd.6}
+		}
 	}
 	
 	if = {
 		limit = {
 			root = { province_id = 217 }
 			from = REB }
-		ROOT = { country_event = { id =acw_hd.7}
+		events = {acw_hd.7}
+		}
 	}
 }
 	
 
 on_war_lost	 = {
-			ROOT = { country_event = { id = acw_hd.4 }
+			events = { acw_hd.4 }
+				}
 			}
 			
-on_startup = {
-			events = {acw_hd.22}
-			}
+
 			
 on_mil_tech_taken = {
-			ROOT = { country_event = { id =acw_hd.23}
+			events = {acw_hd.23}
 			}
+		}
 	
