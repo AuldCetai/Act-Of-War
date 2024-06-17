@@ -6911,23 +6911,23 @@ custom_button = {
 					}
 					
 	frame = {
-			number = 25
-			trigger = {always = yes}
-			}
-	frame = {
-			number = 2
+			number = 1
 			trigger = {
 						has_country_modifier = acw_cf_company_1_mod
 						has_country_flag = acw_cf_s1_1
 						}
 			}
 	frame = {
-			number = 3
+			number = 2
 			trigger = {
 						has_country_modifier = acw_cf_company_1_mod_1
 						has_country_flag = acw_cf_s1_1
 						}	
-			}			
+			}
+	frame = {
+			number = 26
+			trigger = {always = yes}
+			}		
 }		
 
 custom_button = {
@@ -6944,24 +6944,25 @@ custom_button = {
 					set_country_flag = acw_cf_page_1}
 					
 					
+	
 	frame = {
-			number = 25
-			trigger = {always = yes}
-			}
-	frame = {
-			number = 2
+			number = 1
 			trigger = {
 						has_country_modifier = acw_cf_company_1_mod
 						has_country_flag = acw_cf_s2_1
 						}
 			}
 	frame = {
-			number = 3
+			number = 2
 			trigger = {
 						has_country_modifier = acw_cf_company_1_mod_1
 						has_country_flag = acw_cf_s2_1
 						}	
-			}							
+			}
+	frame = {
+			number = 26
+			trigger = {always = yes}
+			}		
 }	
 
 custom_button = {
@@ -6978,24 +6979,26 @@ custom_button = {
 			  set_country_flag = acw_cf_page_1}
 			  
 					
+	
 	frame = {
-			number = 25
-			trigger = {always = yes}
-			}
-	frame = {
-			number = 2
+			number = 1
 			trigger = {
 						has_country_modifier = acw_cf_company_1_mod
 						has_country_flag = acw_cf_s3_1
 						}
 			}
 	frame = {
-			number = 3
+			number = 2
 			trigger = {
 						has_country_modifier = acw_cf_company_1_mod_1
 						has_country_flag = acw_cf_s3_1
 						}	
-			}			
+			}
+	frame = {
+			number = 26
+			trigger = {always = yes}
+			}
+			
 }	
 
 #avaible only under special circumstances - like missions to unlock or smtg.dunno yet.
@@ -7013,6 +7016,26 @@ custom_button = {
 	effect = {		set_country_flag = acw_cf_bg_open
 					set_country_flag = acw_cf_slot_4_open
 					set_country_flag = acw_cf_page_1}
+					
+	frame = {
+			number = 1
+			trigger = {
+						has_country_modifier = acw_cf_company_1_mod
+						has_country_flag = acw_cf_s4_1
+						}
+			}
+	frame = {
+			number = 2
+			trigger = {
+						has_country_modifier = acw_cf_company_1_mod_1
+						has_country_flag = acw_cf_s4_1
+						}	
+			}
+	frame = {
+			number = 26
+			trigger = {always = yes}
+			}				
+					
 }	
 
 custom_button = {
