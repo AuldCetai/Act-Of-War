@@ -916,6 +916,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+			has_global_flag = acw_night_in_targoviste_happened
 			OR = {
 				is_in_war = {participants = MOL}
 				is_in_war = {participants = WAL}
@@ -931,7 +932,8 @@ country_event = {
 			NOT = {has_country_flag = acw_hd_16_done}
 	}
 	
-	after = {set_country_flag = acw_hd_16_done}
+	after = {set_country_flag = acw_hd_16_done
+			 clr_global_flag = acw_night_in_targoviste_happened}
 	option = {
 		name = "acw_hd_16.a"
 		trigger = {

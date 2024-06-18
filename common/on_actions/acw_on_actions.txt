@@ -79,7 +79,7 @@ on_battle_won_country = {
 					}
 				from = TUR
 				}
-			events = { acw_hd.16  } #Night in targoviste
+			set_global_flag = acw_night_in_targoviste_happened
 			}
 		}
 		
