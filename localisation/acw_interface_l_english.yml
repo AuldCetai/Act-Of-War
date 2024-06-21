@@ -96,7 +96,7 @@
  acw_hd_20.d:0"I fought alongside Lapu-Lapu, defending our island from the foreign invaders. The battle was fierce, and seeing Magellan fall was a turning point, a moment of defiance and triumph for our people.\n\nThe Battle of Mactanis an artwork of $G@TDO Carlos 'Botong' Francisco$! painted in 1960"
 
  
- 
+ #this needs to be changed
  #give hd
  acw_hd_4.a:0"Comission a masterwork!"
  acw_hd_5.a:0"Comission a masterwork!"
@@ -141,4 +141,37 @@
  acw_hd_25.d:0"Warning!\n\nSelecting proceed will §RREMOVE§! the company already assigned to this slot, without refunding any points spent on it. \n\n§YAre you sure you want to do it?§!"
  acw_hd_25.a:0"Yes, proceed."
  acw_hd_25.b:0"No refunds? No thanks."
+ 
+ ## stratagems
+ ## armaments
+ ## CF
+ 
+ acw_cf_company_1_mod:0"Sutlers"
+ acw_cf_company_1_mod_1:0"Vivandières"
+ acw_cf_company_2_mod:0"Camp Wives"
+ acw_cf_company_2_mod_1:0"Zulu Women"
+ acw_cf_company_3_mod:0"Baggage Train Guards"
+ acw_cf_company_4_mod:0"Native Auxilia"
+ acw_cf_company_4_mod_1:0"Native American Allies"
+ acw_cf_company_5_mod:0"Survey corps"
+ acw_cf_company_5_mod_1:0"Bhisti"
+ acw_cf_company_6_mod:0"Cossack Scouts"
+ acw_cf_company_6_mod_1:0"Cossack Horsemen"
+ acw_cf_company_6_mod_2:0"Comancheros"
+ acw_cf_company_6_mod_3:0"Hajduks"
+ acw_cf_company_6_mod_4:0"Korokoro"
+ acw_cf_company_6_mod_5:0"Scouts"
+ acw_cf_company_7_mod:0"Orto"
+ acw_cf_company_7_mod_1:0"Yam"
+ acw_cf_company_7_mod_2:0"Camp organizers"
+ acw_cf_company_8_mod:0"Sappers"
+ acw_cf_company_9_mod:0"Camp doctors"
+ acw_cf_company_10_mod:0"Camp blacksmiths"
+ acw_cf_company_10_mod_1:0"Katori Butai"
+ acw_cf_company_11_mod:0"Indentured men"
+ acw_cf_company_11_mod_1:0"Ghilman"
+
+ 
+ ##holyshitireallyneedsomebodytodothispartorimgonnagomad
+ 
  

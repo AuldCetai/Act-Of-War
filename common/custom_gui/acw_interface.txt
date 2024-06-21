@@ -7782,6 +7782,10 @@ custom_button = {
 				
 	effect = {		
 					set_country_flag = acw_cf_company_1_s_a_picked
+					add_country_modifier = {
+										name = acw_cf_company_1_a_mod
+										duration = -1
+													}	
 					acw_cf_decrease_perkz = yes
 				}
 				
@@ -7808,6 +7812,10 @@ custom_button = {
 				
 	effect = {		
 					set_country_flag = acw_cf_company_1_s_b_picked
+					add_country_modifier = {
+										name = acw_cf_company_1_b_mod
+										duration = -1
+													}
 					acw_cf_decrease_perkz = yes
 				}
 	frame = { number = 3
@@ -7833,6 +7841,10 @@ custom_button = {
 			}
 				
 	effect = {	set_country_flag = acw_cf_company_1_s_aa_picked
+				add_country_modifier = {
+										name = acw_cf_company_1_aa_mod
+										duration = -1
+													}
 				acw_cf_decrease_perkz = yes
 				}
 	frame = { number = 4
@@ -7858,6 +7870,10 @@ custom_button = {
 				}
 				
 	effect = {	set_country_flag = acw_cf_company_1_s_ab_picked
+				add_country_modifier = {
+										name = acw_cf_company_1_ab_mod
+										duration = -1
+													}
 				acw_cf_decrease_perkz = yes
 				}
 	frame = { number = 5
@@ -7883,6 +7899,10 @@ custom_button = {
 				}
 				
 	effect = {	set_country_flag = acw_cf_company_1_s_ba_picked
+				add_country_modifier = {
+										name = acw_cf_company_1_ba_mod
+										duration = -1
+													}
 				acw_cf_decrease_perkz = yes
 				}
 	frame = { number = 6
@@ -7908,6 +7928,10 @@ custom_button = {
 				}
 				
 	effect = {	set_country_flag = acw_cf_company_1_s_bb_picked
+				add_country_modifier = {
+										name = acw_cf_company_1_bb_mod
+										duration = -1
+													}
 				acw_cf_decrease_perkz = yes}
 	frame = { number = 7
 				trigger = {always = yes}
@@ -7988,6 +8012,10 @@ custom_button = {
 				
 	effect = {		
 					set_country_flag = acw_cf_company_2_s_a_picked
+					add_country_modifier = {
+										name = acw_cf_company_2_a_mod
+										duration = -1
+													}	
 					acw_cf_decrease_perkz = yes
 				}
 				
@@ -8014,6 +8042,10 @@ custom_button = {
 				
 	effect = {		
 					set_country_flag = acw_cf_company_2_s_b_picked
+					add_country_modifier = {
+										name = acw_cf_company_2_b_mod
+										duration = -1
+													}	
 					acw_cf_decrease_perkz = yes
 				}
 	frame = { number = 3
@@ -8039,6 +8071,10 @@ custom_button = {
 			}
 				
 	effect = {	set_country_flag = acw_cf_company_2_s_aa_picked
+				add_country_modifier = {
+										name = acw_cf_company_2_aa_mod
+										duration = -1
+													}	
 				acw_cf_decrease_perkz = yes
 				}
 	frame = { number = 4
@@ -8064,6 +8100,10 @@ custom_button = {
 				}
 				
 	effect = {	set_country_flag = acw_cf_company_2_s_ab_picked
+				add_country_modifier = {
+										name = acw_cf_company_2_ab_mod
+										duration = -1
+													}	
 				acw_cf_decrease_perkz = yes
 				}
 	frame = { number = 5
@@ -8089,6 +8129,10 @@ custom_button = {
 				}
 				
 	effect = {	set_country_flag = acw_cf_company_2_s_ba_picked
+				add_country_modifier = {
+										name = acw_cf_company_2_ba_mod
+										duration = -1
+													}	
 				acw_cf_decrease_perkz = yes
 				}
 	frame = { number = 6
@@ -8114,6 +8158,10 @@ custom_button = {
 				}
 				
 	effect = {	set_country_flag = acw_cf_company_2_s_bb_picked
+				add_country_modifier = {
+										name = acw_cf_company_2_bb_mod
+										duration = -1
+													}	
 				acw_cf_decrease_perkz = yes}
 	frame = { number = 7
 				trigger = {always = yes}
@@ -8183,6 +8231,10 @@ custom_button = {
 				
 	effect = {		
 					set_country_flag = acw_cf_company_3_s_a_picked
+					add_country_modifier = {
+										name = acw_cf_company_3_a_mod
+										duration = -1
+													}	
 					acw_cf_decrease_perkz = yes
 				}
 				
@@ -8209,6 +8261,10 @@ custom_button = {
 				
 	effect = {		
 					set_country_flag = acw_cf_company_3_s_b_picked
+					add_country_modifier = {
+										name = acw_cf_company_3_b_mod
+										duration = -1
+													}	
 					acw_cf_decrease_perkz = yes
 				}
 	frame = { number = 3
@@ -8234,6 +8290,10 @@ custom_button = {
 			}
 				
 	effect = {	set_country_flag = acw_cf_company_3_s_aa_picked
+				add_country_modifier = {
+										name = acw_cf_company_3_aa_mod
+										duration = -1
+													}	
 				acw_cf_decrease_perkz = yes
 				}
 	frame = { number = 4
@@ -8259,6 +8319,10 @@ custom_button = {
 				}
 				
 	effect = {	set_country_flag = acw_cf_company_3_s_ab_picked
+				add_country_modifier = {
+										name = acw_cf_company_3_ab_mod
+										duration = -1
+													}	
 				acw_cf_decrease_perkz = yes
 				}
 	frame = { number = 5
@@ -8284,6 +8348,10 @@ custom_button = {
 				}
 				
 	effect = {	set_country_flag = acw_cf_company_3_s_ba_picked
+				add_country_modifier = {
+										name = acw_cf_company_3_ba_mod
+										duration = -1
+													}	
 				acw_cf_decrease_perkz = yes
 				}
 	frame = { number = 6
@@ -8309,6 +8377,10 @@ custom_button = {
 				}
 				
 	effect = {	set_country_flag = acw_cf_company_3_s_bb_picked
+				add_country_modifier = {
+										name = acw_cf_company_3_bb_mod
+										duration = -1
+													}
 				acw_cf_decrease_perkz = yes}
 	frame = { number = 7
 				trigger = {always = yes}
@@ -8385,7 +8457,13 @@ custom_button = {
 					has_country_flag = acw_cf_company_4_picked
 				}	
 				
-	effect = {		set_country_flag = acw_cf_company_4_s_a_picked}
+	effect = {		set_country_flag = acw_cf_company_4_s_a_picked
+					add_country_modifier = {
+										name = acw_cf_company_4_a_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes
+				}
 	frame = { number = 2
 				trigger = {always = yes}
 				}
@@ -8406,7 +8484,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_4_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_4_s_b_picked}
+	effect = {	set_country_flag = acw_cf_company_4_s_b_picked
+				add_country_modifier = {
+										name = acw_cf_company_4_b_mod
+										duration = -1
+													}
+				acw_cf_decrease_perkz = yes}
 	frame = { number = 3
 				trigger = {always = yes}
 				}
@@ -8428,7 +8511,12 @@ custom_button = {
 				has_country_flag = acw_cf_company_4_s_a_picked
 			}
 				
-	effect = {	set_country_flag = acw_cf_company_4_s_aa_picked}
+	effect = {	set_country_flag = acw_cf_company_4_s_aa_picked
+				add_country_modifier = {
+										name = acw_cf_company_4_aa_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 4
 				trigger = {always = yes}
 				}
@@ -8450,7 +8538,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_4_s_a_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_4_s_ab_picked}
+	effect = {	set_country_flag = acw_cf_company_4_s_ab_picked
+				add_country_modifier = {
+										name = acw_cf_company_4_ab_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 5
 				trigger = {always = yes}
 				}
@@ -8472,7 +8565,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_4_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_4_s_ba_picked}
+	effect = {	set_country_flag = acw_cf_company_4_s_ba_picked
+				add_country_modifier = {
+										name = acw_cf_company_4_ba_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 6
 				trigger = {always = yes}
 				}
@@ -8494,7 +8592,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_4_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_4_s_bb_picked}
+	effect = {	set_country_flag = acw_cf_company_4_s_bb_picked
+				add_country_modifier = {
+										name = acw_cf_company_4_bb_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 7
 				trigger = {always = yes}
 				}
@@ -8579,7 +8682,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_5_picked
 				}	
 				
-	effect = {		set_country_flag = acw_cf_company_5_s_a_picked}
+	effect = {		set_country_flag = acw_cf_company_5_s_a_picked
+					add_country_modifier = {
+										name = acw_cf_company_5_a_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 2
 				trigger = {always = yes}
 				}
@@ -8600,7 +8708,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_5_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_5_s_b_picked}
+	effect = {	set_country_flag = acw_cf_company_5_s_b_picked
+				add_country_modifier = {
+										name = acw_cf_company_5_b_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 3
 				trigger = {always = yes}
 				}
@@ -8622,7 +8735,12 @@ custom_button = {
 				has_country_flag = acw_cf_company_5_s_a_picked
 			}
 				
-	effect = {	set_country_flag = acw_cf_company_5_s_aa_picked}
+	effect = {	set_country_flag = acw_cf_company_5_s_aa_picked
+				add_country_modifier = {
+										name = acw_cf_company_5_aa_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 4
 				trigger = {always = yes}
 				}
@@ -8644,7 +8762,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_5_s_a_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_5_s_ab_picked}
+	effect = {	set_country_flag = acw_cf_company_5_s_ab_picked
+				add_country_modifier = {
+										name = acw_cf_company_5_ab_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 5
 				trigger = {always = yes}
 				}
@@ -8666,7 +8789,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_5_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_5_s_ba_picked}
+	effect = {	set_country_flag = acw_cf_company_5_s_ba_picked
+				add_country_modifier = {
+										name = acw_cf_company_5_ba_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 6
 				trigger = {always = yes}
 				}
@@ -8688,7 +8816,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_5_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_5_s_bb_picked}
+	effect = {	set_country_flag = acw_cf_company_5_s_bb_picked
+				add_country_modifier = {
+										name = acw_cf_company_5_bb_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 7
 				trigger = {always = yes}
 				}
@@ -8810,7 +8943,13 @@ custom_button = {
 					has_country_flag = acw_cf_company_6_picked
 				}	
 				
-	effect = {		set_country_flag = acw_cf_company_6_s_a_picked}
+	effect = {		set_country_flag = acw_cf_company_6_s_a_picked
+					add_country_modifier = {
+										name = acw_cf_company_6_a_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes
+					}
 	frame = { number = 2
 				trigger = {always = yes}
 				}
@@ -8831,7 +8970,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_6_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_6_s_b_picked}
+	effect = {	set_country_flag = acw_cf_company_6_s_b_picked
+				add_country_modifier = {
+										name = acw_cf_company_6_b_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 3
 				trigger = {always = yes}
 				}
@@ -8853,7 +8997,13 @@ custom_button = {
 				has_country_flag = acw_cf_company_6_s_a_picked
 			}
 				
-	effect = {	set_country_flag = acw_cf_company_6_s_aa_picked}
+	effect = {	set_country_flag = acw_cf_company_6_s_aa_picked
+				add_country_modifier = {
+										name = acw_cf_company_6_aa_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes
+				}
 	frame = { number = 4
 				trigger = {always = yes}
 				}
@@ -8875,7 +9025,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_6_s_a_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_6_s_ab_picked}
+	effect = {	set_country_flag = acw_cf_company_6_s_ab_picked
+				add_country_modifier = {
+										name = acw_cf_company_6_ab_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 5
 				trigger = {always = yes}
 				}
@@ -8897,7 +9052,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_6_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_6_s_ba_picked}
+	effect = {	set_country_flag = acw_cf_company_6_s_ba_picked
+				add_country_modifier = {
+										name = acw_cf_company_6_ba_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 6
 				trigger = {always = yes}
 				}
@@ -8919,7 +9079,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_6_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_6_s_bb_picked}
+	effect = {	set_country_flag = acw_cf_company_6_s_bb_picked
+				add_country_modifier = {
+										name = acw_cf_company_6_bb_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 7
 				trigger = {always = yes}
 				}
@@ -9015,7 +9180,13 @@ custom_button = {
 					has_country_flag = acw_cf_company_7_picked
 				}	
 				
-	effect = {		set_country_flag = acw_cf_company_7_s_a_picked}
+	effect = {		set_country_flag = acw_cf_company_7_s_a_picked
+					add_country_modifier = {
+										name = acw_cf_company_7_a_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes
+				}
 	frame = { number = 2
 				trigger = {always = yes}
 				}
@@ -9036,7 +9207,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_7_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_7_s_b_picked}
+	effect = {	set_country_flag = acw_cf_company_7_s_b_picked
+				add_country_modifier = {
+										name = acw_cf_company_7_b_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 3
 				trigger = {always = yes}
 				}
@@ -9058,7 +9234,12 @@ custom_button = {
 				has_country_flag = acw_cf_company_7_s_a_picked
 			}
 				
-	effect = {	set_country_flag = acw_cf_company_7_s_aa_picked}
+	effect = {	set_country_flag = acw_cf_company_7_s_aa_picked
+				add_country_modifier = {
+										name = acw_cf_company_7_aa_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 4
 				trigger = {always = yes}
 				}
@@ -9080,7 +9261,13 @@ custom_button = {
 					has_country_flag = acw_cf_company_7_s_a_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_7_s_ab_picked}
+	effect = {	set_country_flag = acw_cf_company_7_s_ab_picked
+				add_country_modifier = {
+										name = acw_cf_company_7_ab_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes
+	}
 	frame = { number = 5
 				trigger = {always = yes}
 				}
@@ -9102,7 +9289,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_7_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_7_s_ba_picked}
+	effect = {	set_country_flag = acw_cf_company_7_s_ba_picked
+				add_country_modifier = {
+										name = acw_cf_company_7_ba_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 6
 				trigger = {always = yes}
 				}
@@ -9124,7 +9316,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_7_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_7_s_bb_picked}
+	effect = {	set_country_flag = acw_cf_company_7_s_bb_picked
+				add_country_modifier = {
+										name = acw_cf_company_7_bb_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 7
 				trigger = {always = yes}
 				}
@@ -9187,7 +9384,13 @@ custom_button = {
 					has_country_flag = acw_cf_company_8_picked
 				}	
 				
-	effect = {		set_country_flag = acw_cf_company_8_s_a_picked}
+	effect = {		set_country_flag = acw_cf_company_8_s_a_picked
+					add_country_modifier = {
+										name = acw_cf_company_8_a_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes
+			}
 	frame = { number = 2
 				trigger = {always = yes}
 				}
@@ -9208,7 +9411,13 @@ custom_button = {
 					has_country_flag = acw_cf_company_8_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_8_s_b_picked}
+	effect = {	set_country_flag = acw_cf_company_8_s_b_picked
+					add_country_modifier = {
+										name = acw_cf_company_8_b_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes
+	}
 	frame = { number = 3
 				trigger = {always = yes}
 				}
@@ -9230,7 +9439,13 @@ custom_button = {
 				has_country_flag = acw_cf_company_8_s_a_picked
 			}
 				
-	effect = {	set_country_flag = acw_cf_company_8_s_aa_picked}
+	effect = {	set_country_flag = acw_cf_company_8_s_aa_picked
+				add_country_modifier = {
+										name = acw_cf_company_8_aa_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes
+	}
 	frame = { number = 4
 				trigger = {always = yes}
 				}
@@ -9252,7 +9467,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_8_s_a_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_8_s_ab_picked}
+	effect = {	set_country_flag = acw_cf_company_8_s_ab_picked
+				add_country_modifier = {
+										name = acw_cf_company_8_ab_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 5
 				trigger = {always = yes}
 				}
@@ -9274,7 +9494,13 @@ custom_button = {
 					has_country_flag = acw_cf_company_8_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_8_s_ba_picked}
+	effect = {	set_country_flag = acw_cf_company_8_s_ba_picked
+				add_country_modifier = {
+										name = acw_cf_company_8_ba_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes
+	}
 	frame = { number = 6
 				trigger = {always = yes}
 				}
@@ -9296,7 +9522,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_8_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_8_s_bb_picked}
+	effect = {	set_country_flag = acw_cf_company_8_s_bb_picked
+				add_country_modifier = {
+										name = acw_cf_company_8_bb_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 7
 				trigger = {always = yes}
 				}
@@ -9360,7 +9591,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_9_picked
 				}	
 				
-	effect = {		set_country_flag = acw_cf_company_9_s_a_picked}
+	effect = {		set_country_flag = acw_cf_company_9_s_a_picked
+					add_country_modifier = {
+										name = acw_cf_company_9_a_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 2
 				trigger = {always = yes}
 				}
@@ -9381,7 +9617,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_9_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_9_s_b_picked}
+	effect = {	set_country_flag = acw_cf_company_9_s_b_picked
+				add_country_modifier = {
+										name = acw_cf_company_9_b_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 3
 				trigger = {always = yes}
 				}
@@ -9425,7 +9666,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_9_s_a_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_9_s_ab_picked}
+	effect = {	set_country_flag = acw_cf_company_9_s_ab_picked
+				add_country_modifier = {
+										name = acw_cf_company_9_ab_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 5
 				trigger = {always = yes}
 				}
@@ -9447,7 +9693,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_9_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_9_s_ba_picked}
+	effect = {	set_country_flag = acw_cf_company_9_s_ba_picked
+				add_country_modifier = {
+										name = acw_cf_company_9_ba_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 6
 				trigger = {always = yes}
 				}
@@ -9469,7 +9720,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_9_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_9_s_bb_picked}
+	effect = {	set_country_flag = acw_cf_company_9_s_bb_picked
+				add_country_modifier = {
+										name = acw_cf_company_9_bb_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 7
 				trigger = {always = yes}
 				}
@@ -9543,7 +9799,12 @@ custom_button = {
 				has_country_flag = acw_cf_company_10_picked
 				}	
 				
-	effect = {		set_country_flag = acw_cf_company_10_s_a_picked}
+	effect = {		set_country_flag = acw_cf_company_10_s_a_picked
+					add_country_modifier = {
+										name = acw_cf_company_10_a_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 2
 				trigger = {always = yes}
 				}
@@ -9564,7 +9825,12 @@ custom_button = {
 				has_country_flag = acw_cf_company_10_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_10_s_b_picked}
+	effect = {	set_country_flag = acw_cf_company_10_s_b_picked
+					add_country_modifier = {
+										name = acw_cf_company_10_b_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 3
 				trigger = {always = yes}
 				}
@@ -9586,7 +9852,13 @@ custom_button = {
 				has_country_flag = acw_cf_company_10_s_a_picked
 			}
 				
-	effect = {	set_country_flag = acw_cf_company_10_s_aa_picked}
+	effect = {	set_country_flag = acw_cf_company_10_s_aa_picked
+					add_country_modifier = {
+										name = acw_cf_company_10_aa_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes	
+				}
 	frame = { number = 4
 				trigger = {always = yes}
 				}
@@ -9608,7 +9880,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_10_s_a_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_10_s_ab_picked}
+	effect = {	set_country_flag = acw_cf_company_10_s_ab_picked
+					add_country_modifier = {
+										name = acw_cf_company_10_ab_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 5
 				trigger = {always = yes}
 				}
@@ -9630,7 +9907,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_10_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_10_s_ba_picked}
+	effect = {	set_country_flag = acw_cf_company_10_s_ba_picked
+					add_country_modifier = {
+										name = acw_cf_company_10_ba_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 6
 				trigger = {always = yes}
 				}
@@ -9652,7 +9934,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_10_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_10_s_bb_picked}
+	effect = {	set_country_flag = acw_cf_company_10_s_bb_picked
+					add_country_modifier = {
+										name = acw_cf_company_10_bb_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 7
 				trigger = {always = yes}
 				}
@@ -9729,7 +10016,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_11_picked
 				}	
 				
-	effect = {		set_country_flag = acw_cf_company_11_s_a_picked}
+	effect = {		set_country_flag = acw_cf_company_11_s_a_picked
+					add_country_modifier = {
+										name = acw_cf_company_11_a_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 2
 				trigger = {always = yes}
 				}
@@ -9750,7 +10042,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_11_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_11_s_b_picked}
+	effect = {	set_country_flag = acw_cf_company_11_s_b_picked
+				add_country_modifier = {
+										name = acw_cf_company_11_b_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 3
 				trigger = {always = yes}
 				}
@@ -9772,7 +10069,13 @@ custom_button = {
 				has_country_flag = acw_cf_company_11_s_a_picked
 			}
 				
-	effect = {	set_country_flag = acw_cf_company_11_s_aa_picked}
+	effect = {	set_country_flag = acw_cf_company_11_s_aa_picked
+				add_country_modifier = {
+										name = acw_cf_company_11_aa_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes
+	}
 	frame = { number = 4
 				trigger = {always = yes}
 				}
@@ -9794,7 +10097,13 @@ custom_button = {
 					has_country_flag = acw_cf_company_11_s_a_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_11_s_ab_picked}
+	effect = {	set_country_flag = acw_cf_company_11_s_ab_picked
+				add_country_modifier = {
+										name = acw_cf_company_11_ab_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes
+				}
 	frame = { number = 5
 				trigger = {always = yes}
 				}
@@ -9816,7 +10125,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_11_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_11_s_ba_picked}
+	effect = {	set_country_flag = acw_cf_company_11_s_ba_picked
+				add_country_modifier = {
+										name = acw_cf_company_11_ba_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 6
 				trigger = {always = yes}
 				}
@@ -9838,7 +10152,12 @@ custom_button = {
 					has_country_flag = acw_cf_company_11_s_b_picked
 				}
 				
-	effect = {	set_country_flag = acw_cf_company_11_s_bb_picked}
+	effect = {	set_country_flag = acw_cf_company_11_s_bb_picked
+				add_country_modifier = {
+										name = acw_cf_company_11_bb_mod
+										duration = -1
+													}
+					acw_cf_decrease_perkz = yes}
 	frame = { number = 7
 				trigger = {always = yes}
 				}
