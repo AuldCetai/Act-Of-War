@@ -408,11 +408,87 @@ spriteTypes = {
 		noOfFrames = 8
 	}
 	
+	spriteType = {
+		name = "GFX_acw_cf_company_2"
+		texturefile = "gfx/interface/acw_cf_company_2.dds"
+		transparencecheck = yes
+		noOfFrames = 8
+	}
+	
+	spriteType = {
+		name = "GFX_acw_cf_company_3"
+		texturefile = "gfx/interface/acw_cf_company_3.dds"
+		transparencecheck = yes
+		noOfFrames = 8
+	}
+	
+	spriteType = {
+		name = "GFX_acw_cf_company_4"
+		texturefile = "gfx/interface/acw_cf_company_4.dds"
+		transparencecheck = yes
+		noOfFrames = 8
+	}
+	
+	spriteType = {
+		name = "GFX_acw_cf_company_5"
+		texturefile = "gfx/interface/acw_cf_company_5.dds"
+		transparencecheck = yes
+		noOfFrames = 8
+	}
+	
+	spriteType = {
+		name = "GFX_acw_cf_company_6"
+		texturefile = "gfx/interface/acw_cf_company_6.dds"
+		transparencecheck = yes
+		noOfFrames = 8
+	}
+	
+	spriteType = {
+		name = "GFX_acw_cf_company_7"
+		texturefile = "gfx/interface/acw_cf_company_7.dds"
+		transparencecheck = yes
+		noOfFrames = 8
+	}
+	
+	spriteType = {
+		name = "GFX_acw_cf_company_8"
+		texturefile = "gfx/interface/acw_cf_company_8.dds"
+		transparencecheck = yes
+		noOfFrames = 8
+	}
+	
+	spriteType = {
+		name = "GFX_acw_cf_company_9"
+		texturefile = "gfx/interface/acw_cf_company_9.dds"
+		transparencecheck = yes
+		noOfFrames = 8
+	}
+	
+	spriteType = {
+		name = "GFX_acw_cf_company_10"
+		texturefile = "gfx/interface/acw_cf_company_10.dds"
+		transparencecheck = yes
+		noOfFrames = 8
+	}
+	
+	spriteType = {
+		name = "GFX_acw_cf_company_11"
+		texturefile = "gfx/interface/acw_cf_company_11.dds"
+		transparencecheck = yes
+		noOfFrames = 8
+	}
+	
+	SpriteType = {		
+		name = "GFX_acw_arrow_horizontal_skip_slot"
+		texturefile = "gfx/interface/acw_arrow_horizontal_skip_slot.dds"
+		transparencecheck = yes
+	}	
+	
 	SpriteType = {		
 		name = "GFX_acw_cf_perkz_counter"
 		texturefile = "gfx/interface/acw_cf_perkz_counter.dds"
 		transparencecheck = yes
-	}	
+	}		
 	
 	SpriteType = {		
 		name = "GFX_acw_cf_company_base"

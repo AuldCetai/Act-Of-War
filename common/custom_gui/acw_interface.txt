@@ -10180,4 +10180,36 @@ custom_button = {
 				add_army_tradition = -50
 				acw_cf_increase_perkz = yes
 				}
+}				
+				
+custom_icon = {
+	name = acw_cf_arrows
+	potential = { has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open 
+	}
+}
+
+				
+custom_icon = {
+	name = acw_cf_arrows_2
+	potential = { has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open 
+	}
+}
+
+				
+custom_icon = {
+	name = acw_cf_arrows_3
+	potential = { has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open 
+	}
+}
+
+				
+custom_icon = {
+	name = acw_cf_arrows_4
+	potential = { has_country_flag = acw_background_open_already
+				 has_country_flag = acw_cf_bg_open 
+				 NOT = {has_country_flag = acw_cf_page_3}
+	}
 }

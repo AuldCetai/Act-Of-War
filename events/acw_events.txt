@@ -21,7 +21,7 @@ country_event = {
 			NOT = {has_country_flag = acw_hd_1_done}
 	}
 
-	after = {set_country_flag = acw_hd_1_done}
+	immediate = {set_country_flag = acw_hd_1_done}
 	option = {
 		name = "acw_hd_1.a"
 		trigger = {
@@ -143,7 +143,7 @@ country_event = {
 						}		
 	}
 	
-	after = {set_country_flag = acw_hd_3_done}
+	immediate = {set_country_flag = acw_hd_3_done}
 
 	option = {
 		name = "acw_hd_3.a"
@@ -199,7 +199,7 @@ country_event = {
 			NOT = {has_country_flag = acw_hd_4_done}
 	}
 
-	after = {set_country_flag = acw_hd_4_done}
+	immediate = {set_country_flag = acw_hd_4_done}
 	option = {
 		name = "acw_hd_4.a"
 		trigger = {
@@ -258,7 +258,7 @@ country_event = {
 	
 	mean_time_to_happen = {days = 1 }
 	
-	after = {set_country_flag = acw_hd_5_done}
+	immediate = {set_country_flag = acw_hd_5_done}
 	
 	option = {
 		name = "acw_hd_5.a"
@@ -433,7 +433,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {days = 1}
-	after = {set_country_flag = acw_hd_8_done}
+	immediate = {set_country_flag = acw_hd_8_done}
 	
 	option = {
 		name = "acw_hd_8.a"
@@ -552,7 +552,7 @@ country_event = {
 			NOT = {has_country_flag = acw_hd_10_done}
 	}
 	
-	after = {set_country_flag = acw_hd_10_done}
+	immediate = {set_country_flag = acw_hd_10_done}
 
 	option = {
 		name = "acw_hd_10.a"
@@ -611,7 +611,7 @@ country_event = {
 			NOT = {has_country_flag = acw_hd_11_done}
 	}
 	
-	after = {set_country_flag = acw_hd_11_done}
+	immediate = {set_country_flag = acw_hd_11_done}
 	
 	option = {
 		name = "acw_hd_11.a"
@@ -669,7 +669,7 @@ country_event = {
 				culture_group = french
 	}
 
-	after = {set_country_flag = acw_hd_12_done}
+	immediate = {set_country_flag = acw_hd_12_done}
 	option = {
 		name = "acw_hd_12.a"
 		trigger = {
@@ -735,7 +735,7 @@ country_event = {
 						}
 	}
 	
-	after = {set_country_flag = acw_hd_13_done}
+	immediate = {set_country_flag = acw_hd_13_done}
 	
 	option = {
 		name = "acw_hd_13.a"
@@ -800,7 +800,7 @@ country_event = {
 						}
 				NOT = {has_country_flag = acw_hd_14_done}
 	}
-	after = {set_country_flag = acw_hd_14_done}
+	immediate = {set_country_flag = acw_hd_14_done}
 	
 	option = {
 		name = "acw_hd_14.a"
@@ -932,7 +932,7 @@ country_event = {
 			NOT = {has_country_flag = acw_hd_16_done}
 	}
 	
-	after = {set_country_flag = acw_hd_16_done
+	immediate = {set_country_flag = acw_hd_16_done
 			 clr_global_flag = acw_night_in_targoviste_happened}
 	option = {
 		name = "acw_hd_16.a"
@@ -991,7 +991,7 @@ country_event = {
 	trigger = { NOT = {has_country_flag = acw_hd_17_done}
 	}
 	
-	after = {set_country_flag = acw_hd_17_done}
+	immediate = {set_country_flag = acw_hd_17_done}
 	option = {
 		name = "acw_hd_17.a"
 		trigger = {
@@ -1051,7 +1051,7 @@ country_event = {
 				NOT = {has_country_flag = acw_hd_18_done}
 	}
 	
-	after = {set_country_flag = acw_hd_18_done}
+	immediate = {set_country_flag = acw_hd_18_done}
 	
 	option = {
 		name = "acw_hd_18.a"
@@ -1109,7 +1109,7 @@ country_event = {
 			NOT = {has_country_flag = acw_hd_19_done}
 	}
 	
-	after = {set_country_flag = acw_hd_19_done}
+	immediate = {set_country_flag = acw_hd_19_done}
 
 	option = {
 		name = "acw_hd_19.a"
@@ -1166,7 +1166,7 @@ country_event = {
 		NOT = {has_country_flag = acw_hd_20_done}
 	}
 	
-	after = {set_country_flag = acw_hd_20_done}
+	immediate = {set_country_flag = acw_hd_20_done}
 	option = {
 		name = "acw_hd_20.a"
 		trigger = {

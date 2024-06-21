@@ -77,9 +77,10 @@ on_battle_won_country = {
 					root = 	{ tag = TRA }
 					root = 	{ tag = RMN }
 					}
-				from = TUR
+				from = {tag = TUR}
 				}
-			set_global_flag = acw_night_in_targoviste_happened
+
+				set_global_flag = acw_night_in_targoviste_happened
 			}
 		}
 		
