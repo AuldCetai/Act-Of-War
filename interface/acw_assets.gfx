@@ -440,14 +440,14 @@ spriteTypes = {
 		name = "GFX_acw_cf_company_6"
 		texturefile = "gfx/interface/acw_cf_company_6.dds"
 		transparencecheck = yes
-		noOfFrames = 8
+		noOfFrames = 12
 	}
 	
 	spriteType = {
 		name = "GFX_acw_cf_company_7"
 		texturefile = "gfx/interface/acw_cf_company_7.dds"
 		transparencecheck = yes
-		noOfFrames = 8
+		noOfFrames = 9
 	}
 	
 	spriteType = {
@@ -495,5 +495,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/acw_company_base.dds"
 		transparencecheck = yes
 		noOfFrames = 26
+	}	
+	
+	SpriteType = {		
+		name = "GFX_acw_cf_bars"
+		texturefile = "gfx/interface/acw_cf_bars.dds"
+		transparencecheck = yes
+		noOfFrames = 3
 	}	
 }

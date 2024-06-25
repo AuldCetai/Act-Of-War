@@ -40,8 +40,13 @@ on_new_age = {
 }
 
 on_startup = {
-			events = { acw_hd.22}
+			every_country = {
+					set_variable = {
+					which = acw_cf_perkz_points
+					value = 0
+				}
 			}
+}
 
 # country
 # root = winning country, from = location

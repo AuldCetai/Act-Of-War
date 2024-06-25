@@ -2285,25 +2285,25 @@ guiTypes = {
 				quadTextureSprite = "GFX_acw_cf_company_base"
 				position = { x= 580 y = 665 }
 				Orientation = "UPPER_LEFT"
-				scale = 1.1
+				scale = 0.8
 			}	
 			
 			guiButtonType ={
 				name ="acw_cf_slot_2"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_base"
-				position = { x= 580 y = 765 }
+				position = { x= 580 y = 725 }
 				Orientation = "UPPER_LEFT"
-				scale = 1.1
+				scale = 0.8
 			}	
 			
 			guiButtonType ={
 				name ="acw_cf_slot_3"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_base"
-				position = { x= 880 y = 665 }
+				position = { x= 580 y = 785 }
 				Orientation = "UPPER_LEFT"
-				scale = 1.1
+				scale = 0.8
 			}	
 			
 			guiButtonType ={
@@ -2312,7 +2312,7 @@ guiTypes = {
 				quadTextureSprite = "GFX_acw_cf_company_base"
 				position = { x= 880 y = 765 }
 				Orientation = "UPPER_LEFT"
-				scale = 1.1
+				scale = 0.8
 			}	
 			
 			#improve levels buttons
@@ -3452,9 +3452,10 @@ guiTypes = {
 			}	
 			
 			
+			
 			guiButtonType = {
 				name = "acw_cf_buy_perkz"
-				position = { x=1210 y =620}
+				position = { x=1190 y =620}
 				spriteType ="GFX_nation_designer_navigate_left"
 				Orientation = "UPPER_LEFT"
 				scripted = yes
@@ -4197,6 +4198,46 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				scale = 0.7
 			}
+			
+			iconType = {
+				name = "acw_cf_bar_1"
+				position = { x=200 y =620}
+				spriteType ="GFX_acw_cf_bars"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+				scale = 1.5
+				pdx_tooltip = "acw_stratagem_none"
+			}	
+			
+			iconType = {
+				name = "acw_cf_bar_2"
+				position = { x=700 y =720}
+				spriteType ="GFX_acw_cf_bars"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+				scale = 1
+				pdx_tooltip = "acw_stratagem_none"
+			}	
+			
+			iconType = {
+				name = "acw_cf_bar_3"
+				position = { x=700 y =820}
+				spriteType ="GFX_acw_cf_bars"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+				scale = 1
+				pdx_tooltip = "acw_stratagem_none"
+			}	
+			
+			iconType = {
+				name = "acw_cf_bar_4"
+				position = { x=1225 y =620}
+				spriteType ="GFX_acw_cf_bars"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+				scale = 1
+				pdx_tooltip = "acw_stratagem_none"
+			}	
 			
 		windowType = {
 			name = "army_professionalism"
