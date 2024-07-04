@@ -41,10 +41,285 @@ defined_text = {
 	}
 		
 	text = {
-		localisation_key = acw_stratagem_sfp_selected_text
+		localisation_key = acw_stratagem_sfp_selected_desc
 		trigger = {
-			has_country_modifier = acw_stratagem_sfp_selected
+			OR = {
+				has_country_modifier = acw_stratagem_sfp_selected
+				has_country_modifier = acw_stratagem_sfp_t1
+				has_country_modifier = acw_stratagem_sfp_t2
+				has_country_modifier = acw_stratagem_sfp_t3
+				has_country_modifier = acw_stratagem_sfp_t4
+			}
 		}
 	}
 	
+	text = {
+		localisation_key = acw_stratagem_rom_selected_desc
+		trigger = {
+			OR = {
+				has_country_modifier = acw_stratagem_rom_selected
+				has_country_modifier = acw_stratagem_rom_t1
+				has_country_modifier = acw_stratagem_rom_t2
+				has_country_modifier = acw_stratagem_rom_t3
+				has_country_modifier = acw_stratagem_rom_t4
+			}
+		}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_dod_selected_desc
+		trigger = {
+			OR = {
+				has_country_modifier = acw_stratagem_dod_selected
+				has_country_modifier = acw_stratagem_dod_t1
+				has_country_modifier = acw_stratagem_dod_t2
+				has_country_modifier = acw_stratagem_dod_t3
+				has_country_modifier = acw_stratagem_dod_t4
+			}
+		}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_trc_selected_desc
+		trigger = {
+			OR = {
+				has_country_modifier = acw_stratagem_trc_selected
+				has_country_modifier = acw_stratagem_trc_t1
+				has_country_modifier = acw_stratagem_trc_t2
+				has_country_modifier = acw_stratagem_trc_t3
+				has_country_modifier = acw_stratagem_trc_t4
+			}
+		}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_has_selected_desc
+		trigger = {
+			OR = {
+				has_country_modifier = acw_stratagem_has_selected
+				has_country_modifier = acw_stratagem_has_t1
+				has_country_modifier = acw_stratagem_has_t2
+				has_country_modifier = acw_stratagem_has_t3
+				has_country_modifier = acw_stratagem_has_t4
+			}
+		}
+	}
+	
+}
+
+defined_text = {
+    name = acw_get_cf_slot1
+	random = no
+	
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod
+		trigger = {has_country_modifier = acw_cf_company_1_mod
+					has_country_flag = acw_cf_s1_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_1
+		trigger = {has_country_modifier = acw_cf_company_1_mod_1
+					has_country_flag = acw_cf_s1_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod
+		trigger = {has_country_modifier = acw_cf_company_2_mod
+					has_country_flag = acw_cf_s1_2}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_1
+		trigger = {has_country_modifier = acw_cf_company_2_mod_1
+					has_country_flag = acw_cf_s1_2}
+	}
+	
+	text = {
+		localisation_key = acw_cf_slot_none
+		trigger = { acw_cf_slot_1_filled = no}
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_slot2
+	random = no
+	
+	text = {
+		localisation_key = acw_cf_slot_none
+		trigger = { acw_cf_slot_2_filled = no}
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_slot3
+	random = no
+	
+	text = {
+		localisation_key = acw_cf_slot_none
+		trigger = { acw_cf_slot_3_filled = no}
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_slot4
+	random = no
+	
+	text = {
+		localisation_key = acw_cf_slot_none
+		trigger = { acw_cf_slot_4_filled = no}
+	}
+}
+
+
+defined_text = {
+    name = acw_stratagem_selector_button_sfp_levels
+	random = no
+	
+	text = {
+		localisation_key = acw_stratagem_sfp_selected_text
+		trigger = { has_country_flag = acw_stratagem_sfp_selected}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_sfp_t1_text
+		trigger = { has_country_modifier = acw_stratagem_sfp_t1}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_sfp_t2_text
+		trigger = { has_country_modifier = acw_stratagem_sfp_t2}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_sfp_t3_text
+		trigger = { has_country_modifier = acw_stratagem_sfp_t3}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_sfp_t4_text
+		trigger = { has_country_modifier = acw_stratagem_sfp_t4}
+	}
+}
+
+defined_text = {
+    name = acw_stratagem_selector_button_dod_levels
+	random = no
+	
+	text = {
+		localisation_key = acw_stratagem_dod_selected_text
+		trigger = { has_country_flag = acw_stratagem_dod_selected}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_dod_t1_text
+		trigger = { has_country_modifier = acw_stratagem_dod_t1}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_dod_t2_text
+		trigger = { has_country_modifier = acw_stratagem_dod_t2}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_dod_t3_text
+		trigger = { has_country_modifier = acw_stratagem_dod_t3}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_dod_t4_text
+		trigger = { has_country_modifier = acw_stratagem_dod_t4}
+	}
+}
+
+defined_text = {
+    name = acw_stratagem_selector_button_has_levels
+	random = no
+	
+	text = {
+		localisation_key = acw_stratagem_has_selected_text
+		trigger = { has_country_flag = acw_stratagem_has_selected}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_has_t1_text
+		trigger = { has_country_modifier = acw_stratagem_has_t1}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_has_t2_text
+		trigger = { has_country_modifier = acw_stratagem_has_t2}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_has_t3_text
+		trigger = { has_country_modifier = acw_stratagem_has_t3}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_has_t4_text
+		trigger = { has_country_modifier = acw_stratagem_has_t4}
+	}
+}
+
+defined_text = {
+    name = acw_stratagem_selector_button_trc_levels
+	random = no
+	
+	text = {
+		localisation_key = acw_stratagem_trc_selected_text
+		trigger = { has_country_flag = acw_stratagem_trc_selected}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_trc_t1_text
+		trigger = { has_country_modifier = acw_stratagem_trc_t1}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_trc_t2_text
+		trigger = { has_country_modifier = acw_stratagem_trc_t2}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_trc_t3_text
+		trigger = { has_country_modifier = acw_stratagem_trc_t3}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_trc_t4_text
+		trigger = { has_country_modifier = acw_stratagem_trc_t4}
+	}
+}
+
+defined_text = {
+    name = acw_stratagem_selector_button_rom_levels
+	random = no
+	
+	text = {
+		localisation_key = acw_stratagem_rom_selected_text
+		trigger = { has_country_flag = acw_stratagem_rom_selected}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_rom_t1_text
+		trigger = { has_country_modifier = acw_stratagem_rom_t1}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_rom_t2_text
+		trigger = { has_country_modifier = acw_stratagem_rom_t2}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_rom_t3_text
+		trigger = { has_country_modifier = acw_stratagem_rom_t3}
+	}
+	
+	text = {
+		localisation_key = acw_stratagem_rom_t4_text
+		trigger = { has_country_modifier = acw_stratagem_rom_t4}
+	}
 }

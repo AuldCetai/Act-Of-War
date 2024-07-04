@@ -824,7 +824,7 @@ acw_cf_company_3_bb_mod = { reserves_organisation = 0.10 }
 
 acw_cf_company_4_a_mod = { possible_condottieri = 0.5  }
 acw_cf_company_4_b_mod = { merc_maintenance_modifier = -0.1 }
-acw_cf_company_4_aa_mod = { possible_mercenaries = 1.0 }
+acw_cf_company_4_aa_mod = { mercenary_manpower = 0.2 }
 acw_cf_company_4_ab_mod = { vassal_forcelimit_bonus = 0.15 }
 acw_cf_company_4_ba_mod = { global_colonial_growth = 20 }
 acw_cf_company_4_bb_mod = { native_assimilation = 0.25 }

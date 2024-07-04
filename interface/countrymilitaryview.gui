@@ -2752,13 +2752,12 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "acw_army_stratagem_text"
 				position = { x = 700 y =485 }
-				format = centre
-				font = "vic_22s"
-				maxWidth = 420
+				format = left
+				font = "vic_19s"
+				maxWidth = 400
 				maxHeight = 320	
 				Orientation = "UPPER_LEFT"
 				text = ""
-				format = centre
 				scripted = yes
 			}
 			
@@ -2768,7 +2767,7 @@ guiTypes = {
 				spriteType ="GFX_acw_stratagem_non"
 				Orientation = "UPPER_LEFT"
 				scripted = yes
-				scale = 1
+				scale = 1.1
 				pdx_tooltip = "acw_stratagem_none"
 			}	
 			
@@ -3345,6 +3344,54 @@ guiTypes = {
 				pdx_tooltip = "acw_stratagem_none"
 			}
 			
+			instantTextBoxType = {
+				name = "acw_cf_slot1_desk"
+				position = { x = 670 y =665 }
+				format = left
+				font = "vic_22s"
+				maxWidth = 420
+				maxHeight = 320	
+				Orientation = "UPPER_LEFT"
+				text = ""
+				scripted = yes
+			}
+			
+			instantTextBoxType = {
+				name = "acw_cf_slot2_desk"
+				position = { x = 670 y =725 }
+				format = left
+				font = "vic_22s"
+				maxWidth = 420
+				maxHeight = 320	
+				Orientation = "UPPER_LEFT"
+				text = ""
+				scripted = yes
+			}
+			
+			instantTextBoxType = {
+				name = "acw_cf_slot3_desk"
+				position = { x = 670 y =785 }
+				format = left
+				font = "vic_22s"
+				maxWidth = 420
+				maxHeight = 320	
+				Orientation = "UPPER_LEFT"
+				text = ""
+				scripted = yes
+			}
+			
+			instantTextBoxType = {
+				name = "acw_cf_slot4_desk"
+				position = { x = 670 y =845 }
+				format = left
+				font = "vic_22s"
+				maxWidth = 420
+				maxHeight = 320	
+				Orientation = "UPPER_LEFT"
+				text = ""
+				scripted = yes
+			}
+			
 			iconType ={
 				name ="acw_cf_arrows"
 				scripted = yes
@@ -3497,6 +3544,7 @@ guiTypes = {
 				position = { x= 640 y = 210 }
 				Orientation = "UPPER_LEFT"
 				scale = 0.7
+				pdx_tooltip =  acw_cf_company_1_mod_text
 			}
 			
 			guiButtonType ={

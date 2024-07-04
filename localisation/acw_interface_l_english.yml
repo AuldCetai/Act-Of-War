@@ -1,44 +1,243 @@
 ﻿l_english:
  acw_army_window_title:0"Military Conduct"
  acw_stratagem_none:0"No stratagem selected yet."
- acw_stratagem_sfp_selected_text:0"§OSuperior firepower I§!\n\nThis stratagem grants us the following effects:\n$acw_stratagem_sfp_selected$"
- acw_stratagem_sfp_t1:0"No stratagem selected yet."
- acw_stratagem_sfp_t2:0"No stratagem selected yet."
- acw_stratagem_sfp_t3:0"No stratagem selected yet."
- acw_stratagem_sfp_t4:0"No stratagem selected yet."
+ 
+ acw_stratagem_selector_button_sfp_levels_chose:0"[acw_stratagem_selector_button_sfp_levels]"
+ acw_stratagem_selector_button_trc_levels_chose:0"[acw_stratagem_selector_button_trc_levels]"
+ acw_stratagem_selector_button_dod_levels_chose:0"[acw_stratagem_selector_button_dod_levels]"
+ acw_stratagem_selector_button_has_levels_chose:0"[acw_stratagem_selector_button_has_levels]"
+ acw_stratagem_selector_button_rom_levels_chose:0"[acw_stratagem_selector_button_rom_levels]"
+ 
+ acw_stratagem_sfp_selected_text:0"§OSuperior firepower I§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_sfp_t1_text:0"§OSuperior firepower II§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_sfp_t2_text:0"§OSuperior firepower III§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_sfp_t3_text:0"§OSuperior firepower IV§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_sfp_t4_text:0"§OSuperior firepower V§!\nThe level of our stratagem grants us the following effects:\n"
+ 
+ acw_stratagem_rom_selected_text:0"§OReliance on Mercenaries I§!\nThe level of our stratagem grants us the following effects:\nLeader(s) without Upkeep §G+1§!"
+ acw_stratagem_rom_t1_text:0"§OReliance on Mercenaries II§!\nThe level of our stratagem grants us the following effects:\nLeader(s) without Upkeep §G+1§!\n Mercenary maintenance §G-10%§!"
+ acw_stratagem_rom_t2_text:0"§OReliance on Mercenaries III§!\nThe level of our stratagem grants us the following effects:\nLeader(s) without Upkeep §G+1§!\n Mercenary maintenance §G-10%§!\nMercenary Leader Tradition §G+50%§!"
+ acw_stratagem_rom_t3_text:0"§OReliance on Mercenaries IV§!\nThe level of our stratagem grants us the following effects:\nLeader(s) without Upkeep §G+1§!\n Mercenary maintenance §G-10%§!\nMercenary Leader Tradition §G+50%§!\n Enable Force March"
+ acw_stratagem_rom_t4_text:0"§OReliance on Mercenaries V§!\nThe level of our stratagem grants us the following effects:\nLeader(s) without Upkeep §G+1§!\n Mercenary maintenance §G-10%§!\nMercenary Leader Tradition §G+50%§!\n Enable Force March\nCan recruit Mercenaries from anywhere"
+ 
+ acw_stratagem_dod_selected_text:0"§ODefense in Depth I§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_dod_t1_text:0"§ODefense in Depth II§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_dod_t2_text:0"§ODefense in Depth III§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_dod_t3_text:0"§ODefense in Depth IV§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_dod_t4_text:0"§ODefense in Depth V§!\nThe level of our stratagem grants us the following effects:\n"
+ 
+ acw_stratagem_has_selected_text:0"§OHeroic Assault I§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_has_t1_text:0"§OHeroic Assault II§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_has_t2_text:0"§OHeroic Assault III§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_has_t3_text:0"§OHeroic Assault IV§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_has_t4_text:0"§OHeroic Assault V§!\nThe level of our stratagem grants us the following effects:\n"
+ 
+ acw_stratagem_trc_selected_text:0"§OTraditional Combat I§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_trc_t1_text:0"§OTraditional Combat II§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_trc_t2_text:0"§OTraditional Combat III§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_trc_t3_text:0"§OTraditional Combat IV§!\nThe level of our stratagem grants us the following effects:\n"
+ acw_stratagem_trc_t4_text:0"§OTraditional Combat V§!\nThe level of our stratagem grants us the following effects:\n"
+ 
+ acw_stratagem_has_selected:0"Heroic Assault I"
+ acw_stratagem_has_t1:0"Heroic Assault II"
+ acw_stratagem_has_t2:0"Heroic Assault III"
+ acw_stratagem_has_t3:0"Heroic Assault IV"
+ acw_stratagem_has_t4:0"Heroic Assault V"
+ 
+ acw_stratagem_rom_selected:0"Reliance on Mercenaries I"
+ acw_stratagem_rom_t1:0"Reliance on Mercenaries II"
+ acw_stratagem_rom_t2:0"Reliance on Mercenaries III"
+ acw_stratagem_rom_t3:0"Reliance on Mercenaries IV"
+ acw_stratagem_rom_t4:0"Reliance on Mercenaries V"
+ 
+ acw_stratagem_dod_selected:0"Defense in Depth I"
+ acw_stratagem_dod_t1:0"Defense in Depth II"
+ acw_stratagem_dod_t2:0"Defense in Depth III"
+ acw_stratagem_dod_t3:0"Defense in Depth IV"
+ acw_stratagem_dod_t4:0"Defense in Depth V"
+ 
+ acw_stratagem_trc_selected:0"Traditional Combat I"
+ acw_stratagem_trc_t1:0"Traditional Combat II"
+ acw_stratagem_trc_t2:0"Traditional Combat III"
+ acw_stratagem_trc_t3:0"Traditional Combat IV"
+ acw_stratagem_trc_t4:0"Traditional Combat V"
+ 
+ acw_stratagem_sfp_selected:0"Superior Firepower I"
+ acw_stratagem_sfp_t1:0"Superior Firepower II"
+ acw_stratagem_sfp_t2:0"Superior Firepower III"
+ acw_stratagem_sfp_t3:0"Superior Firepower IV"
+ acw_stratagem_sfp_t4:0"Superior Firepower V"
+ 
+ acw_stratagem_sfp_selected_desc:0"§OSuperior firepower§!\nSuperior firepower in medieval contexts referred to the advantage gained through the use of advanced weaponry such as crossbows, longbows, and early gunpowder weapons, allowing armies to dominate foes from a distance before closing in."
+ acw_stratagem_has_selected_desc:0"§OHeroic Assault§!\nThis approach highlights the valor and prowess of individual warriors or small groups leading aggressive charges, often aimed at breaking enemy lines or capturing key positions, exemplified by the feats of knights and champions."
+ acw_stratagem_rom_selected_desc:0"§OReliance on Mercenaries§!\nIn medieval times, many armies supplemented their forces with mercenaries, professional soldiers hired for pay, offering military expertise and bolstering numbers without the need for long-term recruitment or training."
+ acw_stratagem_trc_selected_desc:0"§OTraditional Combat§!\nTheMedieval traditional combat emphasized direct, close-quarters battles, often featuring knights and infantry engaging in melee with swords, shields, and other hand-held weapons, alongside formations like shield walls."
+ acw_stratagem_dod_selected_desc:0"§ODefense in Depth§!\nThis strategic concept involved layered defensive measures, utilizing multiple lines of fortifications and obstacles to delay and weaken an advancing enemy, allowing defenders to respond flexibly and effectively to breaches."
+ 
  acw_army_window_armaments_text:0"Armaments"
  acw_army_window_hd_text:0"Historic deeds"
  acw_army_upgrades_title:0"Army upgrades"
+ 
  acw_stratagems_title:0"Stratagems"
  acw_camp_followers_title:0"Camp followers"
  acw_army_window_infantry_levels_indicator_text:0"Infantry upgrades"
  acw_army_window_cavalry_levels_indicator_text:0"Cavalry upgrades"
  acw_army_window_artillery_levels_indicator_text:0"Artillery upgrades"
  acw_army_window_camp_followers_text:0"Chevauchee"
- acw_army_stratagem_text:"$acw_stratagem_text_loc$"
+ acw_army_stratagem_text:"[acw_stratagem_text_loc]"
  acw_hd_arma_back_button_text:0"Back"
  acw_hd_arma_title_arma_text:0"Armaments"
- acw_infantry_levels_bar_t1a:0"Infantry Skill Tier I A"
- acw_infantry_levels_bar_t1b:0"Infantry Skill Tier I B"  
+ 
+ acw_infantry_levels_bar_t1_tt:0"Haven't had §OInfantry Improvement I§! for 25 years."
+ acw_infantry_levels_bar_t2_tt:0"Haven't had §OInfantry Improvement II§! for 25 years."
+ acw_infantry_levels_bar_t3_tt:0"Haven't had §OInfantry Improvement III§! for 25 years."
+ acw_cavalry_levels_bar_t1_tt:0"Haven't had §OCavalry Improvement I§! for 25 years."
+ acw_cavalry_levels_bar_t2_tt:0"Haven't had §OCavalry Improvement II§! for 25 years."
+ acw_cavalry_levels_bar_t3_tt:0"Haven't had §OCavalry Improvement III§! for 25 years."
+ acw_artillery_levels_bar_t1_tt:0"Haven't had §OArtillery Improvement I§! for 25 years."
+ acw_artillery_levels_bar_t2_tt:0"Haven't had §OArtillery Improvement II§! for 25 years."
+ acw_artillery_levels_bar_t3_tt:0"Haven't had §OArtillery Improvement III§! for 25 years."
+ acw_infantry_levels_bar_t1_atleast3_tt:0"Have upgraded infantry at least 3 times"
+ acw_infantry_levels_bar_t2_atleast6_tt:0"Have upgraded infantry at least 6 times"
+ acw_infantry_levels_bar_t3_atleast9_tt:0"Have upgraded infantry at least 9 times"
+ acw_cavalry_levels_bar_t1_atleast3_tt:0"Have upgraded cavalry at least 3 times"
+ acw_cavalry_levels_bar_t2_atleast6_tt:0"Have upgraded cavalry at least 6 times"
+ acw_cavalry_levels_bar_t3_atleast9_tt:0"Have upgraded cavalry at least 9 times"
+ acw_artillery_levels_bar_t1_atleast3_tt:0"Have upgraded artillery at least 3 times"
+ acw_artillery_levels_bar_t2_atleast6_tt:0"Have upgraded artillery at least 6 times"
+ acw_artillery_levels_bar_t3_atleast9_tt:0"Have upgraded artillery at least 9 times"
+ 
+ 
+ acw_infantry_temp_skill_t1a:0"Infantry Improvement I"
+ acw_infantry_temp_skill_t1b:0"Infantry Improvement I" 
+ acw_infantry_temp_skill_t2a:0"Infantry Improvement II"
+ acw_infantry_temp_skill_t2b:0"Infantry Improvement II" 
+ acw_infantry_temp_skill_t3a:0"Infantry Improvement III"
+ acw_infantry_temp_skill_t3b:0"Infantry Improvement III" 
+ acw_cavalry_temp_skill_t1a:0"Cavalry Improvement I"
+ acw_cavalry_temp_skill_t1b:0"Cavalry Improvement I" 
+ acw_cavalry_temp_skill_t2a:0"Cavalry Improvement II"
+ acw_cavalry_temp_skill_t2b:0"Cavalry Improvement II" 
+ acw_cavalry_temp_skill_t3a:0"Cavalry Improvement III"
+ acw_cavalry_temp_skill_t3b:0"Cavalry Improvement III" 
+ acw_artillery_temp_skill_t1a:0"Artillery Improvement I"
+ acw_artillery_temp_skill_t1b:0"Artillery Improvement I" 
+ acw_artillery_temp_skill_t2a:0"Artillery Improvement II"
+ acw_artillery_temp_skill_t2b:0"Artillery Improvement II" 
+ acw_artillery_temp_skill_t3a:0"Artillery Improvement III"
+ acw_artillery_temp_skill_t3b:0"Artillery Improvement III" 
+ 
  acw_cf_title_arma_text:0"Chevauchee"
  acw_cf_back_button_text:0"Back"
+ acw_cf_slot1_desk:0"[acw_get_cf_slot1]"
+ acw_cf_slot2_desk:0"[acw_get_cf_slot2]"
+ acw_cf_slot3_desk:0"[acw_get_cf_slot3]"
+ acw_cf_slot4_desk:0"[acw_get_cf_slot4]"
+ acw_cf_slot_none:0"No company added yet."
+ 
+ #Armaments
+ acw_arma_crouching_tiger_cannon:0 "Crouching Tiger Cannon"
+ acw_arma_iklwa:0 "Iklwa"
+ acw_arma_shamshir:0 "Shamshir"
+ acw_arma_jezail:0 "Jezail"
+ acw_arma_mughal_talwar:0 "Mughal Talwar"
+ acw_arma_petronel:0 "Petronel"
+ acw_arma_bayonet:0 "Bayonet"
+ acw_arma_katar:0 "Katar"
+ acw_arma_katana:0 "Katana"
+ acw_arma_african_throwing_knives:0 "African Throwing Knives"
+ acw_arma_falcata:0 "Spanish steel"
+ acw_arma_wagenburg:0 "Wagenburg"
+ acw_arma_fo_lang_ji:0 "Fo Lang Ji"
+ acw_arma_iron_fan:0 "Iron Fan"
+ acw_arma_macuahuitl:0 "Macuahuitl"
+ acw_arma_yatagan:0 "Yatagan"
+ acw_arma_mandau:0 "Mandau"
+ acw_arma_khopesh:0 "Khopesh"
+ acw_arma_naginata:0 "Naginata"
+ acw_arma_kpinga:0 "Kpinga"
+ acw_arma_maasai_shield:0 "Maasai Shield"
+ acw_arma_bakuba_spears:0 "Bakuba Spears"
+ acw_arma_arquebus:0 "Arquebus"
+ acw_arma_arquebus_a_croc:0 "Arquebus a croc"
+ acw_arma_zweihander:0 "Zweihander"
+ acw_arma_longsword:0 "Longsword"
+ acw_arma_morion_helmet:0 "Morion Helmet"
+ acw_arma_dha_sword:0 "Dha Sword"
+ acw_arma_khanda_sword:0 "Khanda Sword"
+ acw_arma_barong_sword:0 "Barong Sword"
+ acw_arma_qama:0"Qama"
+ acw_arma_french_charleville_musket:0"French Charleville Musket"
+ acw_arma_grapeshot:0"Grapeshot"
+ acw_arma_howitzer:0"Howitzer"
+ acw_arma_brown_bess_musket:0"Brown Bess Musket"
+ acw_arma_bowie_knife:0"Bowie Knife"
+ acw_arma_kukri:0"Kukri"
+ acw_arma_chu_ko_nu:0"Chu Ko Nu"
+ acw_arma_nock_gun:0"Nock Gun"
+ acw_arma_dragoon_musket:0"Dragoon Musket"
+ 
+ acw_arma_crouching_tiger_cannon_desc:0 "The Crouching Tiger Cannon was a Chinese field artillery piece used during the Ming Dynasty, characterized by its compact and portable design. It was primarily deployed in sieges and battlefield confrontations by Chinese infantry. "\n
+ acw_arma_iklwa_desc:0 "The Iklwa is a short stabbing spear used by the Zulu warriors of South Africa, notably under the leadership of Shaka Zulu in the early 19th century. This weapon was designed for close combat and played a crucial role in Zulu military tactics. "\n
+ acw_arma_shamshir_desc:0 "The Shamshir is a Persian saber with a curved blade, renowned for its sharpness and effectiveness in slashing attacks. It was widely used by Persian cavalry and other Middle Eastern warriors from the medieval period onwards. "\n
+ acw_arma_jezail_desc:0 "The Jezail is a long, musket-style firearm traditionally used by Afghan tribesmen. It featured a distinctive curved stock and was effective in long-range combat, often employed during the 19th century Anglo-Afghan Wars. "\n
+ acw_arma_mughal_talwar_desc:0 "The Mughal Talwar is a curved, single-edged sword used by Mughal warriors in India. Known for its strong, broad blade, it was a favored weapon in both cavalry and infantry engagements during the Mughal Empire. "\n
+ acw_arma_petronel_desc:0 "The Petronel is an early type of handheld firearm, originating in Europe in the late 15th century. It was used by cavalry and infantry, bridging the gap between the harquebus and the pistol in the evolution of firearms. "\n
+ acw_arma_bayonet_desc:0 "he Bayonet is a blade that can be attached to the muzzle of a rifle, turning the firearm into a spear-like weapon for close combat. It became a standard issue for European infantry from the 17th century onwards. "\n
+ acw_arma_katar_desc:0 "The Katar is a distinctive push dagger from India, featuring a H-shaped handle that allows the user to strike with a punching motion. It was commonly used by warriors in the Indian subcontinent, including the Rajputs. "\n
+ acw_arma_katana_desc:0 "The Katana is a traditional Japanese sword known for its curved, slender, single-edged blade, and circular or squared guard. It was the weapon of choice for the samurai of feudal Japan, revered for its craftsmanship and cutting ability. "\n
+ acw_arma_african_throwing_knives_desc:0 "African Throwing Knives, such as the Mambele or Hunga Munga, were used by various tribes across Central and West Africa. These multi-bladed weapons were employed both in combat and hunting, notable for their unique designs and effectiveness in throwing. "\n
+ acw_arma_falcata_desc:0 "The Falcata is a single-edged sword from the Iberian Peninsula, particularly used by ancient Iberian warriors. Known for its forward-curving blade, it was highly effective in cutting and slashing, making it a formidable weapon in close combat. "\n
+ acw_arma_wagenburg_desc:0 "The Wagenburg, or "wagon fort," was a mobile defensive structure used in Central Europe, notably by the Hussites during the 15th century. It involved arranging wagons in a circular or rectangular formation to create a fortified camp or battlefield position. "\n
+ acw_arma_fo_lang_ji_desc:0 "The Fo Lang Ji is a Chinese cannon, known for its introduction of gunpowder artillery to East Asia during the Ming Dynasty. It was used in both sieges and naval battles, marking a significant advancement in Chinese military technology. "\n
+ acw_arma_iron_fan_desc:0 "The Iron Fan, or Tessen, is a folding fan used by samurai and ninja in feudal Japan. Made of metal, it could be used for self-defense, signaling, and as a discreet weapon. "\n
+ acw_arma_macuahuitl_desc:0 "The Macuahuitl is a wooden club with embedded obsidian blades, used by the Aztec warriors in Mesoamerica. This weapon could deliver devastating cuts and was an essential part of the Aztec arsenal. "\n
+ acw_arma_yatagan_desc:0 "The Yatagan is a type of Ottoman Turkish knife or short sabre, characterized by its double-curved blade and pronounced belly. It was widely used by infantry soldiers in the Ottoman Empire from the 16th to the 19th century. "\n
+ acw_arma_mandau_desc:0 "The Mandau is a traditional sword of the Dayak people of Borneo. With a single-edged, slightly curved blade, it is often elaborately decorated and used both as a weapon and a tool. "\n
+ acw_arma_khopesh_desc:0 "The Khopesh is an ancient Egyptian sickle-sword with a curved blade, resembling a cross between an axe and a sword. It was used primarily in the Bronze Age and became a symbol of authority and strength in ancient Egypt. "\n
+ acw_arma_naginata_desc:0 "The Naginata is a traditional Japanese pole weapon with a curved blade at the end, used by samurai and warrior monks. It was effective in both slashing and thrusting attacks, providing reach and versatility in combat. "\n
+ acw_arma_kpinga_desc:0 "The Kpinga is a type of throwing knife used by the Azande people of Central Africa. It features multiple blades and was designed to rotate in flight, increasing its chances of striking the target effectively. "\n
+ acw_arma_maasai_shield_desc:0 "The Maasai Shield is a large, oval shield made from cowhide, used by the Maasai warriors of Kenya and Tanzania. It is often brightly decorated with clan colors and symbols, providing protection in both combat and ceremonial contexts. "\n
+ acw_arma_bakuba_spears_desc:0 "Bakuba Spears are traditional weapons used by the Kuba people of Central Africa. These spears, featuring elaborately carved wooden shafts and iron tips, were used both in warfare and as symbols of status."\n
+ acw_arma_arquebus_desc:0 "The Arquebus is an early type of portable gun, introduced in Europe in the 15th century. It was one of the first firearms to use a matchlock mechanism, significantly impacting infantry tactics and warfare. "\n
+ acw_arma_arquebus_a_croc_desc:0 "The Arquebus a croc is a heavy variant of the arquebus, equipped with a hook (croc) to absorb recoil when fired. This weapon was used in the 16th century, primarily by European infantry, for its increased power and range. "\n
+ acw_arma_zweihander_desc:0 "The Zweihander is a massive, double-edged sword used by German Landsknecht mercenaries in the 16th century. It required two hands to wield and was effective in breaking through pike formations and heavy armor."\n
+ acw_arma_longsword_desc:0 "The Longsword is a versatile, double-edged sword used across Europe from the late medieval to early Renaissance periods. It featured a cruciform hilt and was effective in both cutting and thrusting, favored by knights and soldiers."\n
+ acw_arma_morion_helmet_desc:0 "The Morion Helmet is a type of open helmet used by infantry in the 16th and early 17th centuries, particularly by Spanish conquistadors. It is characterized by its crested brim and distinctive shape, providing head protection without obstructing vision."\n
+ acw_arma_dha_sword_desc:0 "The Dha Sword is a traditional weapon from Southeast Asia, particularly used in Myanmar, Thailand, and Laos. It features a single-edged, slightly curved blade and a long handle, used by various ethnic groups for both combat and ceremonial purposes."\n
+ acw_arma_khanda_sword_desc:0 "The Khanda Sword is a double-edged, straight sword from India, associated with Sikh and Rajput warriors. It has a broad blade and a distinctive guard, symbolizing bravery and martial prowess. "\n
+ acw_arma_barong_sword_desc:0 "The Barong Sword is a leaf-shaped blade used by the Moro people of the Philippines. Known for its heavy blade and powerful chopping ability, it was a key weapon in both combat and cultural rituals. "\n
+ acw_arma_qama_desc:0 "The Qama is a traditional short sword or long dagger from the Caucasus region, particularly used by the Circassians and Georgians. It features a broad, double-edged blade and is designed for close-quarters combat."\n
+ acw_arma_french_charleville_musket_desc:0 "The French Charleville Musket is a flintlock musket used by French infantry from the 18th century, notably during the Napoleonic Wars. Known for its reliability and accuracy, it was a standard-issue firearm in the French military. "\n
+ acw_arma_grapeshot_desc:0 "Grapeshot is a type of artillery ammunition consisting of a canvas bag filled with small iron balls, used primarily in the 18th and 19th centuries. When fired, it spread out to cover a wide area, devastating enemy troops and cavalry at close range. "\n
+ acw_arma_howitzer_desc:0 "The Howitzer is a type of artillery piece characterized by its short barrel and ability to fire shells at high trajectories. Developed in the 17th century, it was used by various armies to lob shells over fortifications and onto enemy positions. "\n
+ acw_arma_brown_bess_musket_desc:0 "The Brown Bess Musket was the standard-issue flintlock musket for British infantry from the early 18th to the early 19th century. Renowned for its durability and effectiveness, it played a crucial role in British colonial wars and the Napoleonic Wars."\n
+ acw_arma_bowie_knife_desc:0 "The Bowie Knife is a large, fixed-blade knife named after American frontiersman Jim Bowie. It features a clip point and a crossguard, and was used for hunting, combat, and general utility in the 19th century American frontier. "\n
+ acw_arma_kukri_desc:0 "The Kukri is a distinctive curved knife used by the Gurkhas of Nepal. Known for its inwardly curved blade, it serves as both a tool and a weapon, symbolizing the bravery and skill of the Gurkha warriors. "\n
+ acw_arma_chu_ko_nu_desc:0 "The Chu Ko Nu, or repeating crossbow, is an ancient Chinese weapon capable of firing multiple bolts in rapid succession. It was used from the Warring States period through the Ming Dynasty, providing a significant tactical advantage in warfare. "\n
+ acw_arma_nock_gun_desc:0 "The Nock Gun is a multi-barreled flintlock firearm developed for the British Royal Navy in the late 18th century. Featuring seven barrels fired simultaneously, it was designed to be used in naval boarding actions to deliver a devastating volley at close range."\n
+ acw_arma_dragoon_musket_desc:0 "he Dragoon Musket is a shorter, lighter musket used by mounted infantry, known as dragoons, in the 17th and 18th centuries. Combining the firepower of a musket with the mobility of cavalry, it was a versatile weapon in early modern warfare. "\n
+ acw_arma_slot_1_xp:0"Unlocked Armament"
+ acw_arma_slot_2_xp:0"Unlocked Armament"
+ acw_arma_slot_3_xp:0"Unlocked Armament"
+ acw_arma_slot_4_xp:0"Unlocked Armament"
  
  #heroic deeds events
  acw_hd_1.t:0"Feats of Horsemanship"
- acw_hd_1.d:0"'Amongst their feats of riding, there is one that has astonished me more than anything of the kind I have ever seen, or expect to see, in my life - a stratagem of war, learned and practiced by every young man in the tribe....'\n\n§BComanche Feats of Horsemanship§! is a 1834-35 oil on canvas painting by artist §GGeorge Catlin§!"
+ acw_hd_1.d:0"'Amongst their feats of riding, there is one that has astonished me more than anything of the kind I have ever seen, or expect to see, in my life - a stratagem of war, learned and practiced by every young man in the tribe....'\n\n§BComanche Feats of Horsemanship§! is a 1864-65 oil on canvas painting by artist §GGeorge Catlin§!"
  acw_hd_1.tt:0"Country gains §YFeats of Horsemanship§! until the end of the game, granting the following bonus: \n§G+10%§! Cavalry combat ability"
  acw_hd_1.a:0"Comission a masterwork!"
  acw_hd_1.b:0"Marvelous!"
  acw_hd_feats_of_horsemanship:0"Feats of Horsemanship"
  acw_hd_2.t:0"The Winged Hussars Arrive"
- acw_hd_2.d:0"'A cry for help in time of need, await relief from holy league\n60 days of siege, outnumbered and weak\nSent a message to the sky, wounded soldiers left to die\nWill they hold the wall or will the city fall'\n §RSabaton - Winged Hussars§!\n\n§BJan Sobieski at Vienna§! painting by §GJan Matejko§!, 1883."
+ acw_hd_2.d:0"'A cry for help in time of need, await relief from holy league\n60 days of siege, outnumbered and weak\nSent a message to the sky, wounded soldiers left to die\nWill they hold the wall or will the city fall'\n §RSabaton - Winged Hussars§!\n\n§BJan Sobieski at Vienna§! painting by §GJan Matejko§!, 1886."
  acw_hd_2.a:0"Comission a masterwork!"
  acw_hd_2.b:0"Marvelous!"
  acw_hd_winged_hussars_arrive:0"The Winged Hussars Arrive"
- acw_hd_3.t:0"The Surrender of Breda"
- acw_hd_3.d:0"'According to the statement made by eye-witnesses, both generals had dismounted and Spinola awaited the arrival of Justin surrounded by a 'crown' of princes and officers of high birth. The governor then presented himself with his family, kinsfolk and distinguished students of the military academy, who had been shut up in the place during the siege. Spinola greeted and embraced his vanquished opponent with a kindly expression and still more kindly words, in which praised the courage and endurance of the protracted defense.'\n\n§BLa rendición de Breda§! is a painting by the @SPA Spanish Golden Age painter §GDiego Velázquez§!, completed in 1635."
- acw_hd_3.a:0"Comission a masterwork!"
- acw_hd_3.b:0"Marvelous!"
+ acw_hd_6.t:0"The Surrender of Breda"
+ acw_hd_6.d:0"'According to the statement made by eye-witnesses, both generals had dismounted and Spinola awaited the arrival of Justin surrounded by a 'crown' of princes and officers of high birth. The governor then presented himself with his family, kinsfolk and distinguished students of the military academy, who had been shut up in the place during the siege. Spinola greeted and embraced his vanquished opponent with a kindly expression and still more kindly words, in which praised the courage and endurance of the protracted defense.'\n\n§BLa rendición de Breda§! is a painting by the @SPA Spanish Golden Age painter §GDiego Velázquez§!, completed in 1665."
+ acw_hd_6.a:0"Comission a masterwork!"
+ acw_hd_6.b:0"Marvelous!"
  
  acw_hd_surrender_of_breda:0"The Surrender of Breda"
  acw_hd_consequences_of_war:0"Consequences of War"
@@ -68,7 +267,7 @@
  acw_hd_10.t:0"Tahmuras Defeating the Divs"
  acw_hd_11.t:0"Conquista de México por Cortés"
  acw_hd_12.t:0"Die Schlacht bei den Pyramiden"
- acw_hd_13.t:0"Battle of Karnal"
+ acw_hd_16.t:0"Battle of Karnal"
  acw_hd_14.t:0"Hadik in Berlin"
  acw_hd_15.t:0"The Siege of Constantinople"
  acw_hd_16.t:0"The Night Attack of Targoviste"
@@ -77,8 +276,8 @@
  acw_hd_19.t:0"The Battle of Badr"
  acw_hd_20.t:0"The Battle of Mactan"
  
- acw_hd_4.d:0"The chaos was everywhere; Mars, the god of war, rampaged through the field with fury in his eyes. I could see the innocent fleeing, the helpless trampled underfoot, and the very essence of civilization being torn asunder.\n\nConsequences of Waris an artwork of $G@FLA Peter Paul Rubens$! painted in 1639"
- acw_hd_5.d:0"In the heat of battle, I witnessed the gallant Major Peirson fall, his lifeblood staining the cobblestones. Amid the clash and roar, his courage inspired us to press on, even as grief welled in our hearts.\n\nThe Death of Major Peirsonis an artwork of $G@USA John Singleton Copley$! painted in 1783"
+ acw_hd_4.d:0"The chaos was everywhere; Mars, the god of war, rampaged through the field with fury in his eyes. I could see the innocent fleeing, the helpless trampled underfoot, and the very essence of civilization being torn asunder.\n\nConsequences of Waris an artwork of $G@FLA Peter Paul Rubens$! painted in 1669"
+ acw_hd_5.d:0"In the heat of battle, I witnessed the gallant Major Peirson fall, his lifeblood staining the cobblestones. Amid the clash and roar, his courage inspired us to press on, even as grief welled in our hearts.\n\nThe Death of Major Peirsonis an artwork of $G@USA John Singleton Copley$! painted in 1786"
  acw_hd_6.d:0"The uprising erupted with a fury unmatched. As a member of the French forces, I saw our lines break amidst the sheer determination of Cairo's people. The streets were filled with shouts, smoke, and the relentless push of resistance.\n\nRevolt of Cairois an artwork of $G@FRA Anne-Louis Girodet de Roussy-Trioson$! painted in 1810"
  acw_hd_7.d:0"That night, the air was thick with terror. I stood among the firing squad, heart pounding, as the defiant faces of the Mexican rebels were illuminated by the harsh lantern light. Their cries for mercy still echo in my ears..." \n\nThe Third of Mayis an artwork of $G@SPA Francisco Goya$! painted in 1814"
  acw_hd_8.d:0"The icy wind cut through us as we rowed across the Delaware. General Washington stood resolute, his presence a beacon of hope. We were cold and weary, but determined to strike a blow for freedom.\n\nCrossing the Delawareis an artwork of $G@WUR@USA Emanuel Gottlieb Leutze$! painted in 1851"
@@ -86,8 +285,8 @@
  acw_hd_10.d:0"I fought beside the great King Tahmuras, feeling the heat of the battle against the demonic Divs. His strength and divine favor turned the tide, and we emerged victorious amidst a swirl of otherworldly chaos.\n\nTahmuras Defeating the Divsis an artwork of $G@PER Sultan Muhammad$! painted in 1525"
  acw_hd_11.d:0"I stood with Cortés, witnessing the clash of two worlds. The grandeur of the Aztec empire met the steel of our swords, and history unfolded in blood and fire before our eyes." \n\nConquista de México por Cortésis an artwork of $Gan Unknown author$! painted in late 17th century"
  acw_hd_12.d:0"The pyramids loomed in the distance as we engaged the Mameluke forces. Napoleon's strategies unfolded like clockwork, and the desert became a stage for a battle that would echo through the ages.\n\nDie Schlacht bei den Pyramidenis an artwork of $G@FRA Francois-Louis-Joseph Watteau$! painted in 1798"
- acw_hd_13.d:0"As part of the Mughal forces, I witnessed the devastation as the Persian army advanced. The clash was brutal, and the fate of our empire hung in the balance, decided by the roar of cannons and the clash of steel." \n\nBattle of Karnalis an artwork of $GUnknown author$! painted in early 19th century"
- acw_hd_14.d:0"Our raid on Berlin was swift and daring. I marched with General Hadik, feeling the thrill of our surprise attack as we outmaneuvered the Prussian defenders and left our mark on the enemy's heartland.\n\nHadik in Berlinis an artwork of $G@HUN Gyula Benczúr$! painted in 1873"
+ acw_hd_16.d:0"As part of the Mughal forces, I witnessed the devastation as the Persian army advanced. The clash was brutal, and the fate of our empire hung in the balance, decided by the roar of cannons and the clash of steel." \n\nBattle of Karnalis an artwork of $GUnknown author$! painted in early 19th century"
+ acw_hd_14.d:0"Our raid on Berlin was swift and daring. I marched with General Hadik, feeling the thrill of our surprise attack as we outmaneuvered the Prussian defenders and left our mark on the enemy's heartland.\n\nHadik in Berlinis an artwork of $G@HUN Gyula Benczúr$! painted in 1876"
  acw_hd_15.d:0"I stood on the battlements, facing the relentless Ottoman onslaught. The air was thick with the smell of gunpowder and the cries of the wounded. We fought desperately to save our city, knowing the end of an era was upon us." \n\nThe Siege of Constantinopleis an artwork of $G@BRB Philippe de Champaigne$! painted in 1664"
  acw_hd_16.d:0"Under the cover of darkness, we struck the Ottoman camp. The element of surprise was our greatest ally as Vlad the Impaler led us with ferocity unmatched. The night was alive with the sounds of battle and victory.\n\nThe Night Attack of Targovisteis an artwork of $G@WAL Theodor Aman$! painted in 1866"
  acw_hd_17.d:0"Defending Kartarpur was a matter of honor. We stood firm against the invaders, our resolve as unyielding as the fortress walls. Each clash of swords echoed our determination to protect our land.\n\nThe Battle of Kartarpuris an artwork of $Gan Unknown Sikh artist$! painted in 18th century"
@@ -107,7 +306,7 @@
  acw_hd_10.a:0"Comission a masterwork!"
  acw_hd_11.a:0"Comission a masterwork!"
  acw_hd_12.a:0"Comission a masterwork!"
- acw_hd_13.a:0"Comission a masterwork!"
+ acw_hd_16.a:0"Comission a masterwork!"
  acw_hd_14.a:0"Comission a masterwork!"
  acw_hd_15.a:0"Comission a masterwork!"
  acw_hd_16.a:0"Comission a masterwork!"
@@ -125,7 +324,7 @@
  acw_hd_10.b:0"Marvelous!"
  acw_hd_11.b:0"Marvelous!"
  acw_hd_12.b:0"Marvelous!"
- acw_hd_13.b:0"Marvelous!"
+ acw_hd_16.b:0"Marvelous!"
  acw_hd_14.b:0"Marvelous!"
  acw_hd_15.b:0"Marvelous!"
  acw_hd_16.b:0"Marvelous!"
@@ -134,9 +333,6 @@
  acw_hd_19.b:0"Marvelous!"
  acw_hd_20.b:0"Marvelous!"
  
- acw_hd_24.a:0"[ROOT.acw_cf_perkz_points.GetValue]"
- acw_cf_perkz_avaible:0"[ROOT.acw_cf_perkz_points.GetValue]"
- acw_cf_perkz_avaible_cf_bg_open:0"You have [ROOT.acw_cf_perkz_points.GetValue] points to spend."
  acw_hd_25.t:0"Warning"
  acw_hd_25.d:0"Warning!\n\nSelecting proceed will §RREMOVE§! the company already assigned to this slot, without refunding any points spent on it. \n\n§YAre you sure you want to do it?§!"
  acw_hd_25.a:0"Yes, proceed."
@@ -144,34 +340,153 @@
  acw_cf_warning:0"\n§RWarning§!! Selecting a new company will override the company already occupying this slot, removing all associated bonuses."
  ## stratagems
  ## armaments
+ 
+ 
  ## CF
+ acw_hd_24.a:0"[ROOT.acw_cf_perkz_points.GetValue]"
+ acw_cf_perkz_avaible:0"[ROOT.acw_cf_perkz_points.GetValue]"
+ acw_cf_perkz_avaible_cf_bg_open:0"You have [ROOT.acw_cf_perkz_points.GetValue] points to spend."
+ acw_cf_perkz_points:0"Company Upgrade Points"
  
  acw_cf_company_1_mod:0"Sutlers"
+ acw_cf_company_1_mod_desc:0"Medieval sutlers, often referred to as camp merchants, provided essential supplies such as food, drink, and equipment to soldiers during military campaigns. Originating in the late Middle Ages, sutlers followed armies and set up temporary shops in camps, ensuring troops had access to necessities despite being far from home."
  acw_cf_company_1_mod_1:0"Vivandières"
+ acw_cf_company_1_mod_1_desc:0"Vivandières, also known as cantinières, were women who accompanied French military units from the late 18th century to the early 20th century, providing food, drink, and other supplies to soldiers. The role of vivandières originated during the Revolutionary and Napoleonic Wars, where they became beloved figures within the army for their support and care of the troops."
+ acw_cf_company_1_a_mod:0"Camp Merchants I"
+ acw_cf_company_1_b_mod:0"Camp Merchants I"
+ acw_cf_company_1_aa_mod:0"Camp Merchants II"
+ acw_cf_company_1_ab_mod:0"Camp Merchants II" 
+ acw_cf_company_1_ba_mod:0"Camp Merchants II"
+ acw_cf_company_1_bb_mod:0"Camp Merchants II" 
+ 
  acw_cf_company_2_mod:0"Camp Wives"
+ acw_cf_company_2_mod_desc:0"Camp women in the medieval and Renaissance eras provided vital support to armies, often accompanying their husbands or family members to war and taking on roles such as cooking, laundering, and nursing. Despite their significant roles, camp women often faced harsh conditions and dangers, from the threat of enemy attacks to the hardships of living in unsanitary and crowded camps."
  acw_cf_company_2_mod_1:0"Zulu Women"
+ acw_cf_company_2_mod_1_desc:0"In Zulu society, women held significant positions in religious and cultural practices, participating in rituals and ceremonies that were vital for the community’s cohesion and spiritual well-being. During military campaigns, Zulu women supported the warriors by managing the homesteads, ensuring a stable food supply, and maintaining social structures in their absence."
+ acw_cf_company_2_a_mod:0"Camp Women I"
+ acw_cf_company_2_b_mod:0"Camp Women I"
+ acw_cf_company_2_aa_mod:0"Camp Women II"
+ acw_cf_company_2_ab_mod:0"Camp Women II" 
+ acw_cf_company_2_ba_mod:0"Camp Women II"
+ acw_cf_company_2_bb_mod:0"Camp Women II" 
+
  acw_cf_company_3_mod:0"Baggage Train Guards"
+ acw_cf_company_3_mod_desc:0"The guards, often comprising seasoned soldiers or specialized units, were tasked with defending the train's wagons and pack animals, maintaining order, and ensuring that the supplies reached the front lines intact.Historical records from battles such as the Hundred Years' War and the Italian Wars detail the strategic importance of baggage train guards in maintaining the logistical support necessary for prolonged military engagements."
+ acw_cf_company_3_a_mod:0"Scout Corps I"
+ acw_cf_company_3_b_mod:0"Scout Corps I"
+ acw_cf_company_3_aa_mod:0"Scout Corps II"
+ acw_cf_company_3_ab_mod:0"Scout Corps II" 
+ acw_cf_company_3_ba_mod:0"Scout Corps II"
+ acw_cf_company_3_bb_mod:0"Scout Corps II" 
+ 
  acw_cf_company_4_mod:0"Native Auxilia"
+ acw_cf_company_4_mod_desc:0"Native auxiliary forces in medieval and Renaissance era armies consisted of local troops recruited or conscripted to support main military forces, often providing essential knowledge of the terrain and guerrilla tactics. These auxiliaries played crucial roles in various conflicts, from the Crusades to European colonial expeditions, offering specialized skills such as archery, scouting, and unconventional warfare strategies."
  acw_cf_company_4_mod_1:0"Native American Allies"
- acw_cf_company_5_mod:0"Survey corps"
+ acw_cf_company_4_mod_1_desc:0"Native American auxiliary forces in the medieval and Renaissance eras often allied with European explorers and colonizers, providing critical support such as scouting, navigation, and guerrilla warfare tactics.Native American auxiliary forces also facilitated cultural exchange and negotiations, helping to establish and maintain alliances between European settlers and indigenous tribes."
+ acw_cf_company_4_a_mod:0"Native Warbands I"
+ acw_cf_company_4_b_mod:0"Native Warbands I"
+ acw_cf_company_4_aa_mod:0"Native Warbands II"
+ acw_cf_company_4_ab_mod:0"Native Warbands II" 
+ acw_cf_company_4_ba_mod:0"Native Warbands II"
+ acw_cf_company_4_bb_mod:0"Native Warbands II"
+ 
+ acw_cf_company_5_mod:0"Surveyors"
  acw_cf_company_5_mod_1:0"Bhisti"
+ acw_cf_company_5_a_mod:0"Survey Corps I"
+ acw_cf_company_5_b_mod:0"Survey Corps I"
+ acw_cf_company_5_aa_mod:0"Survey Corps II"
+ acw_cf_company_5_ab_mod:0"Survey Corps II" 
+ acw_cf_company_5_ba_mod:0"Survey Corps II"
+ acw_cf_company_5_bb_mod:0"Survey Corps II"
+ 
  acw_cf_company_6_mod:0"Cossack Scouts"
  acw_cf_company_6_mod_1:0"Cossack Horsemen"
  acw_cf_company_6_mod_2:0"Comancheros"
- acw_cf_company_6_mod_3:0"Hajduks"
+ acw_cf_company_6_mod_6:0"Hajduks"
  acw_cf_company_6_mod_4:0"Korokoro"
  acw_cf_company_6_mod_5:0"Scouts"
+ acw_cf_company_6_a_mod:0"Scout Corps I"
+ acw_cf_company_6_b_mod:0"Scout Corps I"
+ acw_cf_company_6_aa_mod:0"Scout Corps II"
+ acw_cf_company_6_ab_mod:0"Scout Corps II" 
+ acw_cf_company_6_ba_mod:0"Scout Corps II"
+ acw_cf_company_6_bb_mod:0"Scout Corps II"
+ 
  acw_cf_company_7_mod:0"Orto"
  acw_cf_company_7_mod_1:0"Yam"
- acw_cf_company_7_mod_2:0"Camp organizers"
+ acw_cf_company_7_mod_2:0"Camp setters"
+ acw_cf_company_7_a_mod:0"Camp Organizers I"
+ acw_cf_company_7_b_mod:0"Camp Organizers I"
+ acw_cf_company_7_aa_mod:0"Camp Organizers II"
+ acw_cf_company_7_ab_mod:0"Camp Organizers II" 
+ acw_cf_company_7_ba_mod:0"Camp Organizers II"
+ acw_cf_company_7_bb_mod:0"Camp Organizers II"
+ 
+ 
  acw_cf_company_8_mod:0"Sappers"
+ acw_cf_company_8_a_mod:0"Engineering Corps I"
+ acw_cf_company_8_b_mod:0"Engineering Corps I"
+ acw_cf_company_8_aa_mod:0"Engineering Corps II"
+ acw_cf_company_8_ab_mod:0"Engineering Corps II" 
+ acw_cf_company_8_ba_mod:0"Engineering Corps II"
+ acw_cf_company_8_bb_mod:0"Engineering Corps II"
+ 
  acw_cf_company_9_mod:0"Camp doctors"
+ acw_cf_company_9_a_mod:0"Medical Personnel I"
+ acw_cf_company_9_b_mod:0"Medical Personnel I"
+ acw_cf_company_9_aa_mod:0"Medical Personnel II"
+ acw_cf_company_9_ab_mod:0"Medical Personnel II" 
+ acw_cf_company_9_ba_mod:0"Medical Personnel II"
+ acw_cf_company_9_bb_mod:0"Medical Personnel II"
+ 
  acw_cf_company_10_mod:0"Camp blacksmiths"
  acw_cf_company_10_mod_1:0"Katori Butai"
+ acw_cf_company_10_a_mod:0"Repairmen I"
+ acw_cf_company_10_b_mod:0"Repairmen I"
+ acw_cf_company_10_aa_mod:0"Repairmen II"
+ acw_cf_company_10_ab_mod:0"Repairmen II" 
+ acw_cf_company_10_ba_mod:0"Repairmen II"
+ acw_cf_company_10_bb_mod:0"Repairmen II"
+ 
  acw_cf_company_11_mod:0"Indentured men"
  acw_cf_company_11_mod_1:0"Ghilman"
+ acw_cf_company_11_a_mod:0"Involuntary Forces I"
+ acw_cf_company_11_b_mod:0"Involuntary Forces I"
+ acw_cf_company_11_aa_mod:0"Involuntary Forces II"
+ acw_cf_company_11_ab_mod:0"Involuntary Forces II" 
+ acw_cf_company_11_ba_mod:0"Involuntary Forces II"
+ acw_cf_company_11_bb_mod:0"Involuntary Forces II"
 
  
  ##holyshitireallyneedsomebodytodothispartorimgonnagomad
  
+ #upgrades
+ acw_infantry_upgrade_t1:0"Infantry Upgrade 1"
+ acw_infantry_upgrade_t2:0"Infantry Upgrade 2"
+ acw_infantry_upgrade_t3:0"Infantry Upgrade 3"
+ acw_infantry_upgrade_t4:0"Infantry Upgrade 4"
+ acw_infantry_upgrade_t5:0"Infantry Upgrade 5"
+ acw_infantry_upgrade_t6:0"Infantry Upgrade 6"
+ acw_infantry_upgrade_t7:0"Infantry Upgrade 7"
+ acw_infantry_upgrade_t8:0"Infantry Upgrade 8"
+ acw_infantry_upgrade_t9:0"Infantry Upgrade 9"
+
+ acw_cavalry_upgrade_t1:0"Cavalry Upgrade 1"
+ acw_cavalry_upgrade_t2:0"Cavalry Upgrade 2"
+ acw_cavalry_upgrade_t3:0"Cavalry Upgrade 3"
+ acw_cavalry_upgrade_t4:0"Cavalry Upgrade 4"
+ acw_cavalry_upgrade_t5:0"Cavalry Upgrade 5"
+ acw_cavalry_upgrade_t6:0"Cavalry Upgrade 6"
+ acw_cavalry_upgrade_t7:0"Cavalry Upgrade 7"
+ acw_cavalry_upgrade_t8:0"Cavalry Upgrade 8"
+ acw_cavalry_upgrade_t9:0"Cavalry Upgrade 9"
  
+ acw_artillery_upgrade_t1:0"Artillery Upgrade 1"
+ acw_artillery_upgrade_t2:0"Artillery Upgrade 2"
+ acw_artillery_upgrade_t3:0"Artillery Upgrade 3"
+ acw_artillery_upgrade_t4:0"Artillery Upgrade 4"
+ acw_artillery_upgrade_t5:0"Artillery Upgrade 5"
+ acw_artillery_upgrade_t6:0"Artillery Upgrade 6"
+ acw_artillery_upgrade_t7:0"Artillery Upgrade 7"
+ acw_artillery_upgrade_t8:0"Artillery Upgrade 8"
+ acw_artillery_upgrade_t9:0"Artillery Upgrade 9"
