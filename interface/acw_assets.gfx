@@ -447,7 +447,7 @@ spriteTypes = {
 		name = "GFX_acw_cf_company_7"
 		texturefile = "gfx/interface/acw_cf_company_7.dds"
 		transparencecheck = yes
-		noOfFrames = 9
+		noOfFrames = 10
 	}
 	
 	spriteType = {

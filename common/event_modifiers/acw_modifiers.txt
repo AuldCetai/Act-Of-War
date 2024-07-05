@@ -3,23 +3,23 @@ acw_stratagem_rom_selected = {
 								free_leader_pool = 1}
 acw_stratagem_rom_t1 = {		
 								free_leader_pool = 1
-								merc_maintenance_modifier = 0.5
+								merc_maintenance_modifier = -0.25
 						}
 acw_stratagem_rom_t2 = {		
 								free_leader_pool = 1
-								merc_maintenance_modifier = 0.5
+								merc_maintenance_modifier = -0.25
 								merc_leader_army_tradition = 0.5
 						}
 acw_stratagem_rom_t3 = {		
 								free_leader_pool = 1
-								merc_maintenance_modifier = 0.5
+								merc_maintenance_modifier = -0.25
 								merc_leader_army_tradition = 0.5
 								merc_independent_from_trade_range = yes
 						}
 acw_stratagem_rom_t4 = {		
 								
 								free_leader_pool = 1
-								merc_maintenance_modifier = 0.5
+								merc_maintenance_modifier = -0.25
 								merc_leader_army_tradition = 0.5
 								merc_independent_from_trade_range = yes
 								enable_forced_march = yes
