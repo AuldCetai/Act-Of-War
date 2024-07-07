@@ -107,6 +107,8 @@ defined_text = {
 	
 }
 
+
+#cf slot 1 tt
 defined_text = {
     name = acw_get_cf_slot1
 	random = no
@@ -127,14 +129,170 @@ defined_text = {
 	
 	text = {
 		localisation_key =  acw_cf_company_2_mod
-		trigger = {has_country_modifier = acw_cf_company_2_mod
-					has_country_flag = acw_cf_s1_2}
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod
+						has_country_flag = acw_cf_s1_2
+						}
 	}
 	
 	text = {
 		localisation_key =  acw_cf_company_2_mod_1
-		trigger = {has_country_modifier = acw_cf_company_2_mod_1
-					has_country_flag = acw_cf_s1_2}
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod_1
+						has_country_flag = acw_cf_s1_2
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_3_mod
+						has_country_flag = acw_cf_s1_3
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_mod
+					trigger = {
+						has_country_modifier = acw_cf_company_4_mod_1
+						has_country_flag = acw_cf_s1_4
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod_1
+						has_country_flag = acw_cf_s1_5
+						}	
+			}		
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod
+						has_country_flag = acw_cf_s1_5
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod
+						has_country_flag = acw_cf_s1_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_1
+						has_country_flag = acw_cf_s1_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_2
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_2
+						has_country_flag = acw_cf_s1_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_3
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_3
+						has_country_flag = acw_cf_s1_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_4
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_4
+						has_country_flag = acw_cf_s1_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_5
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_5
+						has_country_flag = acw_cf_s1_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_1
+						has_country_flag = acw_cf_s1_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod
+						has_country_flag = acw_cf_s1_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_2
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_2
+						has_country_flag = acw_cf_s1_7
+						}		
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_8_mod
+						has_country_flag = acw_cf_s1_8
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_9_mod
+						has_country_flag = acw_cf_s1_9
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod_1
+						has_country_flag = acw_cf_s1_10
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod
+						has_country_flag = acw_cf_s1_10
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod_1
+						has_country_flag = acw_cf_s1_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod
+						has_country_flag = acw_cf_s1_11
+						}	
 	}
 	
 	text = {
@@ -143,36 +301,585 @@ defined_text = {
 	}
 }
 
+#cf slot 2 tt
 defined_text = {
     name = acw_get_cf_slot2
 	random = no
 	
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod
+		trigger = {has_country_modifier = acw_cf_company_1_mod
+					has_country_flag = acw_cf_s2_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_1
+		trigger = {has_country_modifier = acw_cf_company_1_mod_1
+					has_country_flag = acw_cf_s2_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod
+						has_country_flag = acw_cf_s2_2
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod_1
+						has_country_flag = acw_cf_s2_2
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_3_mod
+						has_country_flag = acw_cf_s2_3
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_mod
+					trigger = {
+						has_country_modifier = acw_cf_company_4_mod_1
+						has_country_flag = acw_cf_s2_4
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod_1
+						has_country_flag = acw_cf_s2_5
+						}	
+			}		
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod
+						has_country_flag = acw_cf_s2_5
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod
+						has_country_flag = acw_cf_s2_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_1
+						has_country_flag = acw_cf_s2_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_2
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_2
+						has_country_flag = acw_cf_s2_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_3
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_3
+						has_country_flag = acw_cf_s2_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_4
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_4
+						has_country_flag = acw_cf_s2_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_5
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_5
+						has_country_flag = acw_cf_s2_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_1
+						has_country_flag = acw_cf_s2_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod
+						has_country_flag = acw_cf_s2_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_2
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_2
+						has_country_flag = acw_cf_s2_7
+						}		
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_8_mod
+						has_country_flag = acw_cf_s2_8
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_9_mod
+						has_country_flag = acw_cf_s2_9
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod_1
+						has_country_flag = acw_cf_s2_10
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod
+						has_country_flag = acw_cf_s2_10
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod_1
+						has_country_flag = acw_cf_s2_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod
+						has_country_flag = acw_cf_s2_11
+						}	
+	}
+	
 	text = {
 		localisation_key = acw_cf_slot_none
-		trigger = { acw_cf_slot_2_filled = no}
+		trigger = { acw_cf_slot_1_filled = no}
 	}
 }
 
+
+#cf slot 3 tt
 defined_text = {
     name = acw_get_cf_slot3
 	random = no
 	
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod
+		trigger = {has_country_modifier = acw_cf_company_1_mod
+					has_country_flag = acw_cf_s3_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_1
+		trigger = {has_country_modifier = acw_cf_company_1_mod_1
+					has_country_flag = acw_cf_s3_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod
+						has_country_flag = acw_cf_s3_2
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod_1
+						has_country_flag = acw_cf_s3_2
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_3_mod
+						has_country_flag = acw_cf_s3_3
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_mod
+					trigger = {
+						has_country_modifier = acw_cf_company_4_mod_1
+						has_country_flag = acw_cf_s3_4
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod_1
+						has_country_flag = acw_cf_s3_5
+						}	
+			}		
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod
+						has_country_flag = acw_cf_s3_5
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod
+						has_country_flag = acw_cf_s3_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_1
+						has_country_flag = acw_cf_s3_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_2
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_2
+						has_country_flag = acw_cf_s3_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_3
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_3
+						has_country_flag = acw_cf_s3_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_4
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_4
+						has_country_flag = acw_cf_s3_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_5
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_5
+						has_country_flag = acw_cf_s3_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_1
+						has_country_flag = acw_cf_s3_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod
+						has_country_flag = acw_cf_s3_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_2
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_2
+						has_country_flag = acw_cf_s3_7
+						}		
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_8_mod
+						has_country_flag = acw_cf_s3_8
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_9_mod
+						has_country_flag = acw_cf_s3_9
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod_1
+						has_country_flag = acw_cf_s3_10
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod
+						has_country_flag = acw_cf_s3_10
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod_1
+						has_country_flag = acw_cf_s3_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod
+						has_country_flag = acw_cf_s3_11
+						}	
+	}
+	
 	text = {
 		localisation_key = acw_cf_slot_none
-		trigger = { acw_cf_slot_3_filled = no}
+		trigger = { acw_cf_slot_1_filled = no}
 	}
 }
 
+#cf slot 4 tt
 defined_text = {
     name = acw_get_cf_slot4
 	random = no
 	
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod
+		trigger = {has_country_modifier = acw_cf_company_1_mod
+					has_country_flag = acw_cf_s4_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_1
+		trigger = {has_country_modifier = acw_cf_company_1_mod_1
+					has_country_flag = acw_cf_s4_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod
+						has_country_flag = acw_cf_s4_2
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod_1
+						has_country_flag = acw_cf_s4_2
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_3_mod
+						has_country_flag = acw_cf_s4_3
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_mod
+					trigger = {
+						has_country_modifier = acw_cf_company_4_mod_1
+						has_country_flag = acw_cf_s4_4
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod_1
+						has_country_flag = acw_cf_s4_5
+						}	
+			}		
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod
+						has_country_flag = acw_cf_s4_5
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod
+						has_country_flag = acw_cf_s4_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_1
+						has_country_flag = acw_cf_s4_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_2
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_2
+						has_country_flag = acw_cf_s4_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_3
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_3
+						has_country_flag = acw_cf_s4_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_4
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_4
+						has_country_flag = acw_cf_s4_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_5
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_5
+						has_country_flag = acw_cf_s4_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_1
+						has_country_flag = acw_cf_s4_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod
+						has_country_flag = acw_cf_s4_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_2
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_2
+						has_country_flag = acw_cf_s4_7
+						}		
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_8_mod
+						has_country_flag = acw_cf_s4_8
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_9_mod
+						has_country_flag = acw_cf_s4_9
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod_1
+						has_country_flag = acw_cf_s4_10
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod
+						has_country_flag = acw_cf_s4_10
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_1
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod_1
+						has_country_flag = acw_cf_s4_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod
+						has_country_flag = acw_cf_s4_11
+						}	
+	}
+	
 	text = {
 		localisation_key = acw_cf_slot_none
-		trigger = { acw_cf_slot_4_filled = no}
+		trigger = { acw_cf_slot_1_filled = no}
 	}
 }
-
 
 defined_text = {
     name = acw_stratagem_selector_button_sfp_levels
@@ -322,4 +1029,2892 @@ defined_text = {
 		localisation_key = acw_stratagem_rom_t4_text
 		trigger = { has_country_modifier = acw_stratagem_rom_t4}
 	}
+}
+
+defined_text = {
+    name = acw_cf_warning_remove
+	random = no
+	
+	text = {
+		localisation_key = acw_cf_warning
+		trigger = { always = yes }
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_comp1_tt_title
+	random = no
+	
+	text = {
+		localisation_key = acw_cf_company_1_mod_1
+		trigger = { primary_culture = francien}
+	}
+	text = {
+		localisation_key = acw_cf_company_1_mod
+		trigger = { }
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_comp1_tt_desc
+	random = no
+	
+	text = {
+		localisation_key = acw_cf_company_1_mod_1_desc
+		trigger = { primary_culture = francien}
+	}
+	text = {
+		localisation_key = acw_cf_company_1_mod_desc
+		trigger = { }
+	}
+}
+
+
+defined_text = {
+    name = acw_get_cf_comp2_tt_title
+	random = no
+	
+	text = {
+		localisation_key = acw_cf_company_2_mod_1
+		trigger = { primary_culture = nguni}
+	}
+	text = {
+		localisation_key = acw_cf_company_2_mod
+		trigger = { }
+	}
+}
+#company slots localisation
+defined_text = {
+    name = acw_get_cf_comp2_tt_desc
+	random = no
+	
+	text = {
+		localisation_key = acw_cf_company_2_mod_1_desc
+		trigger = { primary_culture = nguni}
+	}
+	text = {
+		localisation_key = acw_cf_company_2_mod_desc
+		trigger = { }
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_comp3_tt_title
+	random = no
+	
+	text = {
+		localisation_key = acw_cf_company_3_mod
+		trigger = { }
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_comp3_tt_desc
+	random = no
+	
+	text = {
+		localisation_key = acw_cf_company_3_mod_desc
+		trigger = { }
+	}
+}
+
+
+
+#arma slot1 localisation
+defined_text = {
+    name = acw_get_arm_slot1
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_nothing_yet
+		trigger = { acw_arma_slot_1_filled = no }
+	}
+	
+	
+	text = {
+		localisation_key = acw_arma_crouching_tiger_cannon
+		trigger = { has_country_flag = acw_arma_s1_1 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iklwa
+		trigger = { has_country_flag = acw_arma_s1_2 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_shamshir
+		trigger = { has_country_flag = acw_arma_s1_3 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_jezail
+		trigger = { has_country_flag = acw_arma_s1_4 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mughal_talwar
+		trigger = { has_country_flag = acw_arma_s1_5 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_petronel
+		trigger = { has_country_flag = acw_arma_s1_6 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bayonet
+		trigger = { has_country_flag = acw_arma_s1_7 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katar
+		trigger = { has_country_flag = acw_arma_s1_8 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katana
+		trigger = { has_country_flag = acw_arma_s1_9 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_african_throwing_knives
+		trigger = { has_country_flag = acw_arma_s1_10 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_falcata
+		trigger = { has_country_flag = acw_arma_s1_11 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_wagenburg
+		trigger = { has_country_flag = acw_arma_s1_12 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_fo_lang_ji
+		trigger = { has_country_flag = acw_arma_s1_13 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iron_fan
+		trigger = { has_country_flag = acw_arma_s1_14 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_macuahuitl
+		trigger = { has_country_flag = acw_arma_s1_15 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_yatagan
+		trigger = { has_country_flag = acw_arma_s1_16 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mandau
+		trigger = { has_country_flag = acw_arma_s1_17 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khopesh
+		trigger = { has_country_flag = acw_arma_s1_18 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_naginata
+		trigger = { has_country_flag = acw_arma_s1_19 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kpinga
+		trigger = { has_country_flag = acw_arma_s1_20 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_maasai_shield
+		trigger = { has_country_flag = acw_arma_s1_21 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bakuba_spears
+		trigger = { has_country_flag = acw_arma_s1_22 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus
+		trigger = { has_country_flag = acw_arma_s1_23 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_a_croc
+		trigger = { has_country_flag = acw_arma_s1_24 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_zweihander
+		trigger = { has_country_flag = acw_arma_s1_25 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_longsword
+		trigger = { has_country_flag = acw_arma_s1_26 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_morion_helmet
+		trigger = { has_country_flag = acw_arma_s1_27 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dha_sword
+		trigger = { has_country_flag = acw_arma_s1_28 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khanda_sword
+		trigger = { has_country_flag = acw_arma_s1_29 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_barong_sword
+		trigger = { has_country_flag = acw_arma_s1_30 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_qama
+		trigger = { has_country_flag = acw_arma_s1_31 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_french_charleville_musket
+		trigger = { has_country_flag = acw_arma_s1_32 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_grapeshot
+		trigger = { has_country_flag = acw_arma_s1_33 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_howitzer
+		trigger = { has_country_flag = acw_arma_s1_34 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_brown_bess_musket
+		trigger = { has_country_flag = acw_arma_s1_35 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bowie_knife
+		trigger = { has_country_flag = acw_arma_s1_36 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kukri
+		trigger = { has_country_flag = acw_arma_s1_37 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_chu_ko_nu
+		trigger = { has_country_flag = acw_arma_s1_38 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_nock_gun
+		trigger = { has_country_flag = acw_arma_s1_39 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dragoon_musket
+		trigger = { has_country_flag = acw_arma_s1_40 }
+	}
+
+}
+
+
+defined_text = {
+    name = acw_get_arm_slot1_tt
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_crouching_tiger_cannon_desc
+		trigger = { has_country_flag = acw_arma_s1_1 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iklwa_desc
+		trigger = { has_country_flag = acw_arma_s1_2 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_shamshir_desc
+		trigger = { has_country_flag = acw_arma_s1_3 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_jezail_desc
+		trigger = { has_country_flag = acw_arma_s1_4 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mughal_talwar_desc
+		trigger = { has_country_flag = acw_arma_s1_5 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_petronel_desc
+		trigger = { has_country_flag = acw_arma_s1_6 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bayonet_desc
+		trigger = { has_country_flag = acw_arma_s1_7 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katar_desc
+		trigger = { has_country_flag = acw_arma_s1_8 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katana_desc
+		trigger = { has_country_flag = acw_arma_s1_9 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_african_throwing_knives_desc
+		trigger = { has_country_flag = acw_arma_s1_10 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_falcata_desc
+		trigger = { has_country_flag = acw_arma_s1_11 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_wagenburg_desc
+		trigger = { has_country_flag = acw_arma_s1_12 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_fo_lang_ji_desc
+		trigger = { has_country_flag = acw_arma_s1_13 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iron_fan_desc
+		trigger = { has_country_flag = acw_arma_s1_14 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_macuahuitl_desc
+		trigger = { has_country_flag = acw_arma_s1_15 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_yatagan_desc
+		trigger = { has_country_flag = acw_arma_s1_16 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mandau_desc
+		trigger = { has_country_flag = acw_arma_s1_17 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khopesh_desc
+		trigger = { has_country_flag = acw_arma_s1_18 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_naginata_desc
+		trigger = { has_country_flag = acw_arma_s1_19 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kpinga_desc
+		trigger = { has_country_flag = acw_arma_s1_20 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_maasai_shield_desc
+		trigger = { has_country_flag = acw_arma_s1_21 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bakuba_spears_desc
+		trigger = { has_country_flag = acw_arma_s1_22 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_desc
+		trigger = { has_country_flag = acw_arma_s1_23 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_a_croc_desc
+		trigger = { has_country_flag = acw_arma_s1_24 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_zweihander_desc
+		trigger = { has_country_flag = acw_arma_s1_25 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_longsword_desc
+		trigger = { has_country_flag = acw_arma_s1_26 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_morion_helmet_desc
+		trigger = { has_country_flag = acw_arma_s1_27 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dha_sword_desc
+		trigger = { has_country_flag = acw_arma_s1_28 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khanda_sword_desc
+		trigger = { has_country_flag = acw_arma_s1_29 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_barong_sword_desc
+		trigger = { has_country_flag = acw_arma_s1_30 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_qama_desc
+		trigger = { has_country_flag = acw_arma_s1_31 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_french_charleville_musket_desc
+		trigger = { has_country_flag = acw_arma_s1_32 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_grapeshot_desc
+		trigger = { has_country_flag = acw_arma_s1_33 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_howitzer_desc
+		trigger = { has_country_flag = acw_arma_s1_34 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_brown_bess_musket_desc
+		trigger = { has_country_flag = acw_arma_s1_35 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bowie_knife_desc
+		trigger = { has_country_flag = acw_arma_s1_36 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kukri_desc
+		trigger = { has_country_flag = acw_arma_s1_37 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_chu_ko_nu_desc
+		trigger = { has_country_flag = acw_arma_s1_38 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_nock_gun_desc
+		trigger = { has_country_flag = acw_arma_s1_39 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dragoon_musket_desc
+		trigger = { has_country_flag = acw_arma_s1_40 }
+	}
+
+}
+
+
+defined_text = {
+    name = acw_get_arm_slot1_modifier
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_crouching_tiger_cannon_modifier
+		trigger = { has_country_flag = acw_arma_s1_1 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iklwa_modifier
+		trigger = { has_country_flag = acw_arma_s1_2 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_shamshir_modifier
+		trigger = { has_country_flag = acw_arma_s1_3 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_jezail_modifier
+		trigger = { has_country_flag = acw_arma_s1_4 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mughal_talwar_modifier
+		trigger = { has_country_flag = acw_arma_s1_5 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_petronel_modifier
+		trigger = { has_country_flag = acw_arma_s1_6 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bayonet_modifier
+		trigger = { has_country_flag = acw_arma_s1_7 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katar_modifier
+		trigger = { has_country_flag = acw_arma_s1_8 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katana_modifier
+		trigger = { has_country_flag = acw_arma_s1_9 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_african_throwing_knives_modifier
+		trigger = { has_country_flag = acw_arma_s1_10 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_falcata_modifier
+		trigger = { has_country_flag = acw_arma_s1_11 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_wagenburg_modifier
+		trigger = { has_country_flag = acw_arma_s1_12 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_fo_lang_ji_modifier
+		trigger = { has_country_flag = acw_arma_s1_13 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iron_fan_modifier
+		trigger = { has_country_flag = acw_arma_s1_14 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_macuahuitl_modifier
+		trigger = { has_country_flag = acw_arma_s1_15 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_yatagan_modifier
+		trigger = { has_country_flag = acw_arma_s1_16 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mandau_modifier
+		trigger = { has_country_flag = acw_arma_s1_17 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khopesh_modifier
+		trigger = { has_country_flag = acw_arma_s1_18 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_naginata_modifier
+		trigger = { has_country_flag = acw_arma_s1_19 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kpinga_modifier
+		trigger = { has_country_flag = acw_arma_s1_20 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_maasai_shield_modifier
+		trigger = { has_country_flag = acw_arma_s1_21 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bakuba_spears_modifier
+		trigger = { has_country_flag = acw_arma_s1_22 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_modifier
+		trigger = { has_country_flag = acw_arma_s1_23 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_a_croc_modifier
+		trigger = { has_country_flag = acw_arma_s1_24 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_zweihander_modifier
+		trigger = { has_country_flag = acw_arma_s1_25 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_longsword_modifier
+		trigger = { has_country_flag = acw_arma_s1_26 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_morion_helmet_modifier
+		trigger = { has_country_flag = acw_arma_s1_27 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dha_sword_modifier
+		trigger = { has_country_flag = acw_arma_s1_28 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khanda_sword_modifier
+		trigger = { has_country_flag = acw_arma_s1_29 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_barong_sword_modifier
+		trigger = { has_country_flag = acw_arma_s1_30 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_qama_modifier
+		trigger = { has_country_flag = acw_arma_s1_31 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_french_charleville_musket_modifier
+		trigger = { has_country_flag = acw_arma_s1_32 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_grapeshot_modifier
+		trigger = { has_country_flag = acw_arma_s1_33 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_howitzer_modifier
+		trigger = { has_country_flag = acw_arma_s1_34 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_brown_bess_musket_modifier
+		trigger = { has_country_flag = acw_arma_s1_35 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bowie_knife_modifier
+		trigger = { has_country_flag = acw_arma_s1_36 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kukri_modifier
+		trigger = { has_country_flag = acw_arma_s1_37 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_chu_ko_nu_modifier
+		trigger = { has_country_flag = acw_arma_s1_38 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_nock_gun_modifier
+		trigger = { has_country_flag = acw_arma_s1_39 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dragoon_musket_modifier
+		trigger = { has_country_flag = acw_arma_s1_40 }
+	}
+
+}
+
+
+#arma slot2 localisation
+defined_text = {
+    name = acw_get_arm_slot2
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_nothing_yet
+		trigger = { acw_arma_slot_2_filled = no }
+	}
+	
+	text = {
+		localisation_key = acw_arma_crouching_tiger_cannon
+		trigger = { has_country_flag = acw_arma_s2_1 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iklwa
+		trigger = { has_country_flag = acw_arma_s2_2 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_shamshir
+		trigger = { has_country_flag = acw_arma_s2_3 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_jezail
+		trigger = { has_country_flag = acw_arma_s2_4 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mughal_talwar
+		trigger = { has_country_flag = acw_arma_s2_5 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_petronel
+		trigger = { has_country_flag = acw_arma_s2_6 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bayonet
+		trigger = { has_country_flag = acw_arma_s2_7 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katar
+		trigger = { has_country_flag = acw_arma_s2_8 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katana
+		trigger = { has_country_flag = acw_arma_s2_9 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_african_throwing_knives
+		trigger = { has_country_flag = acw_arma_s2_10 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_falcata
+		trigger = { has_country_flag = acw_arma_s2_11 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_wagenburg
+		trigger = { has_country_flag = acw_arma_s2_12 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_fo_lang_ji
+		trigger = { has_country_flag = acw_arma_s2_13 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iron_fan
+		trigger = { has_country_flag = acw_arma_s2_14 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_macuahuitl
+		trigger = { has_country_flag = acw_arma_s2_15 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_yatagan
+		trigger = { has_country_flag = acw_arma_s2_16 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mandau
+		trigger = { has_country_flag = acw_arma_s2_17 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khopesh
+		trigger = { has_country_flag = acw_arma_s2_18 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_naginata
+		trigger = { has_country_flag = acw_arma_s2_19 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kpinga
+		trigger = { has_country_flag = acw_arma_s2_20 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_maasai_shield
+		trigger = { has_country_flag = acw_arma_s2_21 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bakuba_spears
+		trigger = { has_country_flag = acw_arma_s2_22 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus
+		trigger = { has_country_flag = acw_arma_s2_23 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_a_croc
+		trigger = { has_country_flag = acw_arma_s2_24 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_zweihander
+		trigger = { has_country_flag = acw_arma_s2_25 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_longsword
+		trigger = { has_country_flag = acw_arma_s2_26 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_morion_helmet
+		trigger = { has_country_flag = acw_arma_s2_27 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dha_sword
+		trigger = { has_country_flag = acw_arma_s2_28 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khanda_sword
+		trigger = { has_country_flag = acw_arma_s2_29 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_barong_sword
+		trigger = { has_country_flag = acw_arma_s2_30 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_qama
+		trigger = { has_country_flag = acw_arma_s2_31 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_french_charleville_musket
+		trigger = { has_country_flag = acw_arma_s2_32 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_grapeshot
+		trigger = { has_country_flag = acw_arma_s2_33 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_howitzer
+		trigger = { has_country_flag = acw_arma_s2_34 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_brown_bess_musket
+		trigger = { has_country_flag = acw_arma_s2_35 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bowie_knife
+		trigger = { has_country_flag = acw_arma_s2_36 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kukri
+		trigger = { has_country_flag = acw_arma_s2_37 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_chu_ko_nu
+		trigger = { has_country_flag = acw_arma_s2_38 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_nock_gun
+		trigger = { has_country_flag = acw_arma_s2_39 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dragoon_musket
+		trigger = { has_country_flag = acw_arma_s2_40 }
+	}
+
+}
+
+
+defined_text = {
+    name = acw_get_arm_slot2_tt
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_crouching_tiger_cannon_desc
+		trigger = { has_country_flag = acw_arma_s2_1 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iklwa_desc
+		trigger = { has_country_flag = acw_arma_s2_2 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_shamshir_desc
+		trigger = { has_country_flag = acw_arma_s2_3 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_jezail_desc
+		trigger = { has_country_flag = acw_arma_s2_4 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mughal_talwar_desc
+		trigger = { has_country_flag = acw_arma_s2_5 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_petronel_desc
+		trigger = { has_country_flag = acw_arma_s2_6 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bayonet_desc
+		trigger = { has_country_flag = acw_arma_s2_7 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katar_desc
+		trigger = { has_country_flag = acw_arma_s2_8 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katana_desc
+		trigger = { has_country_flag = acw_arma_s2_9 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_african_throwing_knives_desc
+		trigger = { has_country_flag = acw_arma_s2_10 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_falcata_desc
+		trigger = { has_country_flag = acw_arma_s2_11 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_wagenburg_desc
+		trigger = { has_country_flag = acw_arma_s2_12 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_fo_lang_ji_desc
+		trigger = { has_country_flag = acw_arma_s2_13 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iron_fan_desc
+		trigger = { has_country_flag = acw_arma_s2_14 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_macuahuitl_desc
+		trigger = { has_country_flag = acw_arma_s2_15 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_yatagan_desc
+		trigger = { has_country_flag = acw_arma_s2_16 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mandau_desc
+		trigger = { has_country_flag = acw_arma_s2_17 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khopesh_desc
+		trigger = { has_country_flag = acw_arma_s2_18 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_naginata_desc
+		trigger = { has_country_flag = acw_arma_s2_19 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kpinga_desc
+		trigger = { has_country_flag = acw_arma_s2_20 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_maasai_shield_desc
+		trigger = { has_country_flag = acw_arma_s2_21 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bakuba_spears_desc
+		trigger = { has_country_flag = acw_arma_s2_22 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_desc
+		trigger = { has_country_flag = acw_arma_s2_23 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_a_croc_desc
+		trigger = { has_country_flag = acw_arma_s2_24 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_zweihander_desc
+		trigger = { has_country_flag = acw_arma_s2_25 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_longsword_desc
+		trigger = { has_country_flag = acw_arma_s2_26 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_morion_helmet_desc
+		trigger = { has_country_flag = acw_arma_s2_27 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dha_sword_desc
+		trigger = { has_country_flag = acw_arma_s2_28 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khanda_sword_desc
+		trigger = { has_country_flag = acw_arma_s2_29 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_barong_sword_desc
+		trigger = { has_country_flag = acw_arma_s2_30 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_qama_desc
+		trigger = { has_country_flag = acw_arma_s2_31 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_french_charleville_musket_desc
+		trigger = { has_country_flag = acw_arma_s2_32 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_grapeshot_desc
+		trigger = { has_country_flag = acw_arma_s2_33 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_howitzer_desc
+		trigger = { has_country_flag = acw_arma_s2_34 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_brown_bess_musket_desc
+		trigger = { has_country_flag = acw_arma_s2_35 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bowie_knife_desc
+		trigger = { has_country_flag = acw_arma_s2_36 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kukri_desc
+		trigger = { has_country_flag = acw_arma_s2_37 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_chu_ko_nu_desc
+		trigger = { has_country_flag = acw_arma_s2_38 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_nock_gun_desc
+		trigger = { has_country_flag = acw_arma_s2_39 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dragoon_musket_desc
+		trigger = { has_country_flag = acw_arma_s2_40 }
+	}
+
+}
+
+
+defined_text = {
+    name = acw_get_arm_slot2_modifier
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_crouching_tiger_cannon_modifier
+		trigger = { has_country_flag = acw_arma_s2_1 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iklwa_modifier
+		trigger = { has_country_flag = acw_arma_s2_2 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_shamshir_modifier
+		trigger = { has_country_flag = acw_arma_s2_3 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_jezail_modifier
+		trigger = { has_country_flag = acw_arma_s2_4 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mughal_talwar_modifier
+		trigger = { has_country_flag = acw_arma_s2_5 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_petronel_modifier
+		trigger = { has_country_flag = acw_arma_s2_6 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bayonet_modifier
+		trigger = { has_country_flag = acw_arma_s2_7 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katar_modifier
+		trigger = { has_country_flag = acw_arma_s2_8 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katana_modifier
+		trigger = { has_country_flag = acw_arma_s2_9 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_african_throwing_knives_modifier
+		trigger = { has_country_flag = acw_arma_s2_10 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_falcata_modifier
+		trigger = { has_country_flag = acw_arma_s2_11 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_wagenburg_modifier
+		trigger = { has_country_flag = acw_arma_s2_12 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_fo_lang_ji_modifier
+		trigger = { has_country_flag = acw_arma_s2_13 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iron_fan_modifier
+		trigger = { has_country_flag = acw_arma_s2_14 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_macuahuitl_modifier
+		trigger = { has_country_flag = acw_arma_s2_15 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_yatagan_modifier
+		trigger = { has_country_flag = acw_arma_s2_16 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mandau_modifier
+		trigger = { has_country_flag = acw_arma_s2_17 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khopesh_modifier
+		trigger = { has_country_flag = acw_arma_s2_18 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_naginata_modifier
+		trigger = { has_country_flag = acw_arma_s2_19 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kpinga_modifier
+		trigger = { has_country_flag = acw_arma_s2_20 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_maasai_shield_modifier
+		trigger = { has_country_flag = acw_arma_s2_21 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bakuba_spears_modifier
+		trigger = { has_country_flag = acw_arma_s2_22 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_modifier
+		trigger = { has_country_flag = acw_arma_s2_23 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_a_croc_modifier
+		trigger = { has_country_flag = acw_arma_s2_24 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_zweihander_modifier
+		trigger = { has_country_flag = acw_arma_s2_25 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_longsword_modifier
+		trigger = { has_country_flag = acw_arma_s2_26 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_morion_helmet_modifier
+		trigger = { has_country_flag = acw_arma_s2_27 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dha_sword_modifier
+		trigger = { has_country_flag = acw_arma_s2_28 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khanda_sword_modifier
+		trigger = { has_country_flag = acw_arma_s2_29 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_barong_sword_modifier
+		trigger = { has_country_flag = acw_arma_s2_30 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_qama_modifier
+		trigger = { has_country_flag = acw_arma_s2_31 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_french_charleville_musket_modifier
+		trigger = { has_country_flag = acw_arma_s2_32 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_grapeshot_modifier
+		trigger = { has_country_flag = acw_arma_s2_33 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_howitzer_modifier
+		trigger = { has_country_flag = acw_arma_s2_34 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_brown_bess_musket_modifier
+		trigger = { has_country_flag = acw_arma_s2_35 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bowie_knife_modifier
+		trigger = { has_country_flag = acw_arma_s2_36 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kukri_modifier
+		trigger = { has_country_flag = acw_arma_s2_37 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_chu_ko_nu_modifier
+		trigger = { has_country_flag = acw_arma_s2_38 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_nock_gun_modifier
+		trigger = { has_country_flag = acw_arma_s2_39 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dragoon_musket_modifier
+		trigger = { has_country_flag = acw_arma_s2_40 }
+	}
+
+}
+
+#arma slot3 localisation
+defined_text = {
+    name = acw_get_arm_slot3
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_nothing_yet
+		trigger = { acw_arma_slot_3_filled = no }
+	}
+	
+	text = {
+		localisation_key = acw_arma_crouching_tiger_cannon
+		trigger = { has_country_flag = acw_arma_s3_1 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iklwa
+		trigger = { has_country_flag = acw_arma_s3_2 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_shamshir
+		trigger = { has_country_flag = acw_arma_s3_3 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_jezail
+		trigger = { has_country_flag = acw_arma_s3_4 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mughal_talwar
+		trigger = { has_country_flag = acw_arma_s3_5 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_petronel
+		trigger = { has_country_flag = acw_arma_s3_6 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bayonet
+		trigger = { has_country_flag = acw_arma_s3_7 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katar
+		trigger = { has_country_flag = acw_arma_s3_8 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katana
+		trigger = { has_country_flag = acw_arma_s3_9 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_african_throwing_knives
+		trigger = { has_country_flag = acw_arma_s3_10 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_falcata
+		trigger = { has_country_flag = acw_arma_s3_11 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_wagenburg
+		trigger = { has_country_flag = acw_arma_s3_12 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_fo_lang_ji
+		trigger = { has_country_flag = acw_arma_s3_13 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iron_fan
+		trigger = { has_country_flag = acw_arma_s3_14 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_macuahuitl
+		trigger = { has_country_flag = acw_arma_s3_15 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_yatagan
+		trigger = { has_country_flag = acw_arma_s3_16 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mandau
+		trigger = { has_country_flag = acw_arma_s3_17 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khopesh
+		trigger = { has_country_flag = acw_arma_s3_18 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_naginata
+		trigger = { has_country_flag = acw_arma_s3_19 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kpinga
+		trigger = { has_country_flag = acw_arma_s3_20 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_maasai_shield
+		trigger = { has_country_flag = acw_arma_s3_21 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bakuba_spears
+		trigger = { has_country_flag = acw_arma_s3_22 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus
+		trigger = { has_country_flag = acw_arma_s3_23 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_a_croc
+		trigger = { has_country_flag = acw_arma_s3_24 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_zweihander
+		trigger = { has_country_flag = acw_arma_s3_25 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_longsword
+		trigger = { has_country_flag = acw_arma_s3_26 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_morion_helmet
+		trigger = { has_country_flag = acw_arma_s3_27 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dha_sword
+		trigger = { has_country_flag = acw_arma_s3_28 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khanda_sword
+		trigger = { has_country_flag = acw_arma_s3_29 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_barong_sword
+		trigger = { has_country_flag = acw_arma_s3_30 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_qama
+		trigger = { has_country_flag = acw_arma_s3_31 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_french_charleville_musket
+		trigger = { has_country_flag = acw_arma_s3_32 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_grapeshot
+		trigger = { has_country_flag = acw_arma_s3_33 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_howitzer
+		trigger = { has_country_flag = acw_arma_s3_34 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_brown_bess_musket
+		trigger = { has_country_flag = acw_arma_s3_35 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bowie_knife
+		trigger = { has_country_flag = acw_arma_s3_36 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kukri
+		trigger = { has_country_flag = acw_arma_s3_37 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_chu_ko_nu
+		trigger = { has_country_flag = acw_arma_s3_38 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_nock_gun
+		trigger = { has_country_flag = acw_arma_s3_39 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dragoon_musket
+		trigger = { has_country_flag = acw_arma_s3_40 }
+	}
+
+}
+
+
+defined_text = {
+    name = acw_get_arm_slot3_tt
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_crouching_tiger_cannon_desc
+		trigger = { has_country_flag = acw_arma_s3_1 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iklwa_desc
+		trigger = { has_country_flag = acw_arma_s3_2 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_shamshir_desc
+		trigger = { has_country_flag = acw_arma_s3_3 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_jezail_desc
+		trigger = { has_country_flag = acw_arma_s3_4 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mughal_talwar_desc
+		trigger = { has_country_flag = acw_arma_s3_5 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_petronel_desc
+		trigger = { has_country_flag = acw_arma_s3_6 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bayonet_desc
+		trigger = { has_country_flag = acw_arma_s3_7 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katar_desc
+		trigger = { has_country_flag = acw_arma_s3_8 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katana_desc
+		trigger = { has_country_flag = acw_arma_s3_9 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_african_throwing_knives_desc
+		trigger = { has_country_flag = acw_arma_s3_10 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_falcata_desc
+		trigger = { has_country_flag = acw_arma_s3_11 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_wagenburg_desc
+		trigger = { has_country_flag = acw_arma_s3_12 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_fo_lang_ji_desc
+		trigger = { has_country_flag = acw_arma_s3_13 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iron_fan_desc
+		trigger = { has_country_flag = acw_arma_s3_14 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_macuahuitl_desc
+		trigger = { has_country_flag = acw_arma_s3_15 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_yatagan_desc
+		trigger = { has_country_flag = acw_arma_s3_16 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mandau_desc
+		trigger = { has_country_flag = acw_arma_s3_17 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khopesh_desc
+		trigger = { has_country_flag = acw_arma_s3_18 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_naginata_desc
+		trigger = { has_country_flag = acw_arma_s3_19 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kpinga_desc
+		trigger = { has_country_flag = acw_arma_s3_20 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_maasai_shield_desc
+		trigger = { has_country_flag = acw_arma_s3_21 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bakuba_spears_desc
+		trigger = { has_country_flag = acw_arma_s3_22 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_desc
+		trigger = { has_country_flag = acw_arma_s3_23 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_a_croc_desc
+		trigger = { has_country_flag = acw_arma_s3_24 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_zweihander_desc
+		trigger = { has_country_flag = acw_arma_s3_25 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_longsword_desc
+		trigger = { has_country_flag = acw_arma_s3_26 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_morion_helmet_desc
+		trigger = { has_country_flag = acw_arma_s3_27 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dha_sword_desc
+		trigger = { has_country_flag = acw_arma_s3_28 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khanda_sword_desc
+		trigger = { has_country_flag = acw_arma_s3_29 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_barong_sword_desc
+		trigger = { has_country_flag = acw_arma_s3_30 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_qama_desc
+		trigger = { has_country_flag = acw_arma_s3_31 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_french_charleville_musket_desc
+		trigger = { has_country_flag = acw_arma_s3_32 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_grapeshot_desc
+		trigger = { has_country_flag = acw_arma_s3_33 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_howitzer_desc
+		trigger = { has_country_flag = acw_arma_s3_34 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_brown_bess_musket_desc
+		trigger = { has_country_flag = acw_arma_s3_35 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bowie_knife_desc
+		trigger = { has_country_flag = acw_arma_s3_36 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kukri_desc
+		trigger = { has_country_flag = acw_arma_s3_37 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_chu_ko_nu_desc
+		trigger = { has_country_flag = acw_arma_s3_38 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_nock_gun_desc
+		trigger = { has_country_flag = acw_arma_s3_39 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dragoon_musket_desc
+		trigger = { has_country_flag = acw_arma_s3_40 }
+	}
+
+}
+
+
+defined_text = {
+    name = acw_get_arm_slot3_modifier
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_crouching_tiger_cannon_modifier
+		trigger = { has_country_flag = acw_arma_s3_1 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iklwa_modifier
+		trigger = { has_country_flag = acw_arma_s3_2 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_shamshir_modifier
+		trigger = { has_country_flag = acw_arma_s3_3 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_jezail_modifier
+		trigger = { has_country_flag = acw_arma_s3_4 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mughal_talwar_modifier
+		trigger = { has_country_flag = acw_arma_s3_5 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_petronel_modifier
+		trigger = { has_country_flag = acw_arma_s3_6 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bayonet_modifier
+		trigger = { has_country_flag = acw_arma_s3_7 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katar_modifier
+		trigger = { has_country_flag = acw_arma_s3_8 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katana_modifier
+		trigger = { has_country_flag = acw_arma_s3_9 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_african_throwing_knives_modifier
+		trigger = { has_country_flag = acw_arma_s3_10 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_falcata_modifier
+		trigger = { has_country_flag = acw_arma_s3_11 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_wagenburg_modifier
+		trigger = { has_country_flag = acw_arma_s3_12 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_fo_lang_ji_modifier
+		trigger = { has_country_flag = acw_arma_s3_13 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iron_fan_modifier
+		trigger = { has_country_flag = acw_arma_s3_14 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_macuahuitl_modifier
+		trigger = { has_country_flag = acw_arma_s3_15 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_yatagan_modifier
+		trigger = { has_country_flag = acw_arma_s3_16 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mandau_modifier
+		trigger = { has_country_flag = acw_arma_s3_17 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khopesh_modifier
+		trigger = { has_country_flag = acw_arma_s3_18 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_naginata_modifier
+		trigger = { has_country_flag = acw_arma_s3_19 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kpinga_modifier
+		trigger = { has_country_flag = acw_arma_s3_20 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_maasai_shield_modifier
+		trigger = { has_country_flag = acw_arma_s3_21 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bakuba_spears_modifier
+		trigger = { has_country_flag = acw_arma_s3_22 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_modifier
+		trigger = { has_country_flag = acw_arma_s3_23 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_a_croc_modifier
+		trigger = { has_country_flag = acw_arma_s3_24 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_zweihander_modifier
+		trigger = { has_country_flag = acw_arma_s3_25 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_longsword_modifier
+		trigger = { has_country_flag = acw_arma_s3_26 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_morion_helmet_modifier
+		trigger = { has_country_flag = acw_arma_s3_27 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dha_sword_modifier
+		trigger = { has_country_flag = acw_arma_s3_28 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khanda_sword_modifier
+		trigger = { has_country_flag = acw_arma_s3_29 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_barong_sword_modifier
+		trigger = { has_country_flag = acw_arma_s3_30 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_qama_modifier
+		trigger = { has_country_flag = acw_arma_s3_31 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_french_charleville_musket_modifier
+		trigger = { has_country_flag = acw_arma_s3_32 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_grapeshot_modifier
+		trigger = { has_country_flag = acw_arma_s3_33 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_howitzer_modifier
+		trigger = { has_country_flag = acw_arma_s3_34 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_brown_bess_musket_modifier
+		trigger = { has_country_flag = acw_arma_s3_35 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bowie_knife_modifier
+		trigger = { has_country_flag = acw_arma_s3_36 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kukri_modifier
+		trigger = { has_country_flag = acw_arma_s3_37 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_chu_ko_nu_modifier
+		trigger = { has_country_flag = acw_arma_s3_38 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_nock_gun_modifier
+		trigger = { has_country_flag = acw_arma_s3_39 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dragoon_musket_modifier
+		trigger = { has_country_flag = acw_arma_s3_40 }
+	}
+
+}
+
+#arma slot4 localisation
+defined_text = {
+    name = acw_get_arm_slot4
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_nothing_yet
+		trigger = { acw_arma_slot_4_filled = no }
+	}
+	
+	text = {
+		localisation_key = acw_arma_crouching_tiger_cannon
+		trigger = { has_country_flag = acw_arma_s4_1 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iklwa
+		trigger = { has_country_flag = acw_arma_s4_2 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_shamshir
+		trigger = { has_country_flag = acw_arma_s4_3 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_jezail
+		trigger = { has_country_flag = acw_arma_s4_4 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mughal_talwar
+		trigger = { has_country_flag = acw_arma_s4_5 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_petronel
+		trigger = { has_country_flag = acw_arma_s4_6 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bayonet
+		trigger = { has_country_flag = acw_arma_s4_7 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katar
+		trigger = { has_country_flag = acw_arma_s4_8 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katana
+		trigger = { has_country_flag = acw_arma_s4_9 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_african_throwing_knives
+		trigger = { has_country_flag = acw_arma_s4_10 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_falcata
+		trigger = { has_country_flag = acw_arma_s4_11 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_wagenburg
+		trigger = { has_country_flag = acw_arma_s4_12 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_fo_lang_ji
+		trigger = { has_country_flag = acw_arma_s4_13 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iron_fan
+		trigger = { has_country_flag = acw_arma_s4_14 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_macuahuitl
+		trigger = { has_country_flag = acw_arma_s4_15 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_yatagan
+		trigger = { has_country_flag = acw_arma_s4_16 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mandau
+		trigger = { has_country_flag = acw_arma_s4_17 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khopesh
+		trigger = { has_country_flag = acw_arma_s4_18 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_naginata
+		trigger = { has_country_flag = acw_arma_s4_19 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kpinga
+		trigger = { has_country_flag = acw_arma_s4_20 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_maasai_shield
+		trigger = { has_country_flag = acw_arma_s4_21 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bakuba_spears
+		trigger = { has_country_flag = acw_arma_s4_22 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus
+		trigger = { has_country_flag = acw_arma_s4_23 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_a_croc
+		trigger = { has_country_flag = acw_arma_s4_24 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_zweihander
+		trigger = { has_country_flag = acw_arma_s4_25 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_longsword
+		trigger = { has_country_flag = acw_arma_s4_26 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_morion_helmet
+		trigger = { has_country_flag = acw_arma_s4_27 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dha_sword
+		trigger = { has_country_flag = acw_arma_s4_28 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khanda_sword
+		trigger = { has_country_flag = acw_arma_s4_29 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_barong_sword
+		trigger = { has_country_flag = acw_arma_s4_30 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_qama
+		trigger = { has_country_flag = acw_arma_s4_31 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_french_charleville_musket
+		trigger = { has_country_flag = acw_arma_s4_32 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_grapeshot
+		trigger = { has_country_flag = acw_arma_s4_33 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_howitzer
+		trigger = { has_country_flag = acw_arma_s4_34 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_brown_bess_musket
+		trigger = { has_country_flag = acw_arma_s4_35 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bowie_knife
+		trigger = { has_country_flag = acw_arma_s4_36 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kukri
+		trigger = { has_country_flag = acw_arma_s4_37 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_chu_ko_nu
+		trigger = { has_country_flag = acw_arma_s4_38 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_nock_gun
+		trigger = { has_country_flag = acw_arma_s4_39 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dragoon_musket
+		trigger = { has_country_flag = acw_arma_s4_40 }
+	}
+
+}
+
+
+defined_text = {
+    name = acw_get_arm_slot4_tt
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_crouching_tiger_cannon_desc
+		trigger = { has_country_flag = acw_arma_s4_1 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iklwa_desc
+		trigger = { has_country_flag = acw_arma_s4_2 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_shamshir_desc
+		trigger = { has_country_flag = acw_arma_s4_3 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_jezail_desc
+		trigger = { has_country_flag = acw_arma_s4_4 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mughal_talwar_desc
+		trigger = { has_country_flag = acw_arma_s4_5 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_petronel_desc
+		trigger = { has_country_flag = acw_arma_s4_6 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bayonet_desc
+		trigger = { has_country_flag = acw_arma_s4_7 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katar_desc
+		trigger = { has_country_flag = acw_arma_s4_8 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katana_desc
+		trigger = { has_country_flag = acw_arma_s4_9 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_african_throwing_knives_desc
+		trigger = { has_country_flag = acw_arma_s4_10 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_falcata_desc
+		trigger = { has_country_flag = acw_arma_s4_11 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_wagenburg_desc
+		trigger = { has_country_flag = acw_arma_s4_12 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_fo_lang_ji_desc
+		trigger = { has_country_flag = acw_arma_s4_13 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iron_fan_desc
+		trigger = { has_country_flag = acw_arma_s4_14 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_macuahuitl_desc
+		trigger = { has_country_flag = acw_arma_s4_15 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_yatagan_desc
+		trigger = { has_country_flag = acw_arma_s4_16 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mandau_desc
+		trigger = { has_country_flag = acw_arma_s4_17 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khopesh_desc
+		trigger = { has_country_flag = acw_arma_s4_18 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_naginata_desc
+		trigger = { has_country_flag = acw_arma_s4_19 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kpinga_desc
+		trigger = { has_country_flag = acw_arma_s4_20 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_maasai_shield_desc
+		trigger = { has_country_flag = acw_arma_s4_21 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bakuba_spears_desc
+		trigger = { has_country_flag = acw_arma_s4_22 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_desc
+		trigger = { has_country_flag = acw_arma_s4_23 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_a_croc_desc
+		trigger = { has_country_flag = acw_arma_s4_24 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_zweihander_desc
+		trigger = { has_country_flag = acw_arma_s4_25 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_longsword_desc
+		trigger = { has_country_flag = acw_arma_s4_26 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_morion_helmet_desc
+		trigger = { has_country_flag = acw_arma_s4_27 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dha_sword_desc
+		trigger = { has_country_flag = acw_arma_s4_28 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khanda_sword_desc
+		trigger = { has_country_flag = acw_arma_s4_29 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_barong_sword_desc
+		trigger = { has_country_flag = acw_arma_s4_30 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_qama_desc
+		trigger = { has_country_flag = acw_arma_s4_31 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_french_charleville_musket_desc
+		trigger = { has_country_flag = acw_arma_s4_32 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_grapeshot_desc
+		trigger = { has_country_flag = acw_arma_s4_33 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_howitzer_desc
+		trigger = { has_country_flag = acw_arma_s4_34 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_brown_bess_musket_desc
+		trigger = { has_country_flag = acw_arma_s4_35 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bowie_knife_desc
+		trigger = { has_country_flag = acw_arma_s4_36 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kukri_desc
+		trigger = { has_country_flag = acw_arma_s4_37 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_chu_ko_nu_desc
+		trigger = { has_country_flag = acw_arma_s4_38 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_nock_gun_desc
+		trigger = { has_country_flag = acw_arma_s4_39 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dragoon_musket_desc
+		trigger = { has_country_flag = acw_arma_s4_40 }
+	}
+
+}
+
+
+defined_text = {
+    name = acw_get_arm_slot4_modifier
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_crouching_tiger_cannon_modifier
+		trigger = { has_country_flag = acw_arma_s4_1 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iklwa_modifier
+		trigger = { has_country_flag = acw_arma_s4_2 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_shamshir_modifier
+		trigger = { has_country_flag = acw_arma_s4_3 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_jezail_modifier
+		trigger = { has_country_flag = acw_arma_s4_4 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mughal_talwar_modifier
+		trigger = { has_country_flag = acw_arma_s4_5 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_petronel_modifier
+		trigger = { has_country_flag = acw_arma_s4_6 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bayonet_modifier
+		trigger = { has_country_flag = acw_arma_s4_7 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katar_modifier
+		trigger = { has_country_flag = acw_arma_s4_8 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_katana_modifier
+		trigger = { has_country_flag = acw_arma_s4_9 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_african_throwing_knives_modifier
+		trigger = { has_country_flag = acw_arma_s4_10 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_falcata_modifier
+		trigger = { has_country_flag = acw_arma_s4_11 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_wagenburg_modifier
+		trigger = { has_country_flag = acw_arma_s4_12 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_fo_lang_ji_modifier
+		trigger = { has_country_flag = acw_arma_s4_13 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_iron_fan_modifier
+		trigger = { has_country_flag = acw_arma_s4_14 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_macuahuitl_modifier
+		trigger = { has_country_flag = acw_arma_s4_15 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_yatagan_modifier
+		trigger = { has_country_flag = acw_arma_s4_16 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_mandau_modifier
+		trigger = { has_country_flag = acw_arma_s4_17 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khopesh_modifier
+		trigger = { has_country_flag = acw_arma_s4_18 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_naginata_modifier
+		trigger = { has_country_flag = acw_arma_s4_19 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kpinga_modifier
+		trigger = { has_country_flag = acw_arma_s4_20 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_maasai_shield_modifier
+		trigger = { has_country_flag = acw_arma_s4_21 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bakuba_spears_modifier
+		trigger = { has_country_flag = acw_arma_s4_22 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_modifier
+		trigger = { has_country_flag = acw_arma_s4_23 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_arquebus_a_croc_modifier
+		trigger = { has_country_flag = acw_arma_s4_24 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_zweihander_modifier
+		trigger = { has_country_flag = acw_arma_s4_25 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_longsword_modifier
+		trigger = { has_country_flag = acw_arma_s4_26 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_morion_helmet_modifier
+		trigger = { has_country_flag = acw_arma_s4_27 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dha_sword_modifier
+		trigger = { has_country_flag = acw_arma_s4_28 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_khanda_sword_modifier
+		trigger = { has_country_flag = acw_arma_s4_29 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_barong_sword_modifier
+		trigger = { has_country_flag = acw_arma_s4_30 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_qama_modifier
+		trigger = { has_country_flag = acw_arma_s4_31 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_french_charleville_musket_modifier
+		trigger = { has_country_flag = acw_arma_s4_32 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_grapeshot_modifier
+		trigger = { has_country_flag = acw_arma_s4_33 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_howitzer_modifier
+		trigger = { has_country_flag = acw_arma_s4_34 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_brown_bess_musket_modifier
+		trigger = { has_country_flag = acw_arma_s4_35 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_bowie_knife_modifier
+		trigger = { has_country_flag = acw_arma_s4_36 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_kukri_modifier
+		trigger = { has_country_flag = acw_arma_s4_37 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_chu_ko_nu_modifier
+		trigger = { has_country_flag = acw_arma_s4_38 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_nock_gun_modifier
+		trigger = { has_country_flag = acw_arma_s4_39 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_dragoon_musket_modifier
+		trigger = { has_country_flag = acw_arma_s4_40 }
+	}
+
+}
+
+defined_text = {
+ name = acw_get_arm_xp_modifier_slot_1
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_xp_modifier_mod
+		trigger = {  acw_arma_slot_1_filled = yes }
+	}
+
+	text = {
+		localisation_key = acw_arma_xp_modifier_mod_empty
+		trigger = {  always = yes }
+	}	
+}
+
+defined_text = {
+ name = acw_get_arm_xp_modifier_slot_2
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_xp_modifier_mod
+		trigger = {  acw_arma_slot_2_filled = yes }
+	}
+
+	text = {
+		localisation_key = acw_arma_xp_modifier_mod_empty
+		trigger = {  always = yes }
+	}	
+}
+
+defined_text = {
+ name = acw_get_arm_xp_modifier_slot_3
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_xp_modifier_mod
+		trigger = {  acw_arma_slot_3_filled = yes }
+	}	
+	
+	text = {
+		localisation_key = acw_arma_xp_modifier_mod_empty
+		trigger = {  always = yes }
+	}	
+}
+
+defined_text = {
+ name = acw_get_arm_xp_modifier_slot_4
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_xp_modifier_mod
+		trigger = {  acw_arma_slot_4_filled = yes }
+	}	
+	
+	text = {
+		localisation_key = acw_arma_xp_modifier_mod_empty
+		trigger = {  always = yes }
+	}	
+}
+
+defined_text = {
+ name = acw_get_arma_age_s1
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_age_discovery
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s1_11
+					 has_country_flag = acw_arma_s1_12
+					 has_country_flag = acw_arma_s1_13
+					 has_country_flag = acw_arma_s1_14
+					 has_country_flag = acw_arma_s1_15
+					 has_country_flag = acw_arma_s1_16
+					 has_country_flag = acw_arma_s1_17
+					 has_country_flag = acw_arma_s1_18
+					 has_country_flag = acw_arma_s1_19
+					 has_country_flag = acw_arma_s1_20
+					 }
+				}
+	}	
+	
+	text = {
+		localisation_key = acw_arma_age_reformation
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s1_21
+					 has_country_flag = acw_arma_s1_22
+					 has_country_flag = acw_arma_s1_23
+					 has_country_flag = acw_arma_s1_24
+					 has_country_flag = acw_arma_s1_25
+					 has_country_flag = acw_arma_s1_26
+					 has_country_flag = acw_arma_s1_27
+					 has_country_flag = acw_arma_s1_28
+					 has_country_flag = acw_arma_s1_29
+					 has_country_flag = acw_arma_s1_30
+					 }
+				}
+	}	
+	
+	text = {
+		localisation_key = acw_arma_age_absolutism
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s1_1
+					 has_country_flag = acw_arma_s1_2
+					 has_country_flag = acw_arma_s1_3
+					 has_country_flag = acw_arma_s1_4
+					 has_country_flag = acw_arma_s1_5
+					 has_country_flag = acw_arma_s1_6
+					 has_country_flag = acw_arma_s1_7
+					 has_country_flag = acw_arma_s1_8
+					 has_country_flag = acw_arma_s1_9
+					 has_country_flag = acw_arma_s1_10
+					 }
+				}
+	}	
+	
+	text = {
+		localisation_key = acw_arma_age_revolutions
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s1_31
+					 has_country_flag = acw_arma_s1_32
+					 has_country_flag = acw_arma_s1_33
+					 has_country_flag = acw_arma_s1_34
+					 has_country_flag = acw_arma_s1_35
+					 has_country_flag = acw_arma_s1_36
+					 has_country_flag = acw_arma_s1_37
+					 has_country_flag = acw_arma_s1_38
+					 has_country_flag = acw_arma_s1_39
+					 has_country_flag = acw_arma_s1_40
+					 }
+				}
+	}	
+}
+
+defined_text = {
+ name = acw_get_arma_age_s2
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_age_discovery
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s2_11
+					 has_country_flag = acw_arma_s2_12
+					 has_country_flag = acw_arma_s2_13
+					 has_country_flag = acw_arma_s2_14
+					 has_country_flag = acw_arma_s2_15
+					 has_country_flag = acw_arma_s2_16
+					 has_country_flag = acw_arma_s2_17
+					 has_country_flag = acw_arma_s2_18
+					 has_country_flag = acw_arma_s2_19
+					 has_country_flag = acw_arma_s2_20
+					 }
+				}
+	}	
+	
+	text = {
+		localisation_key = acw_arma_age_reformation
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s2_21
+					 has_country_flag = acw_arma_s2_22
+					 has_country_flag = acw_arma_s2_23
+					 has_country_flag = acw_arma_s2_24
+					 has_country_flag = acw_arma_s2_25
+					 has_country_flag = acw_arma_s2_26
+					 has_country_flag = acw_arma_s2_27
+					 has_country_flag = acw_arma_s2_28
+					 has_country_flag = acw_arma_s2_29
+					 has_country_flag = acw_arma_s2_30
+					 }
+				}
+	}	
+	
+	text = {
+		localisation_key = acw_arma_age_absolutism
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s2_1
+					 has_country_flag = acw_arma_s2_2
+					 has_country_flag = acw_arma_s2_3
+					 has_country_flag = acw_arma_s2_4
+					 has_country_flag = acw_arma_s2_5
+					 has_country_flag = acw_arma_s2_6
+					 has_country_flag = acw_arma_s2_7
+					 has_country_flag = acw_arma_s2_8
+					 has_country_flag = acw_arma_s2_9
+					 has_country_flag = acw_arma_s2_10
+					 }
+				}
+	}	
+	
+	text = {
+		localisation_key = acw_arma_age_revolutions
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s2_31
+					 has_country_flag = acw_arma_s2_32
+					 has_country_flag = acw_arma_s2_33
+					 has_country_flag = acw_arma_s2_34
+					 has_country_flag = acw_arma_s2_35
+					 has_country_flag = acw_arma_s2_36
+					 has_country_flag = acw_arma_s2_37
+					 has_country_flag = acw_arma_s2_38
+					 has_country_flag = acw_arma_s2_39
+					 has_country_flag = acw_arma_s2_40
+					 }
+				}
+	}	
+}
+
+
+
+defined_text = {
+ name = acw_get_arma_age_s4
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_age_discovery
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s4_11
+					 has_country_flag = acw_arma_s4_12
+					 has_country_flag = acw_arma_s4_13
+					 has_country_flag = acw_arma_s4_14
+					 has_country_flag = acw_arma_s4_15
+					 has_country_flag = acw_arma_s4_16
+					 has_country_flag = acw_arma_s4_17
+					 has_country_flag = acw_arma_s4_18
+					 has_country_flag = acw_arma_s4_19
+					 has_country_flag = acw_arma_s4_20
+					 }
+				}
+	}	
+	
+	text = {
+		localisation_key = acw_arma_age_reformation
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s4_21
+					 has_country_flag = acw_arma_s4_22
+					 has_country_flag = acw_arma_s4_23
+					 has_country_flag = acw_arma_s4_24
+					 has_country_flag = acw_arma_s4_25
+					 has_country_flag = acw_arma_s4_26
+					 has_country_flag = acw_arma_s4_27
+					 has_country_flag = acw_arma_s4_28
+					 has_country_flag = acw_arma_s4_29
+					 has_country_flag = acw_arma_s4_30
+					 }
+				}
+	}	
+	
+	text = {
+		localisation_key = acw_arma_age_absolutism
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s4_1
+					 has_country_flag = acw_arma_s4_2
+					 has_country_flag = acw_arma_s4_3
+					 has_country_flag = acw_arma_s4_4
+					 has_country_flag = acw_arma_s4_5
+					 has_country_flag = acw_arma_s4_6
+					 has_country_flag = acw_arma_s4_7
+					 has_country_flag = acw_arma_s4_8
+					 has_country_flag = acw_arma_s4_9
+					 has_country_flag = acw_arma_s4_10
+					 }
+				}
+	}	
+	
+	text = {
+		localisation_key = acw_arma_age_revolutions
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s4_31
+					 has_country_flag = acw_arma_s4_32
+					 has_country_flag = acw_arma_s4_33
+					 has_country_flag = acw_arma_s4_34
+					 has_country_flag = acw_arma_s4_35
+					 has_country_flag = acw_arma_s4_36
+					 has_country_flag = acw_arma_s4_37
+					 has_country_flag = acw_arma_s4_38
+					 has_country_flag = acw_arma_s4_39
+					 has_country_flag = acw_arma_s4_40
+					 }
+				}
+	}	
 }
