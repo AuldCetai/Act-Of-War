@@ -7393,6 +7393,7 @@ custom_icon = {
 #hd slot 1
 custom_icon = {
 	name = acw_hd_image_1
+	tooltip = acw_hd_slot_1_tt
     potential = {	has_country_flag = acw_background_open_already} 
 	frame = {	number = 2
 				trigger = {has_country_flag = acw_hd_s1_1}
@@ -7478,6 +7479,7 @@ custom_icon = {
 #hd slot 2
 custom_icon = {
 	name = acw_hd_image_2
+	tooltip = acw_hd_slot_2_tt
     potential = {	has_country_flag = acw_background_open_already} 
 	frame = {	number = 2
 				trigger = {has_country_flag = acw_hd_s2_1}
@@ -7563,6 +7565,7 @@ custom_icon = {
 #hd slot 3
 custom_icon = {
 	name = acw_hd_image_3
+	tooltip = acw_hd_slot_3_tt
     potential = {	has_country_flag = acw_background_open_already} 
 	frame = {	number = 2
 				trigger = {has_country_flag = acw_hd_s3_1}

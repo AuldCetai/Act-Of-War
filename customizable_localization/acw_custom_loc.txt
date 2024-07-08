@@ -107,6 +107,115 @@ defined_text = {
 	
 }
 
+#hd slot 1 tt
+
+defined_text = {
+    name = acw_get_hd_slot_1_tt
+	random = no
+	
+	text = {
+		localisation_key =  acw_hd_1.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_1}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_2.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_2}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_3.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_3}}
+	}
+
+	text = {
+		localisation_key =  acw_hd_4.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_4}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_5.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_5}}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_hd_6.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_6}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_7.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_7}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_8.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_8}}
+	}
+	
+	text = {
+		localisation_key = 	acw_hd_9.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_9}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_10.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_10}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_11.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_11}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_12.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_12}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_13.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_13}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_14.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_14}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_15.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_15}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_16.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_16}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_17.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_17}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_18.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_18}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_19.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_19}}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_20.t
+		trigger = {trigger = {has_country_flag = acw_hd_s1_20}}
+	}
+}
+
+
 
 #cf slot 1 tt
 defined_text = {
