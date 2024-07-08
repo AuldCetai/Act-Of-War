@@ -114,104 +114,971 @@ defined_text = {
 	random = no
 	
 	text = {
+				localisation_key =  acw_hd_none
+				trigger = {acw_hd_slot_1_filled = no}
+				}
+	
+	text = {
 		localisation_key =  acw_hd_1.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_1}}
+		trigger =  {has_country_flag = acw_hd_s1_1}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_2.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_2}}
+		trigger =  {has_country_flag = acw_hd_s1_2}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_3.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_3}}
+		trigger =  {has_country_flag = acw_hd_s1_3}
 	}
 
 	text = {
 		localisation_key =  acw_hd_4.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_4}}
+		trigger =  {has_country_flag = acw_hd_s1_4}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_5.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_5}}
+		trigger =  {has_country_flag = acw_hd_s1_5}
 	}
 	
 	
 	text = {
 		localisation_key =  acw_hd_6.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_6}}
+		trigger =  {has_country_flag = acw_hd_s1_6}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_7.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_7}}
+		trigger =  {has_country_flag = acw_hd_s1_7}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_8.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_8}}
+		trigger =  {has_country_flag = acw_hd_s1_8}
 	}
 	
 	text = {
 		localisation_key = 	acw_hd_9.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_9}}
+		trigger =  {has_country_flag = acw_hd_s1_9}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_10.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_10}}
+		trigger =  {has_country_flag = acw_hd_s1_10}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_11.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_11}}
+		trigger =  {has_country_flag = acw_hd_s1_11}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_12.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_12}}
+		trigger =  {has_country_flag = acw_hd_s1_12}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_13.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_13}}
+		trigger =  {has_country_flag = acw_hd_s1_13}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_14.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_14}}
+		trigger =  {has_country_flag = acw_hd_s1_14}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_15.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_15}}
+		trigger =  {has_country_flag = acw_hd_s1_15}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_16.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_16}}
+		trigger =  {has_country_flag = acw_hd_s1_16}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_17.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_17}}
+		trigger =  {has_country_flag = acw_hd_s1_17}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_18.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_18}}
+		trigger =  {has_country_flag = acw_hd_s1_18}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_19.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_19}}
+		trigger =  {has_country_flag = acw_hd_s1_19}
 	}
 	
 	text = {
 		localisation_key =  acw_hd_20.t
-		trigger = {trigger = {has_country_flag = acw_hd_s1_20}}
+		trigger =  {has_country_flag = acw_hd_s1_20}
+	}
+}
+
+defined_text = {
+    name = acw_get_hd_slot_1_auth
+	random = no
+	
+	text = {
+		localisation_key =  acw_hd_1_auth
+		trigger =  {has_country_flag = acw_hd_s1_1}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_2_auth
+		trigger =  {has_country_flag = acw_hd_s1_2}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_3_auth
+		trigger =  {has_country_flag = acw_hd_s1_3}
+	}
+
+	text = {
+		localisation_key =  acw_hd_4_auth
+		trigger =  {has_country_flag = acw_hd_s1_4}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_5_auth
+		trigger =  {has_country_flag = acw_hd_s1_5}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_hd_6_auth
+		trigger =  {has_country_flag = acw_hd_s1_6}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_7_auth
+		trigger =  {has_country_flag = acw_hd_s1_7}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_8_auth
+		trigger =  {has_country_flag = acw_hd_s1_8}
+	}
+	
+	text = {
+		localisation_key = 	acw_hd_9_auth
+		trigger =  {has_country_flag = acw_hd_s1_9}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_10_auth
+		trigger =  {has_country_flag = acw_hd_s1_10}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_11_auth
+		trigger =  {has_country_flag = acw_hd_s1_11}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_12_auth
+		trigger =  {has_country_flag = acw_hd_s1_12}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_13_auth
+		trigger =  {has_country_flag = acw_hd_s1_13}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_14_auth
+		trigger =  {has_country_flag = acw_hd_s1_14}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_15_auth
+		trigger =  {has_country_flag = acw_hd_s1_15}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_16_auth
+		trigger =  {has_country_flag = acw_hd_s1_16}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_17_auth
+		trigger =  {has_country_flag = acw_hd_s1_17}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_18_auth
+		trigger =  {has_country_flag = acw_hd_s1_18}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_19_auth
+		trigger =  {has_country_flag = acw_hd_s1_19}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_20_auth
+		trigger =  {has_country_flag = acw_hd_s1_20}
+	}
+}
+
+defined_text = {
+    name = acw_get_hd_slot_1_modifier
+	random = no
+	
+	text = {
+		localisation_key =  acw_hd_1_modifier
+		trigger =  {has_country_flag = acw_hd_s1_1}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_2_modifier
+		trigger =  {has_country_flag = acw_hd_s1_2}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_3_modifier
+		trigger =  {has_country_flag = acw_hd_s1_3}
+	}
+
+	text = {
+		localisation_key =  acw_hd_4_modifier
+		trigger =  {has_country_flag = acw_hd_s1_4}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_5_modifier
+		trigger =  {has_country_flag = acw_hd_s1_5}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_hd_6_modifier
+		trigger =  {has_country_flag = acw_hd_s1_6}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_7_modifier
+		trigger =  {has_country_flag = acw_hd_s1_7}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_8_modifier
+		trigger =  {has_country_flag = acw_hd_s1_8}
+	}
+	
+	text = {
+		localisation_key = 	acw_hd_9_modifier
+		trigger =  {has_country_flag = acw_hd_s1_9}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_10_modifier
+		trigger =  {has_country_flag = acw_hd_s1_10}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_11_modifier
+		trigger =  {has_country_flag = acw_hd_s1_11}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_12_modifier
+		trigger =  {has_country_flag = acw_hd_s1_12}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_13_modifier
+		trigger =  {has_country_flag = acw_hd_s1_13}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_14_modifier
+		trigger =  {has_country_flag = acw_hd_s1_14}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_15_modifier
+		trigger =  {has_country_flag = acw_hd_s1_15}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_16_modifier
+		trigger =  {has_country_flag = acw_hd_s1_16}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_17_modifier
+		trigger =  {has_country_flag = acw_hd_s1_17}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_18_modifier
+		trigger =  {has_country_flag = acw_hd_s1_18}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_19_modifier
+		trigger =  {has_country_flag = acw_hd_s1_19}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_20_modifier
+		trigger =  {has_country_flag = acw_hd_s1_20}
+	}
+}
+
+#hd slot 2 tt
+
+defined_text = {
+    name = acw_get_hd_slot_2_tt
+	random = no
+	
+	text = {
+				localisation_key =  acw_hd_none
+				trigger = {acw_hd_slot_2_filled = no}
+				}
+	
+	text = {
+		localisation_key =  acw_hd_1.t
+		trigger =  {has_country_flag = acw_hd_s2_1}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_2.t
+		trigger =  {has_country_flag = acw_hd_s2_2}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_3.t
+		trigger =  {has_country_flag = acw_hd_s2_3}
+	}
+
+	text = {
+		localisation_key =  acw_hd_4.t
+		trigger =  {has_country_flag = acw_hd_s2_4}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_5.t
+		trigger =  {has_country_flag = acw_hd_s2_5}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_hd_6.t
+		trigger =  {has_country_flag = acw_hd_s2_6}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_7.t
+		trigger =  {has_country_flag = acw_hd_s2_7}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_8.t
+		trigger =  {has_country_flag = acw_hd_s2_8}
+	}
+	
+	text = {
+		localisation_key = 	acw_hd_9.t
+		trigger =  {has_country_flag = acw_hd_s2_9}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_10.t
+		trigger =  {has_country_flag = acw_hd_s2_10}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_11.t
+		trigger =  {has_country_flag = acw_hd_s2_11}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_12.t
+		trigger =  {has_country_flag = acw_hd_s2_12}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_13.t
+		trigger =  {has_country_flag = acw_hd_s2_13}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_14.t
+		trigger =  {has_country_flag = acw_hd_s2_14}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_15.t
+		trigger =  {has_country_flag = acw_hd_s2_15}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_16.t
+		trigger =  {has_country_flag = acw_hd_s2_16}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_17.t
+		trigger =  {has_country_flag = acw_hd_s2_17}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_18.t
+		trigger =  {has_country_flag = acw_hd_s2_18}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_19.t
+		trigger =  {has_country_flag = acw_hd_s2_19}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_20.t
+		trigger =  {has_country_flag = acw_hd_s2_20}
+	}
+}
+
+defined_text = {
+    name = acw_get_hd_slot_2_auth
+	random = no
+	
+	text = {
+		localisation_key =  acw_hd_1_auth
+		trigger =  {has_country_flag = acw_hd_s2_1}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_2_auth
+		trigger =  {has_country_flag = acw_hd_s2_2}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_3_auth
+		trigger =  {has_country_flag = acw_hd_s2_3}
+	}
+
+	text = {
+		localisation_key =  acw_hd_4_auth
+		trigger =  {has_country_flag = acw_hd_s2_4}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_5_auth
+		trigger =  {has_country_flag = acw_hd_s2_5}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_hd_6_auth
+		trigger =  {has_country_flag = acw_hd_s2_6}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_7_auth
+		trigger =  {has_country_flag = acw_hd_s2_7}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_8_auth
+		trigger =  {has_country_flag = acw_hd_s2_8}
+	}
+	
+	text = {
+		localisation_key = 	acw_hd_9_auth
+		trigger =  {has_country_flag = acw_hd_s2_9}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_10_auth
+		trigger =  {has_country_flag = acw_hd_s2_10}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_11_auth
+		trigger =  {has_country_flag = acw_hd_s2_11}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_12_auth
+		trigger =  {has_country_flag = acw_hd_s2_12}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_13_auth
+		trigger =  {has_country_flag = acw_hd_s2_13}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_14_auth
+		trigger =  {has_country_flag = acw_hd_s2_14}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_15_auth
+		trigger =  {has_country_flag = acw_hd_s2_15}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_16_auth
+		trigger =  {has_country_flag = acw_hd_s2_16}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_17_auth
+		trigger =  {has_country_flag = acw_hd_s2_17}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_18_auth
+		trigger =  {has_country_flag = acw_hd_s2_18}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_19_auth
+		trigger =  {has_country_flag = acw_hd_s2_19}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_20_auth
+		trigger =  {has_country_flag = acw_hd_s2_20}
+	}
+}
+
+defined_text = {
+    name = acw_get_hd_slot_2_modifier
+	random = no
+	
+	text = {
+		localisation_key =  acw_hd_1_modifier
+		trigger =  {has_country_flag = acw_hd_s2_1}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_2_modifier
+		trigger =  {has_country_flag = acw_hd_s2_2}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_3_modifier
+		trigger =  {has_country_flag = acw_hd_s2_3}
+	}
+
+	text = {
+		localisation_key =  acw_hd_4_modifier
+		trigger =  {has_country_flag = acw_hd_s2_4}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_5_modifier
+		trigger =  {has_country_flag = acw_hd_s2_5}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_hd_6_modifier
+		trigger =  {has_country_flag = acw_hd_s2_6}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_7_modifier
+		trigger =  {has_country_flag = acw_hd_s2_7}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_8_modifier
+		trigger =  {has_country_flag = acw_hd_s2_8}
+	}
+	
+	text = {
+		localisation_key = 	acw_hd_9_modifier
+		trigger =  {has_country_flag = acw_hd_s2_9}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_10_modifier
+		trigger =  {has_country_flag = acw_hd_s2_10}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_11_modifier
+		trigger =  {has_country_flag = acw_hd_s2_11}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_12_modifier
+		trigger =  {has_country_flag = acw_hd_s2_12}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_13_modifier
+		trigger =  {has_country_flag = acw_hd_s2_13}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_14_modifier
+		trigger =  {has_country_flag = acw_hd_s2_14}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_15_modifier
+		trigger =  {has_country_flag = acw_hd_s2_15}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_16_modifier
+		trigger =  {has_country_flag = acw_hd_s2_16}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_17_modifier
+		trigger =  {has_country_flag = acw_hd_s2_17}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_18_modifier
+		trigger =  {has_country_flag = acw_hd_s2_18}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_19_modifier
+		trigger =  {has_country_flag = acw_hd_s2_19}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_20_modifier
+		trigger =  {has_country_flag = acw_hd_s2_20}
+	}
+}
+
+#hd slot 3 tt
+
+defined_text = {
+    name = acw_get_hd_slot_3_tt
+	random = no
+	
+	text = {
+				localisation_key =  acw_hd_none
+				trigger = {acw_hd_slot_3_filled = no}
+				}
+	
+	text = {
+		localisation_key =  acw_hd_1.t
+		trigger =  {has_country_flag = acw_hd_s3_1}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_2.t
+		trigger =  {has_country_flag = acw_hd_s3_2}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_3.t
+		trigger =  {has_country_flag = acw_hd_s3_3}
+	}
+
+	text = {
+		localisation_key =  acw_hd_4.t
+		trigger =  {has_country_flag = acw_hd_s3_4}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_5.t
+		trigger =  {has_country_flag = acw_hd_s3_5}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_hd_6.t
+		trigger =  {has_country_flag = acw_hd_s3_6}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_7.t
+		trigger =  {has_country_flag = acw_hd_s3_7}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_8.t
+		trigger =  {has_country_flag = acw_hd_s3_8}
+	}
+	
+	text = {
+		localisation_key = 	acw_hd_9.t
+		trigger =  {has_country_flag = acw_hd_s3_9}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_10.t
+		trigger =  {has_country_flag = acw_hd_s3_10}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_11.t
+		trigger =  {has_country_flag = acw_hd_s3_11}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_12.t
+		trigger =  {has_country_flag = acw_hd_s3_12}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_13.t
+		trigger =  {has_country_flag = acw_hd_s3_13}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_14.t
+		trigger =  {has_country_flag = acw_hd_s3_14}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_15.t
+		trigger =  {has_country_flag = acw_hd_s3_15}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_16.t
+		trigger =  {has_country_flag = acw_hd_s3_16}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_17.t
+		trigger =  {has_country_flag = acw_hd_s3_17}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_18.t
+		trigger =  {has_country_flag = acw_hd_s3_18}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_19.t
+		trigger =  {has_country_flag = acw_hd_s3_19}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_20.t
+		trigger =  {has_country_flag = acw_hd_s3_20}
+	}
+}
+
+defined_text = {
+    name = acw_get_hd_slot_3_auth
+	random = no
+	
+	text = {
+		localisation_key =  acw_hd_1_auth
+		trigger =  {has_country_flag = acw_hd_s3_1}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_2_auth
+		trigger =  {has_country_flag = acw_hd_s3_2}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_3_auth
+		trigger =  {has_country_flag = acw_hd_s3_3}
+	}
+
+	text = {
+		localisation_key =  acw_hd_4_auth
+		trigger =  {has_country_flag = acw_hd_s3_4}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_5_auth
+		trigger =  {has_country_flag = acw_hd_s3_5}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_hd_6_auth
+		trigger =  {has_country_flag = acw_hd_s3_6}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_7_auth
+		trigger =  {has_country_flag = acw_hd_s3_7}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_8_auth
+		trigger =  {has_country_flag = acw_hd_s3_8}
+	}
+	
+	text = {
+		localisation_key = 	acw_hd_9_auth
+		trigger =  {has_country_flag = acw_hd_s3_9}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_10_auth
+		trigger =  {has_country_flag = acw_hd_s3_10}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_11_auth
+		trigger =  {has_country_flag = acw_hd_s3_11}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_12_auth
+		trigger =  {has_country_flag = acw_hd_s3_12}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_13_auth
+		trigger =  {has_country_flag = acw_hd_s3_13}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_14_auth
+		trigger =  {has_country_flag = acw_hd_s3_14}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_15_auth
+		trigger =  {has_country_flag = acw_hd_s3_15}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_16_auth
+		trigger =  {has_country_flag = acw_hd_s3_16}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_17_auth
+		trigger =  {has_country_flag = acw_hd_s3_17}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_18_auth
+		trigger =  {has_country_flag = acw_hd_s3_18}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_19_auth
+		trigger =  {has_country_flag = acw_hd_s3_19}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_20_auth
+		trigger =  {has_country_flag = acw_hd_s3_20}
+	}
+}
+
+defined_text = {
+    name = acw_get_hd_slot_3_modifier
+	random = no
+	
+	text = {
+		localisation_key =  acw_hd_1_modifier
+		trigger =  {has_country_flag = acw_hd_s3_1}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_2_modifier
+		trigger =  {has_country_flag = acw_hd_s3_2}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_3_modifier
+		trigger =  {has_country_flag = acw_hd_s3_3}
+	}
+
+	text = {
+		localisation_key =  acw_hd_4_modifier
+		trigger =  {has_country_flag = acw_hd_s3_4}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_5_modifier
+		trigger =  {has_country_flag = acw_hd_s3_5}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_hd_6_modifier
+		trigger =  {has_country_flag = acw_hd_s3_6}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_7_modifier
+		trigger =  {has_country_flag = acw_hd_s3_7}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_8_modifier
+		trigger =  {has_country_flag = acw_hd_s3_8}
+	}
+	
+	text = {
+		localisation_key = 	acw_hd_9_modifier
+		trigger =  {has_country_flag = acw_hd_s3_9}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_10_modifier
+		trigger =  {has_country_flag = acw_hd_s3_10}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_11_modifier
+		trigger =  {has_country_flag = acw_hd_s3_11}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_12_modifier
+		trigger =  {has_country_flag = acw_hd_s3_12}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_13_modifier
+		trigger =  {has_country_flag = acw_hd_s3_13}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_14_modifier
+		trigger =  {has_country_flag = acw_hd_s3_14}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_15_modifier
+		trigger =  {has_country_flag = acw_hd_s3_15}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_16_modifier
+		trigger =  {has_country_flag = acw_hd_s3_16}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_17_modifier
+		trigger =  {has_country_flag = acw_hd_s3_17}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_18_modifier
+		trigger =  {has_country_flag = acw_hd_s3_18}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_19_modifier
+		trigger =  {has_country_flag = acw_hd_s3_19}
+	}
+	
+	text = {
+		localisation_key =  acw_hd_20_modifier
+		trigger =  {has_country_flag = acw_hd_s3_20}
 	}
 }
 
