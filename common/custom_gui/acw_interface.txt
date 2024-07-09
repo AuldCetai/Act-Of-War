@@ -10791,7 +10791,7 @@ custom_button = {
 								has_estate = estate_tribes
 							} 
 								add_country_modifier = {
-										name = acw_cf_company_7_mod_1
+										name = acw_cf_company_7_mod_2
 										duration = -1
 													}
 								}		
@@ -11376,6 +11376,7 @@ custom_button = {
 				trigger = {always = yes}
 				}
 }	
+
 custom_button = {
 	name = acw_cf_company_9_s_a
 	tooltip = acw_cf_company_9_s_a_tt
