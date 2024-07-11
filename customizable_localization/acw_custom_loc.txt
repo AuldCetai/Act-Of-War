@@ -1104,12 +1104,43 @@ defined_text = {
 	}
 	
 	text = {
+		localisation_key =  acw_cf_company_1_mod_elite
+		trigger = {
+					has_country_modifier = acw_cf_company_1_mod
+					has_country_flag = acw_cf_s1_1
+					OR = {
+						has_country_flag = acw_cf_company_1_s_aa_picked
+						has_country_flag = acw_cf_company_1_s_ab_picked
+						has_country_flag = acw_cf_company_1_s_ba_picked
+						has_country_flag = acw_cf_company_1_s_bb_picked
+						}
+		}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_1_elite
+	trigger = {
+					has_country_modifier = acw_cf_company_1_mod_1
+					has_country_flag = acw_cf_s1_1
+					OR = {
+						has_country_flag = acw_cf_company_1_s_aa_picked
+						has_country_flag = acw_cf_company_1_s_ab_picked
+						has_country_flag = acw_cf_company_1_s_ba_picked
+						has_country_flag = acw_cf_company_1_s_bb_picked
+						}
+		}
+	}
+	
+	
+	text = {
 		localisation_key =  acw_cf_company_2_mod
 		trigger = {
 						has_country_modifier = acw_cf_company_2_mod
 						has_country_flag = acw_cf_s1_2
 						}
 	}
+	
+	
 	
 	text = {
 		localisation_key =  acw_cf_company_2_mod_1

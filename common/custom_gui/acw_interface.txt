@@ -11085,41 +11085,6 @@ custom_button = {
 
 custom_button = {
 	name = acw_cf_company_8_s_a
-    potential = {has_country_flag = acw_background_open_already
-				 has_country_flag = acw_cf_bg_open
-				 has_country_flag = acw_cf_page_2
-				} 
-	trigger = { 
-		hidden_trigger = {
-				NOT = { 
-					OR = {
-						has_country_flag = acw_cf_company_8_s_a_picked
-						has_country_flag = acw_cf_company_8_s_b_picked
-						}
-					}
-				}	
-		custom_trigger_tooltip = {
-					tooltip = acw_cf_company_must_be_unlocked
-					has_country_flag = acw_cf_company_8_picked
-					}
-					acw_cf_perkz_avaible_is = yes
-				}	
-				
-	effect = {		
-					set_country_flag = acw_cf_company_8_s_a_picked
-					add_country_modifier = {
-										name = acw_cf_company_8_a_mod
-										duration = -1
-													}	
-					acw_cf_decrease_perkz = yes
-				}
-				
-	frame = { number = 2
-				trigger = {always = yes}
-				}
-}	
-custom_button = {
-	name = acw_cf_company_8_s_a
 	tooltip = acw_cf_company_8_s_a_tt
     potential = {has_country_flag = acw_background_open_already
 				 has_country_flag = acw_cf_bg_open
@@ -11154,6 +11119,7 @@ custom_button = {
 				trigger = {always = yes}
 				}
 }	
+
 
 custom_button = {
 	name = acw_cf_company_8_s_b
