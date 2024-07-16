@@ -1103,34 +1103,6 @@ defined_text = {
 					has_country_flag = acw_cf_s1_1}
 	}
 	
-	text = {
-		localisation_key =  acw_cf_company_1_mod_elite
-		trigger = {
-					has_country_modifier = acw_cf_company_1_mod
-					has_country_flag = acw_cf_s1_1
-					OR = {
-						has_country_flag = acw_cf_company_1_s_aa_picked
-						has_country_flag = acw_cf_company_1_s_ab_picked
-						has_country_flag = acw_cf_company_1_s_ba_picked
-						has_country_flag = acw_cf_company_1_s_bb_picked
-						}
-		}
-	}
-	
-	text = {
-		localisation_key =  acw_cf_company_1_mod_1_elite
-	trigger = {
-					has_country_modifier = acw_cf_company_1_mod_1
-					has_country_flag = acw_cf_s1_1
-					OR = {
-						has_country_flag = acw_cf_company_1_s_aa_picked
-						has_country_flag = acw_cf_company_1_s_ab_picked
-						has_country_flag = acw_cf_company_1_s_ba_picked
-						has_country_flag = acw_cf_company_1_s_bb_picked
-						}
-		}
-	}
-	
 	
 	text = {
 		localisation_key =  acw_cf_company_2_mod
@@ -1497,7 +1469,7 @@ defined_text = {
 	
 	text = {
 		localisation_key = acw_cf_slot_none
-		trigger = { acw_cf_slot_1_filled = no}
+		trigger = { acw_cf_slot_2_filled = no}
 	}
 }
 
@@ -1691,7 +1663,7 @@ defined_text = {
 	
 	text = {
 		localisation_key = acw_cf_slot_none
-		trigger = { acw_cf_slot_1_filled = no}
+		trigger = { acw_cf_slot_3_filled = no}
 	}
 }
 
@@ -1884,7 +1856,7 @@ defined_text = {
 	
 	text = {
 		localisation_key = acw_cf_slot_none
-		trigger = { acw_cf_slot_1_filled = no}
+		trigger = { acw_cf_slot_4_filled = no}
 	}
 }
 
@@ -5200,4 +5172,3758 @@ defined_text = {
 					 }
 				}
 	}	
+}
+
+defined_text = {
+    name = acw_cf_check_slot_1_full
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_grants_effects
+		trigger = { acw_cf_slot_1_filled = yes}
+	}
+	
+}
+
+defined_text = {
+    name = acw_cf_check_slot_2_full
+	random = no
+	
+
+	text = {
+		localisation_key =  acw_cf_grants_effects
+		trigger = { acw_cf_slot_2_filled = yes}
+	}
+	
+}
+
+defined_text = {
+    name = acw_cf_check_slot_3_full
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_grants_effects
+		trigger = { acw_cf_slot_3_filled = yes}
+	}
+	
+}
+
+defined_text = {
+    name = acw_cf_check_slot_4_full
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_grants_effects
+		trigger = { acw_cf_slot_4_filled = yes}
+	}
+	
+}
+
+
+defined_text = {
+    name = acw_get_cf_slot_1_modifiers
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_modifier
+		trigger = {has_country_modifier = acw_cf_company_1_mod
+					has_country_flag = acw_cf_s1_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_1_modifier
+		trigger = {has_country_modifier = acw_cf_company_1_mod_1
+					has_country_flag = acw_cf_s1_1}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod
+						has_country_flag = acw_cf_s1_2
+						}
+	}
+	
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod_1
+						has_country_flag = acw_cf_s1_2
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_3_mod
+						has_country_flag = acw_cf_s1_3
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_mod_modifier
+					trigger = {
+						has_country_modifier = acw_cf_company_4_mod_1
+						has_country_flag = acw_cf_s1_4
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod_1
+						has_country_flag = acw_cf_s1_5
+						}	
+			}		
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod
+						has_country_flag = acw_cf_s1_5
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod
+						has_country_flag = acw_cf_s1_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_1
+						has_country_flag = acw_cf_s1_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_2_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_2
+						has_country_flag = acw_cf_s1_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_3_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_3
+						has_country_flag = acw_cf_s1_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_4_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_4
+						has_country_flag = acw_cf_s1_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_5_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_5
+						has_country_flag = acw_cf_s1_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_1
+						has_country_flag = acw_cf_s1_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod
+						has_country_flag = acw_cf_s1_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_2_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_2
+						has_country_flag = acw_cf_s1_7
+						}		
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_8_mod
+						has_country_flag = acw_cf_s1_8
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_9_mod
+						has_country_flag = acw_cf_s1_9
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod_1
+						has_country_flag = acw_cf_s1_10
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod
+						has_country_flag = acw_cf_s1_10
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod_1
+						has_country_flag = acw_cf_s1_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod
+						has_country_flag = acw_cf_s1_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_slot_none
+		trigger = { acw_cf_slot_1_filled = no }	
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_slot_1_t1_modifiers
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_company_1_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_a_picked
+					has_country_flag = acw_cf_s1_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_b_picked
+					has_country_flag = acw_cf_s1_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_a_picked
+					has_country_flag = acw_cf_s1_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_b_picked
+					has_country_flag = acw_cf_s1_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_a_picked
+					has_country_flag = acw_cf_s1_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_b_picked
+					has_country_flag = acw_cf_s1_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_a_picked
+					has_country_flag = acw_cf_s1_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_b_picked
+					has_country_flag = acw_cf_s1_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_a_picked
+					has_country_flag = acw_cf_s1_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_b_picked
+					has_country_flag = acw_cf_s1_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_a_picked
+					has_country_flag = acw_cf_s1_6
+					}
+	}
+
+	text = {
+		localisation_key =  acw_cf_company_6_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_b_picked
+					has_country_flag = acw_cf_s1_6
+					}
+	}	
+	
+	text = {
+		localisation_key =  acw_cf_company_7_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_a_picked
+					has_country_flag = acw_cf_s1_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_a_picked
+					has_country_flag = acw_cf_s1_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_a_picked
+					has_country_flag = acw_cf_s1_8
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_b_picked
+					has_country_flag = acw_cf_s1_8
+					}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_9_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_a_picked
+					has_country_flag = acw_cf_s1_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_b_picked
+					has_country_flag = acw_cf_s1_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_a_picked
+					has_country_flag = acw_cf_s1_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_b_picked
+					has_country_flag = acw_cf_s1_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_a_picked
+					has_country_flag = acw_cf_s1_11
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_b_picked
+					has_country_flag = acw_cf_s1_11
+					}
+	}
+}
+
+
+defined_text = {
+
+    name = acw_get_cf_slot_1_t2_modifiers
+	random = no
+	#AA-BB
+	text = {
+		localisation_key =  acw_cf_company_1_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_aa_picked
+					has_country_flag = acw_cf_s1_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_bb_picked
+					has_country_flag = acw_cf_s1_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_aa_picked
+					has_country_flag = acw_cf_s1_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_bb_picked
+					has_country_flag = acw_cf_s1_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_aa_picked
+					has_country_flag = acw_cf_s1_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_bb_picked
+					has_country_flag = acw_cf_s1_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_aa_picked
+					has_country_flag = acw_cf_s1_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_bb_picked
+					has_country_flag = acw_cf_s1_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_aa_picked
+					has_country_flag = acw_cf_s1_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_bb_picked
+					has_country_flag = acw_cf_s1_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_aa_picked
+					has_country_flag = acw_cf_s1_6
+					}
+	}
+
+	text = {
+		localisation_key =  acw_cf_company_6_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_bb_picked
+					has_country_flag = acw_cf_s1_6
+					}
+	}	
+	
+	text = {
+		localisation_key =  acw_cf_company_7_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_aa_picked
+					has_country_flag = acw_cf_s1_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_aa_picked
+					has_country_flag = acw_cf_s1_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_aa_picked
+					has_country_flag = acw_cf_s1_8
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_bb_picked
+					has_country_flag = acw_cf_s1_8
+					}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_9_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_aa_picked
+					has_country_flag = acw_cf_s1_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_bb_picked
+					has_country_flag = acw_cf_s1_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_aa_picked
+					has_country_flag = acw_cf_s1_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_bb_picked
+					has_country_flag = acw_cf_s1_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_aa_picked
+					has_country_flag = acw_cf_s1_11
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_bb_picked
+					has_country_flag = acw_cf_s1_11
+					}
+	}
+	
+	##AB-BA
+	text = {
+		localisation_key =  acw_cf_company_1_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_ab_picked
+					has_country_flag = acw_cf_s1_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_ba_picked
+					has_country_flag = acw_cf_s1_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_ab_picked
+					has_country_flag = acw_cf_s1_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_ba_picked
+					has_country_flag = acw_cf_s1_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_ab_picked
+					has_country_flag = acw_cf_s1_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_ba_picked
+					has_country_flag = acw_cf_s1_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_ab_picked
+					has_country_flag = acw_cf_s1_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_ba_picked
+					has_country_flag = acw_cf_s1_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_ab_picked
+					has_country_flag = acw_cf_s1_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_ba_picked
+					has_country_flag = acw_cf_s1_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_ab_picked
+					has_country_flag = acw_cf_s1_6
+					}
+	}
+
+	text = {
+		localisation_key =  acw_cf_company_6_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_ba_picked
+					has_country_flag = acw_cf_s1_6
+					}
+	}	
+	
+	text = {
+		localisation_key =  acw_cf_company_7_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_ab_picked
+					has_country_flag = acw_cf_s1_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_ab_picked
+					has_country_flag = acw_cf_s1_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_ab_picked
+					has_country_flag = acw_cf_s1_8
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_ba_picked
+					has_country_flag = acw_cf_s1_8
+					}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_9_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_ab_picked
+					has_country_flag = acw_cf_s1_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_ba_picked
+					has_country_flag = acw_cf_s1_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_ab_picked
+					has_country_flag = acw_cf_s1_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_ba_picked
+					has_country_flag = acw_cf_s1_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_ab_picked
+					has_country_flag = acw_cf_s1_11
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_ba_picked
+					has_country_flag = acw_cf_s1_11
+					}
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_slot_2_modifiers
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_modifier
+		trigger = {has_country_modifier = acw_cf_company_1_mod
+					has_country_flag = acw_cf_s2_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_1_modifier
+		trigger = {has_country_modifier = acw_cf_company_1_mod_1
+					has_country_flag = acw_cf_s2_1}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod
+						has_country_flag = acw_cf_s2_2
+						}
+	}
+	
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod_1
+						has_country_flag = acw_cf_s2_2
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_3_mod
+						has_country_flag = acw_cf_s2_3
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_mod_modifier
+					trigger = {
+						has_country_modifier = acw_cf_company_4_mod_1
+						has_country_flag = acw_cf_s2_4
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod_1
+						has_country_flag = acw_cf_s2_5
+						}	
+			}		
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod
+						has_country_flag = acw_cf_s2_5
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod
+						has_country_flag = acw_cf_s2_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_1
+						has_country_flag = acw_cf_s2_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_2_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_2
+						has_country_flag = acw_cf_s2_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_3_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_3
+						has_country_flag = acw_cf_s2_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_4_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_4
+						has_country_flag = acw_cf_s2_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_5_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_5
+						has_country_flag = acw_cf_s2_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_1
+						has_country_flag = acw_cf_s2_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod
+						has_country_flag = acw_cf_s2_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_2_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_2
+						has_country_flag = acw_cf_s2_7
+						}		
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_8_mod
+						has_country_flag = acw_cf_s2_8
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_9_mod
+						has_country_flag = acw_cf_s2_9
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod_1
+						has_country_flag = acw_cf_s2_10
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod
+						has_country_flag = acw_cf_s2_10
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod_1
+						has_country_flag = acw_cf_s2_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod
+						has_country_flag = acw_cf_s2_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_slot_none
+		trigger = { acw_cf_slot_2_filled = no }	
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_slot_2_t1_modifiers
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_company_1_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_a_picked
+					has_country_flag = acw_cf_s2_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_b_picked
+					has_country_flag = acw_cf_s2_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_a_picked
+					has_country_flag = acw_cf_s2_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_b_picked
+					has_country_flag = acw_cf_s2_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_a_picked
+					has_country_flag = acw_cf_s2_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_b_picked
+					has_country_flag = acw_cf_s2_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_a_picked
+					has_country_flag = acw_cf_s2_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_b_picked
+					has_country_flag = acw_cf_s2_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_a_picked
+					has_country_flag = acw_cf_s2_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_b_picked
+					has_country_flag = acw_cf_s2_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_a_picked
+					has_country_flag = acw_cf_s2_6
+					}
+	}
+
+	text = {
+		localisation_key =  acw_cf_company_6_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_b_picked
+					has_country_flag = acw_cf_s2_6
+					}
+	}	
+	
+	text = {
+		localisation_key =  acw_cf_company_7_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_a_picked
+					has_country_flag = acw_cf_s2_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_a_picked
+					has_country_flag = acw_cf_s2_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_a_picked
+					has_country_flag = acw_cf_s2_8
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_b_picked
+					has_country_flag = acw_cf_s2_8
+					}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_9_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_a_picked
+					has_country_flag = acw_cf_s2_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_b_picked
+					has_country_flag = acw_cf_s2_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_a_picked
+					has_country_flag = acw_cf_s2_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_b_picked
+					has_country_flag = acw_cf_s2_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_a_picked
+					has_country_flag = acw_cf_s2_11
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_b_picked
+					has_country_flag = acw_cf_s2_11
+					}
+	}
+}
+
+
+defined_text = {
+
+    name = acw_get_cf_slot_2_t2_modifiers
+	random = no
+	#AA-BB
+	text = {
+		localisation_key =  acw_cf_company_1_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_aa_picked
+					has_country_flag = acw_cf_s2_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_bb_picked
+					has_country_flag = acw_cf_s2_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_aa_picked
+					has_country_flag = acw_cf_s2_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_bb_picked
+					has_country_flag = acw_cf_s2_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_aa_picked
+					has_country_flag = acw_cf_s2_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_bb_picked
+					has_country_flag = acw_cf_s2_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_aa_picked
+					has_country_flag = acw_cf_s2_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_bb_picked
+					has_country_flag = acw_cf_s2_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_aa_picked
+					has_country_flag = acw_cf_s2_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_bb_picked
+					has_country_flag = acw_cf_s2_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_aa_picked
+					has_country_flag = acw_cf_s2_6
+					}
+	}
+
+	text = {
+		localisation_key =  acw_cf_company_6_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_bb_picked
+					has_country_flag = acw_cf_s2_6
+					}
+	}	
+	
+	text = {
+		localisation_key =  acw_cf_company_7_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_aa_picked
+					has_country_flag = acw_cf_s2_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_aa_picked
+					has_country_flag = acw_cf_s2_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_aa_picked
+					has_country_flag = acw_cf_s2_8
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_bb_picked
+					has_country_flag = acw_cf_s2_8
+					}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_9_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_aa_picked
+					has_country_flag = acw_cf_s2_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_bb_picked
+					has_country_flag = acw_cf_s2_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_aa_picked
+					has_country_flag = acw_cf_s2_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_bb_picked
+					has_country_flag = acw_cf_s2_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_aa_picked
+					has_country_flag = acw_cf_s2_11
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_bb_picked
+					has_country_flag = acw_cf_s2_11
+					}
+	}
+	
+	##AB-BA
+	text = {
+		localisation_key =  acw_cf_company_1_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_ab_picked
+					has_country_flag = acw_cf_s2_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_ba_picked
+					has_country_flag = acw_cf_s2_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_ab_picked
+					has_country_flag = acw_cf_s2_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_ba_picked
+					has_country_flag = acw_cf_s2_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_ab_picked
+					has_country_flag = acw_cf_s2_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_ba_picked
+					has_country_flag = acw_cf_s2_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_ab_picked
+					has_country_flag = acw_cf_s2_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_ba_picked
+					has_country_flag = acw_cf_s2_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_ab_picked
+					has_country_flag = acw_cf_s2_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_ba_picked
+					has_country_flag = acw_cf_s2_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_ab_picked
+					has_country_flag = acw_cf_s2_6
+					}
+	}
+
+	text = {
+		localisation_key =  acw_cf_company_6_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_ba_picked
+					has_country_flag = acw_cf_s2_6
+					}
+	}	
+	
+	text = {
+		localisation_key =  acw_cf_company_7_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_ab_picked
+					has_country_flag = acw_cf_s2_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_ab_picked
+					has_country_flag = acw_cf_s2_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_ab_picked
+					has_country_flag = acw_cf_s2_8
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_ba_picked
+					has_country_flag = acw_cf_s2_8
+					}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_9_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_ab_picked
+					has_country_flag = acw_cf_s2_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_ba_picked
+					has_country_flag = acw_cf_s2_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_ab_picked
+					has_country_flag = acw_cf_s2_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_ba_picked
+					has_country_flag = acw_cf_s2_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_ab_picked
+					has_country_flag = acw_cf_s2_11
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_ba_picked
+					has_country_flag = acw_cf_s2_11
+					}
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_slot_3_modifiers
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_modifier
+		trigger = {has_country_modifier = acw_cf_company_1_mod
+					has_country_flag = acw_cf_s3_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_1_modifier
+		trigger = {has_country_modifier = acw_cf_company_1_mod_1
+					has_country_flag = acw_cf_s3_1}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod
+						has_country_flag = acw_cf_s3_2
+						}
+	}
+	
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod_1
+						has_country_flag = acw_cf_s3_2
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_3_mod
+						has_country_flag = acw_cf_s3_3
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_mod_modifier
+					trigger = {
+						has_country_modifier = acw_cf_company_4_mod_1
+						has_country_flag = acw_cf_s3_4
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod_1
+						has_country_flag = acw_cf_s3_5
+						}	
+			}		
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod
+						has_country_flag = acw_cf_s3_5
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod
+						has_country_flag = acw_cf_s3_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_1
+						has_country_flag = acw_cf_s3_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_2_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_2
+						has_country_flag = acw_cf_s3_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_3_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_3
+						has_country_flag = acw_cf_s3_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_4_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_4
+						has_country_flag = acw_cf_s3_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_5_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_5
+						has_country_flag = acw_cf_s3_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_1
+						has_country_flag = acw_cf_s3_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod
+						has_country_flag = acw_cf_s3_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_2_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_2
+						has_country_flag = acw_cf_s3_7
+						}		
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_8_mod
+						has_country_flag = acw_cf_s3_8
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_9_mod
+						has_country_flag = acw_cf_s3_9
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod_1
+						has_country_flag = acw_cf_s3_10
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod
+						has_country_flag = acw_cf_s3_10
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod_1
+						has_country_flag = acw_cf_s3_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod
+						has_country_flag = acw_cf_s3_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_slot_none
+		trigger = { acw_cf_slot_3_filled = no }	
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_slot_3_t1_modifiers
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_company_1_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_a_picked
+					has_country_flag = acw_cf_s3_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_b_picked
+					has_country_flag = acw_cf_s3_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_a_picked
+					has_country_flag = acw_cf_s3_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_b_picked
+					has_country_flag = acw_cf_s3_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_a_picked
+					has_country_flag = acw_cf_s3_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_b_picked
+					has_country_flag = acw_cf_s3_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_a_picked
+					has_country_flag = acw_cf_s3_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_b_picked
+					has_country_flag = acw_cf_s3_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_a_picked
+					has_country_flag = acw_cf_s3_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_b_picked
+					has_country_flag = acw_cf_s3_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_a_picked
+					has_country_flag = acw_cf_s3_6
+					}
+	}
+
+	text = {
+		localisation_key =  acw_cf_company_6_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_b_picked
+					has_country_flag = acw_cf_s3_6
+					}
+	}	
+	
+	text = {
+		localisation_key =  acw_cf_company_7_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_a_picked
+					has_country_flag = acw_cf_s3_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_a_picked
+					has_country_flag = acw_cf_s3_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_a_picked
+					has_country_flag = acw_cf_s3_8
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_b_picked
+					has_country_flag = acw_cf_s3_8
+					}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_9_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_a_picked
+					has_country_flag = acw_cf_s3_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_b_picked
+					has_country_flag = acw_cf_s3_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_a_picked
+					has_country_flag = acw_cf_s3_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_b_picked
+					has_country_flag = acw_cf_s3_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_a_picked
+					has_country_flag = acw_cf_s3_11
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_b_picked
+					has_country_flag = acw_cf_s3_11
+					}
+	}
+}
+
+
+defined_text = {
+
+    name = acw_get_cf_slot_3_t2_modifiers
+	random = no
+	#AA-BB
+	text = {
+		localisation_key =  acw_cf_company_1_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_aa_picked
+					has_country_flag = acw_cf_s3_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_bb_picked
+					has_country_flag = acw_cf_s3_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_aa_picked
+					has_country_flag = acw_cf_s3_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_bb_picked
+					has_country_flag = acw_cf_s3_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_aa_picked
+					has_country_flag = acw_cf_s3_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_bb_picked
+					has_country_flag = acw_cf_s3_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_aa_picked
+					has_country_flag = acw_cf_s3_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_bb_picked
+					has_country_flag = acw_cf_s3_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_aa_picked
+					has_country_flag = acw_cf_s3_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_bb_picked
+					has_country_flag = acw_cf_s3_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_aa_picked
+					has_country_flag = acw_cf_s3_6
+					}
+	}
+
+	text = {
+		localisation_key =  acw_cf_company_6_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_bb_picked
+					has_country_flag = acw_cf_s3_6
+					}
+	}	
+	
+	text = {
+		localisation_key =  acw_cf_company_7_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_aa_picked
+					has_country_flag = acw_cf_s3_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_aa_picked
+					has_country_flag = acw_cf_s3_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_aa_picked
+					has_country_flag = acw_cf_s3_8
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_bb_picked
+					has_country_flag = acw_cf_s3_8
+					}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_9_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_aa_picked
+					has_country_flag = acw_cf_s3_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_bb_picked
+					has_country_flag = acw_cf_s3_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_aa_picked
+					has_country_flag = acw_cf_s3_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_bb_picked
+					has_country_flag = acw_cf_s3_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_aa_picked
+					has_country_flag = acw_cf_s3_11
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_bb_picked
+					has_country_flag = acw_cf_s3_11
+					}
+	}
+	
+	##AB-BA
+	text = {
+		localisation_key =  acw_cf_company_1_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_ab_picked
+					has_country_flag = acw_cf_s3_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_ba_picked
+					has_country_flag = acw_cf_s3_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_ab_picked
+					has_country_flag = acw_cf_s3_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_ba_picked
+					has_country_flag = acw_cf_s3_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_ab_picked
+					has_country_flag = acw_cf_s3_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_ba_picked
+					has_country_flag = acw_cf_s3_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_ab_picked
+					has_country_flag = acw_cf_s3_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_ba_picked
+					has_country_flag = acw_cf_s3_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_ab_picked
+					has_country_flag = acw_cf_s3_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_ba_picked
+					has_country_flag = acw_cf_s3_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_ab_picked
+					has_country_flag = acw_cf_s3_6
+					}
+	}
+
+	text = {
+		localisation_key =  acw_cf_company_6_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_ba_picked
+					has_country_flag = acw_cf_s3_6
+					}
+	}	
+	
+	text = {
+		localisation_key =  acw_cf_company_7_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_ab_picked
+					has_country_flag = acw_cf_s3_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_ab_picked
+					has_country_flag = acw_cf_s3_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_ab_picked
+					has_country_flag = acw_cf_s3_8
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_ba_picked
+					has_country_flag = acw_cf_s3_8
+					}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_9_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_ab_picked
+					has_country_flag = acw_cf_s3_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_ba_picked
+					has_country_flag = acw_cf_s3_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_ab_picked
+					has_country_flag = acw_cf_s3_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_ba_picked
+					has_country_flag = acw_cf_s3_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_ab_picked
+					has_country_flag = acw_cf_s3_11
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_ba_picked
+					has_country_flag = acw_cf_s3_11
+					}
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_slot_4_modifiers
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_modifier
+		trigger = {has_country_modifier = acw_cf_company_1_mod
+					has_country_flag = acw_cf_s4_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_1_modifier
+		trigger = {has_country_modifier = acw_cf_company_1_mod_1
+					has_country_flag = acw_cf_s4_1}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod
+						has_country_flag = acw_cf_s4_2
+						}
+	}
+	
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod_1
+						has_country_flag = acw_cf_s4_2
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_3_mod
+						has_country_flag = acw_cf_s4_3
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_mod_modifier
+					trigger = {
+						has_country_modifier = acw_cf_company_4_mod_1
+						has_country_flag = acw_cf_s4_4
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod_1
+						has_country_flag = acw_cf_s4_5
+						}	
+			}		
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod
+						has_country_flag = acw_cf_s4_5
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod
+						has_country_flag = acw_cf_s4_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_1
+						has_country_flag = acw_cf_s4_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_2_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_2
+						has_country_flag = acw_cf_s4_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_3_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_3
+						has_country_flag = acw_cf_s4_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_4_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_4
+						has_country_flag = acw_cf_s4_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_5_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_5
+						has_country_flag = acw_cf_s4_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_1
+						has_country_flag = acw_cf_s4_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod
+						has_country_flag = acw_cf_s4_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_2_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_2
+						has_country_flag = acw_cf_s4_7
+						}		
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_8_mod
+						has_country_flag = acw_cf_s4_8
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_9_mod
+						has_country_flag = acw_cf_s4_9
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod_1
+						has_country_flag = acw_cf_s4_10
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod
+						has_country_flag = acw_cf_s4_10
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_1_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod_1
+						has_country_flag = acw_cf_s4_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_modifier
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod
+						has_country_flag = acw_cf_s4_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_slot_none
+		trigger = { acw_cf_slot_4_filled = no }	
+	}
+}
+
+defined_text = {
+    name = acw_get_cf_slot_4_t1_modifiers
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_company_1_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_a_picked
+					has_country_flag = acw_cf_s4_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_b_picked
+					has_country_flag = acw_cf_s4_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_a_picked
+					has_country_flag = acw_cf_s4_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_b_picked
+					has_country_flag = acw_cf_s4_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_a_picked
+					has_country_flag = acw_cf_s4_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_b_picked
+					has_country_flag = acw_cf_s4_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_a_picked
+					has_country_flag = acw_cf_s4_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_b_picked
+					has_country_flag = acw_cf_s4_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_a_picked
+					has_country_flag = acw_cf_s4_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_b_picked
+					has_country_flag = acw_cf_s4_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_a_picked
+					has_country_flag = acw_cf_s4_6
+					}
+	}
+
+	text = {
+		localisation_key =  acw_cf_company_6_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_b_picked
+					has_country_flag = acw_cf_s4_6
+					}
+	}	
+	
+	text = {
+		localisation_key =  acw_cf_company_7_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_a_picked
+					has_country_flag = acw_cf_s4_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_a_picked
+					has_country_flag = acw_cf_s4_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_a_picked
+					has_country_flag = acw_cf_s4_8
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_b_picked
+					has_country_flag = acw_cf_s4_8
+					}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_9_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_a_picked
+					has_country_flag = acw_cf_s4_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_b_picked
+					has_country_flag = acw_cf_s4_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_a_picked
+					has_country_flag = acw_cf_s4_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_b_picked
+					has_country_flag = acw_cf_s4_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_a_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_a_picked
+					has_country_flag = acw_cf_s4_11
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_b_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_b_picked
+					has_country_flag = acw_cf_s4_11
+					}
+	}
+}
+
+
+defined_text = {
+
+    name = acw_get_cf_slot_4_t2_modifiers
+	random = no
+	#AA-BB
+	text = {
+		localisation_key =  acw_cf_company_1_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_aa_picked
+					has_country_flag = acw_cf_s4_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_bb_picked
+					has_country_flag = acw_cf_s4_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_aa_picked
+					has_country_flag = acw_cf_s4_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_bb_picked
+					has_country_flag = acw_cf_s4_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_aa_picked
+					has_country_flag = acw_cf_s4_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_bb_picked
+					has_country_flag = acw_cf_s4_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_aa_picked
+					has_country_flag = acw_cf_s4_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_bb_picked
+					has_country_flag = acw_cf_s4_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_aa_picked
+					has_country_flag = acw_cf_s4_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_bb_picked
+					has_country_flag = acw_cf_s4_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_aa_picked
+					has_country_flag = acw_cf_s4_6
+					}
+	}
+
+	text = {
+		localisation_key =  acw_cf_company_6_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_bb_picked
+					has_country_flag = acw_cf_s4_6
+					}
+	}	
+	
+	text = {
+		localisation_key =  acw_cf_company_7_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_aa_picked
+					has_country_flag = acw_cf_s4_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_aa_picked
+					has_country_flag = acw_cf_s4_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_aa_picked
+					has_country_flag = acw_cf_s4_8
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_bb_picked
+					has_country_flag = acw_cf_s4_8
+					}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_9_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_aa_picked
+					has_country_flag = acw_cf_s4_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_bb_picked
+					has_country_flag = acw_cf_s4_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_aa_picked
+					has_country_flag = acw_cf_s4_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_bb_picked
+					has_country_flag = acw_cf_s4_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_aa_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_aa_picked
+					has_country_flag = acw_cf_s4_11
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_bb_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_bb_picked
+					has_country_flag = acw_cf_s4_11
+					}
+	}
+	
+	##AB-BA
+	text = {
+		localisation_key =  acw_cf_company_1_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_ab_picked
+					has_country_flag = acw_cf_s4_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_1_s_ba_picked
+					has_country_flag = acw_cf_s4_1
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_ab_picked
+					has_country_flag = acw_cf_s4_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_2_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_2_s_ba_picked
+					has_country_flag = acw_cf_s4_2
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_ab_picked
+					has_country_flag = acw_cf_s4_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_3_s_ba_picked
+					has_country_flag = acw_cf_s4_3
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_ab_picked
+					has_country_flag = acw_cf_s4_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_4_s_ba_picked
+					has_country_flag = acw_cf_s4_4
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_ab_picked
+					has_country_flag = acw_cf_s4_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_5_s_ba_picked
+					has_country_flag = acw_cf_s4_5
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_ab_picked
+					has_country_flag = acw_cf_s4_6
+					}
+	}
+
+	text = {
+		localisation_key =  acw_cf_company_6_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_6_s_ba_picked
+					has_country_flag = acw_cf_s4_6
+					}
+	}	
+	
+	text = {
+		localisation_key =  acw_cf_company_7_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_ab_picked
+					has_country_flag = acw_cf_s4_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_7_s_ab_picked
+					has_country_flag = acw_cf_s4_7
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_ab_picked
+					has_country_flag = acw_cf_s4_8
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_8_s_ba_picked
+					has_country_flag = acw_cf_s4_8
+					}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_9_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_ab_picked
+					has_country_flag = acw_cf_s4_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_9_s_ba_picked
+					has_country_flag = acw_cf_s4_9
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_ab_picked
+					has_country_flag = acw_cf_s4_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_10_s_ba_picked
+					has_country_flag = acw_cf_s4_10
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_ab_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_ab_picked
+					has_country_flag = acw_cf_s4_11
+					}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_ba_mod_modifier
+		trigger = {
+					has_country_flag = acw_cf_company_11_s_ba_picked
+					has_country_flag = acw_cf_s4_11
+					}
+	}
+}
+
+
+defined_text = {
+    name = acw_get_cf_slot_1_short
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_short
+		trigger = {has_country_modifier = acw_cf_company_1_mod
+					has_country_flag = acw_cf_s1_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_1_short
+		trigger = {has_country_modifier = acw_cf_company_1_mod_1
+					has_country_flag = acw_cf_s1_1}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod
+						has_country_flag = acw_cf_s1_2
+						}
+	}
+	
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod_1
+						has_country_flag = acw_cf_s1_2
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_3_mod
+						has_country_flag = acw_cf_s1_3
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_mod_short
+					trigger = {
+						has_country_modifier = acw_cf_company_4_mod_1
+						has_country_flag = acw_cf_s1_4
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod_1
+						has_country_flag = acw_cf_s1_5
+						}	
+			}		
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod
+						has_country_flag = acw_cf_s1_5
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod
+						has_country_flag = acw_cf_s1_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_1
+						has_country_flag = acw_cf_s1_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_2_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_2
+						has_country_flag = acw_cf_s1_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_3_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_3
+						has_country_flag = acw_cf_s1_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_4_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_4
+						has_country_flag = acw_cf_s1_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_5_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_5
+						has_country_flag = acw_cf_s1_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_1
+						has_country_flag = acw_cf_s1_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod
+						has_country_flag = acw_cf_s1_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_2_short
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_2
+						has_country_flag = acw_cf_s1_7
+						}		
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_8_mod
+						has_country_flag = acw_cf_s1_8
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_9_mod
+						has_country_flag = acw_cf_s1_9
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod_1
+						has_country_flag = acw_cf_s1_10
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod
+						has_country_flag = acw_cf_s1_10
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod_1
+						has_country_flag = acw_cf_s1_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod
+						has_country_flag = acw_cf_s1_11
+						}	
+	}
+	
+}
+
+
+defined_text = {
+    name = acw_get_cf_slot_2_short
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_short
+		trigger = {has_country_modifier = acw_cf_company_1_mod
+					has_country_flag = acw_cf_s2_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_1_short
+		trigger = {has_country_modifier = acw_cf_company_1_mod_1
+					has_country_flag = acw_cf_s2_1}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod
+						has_country_flag = acw_cf_s2_2
+						}
+	}
+	
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod_1
+						has_country_flag = acw_cf_s2_2
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_3_mod
+						has_country_flag = acw_cf_s2_3
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_mod_short
+					trigger = {
+						has_country_modifier = acw_cf_company_4_mod_1
+						has_country_flag = acw_cf_s2_4
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod_1
+						has_country_flag = acw_cf_s2_5
+						}	
+			}		
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod
+						has_country_flag = acw_cf_s2_5
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod
+						has_country_flag = acw_cf_s2_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_1
+						has_country_flag = acw_cf_s2_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_2_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_2
+						has_country_flag = acw_cf_s2_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_3_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_3
+						has_country_flag = acw_cf_s2_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_4_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_4
+						has_country_flag = acw_cf_s2_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_5_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_5
+						has_country_flag = acw_cf_s2_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_1
+						has_country_flag = acw_cf_s2_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod
+						has_country_flag = acw_cf_s2_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_2_short
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_2
+						has_country_flag = acw_cf_s2_7
+						}		
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_8_mod
+						has_country_flag = acw_cf_s2_8
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_9_mod
+						has_country_flag = acw_cf_s2_9
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod_1
+						has_country_flag = acw_cf_s2_10
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod
+						has_country_flag = acw_cf_s2_10
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod_1
+						has_country_flag = acw_cf_s2_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod
+						has_country_flag = acw_cf_s2_11
+						}	
+	}
+	
+}
+
+
+defined_text = {
+    name = acw_get_cf_slot_3_short
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_short
+		trigger = {has_country_modifier = acw_cf_company_1_mod
+					has_country_flag = acw_cf_s3_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_1_short
+		trigger = {has_country_modifier = acw_cf_company_1_mod_1
+					has_country_flag = acw_cf_s3_1}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod
+						has_country_flag = acw_cf_s3_2
+						}
+	}
+	
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod_1
+						has_country_flag = acw_cf_s3_2
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_3_mod
+						has_country_flag = acw_cf_s3_3
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_mod_short
+					trigger = {
+						has_country_modifier = acw_cf_company_4_mod_1
+						has_country_flag = acw_cf_s3_4
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod_1
+						has_country_flag = acw_cf_s3_5
+						}	
+			}		
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod
+						has_country_flag = acw_cf_s3_5
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod
+						has_country_flag = acw_cf_s3_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_1
+						has_country_flag = acw_cf_s3_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_2_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_2
+						has_country_flag = acw_cf_s3_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_3_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_3
+						has_country_flag = acw_cf_s3_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_4_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_4
+						has_country_flag = acw_cf_s3_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_5_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_5
+						has_country_flag = acw_cf_s3_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_1
+						has_country_flag = acw_cf_s3_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod
+						has_country_flag = acw_cf_s3_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_2_short
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_2
+						has_country_flag = acw_cf_s3_7
+						}		
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_8_mod
+						has_country_flag = acw_cf_s3_8
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_9_mod
+						has_country_flag = acw_cf_s3_9
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod_1
+						has_country_flag = acw_cf_s3_10
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod
+						has_country_flag = acw_cf_s3_10
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod_1
+						has_country_flag = acw_cf_s3_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod
+						has_country_flag = acw_cf_s3_11
+						}	
+	}
+	
+}
+
+
+defined_text = {
+    name = acw_get_cf_slot_4_short
+	random = no
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_short
+		trigger = {has_country_modifier = acw_cf_company_1_mod
+					has_country_flag = acw_cf_s4_1}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_1_mod_1_short
+		trigger = {has_country_modifier = acw_cf_company_1_mod_1
+					has_country_flag = acw_cf_s4_1}
+	}
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod
+						has_country_flag = acw_cf_s4_2
+						}
+	}
+	
+	
+	
+	text = {
+		localisation_key =  acw_cf_company_2_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_2_mod_1
+						has_country_flag = acw_cf_s4_2
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_3_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_3_mod
+						has_country_flag = acw_cf_s4_3
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_4_mod_short
+					trigger = {
+						has_country_modifier = acw_cf_company_4_mod_1
+						has_country_flag = acw_cf_s4_4
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod_1
+						has_country_flag = acw_cf_s4_5
+						}	
+			}		
+	
+	text = {
+		localisation_key =  acw_cf_company_5_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_5_mod
+						has_country_flag = acw_cf_s4_5
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod
+						has_country_flag = acw_cf_s4_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_1
+						has_country_flag = acw_cf_s4_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_2_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_2
+						has_country_flag = acw_cf_s4_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_3_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_3
+						has_country_flag = acw_cf_s4_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_4_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_4
+						has_country_flag = acw_cf_s4_6
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_6_mod_5_short
+		trigger = {
+						has_country_modifier = acw_cf_company_6_mod_5
+						has_country_flag = acw_cf_s4_6
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_1
+						has_country_flag = acw_cf_s4_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod
+						has_country_flag = acw_cf_s4_7
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_7_mod_2_short
+		trigger = {
+						has_country_modifier = acw_cf_company_7_mod_2
+						has_country_flag = acw_cf_s4_7
+						}		
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_8_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_8_mod
+						has_country_flag = acw_cf_s4_8
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_9_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_9_mod
+						has_country_flag = acw_cf_s4_9
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod_1
+						has_country_flag = acw_cf_s4_10
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_10_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_10_mod
+						has_country_flag = acw_cf_s4_10
+						}
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_1_short
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod_1
+						has_country_flag = acw_cf_s4_11
+						}	
+	}
+	
+	text = {
+		localisation_key =  acw_cf_company_11_mod_short
+		trigger = {
+						has_country_modifier = acw_cf_company_11_mod
+						has_country_flag = acw_cf_s4_11
+						}	
+	}
+	
 }

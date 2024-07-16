@@ -265,6 +265,7 @@ acw_arma_slot_4_filled = {
 }
 
 acw_cf_slot_1_filled = {
+		OR ={
 			has_country_flag = acw_cf_s1_1
 			has_country_flag = acw_cf_s1_2
 			has_country_flag = acw_cf_s1_3
@@ -276,9 +277,11 @@ acw_cf_slot_1_filled = {
 			has_country_flag = acw_cf_s1_9
 			has_country_flag = acw_cf_s1_10
 			has_country_flag = acw_cf_s1_11
+			}
 		}
 		
 acw_cf_slot_2_filled = {
+		OR ={
 			has_country_flag = acw_cf_s2_1
 			has_country_flag = acw_cf_s2_2
 			has_country_flag = acw_cf_s2_3
@@ -290,9 +293,11 @@ acw_cf_slot_2_filled = {
 			has_country_flag = acw_cf_s2_9
 			has_country_flag = acw_cf_s2_10
 			has_country_flag = acw_cf_s2_11
+			}
 		}
 		
 acw_cf_slot_3_filled = {
+		OR ={
 			has_country_flag = acw_cf_s3_1
 			has_country_flag = acw_cf_s3_2
 			has_country_flag = acw_cf_s3_3
@@ -304,9 +309,11 @@ acw_cf_slot_3_filled = {
 			has_country_flag = acw_cf_s3_9
 			has_country_flag = acw_cf_s3_10
 			has_country_flag = acw_cf_s3_11
+			}
 		}	
 		
 acw_cf_slot_4_filled = {
+		OR ={
 			has_country_flag = acw_cf_s4_1
 			has_country_flag = acw_cf_s4_2
 			has_country_flag = acw_cf_s4_3
@@ -318,6 +325,7 @@ acw_cf_slot_4_filled = {
 			has_country_flag = acw_cf_s4_9
 			has_country_flag = acw_cf_s4_10
 			has_country_flag = acw_cf_s4_11
+			}
 		}
 
 acw_cf_perkz_avaible_is = {
@@ -325,4 +333,758 @@ acw_cf_perkz_avaible_is = {
 				which = acw_cf_perkz_points
 				value = 1
 			}
+}
+
+
+acw_cf_slot_1_tier_1_filled = {
+	OR = {
+		AND = {
+				has_country_flag = acw_cf_s1_1
+				OR = {
+					has_country_flag = acw_cf_company_1_s_a_picked
+					has_country_flag = acw_cf_company_1_s_b_picked
+					}
+			}
+	 AND ={
+				has_country_flag = acw_cf_s1_2
+				OR = {
+					has_country_flag = acw_cf_company_2_s_a_picked
+					has_country_flag = acw_cf_company_2_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_3
+				OR = {
+					has_country_flag = acw_cf_company_3_s_a_picked
+					has_country_flag = acw_cf_company_3_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_4
+				OR = {
+					has_country_flag = acw_cf_company_4_s_a_picked
+					has_country_flag = acw_cf_company_4_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_5
+				OR = {
+					has_country_flag = acw_cf_company_5_s_a_picked
+					has_country_flag = acw_cf_company_5_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_6
+				OR = {
+					has_country_flag = acw_cf_company_6_s_a_picked
+					has_country_flag = acw_cf_company_6_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_7
+				OR = {
+					has_country_flag = acw_cf_company_7_s_a_picked
+					has_country_flag = acw_cf_company_7_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_8
+				OR = {
+					has_country_flag = acw_cf_company_8_s_a_picked
+					has_country_flag = acw_cf_company_8_s_b_picked
+					}
+		}	
+	 AND ={
+				has_country_flag = acw_cf_s1_9
+				OR = {
+					has_country_flag = acw_cf_company_9_s_a_picked
+					has_country_flag = acw_cf_company_9_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_10
+				OR = {
+					has_country_flag = acw_cf_company_10_s_a_picked
+					has_country_flag = acw_cf_company_10_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_11
+				OR = {
+					has_country_flag = acw_cf_company_11_s_a_picked
+					has_country_flag = acw_cf_company_11_s_b_picked
+					}
+		}
+	}
+}
+
+acw_cf_slot_2_tier_1_filled = {
+	OR = {
+	 AND ={
+				has_country_flag = acw_cf_s2_1
+				OR = {
+					has_country_flag = acw_cf_company_1_s_a_picked
+					has_country_flag = acw_cf_company_1_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_2
+				OR = {
+					has_country_flag = acw_cf_company_2_s_a_picked
+					has_country_flag = acw_cf_company_2_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_3
+				OR = {
+					has_country_flag = acw_cf_company_3_s_a_picked
+					has_country_flag = acw_cf_company_3_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_4
+				OR = {
+					has_country_flag = acw_cf_company_4_s_a_picked
+					has_country_flag = acw_cf_company_4_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_5
+				OR = {
+					has_country_flag = acw_cf_company_5_s_a_picked
+					has_country_flag = acw_cf_company_5_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_6
+				OR = {
+					has_country_flag = acw_cf_company_6_s_a_picked
+					has_country_flag = acw_cf_company_6_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_7
+				OR = {
+					has_country_flag = acw_cf_company_7_s_a_picked
+					has_country_flag = acw_cf_company_7_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_8
+				OR = {
+					has_country_flag = acw_cf_company_8_s_a_picked
+					has_country_flag = acw_cf_company_8_s_b_picked
+					}
+		}	
+	 AND ={
+				has_country_flag = acw_cf_s2_9
+				OR = {
+					has_country_flag = acw_cf_company_9_s_a_picked
+					has_country_flag = acw_cf_company_9_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_10
+				OR = {
+					has_country_flag = acw_cf_company_10_s_a_picked
+					has_country_flag = acw_cf_company_10_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_11
+				OR = {
+					has_country_flag = acw_cf_company_11_s_a_picked
+					has_country_flag = acw_cf_company_11_s_b_picked
+					}
+		}
+	}
+}
+
+
+acw_cf_slot_3_tier_1_filled = {
+	OR = {
+	 AND ={
+				has_country_flag = acw_cf_s3_1
+				OR = {
+					has_country_flag = acw_cf_company_1_s_a_picked
+					has_country_flag = acw_cf_company_1_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_2
+				OR = {
+					has_country_flag = acw_cf_company_2_s_a_picked
+					has_country_flag = acw_cf_company_2_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_3
+				OR = {
+					has_country_flag = acw_cf_company_3_s_a_picked
+					has_country_flag = acw_cf_company_3_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_4
+				OR = {
+					has_country_flag = acw_cf_company_4_s_a_picked
+					has_country_flag = acw_cf_company_4_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_5
+				OR = {
+					has_country_flag = acw_cf_company_5_s_a_picked
+					has_country_flag = acw_cf_company_5_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_6
+				OR = {
+					has_country_flag = acw_cf_company_6_s_a_picked
+					has_country_flag = acw_cf_company_6_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_7
+				OR = {
+					has_country_flag = acw_cf_company_7_s_a_picked
+					has_country_flag = acw_cf_company_7_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_8
+				OR = {
+					has_country_flag = acw_cf_company_8_s_a_picked
+					has_country_flag = acw_cf_company_8_s_b_picked
+					}
+		}	
+	 AND ={
+				has_country_flag = acw_cf_s3_9
+				OR = {
+					has_country_flag = acw_cf_company_9_s_a_picked
+					has_country_flag = acw_cf_company_9_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_10
+				OR = {
+					has_country_flag = acw_cf_company_10_s_a_picked
+					has_country_flag = acw_cf_company_10_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_11
+				OR = {
+					has_country_flag = acw_cf_company_11_s_a_picked
+					has_country_flag = acw_cf_company_11_s_b_picked
+					}
+		}
+	}
+}
+
+
+acw_cf_slot_4_tier_1_filled = {
+	OR = {
+	 AND ={
+				has_country_flag = acw_cf_s4_1
+				OR = {
+					has_country_flag = acw_cf_company_1_s_a_picked
+					has_country_flag = acw_cf_company_1_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_2
+				OR = {
+					has_country_flag = acw_cf_company_2_s_a_picked
+					has_country_flag = acw_cf_company_2_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_3
+				OR = {
+					has_country_flag = acw_cf_company_3_s_a_picked
+					has_country_flag = acw_cf_company_3_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_4
+				OR = {
+					has_country_flag = acw_cf_company_4_s_a_picked
+					has_country_flag = acw_cf_company_4_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_5
+				OR = {
+					has_country_flag = acw_cf_company_5_s_a_picked
+					has_country_flag = acw_cf_company_5_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_6
+				OR = {
+					has_country_flag = acw_cf_company_6_s_a_picked
+					has_country_flag = acw_cf_company_6_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_7
+				OR = {
+					has_country_flag = acw_cf_company_7_s_a_picked
+					has_country_flag = acw_cf_company_7_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_8
+				OR = {
+					has_country_flag = acw_cf_company_8_s_a_picked
+					has_country_flag = acw_cf_company_8_s_b_picked
+					}
+		}	
+	 AND ={
+				has_country_flag = acw_cf_s4_9
+				OR = {
+					has_country_flag = acw_cf_company_9_s_a_picked
+					has_country_flag = acw_cf_company_9_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_10
+				OR = {
+					has_country_flag = acw_cf_company_10_s_a_picked
+					has_country_flag = acw_cf_company_10_s_b_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_11
+				OR = {
+					has_country_flag = acw_cf_company_11_s_a_picked
+					has_country_flag = acw_cf_company_11_s_b_picked
+					}
+		}
+	}
+}
+
+
+
+
+acw_cf_slot_1_tier_2_filled = {
+	OR = {
+	 AND ={
+				has_country_flag = acw_cf_s1_1
+				OR = {
+					has_country_flag = acw_cf_company_1_s_aa_picked
+					has_country_flag = acw_cf_company_1_s_ab_picked
+					has_country_flag = acw_cf_company_1_s_ba_picked
+					has_country_flag = acw_cf_company_1_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_2
+				OR = {
+					has_country_flag = acw_cf_company_2_s_aa_picked
+					has_country_flag = acw_cf_company_2_s_ab_picked
+					has_country_flag = acw_cf_company_2_s_ba_picked
+					has_country_flag = acw_cf_company_2_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_3
+				OR = {
+					has_country_flag = acw_cf_company_3_s_aa_picked
+					has_country_flag = acw_cf_company_3_s_ab_picked
+					has_country_flag = acw_cf_company_3_s_ba_picked
+					has_country_flag = acw_cf_company_3_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_4
+				OR = {
+					has_country_flag = acw_cf_company_4_s_aa_picked
+					has_country_flag = acw_cf_company_4_s_ab_picked
+					has_country_flag = acw_cf_company_4_s_ba_picked
+					has_country_flag = acw_cf_company_4_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_5
+				OR = {
+					has_country_flag = acw_cf_company_5_s_aa_picked
+					has_country_flag = acw_cf_company_5_s_ab_picked
+					has_country_flag = acw_cf_company_5_s_ba_picked
+					has_country_flag = acw_cf_company_5_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_6
+				OR = {
+					has_country_flag = acw_cf_company_6_s_aa_picked
+					has_country_flag = acw_cf_company_6_s_ab_picked
+					has_country_flag = acw_cf_company_6_s_ba_picked
+					has_country_flag = acw_cf_company_6_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_7
+				OR = {
+					has_country_flag = acw_cf_company_7_s_aa_picked
+					has_country_flag = acw_cf_company_7_s_ab_picked
+					has_country_flag = acw_cf_company_7_s_ba_picked
+					has_country_flag = acw_cf_company_7_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_8
+				OR = {
+					has_country_flag = acw_cf_company_8_s_aa_picked
+					has_country_flag = acw_cf_company_8_s_ab_picked
+					has_country_flag = acw_cf_company_8_s_ba_picked
+					has_country_flag = acw_cf_company_8_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_9
+				OR = {
+					has_country_flag = acw_cf_company_9_s_aa_picked
+					has_country_flag = acw_cf_company_9_s_ab_picked
+					has_country_flag = acw_cf_company_9_s_ba_picked
+					has_country_flag = acw_cf_company_9_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_10
+				OR = {
+					has_country_flag = acw_cf_company_10_s_aa_picked
+					has_country_flag = acw_cf_company_10_s_ab_picked
+					has_country_flag = acw_cf_company_10_s_ba_picked
+					has_country_flag = acw_cf_company_10_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s1_11
+				OR = {
+					has_country_flag = acw_cf_company_11_s_aa_picked
+					has_country_flag = acw_cf_company_11_s_ab_picked
+					has_country_flag = acw_cf_company_11_s_ba_picked
+					has_country_flag = acw_cf_company_11_s_bb_picked
+					}
+		}
+	}
+}
+
+acw_cf_slot_2_tier_2_filled = {
+	OR = {
+	 AND ={
+				has_country_flag = acw_cf_s2_1
+				OR = {
+					has_country_flag = acw_cf_company_1_s_aa_picked
+					has_country_flag = acw_cf_company_1_s_ab_picked
+					has_country_flag = acw_cf_company_1_s_ba_picked
+					has_country_flag = acw_cf_company_1_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_2
+				OR = {
+					has_country_flag = acw_cf_company_2_s_aa_picked
+					has_country_flag = acw_cf_company_2_s_ab_picked
+					has_country_flag = acw_cf_company_2_s_ba_picked
+					has_country_flag = acw_cf_company_2_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_3
+				OR = {
+					has_country_flag = acw_cf_company_3_s_aa_picked
+					has_country_flag = acw_cf_company_3_s_ab_picked
+					has_country_flag = acw_cf_company_3_s_ba_picked
+					has_country_flag = acw_cf_company_3_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_4
+				OR = {
+					has_country_flag = acw_cf_company_4_s_aa_picked
+					has_country_flag = acw_cf_company_4_s_ab_picked
+					has_country_flag = acw_cf_company_4_s_ba_picked
+					has_country_flag = acw_cf_company_4_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_5
+				OR = {
+					has_country_flag = acw_cf_company_5_s_aa_picked
+					has_country_flag = acw_cf_company_5_s_ab_picked
+					has_country_flag = acw_cf_company_5_s_ba_picked
+					has_country_flag = acw_cf_company_5_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_6
+				OR = {
+					has_country_flag = acw_cf_company_6_s_aa_picked
+					has_country_flag = acw_cf_company_6_s_ab_picked
+					has_country_flag = acw_cf_company_6_s_ba_picked
+					has_country_flag = acw_cf_company_6_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_7
+				OR = {
+					has_country_flag = acw_cf_company_7_s_aa_picked
+					has_country_flag = acw_cf_company_7_s_ab_picked
+					has_country_flag = acw_cf_company_7_s_ba_picked
+					has_country_flag = acw_cf_company_7_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_8
+				OR = {
+					has_country_flag = acw_cf_company_8_s_aa_picked
+					has_country_flag = acw_cf_company_8_s_ab_picked
+					has_country_flag = acw_cf_company_8_s_ba_picked
+					has_country_flag = acw_cf_company_8_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_9
+				OR = {
+					has_country_flag = acw_cf_company_9_s_aa_picked
+					has_country_flag = acw_cf_company_9_s_ab_picked
+					has_country_flag = acw_cf_company_9_s_ba_picked
+					has_country_flag = acw_cf_company_9_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_10
+				OR = {
+					has_country_flag = acw_cf_company_10_s_aa_picked
+					has_country_flag = acw_cf_company_10_s_ab_picked
+					has_country_flag = acw_cf_company_10_s_ba_picked
+					has_country_flag = acw_cf_company_10_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s2_11
+				OR = {
+					has_country_flag = acw_cf_company_11_s_aa_picked
+					has_country_flag = acw_cf_company_11_s_ab_picked
+					has_country_flag = acw_cf_company_11_s_ba_picked
+					has_country_flag = acw_cf_company_11_s_bb_picked
+					}
+		}
+	}
+}
+
+
+acw_cf_slot_3_tier_2_filled = {
+	OR = {
+	 AND ={
+				has_country_flag = acw_cf_s3_1
+				OR = {
+					has_country_flag = acw_cf_company_1_s_aa_picked
+					has_country_flag = acw_cf_company_1_s_ab_picked
+					has_country_flag = acw_cf_company_1_s_ba_picked
+					has_country_flag = acw_cf_company_1_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_2
+				OR = {
+					has_country_flag = acw_cf_company_2_s_aa_picked
+					has_country_flag = acw_cf_company_2_s_ab_picked
+					has_country_flag = acw_cf_company_2_s_ba_picked
+					has_country_flag = acw_cf_company_2_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_3
+				OR = {
+					has_country_flag = acw_cf_company_3_s_aa_picked
+					has_country_flag = acw_cf_company_3_s_ab_picked
+					has_country_flag = acw_cf_company_3_s_ba_picked
+					has_country_flag = acw_cf_company_3_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_4
+				OR = {
+					has_country_flag = acw_cf_company_4_s_aa_picked
+					has_country_flag = acw_cf_company_4_s_ab_picked
+					has_country_flag = acw_cf_company_4_s_ba_picked
+					has_country_flag = acw_cf_company_4_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_5
+				OR = {
+					has_country_flag = acw_cf_company_5_s_aa_picked
+					has_country_flag = acw_cf_company_5_s_ab_picked
+					has_country_flag = acw_cf_company_5_s_ba_picked
+					has_country_flag = acw_cf_company_5_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_6
+				OR = {
+					has_country_flag = acw_cf_company_6_s_aa_picked
+					has_country_flag = acw_cf_company_6_s_ab_picked
+					has_country_flag = acw_cf_company_6_s_ba_picked
+					has_country_flag = acw_cf_company_6_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_7
+				OR = {
+					has_country_flag = acw_cf_company_7_s_aa_picked
+					has_country_flag = acw_cf_company_7_s_ab_picked
+					has_country_flag = acw_cf_company_7_s_ba_picked
+					has_country_flag = acw_cf_company_7_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_8
+				OR = {
+					has_country_flag = acw_cf_company_8_s_aa_picked
+					has_country_flag = acw_cf_company_8_s_ab_picked
+					has_country_flag = acw_cf_company_8_s_ba_picked
+					has_country_flag = acw_cf_company_8_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_9
+				OR = {
+					has_country_flag = acw_cf_company_9_s_aa_picked
+					has_country_flag = acw_cf_company_9_s_ab_picked
+					has_country_flag = acw_cf_company_9_s_ba_picked
+					has_country_flag = acw_cf_company_9_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_10
+				OR = {
+					has_country_flag = acw_cf_company_10_s_aa_picked
+					has_country_flag = acw_cf_company_10_s_ab_picked
+					has_country_flag = acw_cf_company_10_s_ba_picked
+					has_country_flag = acw_cf_company_10_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s3_11
+				OR = {
+					has_country_flag = acw_cf_company_11_s_aa_picked
+					has_country_flag = acw_cf_company_11_s_ab_picked
+					has_country_flag = acw_cf_company_11_s_ba_picked
+					has_country_flag = acw_cf_company_11_s_bb_picked
+					}
+		}
+	}
+}
+
+
+acw_cf_slot_4_tier_2_filled = {
+	OR = {
+	 AND ={
+				has_country_flag = acw_cf_s4_1
+				OR = {
+					has_country_flag = acw_cf_company_1_s_aa_picked
+					has_country_flag = acw_cf_company_1_s_ab_picked
+					has_country_flag = acw_cf_company_1_s_ba_picked
+					has_country_flag = acw_cf_company_1_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_2
+				OR = {
+					has_country_flag = acw_cf_company_2_s_aa_picked
+					has_country_flag = acw_cf_company_2_s_ab_picked
+					has_country_flag = acw_cf_company_2_s_ba_picked
+					has_country_flag = acw_cf_company_2_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_3
+				OR = {
+					has_country_flag = acw_cf_company_3_s_aa_picked
+					has_country_flag = acw_cf_company_3_s_ab_picked
+					has_country_flag = acw_cf_company_3_s_ba_picked
+					has_country_flag = acw_cf_company_3_s_bb_picked
+					}
+		}
+	
+	 AND ={
+				has_country_flag = acw_cf_s4_4
+				OR = {
+					has_country_flag = acw_cf_company_4_s_aa_picked
+					has_country_flag = acw_cf_company_4_s_ab_picked
+					has_country_flag = acw_cf_company_4_s_ba_picked
+					has_country_flag = acw_cf_company_4_s_bb_picked
+					}
+		}
+	
+	 AND ={
+				has_country_flag = acw_cf_s4_5
+				OR = {
+					has_country_flag = acw_cf_company_5_s_aa_picked
+					has_country_flag = acw_cf_company_5_s_ab_picked
+					has_country_flag = acw_cf_company_5_s_ba_picked
+					has_country_flag = acw_cf_company_5_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_6
+				OR = {
+					has_country_flag = acw_cf_company_6_s_aa_picked
+					has_country_flag = acw_cf_company_6_s_ab_picked
+					has_country_flag = acw_cf_company_6_s_ba_picked
+					has_country_flag = acw_cf_company_6_s_bb_picked
+					}
+		}
+	AND ={
+				has_country_flag = acw_cf_s4_7
+				OR = {
+					has_country_flag = acw_cf_company_7_s_aa_picked
+					has_country_Flag = acw_cf_company_7_s_ab_picked
+					has_country_flag = acw_cf_company_7_s_ba_picked
+					has_country_flag = acw_cf_company_7_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_8
+				OR = {
+					has_country_flag = acw_cf_company_8_s_aa_picked
+					has_country_flag = acw_cf_company_8_s_ab_picked
+					has_country_flag = acw_cf_company_8_s_ba_picked
+					has_country_flag = acw_cf_company_8_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_9
+				OR = {
+					has_country_flag = acw_cf_company_9_s_aa_picked
+					has_country_flag = acw_cf_company_9_s_ab_picked
+					has_country_flag = acw_cf_company_9_s_ba_picked
+					has_country_flag = acw_cf_company_9_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_10
+				OR = {
+					has_country_flag = acw_cf_company_10_s_aa_picked
+					has_country_flag = acw_cf_company_10_s_ab_picked
+					has_country_flag = acw_cf_company_10_s_ba_picked
+					has_country_flag = acw_cf_company_10_s_bb_picked
+					}
+		}
+	 AND ={
+				has_country_flag = acw_cf_s4_11
+				OR = {
+					has_country_flag = acw_cf_company_11_s_aa_picked
+					has_country_flag = acw_cf_company_11_s_ab_picked
+					has_country_flag = acw_cf_company_11_s_ba_picked
+					has_country_flag = acw_cf_company_11_s_bb_picked
+					}
+		}
+	}
 }

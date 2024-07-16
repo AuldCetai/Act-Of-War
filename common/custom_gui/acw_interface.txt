@@ -7763,6 +7763,7 @@ custom_icon = {
 #set the actual stratagem
 custom_button = {
 	name = acw_stratagem_sfp_button
+	tooltip = acw_stratagem_sfp_selected_desc
     potential = {has_country_flag = acw_stratagem_window_open_flag} 
   	trigger = { }
   	effect = { 
@@ -7780,6 +7781,7 @@ custom_button = {
 
 custom_button = {
 	name = acw_stratagem_dod_button
+	tooltip = acw_stratagem_dod_selected_desc
     potential = {has_country_flag = acw_stratagem_window_open_flag} 
   	trigger = { }
   	effect = { 
@@ -7797,6 +7799,7 @@ custom_button = {
 
 custom_button = {
 	name = acw_stratagem_rom_button
+	tooltip = acw_stratagem_rom_selected_desc
     potential = {has_country_flag = acw_stratagem_window_open_flag} 
   	trigger = { }
   	effect = { 
@@ -7814,6 +7817,7 @@ custom_button = {
 
 custom_button = {
 	name = acw_stratagem_has_button
+	tooltip = acw_stratagem_has_selected_desc
     potential = {has_country_flag = acw_stratagem_window_open_flag} 
   	trigger = { }
   	effect = { 
@@ -7831,6 +7835,7 @@ custom_button = {
 
 custom_button = {
 	name = acw_stratagem_trc_button
+	tooltip = acw_stratagem_trc_selected_desc
     potential = {has_country_flag = acw_stratagem_window_open_flag} 
   	trigger = { }
   	effect = { 
@@ -8250,7 +8255,7 @@ custom_text_box = {
 custom_button = {
 	name = acw_cf_slot_1
     potential = {has_country_flag = acw_background_open_already}
-	tooltip = acw_cf_slot1_desk
+	tooltip = acw_cf_slot1_desk_tt
 	trigger = { 
 			hidden_trigger = {	
 				NOT = {
@@ -8445,7 +8450,7 @@ custom_button = {
 
 custom_button = {
 	name = acw_cf_slot_2
-	tooltip = acw_cf_slot2_desk
+	tooltip = acw_cf_slot2_desk_tt
      potential = {has_country_flag = acw_background_open_already}
 	 trigger = { 
 		hidden_trigger = {	
@@ -8641,7 +8646,7 @@ custom_button = {
 
 custom_button = {
 	name = acw_cf_slot_3
-	tooltip = acw_cf_slot3_desk
+	tooltip = acw_cf_slot3_desk_tt
      potential = {has_country_flag = acw_background_open_already}
 	trigger = { 
 		hidden_trigger = {	
@@ -8839,7 +8844,7 @@ custom_button = {
 #avaible only under special circumstances - like missions to unlock or smtg.dunno yet.
 custom_button = {
 	name = acw_cf_slot_4
-	tooltip = acw_cf_slot4_desk
+	tooltip = acw_cf_slot4_desk_tt
     potential = {has_country_flag = acw_background_open_already
 				 has_country_flag = acw_cf_unlocked_the_fourth_company
 				 }
@@ -12150,34 +12155,85 @@ custom_icon = {
 }
 
 custom_icon = {
-	name = acw_cf_bar_1
-	potential = { has_country_flag = acw_background_open_already
-				  acw_cf_slot_1_filled = yes}
-	
+	name = acw_cf_slot_1_crown
+	potential = { 	has_country_flag = acw_background_open_already
+					NOT = { has_country_flag = acw_cf_bg_open }
+					NOT = { has_country_flag = acw_hd_arma_bg_open }
+					acw_cf_slot_1_filled = yes
+					OR = {	acw_cf_slot_1_tier_1_filled = yes
+							acw_cf_slot_1_tier_2_filled = yes
+							}
+				  }
+				  
+	frame = {	number = 1
+				trigger = {  	acw_cf_slot_1_tier_1_filled = yes
+								acw_cf_slot_1_tier_2_filled = no}
+					}
+	frame = {	number = 2
+				trigger = {  acw_cf_slot_1_tier_2_filled = yes }
+					}
 }
 
 custom_icon = {
-	name = acw_cf_bar_2
-	potential = { has_country_flag = acw_background_open_already
-				  acw_cf_slot_2_filled = yes}
-				 
-	
+	name = acw_cf_slot_2_crown
+	potential = { 	has_country_flag = acw_background_open_already
+					acw_cf_slot_2_filled = yes
+					NOT = { has_country_flag = acw_cf_bg_open }
+					NOT = { has_country_flag = acw_hd_arma_bg_open }
+					OR = {	acw_cf_slot_2_tier_1_filled = yes
+						acw_cf_slot_2_tier_2_filled = yes
+							}
+				  }
+				  
+	frame = {	number = 1
+				trigger = {  acw_cf_slot_2_tier_1_filled = yes
+							 acw_cf_slot_2_tier_2_filled = no }
+					}
+	frame = {	number = 2
+				trigger = {  acw_cf_slot_2_tier_2_filled = yes }
+					}
 }
 
 custom_icon = {
-	name = acw_cf_bar_3
-	potential = { has_country_flag = acw_background_open_already
-				  acw_cf_slot_3_filled = yes}
-				 
-	
+	name = acw_cf_slot_3_crown
+	potential = { 	has_country_flag = acw_background_open_already
+					acw_cf_slot_3_filled = yes
+					NOT = { has_country_flag = acw_cf_bg_open }
+					NOT = { has_country_flag = acw_hd_arma_bg_open }
+					OR = {	acw_cf_slot_3_tier_1_filled = yes
+							acw_cf_slot_3_tier_2_filled = yes
+							}
+				  }
+				  
+	frame = {	number = 1
+				trigger = { 	 acw_cf_slot_3_tier_1_filled = yes
+								 acw_cf_slot_3_tier_2_filled = no
+								 }
+					}
+	frame = {	number = 2
+				trigger = {  acw_cf_slot_3_tier_2_filled = yes }
+					}
 }
 
 custom_icon = {
-	name = acw_cf_bar_4
-	potential = { has_country_flag = acw_background_open_already
-				  acw_cf_slot_4_filled = yes}
-				 
-	
+	name = acw_cf_slot_4_crown
+	potential = { 	has_country_flag = acw_background_open_already
+					acw_cf_slot_4_filled = yes
+					NOT = { has_country_flag = acw_cf_bg_open }
+					NOT = { has_country_flag = acw_hd_arma_bg_open }
+					has_country_flag = acw_cf_unlocked_the_fourth_company
+					OR = {	acw_cf_slot_4_tier_1_filled = yes
+							acw_cf_slot_4_tier_2_filled = yes
+							}
+				  }
+				  
+	frame = {	number = 1
+				trigger = {     acw_cf_slot_4_tier_1_filled = yes 
+						    	acw_cf_slot_4_tier_2_filled = no}
+					}
+	frame = {	number = 2
+				trigger = {  acw_cf_slot_4_tier_2_filled = yes }
+					}
 }
 
 custom_text_box = {
@@ -12228,3 +12284,4 @@ custom_text_box = {
 						}	
 				}
 }
+

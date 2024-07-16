@@ -498,9 +498,9 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {		
-		name = "GFX_acw_cf_bars"
-		texturefile = "gfx/interface/acw_cf_bars.dds"
+		name = "GFX_acw_cf_slot_crown"
+		texturefile = "gfx/interface/acw_cf_slot_crown.dds"
 		transparencecheck = yes
-		noOfFrames = 3
+		noOfFrames = 2
 	}	
 }

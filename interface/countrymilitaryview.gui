@@ -3346,7 +3346,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "acw_cf_slot1_desk"
-				position = { x = 670 y =665 }
+				position = { x = 670 y =675 }
 				format = left
 				font = "vic_22s"
 				maxWidth = 420
@@ -3354,11 +3354,21 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				text = ""
 				scripted = yes
+			}
+			
+			iconType = {
+				name = "acw_cf_slot_1_crown"
+				position = { x=830 y =670}
+				quadTextureSprite ="GFX_acw_cf_slot_crown"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+				scale = 1
+				pdx_tooltip = "acw_stratagem_none"
 			}
 			
 			instantTextBoxType = {
 				name = "acw_cf_slot2_desk"
-				position = { x = 670 y =725 }
+				position = { x = 670 y =735 }
 				format = left
 				font = "vic_22s"
 				maxWidth = 420
@@ -3368,9 +3378,19 @@ guiTypes = {
 				scripted = yes
 			}
 			
+			iconType = {
+				name = "acw_cf_slot_2_crown"
+				position = { x=830 y =730}
+				quadTextureSprite ="GFX_acw_cf_slot_crown"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+				scale = 1
+				pdx_tooltip = "acw_stratagem_none"
+			}
+			
 			instantTextBoxType = {
 				name = "acw_cf_slot3_desk"
-				position = { x = 670 y =785 }
+				position = { x = 670 y =795 }
 				format = left
 				font = "vic_22s"
 				maxWidth = 420
@@ -3378,6 +3398,16 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				text = ""
 				scripted = yes
+			}
+			
+			iconType = {
+				name = "acw_cf_slot_3_crown"
+				position = { x=830 y =790}
+				quadTextureSprite ="GFX_acw_cf_slot_crown"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+				scale = 1
+				pdx_tooltip = "acw_stratagem_none"
 			}
 			
 			instantTextBoxType = {
@@ -3390,6 +3420,16 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				text = ""
 				scripted = yes
+			}
+			
+			iconType = {
+				name = "acw_cf_slot_4_crown"
+				position = { x=830 y =840}
+				quadTextureSprite ="GFX_acw_cf_slot_crown"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
+				scale = 1
+				pdx_tooltip = "acw_stratagem_none"
 			}
 			
 			iconType ={
@@ -4247,45 +4287,7 @@ guiTypes = {
 				scale = 0.7
 			}
 			
-			iconType = {
-				name = "acw_cf_bar_1"
-				position = { x=200 y =620}
-				spriteType ="GFX_acw_cf_bars"
-				Orientation = "UPPER_LEFT"
-				scripted = yes
-				scale = 1.5
-				pdx_tooltip = "acw_stratagem_none"
-			}	
 			
-			iconType = {
-				name = "acw_cf_bar_2"
-				position = { x=700 y =720}
-				spriteType ="GFX_acw_cf_bars"
-				Orientation = "UPPER_LEFT"
-				scripted = yes
-				scale = 1
-				pdx_tooltip = "acw_stratagem_none"
-			}	
-			
-			iconType = {
-				name = "acw_cf_bar_3"
-				position = { x=700 y =820}
-				spriteType ="GFX_acw_cf_bars"
-				Orientation = "UPPER_LEFT"
-				scripted = yes
-				scale = 1
-				pdx_tooltip = "acw_stratagem_none"
-			}	
-			
-			iconType = {
-				name = "acw_cf_bar_4"
-				position = { x=1225 y =620}
-				spriteType ="GFX_acw_cf_bars"
-				Orientation = "UPPER_LEFT"
-				scripted = yes
-				scale = 1
-				pdx_tooltip = "acw_stratagem_none"
-			}	
 			
 		windowType = {
 			name = "army_professionalism"
