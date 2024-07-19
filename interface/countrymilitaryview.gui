@@ -2285,34 +2285,34 @@ guiTypes = {
 				quadTextureSprite = "GFX_acw_cf_company_base"
 				position = { x= 580 y = 665 }
 				Orientation = "UPPER_LEFT"
-				scale = 0.8
+				scale = 0.7
 			}	
 			
 			guiButtonType ={
 				name ="acw_cf_slot_2"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_base"
-				position = { x= 580 y = 725 }
+				position = { x= 580 y = 718 }
 				Orientation = "UPPER_LEFT"
-				scale = 0.8
+				scale = 0.7
 			}	
 			
 			guiButtonType ={
 				name ="acw_cf_slot_3"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_base"
-				position = { x= 580 y = 785 }
+				position = { x= 580 y = 773 }
 				Orientation = "UPPER_LEFT"
-				scale = 0.8
+				scale = 0.7
 			}	
 			
 			guiButtonType ={
 				name ="acw_cf_slot_4"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_cf_company_base"
-				position = { x= 880 y = 765 }
+				position = { x= 580 y = 825 }
 				Orientation = "UPPER_LEFT"
-				scale = 0.8
+				scale = 0.7
 			}	
 			
 			#improve levels buttons
@@ -2753,7 +2753,7 @@ guiTypes = {
 				name = "acw_army_stratagem_text"
 				position = { x = 700 y =485 }
 				format = left
-				font = "vic_19s"
+				font = "vic_22s"
 				maxWidth = 400
 				maxHeight = 320	
 				Orientation = "UPPER_LEFT"
@@ -3368,7 +3368,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "acw_cf_slot2_desk"
-				position = { x = 670 y =735 }
+				position = { x = 670 y =730 }
 				format = left
 				font = "vic_22s"
 				maxWidth = 420
@@ -3380,7 +3380,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "acw_cf_slot_2_crown"
-				position = { x=830 y =730}
+				position = { x=830 y =725}
 				quadTextureSprite ="GFX_acw_cf_slot_crown"
 				Orientation = "UPPER_LEFT"
 				scripted = yes
@@ -3390,7 +3390,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "acw_cf_slot3_desk"
-				position = { x = 670 y =795 }
+				position = { x = 670 y =785 }
 				format = left
 				font = "vic_22s"
 				maxWidth = 420
@@ -3402,7 +3402,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "acw_cf_slot_3_crown"
-				position = { x=830 y =790}
+				position = { x=830 y =780}
 				quadTextureSprite ="GFX_acw_cf_slot_crown"
 				Orientation = "UPPER_LEFT"
 				scripted = yes
@@ -3412,7 +3412,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "acw_cf_slot4_desk"
-				position = { x = 670 y =845 }
+				position = { x = 670 y =835 }
 				format = left
 				font = "vic_22s"
 				maxWidth = 420
@@ -3424,7 +3424,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "acw_cf_slot_4_crown"
-				position = { x=830 y =840}
+				position = { x=830 y =835}
 				quadTextureSprite ="GFX_acw_cf_slot_crown"
 				Orientation = "UPPER_LEFT"
 				scripted = yes

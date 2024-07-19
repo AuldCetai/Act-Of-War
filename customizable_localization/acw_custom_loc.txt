@@ -2026,7 +2026,7 @@ defined_text = {
 	
 	text = {
 		localisation_key = acw_cf_company_1_mod_1
-		trigger = { primary_culture = francien}
+		trigger = { primary_culture = cosmopolitan_french}
 	}
 	text = {
 		localisation_key = acw_cf_company_1_mod
@@ -2040,7 +2040,7 @@ defined_text = {
 	
 	text = {
 		localisation_key = acw_cf_company_1_mod_1_desc
-		trigger = { primary_culture = francien}
+		trigger = { primary_culture = cosmopolitan_french}
 	}
 	text = {
 		localisation_key = acw_cf_company_1_mod_desc
@@ -2104,7 +2104,7 @@ defined_text = {
 	
 	text = {
 		localisation_key = acw_cf_company_4_mod_1
-		trigger = { primary_culture = francien}
+		trigger = { primary_culture = cosmopolitan_french}
 	}
 	text = {
 		localisation_key = acw_cf_company_4_mod
@@ -2132,7 +2132,7 @@ defined_text = {
 	
 	text = {
 		localisation_key = acw_cf_company_5_mod_1
-		trigger = { primary_culture = francien}
+		trigger = { primary_culture = cosmopolitan_french}
 	}
 	text = {
 		localisation_key = acw_cf_company_5_mod
@@ -2146,7 +2146,7 @@ defined_text = {
 	
 	text = {
 		localisation_key = acw_cf_company_5_mod_1_desc
-		trigger = { primary_culture = francien}
+		trigger = { primary_culture = cosmopolitan_french}
 	}
 	text = {
 		localisation_key = acw_cf_company_5_mod_desc
@@ -2231,17 +2231,17 @@ defined_text = {
 	random = no
 	
 	text = {
-		localisation_key = acw_cf_company_7_mod_1
+		localisation_key = acw_cf_company_7_mod
 		trigger = { tag = RUS}
 	}
 	
 	text = {
-		localisation_key = acw_cf_company_7_mod_2
+		localisation_key = acw_cf_company_7_mod_1
 		trigger = { has_estate = estate_tribes }
 	}
 	
 	text = {
-		localisation_key = acw_cf_company_7_mod
+		localisation_key = acw_cf_company_7_mod_2
 		trigger = { }
 	}
 }
@@ -2251,18 +2251,18 @@ defined_text = {
 	random = no
 	
 	text = {
-		localisation_key = acw_cf_company_7_mod_1_desc
+		localisation_key = acw_cf_company_7_mod_desc
 		trigger = { tag = RUS}
 	}
 	
 	text = {
-		localisation_key = acw_cf_company_7_mod_2_desc
+		localisation_key = acw_cf_company_7_mod_1_desc
 		trigger = { has_estate = estate_tribes }
 	}
 	
 	
 	text = {
-		localisation_key = acw_cf_company_7_mod_desc
+		localisation_key = acw_cf_company_7_mod_2_desc
 		trigger = { }
 	}
 }
@@ -2349,12 +2349,12 @@ defined_text = {
 	random = no
 	
 	text = {
-		localisation_key = acw_cf_company_11_mod_1
+		localisation_key = acw_cf_company_11_mod
 		trigger = { }
 	}
 	
 	text = {
-		localisation_key = acw_cf_company_11_mod
+		localisation_key = acw_cf_company_11_mod_1
 		trigger = { culture_group = persian}
 	}
 }
@@ -2364,12 +2364,12 @@ defined_text = {
 	random = no
 	
 	text = {
-		localisation_key = acw_cf_company_11_mod_1_desc
+		localisation_key = acw_cf_company_11_mod_desc
 		trigger = { }
 	}
 	
 	text = {
-		localisation_key = acw_cf_company_11_mod_desc
+		localisation_key = acw_cf_company_11_mod_1_desc
 		trigger = { culture_group = persian}
 	}
 }

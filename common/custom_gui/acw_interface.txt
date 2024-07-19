@@ -7909,7 +7909,7 @@ custom_button = {
 				}
 				
   	trigger = { AND = {
-					#	army_professionalism = 0.75
+						army_professionalism = 0.5
 						hidden_trigger ={ 
 							NOT = {
 								OR = {
@@ -9111,7 +9111,7 @@ custom_button = {
 
 					set_country_flag = acw_cf_company_1_picked
 					
-					IF = {limit = {primary_culture = francien} 
+					IF = {limit = {primary_culture = cosmopolitan_french} 
 							add_country_modifier = {
 									name = acw_cf_company_1_mod_1
 									duration = -1
@@ -9130,7 +9130,7 @@ custom_button = {
 				}
 	
 	frame = { number = 8
-				trigger = {primary_culture = francien}
+				trigger = {primary_culture = cosmopolitan_french}
 				}
 	
 	frame = { number = 1
@@ -10467,7 +10467,12 @@ custom_button = {
 
 					set_country_flag = acw_cf_company_6_picked
 					
-						IF = {limit = {has_estate = estate_cossacks} 
+						IF = {limit = {has_estate = estate_cossacks
+										NOT = {culture_group = east_slavic}
+										NOT = {culture_group = carpathian}
+										NOT = {primary_culture = maori}
+										NOT = {primary_culture = mexican}
+										} 
 								add_country_modifier = {
 										name = acw_cf_company_6_mod
 										duration = -1
@@ -10788,7 +10793,7 @@ custom_button = {
 								tag = RUS
 							} 
 								add_country_modifier = {
-										name = acw_cf_company_7_mod_1
+										name = acw_cf_company_7_mod
 										duration = -1
 													}
 								}
@@ -10796,7 +10801,7 @@ custom_button = {
 								has_estate = estate_tribes
 							} 
 								add_country_modifier = {
-										name = acw_cf_company_7_mod_2
+										name = acw_cf_company_7_mod_1
 										duration = -1
 													}
 								}		
@@ -10804,7 +10809,7 @@ custom_button = {
 								
 						ELSE = 	 {
 								add_country_modifier = {
-										name = acw_cf_company_7_mod
+										name = acw_cf_company_7_mod_2
 										duration = -1
 													}	
 							}
@@ -10812,7 +10817,7 @@ custom_button = {
 	
 				}
 	
-	frame = { number = 9
+	frame = { number = 1
 				trigger = {
 							tag = RUS
 				}
@@ -10825,7 +10830,7 @@ custom_button = {
 			}	
 			
 	
-	frame = { number = 1
+	frame = { number = 9
 				trigger = {always = yes}
 				}
 }	
@@ -11866,24 +11871,24 @@ custom_button = {
 	
 					IF = {limit = {culture_group = persian}
 										add_country_modifier = {
-											name = acw_cf_company_11_mod
+											name = acw_cf_company_11_mod_1
 											duration = -1
 													}
 										}
 					ELSE= {					
 										add_country_modifier = {
-											name = acw_cf_company_11_mod_1
+											name = acw_cf_company_11_mod
 											duration = -1
 													}
 									}
 		
 					}
 	
-	frame = { number = 8
+	frame = { number = 1
 				trigger = {culture_group = persian}
 				}
 	
-	frame = { number = 1
+	frame = { number = 8
 				trigger = {always = yes}
 				}
 }	
