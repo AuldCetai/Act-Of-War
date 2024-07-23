@@ -1306,10 +1306,12 @@ country_event = {
 	
 	option = {
 		name = "acw_hd_22.a"
+		ROOT = {
 				set_variable = {
 					which = acw_cf_perkz_points
 					value = 0
 				}
+			}
 		}
 }
 
@@ -1360,499 +1362,5519 @@ country_event = {
 		}
 }
 
-#remove company from slot warning
+#AI code - stratagems
 country_event = {
 	id = acw_hd.25
 	title = acw_hd_25.t 
 	desc = acw_hd_25.d
 	picture = GFX_acw_hd_siege_of_constantinople
+	
+	trigger = { 
+				ai = yes
+				army_professionalism = 0.5
+				NOT = {
+					OR = {
+							has_country_modifier = acw_stratagem_sfp_t4
+							has_country_modifier = acw_stratagem_dod_t4
+							has_country_modifier = acw_stratagem_rom_t4
+							has_country_modifier = acw_stratagem_trc_t4
+							has_country_modifier = acw_stratagem_has_t4
+						}
+					}
+				}
+	option = {
+			name = acw_hd_25.a
+			trigger = {acw_has_stratagem = no}
+			
+			random_list = {
+					1 = {
+						modifier = { factor = 1}
+						set_country_flag = acw_stratagem_sfp_selected
+						set_country_flag = acw_stratagem_selected_already
+						add_country_modifier = {
+												name = acw_stratagem_sfp_selected 
+												duration = -1
+													
+												}
+						}
+						
+					1 = {
+						modifier = { factor = 1}
+						set_country_flag = acw_stratagem_dod_selected
+						set_country_flag = acw_stratagem_selected_already
+						add_country_modifier = {
+												name = acw_stratagem_dod_selected 
+												duration = -1
+													
+												}
+						}	
+			
+					1 = {
+						modifier = { factor = 1}
+						set_country_flag = acw_stratagem_rom_selected
+						set_country_flag = acw_stratagem_selected_already
+						add_country_modifier = {
+												name = acw_stratagem_rom_selected 
+												duration = -1
+													
+												}
+						}
+						
+					1 = {
+						modifier = { factor = 1}
+						set_country_flag = acw_stratagem_trc_selected
+						set_country_flag = acw_stratagem_selected_already
+						add_country_modifier = {
+												name = acw_stratagem_trc_selected 
+												duration = -1
+													
+												}
+						}
+						
+					1 = {
+						modifier = { factor = 1}
+						set_country_flag = acw_stratagem_has_selected
+						set_country_flag = acw_stratagem_selected_already
+						add_country_modifier = {
+												name = acw_stratagem_has_selected 
+												duration = -1
+													
+												}
+						}
+			}
+		}
+			
+		option = {
+			name = acw_hd_25.a
+			trigger = {has_country_flag = acw_stratagem_selected_already }
+			
+			IF = { limit = { has_country_modifier = acw_stratagem_sfp_t3 }
+							add_army_professionalism = -0.5
+							remove_country_modifier = acw_stratagem_sfp_t3
+							add_country_modifier = {
+									name = acw_stratagem_sfp_t4
+									duration = -1
+									    
+								}
+							}
+			IF = { limit = { has_country_modifier = acw_stratagem_sfp_t2 }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_sfp_t2
+								add_country_modifier = {
+										name = acw_stratagem_sfp_t3
+										duration = -1
+											
+									}
+								}
+			IF = { limit = { has_country_modifier = acw_stratagem_sfp_t1 }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_sfp_t1
+								add_country_modifier = {
+										name = acw_stratagem_sfp_t2
+										duration = -1
+											
+									}
+								}
+			IF = { limit = { has_country_modifier = acw_stratagem_sfp_selected }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_sfp_selected
+								add_country_modifier = {
+										name = acw_stratagem_sfp_t1
+										duration = -1
+										  
+									}
+								}
+									
+			#remove previous tier modifier, add next tier
+			IF = { limit = { has_country_modifier = acw_stratagem_dod_t3 }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_dod_t3
+								add_country_modifier = {
+										name = acw_stratagem_dod_t4
+										duration = -1
+										
+									}
+								}
+			IF = { limit = { has_country_modifier = acw_stratagem_dod_t2 }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_dod_t2
+								add_country_modifier = {
+										name = acw_stratagem_dod_t3
+										duration = -1
+										
+									}
+								}
+			IF = { limit = {  has_country_modifier = acw_stratagem_dod_t1 }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_dod_t1
+								add_country_modifier = {
+										name = acw_stratagem_dod_t2
+										duration = -1
+										
+									}
+								}
+			IF = { limit = { has_country_modifier = acw_stratagem_dod_selected }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_dod_selected
+								add_country_modifier = {
+										name = acw_stratagem_dod_t1
+										duration = -1
+										
+									}
+								}
+									
+			#remove previous tier modifier, add next tier
+			IF = { limit = { has_country_modifier = acw_stratagem_trc_t3 }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_trc_t3
+								add_country_modifier = {
+										name = acw_stratagem_trc_t4
+										duration = -1
+										
+									}
+								}
+			IF = { limit = { has_country_modifier = acw_stratagem_trc_t2 }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_trc_t2
+								add_country_modifier = {
+										name = acw_stratagem_trc_t3
+										duration = -1
+										
+									}
+								}
+			IF = { limit = { has_country_modifier = acw_stratagem_trc_t1 }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_trc_t1
+								add_country_modifier = {
+										name = acw_stratagem_trc_t2
+										duration = -1
+										
+									}
+								}
+			IF = { limit = { has_country_modifier = acw_stratagem_trc_selected }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_trc_selected
+								add_country_modifier = {
+										name = acw_stratagem_trc_t1
+										duration = -1
+										
+									}
+								}
+
+			#remove previous tier modifier, add next tier
+			IF = { limit = { has_country_modifier = acw_stratagem_has_t3 }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_has_t3
+								add_country_modifier = {
+										name = acw_stratagem_has_t4
+										duration = -1
+										
+									}
+								}
+			IF = { limit = { has_country_modifier = acw_stratagem_has_t2 }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_has_t2
+								add_country_modifier = {
+										name = acw_stratagem_has_t3
+										duration = -1
+										
+									}
+								}
+			IF = { limit = { has_country_modifier = acw_stratagem_has_t1 }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_has_t1
+								add_country_modifier = {
+										name = acw_stratagem_has_t2
+										duration = -1
+										
+									}
+								}
+			IF = { limit = { has_country_modifier = acw_stratagem_has_selected }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_has_selected
+								add_country_modifier = {
+										name = acw_stratagem_has_t1
+										duration = -1
+										
+									}
+								}
+									
+			#remove previous tier modifier, add next tier
+			IF = { limit = { has_country_modifier = acw_stratagem_rom_t3 }
+								remove_country_modifier = acw_stratagem_rom_t3
+								add_country_modifier = {
+										name = acw_stratagem_rom_t4
+										duration = -1
+										
+									}
+								}
+			IF = { limit = { has_country_modifier = acw_stratagem_rom_t2 }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_rom_t2
+								add_country_modifier = {
+										name = acw_stratagem_rom_t3
+										duration = -1
+										
+									}
+								}
+			IF = { limit = { has_country_modifier = acw_stratagem_rom_t1 }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_rom_t1
+								add_country_modifier = {
+										name = acw_stratagem_rom_t2
+										duration = -1
+										
+									}
+								}
+			IF = { limit = { has_country_modifier = acw_stratagem_rom_selected }
+								add_army_professionalism = -0.5
+								remove_country_modifier = acw_stratagem_rom_selected
+								add_country_modifier = {
+										name = acw_stratagem_rom_t1
+										duration = -1
+										
+									}
+								}
+		}
+}
+	
+	
+
+
+
+#AI code - use companies - no need for loc b-no company c-higher level companies
+country_event = {
+	id = acw_hd.26
+	title = acw_hd_26.t 
+	desc = acw_hd_26.d
+	picture = GFX_acw_hd_siege_of_constantinople
 	is_triggered_only = yes
 	
-	trigger = {
+	trigger = {	ai = yes
+				OR = {
+						mil_tech = 	6
+						mil_tech =	9
+						mil_tech =	12
+						mil_tech =	15
+						mil_tech =	18
+						mil_tech =	21
+						mil_tech =	24
+						mil_tech =	27
+						mil_tech =  30
+						}
+	}
+	
+	#no cf unlocked yet
+	option = {
+			name = "acw_hd_26.b"
+			trigger = { 		
+							has_country_flag = acw_ai_please_select_new_company	
+						}
+					
+			random_list = {	
+			#sutlers
+				1 = {
+					modifier = { factor = 3 
+								 tag = FRA
+								 }
+					modifier = { factor = 0 
+								 ruler_has_personality = humane_personality
+								 }
+					
+					IF = {limit = {primary_culture = cosmopolitan_french} 
+							add_country_modifier = {
+									name = acw_cf_company_1_mod_1
+									duration = -1
+												}
+							}					
+					ELSE = 	 {
+								add_country_modifier = {
+										name = acw_cf_company_1_mod
+										duration = -1
+													}
+					}
+				}
+				
+				#camp wives
+				1 = {
+					modifier = { factor = 3 
+								 tag = ZUL
+								 }
+					modifier = { factor = 0 
+								 OR= { 	ruler_has_personality = kind_hearted_personality
+										ruler_has_personality = humane_personality
+									}
+								 }
+					
+					IF = {limit = {primary_culture = nguni} 
+								add_country_modifier = {
+										name = acw_cf_company_2_mod_1
+										duration = -1
+													}
+								}					
+					ELSE = 	 {
+								add_country_modifier = {
+										name = acw_cf_company_2_mod
+										duration = -1
+													}	
+							}
+					}
+				
+				#baggage train guards
+				1 = {
+					modifier = { factor = 3 
+								 ruler_has_personality = greedy_personality
+								 }
+					modifier = { factor = 2
+								 ruler_has_personality = careful_personality
+								 }			 
+								 
+					modifier = { factor = 0 
+								 ruler_has_personality = pious_personality
+								 }
+					
+					
+					add_country_modifier = {
+								name = acw_cf_company_3_mod
+								duration = -1
+							}
+					}
+				
+				#native auxilia
+				1 = {
+					modifier = { factor = 5
+								tag = GBR
+								 }
+						
+					modifier = { factor = 3 
+								 OR = { tag = CAS
+										tag = SPA
+										tag = FRA
+										}
+								 }
+					modifier = { factor = 0 
+								 OR= { 	ruler_has_personality = zealot_personality
+										ruler_has_personality = righteous_personality
+									}
+								 }
+					
+					IF = {limit = {any_ally = { primitives = yes}} 
+								add_country_modifier = {
+										name = acw_cf_company_4_mod
+										duration = -1
+													}
+								}					
+					ELSE =  {
+								add_country_modifier = {
+										name = acw_cf_company_4_mod_1
+										duration = -1
+													}	
+							}	
+					}
+				#water bearers	
+				1 = {
+						modifier = { factor = 3 
+								 OR= { 	
+										ruler_has_personality =  industrious_personality
+										ruler_has_personality =  obsessive_perfectionist_personality
+										ruler_has_personality =  humane_personality
+										tag = MUG
+										tag = PER
+									}
+								 }
+						modifier = { factor = 2 
+								 OR = { 
+										ruler_has_personality =  careful_personality
+										ruler_has_personality =  kind_hearted_personality
+										ruler_has_personality =  industrious_personality
+										}
+								 }
+								 
+						modifier = { factor = 0 
+								 OR = { 
+										ruler_has_personality =  greedy_personality
+										ruler_has_personality =  naive_personality
+										ruler_has_personality =  babbling_buffoon_personality
+										}
+								 }		 
+					
+					IF = {limit = {
+							OR = {
+								culture_group = hindustani
+								culture_group = western_aryan
+								}
+							} 
+								add_country_modifier = {
+										name = acw_cf_company_5_mod_1
+										duration = -1
+													}
+								}					
+					ELSE = 	 {
+								add_country_modifier = {
+										name = acw_cf_company_5_mod
+										duration = -1
+													}	
+							}	
+					}	
+				
+				#scouts	
+				1 = {
+						modifier = { factor = 3 
+								 OR= { 	
+										ruler_has_personality =  free_thinker_personality
+										ruler_has_personality =  careful_personality
+										ruler_has_personality =  secretive_personality
+										tag = HUN
+										tag = MEX
+									}
+								 }
+						modifier = { factor = 2 
+								 OR = { 
+										ruler_has_personality =  scholar_personality
+										ruler_has_personality =  bold_fighter_personality
+										ruler_has_personality =  fierce_negotiator_personality
+										tag = RUS
+										tag = POL
+										}
+								 }
+								 
+						modifier = { factor = 0 
+								 OR = { 
+										ruler_has_personality =  babbling_buffoon_personality
+										ruler_has_personality =  loose_lips_personality
+										ruler_has_personality =  naive_personality
+										tag = SPA
+										}
+								 }		 
+					
+					IF = {limit = {has_estate = estate_cossacks
+										NOT = {culture_group = east_slavic}
+										NOT = {culture_group = carpathian}
+										NOT = {primary_culture = maori}
+										NOT = {primary_culture = mexican}
+										} 
+								add_country_modifier = {
+										name = acw_cf_company_6_mod
+										duration = -1
+													}
+								}
+						ELSE_IF = {limit = {culture_group = east_slavic} 
+								add_country_modifier = {
+										name = acw_cf_company_6_mod_1
+										duration = -1
+													}
+								}		
+						ELSE_IF = {limit = {primary_culture = mexican} 
+								add_country_modifier = {
+										name = acw_cf_company_6_mod_2
+										duration = -1
+													}
+								}		
+								
+						ELSE_IF = {limit = {culture_group = carpathian}
+								add_country_modifier = {
+										name = acw_cf_company_6_mod_3
+										duration = -1
+													}
+								}		
+						
+						ELSE_IF = {limit = {primary_culture = maori}
+								add_country_modifier = {
+										name = acw_cf_company_6_mod_4
+										duration = -1
+													}
+								}
+						
+						ELSE = 	 {
+								add_country_modifier = {
+										name = acw_cf_company_6_mod_5
+										duration = -1
+													}	
+							}	
+					}
+				
+				#camp setters company 7	
+				1 = {
+						modifier = { factor = 3 
+								 OR= { 	
+										ruler_has_personality =  obsessive_perfectionist_personality
+										ruler_has_personality =  tactical_genius_personality
+										ruler_has_personality =  careful_personality
+										tag = MON
+										tag = MGE
+									}
+								 }
+						modifier = { factor = 2 
+								 OR = { 
+										ruler_has_personality =  architectural_visionary_personality
+										ruler_has_personality =  midas_touched_personality
+										ruler_has_personality =  entrepreneur_personality
+										}
+								 }
+								 
+						modifier = { factor = 0 
+								 OR = { 
+										ruler_has_personality =  babbling_buffoon_personality
+										ruler_has_personality =  naive_personality
+										ruler_has_personality =  greedy_personality
+										}
+								 }		 
+					
+					IF = {limit = {
+								tag = RUS
+							} 
+								add_country_modifier = {
+										name = acw_cf_company_7_mod
+										duration = -1
+													}
+								}
+						ELSE_IF = {limit = {
+								has_estate = estate_tribes
+							} 
+								add_country_modifier = {
+										name = acw_cf_company_7_mod_1
+										duration = -1
+													}
+								}		
+								
+								
+						ELSE = 	 {
+								add_country_modifier = {
+										name = acw_cf_company_7_mod_2
+										duration = -1
+													}	
+							}
+					}
+
+				#sappers company 8
+				1 = {
+					modifier = { factor = 3 
+									ruler_has_personality =  bold_fighter_personality
+									ruler_has_personality =  tactical_genius_personality
+									ruler_has_personality =  strict_personality
+									tag = TUR
+								 }
+					modifier = { factor = 2
+									ruler_has_personality =  architectural_visionary_personality
+									ruler_has_personality =  fierce_negotiator_personality
+									ruler_has_personality =  expansionist_personality
+								 }			 
+								 
+					modifier = { factor = 0 
+									ruler_has_personality =  craven_personality
+									ruler_has_personality =  humane_personality
+								 }
+					
+					
+					add_country_modifier = {
+								name = acw_cf_company_8_mod
+								duration = -1
+							}
+					}
+				
+				#camp doctors company 9
+				1 = {
+					modifier = { factor = 3 
+									ruler_has_personality =  humane_personality
+									ruler_has_personality =  scholar_personality
+									ruler_has_personality =  craven_personality
+									tag = SWI
+								 }
+					modifier = { factor = 2
+									ruler_has_personality =  scholar_personality
+									ruler_has_personality =  obsessive_perfectionist_personality
+									ruler_has_personality =  kind_hearted_personality
+								 }			 
+								 
+					modifier = { factor = 0 
+									ruler_has_personality =  malevolent_personality
+									ruler_has_personality =  babbling_buffoon_personality
+									ruler_has_personality =  bold_fighter_personality
+								 }
+					
+					
+					add_country_modifier = {
+								name = acw_cf_company_8_mod
+								duration = -1
+							}
+					}
+				
+				#repairmen
+				1 = {
+					modifier = { factor = 3
+									ruler_has_personality =  industrious_personality
+									ruler_has_personality =  obsessive_perfectionist_personality
+									tag = JAP
+									tag = TUR
+								 }
+						
+					modifier = { factor = 2 
+								 OR = { 
+									ruler_has_personality =  strict_personality
+									ruler_has_personality =  scholar_personality
+									tag = AFG
+									}
+								}
+					modifier = { factor = 0 
+								 OR= { 	
+									ruler_has_personality =  naive_personality
+									ruler_has_personality =  babbling_buffoon_personality
+									ruler_has_personality =  greedy_personality
+									}
+								 }
+					
+					IF = {limit = {primary_culture = japanese} 
+										add_country_modifier = {
+											name = acw_cf_company_10_mod_1
+											duration = -1
+													}
+												}
+					ELSE= {					
+										add_country_modifier = {
+											name = acw_cf_company_10_mod
+											duration = -1
+													}
+							}	
+					}
+				
+				#slaves
+				1 = {
+					modifier = { factor = 3 
+								 any_owned_province = { trade_goods = slaves }
+								 }
+					modifier = { factor = 0 
+								 ruler_has_personality = humane_personality
+								 }
+					
+					IF = {limit = {culture_group = persian} 
+									add_country_modifier = {
+											name = acw_cf_company_11_mod_1
+											duration = -1
+																}
+											}
+			
+					ELSE = 	 {
+									add_country_modifier = {
+											name = acw_cf_company_11_mod
+											duration = -1
+											}	
+						}
+					}
+
+				}
+				
+			clr_country_flag = acw_ai_please_select_new_company	
+		}
+		
+	option = {
+		name = acw_hd_26.c
+		trigger = {
+				NOT = {has_country_flag = acw_ai_please_select_new_company}
+			}
+			
+		IF = {
+			limit = { 
+				OR = {
+					has_country_modifier = 	acw_cf_company_1_mod
+					has_country_modifier = 	acw_cf_company_1_mod_1
+					}
+				}
+				
+				IF = {
+					limit = { has_country_modifier = acw_cf_company_1_a_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_1_aa_mod
+														duration = -1
+														}
+									set_country_flag = acw_ai_please_select_new_company						
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_1_ab_mod
+														duration = -1
+														}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE_IF = {
+					limit = { has_country_modifier = acw_cf_company_1_b_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_1_ba_mod
+														duration = -1
+													}						
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_1_bb_mod
+														duration = -1
+													}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE = {
+					random_list = {
+						1 = {
+								add_country_modifier = {
+								name = acw_cf_company_1_a_mod
+													duration = -1
+													}
+							}
+						1 = {
+								add_country_modifier = {
+								name = acw_cf_company_1_b_mod
+													duration = -1
+													}
+							}
+						}
+					}	
+			}	
+		
+		ELSE_IF = {
+			limit = { 
+				OR = {
+					has_country_modifier = 	acw_cf_company_2_mod
+					has_country_modifier = 	acw_cf_company_2_mod_1
+					}
+				}
+				
+				IF = {
+					limit = { has_country_modifier = acw_cf_company_2_a_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+										name = acw_cf_company_2_aa_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+										name = acw_cf_company_2_ab_mod
+										duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE_IF = {
+					limit = { has_country_modifier = acw_cf_company_2_b_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_2_ba_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_2_bb_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE = {
+					random_list = {
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_2_a_mod
+													duration = -1
+													}
+							}
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_2_b_mod
+													duration = -1
+													}
+							}
+						}
+					}	
+			}		
+		
+		##
+		ELSE_IF = {
+			limit = { 
+				OR = {
+					has_country_modifier = 	acw_cf_company_3_mod
+					}
+				}
+				
+				IF = {
+					limit = { has_country_modifier = acw_cf_company_3_a_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_3_aa_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_3_ab_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE_IF = {
+					limit = { has_country_modifier = acw_cf_company_3_b_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_3_ba_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_3_bb_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE = {
+					random_list = {
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_3_a_mod
+													duration = -1
+													}
+							}
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_3_b_mod
+													duration = -1
+													}
+							}
+						}
+					}	
+			}
+		##
+		ELSE_IF = {
+			limit = { 
+				OR = {
+					has_country_modifier = 	acw_cf_company_4_mod
+					has_country_modifier = 	acw_cf_company_4_mod_1
+					}
+				}
+				
+				IF = {
+					limit = { has_country_modifier = acw_cf_company_4_a_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_4_aa_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_4_ab_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE_IF = {
+					limit = { has_country_modifier = acw_cf_company_4_b_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_4_ba_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_4_bb_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE = {
+					random_list = {
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_4_a_mod
+													duration = -1
+													}
+							}
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_4_b_mod
+													duration = -1
+													}
+							}
+						}
+					}	
+			}
+		
+		##
+		ELSE_IF = {
+			limit = { 
+				OR = {
+					has_country_modifier = 	acw_cf_company_5_mod
+					has_country_modifier = 	acw_cf_company_5_mod_1
+					}
+				}
+				
+				IF = {
+					limit = { has_country_modifier = acw_cf_company_5_a_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_5_aa_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_5_ab_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE_IF = {
+					limit = { has_country_modifier = acw_cf_company_5_b_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_5_ba_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_5_bb_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE = {
+					random_list = {
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_5_a_mod
+													duration = -1
+													}
+							}
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_5_b_mod
+													duration = -1
+													}
+							}
+						}
+					}	
+			}
+			
+		##
+		ELSE_IF = {
+			limit = { 
+				OR = {
+					has_country_modifier = 	acw_cf_company_6_mod
+					has_country_modifier = 	acw_cf_company_6_mod_1
+					}
+				}
+				
+				IF = {
+					limit = { has_country_modifier = acw_cf_company_6_a_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_6_aa_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_6_ab_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE_IF = {
+					limit = { has_country_modifier = acw_cf_company_6_b_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_6_ba_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_6_bb_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE = {
+					random_list = {
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_6_a_mod
+													duration = -1
+													}
+							}
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_6_b_mod
+													duration = -1
+													}
+							}
+						}
+					}	
+			}
+		##
+		ELSE_IF = {
+			limit = { 
+				OR = {
+					has_country_modifier = 	acw_cf_company_7_mod
+					has_country_modifier = 	acw_cf_company_7_mod_1
+					}
+				}
+				
+				IF = {
+					limit = { has_country_modifier = acw_cf_company_7_a_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_7_aa_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_7_ab_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE_IF = {
+					limit = { has_country_modifier = acw_cf_company_7_b_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_7_ba_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_7_bb_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE = {
+					random_list = {
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_7_a_mod
+													duration = -1
+													}
+							}
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_7_b_mod
+													duration = -1
+													}
+							}
+						}
+					}	
+			}
+		##
+		ELSE_IF = {
+			limit = { 
+				OR = {
+					has_country_modifier = 	acw_cf_company_8_mod
+					}
+				}
+				
+				IF = {
+					limit = { has_country_modifier = acw_cf_company_8_a_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_8_aa_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_8_ab_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE_IF = {
+					limit = { has_country_modifier = acw_cf_company_8_b_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_8_ba_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_8_bb_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE = {
+					random_list = {
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_8_a_mod
+													duration = -1
+													}
+							}
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_8_b_mod
+													duration = -1
+													}
+							}
+						}
+					}	
+			}	
+		##
+		ELSE_IF = {
+			limit = { 
+				OR = {
+					has_country_modifier = 	acw_cf_company_9_mod
+					}
+				}
+				
+				IF = {
+					limit = { has_country_modifier = acw_cf_company_9_a_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_9_aa_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_9_ab_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE_IF = {
+					limit = { has_country_modifier = acw_cf_company_9_b_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_9_ba_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_9_bb_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE = {
+					random_list = {
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_9_a_mod
+													duration = -1
+													}
+							}
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_9_b_mod
+													duration = -1
+													}
+							}
+						}
+					}	
+			}	
+		##
+		ELSE_IF = {
+			limit = { 
+				OR = {
+					has_country_modifier = 	acw_cf_company_10_mod
+					has_country_modifier = 	acw_cf_company_10_mod_1
+					}
+				}
+				
+				IF = {
+					limit = { has_country_modifier = acw_cf_company_10_a_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_10_aa_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_10_ab_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE_IF = {
+					limit = { has_country_modifier = acw_cf_company_10_b_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_10_ba_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_10_bb_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE = {
+					random_list = {
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_10_a_mod
+													duration = -1
+													}
+							}
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_10_b_mod
+													duration = -1
+													}
+							}
+						}
+					}	
+			}
+		##
+		ELSE_IF = {
+			limit = { 
+				OR = {
+					has_country_modifier = 	acw_cf_company_11_mod
+					has_country_modifier = 	acw_cf_company_11_mod_1
+					}
+				}
+				
+				IF = {
+					limit = { has_country_modifier = acw_cf_company_11_a_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_11_aa_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_11_ab_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE_IF = {
+					limit = { has_country_modifier = acw_cf_company_11_b_mod }
+						random_list = {
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_11_ba_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							1 = {
+									add_country_modifier = {
+														name = acw_cf_company_11_bb_mod
+														duration = -1
+									}
+									set_country_flag = acw_ai_please_select_new_company
+								}
+							}
+					}
+				
+				ELSE = {
+					random_list = {
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_11_a_mod
+													duration = -1
+													}
+							}
+						1 = {
+								add_country_modifier = {
+													name = acw_cf_company_11_b_mod
+													duration = -1
+													}
+							}
+						}
+					}	
+			}	
+		}
+}	
+
+
+#ACW AI - UPGRADES
+country_event = {
+	id = acw_hd.27
+	title = acw_hd_27.t 
+	desc = acw_hd_27.d
+	picture = GFX_acw_hd_siege_of_constantinople
+	
+	trigger = { 
+				ai = yes
+				army_professionalism = 0.55
+				NOT = {
+					OR = {
+							has_country_modifier = acw_infantry_upgrade_t9
+							has_country_modifier = acw_cavalry_upgrade_t9
+							has_country_modifier = acw_artillery_upgrade_t9
+						}
+					}
+				}
+	option = {
+		name = acw_hd_27.a
+		random_list = {
+			3 = {
+				if = {limit = {has_country_modifier=acw_infantry_upgrade_t8}
+							add_army_professionalism = -0.5
+							hidden_effect = {
+								remove_country_modifier = acw_infantry_upgrade_t8
+							}
+							add_country_modifier = {name = acw_infantry_upgrade_t9
+													duration = -1
+													}					
+							}
+													
+						if = {limit = {has_country_modifier=acw_infantry_upgrade_t7}
+							add_army_professionalism = -0.4
+							hidden_effect = {
+								remove_country_modifier = acw_infantry_upgrade_t7
+							}
+							add_country_modifier = {name = acw_infantry_upgrade_t8
+													duration = -1
+													}					
+							}
+						
+						if = {limit = {has_country_modifier=acw_infantry_upgrade_t6}
+							add_army_professionalism = -0.35
+							hidden_effect = {
+								remove_country_modifier = acw_infantry_upgrade_t6
+							}
+							add_country_modifier = {name = acw_infantry_upgrade_t7
+													duration = -1
+													}					
+							}
+
+						if = {limit = {has_country_modifier=acw_infantry_upgrade_t5}
+							add_army_professionalism = -0.30
+							hidden_effect = {
+								remove_country_modifier = acw_infantry_upgrade_t5
+							}
+							add_country_modifier = {name = acw_infantry_upgrade_t6
+													duration = -1
+													}					
+							}			
+						
+						if = {limit = {has_country_modifier=acw_infantry_upgrade_t4}
+							add_army_professionalism = -0.25
+							hidden_effect = {
+								remove_country_modifier = acw_infantry_upgrade_t4
+							}
+							add_country_modifier = {name = acw_infantry_upgrade_t5
+													duration = -1
+													}					
+							}	
+						
+						if = {limit = {has_country_modifier=acw_infantry_upgrade_t3}
+							add_army_professionalism = -0.20
+							hidden_effect = {
+								remove_country_modifier = acw_infantry_upgrade_t3
+							}
+							add_country_modifier = {name = acw_infantry_upgrade_t4
+													duration = -1
+													}					
+							}		
+							
+						if = {limit = {has_country_modifier=acw_infantry_upgrade_t2}
+							add_army_professionalism = -0.15
+							hidden_effect = {
+								remove_country_modifier = acw_infantry_upgrade_t2
+							}
+							add_country_modifier = {name = acw_infantry_upgrade_t3
+													duration = -1
+													}					
+							}		
+							
+						if = {limit = {has_country_modifier=acw_infantry_upgrade_t1}
+							add_army_professionalism = -0.10
+							hidden_effect = {
+								remove_country_modifier = acw_infantry_upgrade_t1
+							}
+							add_country_modifier = {name = acw_infantry_upgrade_t2
+													duration = -1
+													}					
+							}		
+							
+						if = {limit = {
+										NOT = {
+											OR = {	has_country_modifier	= 	acw_infantry_upgrade_t9
+													has_country_modifier	=	acw_infantry_upgrade_t8
+													has_country_modifier	=	acw_infantry_upgrade_t7
+													has_country_modifier	=	acw_infantry_upgrade_t6
+													has_country_modifier	=	acw_infantry_upgrade_t5
+													has_country_modifier	=	acw_infantry_upgrade_t4
+													has_country_modifier	=	acw_infantry_upgrade_t3
+													has_country_modifier	=	acw_infantry_upgrade_t2
+													has_country_modifier	=	acw_infantry_upgrade_t1
+													}	
+												}
+										}
+							add_army_professionalism = -0.05
+							add_country_modifier = {name = acw_infantry_upgrade_t1
+													duration = -1
+													}					
+							}
+			}
+			
+			2 = {
+				if = {limit = {has_country_modifier=acw_cavalry_upgrade_t8}
+							add_army_professionalism = -0.5
+							hidden_effect = {
+								remove_country_modifier = acw_cavalry_upgrade_t8
+							}
+							add_country_modifier = {name = acw_cavalry_upgrade_t9
+													duration = -1
+													}					
+							}
+													
+						if = {limit = {has_country_modifier=acw_cavalry_upgrade_t7}
+							add_army_professionalism = -0.4
+							hidden_effect = {
+								remove_country_modifier = acw_cavalry_upgrade_t7
+							}
+							add_country_modifier = {name = acw_cavalry_upgrade_t8
+													duration = -1
+													}					
+							}
+						
+						if = {limit = {has_country_modifier=acw_cavalry_upgrade_t6}
+							add_army_professionalism = -0.35
+							hidden_effect = {
+								remove_country_modifier = acw_cavalry_upgrade_t6
+							}
+							add_country_modifier = {name = acw_cavalry_upgrade_t7
+													duration = -1
+													}					
+							}
+
+						if = {limit = {has_country_modifier=acw_cavalry_upgrade_t5}
+							add_army_professionalism = -0.30
+							hidden_effect = {
+								remove_country_modifier = acw_cavalry_upgrade_t5
+							}
+							add_country_modifier = {name = acw_cavalry_upgrade_t6
+													duration = -1
+													}					
+							}			
+						
+						if = {limit = {has_country_modifier=acw_cavalry_upgrade_t4}
+							add_army_professionalism = -0.25
+							hidden_effect = {
+								remove_country_modifier = acw_cavalry_upgrade_t4
+							}
+							add_country_modifier = {name = acw_cavalry_upgrade_t5
+													duration = -1
+													}					
+							}	
+						
+						if = {limit = {has_country_modifier=acw_cavalry_upgrade_t3}
+							add_army_professionalism = -0.20
+							hidden_effect = {
+								remove_country_modifier = acw_cavalry_upgrade_t3
+							}
+							add_country_modifier = {name = acw_cavalry_upgrade_t4
+													duration = -1
+													}					
+							}		
+							
+						if = {limit = {has_country_modifier=acw_cavalry_upgrade_t2}
+							add_army_professionalism = -0.15
+							hidden_effect = {
+								remove_country_modifier = acw_cavalry_upgrade_t2
+							}
+							add_country_modifier = {name = acw_cavalry_upgrade_t3
+													duration = -1
+													}					
+							}		
+							
+						if = {limit = {has_country_modifier=acw_cavalry_upgrade_t1}
+							add_army_professionalism = -0.10
+							hidden_effect = {
+								remove_country_modifier = acw_cavalry_upgrade_t1
+							}
+							add_country_modifier = {name = acw_cavalry_upgrade_t2
+													duration = -1
+													}					
+							}		
+							
+						if = {limit = {
+										NOT = {
+											OR = {	has_country_modifier	= 	acw_cavalry_upgrade_t9
+													has_country_modifier	=	acw_cavalry_upgrade_t8
+													has_country_modifier	=	acw_cavalry_upgrade_t7
+													has_country_modifier	=	acw_cavalry_upgrade_t6
+													has_country_modifier	=	acw_cavalry_upgrade_t5
+													has_country_modifier	=	acw_cavalry_upgrade_t4
+													has_country_modifier	=	acw_cavalry_upgrade_t3
+													has_country_modifier	=	acw_cavalry_upgrade_t2
+													has_country_modifier	=	acw_cavalry_upgrade_t1
+													}	
+												}
+										}
+							add_army_professionalism = -0.05
+							add_country_modifier = {name = acw_cavalry_upgrade_t1
+													duration = -1
+													}					
+							}
+			}
+			
+			1 = {
+				if = {limit = {has_country_modifier=acw_artillery_upgrade_t8}
+							add_army_professionalism = -0.5
+							hidden_effect = {
+								remove_country_modifier = acw_artillery_upgrade_t8
+							}
+							add_country_modifier = {name = acw_artillery_upgrade_t9
+													duration = -1
+													}					
+							}
+													
+						if = {limit = {has_country_modifier=acw_artillery_upgrade_t7}
+							add_army_professionalism = -0.4
+							hidden_effect = {
+								remove_country_modifier = acw_artillery_upgrade_t7
+							}
+							add_country_modifier = {name = acw_artillery_upgrade_t8
+													duration = -1
+													}					
+							}
+						
+						if = {limit = {has_country_modifier=acw_artillery_upgrade_t6}
+							add_army_professionalism = -0.35
+							hidden_effect = {
+								remove_country_modifier = acw_artillery_upgrade_t6
+							}
+							add_country_modifier = {name = acw_artillery_upgrade_t7
+													duration = -1
+													}					
+							}
+
+						if = {limit = {has_country_modifier=acw_artillery_upgrade_t5}
+							add_army_professionalism = -0.30
+							hidden_effect = {
+								remove_country_modifier = acw_artillery_upgrade_t5
+							}
+							add_country_modifier = {name = acw_artillery_upgrade_t6
+													duration = -1
+													}					
+							}			
+						
+						if = {limit = {has_country_modifier=acw_artillery_upgrade_t4}
+							add_army_professionalism = -0.25
+							hidden_effect = {
+								remove_country_modifier = acw_artillery_upgrade_t4
+							}
+							add_country_modifier = {name = acw_artillery_upgrade_t5
+													duration = -1
+													}					
+							}	
+						
+						if = {limit = {has_country_modifier=acw_artillery_upgrade_t3}
+							add_army_professionalism = -0.20
+							hidden_effect = {
+								remove_country_modifier = acw_artillery_upgrade_t3
+							}
+							add_country_modifier = {name = acw_artillery_upgrade_t4
+													duration = -1
+													}					
+							}		
+							
+						if = {limit = {has_country_modifier=acw_artillery_upgrade_t2}
+							add_army_professionalism = -0.15
+							hidden_effect = {
+								remove_country_modifier = acw_artillery_upgrade_t2
+							}
+							add_country_modifier = {name = acw_artillery_upgrade_t3
+													duration = -1
+													}					
+							}		
+							
+						if = {limit = {has_country_modifier=acw_artillery_upgrade_t1}
+							add_army_professionalism = -0.10
+							hidden_effect = {
+								remove_country_modifier = acw_artillery_upgrade_t1
+							}
+							add_country_modifier = {name = acw_artillery_upgrade_t2
+													duration = -1
+													}					
+							}		
+							
+						if = {limit = {
+										NOT = {
+											OR = {	has_country_modifier	= 	acw_artillery_upgrade_t9
+													has_country_modifier	=	acw_artillery_upgrade_t8
+													has_country_modifier	=	acw_artillery_upgrade_t7
+													has_country_modifier	=	acw_artillery_upgrade_t6
+													has_country_modifier	=	acw_artillery_upgrade_t5
+													has_country_modifier	=	acw_artillery_upgrade_t4
+													has_country_modifier	=	acw_artillery_upgrade_t3
+													has_country_modifier	=	acw_artillery_upgrade_t2
+													has_country_modifier	=	acw_artillery_upgrade_t1
+													}	
+												}
+										}
+							add_army_professionalism = -0.05
+							add_country_modifier = {name = acw_artillery_upgrade_t1
+													duration = -1
+													}					
+							}
+			}
+		
+		}
+	}
+}
+
+
+
+# ACW ARMAMENTS AI - no need for LOC, AI ONLY
+
+country_event = {
+ 	id = acw_hd.29
+ 	title = acw_hd.29.t  #ARMA UNLOCK EVENT FOR AI
+ 	desc = acw_hd.29.d	#
+ 	picture = PLAGUE_eventPicture
+
+	trigger = { ai = yes
+				NOT = {has_country_modifier = acw_arma_slot_4_xp}
+				OR = {
+					AND = {	
+						current_age = age_of_discovery
+						OR = {	
+							AND = {
+									NOT = {has_country_modifier = acw_arma_falcata}
+									owns_or_non_sovereign_subject_of = 219
+									owns_or_non_sovereign_subject_of = 210
+									owns_or_non_sovereign_subject_of = 214
+									}	
+							AND = {	
+									NOT = {has_country_modifier = acw_arma_wagenburg}
+									owns_or_non_sovereign_subject_of = 2971
+									owns_or_non_sovereign_subject_of = 1763
+									owns_or_non_sovereign_subject_of = 4478	
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_fo_lang_ji}
+									owns_or_non_sovereign_subject_of = 582
+									owns_or_non_sovereign_subject_of = 663
+									owns_or_non_sovereign_subject_of = 2162
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_iron_fan}
+									owns_or_non_sovereign_subject_of = 1020
+									owns_or_non_sovereign_subject_of = 1030
+									owns_or_non_sovereign_subject_of = 1017
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_macuahuitl}
+									owns_or_non_sovereign_subject_of = 841	
+									owns_or_non_sovereign_subject_of = 2653	
+									owns_or_non_sovereign_subject_of = 4573	
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_yatagan}
+									owns_or_non_sovereign_subject_of = 3001
+									owns_or_non_sovereign_subject_of = 2305
+									owns_or_non_sovereign_subject_of = 325
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_mandau}
+									owns_or_non_sovereign_subject_of = 2715
+									owns_or_non_sovereign_subject_of = 656
+									owns_or_non_sovereign_subject_of = 2702
+									}	
+							AND = {
+									NOT = {has_country_modifier = acw_arma_khopesh}
+									owns_or_non_sovereign_subject_of = 382
+									owns_or_non_sovereign_subject_of = 2323
+									owns_or_non_sovereign_subject_of = 2322
+									}		
+							AND = {
+									NOT = {has_country_modifier = acw_arma_naginata}
+									owns_or_non_sovereign_subject_of = 1018
+									owns_or_non_sovereign_subject_of = 4184
+									owns_or_non_sovereign_subject_of = 4189
+									}	
+							AND = {
+									NOT = {has_country_modifier = acw_arma_kpinga}
+									owns_or_non_sovereign_subject_of = 4067
+									owns_or_non_sovereign_subject_of = 4097
+									owns_or_non_sovereign_subject_of = 4055
+									}
+						}
+					}						
+					
+					AND = {	
+						current_age = age_of_reformation
+						OR = {	
+							AND = {
+									NOT = {has_country_modifier = acw_arma_maasai_shield}			
+									owns_or_non_sovereign_subject_of = 1925
+									owns_or_non_sovereign_subject_of = 1273
+									owns_or_non_sovereign_subject_of = 4051
+									}	
+							AND = {	
+									NOT = {has_country_modifier = acw_arma_bakuba_spears}
+									owns_or_non_sovereign_subject_of = 4078
+									owns_or_non_sovereign_subject_of = 4095
+									owns_or_non_sovereign_subject_of = 4105
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_arquebus}
+									owns_or_non_sovereign_subject_of = 151
+									owns_or_non_sovereign_subject_of = 96
+									owns_or_non_sovereign_subject_of = 4651
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_arquebus_a_croc}
+									owns_or_non_sovereign_subject_of = 2966
+									owns_or_non_sovereign_subject_of = 263
+									owns_or_non_sovereign_subject_of = 61
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_zweihander}
+									owns_or_non_sovereign_subject_of = 189
+									owns_or_non_sovereign_subject_of = 1757
+									owns_or_non_sovereign_subject_of = 166
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_longsword}
+									owns_or_non_sovereign_subject_of = 376
+									owns_or_non_sovereign_subject_of = 4363
+									owns_or_non_sovereign_subject_of = 4366
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_morion_helmet}
+									owns_or_non_sovereign_subject_of = 1851
+									owns_or_non_sovereign_subject_of = 222
+									owns_or_non_sovereign_subject_of = 4547
+									}	
+							AND = {
+									NOT = {has_country_modifier = acw_arma_dha_sword}
+									owns_or_non_sovereign_subject_of = 602
+									owns_or_non_sovereign_subject_of = 2389
+									owns_or_non_sovereign_subject_of = 2402
+									}		
+							AND = {
+									NOT = {has_country_modifier = acw_arma_khanda_sword}
+									owns_or_non_sovereign_subject_of = 2067
+									owns_or_non_sovereign_subject_of = 4509
+									owns_or_non_sovereign_subject_of = 528
+									}	
+							AND = {
+									NOT = {has_country_modifier = acw_arma_barong_sword}
+									owns_or_non_sovereign_subject_of = 644
+									owns_or_non_sovereign_subject_of = 652
+									owns_or_non_sovereign_subject_of = 4355
+									}
+						}
+					}
+					
+					AND = {	
+						current_age = age_of_absolutism
+						OR = {	
+							AND = {
+									NOT = {has_country_modifier = acw_arma_crouching_tiger_cannon}
+									owns_or_non_sovereign_subject_of = 674
+									owns_or_non_sovereign_subject_of = 2371
+									owns_or_non_sovereign_subject_of = 678
+									}	
+							AND = {	
+									NOT = {has_country_modifier = acw_arma_iklwa}
+									owns_or_non_sovereign_subject_of = 4040
+									owns_or_non_sovereign_subject_of = 1186
+									owns_or_non_sovereign_subject_of = 1185
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_shamshir}
+									owns_or_non_sovereign_subject_of = 525
+									owns_or_non_sovereign_subject_of = 4509
+									owns_or_non_sovereign_subject_of = 2223
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_jezail}
+									owns_or_non_sovereign_subject_of = 442
+									owns_or_non_sovereign_subject_of = 458
+									owns_or_non_sovereign_subject_of = 2226
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_mughal_talwar}
+									owns_or_non_sovereign_subject_of = 2077
+									owns_or_non_sovereign_subject_of = 4509
+									owns_or_non_sovereign_subject_of = 559
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_petronel}
+									owns_or_non_sovereign_subject_of = 193
+									owns_or_non_sovereign_subject_of = 4386
+									owns_or_non_sovereign_subject_of = 172
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_bayonet}
+									trade_goods_produced_amount = {
+												trade_goods = iron
+												amount = 3
+										}
+									}	
+							AND = {
+									NOT = {has_country_modifier = acw_arma_katar}
+									owns_or_non_sovereign_subject_of = 519
+									owns_or_non_sovereign_subject_of = 548
+									owns_or_non_sovereign_subject_of = 4462
+									}		
+							AND = {
+									NOT = {has_country_modifier = acw_arma_katana}
+									owns_or_non_sovereign_subject_of = 2111
+									owns_or_non_sovereign_subject_of = 4186
+									owns_or_non_sovereign_subject_of = 1014
+									}	
+							AND = {
+									NOT = {has_country_modifier = acw_arma_african_throwing_knives}
+									owns_or_non_sovereign_subject_of = 1168
+									owns_or_non_sovereign_subject_of = 4086
+									owns_or_non_sovereign_subject_of = 4095
+									}
+						}
+					}
+					
+					AND = {	
+						current_age = age_of_revolutions
+						OR = {	
+							AND = {
+									NOT = {has_country_modifier = acw_arma_qama}
+									owns_or_non_sovereign_subject_of = 2205
+									owns_or_non_sovereign_subject_of = 4301
+									owns_or_non_sovereign_subject_of = 4306
+									}	
+							AND = {	
+									NOT = {has_country_modifier = acw_arma_french_charleville_musket}
+									owns_or_non_sovereign_subject_of = 181
+									owns_or_non_sovereign_subject_of = 192
+									owns_or_non_sovereign_subject_of = 4112
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_grapeshot}
+									owns_or_non_sovereign_subject_of = 183
+									owns_or_non_sovereign_subject_of = 929
+									owns_or_non_sovereign_subject_of = 4363
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_howitzer}
+									owns_or_non_sovereign_subject_of = 967
+									owns_or_non_sovereign_subject_of = 2970
+									owns_or_non_sovereign_subject_of = 2532
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_brown_bess_musket}
+									owns_or_non_sovereign_subject_of = 233
+									owns_or_non_sovereign_subject_of = 4378
+									owns_or_non_sovereign_subject_of = 1978
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_bowie_knife}
+									owns_or_non_sovereign_subject_of = 877
+									owns_or_non_sovereign_subject_of = 2484
+									owns_or_non_sovereign_subject_of = 2672
+									}
+							AND = {
+									NOT = {has_country_modifier = acw_arma_kukri}
+									owns_or_non_sovereign_subject_of = 2069
+									owns_or_non_sovereign_subject_of = 4482
+									owns_or_non_sovereign_subject_of = 4485
+									}	
+							AND = {
+									NOT = {has_country_modifier = acw_arma_chu_ko_nu}
+									owns_or_non_sovereign_subject_of = 695
+									owns_or_non_sovereign_subject_of = 679
+									owns_or_non_sovereign_subject_of = 2157
+									}		
+							AND = {
+									NOT = {has_country_modifier = acw_arma_nock_gun}
+									owns_or_non_sovereign_subject_of = 778
+									owns_or_non_sovereign_subject_of = 4788
+									owns_or_non_sovereign_subject_of = 4380
+									}	
+							AND = {
+									NOT = {has_country_modifier = acw_arma_dragoon_musket}
+									trade_goods_produced_amount = {
+												trade_goods = grain
+												amount = 3
+										}
+									}
+						}
+					}
+				}
 	}
 	
 	option = {
-		name = "acw_hd_25.a"
-		acw_cf_decrease_perkz = yes	
+			name = acw_hd.29a
+			#age of discovery
 			IF = {
-				limit = {has_country_flag = acw_cf_company_1_picked}
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-												acw_remove_all_from_slot1 = yes
-												set_country_flag = acw_cf_s1_1
-											}	
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-												acw_remove_all_from_slot2 = yes
-												set_country_flag = acw_cf_s2_1 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-													acw_remove_all_from_slot3 = yes
-													set_country_flag = acw_cf_s3_1 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-												acw_remove_all_from_slot4 = yes
-												set_country_flag = acw_cf_s4_1 	
-												}
-					IF = {limit = {primary_culture = french} 
-											add_country_modifier = {
-													name = acw_cf_company_1_mod_1
-													duration = -1
-																		}
-													}					
-					ELSE = 	 {
-											add_country_modifier = {
-													name = acw_cf_company_1_mod
-													duration = -1
-													}	
-							}						
-																	
-				}
-				
-			IF = {
-				limit = {has_country_flag = acw_cf_company_2_picked}
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													} 
-												set_country_flag = acw_cf_s1_2
-											}	
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													}
-												set_country_flag = acw_cf_s2_2 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
-													acw_remove_all_from_slot3 = yes
-													}
-												set_country_flag = acw_cf_s3_2 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													}
-												set_country_flag = acw_cf_s4_2 	
-												}
-					IF = {limit = {primary_culture = nguni} 
-											add_country_modifier = {
-													name = acw_cf_company_2_mod_1
-													duration = -1
-																		}
-													}					
-					ELSE = 	 {
-											add_country_modifier = {
-													name = acw_cf_company_2_mod
-													duration = -1
-													}	
-							}						
-																	
-				}	
-				
-				
-			IF = {
-				limit = {has_country_flag = acw_cf_company_3_picked}
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													} 
-												set_country_flag = acw_cf_s1_3
-											}	
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													}
-												set_country_flag = acw_cf_s2_3 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
-													acw_remove_all_from_slot3 = yes
-													}
-												set_country_flag = acw_cf_s3_3 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													}
-												set_country_flag = acw_cf_s4_3 	
-												}
-					add_country_modifier = {
-													name = acw_cf_company_3_mod
-													duration = -1
-													}	
-					
-																	
-				}
-				
-				
-			IF = {
-				limit = {has_country_flag = acw_cf_company_4_picked}
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													} 
-												set_country_flag = acw_cf_s1_4
-											}	
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													}
-												set_country_flag = acw_cf_s2_4 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
-													acw_remove_all_from_slot3 = yes
-													}
-												set_country_flag = acw_cf_s3_4 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													}
-												set_country_flag = acw_cf_s4_4 	
-												}
-					IF = {limit = {any_ally = { primitives = yes} }
-											add_country_modifier = {
-													name = acw_cf_company_4_mod_1
-													duration = -1
-																	}
-									}				
-					ELSE = 	 {
-											add_country_modifier = {
-													name = acw_cf_company_4_mod
-													duration = -1
-													}	
-							}						
-																	
-				}	
-				
-			IF = {
-				limit = {has_country_flag = acw_cf_company_5_picked}
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													} 
-												set_country_flag = acw_cf_s1_5
-											}	
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													}
-												set_country_flag = acw_cf_s2_5 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
-													acw_remove_all_from_slot3 = yes
-													}
-												set_country_flag = acw_cf_s3_5 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													}
-												set_country_flag = acw_cf_s4_5 	
-												}
-					IF = {limit = {
-							OR = 	{
-								culture_group = hindustani
-								culture_group = western_aryan
+				limit = { current_age = age_of_discovery }
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 219
+							owns_or_non_sovereign_subject_of = 210
+							owns_or_non_sovereign_subject_of = 214
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_11
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_falcata			
+									duration = -1
+									desc = until_end_of_age_desc
 									}
-								} 
-											add_country_modifier = {
-													name = acw_cf_company_5_mod_1
-													duration = -1
-																	}
-													}		
-					ELSE = 	 {
-											add_country_modifier = {
-													name = acw_cf_company_5_mod
-													duration = -1
-													}	
-							}						
-																	
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_11				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_falcata			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_11				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_falcata			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_11				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_falcata		
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
 				}
 				
-			IF = {
-				limit = {has_country_flag = acw_cf_company_6_picked}
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													} 
-												set_country_flag = acw_cf_s1_6
-											}	
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													}
-												set_country_flag = acw_cf_s2_6 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
-													acw_remove_all_from_slot3 = yes
-													}
-												set_country_flag = acw_cf_s3_6 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													}
-												set_country_flag = acw_cf_s4_6 	
-												}
-					IF = {limit = {has_estate = estate_cossacks} 
-											add_country_modifier = {
-													name = acw_cf_company_6_mod_1
-													duration = -1}
-															}															
-					ELSE_IF = {limit = {culture_group = east_slavic }
-											add_country_modifier = {
-													name = acw_cf_company_6_mod_2
-													duration = -1
-																		}
-													}
-					ELSE_IF = {limit = {primary_culture = mexican} 
-											add_country_modifier = {
-													name = acw_cf_company_6_mod_3
-													duration = -1
-												}
-											}
-					ELSE_IF = {limit = { 
-											OR = {
-													culture_group = carpathian
-													culture_group = south_slavic
-													}
-											}
-											add_country_modifier = {
-													name = acw_cf_company_6_mod_4
-													duration = -1
-																		}
-													}
-					ELSE_IF = {limit = {primary_culture = maori} 
-											add_country_modifier = {
-													name = acw_cf_company_6_mod_5
-													duration = -1
-																		}
-													}
-					
-					ELSE = 	 {
-											add_country_modifier = {
-													name = acw_cf_company_6_mod_5
-													duration = -1
-													}	
-							}						
-																	
-				}
+				####
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 2971
+							owns_or_non_sovereign_subject_of = 1763
+							owns_or_non_sovereign_subject_of = 4478	
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_12
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_wagenburg			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_12				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_wagenburg			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_12				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_wagenburg			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_12				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_wagenburg			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
 				
-				
-			IF = {
-				limit = {has_country_flag = acw_cf_company_7_picked}
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													} 
-												set_country_flag = acw_cf_s1_7
-											}	
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													}
-												set_country_flag = acw_cf_s2_7 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
-													acw_remove_all_from_slot3 = yes
-													}
-												set_country_flag = acw_cf_s3_7 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													}
-												set_country_flag = acw_cf_s4_7 	
-												}
-					IF = {limit = {has_estate = estate_tribes} 
-											add_country_modifier = {
-													name = acw_cf_company_7_mod
-													duration = -1
-																		}
-													}					
-					
-					ELSE_IF = {limit = {primary_culture = russian} 
-											add_country_modifier = {
-													name = acw_cf_company_7_mod_1
-													duration = -1
-																		}
-													}
-					
-					
-					ELSE = 	 {
-											add_country_modifier = {
-													name = acw_cf_company_7_mod_2
-													duration = -1
-													}	
-							}						
-																	
-				}
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 582
+							owns_or_non_sovereign_subject_of = 663
+							owns_or_non_sovereign_subject_of = 2162
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_13
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_fo_lang_ji			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_13				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_fo_lang_ji			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_13				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_fo_lang_ji			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_13				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_fo_lang_ji			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
 			
-			IF = {
-				limit = {has_country_flag = acw_cf_company_8_picked}
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													} 
-												set_country_flag = acw_cf_s1_8
-											}	
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													}
-												set_country_flag = acw_cf_s2_8 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
-													acw_remove_all_from_slot3 = yes
-													}
-												set_country_flag = acw_cf_s3_8 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													}
-												set_country_flag = acw_cf_s4_8 	
-												}
-							
-					add_country_modifier = {
-									name = acw_cf_company_8_mod
-									duration = -1
-									}	
-													
-																	
-				}
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 1020
+							owns_or_non_sovereign_subject_of = 1030
+							owns_or_non_sovereign_subject_of = 1017
 
-			IF = {
-				limit = {has_country_flag = acw_cf_company_9_picked}
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													} 
-												set_country_flag = acw_cf_s1_9
-											}	
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													}
-												set_country_flag = acw_cf_s2_9 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
-													acw_remove_all_from_slot3 = yes
-													}
-												set_country_flag = acw_cf_s3_9 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													}
-												set_country_flag = acw_cf_s4_9 	
-												}
-		
-					add_country_modifier = {
-									name = acw_cf_company_9_mod
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_14
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_iron_fan			
 									duration = -1
-									}	
-											
-																	
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_14				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_iron_fan			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_14				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_iron_fan			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_14				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_iron_fan			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 841
+							owns_or_non_sovereign_subject_of = 2653
+							owns_or_non_sovereign_subject_of = 4573
+
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_15
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_macuahuitl			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_15				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_macuahuitl			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_15				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_macuahuitl			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_15				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_macuahuitl			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 3001
+							owns_or_non_sovereign_subject_of = 2305
+							owns_or_non_sovereign_subject_of = 325
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_16
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_yatagan			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_16				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_yatagan			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_16				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_yatagan			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_16				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_yatagan			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+			
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 2715
+							owns_or_non_sovereign_subject_of = 656
+							owns_or_non_sovereign_subject_of = 2702
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_17
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_mandau			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_17				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_mandau			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_17				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_mandau			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_17				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_mandau			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 382
+							owns_or_non_sovereign_subject_of = 2323
+							owns_or_non_sovereign_subject_of = 2322
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_18
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_khopesh			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_18				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_khopesh			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_18				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_khopesh			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_18				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_khopesh			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 1018
+							owns_or_non_sovereign_subject_of = 4184
+							owns_or_non_sovereign_subject_of = 418
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_19
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_naginata			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_19				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_naginata			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_19				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_naginata			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_19				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_naginata			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 4067
+							owns_or_non_sovereign_subject_of = 4097
+							owns_or_non_sovereign_subject_of = 4055
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_20
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_kpinga			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_20				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_kpinga			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_20				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_kpinga			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_20				
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_kpinga			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}	
+			}	
+				####
+				
+			####### age of reformation ##########
+			IF = {
+				limit = { current_age = age_of_reformation }
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 1925
+							owns_or_non_sovereign_subject_of = 1273
+							owns_or_non_sovereign_subject_of = 405
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_21
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_maasai_shield			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_11				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_maasai_shield			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_11				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_maasai_shield			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_11				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_maasai_shield		
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
 				}
 				
+				####
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 4078
+							owns_or_non_sovereign_subject_of = 4095
+							owns_or_non_sovereign_subject_of = 4105
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_22
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_bakuba_spears			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_22				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_bakuba_spears			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_22				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_bakuba_spears			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_22				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_bakuba_spears			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 151
+							owns_or_non_sovereign_subject_of = 96
+							owns_or_non_sovereign_subject_of = 4651
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_23
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_arquebus			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_23				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_arquebus			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_23				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_arquebus			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_23				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_arquebus			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+			
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 2966
+							owns_or_non_sovereign_subject_of = 263
+							owns_or_non_sovereign_subject_of = 61
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_24
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_arquebus_a_croc			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_24				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_arquebus_a_croc			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_24				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_arquebus_a_croc			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_24				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_arquebus_a_croc			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 189
+							owns_or_non_sovereign_subject_of = 1757
+							owns_or_non_sovereign_subject_of = 166
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_25
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_zweihander			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_25				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_zweihander			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_25				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_zweihander			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_25				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_zweihander			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 376
+							owns_or_non_sovereign_subject_of = 4363
+							owns_or_non_sovereign_subject_of = 4366
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_26
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_longsword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_26				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_longsword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_26				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_longsword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_26				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_longsword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+			
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 1851
+							owns_or_non_sovereign_subject_of = 222
+							owns_or_non_sovereign_subject_of = 4547
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_27
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_morion_helmet			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_27				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_morion_helmet			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_27				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_morion_helmet			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_27				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_morion_helmet			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 602
+							owns_or_non_sovereign_subject_of = 2389
+							owns_or_non_sovereign_subject_of = 2402
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_28
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_dha_sword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_28				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_dha_sword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_28				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_dha_sword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_28				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_dha_sword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 2067
+							owns_or_non_sovereign_subject_of = 4509
+							owns_or_non_sovereign_subject_of = 528
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_29
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_khanda_sword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_29				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_khanda_sword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_29				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_khanda_sword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_29				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_khanda_sword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 644
+							owns_or_non_sovereign_subject_of = 652
+							owns_or_non_sovereign_subject_of = 4355
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_30
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_barong_sword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_30				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_barong_sword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_30				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_barong_sword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_30				
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_barong_sword			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}	
+			}
+				####
+				
+			####### age of absolutism ##########
 			IF = {
-				limit = {has_country_flag = acw_cf_company_10_picked}
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													} 
-												set_country_flag = acw_cf_s1_10
-											}	
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													}
-												set_country_flag = acw_cf_s2_10 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
-													acw_remove_all_from_slot3 = yes
-													}
-												set_country_flag = acw_cf_s3_10 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													}
-												set_country_flag = acw_cf_s4_10 	
-												}			
-					
-					IF = {limit = {primary_culture = japanese} 
-											add_country_modifier = {
-													name = acw_cf_company_10_mod
-													duration = -1
-																		}
-													}
-					
-					
-					ELSE = 	 {
-											add_country_modifier = {
-													name = acw_cf_company_10_mod_1
-													duration = -1
-													}	
-							}						
-																	
+				limit = { current_age = age_of_absolutism }
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 674
+							owns_or_non_sovereign_subject_of = 2371
+							owns_or_non_sovereign_subject_of = 678
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_1
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_crouching_tiger_cannon			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_1				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_crouching_tiger_cannon			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_1				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_crouching_tiger_cannon			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_1				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_crouching_tiger_cannon		
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
 				}
 				
+				####
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 4040
+							owns_or_non_sovereign_subject_of = 1186
+							owns_or_non_sovereign_subject_of = 1185	
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_2
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_iklwa			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_2				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_iklwa			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_2				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_iklwa			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_2				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_iklwa			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 525
+							owns_or_non_sovereign_subject_of = 4509
+							owns_or_non_sovereign_subject_of = 2223
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_3
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_shamshir			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_3				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_shamshir			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_3				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_shamshir			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_3				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_shamshir			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+			
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 442
+							owns_or_non_sovereign_subject_of = 458
+							owns_or_non_sovereign_subject_of = 2226
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_4
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_jezail			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_4				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_jezail			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_4				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_jezail			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_4				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_jezail			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 2077
+							owns_or_non_sovereign_subject_of = 4509
+							owns_or_non_sovereign_subject_of = 559
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_5
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_mughal_talwar			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_5				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_mughal_talwar			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_5				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_mughal_talwar			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_5				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_mughal_talwar			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 193
+							owns_or_non_sovereign_subject_of = 4386
+							owns_or_non_sovereign_subject_of = 172
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_6
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_petronel			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_6				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_petronel			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_6				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_petronel			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_6				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_petronel			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+			
+				IF = { 
+					limit = {
+						trade_goods_produced_amount = {				
+									trade_goods = iron	
+									amount = 3	
+							}			
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_7
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_bayonet			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_7				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_bayonet			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_7				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_bayonet			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_7				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_bayonet			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 519				
+							owns_or_non_sovereign_subject_of = 548				
+							owns_or_non_sovereign_subject_of = 4462				
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_8
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_katar			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_8				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_katar			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_8				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_katar			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_8				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_katar			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 2111
+							owns_or_non_sovereign_subject_of = 4186
+							owns_or_non_sovereign_subject_of = 1014
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_9
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_katana			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_9				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_katana			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_9				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_katana			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_9				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_katana			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 1168
+							owns_or_non_sovereign_subject_of = 4086
+							owns_or_non_sovereign_subject_of = 4095
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_10
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_african_throwing_knives			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_10				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_african_throwing_knives			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_10				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_african_throwing_knives			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_10				
+						if = {
+							limit = {
+								current_age = age_of_absolutism
+							}
+							add_country_modifier = {				
+									name = acw_arma_african_throwing_knives			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+			}
+				####
+				
+			####### age of revolutions ##########
 			IF = {
-				limit = {has_country_flag = acw_cf_company_11_picked}
-					IF = { limit = {has_country_flag = acw_cf_slot_1_open }
-							IF = { limit = { acw_cf_slot_1_filled = yes } 
-													acw_remove_all_from_slot1 = yes
-													} 
-												set_country_flag = acw_cf_s1_11
-											}	
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_2_open }
-							IF = { limit = { acw_cf_slot_2_filled = yes } 
-													acw_remove_all_from_slot2 = yes
-													}
-												set_country_flag = acw_cf_s2_11 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_3_open }
-							IF = { limit = { acw_cf_slot_3_filled = yes } 
-													acw_remove_all_from_slot3 = yes
-													}
-												set_country_flag = acw_cf_s3_11 	
-												}
-					ELSE_IF = { limit = {has_country_flag = acw_cf_slot_4_open }
-							IF = { limit = { acw_cf_slot_4_filled = yes } 
-													acw_remove_all_from_slot4 = yes
-													}
-												set_country_flag = acw_cf_s4_11 	
-												}			
-					
-					IF = {limit = {culture_group = persian} 
-											add_country_modifier = {
-													name = acw_cf_company_11_mod_1
-													duration = -1
-																		}
-													}
-					
-					ELSE = 	 {
-											add_country_modifier = {
-													name = acw_cf_company_11_mod
-													duration = -1
-													}	
-							}						
-																	
+				limit = { current_age = age_of_revolutions }
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 2205
+							owns_or_non_sovereign_subject_of = 4301
+							owns_or_non_sovereign_subject_of = 4306
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_31
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_qama			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_31				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_qama			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_31				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_qama			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_31				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_qama		
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
 				}
-		}
-		
-		
-	option = {
-		name = "acw_hd_25.b"
-		}
+				
+				####
+				IF = { 
+					limit = {
+						AND = {
+									owns_or_non_sovereign_subject_of = 181
+									owns_or_non_sovereign_subject_of = 192
+									owns_or_non_sovereign_subject_of = 4112
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_32
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_french_charleville_musket			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_32				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_french_charleville_musket			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_32				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_french_charleville_musket			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_32				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_french_charleville_musket			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 183
+							owns_or_non_sovereign_subject_of = 929
+							owns_or_non_sovereign_subject_of = 4363
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_33
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_grapeshot			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_33				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_grapeshot			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_33				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_grapeshot			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_33				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_grapeshot			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+			
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 967
+							owns_or_non_sovereign_subject_of = 2970
+							owns_or_non_sovereign_subject_of = 2532
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_34
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_howitzer			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_34				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_howitzer			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_34				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_howitzer			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_34				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_howitzer			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 233
+							owns_or_non_sovereign_subject_of = 4378
+							owns_or_non_sovereign_subject_of = 1978
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_35
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_brown_bess_musket			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_35				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_brown_bess_musket			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_35				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_brown_bess_musket			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_35				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_brown_bess_musket			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 877
+							owns_or_non_sovereign_subject_of = 2484
+							owns_or_non_sovereign_subject_of = 2672
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_36
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_bowie_knife			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_36				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_bowie_knife			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_36				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_bowie_knife			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_36				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_bowie_knife			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+			
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 2069
+							owns_or_non_sovereign_subject_of = 4482
+							owns_or_non_sovereign_subject_of = 4485
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_37
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_kukri			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_37				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_kukri			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_37				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_kukri			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_37				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_kukri			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 695
+							owns_or_non_sovereign_subject_of = 679
+							owns_or_non_sovereign_subject_of = 2157
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_38
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_chu_ko_nu			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_38				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_chu_ko_nu			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_38				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_chu_ko_nu			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_38				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_chu_ko_nu			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						AND = {
+							owns_or_non_sovereign_subject_of = 778
+							owns_or_non_sovereign_subject_of = 4788
+							owns_or_non_sovereign_subject_of = 4380
+						}
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_39
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_nock_gun			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_39				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_nock_gun			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_39				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_nock_gun			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_39				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_nock_gun			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+				####
+				
+				IF = { 
+					limit = {
+						trade_goods_produced_amount = {			
+								trade_goods = grain
+								amount = 3
+						}
+					current_age = age_of_revolutions	
+					}
+				if = { 						
+					limit = {NOT = {has_country_modifier = acw_arma_slot_1_xp} } 					
+						set_country_flag = acw_arma_s1_40
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_dragoon_musket			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_1_xp		
+								duration = -1    		
+								}
+						set_country_flag = acw_arma_ai_slot_1_full		
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_2_xp} }			
+						set_country_flag = acw_arma_s2_40				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_dragoon_musket			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_2_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else_if	 = {					
+					limit = {NOT = {has_country_modifier = acw_arma_slot_3_xp} } 					
+						set_country_flag = acw_arma_s3_40				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_dragoon_musket			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}		
+						add_country_modifier = {				
+								name = acw_arma_slot_3_xp		
+								duration = -1    		
+								}		
+										
+					}					
+				else	 = {									
+						set_country_flag = acw_arma_s4_40				
+						if = {
+							limit = {
+								current_age = age_of_revolutions
+							}
+							add_country_modifier = {				
+									name = acw_arma_dragoon_musket			
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {				
+								name = acw_arma_slot_4_xp		
+								duration = -1    		
+								}		
+									
+					}
+				}		
+			}
+				
+				
+	}
 }
-

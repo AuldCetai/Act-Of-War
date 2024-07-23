@@ -210,10 +210,10 @@
  acw_arma_chu_ko_nu_desc:0 "The Chu Ko Nu, or repeating crossbow, is an ancient Chinese weapon capable of firing multiple bolts in rapid succession. It was used from the Warring States period through the Ming Dynasty, providing a significant tactical advantage in warfare. "\n
  acw_arma_nock_gun_desc:0 "The Nock Gun is a multi-barreled flintlock firearm developed for the British Royal Navy in the late 18th century. Featuring seven barrels fired simultaneously, it was designed to be used in naval boarding actions to deliver a devastating volley at close range."\n
  acw_arma_dragoon_musket_desc:0 "he Dragoon Musket is a shorter, lighter musket used by mounted infantry, known as dragoons, in the 17th and 18th centuries. Combining the firepower of a musket with the mobility of cavalry, it was a versatile weapon in early modern warfare. "\n
- acw_arma_slot_1_xp:0"Unlocked Armament"
- acw_arma_slot_2_xp:0"Unlocked Armament"
- acw_arma_slot_3_xp:0"Unlocked Armament"
- acw_arma_slot_4_xp:0"Unlocked Armament"
+ acw_arma_slot_1_xp:0"Unlocked Armament I"
+ acw_arma_slot_2_xp:0"Unlocked Armament II"
+ acw_arma_slot_3_xp:0"Unlocked Armament III"
+ acw_arma_slot_4_xp:0"Unlocked Armament IV"
  
  #heroic deeds events
  

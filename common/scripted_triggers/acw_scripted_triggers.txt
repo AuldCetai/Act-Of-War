@@ -1088,3 +1088,32 @@ acw_cf_slot_4_tier_2_filled = {
 		}
 	}
 }
+
+acw_cf_ai_has_company = {
+			OR = {	
+					has_country_modifier = acw_cf_company_1_mod
+					has_country_modifier = acw_cf_company_1_mod_1
+					has_country_modifier = acw_cf_company_2_mod
+					has_country_modifier = acw_cf_company_2_mod_1
+					has_country_modifier = acw_cf_company_3_mod
+					has_country_modifier = acw_cf_company_4_mod
+					has_country_modifier = acw_cf_company_4_mod_1
+					has_country_modifier = acw_cf_company_5_mod
+					has_country_modifier = acw_cf_company_5_mod_1
+					has_country_modifier = acw_cf_company_6_mod
+					has_country_modifier = acw_cf_company_6_mod_1
+					has_country_modifier = acw_cf_company_6_mod_2
+					has_country_modifier = acw_cf_company_6_mod_3
+					has_country_modifier = acw_cf_company_6_mod_4
+					has_country_modifier = acw_cf_company_6_mod_5
+					has_country_modifier = acw_cf_company_7_mod
+					has_country_modifier = acw_cf_company_7_mod_1
+					has_country_modifier = acw_cf_company_7_mod_2
+					has_country_modifier = acw_cf_company_8_mod
+					has_country_modifier = acw_cf_company_9_mod
+					has_country_modifier = acw_cf_company_10_mod_1
+					has_country_modifier = acw_cf_company_10_mod
+					has_country_modifier = acw_cf_company_11_mod_1
+					has_country_modifier = acw_cf_company_11_mod
+			}
+}

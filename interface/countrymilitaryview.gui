@@ -2544,6 +2544,15 @@ guiTypes = {
 			}
 			
 			guiButtonType ={
+				name ="acw_cavalry_levels_bar_t3b"
+				scripted = yes
+				spriteType = "GFX_acw_cavalry_levels_bar_t3b_button"
+				position = { x= 1020 y = 320 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
 				name ="acw_cavalry_levels_bar_t3a"
 				scripted = yes
 				spriteType = "GFX_acw_cavalry_levels_bar_t3a_button"
@@ -2552,14 +2561,7 @@ guiTypes = {
 				scale = 1
 			}
 			
-			guiButtonType ={
-				name ="acw_cavalry_levels_bar_t3b"
-				scripted = yes
-				spriteType = "GFX_acw_cavalry_levels_bar_t3b_button"
-				position = { x= 1020 y = 320 }
-				Orientation = "UPPER_LEFT"
-				scale = 1
-			}
+			
 			
 			#abilities - artillery
 			
@@ -2753,7 +2755,7 @@ guiTypes = {
 				name = "acw_army_stratagem_text"
 				position = { x = 700 y =485 }
 				format = left
-				font = "vic_22s"
+				font = "vic_19s"
 				maxWidth = 400
 				maxHeight = 320	
 				Orientation = "UPPER_LEFT"
