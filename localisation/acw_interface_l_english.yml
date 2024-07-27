@@ -454,9 +454,9 @@
  acw_cf_company_must_be_unlocked:0"You have to unlock the company to take this choice."
  acw_cf_company_must_be_unlocked_t2:0"You have to unlock the previous tier to take this choice."
  
- acw_hd_24.a:0"[ROOT.acw_cf_perkz_points.GetValue]"
- acw_cf_perkz_avaible:0"[ROOT.acw_cf_perkz_points.GetValue]"
- acw_cf_perkz_avaible_cf_bg_open:0"You have [ROOT.acw_cf_perkz_points.GetValue] points to spend."
+ acw_hd_24.a:0"[Root.acw_cf_perkz_points.GetValue]"
+ acw_cf_perkz_avaible:0" [Root.acw_cf_perkz_points.GetValue] "
+ acw_cf_perkz_avaible_cf_bg_open:0"You have [Root.acw_cf_perkz_points.GetValue] points to spend."
  acw_cf_perkz_points:0"Company Upgrade Points"
  
  acw_cf_company_1_mod:0"Sutlers"

@@ -1,5 +1,6 @@
 namespace = acw_hd
 
+
 #Feats of Horsemanship
 country_event = {
 	id = acw_hd.1 
@@ -1301,16 +1302,37 @@ country_event = {
 	fire_only_once = yes
 	hidden = yes
 	
-	trigger = { ai = no
-	}
+	trigger = { ai = no }
+	
+	immediate = {	
+			set_variable = {
+			which = acw_cf_perkz_points
+			value = 0
+			}
+		}
 	
 	option = {
 		name = "acw_hd_22.a"
-		ROOT = {
-				set_variable = {
-					which = acw_cf_perkz_points
-					value = 0
-				}
+		}
+}
+
+#setup perk points - for AI
+country_event = {
+	id = acw_hd.30
+	title = acw_hd_30.t 
+	desc = acw_hd_30.d
+	picture = GFX_acw_hd_siege_of_constantinople
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { ai = yes }
+	
+	option = {
+		name = "acw_hd_30.a"
+		set_variable = {
+			which = acw_cf_perkz_points
+			value = 0
 			}
 		}
 }
@@ -1325,24 +1347,93 @@ country_event = {
 	hidden = yes
 	
 	trigger = {	ai = no
-				OR = {
-						mil_tech = 	6
-						mil_tech =	9
-						mil_tech =	12
-						mil_tech =	15
-						mil_tech =	18
-						mil_tech =	21
-						mil_tech =	24
-						mil_tech =	27
-						}
-	}
+				mil_tech = 6 }
 	
 	option = {
 		name = "acw_hd_23.a"
+		IF = { 
+			limit = {
+						mil_tech = 	6
+						NOT = { mil_tech = 	7 }
+					}
 				change_variable = {
 					which = acw_cf_perkz_points
 					value = 1
 				}
+			}
+		ELSE_IF = { 
+			limit = {
+						mil_tech = 	9
+						NOT = { mil_tech = 	10 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+			}
+		ELSE_IF = { 
+			limit = {
+						mil_tech = 	12
+						NOT = { mil_tech = 	13 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+			}
+		ELSE_IF = { 
+			limit = {
+						mil_tech = 	15
+						NOT = { mil_tech = 	16 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+			}
+		ELSE_IF = { 
+			limit = {
+						mil_tech = 	18
+						NOT = { mil_tech = 	19 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+			}
+		ELSE_IF = { 
+			limit = {
+						mil_tech = 	21
+						NOT = { mil_tech = 	22 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+			}
+		ELSE_IF = { 
+			limit = {
+						mil_tech = 	24
+						NOT = { mil_tech = 	25 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+			}
+		ELSE_IF = { 
+			limit = {
+						mil_tech = 	27
+						NOT = { mil_tech = 	28 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+			}
+			
+		ELSE = {}
+				
 		}
 }
 
@@ -6877,4 +6968,74 @@ country_event = {
 				
 				
 	}
+}
+
+
+#on_actions acw_night_in_targoviste_happened
+country_event = {
+	id = acw_hd.31
+	title = acw_hd_31.t 
+	desc = acw_hd_31.d
+	picture = GFX_acw_hd_siege_of_constantinople
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = { }
+	
+	option = {
+		name = "acw_hd_31.a"
+		set_global_flag = acw_night_in_targoviste_happened
+		}
+}
+
+#on_actions acw_turks_lost_at_wien 
+country_event = {
+	id = acw_hd.32
+	title = acw_hd_32.t 
+	desc = acw_hd_32.d
+	picture = GFX_acw_hd_siege_of_constantinople
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = { }
+	
+	option = {
+		name = "acw_hd_32.a"
+		set_global_flag = acw_turks_lost_at_wien 
+		}
+}
+
+#on_actions acw_crossed_the_delaware
+country_event = {
+	id = acw_hd.33
+	title = acw_hd_33.t 
+	desc = acw_hd_33.d
+	picture = GFX_acw_hd_siege_of_constantinople
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = { }
+	
+	option = {
+		name = "acw_hd_33.a"
+		set_global_flag = acw_crossed_the_delaware
+		}
+}
+
+
+#on_actions acw_french_lost_in_america
+country_event = {
+	id = acw_hd.34
+	title = acw_hd_34.t 
+	desc = acw_hd_34.d
+	picture = GFX_acw_hd_siege_of_constantinople
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = { }
+	
+	option = {
+		name = "acw_hd_34.a"
+		set_global_flag = acw_french_lost_in_america
+		}
 }

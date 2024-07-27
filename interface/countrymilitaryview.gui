@@ -3541,35 +3541,37 @@ guiTypes = {
 			}	
 			
 			
+						
+			#guiButtonType = {
+			#	name = "acw_cf_buy_perkz"
+			#	position = { x=1190 y =620}
+			#	spriteType ="GFX_nation_designer_navigate_left"
+			#	Orientation = "UPPER_LEFT"
+			#	scripted = yes
+			#	scale = 1
+			#	pdx_tooltip = ""
+			#}
 			
-			guiButtonType = {
-				name = "acw_cf_buy_perkz"
-				position = { x=1190 y =620}
-				spriteType ="GFX_nation_designer_navigate_left"
-				Orientation = "UPPER_LEFT"
-				scripted = yes
-				scale = 1
-				pdx_tooltip = ""
-			}
 			
-			instantTextBoxType = {
-				name = "acw_cf_perkz_avaible"
-				position = { x = 1260 y =645 }
-				format = centre
-				font = "vic_29s"
-				maxWidth = 420
-				maxHeight = 32	
-				Orientation = "UPPER_RIGHT"
-				text = ""
-				format = left
-				scripted = yes
-			}	
 
 			instantTextBoxType = {
 				name = "acw_cf_perkz_avaible_cf_bg_open"
 				position = { x = 830 y =800 }
 				format = centre
 				font = "vic_29s"
+				maxWidth = 420
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+				text = ""
+				format = left
+				scripted = yes
+			}	
+			
+			instantTextBoxType = {
+				name = "acw_cf_perkz_avaible"
+				position = { x = 1254 y =645 }
+				format = centre
+				font = "vic_29"
 				maxWidth = 420
 				maxHeight = 32	
 				Orientation = "UPPER_LEFT"

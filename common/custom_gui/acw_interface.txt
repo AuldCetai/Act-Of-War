@@ -523,7 +523,7 @@ custom_button = {
 				else_if = {limit = {has_country_modifier=acw_cavalry_upgrade_t4}
 					add_army_professionalism = -0.25
 					hidden_effect = {
-						remove_country_modifier = acw_cavalry_upgrade_t
+						remove_country_modifier = acw_cavalry_upgrade_t4
 						}
 					add_country_modifier = {name = acw_cavalry_upgrade_t5
 											duration = -1
@@ -9121,10 +9121,7 @@ custom_button = {
 								add_country_modifier = {
 										name = acw_cf_company_1_mod
 										duration = -1
-													}	
-												
-											
-													
+													}								
 					}		
 							
 				}

@@ -40,7 +40,10 @@ on_new_age = {
 }
 
 on_startup = {
-			events = { acw_hd.22 }
+			events = {  
+						acw_hd.22
+						acw_hd.30
+						}
 }
 
 # country
@@ -55,8 +58,10 @@ on_siege_won_country = {
 
 on_siege_lost_province = {
 	if = {
-			limit = {ROOT = {province_id = 361}
-					 FROM = {culture_group = french}}
+			limit = {
+					 province_id = 361
+					 FROM = {culture_group = french}
+					 }
 			ROOT = {country_event = { id = acw_hd.1 days = 1}
 			}
 		}
@@ -80,7 +85,7 @@ on_battle_won_country = {
 				from = {tag = TUR}
 				}
 
-				set_global_flag = acw_night_in_targoviste_happened
+				ROOT = {country_event = { id = acw_hd.31 }}
 			}
 		
 		if = {
@@ -147,60 +152,237 @@ on_battle_won_province = {
 	if = {
 		limit = {
 			AND = {
-				root = 134
-				from = TUR
+				province_id = 134
+				from = { tag = TUR }
 				}
 			}
-		set_global_flag = acw_turks_lost_at_wien
+		owner = { country_event = { id = acw_hd.32 days = 2 } }
 	}
 	
 	if = {
 		limit = {
-			root = { province_id = 951}
+			province_id = 951
 			 }
-		set_global_flag = acw_crossed_the_delaware
+		owner = { country_event = { id = acw_hd.33 days = 2 } }
 	}
 	
 	
 	if = {
 		limit = {
-			root = { superregion = north_america_superregion }
-			from = FRA }
-		set_global_flag = acw_french_lost_in_america
+			superregion = north_america_superregion
+			from = {tag = FRA}
+			}
+		owner = { country_event = { id = acw_hd.34 days = 2 } }
 	}
 	
 	if = {
 		limit = {
-			root = { province_id = 361 }
-			from = REB }
-		events = {acw_hd.6}
+			AND = {
+				province_id = 361
+				from = {tag = REB } 
+				}
+			}
+		owner = { country_event = { id = acw_hd.6 days = 2 } }
 		}
 	
 	if = {
 		limit = { 
 			AND = {
-				root = { province_id = 217 }
-				from = REB
+				province_id = 217
+				from = {tag = REB } 
 				}
 			}
 			
-		events = {acw_hd.7}
+		owner = { country_event = { id = acw_hd.7 days = 2 } }
 		}
 	}
 
 on_war_lost	 = {
-			ROOT = {country_event = { id = acw_hd.4 days = 1 }
+			events = {acw_hd.4}
 			}
-}
-			
-
-			
+					
 on_mil_tech_taken = {
 			events = {acw_hd.23
 					  acw_hd.26}
 			}
 	
 on_primary_culture_changed = {
+	if = {
+			limit = {
+				AND = {
+					NOT = { primary_culture = cosmopolitan_french }
+					has_country_modifier = acw_cf_company_1_mod_1
+						}
+					}
+				remove_country_modifier = acw_cf_company_1_mod_1
+				add_country_modifier = {
+					name = acw_cf_company_1_mod
+					duration = -1
+					}
+			}
+			
+	if = {
+			limit = {
+				AND = {
+					NOT = { primary_culture = nguni }
+					has_country_modifier = acw_cf_company_2_mod_1
+						}
+					}
+				remove_country_modifier = acw_cf_company_2_mod_1
+				add_country_modifier = {
+					name = acw_cf_company_2_mod
+					duration = -1
+					}
+			}	
+	if = {
+			limit = {
+				AND = {
+					NOT = { OR = {
+								culture_group = hindustani
+								culture_group = western_aryan
+								}
+							}
+					has_country_modifier = acw_cf_company_5_mod_1
+						}
+					}
+				remove_country_modifier = acw_cf_company_5_mod_1
+				add_country_modifier = {
+					name = acw_cf_company_5_mod
+					duration = -1
+					}
+			}
+	if = {
+			limit = {
+				OR = {
+						has_country_modifier = acw_cf_company_6_mod	
+						has_country_modifier = acw_cf_company_6_mod_1
+						has_country_modifier = acw_cf_company_6_mod_2
+						has_country_modifier = acw_cf_company_6_mod_3
+						has_country_modifier = acw_cf_company_6_mod_4
+						has_country_modifier = acw_cf_company_6_mod_5
+						}
+					}
+				
+				remove_country_modifier = acw_cf_company_6_mod	
+				remove_country_modifier = acw_cf_company_6_mod_1
+				remove_country_modifier = acw_cf_company_6_mod_2
+				remove_country_modifier = acw_cf_company_6_mod_3
+				remove_country_modifier = acw_cf_company_6_mod_4
+				remove_country_modifier = acw_cf_company_6_mod_5
+						
+						
+				IF = {limit = {has_estate = estate_cossacks
+								NOT = {culture_group = east_slavic}
+								NOT = {culture_group = carpathian}
+								NOT = {primary_culture = maori}
+								NOT = {primary_culture = mexican}
+								} 
+						add_country_modifier = {
+								name = acw_cf_company_6_mod
+								duration = -1
+											}
+						}
+				ELSE_IF = {limit = {culture_group = east_slavic} 
+						add_country_modifier = {
+								name = acw_cf_company_6_mod_1
+								duration = -1
+											}
+						}		
+				ELSE_IF = {limit = {primary_culture = mexican} 
+						add_country_modifier = {
+								name = acw_cf_company_6_mod_2
+								duration = -1
+											}
+						}		
+						
+				ELSE_IF = {limit = {culture_group = carpathian}
+						add_country_modifier = {
+								name = acw_cf_company_6_mod_3
+								duration = -1
+											}
+						}		
+				
+				ELSE_IF = {limit = {primary_culture = maori}
+						add_country_modifier = {
+								name = acw_cf_company_6_mod_4
+								duration = -1
+											}
+						}
+				
+				ELSE = 	 {
+						add_country_modifier = {
+								name = acw_cf_company_6_mod_5
+								duration = -1
+											}	
+					}
+			}	
+
+	if = {
+			limit = {
+				OR = {
+					has_country_modifier = acw_cf_company_7_mod
+					has_country_modifier = acw_cf_company_7_mod_1
+					has_country_modifier = acw_cf_company_7_mod_2
+					
+						}
+					}
+				remove_country_modifier = acw_cf_company_7_mod
+				remove_country_modifier = acw_cf_company_7_mod_1
+				remove_country_modifier = acw_cf_company_7_mod_2
+				
+				IF = {limit = {
+								tag = RUS
+							} 
+								add_country_modifier = {
+										name = acw_cf_company_7_mod
+										duration = -1
+													}
+								}
+						ELSE_IF = {limit = {
+								has_estate = estate_tribes
+							} 
+								add_country_modifier = {
+										name = acw_cf_company_7_mod_1
+										duration = -1
+													}
+								}		
+								
+								
+						ELSE = 	 {
+								add_country_modifier = {
+										name = acw_cf_company_7_mod_2
+										duration = -1
+													}	
+							}
+			}	
+
+	if = {
+			limit = {
+				AND = {
+					NOT = { primary_culture = japanese }
+					has_country_modifier = acw_cf_company_10_mod_1
+						}
+					}
+				remove_country_modifier = acw_cf_company_10_mod_1
+				add_country_modifier = {
+					name = acw_cf_company_10_mod
+					duration = -1
+					}
+			}
 	
+	if = {
+			limit = {
+				AND = {
+					NOT = { culture_group = persian }
+					has_country_modifier = acw_cf_company_11_mod_1
+						}
+					}
+				remove_country_modifier = acw_cf_company_11_mod_1
+				add_country_modifier = {
+					name = acw_cf_company_11_mod
+					duration = -1
+					}
+			}
+			
 }
 	
