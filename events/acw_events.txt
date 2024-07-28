@@ -1346,83 +1346,12 @@ country_event = {
 	is_triggered_only = yes
 	hidden = yes
 	
-	trigger = {	ai = no
-				mil_tech = 6 }
+	trigger = {	ai = no }
 	
 	option = {
 		name = "acw_hd_23.a"
 		IF = { 
-			limit = {
-						mil_tech = 	6
-						NOT = { mil_tech = 	7 }
-					}
-				change_variable = {
-					which = acw_cf_perkz_points
-					value = 1
-				}
-			}
-		ELSE_IF = { 
-			limit = {
-						mil_tech = 	9
-						NOT = { mil_tech = 	10 }
-					}
-				change_variable = {
-					which = acw_cf_perkz_points
-					value = 1
-				}
-			}
-		ELSE_IF = { 
-			limit = {
-						mil_tech = 	12
-						NOT = { mil_tech = 	13 }
-					}
-				change_variable = {
-					which = acw_cf_perkz_points
-					value = 1
-				}
-			}
-		ELSE_IF = { 
-			limit = {
-						mil_tech = 	15
-						NOT = { mil_tech = 	16 }
-					}
-				change_variable = {
-					which = acw_cf_perkz_points
-					value = 1
-				}
-			}
-		ELSE_IF = { 
-			limit = {
-						mil_tech = 	18
-						NOT = { mil_tech = 	19 }
-					}
-				change_variable = {
-					which = acw_cf_perkz_points
-					value = 1
-				}
-			}
-		ELSE_IF = { 
-			limit = {
-						mil_tech = 	21
-						NOT = { mil_tech = 	22 }
-					}
-				change_variable = {
-					which = acw_cf_perkz_points
-					value = 1
-				}
-			}
-		ELSE_IF = { 
-			limit = {
-						mil_tech = 	24
-						NOT = { mil_tech = 	25 }
-					}
-				change_variable = {
-					which = acw_cf_perkz_points
-					value = 1
-				}
-			}
-		ELSE_IF = { 
-			limit = {
+			limit = {	NOT = {has_country_flag = acw_stop_the_count_tech27}
 						mil_tech = 	27
 						NOT = { mil_tech = 	28 }
 					}
@@ -1430,10 +1359,85 @@ country_event = {
 					which = acw_cf_perkz_points
 					value = 1
 				}
+				set_country_flag = acw_stop_the_count_tech27
 			}
-			
-		ELSE = {}
-				
+		ELSE_IF = { 
+			limit = {	NOT = {has_country_flag = acw_stop_the_count_tech24}
+						mil_tech = 	24
+						NOT = { mil_tech = 	25 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+				set_country_flag = acw_stop_the_count_tech24
+			}
+		ELSE_IF = { 
+			limit = {	NOT = {has_country_flag = acw_stop_the_count_tech21}
+						mil_tech = 	21
+						NOT = { mil_tech = 	22 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+				set_country_flag = acw_stop_the_count_tech21
+			}
+		ELSE_IF = { 
+			limit = {	NOT = {has_country_flag = acw_stop_the_count_tech18}
+						mil_tech = 	18
+						NOT = { mil_tech = 	19 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+				set_country_flag = acw_stop_the_count_tech18
+			}
+		ELSE_IF = { 
+			limit = {	NOT = {has_country_flag = acw_stop_the_count_tech15}
+						mil_tech = 	15
+						NOT = { mil_tech = 	16 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+				set_country_flag = acw_stop_the_count_tech15
+			}
+		ELSE_IF = { 
+			limit = {	NOT = {has_country_flag = acw_stop_the_count_tech12}
+						mil_tech = 	12
+						NOT = { mil_tech = 	13 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+				set_country_flag = acw_stop_the_count_tech12
+			}
+		ELSE_IF = { 
+			limit = {	NOT = {has_country_flag = acw_stop_the_count_tech9}
+						mil_tech = 	9
+						NOT = { mil_tech = 	10 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+				set_country_flag = acw_stop_the_count_tech9
+			}
+		ELSE = { 
+			limit = {	NOT = {has_country_flag = acw_stop_the_count_tech6}
+						mil_tech = 	6
+						NOT = { mil_tech = 	7 }
+					}
+				change_variable = {
+					which = acw_cf_perkz_points
+					value = 1
+				}
+				set_country_flag = acw_stop_the_count_tech6
+			}
 		}
 }
 
@@ -1733,7 +1737,7 @@ country_event = {
 
 
 
-#AI code - use companies - no need for loc b-no company c-higher level companies
+#AI code - use companies - no need for loc b-no company c-higher level companies #need to fix for proper selecting tied to levels
 country_event = {
 	id = acw_hd.26
 	title = acw_hd_26.t 
@@ -1742,18 +1746,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {	ai = yes
-				OR = {
-						mil_tech = 	6
-						mil_tech =	9
-						mil_tech =	12
-						mil_tech =	15
-						mil_tech =	18
-						mil_tech =	21
-						mil_tech =	24
-						mil_tech =	27
-						mil_tech =  30
-						}
-	}
+				always = no }
 	
 	#no cf unlocked yet
 	option = {

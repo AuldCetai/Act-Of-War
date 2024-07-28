@@ -42,7 +42,6 @@ on_new_age = {
 on_startup = {
 			events = {  
 						acw_hd.22
-						acw_hd.30
 						}
 }
 
@@ -202,9 +201,16 @@ on_war_lost	 = {
 			}
 					
 on_mil_tech_taken = {
-			events = {acw_hd.23
-					  acw_hd.26}
-			}
+	if = {
+		limit = { AND = {
+					mil_tech = 6 
+					ai = no
+					}
+				}
+			ROOT = {country_event = { id = acw_hd.23 }}
+		}
+}
+		
 	
 on_primary_culture_changed = {
 	if = {
