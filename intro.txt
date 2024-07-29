@@ -1,0 +1,57 @@
+Introduction:
+- Me Cetai. Me no smart, me do mod for time. Enjoy.
+
+About this mod:
+- Inspired by Modathon 2024's Army Professionalism mod. That was fcking rad.
+
+How-to:
+- Unit upgrades
+Units can be upgraded through 9 levels, each level granting Combat Ability to the specific unit type
+Every 3 levels unlock an ability for 10 years which costs Army Professionalism and has a cooldown of 25 years
+
+- Stratagems
+One of 5 different stratagems can be unlocked. Stratagems impact the playstyle greatly, ranging from Defense in Depth (focused on attrition, fort defense and taking less fire damage) to Reliance on Mercenaries (which allows Forced marches way earlier)
+Stratagems need to be upgraded with Army Professionalism to access their full potential
+
+- Armaments
+Through history, many weapons have gained fame as being the significant armament of nations
+40 different armament added which grant an age long bonus to the player unlocking one of them, with their own requirements to unlock (either by having enough of a specific Trade good avaible, or by owning specific provinces scattered all around the world)
+Armaments can be unlocked for free if the requirements are met, but they cannot be removed once selected, and they grant their bonus only in the age specified. They also grant a small bonus to Yearly army professionalism, but come with a drawback of Yearly corruption. These modifiers are permanent.
+
+- Heroic deeds
+Player may commemorate 3 events happening all around the world, as a Heroic Deed. Events range from the The Winged Hussars arrive (beat the Ottomans at Wien) to Crossing the Delaware (siege down Delaware as a colonial nation), via Events. These events speak about the historic background of the happening, with added real world paintings.
+You can only have 3 of these, but they grant a small permanent bonus. Any further Events grant you a small amount of prestige instead.
+
+- Chevauchee /Camp Followers/ (also known as Support Companies)
+Player can unlock Support companies to augment his/her armies. 
+There are 11 support companies avaible, ranging from Camp Merchants (reduces reinforcement cost, war taxes cost, or grant global) to Native Auxilia (reduced regiment manpower usage, vassal forcelimit bonus or native assimilation) to even Involuntary corps (cheaper fort assaults, more avaible province loot or less land maintenance)
+Camp followers have an upgrade tree, with 3 pickable upgrade out of 7 for each. Player gains points to spend every 3 Military Technology starting from Miltech 6.
+Having Chevauchee companies come with their own drawbacks, mainly the increased Estate influence the company is tied to. Some companies can mitigate the influence malus on their upgrade tree.
+There are multiple unique companies tied to players primary culture or tag, and some of them are not avaible if player does not have the requirements.
+
+Contributors:
+Potyeszka
+
+necessary DLCs: Cradle of Civilization
+
+Future updates (maaaaybe) :
+
+	- army interface
+		- #may be dropped as I want this to be compatible with most DLCs# support companies special interactions with estate privileges (for ex granting burghers govcap privileges grants now double amount of govcap if Logistics corp is active)
+		- item sets for armaments 
+		- stratagems : during war,war leaders with different stratagems gain +1 roll/stratagem level difference against specific stratagems (DoD vs RoM, etc)
+		- power bar : balance between a professional specialised army and an all round force, with disaster if army is unbalanced
+		- everything about the 4th company (unlocking, the code itself is done)
+		- balancing (how many perkz do support companies get, army professionalism costs adjustment, etc)
+		
+	- naval interface
+		- upgrade for naval units with skills
+		- naval research table, ship technologies
+		- mini quests to unlock new naval doctrines
+		- upgrades to raiding, etc
+		- new admiral traits
+		
+	- diplomatic interface
+		- enchanced diplomatic actions
+		- cabinet
+		- will see, tbf
