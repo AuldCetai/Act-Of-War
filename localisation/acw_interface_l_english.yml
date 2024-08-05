@@ -1,93 +1,72 @@
 ﻿l_english:
  acw_army_window_title:0"Military Conduct"
  acw_stratagem_none:0"No stratagem selected yet."
- 
- acw_stratagem_selector_button_sfp_levels_chose:0"[acw_stratagem_selector_button_sfp_levels]"
- acw_stratagem_selector_button_trc_levels_chose:0"[acw_stratagem_selector_button_trc_levels]"
- acw_stratagem_selector_button_dod_levels_chose:0"[acw_stratagem_selector_button_dod_levels]"
- acw_stratagem_selector_button_has_levels_chose:0"[acw_stratagem_selector_button_has_levels]"
- acw_stratagem_selector_button_rom_levels_chose:0"[acw_stratagem_selector_button_rom_levels]"
- 
  acw_stratagem_sfp_selected_text:0"§OSuperior firepower I§!\nThe level of our stratagem grants us the following effects:\n\nArtillery Damage From Back Row: §G+10.0%§!"
  acw_stratagem_sfp_t1_text:0"§OSuperior firepower II§!\nThe level of our stratagem grants us the following effects:\n\nArtillery Damage From Back Row: §G+10.0%§!\nArtillery Barrage Cost : §G-10.0%§!"
  acw_stratagem_sfp_t2_text:0"§OSuperior firepower III§!\nThe level of our stratagem grants us the following effects:\n\nArtillery Damage From Back Row: §G+10.0%§!\nArtillery Barrage Cost : §G-10.0%§!\nShock Damage Received: §G-10.0%§!"
  acw_stratagem_sfp_t3_text:0"§OSuperior firepower IV§!\nThe level of our stratagem grants us the following effects:\n\nArtillery Damage From Back Row: §G+10.0%§!\nArtillery Barrage Cost : §G-10.0%§!\nShock Damage Received: §G-10.0%§!\nSiege Ability: §G+10.0%§!"
  acw_stratagem_sfp_t4_text:0"§OSuperior firepower V§!\nThe level of our stratagem grants us the following effects:\n\nArtillery Damage From Back Row: §G+10.0%§!\nArtillery Barrage Cost : §G-10.0%§!\nShock Damage Received: §G-10.0%§!\nSiege Ability: §G+10.0%§!\nArtillery Fire:§G+1.00§!"
- 
  acw_stratagem_rom_selected_text:0"§OReliance on Mercenaries I§!\nThe level of our stratagem grants us the following effects:\n\nLeader(s) without Upkeep: §G+1§!"
  acw_stratagem_rom_t1_text:0"§OReliance on Mercenaries II§!\nThe level of our stratagem grants us the following effects:\n\nLeader(s) without Upkeep: §G+1§!\nMercenary Maintenance: §G-25.0%§!"
  acw_stratagem_rom_t2_text:0"§OReliance on Mercenaries III§!\nThe level of our stratagem grants us the following effects:\n\nLeader(s) without Upkeep: §G+1§!\nMercenary Maintenance: §G-25.0%§!\nMercenary Leader Tradition: §G+50.0%§!"
  acw_stratagem_rom_t3_text:0"§OReliance on Mercenaries IV§!\nThe level of our stratagem grants us the following effects:\n\nLeader(s) without Upkeep: §G+1§!\nMercenary Maintenance: §G-25.0%§!\nMercenary Leader Tradition: §G+50.0%§!\nEnable Force March"
  acw_stratagem_rom_t4_text:0"§OReliance on Mercenaries V§!\nThe level of our stratagem grants us the following effects:\n\nLeader(s) without Upkeep: §G+1§!\nMercenary Maintenance: §G-25.0%§!\nMercenary Leader Tradition: §G+50.0%§!\nEnable Force March\nCan recruit Mercenaries from anywhere"
- 
  acw_stratagem_dod_selected_text:0"§ODefense in Depth I§!\nThe level of our stratagem grants us the following effects:\n\nFort Defense: §G+20.0%§!"
  acw_stratagem_dod_t1_text:0"§ODefense in Depth II§!\nThe level of our stratagem grants us the following effects:\n\nFort Defense: §G+20.0%§!\nGarrison Size: §G+25.0%§!"
  acw_stratagem_dod_t2_text:0"§ODefense in Depth III§!\nThe level of our stratagem grants us the following effects:\n\nFort Defense: §G+20.0%§!\nGarrison Size: §G+25.0%§!\nGarrison Army Damage: §G+25.0%§!"
  acw_stratagem_dod_t3_text:0"§ODefense in Depth IV§!\nThe level of our stratagem grants us the following effects:\n\nFort Defense: §G+20.0%§!\nGarrison Size: §G+25.0%§!\nGarrison Army Damage: §G+25.0%§!\nFire Damage Received: §G-15.0%§!"
  acw_stratagem_dod_t4_text:0"§ODefense in Depth V§!\nThe level of our stratagem grants us the following effects:\n\nFort Defense: §G+20.0%§!\nGarrison Size: §G+25.0%§!\nGarrison Army Damage: §G+25.0%§!\nFire Damage Received: §G-15.0%§!\nMax Hostile Attrition: §G+3.00§!"
- 
  acw_stratagem_has_selected_text:0"§OHeroic Assault I§!\nThe level of our stratagem grants us the following effects:\n\nPrestige from Land Battles: §G+30.0%§!"
  acw_stratagem_has_t1_text:0"§OHeroic Assault II§!\nThe level of our stratagem grants us the following effects:\n\nPrestige from Land Battles: §G+30.0%§!\nAssault Fort cost modifier: §G-20.0%§!"
  acw_stratagem_has_t2_text:0"§OHeroic Assault III§!\nThe level of our stratagem grants us the following effects:\n\nPrestige from Land Battles: §G+30.0%§!\nAssault Fort cost modifier: §G-20.0%§!\nMorale Damage Received: §G-10.0%§!"
  acw_stratagem_has_t3_text:0"§OHeroic Assault IV§!\nThe level of our stratagem grants us the following effects:\n\nPrestige from Land Battles: §G+30.0%§!\nAssault Fort cost modifier: §G-20.0%§!\nMorale Damage Received: §G-10.0%§!\nAssault Fort ability: §G+10.0%§!"
  acw_stratagem_has_t4_text:0"§OHeroic Assault V§!\nThe level of our stratagem grants us the following effects:\n\nPrestige from Land Battles: §G+30.0%§!\nAssault Fort cost modifier: §G-20.0%§!\nMorale Damage Received: §G-10.0%§!\nAssault Fort ability: §G+10.0%§!\nMilitary Tactics: §G+0.20§!"
- 
  acw_stratagem_trc_selected_text:0"§OTraditional Combat I§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-5.0%§!"
  acw_stratagem_trc_t1_text:0"§OTraditional Combat II§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-5.0%§!\nCavalry to Infantry Ratio: §G+50.0%§!"
  acw_stratagem_trc_t2_text:0"§OTraditional Combat III§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-5.0%§!\nCavalry to Infantry Ratio: §G+50.0%§!\nVassal Force Limit Contribution §G+20.0%§!"
  acw_stratagem_trc_t3_text:0"§OTraditional Combat IV§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-5.0%§!\nCavalry to Infantry Ratio: §G+50.0%§!\nVassal Force Limit Contribution §G+20.0%§!\nSpecial Unit Force Limit: §G+33.0%§!"
  acw_stratagem_trc_t4_text:0"§OTraditional Combat V§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-5.0%§!\nCavalry to Infantry Ratio: §G+50.0%§!\nVassal Force Limit Contribution §G+20.0%§!\nSpecial Unit Force Limit: §G+33.0%§!\nCan Recruit Revolutionary Guards\nRevolutionary Guard Force Limit Fraction: §G+10.0%§!"
- 
  acw_stratagem_has_selected:0"Heroic Assault I"
  acw_stratagem_has_t1:0"Heroic Assault II"
  acw_stratagem_has_t2:0"Heroic Assault III"
  acw_stratagem_has_t3:0"Heroic Assault IV"
  acw_stratagem_has_t4:0"Heroic Assault V"
- 
  acw_stratagem_rom_selected:0"Reliance on Mercenaries I"
  acw_stratagem_rom_t1:0"Reliance on Mercenaries II"
  acw_stratagem_rom_t2:0"Reliance on Mercenaries III"
  acw_stratagem_rom_t3:0"Reliance on Mercenaries IV"
  acw_stratagem_rom_t4:0"Reliance on Mercenaries V"
- 
  acw_stratagem_dod_selected:0"Defense in Depth I"
  acw_stratagem_dod_t1:0"Defense in Depth II"
  acw_stratagem_dod_t2:0"Defense in Depth III"
  acw_stratagem_dod_t3:0"Defense in Depth IV"
  acw_stratagem_dod_t4:0"Defense in Depth V"
- 
  acw_stratagem_trc_selected:0"Traditional Combat I"
  acw_stratagem_trc_t1:0"Traditional Combat II"
  acw_stratagem_trc_t2:0"Traditional Combat III"
  acw_stratagem_trc_t3:0"Traditional Combat IV"
  acw_stratagem_trc_t4:0"Traditional Combat V"
- 
  acw_stratagem_sfp_selected:0"Superior Firepower I"
  acw_stratagem_sfp_t1:0"Superior Firepower II"
  acw_stratagem_sfp_t2:0"Superior Firepower III"
  acw_stratagem_sfp_t3:0"Superior Firepower IV"
  acw_stratagem_sfp_t4:0"Superior Firepower V"
- 
  acw_stratagem_sfp_selected_desc:0"§OSuperior firepower§!\nSuperior firepower in medieval contexts referred to the advantage gained through the use of advanced weaponry such as crossbows, longbows, and early gunpowder weapons, allowing armies to dominate foes from a distance before closing in."
  acw_stratagem_has_selected_desc:0"§OHeroic Assault§!\nThis approach highlights the valor and prowess of individual warriors or small groups leading aggressive charges, often aimed at breaking enemy lines or capturing key positions, exemplified by the feats of knights and champions."
  acw_stratagem_rom_selected_desc:0"§OReliance on Mercenaries§!\nIn medieval times, many armies supplemented their forces with mercenaries, professional soldiers hired for pay, offering military expertise and bolstering numbers without the need for long-term recruitment or training."
  acw_stratagem_trc_selected_desc:0"§OTraditional Combat§!\nTheMedieval traditional combat emphasized direct, close-quarters battles, often featuring knights and infantry engaging in melee with swords, shields, and other hand-held weapons, alongside formations like shield walls."
  acw_stratagem_dod_selected_desc:0"§ODefense in Depth§!\nThis strategic concept involved layered defensive measures, utilizing multiple lines of fortifications and obstacles to delay and weaken an advancing enemy, allowing defenders to respond flexibly and effectively to breaches."
- 
  acw_army_window_armaments_text:0"Armaments"
  acw_army_window_hd_text:0"Historic deeds"
  acw_army_upgrades_title:0"Army upgrades"
- 
  acw_stratagems_title:0"Stratagems"
  acw_camp_followers_title:0"Camp followers"
  acw_army_window_infantry_levels_indicator_text:0"Infantry upgrades"
  acw_army_window_cavalry_levels_indicator_text:0"Cavalry upgrades"
  acw_army_window_artillery_levels_indicator_text:0"Artillery upgrades"
  acw_army_window_camp_followers_text:0"Chevauchee"
- acw_army_stratagem_text:"[acw_stratagem_text_loc]"
  acw_hd_arma_back_button_text:0"Back"
  acw_hd_arma_title_arma_text:0"Armaments"
- 
  acw_infantry_levels_bar_t1_tt:0"Haven't had §OInfantry Improvement I§! for 25 years."
  acw_infantry_levels_bar_t2_tt:0"Haven't had §OInfantry Improvement II§! for 25 years."
  acw_infantry_levels_bar_t3_tt:0"Haven't had §OInfantry Improvement III§! for 25 years."
@@ -106,8 +85,6 @@
  acw_artillery_levels_bar_t1_atleast3_tt:0"Have upgraded artillery at least 3 times"
  acw_artillery_levels_bar_t2_atleast6_tt:0"Have upgraded artillery at least 6 times"
  acw_artillery_levels_bar_t3_atleast9_tt:0"Have upgraded artillery at least 9 times"
- 
- 
  acw_infantry_temp_skill_t1a:0"Infantry Improvement I"
  acw_infantry_temp_skill_t1b:0"Infantry Improvement I" 
  acw_infantry_temp_skill_t2a:0"Infantry Improvement II"
@@ -126,8 +103,6 @@
  acw_artillery_temp_skill_t2b:0"Artillery Improvement II" 
  acw_artillery_temp_skill_t3a:0"Artillery Improvement III"
  acw_artillery_temp_skill_t3b:0"Artillery Improvement III" 
-
- 
  #Armaments
  acw_arma_crouching_tiger_cannon:0 "Crouching Tiger Cannon"
  acw_arma_iklwa:0 "Iklwa"
@@ -169,7 +144,6 @@
  acw_arma_chu_ko_nu:0"Chu Ko Nu"
  acw_arma_nock_gun:0"Nock Gun"
  acw_arma_dragoon_musket:0"Dragoon Musket"
- 
  acw_arma_crouching_tiger_cannon_desc:0 "The Crouching Tiger Cannon was a Chinese field artillery piece used during the Ming Dynasty, characterized by its compact and portable design. It was primarily deployed in sieges and battlefield confrontations by Chinese infantry. "\n
  acw_arma_iklwa_desc:0 "The Iklwa is a short stabbing spear used by the Zulu warriors of South Africa, notably under the leadership of Shaka Zulu in the early 19th century. This weapon was designed for close combat and played a crucial role in Zulu military tactics. "\n
  acw_arma_shamshir_desc:0 "The Shamshir is a Persian saber with a curved blade, renowned for its sharpness and effectiveness in slashing attacks. It was widely used by Persian cavalry and other Middle Eastern warriors from the medieval period onwards. "\n
@@ -214,9 +188,7 @@
  acw_arma_slot_2_xp:0"Unlocked Armament II"
  acw_arma_slot_3_xp:0"Unlocked Armament III"
  acw_arma_slot_4_xp:0"Unlocked Armament IV"
- 
  #heroic deeds events
- 
  acw_hd_1.d:0"'Amongst their feats of riding, there is one that has astonished me more than anything of the kind I have ever seen, or expect to see, in my life - a stratagem of war, learned and practiced by every young man in the tribe....'\n\n§BComanche Feats of Horsemanship§! is a 1864-65 oil on canvas painting by artist §GGeorge Catlin§!"
  acw_hd_1.tt:0"Country gains §YFeats of Horsemanship§! until the end of the game, granting the following bonus: \n§G+10%§! Cavalry combat ability"
  acw_hd_1.a:0"Comission a masterwork!"
@@ -229,7 +201,6 @@
  acw_hd_3.d:0"'According to the statement made by eye-witnesses, both generals had dismounted and Spinola awaited the arrival of Justin surrounded by a 'crown' of princes and officers of high birth. The governor then presented himself with his family, kinsfolk and distinguished students of the military academy, who had been shut up in the place during the siege. Spinola greeted and embraced his vanquished opponent with a kindly expression and still more kindly words, in which praised the courage and endurance of the protracted defense.'\n\n§BLa rendición de Breda§! is a painting by the @SPA Spanish Golden Age painter §GDiego Velázquez§!, completed in 1665."
  acw_hd_3.a:0"Comission a masterwork!"
  acw_hd_3.b:0"Marvelous!"
- 
  acw_hd_surrender_of_breda:0"The Surrender of Breda"
  acw_hd_consequences_of_war:0"Consequences of War"
  acw_hd_death_of_major_peirson:0"The Death of Major Peirson"
@@ -248,7 +219,6 @@
  acw_hd_battle_of_adwa:0"The Battle of Adwa"
  acw_hd_battle_of_badr:0"The Battle of Badr"
  acw_hd_battle_of_mactan:0"The Battle of Mactan"
- 
  acw_hd_1.t:0"Feats of Horsemanship"
  acw_hd_2.t:0"The Winged Hussars Arrive"
  acw_hd_3.t:0"The Surrender of Breda"
@@ -269,7 +239,6 @@
  acw_hd_18.t:0"The Battle of Adwa"
  acw_hd_19.t:0"The Battle of Badr"
  acw_hd_20.t:0"The Battle of Mactan"
- 
  acw_hd_1_auth:0"@USA§YGeorge Catlin§!  1834"
  acw_hd_2_auth:0"@POL§YJan Matejko§!  1883"
  acw_hd_3_auth:0"@SPA§YDiego Velázquez§!  1635"
@@ -290,7 +259,6 @@
  acw_hd_18_auth:0"@ETH§YUnknown Ethiopian artist§!  late 19th century"
  acw_hd_19_auth:0"@PER§YUnknown persian miniature artist§!  14th century"
  acw_hd_20_auth:0"@MAS§YCarlos 'Botong' Francisco§!  1960"
- 
  acw_hd_1_modifier:0"\n\nCavalry Combat Ability: §G+10%§!"
  acw_hd_2_modifier:0"\n\nCavalry Shock: §G+1.00§!"
  acw_hd_3_modifier:0"\n\nAssault Fort ability: §G+5%§!"
@@ -311,10 +279,7 @@
  acw_hd_18_modifier:0"\n\nLand Leader Shock: §G+1.00§!"
  acw_hd_19_modifier:0"\n\nMorale Damage Received: §G-2%§!"
  acw_hd_20_modifier:0"\n\nLand Leader Maneuver: §G+1.00§!"
- 
  acw_hd_none:0"We haven't witnessed any Historic Deed yet."
-
- 
  acw_hd_4.d:0"The chaos was everywhere; Mars, the god of war, rampaged through the field with fury in his eyes. I could see the innocent fleeing, the helpless trampled underfoot, and the very essence of civilization being torn asunder.\n\nConsequences of War is an artwork of §G@FLA Peter Paul Rubens§! painted in 1669"
  acw_hd_5.d:0"In the heat of battle, I witnessed the gallant Major Peirson fall, his lifeblood staining the cobblestones. Amid the clash and roar, his courage inspired us to press on, even as grief welled in our hearts.\n\nThe Death of Major Peirson is an artwork of §G@USA John Singleton Copley§! painted in 1786"
  acw_hd_6.d:0"The uprising erupted with a fury unmatched. As a member of the French forces, I saw our lines break amidst the sheer determination of Cairo's people. The streets were filled with shouts, smoke, and the relentless push of resistance.\n\nRevolt of Cairo is an artwork of §G@FRA Anne-Louis Girodet de Roussy-Trioson§! painted in 1810"
@@ -332,8 +297,6 @@
  acw_hd_18.d:0"As an Ethiopian warrior, I witnessed our triumph against the Italian forces. The pride of our people and the legacy of our ancestors fueled our victory, marking a moment of profound significance for Africa." \n\nThe Battle of Adwa is an artwork of §Gan Unknown Ethiopian artist§! painted in late 19th century"
  acw_hd_19.d:0"We stood beside the Prophet Muhammad, our faith unshaken despite the odds. The desert wind carried our prayers as we fought, and our victory at Badr was a testament to our unwavering belief and courage.\n\nThe Battle of Badr is an artwork of §Gan Unknown Persian miniature artist§! painted in 14th century"
  acw_hd_20.d:0"I fought alongside Lapu-Lapu, defending our island from the foreign invaders. The battle was fierce, and seeing Magellan fall was a turning point, a moment of defiance and triumph for our people.\n\nThe Battle of Mactan is an artwork of §G@TDO Carlos 'Botong' Francisco§! painted in 1960"
-
- 
  #this needs to be changed
  #give hd
  acw_hd_4.a:0"Comission a masterwork!"
@@ -371,11 +334,6 @@
  acw_hd_18.b:0"Marvelous!"
  acw_hd_19.b:0"Marvelous!"
  acw_hd_20.b:0"Marvelous!"
- 
- acw_hd_slot_1_tt:0"[acw_get_hd_slot_1_tt]\n[acw_get_hd_slot_1_auth][acw_get_hd_slot_1_modifier]"
- acw_hd_slot_2_tt:0"[acw_get_hd_slot_2_tt]\n[acw_get_hd_slot_2_auth][acw_get_hd_slot_2_modifier]"
- acw_hd_slot_3_tt:0"[acw_get_hd_slot_3_tt]\n[acw_get_hd_slot_3_auth][acw_get_hd_slot_3_modifier]"
- 
  acw_hd_25.t:0"Warning"
  acw_hd_25.d:0"Warning!\n\nSelecting proceed will §RREMOVE§! the company already assigned to this slot, without refunding any points spent on it. \n\n§YAre you sure you want to do it?§!"
  acw_hd_25.a:0"Yes, proceed."
@@ -383,11 +341,6 @@
  acw_cf_warning:0"\n§RWarning§!!\nSelecting a new company will override the company already occupying this slot, removing all associated bonuses."
  ## stratagems
  ## armaments
- 
- acw_arm_slot_1_tt:0"§O[acw_get_arm_slot1]§!\n[acw_get_arm_slot1_tt]\n\n[acw_get_arma_age_s1]\n[acw_get_arm_slot1_modifier]\n\n[acw_get_arm_xp_modifier_slot_1]"
- acw_arm_slot_2_tt:0"§O[acw_get_arm_slot2]§!\n[acw_get_arm_slot2_tt]\n\n[acw_get_arma_age_s2]\n[acw_get_arm_slot2_modifier]\n\n[acw_get_arm_xp_modifier_slot_2]"
- acw_arm_slot_3_tt:0"§O[acw_get_arm_slot3]§!\n[acw_get_arm_slot3_tt]\n\n[acw_get_arma_age_s3]\n[acw_get_arm_slot3_modifier]\n\n[acw_get_arm_xp_modifier_slot_3]"
- acw_arm_slot_4_tt:0"§O[acw_get_arm_slot4]§!\n[acw_get_arm_slot4_tt]\n\n[acw_get_arma_age_s4]\n[acw_get_arm_slot4_modifier]\n\n[acw_get_arm_xp_modifier_slot_4]"
  acw_arma_xp_modifier_mod:0"This armament grants us the following permanent effects:\nYearly Army Professionalism: §G+1%§!\nYearly Corruption: §R+0.03§!"
  acw_arma_xp_modifier_mod_empty:0""
  acw_arma_nothing_yet:0"We haven't adapted any armament yet."
@@ -435,30 +388,14 @@
  acw_arma_age_reformation:0"This armament grant us the following bonus until the end of §YAge of Reformation§!:"
  acw_arma_age_absolutism:0"This armament grant us the following bonus until the end of §YAge of Absolutism§!:"
  acw_arma_age_revolutions:0"This armament grant us the following bonus until the end of §YAge of Revolutions§!:"
- 
-
  ## CF
-
  acw_cf_title_arma_text:0"Chevauchee"
  acw_cf_back_button_text:0"Back"
- acw_cf_slot1_desk:0"[acw_get_cf_slot1]"
- acw_cf_slot2_desk:0"[acw_get_cf_slot2]"
- acw_cf_slot3_desk:0"[acw_get_cf_slot3]"
- acw_cf_slot4_desk:0"[acw_get_cf_slot4]"
- acw_cf_slot1_desk_tt:0"§O[acw_get_cf_slot1]§!\n\n[acw_get_cf_slot_1_short]\n-----------\n[acw_cf_check_slot_1_full]\n[acw_get_cf_slot_1_modifiers]\n[acw_get_cf_slot_1_t1_modifiers]\n[acw_get_cf_slot_1_t2_modifiers]"
- acw_cf_slot2_desk_tt:0"§O[acw_get_cf_slot2]§!\n\n[acw_get_cf_slot_2_short]\n-----------\n[acw_cf_check_slot_2_full]\n[acw_get_cf_slot_2_modifiers]\n[acw_get_cf_slot_2_t1_modifiers]\n[acw_get_cf_slot_2_t2_modifiers]"
- acw_cf_slot3_desk_tt:0"§O[acw_get_cf_slot3]§!\n\n[acw_get_cf_slot_3_short]\n-----------\n[acw_cf_check_slot_3_full]\n[acw_get_cf_slot_3_modifiers]\n[acw_get_cf_slot_3_t1_modifiers]\n[acw_get_cf_slot_3_t2_modifiers]"
- acw_cf_slot4_desk_tt:0"§O[acw_get_cf_slot4]§!\n\n[acw_get_cf_slot_4_short]\n-----------\n[acw_cf_check_slot_4_full]\n[acw_get_cf_slot_4_modifiers]\n[acw_get_cf_slot_4_t1_modifiers]\n[acw_get_cf_slot_4_t2_modifiers]"
  acw_cf_grants_effects:0"The tier of this company grants us the following effects:"
  acw_cf_slot_none:0"No company added yet."
  acw_cf_company_must_be_unlocked:0"You have to unlock the company to take this choice."
  acw_cf_company_must_be_unlocked_t2:0"You have to unlock the previous tier to take this choice."
- 
- acw_hd_24.a:0"[Root.acw_cf_perkz_points.GetValue]"
- acw_cf_perkz_avaible:0" [Root.acw_cf_perkz_points.GetValue] "
- acw_cf_perkz_avaible_cf_bg_open:0"You have [Root.acw_cf_perkz_points.GetValue] points to spend."
  acw_cf_perkz_points:0"Company Upgrade Points"
- 
  acw_cf_company_1_mod:0"Sutlers"
  acw_cf_company_1_mod_modifier:0"Reinforce Cost modifier : §G-5.0%§!\nAvaible Loot: §G+10.0%§!\nLand Leader Fire: §R-1§!\nBurghers Influence: §Y+10.0%§!"  
  acw_cf_company_1_mod_desc:0"Medieval sutlers, often referred to as camp merchants, provided essential supplies such as food, drink, and equipment to soldiers during military campaigns. Originating in the late Middle Ages, sutlers followed armies and set up temporary shops in camps, ensuring troops had access to necessities despite being far from home."
@@ -477,8 +414,6 @@
  acw_cf_company_1_ab_mod_modifier:0"Burghers Influence: §G-20.0%§!" 
  acw_cf_company_1_ba_mod_modifier:0"Global Trade Power: §G+10.0%§!"
  acw_cf_company_1_bb_mod_modifier:0"Merchants: §G+1.00§!" 
- 
- 
  acw_cf_company_2_mod:0"Camp Wives"
  acw_cf_company_2_mod_desc:0"Camp women in the medieval and Renaissance eras provided vital support to armies, often accompanying their husbands or family members to war and taking on roles such as cooking, laundering, and nursing. Despite their significant roles, camp women often faced harsh conditions and dangers, from the threat of enemy attacks to the hardships of living in unsanitary and crowded camps."
  acw_cf_company_2_mod_1:0"Zulu Women"
@@ -497,7 +432,6 @@
  acw_cf_company_2_bb_mod_modifier:0"Special Unit Cost: §G-20.0%§!" 
  acw_cf_company_2_mod_modifier:0"Land Maintenance: §G-5.0%§!\nMorale: §G+5.0%§!\nAssault Fort Ability: §R-10.0%§!\nNobility Influence: §Y+10.0%§!"
  acw_cf_company_2_mod_1_modifier:0"Land Maintenance: §G-10.0%§!\nMorale: §G+5.0%§!\nAssault Fort Ability: §R-10.0%§!\nNobility Influence: §Y+10.0%§!" 
-
  acw_cf_company_3_mod:0"Baggage Train Guards"
  acw_cf_company_3_mod_desc:0"The guards, often comprising seasoned soldiers or specialized units, were tasked with defending the train's wagons and pack animals, maintaining order, and ensuring that the supplies reached the front lines intact.Historical records from battles such as the Hundred Years' War and the Italian Wars detail the strategic importance of baggage train guards in maintaining the logistical support necessary for prolonged military engagements."
  acw_cf_company_3_a_mod:0"Guard Corps I"
@@ -513,7 +447,6 @@
  acw_cf_company_3_ba_mod_modifier:0"Fort Maintenance: §G-33%§!"
  acw_cf_company_3_bb_mod_modifier:0"Reserves Organization: §G+10.0%§!" 
  acw_cf_company_3_mod_modifier:0"Reinforce Speed: §G+20.0%§!\nLand Attrition: §G-5.0%§!\nMovement Speed: §R-15.0%§!\nBurghers Influence: §Y+10.0%§!"
- 
  acw_cf_company_4_mod:0"Native Auxilia"
  acw_cf_company_4_mod_desc:0"Native auxiliary forces in medieval and Renaissance era armies consisted of local troops recruited or conscripted to support main military forces, often providing essential knowledge of the terrain and guerrilla tactics. These auxiliaries played crucial roles in various conflicts, from the Crusades to European colonial expeditions, offering specialized skills such as archery, scouting, and unconventional warfare strategies."
  acw_cf_company_4_mod_1:0"Native American Allies"
@@ -532,7 +465,6 @@
  acw_cf_company_4_bb_mod_modifier:0"Native Assimilation: §G+25.0%§!"
  acw_cf_company_4_mod_modifier:0"Reserves Organization: §G+10.0%§!\nRegiment Manpower Usage: §G-10.0%§!\nDiscipline §R-5.0%§!\nClergy Influence: §Y+10.0%§!"
  acw_cf_company_4_mod_1_modifier:0"Reserves Organization: §G+20.0%§!\nRegiment Manpower Usage: §G-10.0%§!\nDiscipline §R-5.0%§!\nBurghers Influence: §Y+10.0%§!"
- 
  acw_cf_company_5_mod:0"Aquaarii"
  acw_cf_company_5_mod_desc:0"In medieval times, supplying water to armies was a critical task managed by organized groups known as water bearers or "aquaarii." These individuals ensured the continuous availability of fresh water by sourcing it from nearby rivers, wells, or springs and transporting it in barrels or skins to the troops. Their organized efforts were essential for maintaining the health and combat readiness of the soldiers, making water bearers an indispensable part of medieval military logistics."
  acw_cf_company_5_mod_1:0"Bhisti"
@@ -551,7 +483,6 @@
  acw_cf_company_5_bb_mod_modifier:0"Manpower Recovery Speed: §G+10.0%§!"
  acw_cf_company_5_mod_modifier:0"Supply Limit: §G+10.0%§!\nMovement Speed: §G+10.0%§!\nLand Forcelimit:  §G-10.0%§!\nClergy Influence: §Y+10.0%§!"
  acw_cf_company_5_mod_1_modifier:0"Supply Limit: §G+20.0%§!\nMovement Speed: §G+10.0%§!\nLand Forcelimit:  §G-10.0%§!\nClergy Influence: §Y+10.0%§!"
-  
  acw_cf_company_6_mod:0"Cossack Scouts"
  acw_cf_company_6_mod_desc:0"Cossack scouts were historically significant for their exceptional skills in reconnaissance, providing vital intelligence on enemy movements and terrain to Russian and Polish military commanders. Organized into highly mobile and independent units, these scouts leveraged their deep knowledge of the steppes and guerrilla tactics. Their effectiveness in gathering and relaying critical information made them indispensable assets in both offensive and defensive military operations."
  acw_cf_company_6_mod_1:0"Cossack Horsemen"
@@ -582,7 +513,6 @@
  acw_cf_company_6_mod_3_modifier:0"Cavalry Combat Ability: §G+10.0%§!\nLand Leader Maneuver: §G+1.00§!\nCavalry Cost: §R+10.0%§!\nCossacks Influence: §Y+10.0%§!"
  acw_cf_company_6_mod_4_modifier:0"Infantry Combat Ability: §G+5.0%§!\nLand Leader Maneuver: §G+1.00§!\nCavalry Cost: §R+10.0%§!\nNobility Influence: §Y+10.0%§!"
  acw_cf_company_6_mod_5_modifier:0"Cavalry Combat Ability: §G+5.0%§!\nLand Leader Maneuver: §G+1.00§!\nCavalry Cost: §R+10.0%§!\nClergy Influence: §Y+10.0%§!"
-
  acw_cf_company_7_mod:0"Orto"
  acw_cf_company_7_mod_desc:0"The Orto, a group of skilled Turkic warriors, were essential for the effective organization and operation of military camps in Central Asian nomadic empires. They were responsible for setting up secure and strategically positioned camps, ensuring efficient logistics, and maintaining order among the troops. Their expertise in camp organization enabled rapid mobilization and adaptability, which were crucial for the success and resilience of their nomadic armies."
  acw_cf_company_7_mod_1:0"Yam"
@@ -604,7 +534,6 @@
  acw_cf_company_7_mod_modifier:0"Recruitment Time: §G-15.0%§!\nLand Attrition: §G-10.0%§!\nReinforce Cost: §R+15.0%§!\nTribes Influence: §Y+10.0%§!"
  acw_cf_company_7_mod_1_modifier:0"Recruitment Time: §G-20.0%§!\nLand Attrition: §G-10.0%§!\nReinforce Cost: §R+15.0%§!\nClergy Influence: §Y+10.0%§!"
  acw_cf_company_7_mod_2_modifier:0"Recruitment Time: §G-10.0%§!\nLand Attrition: §G-10.0%§!\nReinforce Cost: §R+15.0%§!\nBurghers Influence: §Y+10.0%§!"
- 
  acw_cf_company_8_mod:0"Sappers"
  acw_cf_company_8_mod_desc:0"Sappers were highly specialized soldiers in historical warfare tasked with engineering tasks such as building fortifications, digging tunnels, and undermining enemy defenses. Organized into units within military forces, sappers played a crucial role in siege warfare, enabling armies to breach or defend fortified positions. Their expertise in explosives, engineering, and tactical construction significantly influenced the outcomes of battles and campaigns by shaping the battlefield terrain to their advantage."
  acw_cf_company_8_a_mod:0"Engineering Corps I"
@@ -620,7 +549,6 @@
  acw_cf_company_8_ba_mod_modifier:0"Production Efficiency: §G+10.0%§!"
  acw_cf_company_8_bb_mod_modifier:0"Artillery Fire: §G+1.00§!"
  acw_cf_company_8_mod_modifier:0"Artillery Combat Ability: §G+10.0%§!\nSiege Ability: §G+5.0%§!\nArtillery Barrage Cost:§R+20.0%§!\nClergy Influence: §Y+10.0%§!"
- 
  acw_cf_company_9_mod:0"Apothecaries"
  acw_cf_company_9_mod_desc:0"In the medieval and Renaissance eras, medical personnel were vital for treating wounded soldiers and maintaining the health of armies in challenging conditions. Organized into structured units or accompanying military expeditions, these personnel included physicians, surgeons, apothecaries, and nurses who provided essential care on the battlefield and in encampments. Their efforts not only saved lives but also contributed to the morale and combat effectiveness of troops, underscoring their critical role in military operations during these periods."
  acw_cf_company_9_a_mod:0"Medical Personnel I"
@@ -636,7 +564,6 @@
  acw_cf_company_9_ba_mod_modifier:0"Recover Army Morale: §G+10.0%§!"
  acw_cf_company_9_bb_mod_modifier:0"Reinforce Speed: §G+10.0%§!"
  acw_cf_company_9_mod_modifier:0"War Exhaustion Reduction Cost: §G-5.0%§!\nManpower Recovery Speed: §G+5.0%§!\nLand Leader Shock: §R-1.00%§!\nClergy Influence: §Y+10.0%§!"
- 
  acw_cf_company_10_mod:0"Camp blacksmiths"
  acw_cf_company_10_mod_desc:0"Camp blacksmiths were crucial to medieval and Renaissance armies, responsible for forging and repairing weapons, armor, and tools essential for military campaigns. Organized into dedicated units within the army, these skilled artisans ensured that soldiers' equipment was functional and battle-ready. Their work maintained the army's operational efficiency and combat effectiveness, significantly influencing the success of military endeavors."
  acw_cf_company_10_mod_1:0"Katori Butai"
@@ -655,7 +582,6 @@
  acw_cf_company_10_bb_mod_modifier:0"Reinforce Cost: §G-10.0%§!"
  acw_cf_company_10_mod_modifier:0"Regiment Cost: §G-5.0%§!\nPrestige from Land Battles: §G+10.0%§!\nLand Leader Maneuver: §R-1.00%§!\nBurghers Influence §Y+10.0%§!"
  acw_cf_company_10_mod_1_modifier:0"Regiment Cost: §G-7.5%§!\nPrestige from Land Battles: §G+10.0%§!\nLand Leader Maneuver: §R-1.00%§!\nBurghers Influence §Y+10.0%§!"
- 
  acw_cf_company_11_mod:0"Indentured men"
  acw_cf_company_11_mod_desc:0"Slave soldiers, such as the Mamluks and Janissaries, played a pivotal role in the armies of various medieval and Renaissance empires. Organized into elite units, these soldiers were often trained from a young age, ensuring loyalty and exceptional military skill. Their presence provided a reliable and formidable fighting force, crucial for both defense and expansion, significantly shaping the military and political landscapes of their respective regions."
  acw_cf_company_11_mod_1:0"Ghilman"
@@ -674,11 +600,7 @@
  acw_cf_company_11_bb_mod_modifier:0"Regiment Manpower Usage: §G-10.0%§!"
  acw_cf_company_11_mod_modifier:0"Assault Fort Cost: §G-15%§!\nAssault Fort Ability: §G+10%§!\nNational Unrest: §R+3§!\nNobility Influence: §Y+15§!"
  acw_cf_company_11_mod_1_modifier:0"Assault Fort Cost: §G-30%§!\nAssault Fort Ability: §G+10%§!\nNational Unrest: §R+3§!\nNobility Influence: §Y+15§!"
- 
- 
  #CF icon tooltips
- 
- 
  acw_cf_company_1_mod_short:0"Sutlers were civilian merchants who followed armies to sell provisions and supplies to soldiers. They played a crucial role in maintaining the morale and well-being of the troops."
  acw_cf_company_1_mod_1_short:0"Vivandières were women who accompanied armies, providing food, drink, and nursing care to soldiers. They were known for their bravery and essential support roles during campaigns."
  acw_cf_company_2_mod_short:0"Camp wives were women married to soldiers who traveled with the army, often assisting with domestic duties and care for the injured. They helped maintain a semblance of family life and stability in the harsh conditions of military camps."
@@ -703,99 +625,73 @@
  acw_cf_company_10_1_mod_short:0"Katori Butai were specialized units in Japanese medieval armies, often involving martial artists skilled in the use of traditional weapons. They played key roles in close combat and elite tasks."
  acw_cf_company_11_mod_short:0"Indentured men were laborers bound by contract to serve for a specified period in exchange for passage, food, and shelter. They often performed arduous tasks essential to the army's logistics and camp maintenance."
  acw_cf_company_11_mod_1_short:0"Ghilman were slave soldiers in Islamic empires, trained and converted to Islam, serving as elite military units. They were highly valued for their loyalty and combat prowess."
- 
- 
- acw_cf_company_1_tt:0"§O[acw_get_cf_comp1_tt_title]§!\n\n[acw_get_cf_comp1_tt_desc]\n\n[acw_cf_warning_remove]"
  acw_cf_company_1_s_a_tt:0"§OCamp Merchants I§!\n\nIn medieval times, camp merchants played a crucial role in supporting armies by supplying goods and services directly on the battlefield. These merchants were often subject to war taxes, which were levied by rulers to fund ongoing military campaigns. The taxes collected from camp merchants contributed significantly to the war effort, ensuring the continuous provision of necessary supplies such as food, weapons, and equipment. This symbiotic relationship between camp merchants and war taxes was essential for the logistical and financial sustenance of medieval armies."
  acw_cf_company_1_s_b_tt:0"§OCamp Merchants I§!\n\nMedieval camp merchants often found themselves at the heart of trade conflicts, as their valuable goods and services became prime targets during wartime. Rulers and military leaders justified these conflicts by emphasizing the economic benefits of controlling trade routes and resources supplied by these merchants. The disruption or capture of camp merchant caravans could cripple enemy forces, providing a strategic advantage and economic gain. Thus, the presence and activities of camp merchants frequently fueled the motivations and justifications for trade-related warfare."
  acw_cf_company_1_s_aa_tt:0"§OCamp Merchants II§!\n\nMedieval camp merchants played a key role in lessening the devastation in the homeland by providing armies with essential supplies directly on the battlefield. This external provisioning reduced the need for armies to requisition resources from local communities, thereby preserving the economic stability and well-being of the civilian population."
  acw_cf_company_1_s_ab_tt:0"§OCamp Merchants II§!\n\nMedieval camp merchants' interactions with the crown often involved heavy taxation and regulation, diminishing their independent economic influence. By imposing strict controls and levies, the crown could exert greater authority over these merchants, limiting their ability to amass wealth and power autonomously."
  acw_cf_company_1_s_ba_tt:0"§OCamp Merchants II§!\n\nMedieval camp merchants influenced global trade by facilitating the exchange of diverse goods and cultures between distant regions. Their mobility and presence in various markets helped establish and expand trade networks, linking different parts of the medieval world and promoting economic and cultural interactions."
  acw_cf_company_1_s_bb_tt:0"§OCamp Merchants II§!\n\nThe actions of medieval camp merchants generated substantial revenue through their extensive trade networks, which, in turn, allowed burghers to flourish. As merchants enriched local economies, burghers—urban middle-class citizens—benefited from increased commerce, investments, and opportunities for economic growth and social advancement."
- 
- acw_cf_company_2_tt:0"§O[acw_get_cf_comp2_tt_title]§!\n\n[acw_get_cf_comp2_tt_desc]\n\n[acw_cf_warning_remove]"
  acw_cf_company_2_s_a_tt:0"§OCamp Women I§!\n\nMedieval camp wives, organized within army camps, demonstrated leadership and resilience, paving the way for the acceptance and recruitment of female generals. Their vital roles and capabilities highlighted women's potential in military command."
  acw_cf_company_2_s_b_tt:0"§OCamp Women I§!\n\nThe support of medieval camp wives, providing logistical and moral support, enhanced the maneuverability of generals by ensuring well-organized and efficiently supplied troops. Their contributions enabled smoother and more agile military operations."
  acw_cf_company_2_s_aa_tt:0"§OCamp Women II§!\n\nThe presence and influence of camp wives in army camps bolstered global missionary efforts by promoting faith and providing spiritual support. Their dedication and organization strengthened the overall morale and religious fervor within the ranks."
  acw_cf_company_2_s_ab_tt:0"§OCamp Women II§!\n\nThe essential roles of camp wives in supporting and sustaining the army reduced the over-reliance on nobles, thereby diminishing noble influence in military matters. Their contributions provided a more balanced power structure within the army." 
  acw_cf_company_2_s_ba_tt:0"§OCamp Women II§!\n\nThe integration and support of camp wives increased manpower in their Primary Culture provinces by fostering strong community ties and encouraging local recruitment. Their presence ensured a steady and loyal supply of soldiers."
  acw_cf_company_2_s_bb_tt:0"§OCamp Women II§!\n\nThe organizational skills and support roles of camp wives lowered the costs associated with special units by enhancing efficiency and reducing resource wastage. Their contributions made the maintenance and deployment of elite units more economical." 
- 
- acw_cf_company_3_tt:0"§O[acw_get_cf_comp3_tt_title]§!\n\n[acw_get_cf_comp3_tt_desc]\n\n[acw_cf_warning_remove]"
  acw_cf_company_3_s_a_tt:0"§OGuard Corps I§!\n\nMedieval trained guards for army camps, organized alongside regular troops, increased the global supply limit by ensuring secure and efficient supply lines. Their vigilance reduced losses and safeguarded resources, enabling larger armies to be sustained in the field."
  acw_cf_company_3_s_b_tt:0"§OGuard Corps I§!\n\nThe presence of well-organized trained guards in army camps allowed for increased garrison sizes by providing additional security and manpower. This bolstered the defensive capabilities of fortified positions."
  acw_cf_company_3_s_aa_tt:0"§OGuard Corps II§!\n\nTrained guards enhanced the military tradition of mercenary leaders by demonstrating disciplined camp security and strategic vigilance. This interaction enriched the tactical knowledge and leadership skills of mercenary commanders."
  acw_cf_company_3_s_ab_tt:0"§OGuard Corps II§!\n\nThe integration of trained guards reduced the overall maintenance costs for mercenaries by enhancing camp security and minimizing resource wastage. Their efficiency in protecting supplies allowed for more cost-effective mercenary upkeep." 
  acw_cf_company_3_s_ba_tt:0"§OGuard Corps II§!\n\nWith trained guards ensuring the security and upkeep of fortifications, the maintenance costs for forts were significantly reduced. Their expertise in camp management and defense streamlined fort operations."
  acw_cf_company_3_s_bb_tt:0"§OGuard Corps II§!\n\nThe disciplined organization of trained guards improved the overall structure and readiness of army reserves. Their role in maintaining order and security in camps ensured that reserve forces were well-prepared and swiftly mobilized when needed." 
- 
- acw_cf_company_4_tt:0"§O[acw_get_cf_comp4_tt_title]§!\n\n[acw_get_cf_comp4_tt_desc]\n\n[acw_cf_warning_remove]"
  acw_cf_company_4_s_a_tt:0"§ONative Warbands I§!\n\n Medieval native auxiliary forces, allied with regular troops, often served as highly skilled Condottieri, providing specialized military expertise and enhancing strategic capabilities. Their unique local knowledge and fighting techniques made them valuable assets in mercenary roles."
  acw_cf_company_4_s_b_tt:0"§ONative Warbands I§!\n\nMedieval native auxiliary forces, organized in alliance with regular troops, reduced the overall maintenance costs for mercenaries by providing local resources and support. This logistical synergy allowed for more cost-effective military campaigns."
  acw_cf_company_4_s_aa_tt:0"§ONative Warbands II§!\n\nAllied native auxiliaries bolstered mercenary manpower by supplementing regular troops with local fighters, enhancing the overall strength and resilience of the army. Their integration ensured a steady supply of skilled warriors for prolonged engagements."
  acw_cf_company_4_s_ab_tt:0"§ONative Warbands II§!\n\nNative auxiliaries increased the force limit of vassal states by contributing additional troops and resources, enabling more robust military support. This collaboration strengthened the vassal's capacity to field larger, more effective armies." 
  acw_cf_company_4_s_ba_tt:0"§ONative Warbands II§!\n\nAllied native forces facilitated global colonial growth by securing new territories and providing crucial local knowledge. Their support enabled regular troops to establish and expand colonies more efficiently."
  acw_cf_company_4_s_bb_tt:0"§ONative Warbands II§!\n\nThe integration of native auxiliaries promoted assimilation by fostering cooperation and cultural exchange between regular troops and indigenous populations. This mutual support eased tensions and facilitated smoother governance of newly acquired lands."
- 
- acw_cf_company_5_tt:0"§O[acw_get_cf_comp5_tt_title]§!\n\n[acw_get_cf_comp5_tt_desc]\n\n[acw_cf_warning_remove]"
  acw_cf_company_5_s_a_tt:0"§OSurvey Corps I§!\n\nMedieval water bearers, organized into guilds such as the Aquarii and Fontani, played a pivotal role in the birth of professional standing armies during the medieval and Renaissance eras. Their skill in supplying clean water to soldiers ensured hydration and health, crucial for sustained military campaigns. By efficiently managing water logistics, these guilds supported the emergence of disciplined armies capable of extended operations, marking a key development in medieval military history."
  acw_cf_company_5_s_b_tt:0"§OSurvey Corps I§!\n\nMedieval water bearers, organized into guilds like the Aiguadiers and Aquarii, were instrumental in supporting armies with a greater number of cavalry during the medieval and Renaissance eras. Their expertise in supplying and managing water ensured that horses remained hydrated and fit for battle, crucial for maintaining a robust cavalry force. Through efficient logistics and hydration strategies, these guilds enabled armies to deploy larger contingents of mounted knights and cavalry units, enhancing battlefield mobility and tactical flexibility."
  acw_cf_company_5_s_aa_tt:0"§OSurvey Corps II§!\n\nMedieval water bearers, organized into guilds such as the Sakkas in the Islamic world and the Shuishi in China, played a crucial role in reducing attrition within armies during the medieval and Renaissance eras. Their mastery in supplying clean water to troops prevented dehydration and waterborne diseases, vital for sustaining military campaigns in diverse terrains. Through their efficient organization and logistical expertise, these guilds ensured that armies remained resilient and combat-ready, minimizing losses due to environmental factors."
  acw_cf_company_5_s_ab_tt:0"§OSurvey Corps II§!\n\nMedieval water bearers, organized into guilds like the Sakkas in the Islamic world, ensured reliable access to water, significantly expanding the global supply limit for armies during extended campaigns. Their logistical expertise enabled troops to venture farther and sustain longer operations." 
  acw_cf_company_5_s_ba_tt:0"§OSurvey Corps II§!\n\nOrganized water bearers such as the Shuishi in China maintained steady hydration for soldiers, which was crucial for sustaining discipline and order within the ranks. Consistent access to water helped prevent disarray and maintain combat readiness."
  acw_cf_company_5_s_bb_tt:0"§OSurvey Corps II§!\n\nGuilds like the Sakkas played a vital role in accelerating manpower recovery by preventing dehydration and illness through efficient water distribution. This ensured that armies could swiftly replenish their fighting strength and maintain operational effectiveness."
- 
- acw_cf_company_6_tt:0"§O[acw_get_cf_comp6_tt_title]§!\n\n[acw_get_cf_comp6_tt_desc]\n\n[acw_cf_warning_remove]"
  acw_cf_company_6_s_a_tt:0"§OScout Corps I§!\n\nScouts, organized into covert networks like the Cossacks and the Outlaw Brotherhood, played a pivotal role in supporting rebels abroad during the medieval and Renaissance eras. Their expertise in reconnaissance and intelligence gathering facilitated clandestine aid operations, crucial for sustaining resistance movements against oppressive regimes. For example, Cossack scouts provided vital information and logistical support to rebellious groups during the Polish-Lithuanian Commonwealth's conflicts."
  acw_cf_company_6_s_b_tt:0"§OScout Corps I§!\n\n'You Turkish Satan, brother and comrade of the damned devil and secretary to Lucifer himself! What the hell kind of knight are you? The devil shits and you and your army swallow it. You aren't fit to have the sons of Christians under you; we aren't afraid of your army, and we'll fight you on land and sea.'"
  acw_cf_company_6_s_aa_tt:0"§OScout Corps II§!\n\nScouts, organized into covert guilds such as the Italian condottieri spies and the French chevaliers d'industrie, were pivotal in espionage during the medieval and Renaissance eras. Their expertise in reconnaissance and intelligence gathering enabled them to infiltrate enemy territories, gather vital information, and conduct covert operations crucial for military strategy and political intrigue. These clandestine agents navigated treacherous landscapes, employing medieval tactics to secure strategic advantages and sway the tide of wars and alliances."
  acw_cf_company_6_s_ab_tt:0"§OScout Corps II§!\n\nScouts, skilled in reconnaissance and espionage through guilds like the English Free Companies and German Landsknechte, played a crucial role in claiming new territories during the medieval and Renaissance eras. Their covert operations provided vital intelligence on enemy defenses and terrain, facilitating strategic conquests and expansions. These daring agents employed medieval strategies to secure advantageous positions, shaping the geopolitical landscape through their reconnaissance prowess and territorial acquisitions." 
  acw_cf_company_6_s_ba_tt:0"§OScout Corps II§!\n\nScouts, organized into guilds such as the Mongol messengers and Arab falconers, significantly influenced the expansion of horsebreeding during the medieval and Renaissance eras. Their role in exploring new lands and trading routes brought about the exchange of diverse horse breeds, enhancing breeding programs across civilizations. Through their expeditions and trade networks, these scouts promoted the spread of superior horse breeds like the Arabian and Turkoman, crucial for cavalry development and military prowess."
  acw_cf_company_6_s_bb_tt:0"§OScout Corps II§!\n\nScouts played a crucial role in increasing an army's traditions by preserving and passing down strategic knowledge, battlefield tactics, and cultural practices through generations. Their intimate knowledge of terrain, enemy movements, and local customs contributed to the development of distinct military traditions and doctrines.Through their expertise and adherence to established practices, scouts fostered continuity in military heritage and strengthened army cohesion."
- 
- acw_cf_company_7_tt:0"§O[acw_get_cf_comp7_tt_title]§!\n\n[acw_get_cf_comp7_tt_desc]\n\n[acw_cf_warning_remove]"
  acw_cf_company_7_s_a_tt:0"§OCamp Organizers I§!\n\nCommunication systems, such as the Mongol Empire's Yam and the Byzantine fire signals, were crucial for coordinating siege preparations in the medieval and Renaissance eras. These networks enabled rapid transmission of strategic information and supply requests, exemplified by the efficient Mongol sieges facilitated by the Yam's relay stations. Effective communication ensured that armies could mobilize resources and troops swiftly, maintaining the momentum and organization necessary for successful sieges."
  acw_cf_company_7_s_b_tt:0"§OCamp Organizers I§!\n\nCommunication systems like the Mongol Yam, increased supply efficiency for marching armies by enabling swift and reliable transmission of logistical information. These networks allowed commanders to quickly request and receive provisions, reinforcements, and equipment, ensuring that supply lines remained robust and responsive. "
  acw_cf_company_7_s_aa_tt:0"§OCamp Organizers II§!\n\nCommunication systems like the Byzantine fire signals allowed for the swift exchange of strategic information across vast distances, enabling the central command to identify and recruit talented generals more effectively. By maintaining a rapid and reliable flow of news about military successes and promising officers, these networks ensured that capable leaders could be quickly appointed to key positions. "
  acw_cf_company_7_s_ab_tt:0"§OCamp Organizers II§!\n\nCommunication systems like the Persian Empire's Royal Road allowed for more effective recruitment by facilitating swift dissemination of orders and information across vast territories. This has allowed Persian rulers to efficiently gather troops from their expansive empire, ensuring timely reinforcements and a well-coordinated military presence. These communication networks ensured that recruitment could be conducted promptly and strategically, enhancing the operational readiness of their armies." 
  acw_cf_company_7_s_ba_tt:0"§OCamp Organizers II§!\n\nCommunication systems such as relay stations and signal fires had a significant impact on regimental drilling in ancient armies. They allowed commanders to synchronize maneuvers, strategies, and training exercises across large distances. This ensured that troops received consistent training and coordination, improving their discipline and effectiveness on the battlefield. For example, in the Roman Empire, the use of signaling techniques enabled legions to practice formations and maneuvers in unison, fostering cohesive and well-prepared military units capable of executing complex battlefield tactics."
  acw_cf_company_7_s_bb_tt:0"§OCamp Organizers II§!\n\nCourier based communication networks, such as the Roman cursus publicus and the Inca chasqui system, were instrumental in establishing nationwide supply depots during the medieval and Renaissance eras. These networks facilitated rapid transport of goods and messages across vast empires, enabling centralized storage and distribution of supplies. For instance, the Roman cursus publicus ensured timely provisioning of Roman legions stationed across the empire, enhancing logistical efficiency and military readiness."
- 
- acw_cf_company_8_tt:0"§O[acw_get_cf_comp8_tt_title]§!\n\n[acw_get_cf_comp8_tt_desc]\n\n[acw_cf_warning_remove]"
  acw_cf_company_8_s_a_tt:0"§OEngineering Corps I§!\n\nSappers and siege engineers were indispensable in the medieval and Renaissance eras, as their expertise in fortification and siegecraft significantly reduced the attrition of war. By swiftly breaching enemy defenses and constructing robust fortifications, they minimized prolonged engagements and casualties. Their skilled endeavors ensured that campaigns were more decisive and less costly, preserving the strength and morale of the besieging armies."
  acw_cf_company_8_s_b_tt:0"§OEngineering Corps I§!\n\nSappers and siege engineers were crucial in the medieval and Renaissance eras for reducing the need for large garrisons. Their expertise in swiftly breaching fortifications and constructing defenses allowed armies to maintain smaller, more efficient garrisons. This efficiency not only conserved resources but also enabled more agile and strategic deployments."
  acw_cf_company_8_s_aa_tt:0"§OEngineering Corps II§!\n\nMilitary engineers advanced siege technologies and fortification techniques also facilitated the placement and protection of artillery, enabling a higher rate of fire and superior firepower. By constructing platforms and reinforcing defensive positions, sappers and siege engineers allowed for more effective and sustained use of cannons and other projectile weapons, giving their armies a formidable advantage in both offense and defense."
  acw_cf_company_8_s_ab_tt:0"§OEngineering Corps II§!\n\nSappers and siege engineers were vital in the medieval and Renaissance eras for reducing garrison sizes by swiftly breaching enemy fortifications and constructing robust defenses. Their expertise allowed for smaller, more efficient garrisons and facilitated rapid reinforcement when needed. This capability ensured strategic flexibility and conserved resources for broader military campaigns." 
  acw_cf_company_8_s_ba_tt:0"§OEngineering Corps II§!\n\nMilitary engineers in the medieval and Renaissance eras were pivotal in advancing production technologies, such as the development of water-powered trip hammers for forging weapons. Their innovations improved efficiency and output in armament production, exemplified by the blast furnaces used in 15th-century Europe to mass-produce cast iron artillery. These technological advancements significantly enhanced military capabilities and logistical support."
  acw_cf_company_8_s_bb_tt:0"§OEngineering Corps II§!\n\nMilitary engineers in the medieval and Renaissance eras were instrumental in advancing artillery technology, such as the refinement of the bombard and the creation of cannons like the Dardanelles Gun. Their innovations in metallurgy and design, exemplified by the heavy siege cannons used in the fall of Constantinople in 1453, greatly enhanced the effectiveness and destructive power of artillery, transforming siege warfare and battlefield tactics."
- 
- acw_cf_company_9_tt:0"§O[acw_get_cf_comp9_tt_title]§!\n\n[acw_get_cf_comp9_tt_desc]\n\n[acw_cf_warning_remove]"
  acw_cf_company_9_s_a_tt:0"§OMedical Personnel I§!\n\nCamp doctors and apothecaries, known as chirurgeons and herbalists, were vital to the health and efficiency of marching armies in the medieval and Renaissance eras. Their knowledge of healing balms, poultices, and surgical techniques reduced the impact of wounds and diseases, allowing soldiers to recover and return to the ranks swiftly. For instance, during the campaigns of the Black Prince in the Hundred Years' War, the presence of skilled chirurgeons ensured that troops could maintain their strength and continue their advance with fewer casualties."
  acw_cf_company_9_s_b_tt:0"§OMedical Personnel I§!\n\nCamp doctors and apothecaries, known as chirurgeons and herbalists, played a crucial role in maintaining the loyalty and morale of provinces aligned with their faith during the medieval and Renaissance eras. Their presence not only provided essential medical care to soldiers but also to local populations, fostering goodwill and support among the faithful. For example, during the Reconquista, the medical aid rendered by Christian chirurgeons to both troops and civilians helped to secure the allegiance of newly conquered provinces, strengthening the hold of Christian kingdoms over these regions. This blending of medical service and faith-based diplomacy was vital in consolidating control and ensuring the stability of the realm."
  acw_cf_company_9_s_aa_tt:0"§OMedical Personnel II§!\n\nCamp doctors, or chirurgeons, were indispensable in the medieval and Renaissance eras for their role in maintaining the health and vigor of troops during rigorous drilling exercises. Their expertise in treating injuries and ailments ensured that soldiers could recover swiftly, maintaining the steady pace of training necessary for battlefield readiness. For instance, during the reign of King Henry V, the presence of skilled chirurgeons allowed English archers to endure extensive drills, honing their prowess for pivotal battles like Agincourt. Thus, these medical practitioners were pivotal in ensuring that the king's forces remained disciplined and battle-ready, fortifying the army's overall martial prowess."
  acw_cf_company_9_s_ab_tt:0"§OMedical Personnel II§!\n\nCamp doctors, or chirurgeons, in the medieval and Renaissance eras, gradually diminished the clergy's influence over medical care by applying their practical knowledge and skills to heal soldiers. As these trained practitioners provided effective treatments on the battlefield, they showcased the benefits of empirical medicine over solely spiritual remedies, subtly shifting the trust of the populace away from ecclesiastical authority in matters of health." 
  acw_cf_company_9_s_ba_tt:0"§OMedical Personnel II§!\n\nCamp doctors, or chirurgeons, were paramount in swiftly restoring the morale of armies in the medieval and Renaissance eras. By deftly tending to the wounded and ailing, they ensured soldiers could return to the ranks with renewed vigor, bolstering the spirits of their comrades. This timely healing prowess was essential in maintaining the fighting fervor and cohesion of the troops, often proving decisive in the heat of prolonged campaigns."
  acw_cf_company_9_s_bb_tt:0"§OMedical Personnel II§!\n\nCamp doctors, or chirurgeons, were crucial in ensuring the swift reinforcement of armies during the medieval and Renaissance eras. Their adept treatment of wounds and maladies allowed soldiers to recover and rejoin the fray with haste, thereby bolstering the ranks without delay. This rapid restoration of fighting strength was vital for maintaining the momentum and resilience of armies amidst protracted campaigns."
- 
- acw_cf_company_10_tt:0"§O[acw_get_cf_comp10_tt_title]§!\n\n[acw_get_cf_comp10_tt_desc]\n\n[acw_cf_warning_remove]"
  acw_cf_company_10_s_a_tt:0"§ORepairmen I§!\n\nCamp repairmen, including blacksmiths and carpenters, were crucial in maintaining and repairing equipment, fortifications, and supplies, ensuring the operational readiness of medieval and Renaissance armies. Their skilled work allowed army reserves to remain well-equipped and functional, preventing delays and breakdowns during campaigns. This logistical support was vital for sustaining long-term military operations, contributing to the overall efficiency and effectiveness of the forces."
  acw_cf_company_10_s_b_tt:0"§ORepairmen I§!\n\nCamp repairmen, such as blacksmiths, were essential in maintaining weapons, armor, and equipment, directly impacting the effectiveness and safety of soldiers during the medieval and Renaissance eras. Their timely repairs and upkeep reduced the likelihood of equipment failure in battle, thereby decreasing the risk of casualties. By ensuring that soldiers were always well-armed and protected, these skilled artisans played a crucial role in enhancing the overall survivability and combat performance of the army."
  acw_cf_company_10_s_aa_tt:0"§ORepairmen II§!\n\nCamp repairmen, including blacksmiths and carpenters, were indispensable to the war effort during the medieval and Renaissance eras, ensuring that armies remained operational in the field. Their expertise in repairing weapons, armor, and fortifications meant that soldiers could rely on well-maintained equipment, crucial for both offensive and defensive operations. For instance, during the Hundred Years' War, the ability of English armies to quickly repair and maintain their longbows and armor contributed to their success in battles such as Agincourt."
  acw_cf_company_10_s_ab_tt:0"§ORepairmen II§!\n\nCamp repairmen, such as blacksmiths and carpenters, played a pivotal role in shaping military tactics during the medieval and Renaissance eras by ensuring the continuous functionality of weapons and fortifications. Their ability to swiftly mend damaged equipment meant that armies could adapt more dynamically to the demands of warfare, maintaining their tactical edge. For example, the quick repair of crossbows and siege engines during prolonged sieges allowed commanders to sustain pressure on fortified cities, as seen during the Siege of Orleans in the Hundred Years' War. " 
  acw_cf_company_10_s_ba_tt:0"§ORepairmen II§!\n\nCamp artisans, including armorers and craftsmen, were pivotal in ensuring the timely reinforcement and readiness of medieval and Renaissance armies. Their skill in producing and repairing weapons, armor, and logistical equipment allowed for swift replenishment of supplies and troop reinforcements. For instance, during the Crusades, the ability of camp artisans to quickly repair weapons and armor facilitated the continuous deployment of knights and soldiers to the front lines, sustaining momentum in campaigns across the Holy Land."
  acw_cf_company_10_s_bb_tt:0"§ORepairmen II§!\n\nCamp artisans, such as smiths and armorers, were essential in managing the costs of reinforcements for medieval armies. Their ability to repair and maintain weaponry and armor efficiently reduced the need for costly replacements. For example, during the Siege of Constantinople in 1453, skilled artisans played a crucial role in repairing damaged siege engines and armor, allowing defenders to prolong their resistance against Ottoman forces without exhausting precious resources."
- 
- acw_cf_company_11_tt:0"§O[acw_get_cf_comp11_tt_title]§!\n\n[acw_get_cf_comp11_tt_desc]\n\n[acw_cf_warning_remove]"
  acw_cf_company_11_s_a_tt:0"§OInvoluntary Forces I§!\n\nOrganized into well-trained and loyal units, they played key roles in both offensive and defensive operations. These forces were often used to relieve war-exhausted armies, ensuring sustained military capability and reducing the burden on native troops, thereby maintaining the overall strength and stability of the empire."
  acw_cf_company_11_s_b_tt:0"§OInvoluntary Forces I§!\n\nSlave soldiers were integral to the military might of various medieval and Renaissance empires, offering highly trained and loyal forces that could be rapidly deployed. Their effectiveness in battle often led to successful conquests and the acquisition of substantial loot, which in turn financed further military campaigns and bolstered the empire's economy. The promise of loot also served as an incentive for these slave soldiers, ensuring their continued loyalty and motivation. This cycle of conquest and plunder enabled empires to expand their territories and maintain their power."
  acw_cf_company_11_s_aa_tt:0"§OInvoluntary Forces II§!\n\nSlave soldiers played a crucial role in maintaining military strength without the need to levy additional war taxes on the local population. Their prowess in battle and loyalty to the state allowed these empires to expand and defend their territories effectively. By relying on these elite, state-owned troops, rulers could finance military campaigns through the spoils of war and tributes from conquered lands, rather than imposing heavy taxes on their subjects. This approach not only ensured a stable economy but also helped maintain public support and internal stability."
  acw_cf_company_11_s_ab_tt:0"§OInvoluntary Forces II§!\n\nSlave soldiers served as elite special units in various medieval and Renaissance armies, providing exceptional military capabilities. The Ghilman of the Abbasid Caliphate and the Kapikulu of the Safavid Empire are notable examples. These troops were trained rigorously and often given critical military roles due to their loyalty and effectiveness. Their specialized skills and disciplined organization allowed these empires to achieve military successes that standard conscripted forces might not have managed, thereby enhancing the strategic capabilities and overall stability of their regimes." 
  acw_cf_company_11_s_ba_tt:0"§OInvoluntary Forces II§!\n\nSlave soldiers, such as the Ghilman in the Abbasid Caliphate and the Kapikulu in the Safavid Empire, were often cheaper to maintain than regular standing armies. As property of the state, their loyalty was ensured through direct patronage and their upkeep was generally less costly than that of free soldiers demanding higher wages and benefits. This cost-efficiency allowed rulers to maintain powerful and reliable military forces without imposing excessive financial burdens on their treasuries."
  acw_cf_company_11_s_bb_tt:0"§OInvoluntary Forces II§!\n\nHaving slave soldiers requires less manpower than regular standing armies due to their elite training and specialized skills. These slave soldiers were highly efficient, able to perform complex military tasks and serve in critical roles, thus reducing the need for larger, less skilled forces. This efficiency allowed empires to maintain effective military operations with fewer personnel, optimizing resource allocation and maintaining control over vast territories."
- 
- 
  ##holyshitireallyneedsomebodytodothispartorimgonnagomad
- 
  #upgrades
  acw_infantry_upgrade_t1:0"Infantry Upgrade 1"
  acw_infantry_upgrade_t2:0"Infantry Upgrade 2"
@@ -806,7 +702,6 @@
  acw_infantry_upgrade_t7:0"Infantry Upgrade 7"
  acw_infantry_upgrade_t8:0"Infantry Upgrade 8"
  acw_infantry_upgrade_t9:0"Infantry Upgrade 9"
-
  acw_cavalry_upgrade_t1:0"Cavalry Upgrade 1"
  acw_cavalry_upgrade_t2:0"Cavalry Upgrade 2"
  acw_cavalry_upgrade_t3:0"Cavalry Upgrade 3"
@@ -816,7 +711,6 @@
  acw_cavalry_upgrade_t7:0"Cavalry Upgrade 7"
  acw_cavalry_upgrade_t8:0"Cavalry Upgrade 8"
  acw_cavalry_upgrade_t9:0"Cavalry Upgrade 9"
- 
  acw_artillery_upgrade_t1:0"Artillery Upgrade 1"
  acw_artillery_upgrade_t2:0"Artillery Upgrade 2"
  acw_artillery_upgrade_t3:0"Artillery Upgrade 3"
@@ -826,3 +720,40 @@
  acw_artillery_upgrade_t7:0"Artillery Upgrade 7"
  acw_artillery_upgrade_t8:0"Artillery Upgrade 8"
  acw_artillery_upgrade_t9:0"Artillery Upgrade 9"
+ #putting all the custom loc stuff here so translation can be done faster
+ acw_stratagem_selector_button_sfp_levels_chose:0"[acw_stratagem_selector_button_sfp_levels]"
+ acw_stratagem_selector_button_trc_levels_chose:0"[acw_stratagem_selector_button_trc_levels]"
+ acw_stratagem_selector_button_dod_levels_chose:0"[acw_stratagem_selector_button_dod_levels]"
+ acw_stratagem_selector_button_has_levels_chose:0"[acw_stratagem_selector_button_has_levels]"
+ acw_stratagem_selector_button_rom_levels_chose:0"[acw_stratagem_selector_button_rom_levels]"
+ acw_army_stratagem_text:"[acw_stratagem_text_loc]"
+ acw_hd_slot_1_tt:0"[acw_get_hd_slot_1_tt]\n[acw_get_hd_slot_1_auth][acw_get_hd_slot_1_modifier]"
+ acw_hd_slot_2_tt:0"[acw_get_hd_slot_2_tt]\n[acw_get_hd_slot_2_auth][acw_get_hd_slot_2_modifier]"
+ acw_hd_slot_3_tt:0"[acw_get_hd_slot_3_tt]\n[acw_get_hd_slot_3_auth][acw_get_hd_slot_3_modifier]"
+ acw_arm_slot_1_tt:0"§O[acw_get_arm_slot1]§!\n[acw_get_arm_slot1_tt]\n\n[acw_get_arma_age_s1]\n[acw_get_arm_slot1_modifier]\n\n[acw_get_arm_xp_modifier_slot_1]"
+ acw_arm_slot_2_tt:0"§O[acw_get_arm_slot2]§!\n[acw_get_arm_slot2_tt]\n\n[acw_get_arma_age_s2]\n[acw_get_arm_slot2_modifier]\n\n[acw_get_arm_xp_modifier_slot_2]"
+ acw_arm_slot_3_tt:0"§O[acw_get_arm_slot3]§!\n[acw_get_arm_slot3_tt]\n\n[acw_get_arma_age_s3]\n[acw_get_arm_slot3_modifier]\n\n[acw_get_arm_xp_modifier_slot_3]"
+ acw_arm_slot_4_tt:0"§O[acw_get_arm_slot4]§!\n[acw_get_arm_slot4_tt]\n\n[acw_get_arma_age_s4]\n[acw_get_arm_slot4_modifier]\n\n[acw_get_arm_xp_modifier_slot_4]"
+ acw_cf_slot1_desk:0"[acw_get_cf_slot1]"
+ acw_cf_slot2_desk:0"[acw_get_cf_slot2]"
+ acw_cf_slot3_desk:0"[acw_get_cf_slot3]"
+ acw_cf_slot4_desk:0"[acw_get_cf_slot4]"
+ acw_cf_slot1_desk_tt:0"§O[acw_get_cf_slot1]§!\n\n[acw_get_cf_slot_1_short]\n-----------\n[acw_cf_check_slot_1_full]\n[acw_get_cf_slot_1_modifiers]\n[acw_get_cf_slot_1_t1_modifiers]\n[acw_get_cf_slot_1_t2_modifiers]"
+ acw_cf_slot2_desk_tt:0"§O[acw_get_cf_slot2]§!\n\n[acw_get_cf_slot_2_short]\n-----------\n[acw_cf_check_slot_2_full]\n[acw_get_cf_slot_2_modifiers]\n[acw_get_cf_slot_2_t1_modifiers]\n[acw_get_cf_slot_2_t2_modifiers]"
+ acw_cf_slot3_desk_tt:0"§O[acw_get_cf_slot3]§!\n\n[acw_get_cf_slot_3_short]\n-----------\n[acw_cf_check_slot_3_full]\n[acw_get_cf_slot_3_modifiers]\n[acw_get_cf_slot_3_t1_modifiers]\n[acw_get_cf_slot_3_t2_modifiers]"
+ acw_cf_slot4_desk_tt:0"§O[acw_get_cf_slot4]§!\n\n[acw_get_cf_slot_4_short]\n-----------\n[acw_cf_check_slot_4_full]\n[acw_get_cf_slot_4_modifiers]\n[acw_get_cf_slot_4_t1_modifiers]\n[acw_get_cf_slot_4_t2_modifiers]"
+ acw_hd_24.a:0"[Root.acw_cf_perkz_points.GetValue]"
+ acw_cf_perkz_avaible:0" [Root.acw_cf_perkz_points.GetValue] "
+ acw_cf_perkz_avaible_cf_bg_open:0"You have [Root.acw_cf_perkz_points.GetValue] points to spend."
+ acw_cf_company_1_tt:0"§O[acw_get_cf_comp1_tt_title]§!\n\n[acw_get_cf_comp1_tt_desc]\n\n[acw_cf_warning_remove]"
+ acw_cf_company_2_tt:0"§O[acw_get_cf_comp2_tt_title]§!\n\n[acw_get_cf_comp2_tt_desc]\n\n[acw_cf_warning_remove]"
+ acw_cf_company_3_tt:0"§O[acw_get_cf_comp3_tt_title]§!\n\n[acw_get_cf_comp3_tt_desc]\n\n[acw_cf_warning_remove]"
+ acw_cf_company_4_tt:0"§O[acw_get_cf_comp4_tt_title]§!\n\n[acw_get_cf_comp4_tt_desc]\n\n[acw_cf_warning_remove]"
+ acw_cf_company_5_tt:0"§O[acw_get_cf_comp5_tt_title]§!\n\n[acw_get_cf_comp5_tt_desc]\n\n[acw_cf_warning_remove]"
+ acw_cf_company_6_tt:0"§O[acw_get_cf_comp6_tt_title]§!\n\n[acw_get_cf_comp6_tt_desc]\n\n[acw_cf_warning_remove]"
+ acw_cf_company_7_tt:0"§O[acw_get_cf_comp7_tt_title]§!\n\n[acw_get_cf_comp7_tt_desc]\n\n[acw_cf_warning_remove]"
+ acw_cf_company_8_tt:0"§O[acw_get_cf_comp8_tt_title]§!\n\n[acw_get_cf_comp8_tt_desc]\n\n[acw_cf_warning_remove]"
+ acw_cf_company_9_tt:0"§O[acw_get_cf_comp9_tt_title]§!\n\n[acw_get_cf_comp9_tt_desc]\n\n[acw_cf_warning_remove]"
+ acw_cf_company_10_tt:0"§O[acw_get_cf_comp10_tt_title]§!\n\n[acw_get_cf_comp10_tt_desc]\n\n[acw_cf_warning_remove]"
+ acw_cf_company_11_tt:0"§O[acw_get_cf_comp11_tt_title]§!\n\n[acw_get_cf_comp11_tt_desc]\n\n[acw_cf_warning_remove]"
+

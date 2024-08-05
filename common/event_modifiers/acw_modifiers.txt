@@ -634,6 +634,8 @@ acw_cf_company_1_mod = {
 	loot_amount = 0.10
 	leader_land_fire = -1
 	burghers_influence_modifier = 0.1
+	vaisyas_influence_modifier = 0.1
+	jains_influence_modifier = 0.1
 }	
 
 acw_cf_company_1_mod_1 = {	
@@ -641,6 +643,8 @@ acw_cf_company_1_mod_1 = {
 	loot_amount = 0.10
 	leader_land_fire = -1
 	burghers_influence_modifier = 0.1
+	vaisyas_influence_modifier = 0.1
+	jains_influence_modifier = 0.1
 }	
 				
 acw_cf_company_2_mod = {	
@@ -648,6 +652,8 @@ acw_cf_company_2_mod = {
 	assault_fort_ability = -0.1
 	land_maintenance_modifier = -0.05
 	nobles_influence_modifier = 0.1
+	maratha_influence_modifier = 0.1
+	rajputs_influence_modifier = 0.1
 }	
 
 acw_cf_company_2_mod_1 = {	
@@ -655,6 +661,8 @@ acw_cf_company_2_mod_1 = {
 	assault_fort_ability = -0.1
 	land_maintenance_modifier = -0.10
 	nobles_influence_modifier = 0.1
+	maratha_influence_modifier = 0.1
+	rajputs_influence_modifier = 0.1
 }	
 
 acw_cf_company_3_mod = {	
@@ -662,6 +670,8 @@ acw_cf_company_3_mod = {
 	land_attrition = -0.05
 	movement_speed = -0.15
 	burghers_influence_modifier = 0.1
+	vaisyas_influence_modifier = 0.1
+	jains_influence_modifier = 0.1
 }	
 
 acw_cf_company_4_mod = {	
@@ -669,6 +679,7 @@ acw_cf_company_4_mod = {
 	regiment_manpower_usage = -0.1
 	discipline = -0.05
 	church_influence_modifier = 0.1
+	brahmins_other_influence_modifier = 0.1
 }	
 	
 acw_cf_company_4_mod_1 = {	
@@ -676,6 +687,8 @@ acw_cf_company_4_mod_1 = {
 	regiment_manpower_usage = -0.1
 	discipline = -0.05
 	nobles_influence_modifier = 0.1
+	maratha_influence_modifier = 0.1
+	rajputs_influence_modifier = 0.1
 }	
 
 acw_cf_company_5_mod = {	
@@ -683,6 +696,7 @@ acw_cf_company_5_mod = {
 	movement_speed = 0.10
 	land_forcelimit_modifier = -0.10
 	church_influence_modifier = 0.1
+	brahmins_other_influence_modifier = 0.1
 }	
 
 acw_cf_company_5_mod_1 = {	
@@ -690,6 +704,7 @@ acw_cf_company_5_mod_1 = {
 	movement_speed = 0.10
 	land_forcelimit_modifier = -0.10
 	church_influence_modifier = 0.1
+	brahmins_other_influence_modifier = 0.1
 }	
 
 acw_cf_company_6_mod = {	
@@ -704,6 +719,8 @@ acw_cf_company_6_mod_1 = {
 	leader_land_manuever = 1
 	cavalry_cost = 0.10
 	burghers_influence_modifier = 0.1
+	vaisyas_influence_modifier = 0.1
+	jains_influence_modifier = 0.1
 }	
 
 acw_cf_company_6_mod_2 = {	
@@ -711,6 +728,8 @@ acw_cf_company_6_mod_2 = {
 	leader_land_manuever = 1
 	cavalry_cost = 0.10
 	nobles_influence_modifier = 0.15
+	maratha_influence_modifier = 0.15
+	rajputs_influence_modifier = 0.15
 
 }	
 
@@ -726,7 +745,8 @@ acw_cf_company_6_mod_4 = {
 	leader_land_manuever = 1
 	cavalry_cost = 0.10
 	nobles_influence_modifier = 0.15
-
+	maratha_influence_modifier = 0.15
+	rajputs_influence_modifier = 0.15
 }	
 
 acw_cf_company_6_mod_5 = {	
@@ -734,6 +754,7 @@ acw_cf_company_6_mod_5 = {
 	leader_land_manuever = 1
 	cavalry_cost = 0.10
 	church_influence_modifier = 0.1
+	brahmins_other_influence_modifier = 0.1
 }
 
 acw_cf_company_7_mod = {	
@@ -748,6 +769,7 @@ acw_cf_company_7_mod_1 = {
 	land_attrition = -0.10
 	reinforce_cost_modifier = 0.15
 	church_influence_modifier = 0.1
+	brahmins_other_influence_modifier = 0.1
 }	
 
 acw_cf_company_7_mod_2 = {	
@@ -755,6 +777,8 @@ acw_cf_company_7_mod_2 = {
 	land_attrition = -0.10
 	reinforce_cost_modifier = 0.15
 	burghers_influence_modifier = 0.1
+	vaisyas_influence_modifier = 0.1
+	jains_influence_modifier = 0.1
 }
 
 acw_cf_company_8_mod = {	
@@ -762,6 +786,7 @@ acw_cf_company_8_mod = {
 	siege_ability = 0.05
 	artillery_barrage_cost = 0.2
 	church_influence_modifier = 0.1
+	brahmins_other_influence_modifier = 0.1
 }	
 	
 acw_cf_company_9_mod = {	
@@ -769,6 +794,7 @@ acw_cf_company_9_mod = {
 	manpower_recovery_speed = 0.05
 	leader_land_shock = -1
 	church_influence_modifier = 0.1
+	brahmins_other_influence_modifier = 0.1
 }	
 
 acw_cf_company_10_mod = {	
@@ -776,6 +802,8 @@ acw_cf_company_10_mod = {
 	prestige_from_land = 0.10
 	leader_land_manuever = -1
 	burghers_influence_modifier = 0.1
+	vaisyas_influence_modifier = 0.1
+	jains_influence_modifier = 0.1
 }	
 
 acw_cf_company_10_mod_1 = {	
@@ -783,6 +811,8 @@ acw_cf_company_10_mod_1 = {
 	prestige_from_land = 0.10
 	leader_land_manuever = -1
 	burghers_influence_modifier = 0.1
+	vaisyas_influence_modifier = 0.1
+	jains_influence_modifier = 0.1
 }	
 
 acw_cf_company_11_mod = {	
@@ -790,7 +820,9 @@ acw_cf_company_11_mod = {
 	assault_fort_ability = 0.1
 	global_unrest = 3
 	nobles_influence_modifier = 0.15
-
+	maratha_influence_modifier = 0.15
+	rajputs_influence_modifier = 0.15
+	ghulams_influence_modifier = 0.1
 }	
 
 acw_cf_company_11_mod_1 = {	
@@ -798,20 +830,27 @@ acw_cf_company_11_mod_1 = {
 	assault_fort_ability = 0.1
 	global_unrest = 3
 	nobles_influence_modifier = 0.15
-
+	maratha_influence_modifier = 0.15
+	rajputs_influence_modifier = 0.15
+	ghulams_influence_modifier = 0.1
 }	
 
 acw_cf_company_1_a_mod = { war_taxes_cost_modifier = -0.10 }
 acw_cf_company_1_b_mod = { justify_trade_conflict_cost = -0.2 }
 acw_cf_company_1_aa_mod = { global_monthly_devastation = -0.1 }
-acw_cf_company_1_ab_mod = { burghers_influence_modifier = -0.2 }
+acw_cf_company_1_ab_mod = { burghers_influence_modifier = -0.2
+							vaisyas_influence_modifier = -0.2
+							jains_influence_modifier = -0.2 }
 acw_cf_company_1_ba_mod = { global_trade_power = 0.1 }
 acw_cf_company_1_bb_mod = { merchants = 1 }
 
 acw_cf_company_2_a_mod = { may_recruit_female_generals = yes }
 acw_cf_company_2_b_mod = { max_general_maneuver = 1 }
 acw_cf_company_2_aa_mod = { global_missionary_strength = 0.03 }
-acw_cf_company_2_ab_mod = { nobles_influence_modifier = -0.2 }
+acw_cf_company_2_ab_mod = { nobles_influence_modifier = -0.2
+							maratha_influence_modifier = -0.2
+							rajputs_influence_modifier = -0.2
+							}
 acw_cf_company_2_ba_mod = { manpower_in_own_culture_provinces = 0.10 }
 acw_cf_company_2_bb_mod = { special_unit_cost_modifier = -0.2 }
 
@@ -860,7 +899,8 @@ acw_cf_company_8_bb_mod = { artillery_fire = 1 }
 acw_cf_company_9_a_mod = { special_unit_cost_modifier = -0.2 }
 acw_cf_company_9_b_mod = { manpower_in_true_faith_provinces= 0.10 }
 acw_cf_company_9_aa_mod = { drill_decay_modifier = -0.20 }
-acw_cf_company_9_ab_mod = { church_influence_modifier = -0.2 }
+acw_cf_company_9_ab_mod = { church_influence_modifier = -0.2
+							brahmins_other_influence_modifier = -0.2}
 acw_cf_company_9_ba_mod = { recover_army_morale_speed = 0.10 }
 acw_cf_company_9_bb_mod = { reinforce_speed = 0.10 }
 
