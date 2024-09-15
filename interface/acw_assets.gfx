@@ -50,6 +50,12 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	
+		spriteType = {
+		name = "GFX_acw_stratagem_bg_3"
+		texturefile = "gfx/interface/acw_stratagem_bg_3.dds"
+		transparencecheck = yes
+	}
+	
 	spriteType = {
 		name = "GFX_acw_stratagem_dod"
 		texturefile = "gfx/interface/acw_stratagem_dod.dds"
@@ -157,7 +163,7 @@ spriteTypes = {
 		name = "GFX_acw_n_icon_none"
 		texturefile = "gfx/interface/acw_n_icon_none.dds"
 		transparencecheck = yes
-		noOfFrames = 42
+		noOfFrames = 43
 	}
 	
 	spriteType = {
@@ -502,5 +508,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/acw_cf_slot_crown.dds"
 		transparencecheck = yes
 		noOfFrames = 2
-	}	
+	}
+	
+	frameAnimatedSpriteType = {
+        name = "GFX_acw_dd_test"
+        texturefile = "gfx/interface/acw_dd_test.dds"
+        noOfFrames = 4
+        animation_rate_fps = 4
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 4
+        alwaystransparent = yes
+    }
+	
+	SpriteType = {		
+		name = "GFX_acw_fourth_company"
+		texturefile = "gfx/event_pictures/acw_fourth_company.dds"
+		transparencecheck = yes
+	}
+
 }

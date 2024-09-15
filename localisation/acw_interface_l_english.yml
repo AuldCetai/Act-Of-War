@@ -21,11 +21,11 @@
  acw_stratagem_has_t2_text:0"§OHeroic Assault III§!\nThe level of our stratagem grants us the following effects:\n\nPrestige from Land Battles: §G+30.0%§!\nAssault Fort cost modifier: §G-20.0%§!\nMorale Damage Received: §G-10.0%§!"
  acw_stratagem_has_t3_text:0"§OHeroic Assault IV§!\nThe level of our stratagem grants us the following effects:\n\nPrestige from Land Battles: §G+30.0%§!\nAssault Fort cost modifier: §G-20.0%§!\nMorale Damage Received: §G-10.0%§!\nAssault Fort ability: §G+10.0%§!"
  acw_stratagem_has_t4_text:0"§OHeroic Assault V§!\nThe level of our stratagem grants us the following effects:\n\nPrestige from Land Battles: §G+30.0%§!\nAssault Fort cost modifier: §G-20.0%§!\nMorale Damage Received: §G-10.0%§!\nAssault Fort ability: §G+10.0%§!\nMilitary Tactics: §G+0.20§!"
- acw_stratagem_trc_selected_text:0"§OTraditional Combat I§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-5.0%§!"
- acw_stratagem_trc_t1_text:0"§OTraditional Combat II§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-5.0%§!\nCavalry to Infantry Ratio: §G+50.0%§!"
- acw_stratagem_trc_t2_text:0"§OTraditional Combat III§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-5.0%§!\nCavalry to Infantry Ratio: §G+50.0%§!\nVassal Force Limit Contribution §G+20.0%§!"
- acw_stratagem_trc_t3_text:0"§OTraditional Combat IV§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-5.0%§!\nCavalry to Infantry Ratio: §G+50.0%§!\nVassal Force Limit Contribution §G+20.0%§!\nSpecial Unit Force Limit: §G+33.0%§!"
- acw_stratagem_trc_t4_text:0"§OTraditional Combat V§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-5.0%§!\nCavalry to Infantry Ratio: §G+50.0%§!\nVassal Force Limit Contribution §G+20.0%§!\nSpecial Unit Force Limit: §G+33.0%§!\nCan Recruit Revolutionary Guards\nRevolutionary Guard Force Limit Fraction: §G+10.0%§!"
+ acw_stratagem_trc_selected_text:0"§OTraditional Combat I§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-0.5.0%§!"
+ acw_stratagem_trc_t1_text:0"§OTraditional Combat II§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-0.5%§!\nCavalry to Infantry Ratio: §G+50.0%§!"
+ acw_stratagem_trc_t2_text:0"§OTraditional Combat III§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-0.50%§!\nCavalry to Infantry Ratio: §G+50.0%§!\nVassal Force Limit Contribution §G+20.0%§!"
+ acw_stratagem_trc_t3_text:0"§OTraditional Combat IV§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-0.50%§!\nCavalry to Infantry Ratio: §G+50.0%§!\nVassal Force Limit Contribution §G+20.0%§!\nSpecial Unit Force Limit: §G+33.0%§!"
+ acw_stratagem_trc_t4_text:0"§OTraditional Combat V§!\nThe level of our stratagem grants us the following effects:\n\nYearly Army Tradition Decay: §G-0.5%§!\nCavalry to Infantry Ratio: §G+50.0%§!\nVassal Force Limit Contribution §G+20.0%§!\nSpecial Unit Force Limit: §G+33.0%§!\nCan Recruit Revolutionary Guards\nRevolutionary Guard Force Limit Fraction: §G+10.0%§!"
  acw_stratagem_has_selected:0"Heroic Assault I"
  acw_stratagem_has_t1:0"Heroic Assault II"
  acw_stratagem_has_t2:0"Heroic Assault III"
@@ -102,7 +102,7 @@
  acw_artillery_temp_skill_t2a:0"Artillery Improvement II"
  acw_artillery_temp_skill_t2b:0"Artillery Improvement II" 
  acw_artillery_temp_skill_t3a:0"Artillery Improvement III"
- acw_artillery_temp_skill_t3b:0"Artillery Improvement III" 
+ acw_artillery_temp_skill_t3b:0"Artillery Improvement III"
  #Armaments
  acw_arma_crouching_tiger_cannon:0 "Crouching Tiger Cannon"
  acw_arma_iklwa:0 "Iklwa"
@@ -756,4 +756,20 @@
  acw_cf_company_9_tt:0"§O[acw_get_cf_comp9_tt_title]§!\n\n[acw_get_cf_comp9_tt_desc]\n\n[acw_cf_warning_remove]"
  acw_cf_company_10_tt:0"§O[acw_get_cf_comp10_tt_title]§!\n\n[acw_get_cf_comp10_tt_desc]\n\n[acw_cf_warning_remove]"
  acw_cf_company_11_tt:0"§O[acw_get_cf_comp11_tt_title]§!\n\n[acw_get_cf_comp11_tt_desc]\n\n[acw_cf_warning_remove]"
-
+ 
+ #update 1.02 - The Fourth Company and the Puck Gun
+ acw_hd_36.t:0"A man comes forth" 
+ acw_hd_36.d:0"Today, one of our generals with a strange, well dressed lady in tow have demanded audience with [Root.Monarch.GetHerHisCap] Majesty, §G[Root.Monarch.GetName]§! of the House $DYNASTY$. His insolence should land him in prison rotting, however he is one of our most accomplished heroes, earning us victory after victory on the field of battle. His military prowress is undeniable, but the demands of 'expanding our military with modernised auxila' is a major headache.\n\nShall we support this venture? We may not have an opportunity like this again."
+ acw_hd_36.a:0"Yes, yes. He clearly knows his stuff."
+ acw_hd_36.b:0"How dares he!"
+ acw_hd_36.tt:0"Unlock the §Yfourth§! Chevauchee slot, and gain free company. If you have the gained company already unlocked, gain an §YUpgrade point§!."
+ acw_arma_puck_gun_desc:0"The Puckle gun, invented by James Puckle in 1718, is an early form of a rapid-fire weapon. It is a tripod-mounted, manually operated flintlock gun that features a revolving cylinder, allowing it to fire multiple shots in quick succession. The Puckle gun is often considered a precursor to modern machine guns and was designed primarily for naval use to defend ships from boarding parties."
+ acw_arma_puck_gun:0"Puckle Gun"
+ acw_arma_puck_gun_modifier:0"Privateer Efficiency: §G+20%§!"
+ 
+ #update 1.03 - fixes
+ acw_hd_37.t:0"Army Improvement"
+ acw_hd_37.d:0"Please select which part of your army would you like to focus on for the next §G15§! years." 
+ acw_hd_37.a:0"Improve §YStaff§!" 
+ acw_hd_37.b:0"Improve §GEquipment§!" 
+ acw_hd_37.c:0"Improve §OOrganization§!" 

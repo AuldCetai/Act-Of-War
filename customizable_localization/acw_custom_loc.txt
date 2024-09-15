@@ -2585,6 +2585,11 @@ defined_text = {
 		localisation_key = acw_arma_dragoon_musket
 		trigger = { has_country_flag = acw_arma_s1_40 }
 	}
+	
+	text = {
+		localisation_key = acw_arma_puck_gun
+		trigger = { has_country_flag = acw_arma_s1_41 }
+	}
 
 }
 
@@ -2791,6 +2796,11 @@ defined_text = {
 	text = {
 		localisation_key = acw_arma_dragoon_musket_desc
 		trigger = { has_country_flag = acw_arma_s1_40 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_puck_gun_desc
+		trigger = { has_country_flag = acw_arma_s1_41 }
 	}
 
 }
@@ -3212,6 +3222,11 @@ defined_text = {
 		localisation_key = acw_arma_dragoon_musket
 		trigger = { has_country_flag = acw_arma_s2_40 }
 	}
+	
+	text = {
+		localisation_key = acw_arma_puck_gun
+		trigger = { has_country_flag = acw_arma_s2_41 }
+	}
 
 }
 
@@ -3418,6 +3433,11 @@ defined_text = {
 	text = {
 		localisation_key = acw_arma_dragoon_musket_desc
 		trigger = { has_country_flag = acw_arma_s2_40 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_puck_gun_desc
+		trigger = { has_country_flag = acw_arma_s2_41 }
 	}
 
 }
@@ -3838,6 +3858,11 @@ defined_text = {
 		localisation_key = acw_arma_dragoon_musket
 		trigger = { has_country_flag = acw_arma_s3_40 }
 	}
+	
+	text = {
+		localisation_key = acw_arma_puck_gun
+		trigger = { has_country_flag = acw_arma_s3_41 }
+	}
 
 }
 
@@ -4045,7 +4070,11 @@ defined_text = {
 		localisation_key = acw_arma_dragoon_musket_desc
 		trigger = { has_country_flag = acw_arma_s3_40 }
 	}
-
+	
+	text = {
+		localisation_key = acw_arma_puck_gun_desc
+		trigger = { has_country_flag = acw_arma_s3_41 }
+	}
 }
 
 
@@ -4464,6 +4493,11 @@ defined_text = {
 		localisation_key = acw_arma_dragoon_musket
 		trigger = { has_country_flag = acw_arma_s4_40 }
 	}
+	
+	text = {
+		localisation_key = acw_arma_puck_gun
+		trigger = { has_country_flag = acw_arma_s4_41 }
+	}
 
 }
 
@@ -4670,6 +4704,11 @@ defined_text = {
 	text = {
 		localisation_key = acw_arma_dragoon_musket_desc
 		trigger = { has_country_flag = acw_arma_s4_40 }
+	}
+	
+	text = {
+		localisation_key = acw_arma_puck_gun_desc
+		trigger = { has_country_flag = acw_arma_s4_41 }
 	}
 
 }

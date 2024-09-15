@@ -239,7 +239,7 @@ acw_cavalry_upgrade_t8  = {
 	}
 
 acw_cavalry_upgrade_t9  = {	
-	cavalry_power = 2
+	cavalry_power = 0.2
 	cavalry_cost = 1
 	}
 	
@@ -298,21 +298,33 @@ acw_infantry_temp_skill_t1b = {
 				drill_gain_modifier = 0.1
 					}	
 
+acw_infantry_temp_skill_t1c = {
+				possible_condottieri = 1
+					}
+
 acw_infantry_temp_skill_t2a = {
 				infantry_fire = 1
 					}	
 
 acw_infantry_temp_skill_t2b = {
 				infantry_shock = 1
-					}	
+					}
+
+acw_infantry_temp_skill_t2c = {
+				infantry_cost = -0.10
+					}					
 					
 acw_infantry_temp_skill_t3a = {
 				leader_land_shock = 1
 					}	
 					
 acw_infantry_temp_skill_t3b = {
-				manpower_recovery_speed = 0.1
+				leader_land_fire = 1
 					}	
+
+acw_infantry_temp_skill_t3c = {
+				manpower_recovery_speed = 0.1
+					}						
 					
 #acw skills cav
 acw_cavalry_temp_skill_t1a = {
@@ -323,13 +335,22 @@ acw_cavalry_temp_skill_t1b = {
 				movement_speed = 0.1
 					}	
 
+acw_cavalry_temp_skill_t1c = {
+				cav_to_inf_ratio = 0.10
+					}
+					
 acw_cavalry_temp_skill_t2a = {
 				cavalry_fire = 1
 					}	
 
 acw_cavalry_temp_skill_t2b = {
 				cavalry_shock = 1
-					}	
+					}
+					
+acw_cavalry_temp_skill_t2c = {
+				cavalry_cost = -0.10
+					}
+					
 					
 acw_cavalry_temp_skill_t3a = {
 				army_tradition = 0.05
@@ -337,7 +358,11 @@ acw_cavalry_temp_skill_t3a = {
 					
 acw_cavalry_temp_skill_t3b = {
 				shock_damage_received = -0.05
-					}	
+					}
+
+acw_cavalry_temp_skill_t3c = {
+				loot_amount = 0.50
+					}						
 					
 #acw skills arty
 acw_artillery_temp_skill_t1a = {
@@ -348,12 +373,20 @@ acw_artillery_temp_skill_t1b = {
 				backrow_artillery_damage = 0.1
 					}	
 
+acw_artillery_temp_skill_t1c = {
+				global_supply_limit_modifier = 0.10
+					}	
+
 acw_artillery_temp_skill_t2a = {
 				artillery_fire = 1
 					}	
 
 acw_artillery_temp_skill_t2b = {
 				artillery_shock = 1
+					}	
+
+acw_artillery_temp_skill_t2c = {
+				artillery_cost = -0.1
 					}	
 					
 acw_artillery_temp_skill_t3a = {
@@ -363,6 +396,10 @@ acw_artillery_temp_skill_t3a = {
 acw_artillery_temp_skill_t3b = {
 				siege_ability = 0.1
 					}
+					
+acw_artillery_temp_skill_t3c = {
+				fire_damage = 0.10
+					}						
 					
 #armaments
 acw_arma_armprof = {
@@ -611,6 +648,10 @@ acw_arma_nock_gun = {
 acw_arma_dragoon_musket = { 
 				leader_land_manuever = 1 
 				}
+				
+acw_arma_puck_gun = { 
+				privateer_efficiency = 0.2
+				}				
 
 acw_arma_slot_1_xp = {
 				yearly_army_professionalism = 0.01
@@ -653,7 +694,7 @@ acw_cf_company_2_mod = {
 	land_maintenance_modifier = -0.05
 	nobles_influence_modifier = 0.1
 	maratha_influence_modifier = 0.1
-	rajputs_influence_modifier = 0.1
+	rajput_influence_modifier = 0.1
 }	
 
 acw_cf_company_2_mod_1 = {	
@@ -662,7 +703,7 @@ acw_cf_company_2_mod_1 = {
 	land_maintenance_modifier = -0.10
 	nobles_influence_modifier = 0.1
 	maratha_influence_modifier = 0.1
-	rajputs_influence_modifier = 0.1
+	rajput_influence_modifier = 0.1
 }	
 
 acw_cf_company_3_mod = {	
@@ -688,7 +729,7 @@ acw_cf_company_4_mod_1 = {
 	discipline = -0.05
 	nobles_influence_modifier = 0.1
 	maratha_influence_modifier = 0.1
-	rajputs_influence_modifier = 0.1
+	rajput_influence_modifier = 0.1
 }	
 
 acw_cf_company_5_mod = {	
@@ -729,7 +770,7 @@ acw_cf_company_6_mod_2 = {
 	cavalry_cost = 0.10
 	nobles_influence_modifier = 0.15
 	maratha_influence_modifier = 0.15
-	rajputs_influence_modifier = 0.15
+	rajput_influence_modifier = 0.15
 
 }	
 
@@ -746,7 +787,7 @@ acw_cf_company_6_mod_4 = {
 	cavalry_cost = 0.10
 	nobles_influence_modifier = 0.15
 	maratha_influence_modifier = 0.15
-	rajputs_influence_modifier = 0.15
+	rajput_influence_modifier = 0.15
 }	
 
 acw_cf_company_6_mod_5 = {	
@@ -821,7 +862,7 @@ acw_cf_company_11_mod = {
 	global_unrest = 3
 	nobles_influence_modifier = 0.15
 	maratha_influence_modifier = 0.15
-	rajputs_influence_modifier = 0.15
+	rajput_influence_modifier = 0.15
 	ghulams_influence_modifier = 0.1
 }	
 
@@ -831,7 +872,7 @@ acw_cf_company_11_mod_1 = {
 	global_unrest = 3
 	nobles_influence_modifier = 0.15
 	maratha_influence_modifier = 0.15
-	rajputs_influence_modifier = 0.15
+	rajput_influence_modifier = 0.15
 	ghulams_influence_modifier = 0.1
 }	
 
@@ -849,7 +890,7 @@ acw_cf_company_2_b_mod = { max_general_maneuver = 1 }
 acw_cf_company_2_aa_mod = { global_missionary_strength = 0.03 }
 acw_cf_company_2_ab_mod = { nobles_influence_modifier = -0.2
 							maratha_influence_modifier = -0.2
-							rajputs_influence_modifier = -0.2
+							rajput_influence_modifier = -0.2
 							}
 acw_cf_company_2_ba_mod = { manpower_in_own_culture_provinces = 0.10 }
 acw_cf_company_2_bb_mod = { special_unit_cost_modifier = -0.2 }
@@ -878,7 +919,7 @@ acw_cf_company_5_bb_mod = { manpower_recovery_speed = 0.10 }
 acw_cf_company_6_a_mod = { vassal_forcelimit_bonus = 0.05 }
 acw_cf_company_6_b_mod = { power_projection_from_insults = 0.33 }
 acw_cf_company_6_aa_mod = { spy_offence = 0.2 }
-acw_cf_company_6_ab_mod = { fabricate_claims_cost = 0.20 }
+acw_cf_company_6_ab_mod = { fabricate_claims_cost = -0.20 }
 acw_cf_company_6_ba_mod = { cavalry_cost= -0.15 }
 acw_cf_company_6_bb_mod = { army_tradition = 0.15 }
 

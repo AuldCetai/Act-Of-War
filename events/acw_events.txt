@@ -7070,3 +7070,532 @@ country_event = {
 		set_global_flag = acw_french_lost_in_america
 		}
 }
+
+
+
+#dd_test
+country_event = {
+	id = acw_hd.35
+	title = acw_hd_35.t 
+	desc = acw_hd_35.d
+	picture = GFX_acw_dd_test
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = { }
+	
+	option = {
+		name = "acw_hd_35.a"
+		set_global_flag = acw_french_lost_in_america
+		}
+}
+
+
+#v1.02
+#the fourth company update
+country_event = {
+	id = acw_hd.36
+	title = acw_hd_36.t 
+	desc = acw_hd_36.d
+	picture = GFX_acw_fourth_company
+	fire_only_once = yes
+	mean_time_to_happen = {
+						months = 5000
+						modifier = {
+							factor = 0.5
+							OR = {  
+									tag = PRU
+									tag = GBR
+									tag = USA
+									tag = GER
+									}
+							}	
+						}
+	trigger = { }
+	
+	option = {
+		name = "acw_hd_36.a"
+		add_mil_power = -100
+		set_country_flag = acw_cf_unlocked_the_fourth_company
+		custom_tooltip = acw_hd_36.tt
+		hidden_effect = {
+			random_list = {
+				1 =	{ 
+					IF = {
+						limit = {
+								NOT = {has_country_flag = acw_cf_company_1_picked}
+								}
+							set_country_flag = acw_cf_company_1_picked	
+							set_country_flag = acw_cf_s4_1
+							IF = {limit = {primary_culture = cosmopolitan_french} 
+								add_country_modifier = {
+										name = acw_cf_company_1_mod_1
+										duration = -1
+													}
+								}					
+								ELSE = 	 {
+											add_country_modifier = {
+													name = acw_cf_company_1_mod
+													duration = -1
+																}								
+								}	
+							}	
+					ELSE = { acw_cf_increase_perkz = yes } 			
+					}
+				1 =	{ 
+					IF = {
+						limit = {
+								NOT = {has_country_flag = acw_cf_company_2_picked}
+								}
+							set_country_flag = acw_cf_company_2_picked	
+							set_country_flag = acw_cf_s4_2
+							IF = {limit = {primary_culture = nguni} 
+									add_country_modifier = {
+											name = acw_cf_company_2_mod_1
+											duration = -1
+														}
+									}					
+							ELSE = 	 {
+									add_country_modifier = {
+											name = acw_cf_company_2_mod
+											duration = -1
+														}	
+								}	
+							}	
+					ELSE = { acw_cf_increase_perkz = yes } 			
+					}
+				1 =	{ 
+					IF = {
+						limit = {
+								NOT = {has_country_flag = acw_cf_company_3_picked}
+								}
+							set_country_flag = acw_cf_company_3_picked	
+							set_country_flag = acw_cf_s4_3
+							add_country_modifier = {
+											name = acw_cf_company_3_mod
+											duration = -1
+			
+								}	
+							}	
+					ELSE = { acw_cf_increase_perkz = yes } 			
+					}
+				1 =	{ 
+					IF = {
+						limit = {
+								NOT = {has_country_flag = acw_cf_company_4_picked}
+								}
+							set_country_flag = acw_cf_company_4_picked	
+							set_country_flag = acw_cf_s4_4
+							IF = {limit = {any_ally = { primitives = yes}} 
+									add_country_modifier = {
+											name = acw_cf_company_4_mod
+											duration = -1
+														}
+									}					
+							ELSE =  {
+									add_country_modifier = {
+											name = acw_cf_company_4_mod_1
+											duration = -1
+														}	
+								}
+							}	
+					ELSE = { acw_cf_increase_perkz = yes } 			
+					}
+				1 =	{ 
+					IF = {
+						limit = {
+								NOT = {has_country_flag = acw_cf_company_5_picked}
+								}
+							set_country_flag = acw_cf_company_5_picked	
+							set_country_flag = acw_cf_s4_5
+							IF = {limit = {
+								OR = {
+									culture_group = hindustani
+									culture_group = western_aryan
+									}
+								} 
+									add_country_modifier = {
+											name = acw_cf_company_5_mod_1
+											duration = -1
+														}
+									}					
+							ELSE = 	 {
+									add_country_modifier = {
+											name = acw_cf_company_5_mod
+											duration = -1
+														}	
+								}
+							}	
+					ELSE = { acw_cf_increase_perkz = yes } 			
+					}
+				1 = { 
+					IF = {
+						limit = {
+								NOT = {has_country_flag = acw_cf_company_6_picked}
+								}
+							set_country_flag = acw_cf_company_6_picked	
+							set_country_flag = acw_cf_s4_6
+							IF = {limit = {has_estate = estate_cossacks
+											NOT = {culture_group = east_slavic}
+											NOT = {culture_group = carpathian}
+											NOT = {primary_culture = maori}
+											NOT = {primary_culture = mexican}
+											} 
+									add_country_modifier = {
+											name = acw_cf_company_6_mod
+											duration = -1
+														}
+									}
+							ELSE_IF = {limit = {culture_group = east_slavic} 
+									add_country_modifier = {
+											name = acw_cf_company_6_mod_1
+											duration = -1
+														}
+									}		
+							ELSE_IF = {limit = {primary_culture = mexican} 
+									add_country_modifier = {
+											name = acw_cf_company_6_mod_2
+											duration = -1
+														}
+									}		
+									
+							ELSE_IF = {limit = {culture_group = carpathian}
+									add_country_modifier = {
+											name = acw_cf_company_6_mod_3
+											duration = -1
+														}
+									}		
+							
+							ELSE_IF = {limit = {primary_culture = maori}
+									add_country_modifier = {
+											name = acw_cf_company_6_mod_4
+											duration = -1
+														}
+									}
+							
+							ELSE = 	 {
+									add_country_modifier = {
+											name = acw_cf_company_6_mod_5
+											duration = -1
+														}	
+								}
+							}
+					ELSE = { acw_cf_increase_perkz = yes } 			
+						}
+				1 =	{ 
+					IF = {
+						limit = {
+								NOT = {has_country_flag = acw_cf_company_7_picked}
+								}
+							set_country_flag = acw_cf_company_7_picked	
+							set_country_flag = acw_cf_s4_7
+							IF = {limit = {
+									tag = RUS
+								} 
+									add_country_modifier = {
+											name = acw_cf_company_7_mod
+											duration = -1
+														}
+									}
+							ELSE_IF = {limit = {
+									has_estate = estate_tribes
+								} 
+									add_country_modifier = {
+											name = acw_cf_company_7_mod_1
+											duration = -1
+														}
+									}		
+									
+									
+							ELSE = 	 {
+									add_country_modifier = {
+											name = acw_cf_company_7_mod_2
+											duration = -1
+														}	
+								}
+							}
+					ELSE = { acw_cf_increase_perkz = yes } 			
+						}
+					
+				1 =	{ 
+					IF = {
+						limit = {
+								NOT = {has_country_flag = acw_cf_company_8_picked}
+								}
+							set_country_flag = acw_cf_company_8_picked	
+							set_country_flag = acw_cf_s4_8
+							add_country_modifier = {
+								name = acw_cf_company_8_mod
+								duration = -1
+											}
+					ELSE = { acw_cf_increase_perkz = yes } 			
+						}
+					}
+				1 =	{ 
+					IF = {
+						limit = {
+								NOT = {has_country_flag = acw_cf_company_9_picked}
+								}
+							set_country_flag = acw_cf_company_9_picked	
+							set_country_flag = acw_cf_s4_9
+							add_country_modifier = {
+								name = acw_cf_company_9_mod
+								duration = -1
+											}
+					ELSE = { acw_cf_increase_perkz = yes } 			
+						}
+					}
+							
+				1 = { 
+					IF = {
+						limit = {
+								NOT = {has_country_flag = acw_cf_company_10_picked}
+								}
+							set_country_flag = acw_cf_company_10_picked	
+							set_country_flag = acw_cf_s4_10
+							IF = {limit = {primary_culture = japanese} 
+											add_country_modifier = {
+												name = acw_cf_company_10_mod_1
+												duration = -1
+														}
+													}
+							ELSE= {					
+											add_country_modifier = {
+												name = acw_cf_company_10_mod
+												duration = -1
+														}
+								}	
+							}
+					 ELSE = { acw_cf_increase_perkz = yes } 			
+					}
+				}
+			}
+		}
+		
+	option = {
+		name = "acw_hd_36.b"
+		add_mil_power = 200
+		}	
+}
+
+
+
+#v1.03
+#fixes
+
+#Feats of Horsemanship
+country_event = {
+	id = acw_hd.37 
+	title = acw_hd_37.t 
+	desc = acw_hd_37.d
+	picture = GFX_acw_hd_feats_of_horsemanship #todo a bloody image here
+	is_triggered_only = yes
+	
+	trigger = {}
+
+	option = {
+		name = "acw_hd_37.a"
+		IF = { limit = { has_country_flag = acw_infantry_temp_skill_t1_chose }
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t1a
+					duration = 5475 }
+				set_country_flag = acw_infantry_temp_skill_t1_picked	
+				clr_country_flag = acw_infantry_temp_skill_t1_chose
+				}
+		ELSE_IF = { limit = { has_country_flag = acw_infantry_temp_skill_t2_chose }
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t2a
+					duration = 5475 }
+				set_country_flag = acw_infantry_temp_skill_t2_picked	
+				clr_country_flag = acw_infantry_temp_skill_t2_chose
+				}	
+		ELSE_IF = { limit = { has_country_flag = acw_infantry_temp_skill_t3_chose }
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t3a
+					duration = 5475 }
+				set_country_flag = acw_infantry_temp_skill_t3_picked	
+				clr_country_flag = acw_infantry_temp_skill_t3_chose
+				}
+				
+		ELSE_IF = { limit = { has_country_flag = acw_cavalry_temp_skill_t1_chose }
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t1a
+					duration = 5475 }
+				set_country_flag = acw_cavalry_temp_skill_t1_picked	
+				clr_country_flag = acw_cavalry_temp_skill_t1_chose
+				}
+		ELSE_IF = { limit = { has_country_flag = acw_cavalry_temp_skill_t2_chose }
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t2a
+					duration = 5475 }
+				set_country_flag = acw_cavalry_temp_skill_t2_picked	
+				clr_country_flag = acw_cavalry_temp_skill_t2_chose
+				}	
+		ELSE_IF = { limit = { has_country_flag = acw_cavalry_temp_skill_t3_chose }
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t3a
+					duration = 5475 }
+				set_country_flag = acw_cavalry_temp_skill_t3_picked	
+				clr_country_flag = acw_cavalry_temp_skill_t3_chose
+				}		
+		ELSE_IF = { limit = { has_country_flag = acw_artillery_temp_skill_t1_chose }
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t1a
+					duration = 5475 }
+				set_country_flag = acw_artillery_temp_skill_t1_picked	
+				clr_country_flag = acw_artillery_temp_skill_t1_chose
+				}
+		ELSE_IF = { limit = { has_country_flag = acw_artillery_temp_skill_t2_chose }
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t2a
+					duration = 5475 }
+				set_country_flag = acw_artillery_temp_skill_t2_picked	
+				clr_country_flag = acw_artillery_temp_skill_t2_chose
+				}	
+		ELSE_IF = { limit = { has_country_flag = acw_artillery_temp_skill_t3_chose }
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t3a
+					duration = 5475 }
+				set_country_flag = acw_artillery_temp_skill_t3_picked	
+				clr_country_flag = acw_artillery_temp_skill_t3_chose
+				}		
+		
+	}
+	
+	option = {
+		name = "acw_hd_37.b"
+		IF = { limit = { has_country_flag = acw_infantry_temp_skill_t1_chose }
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t1b
+					duration = 5475 }
+				set_country_flag = acw_infantry_temp_skill_t1_picked	
+				clr_country_flag = acw_infantry_temp_skill_t1_chose
+				}
+		ELSE_IF = { limit = { has_country_flag = acw_infantry_temp_skill_t2_chose }
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t2b
+					duration = 5475 }
+				set_country_flag = acw_infantry_temp_skill_t2_picked	
+				clr_country_flag = acw_infantry_temp_skill_t2_chose
+				}	
+		ELSE_IF = { limit = { has_country_flag = acw_infantry_temp_skill_t3_chose }
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t3b
+					duration = 5475 }
+				set_country_flag = acw_infantry_temp_skill_t3_picked	
+				clr_country_flag = acw_infantry_temp_skill_t3_chose
+				}
+				
+		ELSE_IF = { limit = { has_country_flag = acw_cavalry_temp_skill_t1_chose }
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t1b
+					duration = 5475 }
+				set_country_flag = acw_cavalry_temp_skill_t1_picked	
+				clr_country_flag = acw_cavalry_temp_skill_t1_chose
+				}
+		ELSE_IF = { limit = { has_country_flag = acw_cavalry_temp_skill_t2_chose }
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t2b
+					duration = 5475 }
+				set_country_flag = acw_cavalry_temp_skill_t2_picked	
+				clr_country_flag = acw_cavalry_temp_skill_t2_chose
+				}	
+		ELSE_IF = { limit = { has_country_flag = acw_cavalry_temp_skill_t3_chose }
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t3b
+					duration = 5475 }
+				set_country_flag = acw_cavalry_temp_skill_t3_picked	
+				clr_country_flag = acw_cavalry_temp_skill_t3_chose
+				}		
+		ELSE_IF = { limit = { has_country_flag = acw_artillery_temp_skill_t1_chose }
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t1b
+					duration = 5475 }
+				set_country_flag = acw_artillery_temp_skill_t1_picked	
+				clr_country_flag = acw_artillery_temp_skill_t1_chose
+				}
+		ELSE_IF = { limit = { has_country_flag = acw_artillery_temp_skill_t2_chose }
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t2b
+					duration = 5475 }
+				set_country_flag = acw_artillery_temp_skill_t2_picked	
+				clr_country_flag = acw_artillery_temp_skill_t2_chose
+				}	
+		ELSE_IF = { limit = { has_country_flag = acw_artillery_temp_skill_t3_chose }
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t3b
+					duration = 5475 }
+				set_country_flag = acw_artillery_temp_skill_t3_picked	
+				clr_country_flag = acw_artillery_temp_skill_t3_chose
+				}
+			}
+			
+	option = {
+		name = "acw_hd_37.c"
+		IF = { limit = { has_country_flag = acw_infantry_temp_skill_t1_chose }
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t1c
+					duration = 5475 }
+				set_country_flag = acw_infantry_temp_skill_t1_picked	
+				clr_country_flag = acw_infantry_temp_skill_t1_chose
+				}
+		ELSE_IF = { limit = { has_country_flag = acw_infantry_temp_skill_t2_chose }
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t2c
+					duration = 5475 }
+				set_country_flag = acw_infantry_temp_skill_t2_picked	
+				clr_country_flag = acw_infantry_temp_skill_t2_chose
+				}	
+		ELSE_IF = { limit = { has_country_flag = acw_infantry_temp_skill_t3_chose }
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t3c
+					duration = 5475 }
+				set_country_flag = acw_infantry_temp_skill_t3_picked	
+				clr_country_flag = acw_infantry_temp_skill_t3_chose
+				}
+				
+		ELSE_IF = { limit = { has_country_flag = acw_cavalry_temp_skill_t1_chose }
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t1c
+					duration = 5475 }
+				set_country_flag = acw_cavalry_temp_skill_t1_picked	
+				clr_country_flag = acw_cavalry_temp_skill_t1_chose
+				}
+		ELSE_IF = { limit = { has_country_flag = acw_cavalry_temp_skill_t2_chose }
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t2c
+					duration = 5475 }
+				set_country_flag = acw_cavalry_temp_skill_t2_picked	
+				clr_country_flag = acw_cavalry_temp_skill_t2_chose
+				}	
+		ELSE_IF = { limit = { has_country_flag = acw_cavalry_temp_skill_t3_chose }
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t3c
+					duration = 5475 }
+				set_country_flag = acw_cavalry_temp_skill_t3_picked	
+				clr_country_flag = acw_cavalry_temp_skill_t3_chose
+				}		
+		ELSE_IF = { limit = { has_country_flag = acw_artillery_temp_skill_t1_chose }
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t1c
+					duration = 5475 }
+				set_country_flag = acw_artillery_temp_skill_t1_picked	
+				clr_country_flag = acw_artillery_temp_skill_t1_chose
+				}
+		ELSE_IF = { limit = { has_country_flag = acw_artillery_temp_skill_t2_chose }
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t2c
+					duration = 5475 }
+				set_country_flag = acw_artillery_temp_skill_t2_picked	
+				clr_country_flag = acw_artillery_temp_skill_t2_chose
+				}	
+		ELSE_IF = { limit = { has_country_flag = acw_artillery_temp_skill_t3_chose }
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t3c
+					duration = 5475 }
+				set_country_flag = acw_artillery_temp_skill_t3_picked	
+				clr_country_flag = acw_artillery_temp_skill_t3_chose
+				}
+			}	
+			
+}

@@ -1825,8 +1825,7 @@ guiTypes = {
 			fixedsize = yes
 		}
 		
-			#ACW gui main window - army
-			
+		#ACW gui main window - army
 			iconType ={
 				name ="acw_background_is_open"
 				scripted = yes
@@ -1840,7 +1839,7 @@ guiTypes = {
 				name ="acw_infantry_levels_indicator_text_banner"
 				scripted = yes
 				spriteType = "GFX_acw_band_reorg_musketeer"
-				position = { x= 590 y = 160 }
+				position = { x= 590 y = 180 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -1850,7 +1849,7 @@ guiTypes = {
 				name ="acw_cavalry_levels_indicator_text_banner"
 				scripted = yes
 				spriteType = "GFX_acw_band_reorg_qizilbash"
-				position = { x= 590 y = 260 }
+				position = { x= 590 y = 280 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -1860,7 +1859,7 @@ guiTypes = {
 				name ="acw_artillery_levels_indicator_text_banner"
 				scripted = yes
 				spriteType = "GFX_acw_band_reorg_purple"
-				position = { x= 590 y = 360 }
+				position = { x= 590 y = 380 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -1917,7 +1916,7 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				scale = 1.1
 			}
-
+			
 			#ACW gui main window - navy
 			guiButtonType = {
 				name = "acw_navy_button_close"
@@ -1950,7 +1949,7 @@ guiTypes = {
 			#infantry
 			instantTextBoxType = {
 				name = "acw_army_window_infantry_levels_indicator_text"
-				position = { x = 540 y =170 }
+				position = { x = 540 y =190 }
 				format = centre
 				font = "vic_22s"
 				maxWidth = 420	
@@ -1965,7 +1964,7 @@ guiTypes = {
 				name ="acw_infantry_levels_indicator_t1"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 610 y = 200 }
+				position = { x= 610 y = 220 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -1975,7 +1974,7 @@ guiTypes = {
 				name ="acw_infantry_levels_indicator_t2"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 640 y = 200 }
+				position = { x= 640 y = 220 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -1985,7 +1984,7 @@ guiTypes = {
 				name ="acw_infantry_levels_indicator_t3"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 670 y = 200 }
+				position = { x= 670 y = 220 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -1995,7 +1994,7 @@ guiTypes = {
 				name ="acw_infantry_levels_indicator_t4"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 700 y = 200 }
+				position = { x= 700 y = 220 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2005,7 +2004,7 @@ guiTypes = {
 				name ="acw_infantry_levels_indicator_t5"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 730 y = 200 }
+				position = { x= 730 y = 220 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2016,7 +2015,7 @@ guiTypes = {
 				name ="acw_infantry_levels_indicator_t6"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 760 y = 200 }
+				position = { x= 760 y = 220 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2026,7 +2025,7 @@ guiTypes = {
 				name ="acw_infantry_levels_indicator_t7"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 790 y = 200 }
+				position = { x= 790 y = 220 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2036,7 +2035,7 @@ guiTypes = {
 				name ="acw_infantry_levels_indicator_t8"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 820 y = 200 }
+				position = { x= 820 y = 220 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2046,7 +2045,7 @@ guiTypes = {
 				name ="acw_infantry_levels_indicator_t9"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 850 y = 200 }
+				position = { x= 850 y = 220 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2056,7 +2055,7 @@ guiTypes = {
 			#cavalry
 			instantTextBoxType = {
 				name = "acw_army_window_cavalry_levels_indicator_text"
-				position = { x = 540 y =270 }
+				position = { x = 540 y =290 }
 				format = centre
 				font = "vic_22s"
 				maxWidth = 420
@@ -2072,7 +2071,7 @@ guiTypes = {
 				name ="acw_cavalry_levels_indicator_t1"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 610 y = 300 }
+				position = { x= 610 y = 320 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2082,7 +2081,7 @@ guiTypes = {
 				name ="acw_cavalry_levels_indicator_t2"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 640 y = 300 }
+				position = { x= 640 y = 320 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2092,7 +2091,7 @@ guiTypes = {
 				name ="acw_cavalry_levels_indicator_t3"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 670 y = 300 }
+				position = { x= 670 y = 320 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2102,7 +2101,7 @@ guiTypes = {
 				name ="acw_cavalry_levels_indicator_t4"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 700 y = 300 }
+				position = { x= 700 y = 320 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2112,7 +2111,7 @@ guiTypes = {
 				name ="acw_cavalry_levels_indicator_t5"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 730 y = 300 }
+				position = { x= 730 y = 320 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2123,7 +2122,7 @@ guiTypes = {
 				name ="acw_cavalry_levels_indicator_t6"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 760 y = 300 }
+				position = { x= 760 y = 320 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2133,7 +2132,7 @@ guiTypes = {
 				name ="acw_cavalry_levels_indicator_t7"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 790 y = 300 }
+				position = { x= 790 y = 320 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2143,7 +2142,7 @@ guiTypes = {
 				name ="acw_cavalry_levels_indicator_t8"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 820 y = 300 }
+				position = { x= 820 y = 320 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2153,7 +2152,7 @@ guiTypes = {
 				name ="acw_cavalry_levels_indicator_t9"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 850 y = 300 }
+				position = { x= 850 y = 320 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2163,7 +2162,7 @@ guiTypes = {
 			#artillery
 			instantTextBoxType = {
 				name = "acw_army_window_artillery_levels_indicator_text"
-				position = { x = 540 y =370 }
+				position = { x = 540 y =390 }
 				format = centre
 				font = "vic_22s"
 				maxWidth = 420
@@ -2178,7 +2177,7 @@ guiTypes = {
 				name ="acw_artillery_levels_indicator_t1"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 610 y = 400 }
+				position = { x= 610 y = 420 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2188,7 +2187,7 @@ guiTypes = {
 				name ="acw_artillery_levels_indicator_t2"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 640 y = 400 }
+				position = { x= 640 y = 420 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2198,7 +2197,7 @@ guiTypes = {
 				name ="acw_artillery_levels_indicator_t3"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 670 y = 400 }
+				position = { x= 670 y = 420 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2208,7 +2207,7 @@ guiTypes = {
 				name ="acw_artillery_levels_indicator_t4"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 700 y = 400 }
+				position = { x= 700 y = 420 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2218,7 +2217,7 @@ guiTypes = {
 				name ="acw_artillery_levels_indicator_t5"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 730 y = 400 }
+				position = { x= 730 y = 420 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2229,7 +2228,7 @@ guiTypes = {
 				name ="acw_artillery_levels_indicator_t6"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 760 y = 400 }
+				position = { x= 760 y = 420 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2239,7 +2238,7 @@ guiTypes = {
 				name ="acw_artillery_levels_indicator_t7"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 790 y = 400 }
+				position = { x= 790 y = 420 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2249,7 +2248,7 @@ guiTypes = {
 				name ="acw_artillery_levels_indicator_t8"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 820 y = 400 }
+				position = { x= 820 y = 420 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2259,10 +2258,60 @@ guiTypes = {
 				name ="acw_artillery_levels_indicator_t9"
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
-				position = { x= 850 y = 400 }
+				position = { x= 850 y = 420 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
+			}
+			
+			#improve levels buttons
+			guiButtonType ={
+				name ="acw_infantry_upgrade_plus"
+				scripted = yes
+				spriteType = "GFX_acw_add_to_que"
+				position = { x= 880 y = 220 }
+				Orientation = "UPPER_LEFT"
+				scale = 1.2
+			}
+			guiButtonType ={
+				name ="acw_infantry_upgrade_minus"
+				scripted = yes
+				spriteType = "GFX_acw_remove_from_que"
+				position = { x= 580 y = 220 }
+				Orientation = "UPPER_LEFT"
+				scale = 1.2
+			}
+			guiButtonType ={
+				name ="acw_cavalry_upgrade_plus"
+				scripted = yes
+				spriteType = "GFX_acw_add_to_que"
+				position = { x= 880 y = 320 }
+				Orientation = "UPPER_LEFT"
+				scale = 1.2
+			}
+			guiButtonType ={
+				name ="acw_cavalry_upgrade_minus"
+				scripted = yes
+				spriteType = "GFX_acw_remove_from_que"
+				position = { x= 580 y = 320 }
+				Orientation = "UPPER_LEFT"
+				scale = 1.2
+			}
+			guiButtonType ={
+				name ="acw_artillery_upgrade_plus"
+				scripted = yes
+				spriteType = "GFX_acw_add_to_que"
+				position = { x= 880 y = 420 }
+				Orientation = "UPPER_LEFT"
+				scale = 1.2
+			}
+			guiButtonType ={
+				name ="acw_artillery_upgrade_minus"
+				scripted = yes
+				spriteType = "GFX_acw_remove_from_que"
+				position = { x= 580 y = 420 }
+				Orientation = "UPPER_LEFT"
+				scale = 1.2
 			}
 			
 			#camp followers
@@ -2315,251 +2364,203 @@ guiTypes = {
 				scale = 0.7
 			}	
 			
-			#improve levels buttons
-			guiButtonType ={
-				name ="acw_infantry_upgrade_plus"
-				scripted = yes
-				spriteType = "GFX_acw_add_to_que"
-				position = { x= 880 y = 200 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-			}
-			guiButtonType ={
-				name ="acw_infantry_upgrade_minus"
-				scripted = yes
-				spriteType = "GFX_acw_remove_from_que"
-				position = { x= 580 y = 200 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-			}
-			guiButtonType ={
-				name ="acw_cavalry_upgrade_plus"
-				scripted = yes
-				spriteType = "GFX_acw_add_to_que"
-				position = { x= 880 y = 300 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-			}
-			guiButtonType ={
-				name ="acw_cavalry_upgrade_minus"
-				scripted = yes
-				spriteType = "GFX_acw_remove_from_que"
-				position = { x= 580 y = 300 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-			}
-			guiButtonType ={
-				name ="acw_artillery_upgrade_plus"
-				scripted = yes
-				spriteType = "GFX_acw_add_to_que"
-				position = { x= 880 y = 400 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-			}
-			guiButtonType ={
-				name ="acw_artillery_upgrade_minus"
-				scripted = yes
-				spriteType = "GFX_acw_remove_from_que"
-				position = { x= 580 y = 400 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-			}
+		
 			
 			#dividers for bars
 			#infant
-			iconType = {
-				name = "acw_divider_inf_t1"
-				scripted = yes
-				spriteType = "GFX_acw_divider"
-				position = { x= 945 y = 180 }
-				Orientation = "UPPER_LEFT"
-				scale = 2
-				}
+		#	iconType = {
+		#		name = "acw_divider_inf_t1"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_divider"
+		#		position = { x= 945 y = 180 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 2
+		#		}
 				
-			iconType = {
-				name = "acw_divider_inf_t2"
-				scripted = yes
-				spriteType = "GFX_acw_divider"
-				position = { x= 995 y = 180 }
-				Orientation = "UPPER_LEFT"
-				scale = 2
-				}
-			
-			iconType = {
-				name = "acw_divider_inf_t3"
-				scripted = yes
-				spriteType = "GFX_acw_divider"
-				position = { x= 1045 y = 180 }
-				Orientation = "UPPER_LEFT"
-				scale = 2
-				}
-			#cav
-			iconType = {
-				name = "acw_divider_cav_t1"
-				scripted = yes
-				spriteType = "GFX_acw_divider"
-				position = { x= 945 y = 300 }
-				Orientation = "UPPER_LEFT"
-				scale = 2
-				}
-				
-			iconType = {
-				name = "acw_divider_cav_t2"
-				scripted = yes
-				spriteType = "GFX_acw_divider"
-				position = { x= 995 y = 300 }
-				Orientation = "UPPER_LEFT"
-				scale = 2
-				}
-			
-			iconType = {
-				name = "acw_divider_cav_t3"
-				scripted = yes
-				spriteType = "GFX_acw_divider"
-				position = { x= 1045 y = 300 }
-				Orientation = "UPPER_LEFT"
-				scale = 2
-				}
-			#arty	
-			iconType = {
-				name = "acw_divider_arty_t1"
-				scripted = yes
-				spriteType = "GFX_acw_divider"
-				position = { x= 945 y = 400 }
-				Orientation = "UPPER_LEFT"
-				scale = 2
-				}
-				
-			iconType = {
-				name = "acw_divider_arty_t2"
-				scripted = yes
-				spriteType = "GFX_acw_divider"
-				position = { x= 995 y = 400 }
-				Orientation = "UPPER_LEFT"
-				scale = 2
-				}
-			
-			iconType = {
-				name = "acw_divider_arty_t3"
-				scripted = yes
-				spriteType = "GFX_acw_divider"
-				position = { x= 1045 y = 400 }
-				Orientation = "UPPER_LEFT"
-				scale = 2
-				}
+		#	iconType = {
+		#		name = "acw_divider_inf_t2"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_divider"
+		#		position = { x= 995 y = 180 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 2
+		#		}
+		#	
+		#	iconType = {
+		#		name = "acw_divider_inf_t3"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_divider"
+		#		position = { x= 1045 y = 180 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 2
+		#		}
+		#	#cav
+		#	iconType = {
+		#		name = "acw_divider_cav_t1"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_divider"
+		#		position = { x= 945 y = 300 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 2
+		#		}
+		#		
+		#	iconType = {
+		#		name = "acw_divider_cav_t2"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_divider"
+		#		position = { x= 995 y = 300 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 2
+		#		}
+		#	
+		#	iconType = {
+		#		name = "acw_divider_cav_t3"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_divider"
+		#		position = { x= 1045 y = 300 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 2
+		#		}
+		#	#arty	
+		#	iconType = {
+		#		name = "acw_divider_arty_t1"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_divider"
+		#		position = { x= 945 y = 400 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 2
+		#		}
+		#		
+		#	iconType = {
+		#		name = "acw_divider_arty_t2"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_divider"
+		#		position = { x= 995 y = 400 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 2
+		#		}
+		#	
+		#	iconType = {
+		#		name = "acw_divider_arty_t3"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_divider"
+		#		position = { x= 1045 y = 400 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 2
+		#		}
 			
 			#abilities - infantry
 			guiButtonType ={
 				name ="acw_infantry_levels_bar_t1a"
 				scripted = yes
-				spriteType = "GFX_acw_infantry_levels_bar_t1a_button"
-				position = { x= 940 y = 170 }
+				spriteType = "GFX_acw_infantry_levels_bar_t1b_button"
+				position = { x= 920 y = 210 }
 				Orientation = "UPPER_LEFT"
-				scale = 1
+				scale = 1.3
 				pdx_tooltip = acw_infantry_levels_bar_t1a
 			}
 	
 				
-			guiButtonType ={
-				name ="acw_infantry_levels_bar_t1b"
-				scripted = yes
-				spriteType = "GFX_acw_infantry_levels_bar_t1b_button"
-				position = { x= 940 y = 220 }
-				Orientation = "UPPER_LEFT"
-				scale = 1
-			}
+		#	guiButtonType ={
+		#		name ="acw_infantry_levels_bar_t1b"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_infantry_levels_bar_t1b_button"
+		#		position = { x= 940 y = 220 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 1
+		#	}
 			
 			guiButtonType ={
 				name ="acw_infantry_levels_bar_t2a"
 				scripted = yes
 				spriteType = "GFX_acw_infantry_levels_bar_t2a_button"
-				position = { x= 990 y = 170 }
+				position = { x= 980 y = 210 }
 				Orientation = "UPPER_LEFT"
-				scale = 1
+				scale = 1.3
 			}
 			
-			guiButtonType ={
-				name ="acw_infantry_levels_bar_t2b"
-				scripted = yes
-				spriteType = "GFX_acw_infantry_levels_bar_t2b_button"
-				position = { x= 990 y = 220 }
-				Orientation = "UPPER_LEFT"
-				scale = 1
-			}
+		#	guiButtonType ={
+		#		name ="acw_infantry_levels_bar_t2b"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_infantry_levels_bar_t2b_button"
+		#		position = { x= 990 y = 220 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 1
+		#	}
 			
 			guiButtonType ={
 				name ="acw_infantry_levels_bar_t3a"
 				scripted = yes
 				spriteType = "GFX_acw_infantry_levels_bar_t3a_button"
-				position = { x= 1040 y = 170 }
+				position = { x= 1040 y = 210 }
 				Orientation = "UPPER_LEFT"
-				scale = 1
+				scale = 1.3
 			}
 			
-			guiButtonType ={
-				name ="acw_infantry_levels_bar_t3b"
-				scripted = yes
-				spriteType = "GFX_acw_infantry_levels_bar_t3b_button"
-				position = { x= 1040 y = 220 }
-				Orientation = "UPPER_LEFT"
-				scale = 1
-			}
+		#guiButtonType ={
+		#	name ="acw_infantry_levels_bar_t3b"
+		#	scripted = yes
+		#	spriteType = "GFX_acw_infantry_levels_bar_t3b_button"
+		#	position = { x= 1040 y = 220 }
+		#	Orientation = "UPPER_LEFT"
+		#	scale = 1
+		#}
 			
 			#abilities - cavalry
 			
 			guiButtonType ={
 				name ="acw_cavalry_levels_bar_t1a"
 				scripted = yes
-				spriteType = "GFX_acw_cavalry_levels_bar_t1a_button"
-				position = { x= 940 y = 270 }
+				spriteType = "GFX_acw_cavalry_levels_bar_t1b_button"
+				position = { x= 920 y = 310 }
 				Orientation = "UPPER_LEFT"
-				scale = 1
+				scale = 1.3
 			}
 			
-			guiButtonType ={
-				name ="acw_cavalry_levels_bar_t1b"
-				scripted = yes
-				spriteType = "GFX_acw_cavalry_levels_bar_t1b_button"
-				position = { x= 940 y = 320 }
-				Orientation = "UPPER_LEFT"
-				scale = 1
-			}
+		#	guiButtonType ={
+		#		name ="acw_cavalry_levels_bar_t1b"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_cavalry_levels_bar_t1b_button"
+		#		position = { x= 940 y = 320 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 1
+		#	}
 			
 			guiButtonType ={
 				name ="acw_cavalry_levels_bar_t2a"
 				scripted = yes
-				spriteType = "GFX_acw_cavalry_levels_bar_t2a_button"
-				position = { x= 990 y = 270 }
-				Orientation = "UPPER_LEFT"
-				scale = 1
-			}
-			
-			guiButtonType ={
-				name ="acw_cavalry_levels_bar_t2b"
-				scripted = yes
 				spriteType = "GFX_acw_cavalry_levels_bar_t2b_button"
-				position = { x= 990 y = 320 }
+				position = { x= 980 y = 310 }
 				Orientation = "UPPER_LEFT"
-				scale = 1
+				scale = 1.3
 			}
 			
-			guiButtonType ={
-				name ="acw_cavalry_levels_bar_t3b"
-				scripted = yes
-				spriteType = "GFX_acw_cavalry_levels_bar_t3b_button"
-				position = { x= 1040 y = 320 }
-				Orientation = "UPPER_LEFT"
-				scale = 1
-			}
+		#	guiButtonType ={
+		#		name ="acw_cavalry_levels_bar_t2b"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_cavalry_levels_bar_t2b_button"
+		#		position = { x= 990 y = 320 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 1
+		#	}
 			
 			guiButtonType ={
 				name ="acw_cavalry_levels_bar_t3a"
 				scripted = yes
-				spriteType = "GFX_acw_cavalry_levels_bar_t3a_button"
-				position = { x= 1040 y = 270 }
+				spriteType = "GFX_acw_cavalry_levels_bar_t1b_button"
+				position = { x= 1040 y = 310 }
 				Orientation = "UPPER_LEFT"
-				scale = 1
+				scale = 1.3
 			}
+			
+		#	guiButtonType ={
+		#		name ="acw_cavalry_levels_bar_t3b"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_cavalry_levels_bar_t3b_button"
+		#		position = { x= 1040 y = 320 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 1
+		#	}
 			
 			
 			
@@ -2569,55 +2570,55 @@ guiTypes = {
 				name ="acw_artillery_levels_bar_t1a"
 				scripted = yes
 				spriteType = "GFX_acw_artillery_levels_bar_t1a_button"
-				position = { x= 940 y = 370 }
+				position = { x= 920 y = 410 }
 				Orientation = "UPPER_LEFT"
-				scale = 1
+				scale = 1.3
 			}
 			
-			guiButtonType ={
-				name ="acw_artillery_levels_bar_t1b"
-				scripted = yes
-				spriteType = "GFX_acw_artillery_levels_bar_t1b_button"
-				position = { x= 940 y = 420 }
-				Orientation = "UPPER_LEFT"
-				scale = 1
-			}
+		#	guiButtonType ={
+		#		name ="acw_artillery_levels_bar_t1b"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_artillery_levels_bar_t1b_button"
+		#		position = { x= 940 y = 420 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 1
+		#	}
 			
 			guiButtonType ={
 				name ="acw_artillery_levels_bar_t2a"
 				scripted = yes
-				spriteType = "GFX_acw_artillery_levels_bar_t2a_button"
-				position = { x= 990 y = 370 }
+				spriteType = "GFX_acw_artillery_levels_bar_t2b_button"
+				position = { x= 980 y = 410 }
 				Orientation = "UPPER_LEFT"
-				scale = 1
+				scale = 1.3
 			}
 			
-			guiButtonType ={
-				name ="acw_artillery_levels_bar_t2b"
-				scripted = yes
-				spriteType = "GFX_acw_artillery_levels_bar_t2b_button"
-				position = { x= 990 y = 420 }
-				Orientation = "UPPER_LEFT"
-				scale = 1
-			}
+		#	guiButtonType ={
+		#		name ="acw_artillery_levels_bar_t2b"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_artillery_levels_bar_t2b_button"
+		#		position = { x= 990 y = 420 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 1
+		#	}
 			
 			guiButtonType ={
 				name ="acw_artillery_levels_bar_t3a"
 				scripted = yes
 				spriteType = "GFX_acw_artillery_levels_bar_t3a_button"
-				position = { x= 1040 y = 370 }
+				position = { x= 1040 y = 410 }
 				Orientation = "UPPER_LEFT"
-				scale = 1
+				scale = 1.3
 			}
 			
-			guiButtonType ={
-				name ="acw_artillery_levels_bar_t3b"
-				scripted = yes
-				spriteType = "GFX_acw_artillery_levels_bar_t3b_button"
-				position = { x= 1040 y = 420 }
-				Orientation = "UPPER_LEFT"
-				scale = 1
-			}
+		#	guiButtonType ={
+		#		name ="acw_artillery_levels_bar_t3b"
+		#		scripted = yes
+		#		spriteType = "GFX_acw_artillery_levels_bar_t3b_button"
+		#		position = { x= 1040 y = 420 }
+		#		Orientation = "UPPER_LEFT"
+		#		scale = 1
+		#	}
 			
 			#armaments window
 			instantTextBoxType = {
@@ -2931,8 +2932,8 @@ guiTypes = {
 			
 			iconType = {
 				name = "acw_hd_arma_selector_window_bg"
-				position = { x=600 y =100}
-				spriteType ="GFX_acw_stratagem_bg_2"
+				position = { x=600 y =0}
+				spriteType ="GFX_acw_stratagem_bg_3"
 				Orientation = "UPPER_LEFT"
 				scripted = yes
 				scale = 1.1
@@ -3061,6 +3062,15 @@ guiTypes = {
 				scripted = yes
 				quadTextureSprite = "GFX_acw_n_icon_none"
 				position = { x= 690 y = 490 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			guiButtonType ={
+				name ="acw_arm_slot_row_1_11"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 750 y = 490 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
