@@ -526,5 +526,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/acw_fourth_company.dds"
 		transparencecheck = yes
 	}
+	
+	SpriteType = {		
+		name = "GFX_acw_hd_night_attack_of_the_sanjo_palace"
+		texturefile = "gfx/event_pictures/acw_hd_night_attack_of_the_sanjo_palace.dds"
+		transparencecheck = yes
+	}	
+
 
 }

@@ -391,4 +391,15 @@ on_primary_culture_changed = {
 			}
 			
 }
+
+
+on_pillaged_capital = {
+	if = {
+		limit = { 
+					FROM = { capital =  1020 }
+					}
+				}
+			ROOT = {country_event = { id = acw_hd.38 }}
+}
+
 	

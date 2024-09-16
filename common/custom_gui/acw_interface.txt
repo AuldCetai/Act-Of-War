@@ -1984,10 +1984,27 @@ custom_button = {
 				number = 42
 				trigger = { has_country_flag = acw_arma_s1_40 }
 				}
+	#PUCKLE GUN - v1.02
 	frame = { 
 				number = 43
 				trigger = { has_country_flag = acw_arma_s1_41 }
 				}
+				
+	#BOOMERANG	- v1.04
+	frame = { 
+				number = 44
+				trigger = { has_country_flag = acw_arma_s1_42 }
+				}
+	#KUMANA		
+	frame = { 
+				number = 45
+				trigger = { has_country_flag = acw_arma_s1_43 }
+				}
+	#TOMAHAWK		
+	frame = { 
+				number = 46
+				trigger = { has_country_flag = acw_arma_s1_44				}
+				}			
 }
 
 #arma slot 2 code
@@ -2172,8 +2189,21 @@ custom_button = {
 				number = 43
 				trigger = { has_country_flag = acw_arma_s2_41 }
 				}
-	
-				
+	#BOOMERANG	- v1.04
+	frame = { 
+				number = 44
+				trigger = { has_country_flag = acw_arma_s2_42 }
+				}
+	#KUMANA		
+	frame = { 
+				number = 45
+				trigger = { has_country_flag = acw_arma_s2_43 }
+				}
+	#TOMAHAWK		
+	frame = { 
+				number = 46
+				trigger = { has_country_flag = acw_arma_s2_44				}
+				}						
 }
 
 #arma slot 3 code
@@ -2357,6 +2387,21 @@ custom_button = {
 	frame = { 
 				number = 43
 				trigger = { has_country_flag = acw_arma_s3_41 }
+				}
+	#BOOMERANG	- v1.04
+	frame = { 
+				number = 44
+				trigger = { has_country_flag = acw_arma_s3_42 }
+				}
+	#KUMANA		
+	frame = { 
+				number = 45
+				trigger = { has_country_flag = acw_arma_s3_43 }
+				}
+	#TOMAHAWK		
+	frame = { 
+				number = 46
+				trigger = { has_country_flag = acw_arma_s3_44				}
 				}			
 }
 
@@ -2541,6 +2586,22 @@ custom_button = {
 	frame = { 
 				number = 43
 				trigger = { has_country_flag = acw_arma_s4_41 }
+				}
+				
+	#BOOMERANG	- v1.04
+	frame = { 
+				number = 44
+				trigger = { has_country_flag = acw_arma_s4_42 }
+				}
+	#KUMANA		
+	frame = { 
+				number = 45
+				trigger = { has_country_flag = acw_arma_s4_43 }
+				}
+	#TOMAHAWK			
+	frame = { 
+				number = 46
+				trigger = { has_country_flag = acw_arma_s4_44				}
 				}			
 }
 
@@ -3748,7 +3809,7 @@ custom_button = {
 }								
 
 custom_button = {								
-	name = acw_arm_slot_row_1_11
+	name = acw_arm_slot_row_1_41
 	tooltip = acw_arma_puck_gun_desc
 	
     potential = {has_country_flag = acw_background_open_already								
@@ -5071,6 +5132,127 @@ custom_button = {
 	frame = { number = 22										
 				trigger = {always = yes}							
 				}							
+}	
+
+#BOOMERANG
+custom_button = {								
+	name = acw_arm_slot_row_2_42
+	tooltip = acw_arma_boomerang_desc
+	
+    potential = {has_country_flag = acw_background_open_already								
+				 has_country_flag = acw_hd_arma_bg_open				
+				 OR = {				
+					has_country_flag = acw_arma_slot_1_open			
+					has_country_flag = acw_arma_slot_2_open			
+					has_country_flag = acw_arma_slot_3_open			
+					has_country_flag = acw_arma_slot_4_open			
+						}		
+					} 			
+  	trigger = { hidden_trigger = {
+	NOT ={							
+					OR = {			
+							has_country_flag = acw_arma_s1_42	
+							has_country_flag = acw_arma_s2_42	
+							has_country_flag = acw_arma_s3_42	
+							has_country_flag = acw_arma_s4_42	
+						}		
+					}
+				}
+					
+					AND = {						
+						owns_or_non_sovereign_subject_of = 1094
+						owns_or_non_sovereign_subject_of = 1085
+						owns_or_non_sovereign_subject_of = 2728
+					}		
+
+					current_age = age_of_discovery
+			}					
+  	effect = {  							
+				if = { 				
+					limit = {has_country_flag = acw_arma_slot_1_open } 			
+						set_country_flag = acw_arma_s1_42		
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_boomerang
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {
+								name = acw_arma_slot_1_xp
+								duration = -1    
+								}	
+						clr_country_flag = acw_hd_arma_bg_open		
+						clr_country_flag = acw_arma_slot_1_open		
+					}			
+				else_if	 = {			
+					limit = {has_country_flag = acw_arma_slot_2_open } 			
+						set_country_flag = acw_arma_s2_42		
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_boomerang
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {
+								name = acw_arma_slot_2_xp
+								duration = -1    
+								}			
+						clr_country_flag = acw_hd_arma_bg_open		
+						clr_country_flag = acw_arma_slot_2_open		
+					}			
+				else_if	 = {			
+					limit = {has_country_flag = acw_arma_slot_3_open } 			
+						set_country_flag = acw_arma_s3_42		
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_boomerang
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {
+								name = acw_arma_slot_3_xp
+								duration = -1    
+								}			
+						clr_country_flag = acw_hd_arma_bg_open		
+						clr_country_flag = acw_arma_slot_3_open		
+					}			
+				else_if	 = {			
+					limit = {has_country_flag = acw_arma_slot_4_open } 			
+						set_country_flag = acw_arma_s4_42		
+						if = {
+							limit = {
+								current_age = age_of_discovery
+							}
+							add_country_modifier = {				
+									name = acw_arma_boomerang
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {
+								name = acw_arma_slot_4_xp
+								duration = -1    
+								}			
+						clr_country_flag = acw_hd_arma_bg_open		
+						clr_country_flag = acw_arma_slot_4_open		
+					}			
+	}							
+								
+	frame = { number = 44							
+				trigger = {always = yes}				
+				}				
 }											
 
 # ARMA age of Reformation
@@ -6275,7 +6457,130 @@ custom_button = {
 	frame = { number = 32										
 				trigger = {always = yes}							
 				}							
+}
+
+
+#KUMANA
+custom_button = {								
+	name = acw_arm_slot_row_3_43
+	tooltip = acw_arma_kumana_desc
+	
+    potential = {has_country_flag = acw_background_open_already								
+				 has_country_flag = acw_hd_arma_bg_open				
+				 OR = {				
+					has_country_flag = acw_arma_slot_1_open			
+					has_country_flag = acw_arma_slot_2_open			
+					has_country_flag = acw_arma_slot_3_open			
+					has_country_flag = acw_arma_slot_4_open			
+						}		
+					} 			
+  	trigger = { hidden_trigger = {
+	NOT ={							
+					OR = {			
+							has_country_flag = acw_arma_s1_43	
+							has_country_flag = acw_arma_s2_43	
+							has_country_flag = acw_arma_s3_43	
+							has_country_flag = acw_arma_s4_43	
+						}		
+					}
+				}
+					
+					AND = {						
+						owns_or_non_sovereign_subject_of = 814
+						owns_or_non_sovereign_subject_of = 2820
+						owns_or_non_sovereign_subject_of = 2837
+					}		
+
+					current_age = age_of_reformation
+			}					
+  	effect = {  							
+				if = { 				
+					limit = {has_country_flag = acw_arma_slot_1_open } 			
+						set_country_flag = acw_arma_s1_43		
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_kumana
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {
+								name = acw_arma_slot_1_xp
+								duration = -1    
+								}	
+						clr_country_flag = acw_hd_arma_bg_open		
+						clr_country_flag = acw_arma_slot_1_open		
+					}			
+				else_if	 = {			
+					limit = {has_country_flag = acw_arma_slot_2_open } 			
+						set_country_flag = acw_arma_s2_43		
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_kumana
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {
+								name = acw_arma_slot_2_xp
+								duration = -1    
+								}			
+						clr_country_flag = acw_hd_arma_bg_open		
+						clr_country_flag = acw_arma_slot_2_open		
+					}			
+				else_if	 = {			
+					limit = {has_country_flag = acw_arma_slot_3_open } 			
+						set_country_flag = acw_arma_s3_43		
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_kumana
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {
+								name = acw_arma_slot_3_xp
+								duration = -1    
+								}			
+						clr_country_flag = acw_hd_arma_bg_open		
+						clr_country_flag = acw_arma_slot_3_open		
+					}			
+				else_if	 = {			
+					limit = {has_country_flag = acw_arma_slot_4_open } 			
+						set_country_flag = acw_arma_s4_43		
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_kumana
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {
+								name = acw_arma_slot_4_xp
+								duration = -1    
+								}			
+						clr_country_flag = acw_hd_arma_bg_open		
+						clr_country_flag = acw_arma_slot_4_open		
+					}			
+	}							
+								
+	frame = { number = 45							
+				trigger = {always = yes}				
+				}				
 }											
+											
 
 # ARMA - age of revolutions
 
@@ -7472,6 +7777,126 @@ custom_button = {
 				}							
 }											
 
+#TOMAHAWK
+custom_button = {								
+	name = acw_arm_slot_row_4_44
+	tooltip = acw_arma_tomahawk_desc
+	
+    potential = {has_country_flag = acw_background_open_already								
+				 has_country_flag = acw_hd_arma_bg_open				
+				 OR = {				
+					has_country_flag = acw_arma_slot_1_open			
+					has_country_flag = acw_arma_slot_2_open			
+					has_country_flag = acw_arma_slot_3_open			
+					has_country_flag = acw_arma_slot_4_open			
+						}		
+					} 			
+  	trigger = { hidden_trigger = {
+	NOT ={							
+					OR = {			
+							has_country_flag = acw_arma_s1_44	
+							has_country_flag = acw_arma_s2_44	
+							has_country_flag = acw_arma_s3_44	
+							has_country_flag = acw_arma_s4_44	
+						}		
+					}
+				}
+					
+					AND = {						
+						owns_or_non_sovereign_subject_of = 879
+						owns_or_non_sovereign_subject_of = 911
+						owns_or_non_sovereign_subject_of = 952
+					}		
+
+					current_age = age_of_reformation
+			}					
+  	effect = {  							
+				if = { 				
+					limit = {has_country_flag = acw_arma_slot_1_open } 			
+						set_country_flag = acw_arma_s1_44		
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_tomahawk
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {
+								name = acw_arma_slot_1_xp
+								duration = -1    
+								}	
+						clr_country_flag = acw_hd_arma_bg_open		
+						clr_country_flag = acw_arma_slot_1_open		
+					}			
+				else_if	 = {			
+					limit = {has_country_flag = acw_arma_slot_2_open } 			
+						set_country_flag = acw_arma_s2_44		
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_tomahawk
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {
+								name = acw_arma_slot_2_xp
+								duration = -1    
+								}			
+						clr_country_flag = acw_hd_arma_bg_open		
+						clr_country_flag = acw_arma_slot_2_open		
+					}			
+				else_if	 = {			
+					limit = {has_country_flag = acw_arma_slot_3_open } 			
+						set_country_flag = acw_arma_s3_44		
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_tomahawk
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {
+								name = acw_arma_slot_3_xp
+								duration = -1    
+								}			
+						clr_country_flag = acw_hd_arma_bg_open		
+						clr_country_flag = acw_arma_slot_3_open		
+					}			
+				else_if	 = {			
+					limit = {has_country_flag = acw_arma_slot_4_open } 			
+						set_country_flag = acw_arma_s4_44		
+						if = {
+							limit = {
+								current_age = age_of_reformation
+							}
+							add_country_modifier = {				
+									name = acw_arma_tomahawk
+									duration = -1
+									desc = until_end_of_age_desc
+									}
+							}	
+						add_country_modifier = {
+								name = acw_arma_slot_4_xp
+								duration = -1    
+								}			
+						clr_country_flag = acw_hd_arma_bg_open		
+						clr_country_flag = acw_arma_slot_4_open		
+					}			
+	}							
+								
+	frame = { number = 45							
+				trigger = {always = yes}				
+				}				
+}				
 
 		
 #arma text+buttons

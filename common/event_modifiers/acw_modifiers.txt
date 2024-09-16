@@ -487,6 +487,11 @@ acw_hd_battle_of_mactan	 = {
 				leader_land_manuever = 1
 	}	
 
+#v1.04
+acw_hd_night_attack_of_the_sanjo_palace = {
+				prestige_from_land = 0.10
+	}	
+
 #ARMAMENTS
 
 acw_arma_crouching_tiger_cannon = {
@@ -651,6 +656,17 @@ acw_arma_dragoon_musket = {
 				
 acw_arma_puck_gun = { 
 				privateer_efficiency = 0.2
+				}
+				
+#v1.04
+acw_arma_kumana = { 
+				fire_damage = 0.10 
+				}
+acw_arma_tomahawk = { 
+				land_morale = 0.05 
+				}
+acw_arma_boomerang = { 
+				land_attrition = -0.10
 				}				
 
 acw_arma_slot_1_xp = {

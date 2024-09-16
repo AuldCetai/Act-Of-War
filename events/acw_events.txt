@@ -7383,7 +7383,8 @@ country_event = {
 #v1.03
 #fixes
 
-#Feats of Horsemanship
+#changed Unit Boosters event
+
 country_event = {
 	id = acw_hd.37 
 	title = acw_hd_37.t 
@@ -7596,6 +7597,65 @@ country_event = {
 				set_country_flag = acw_artillery_temp_skill_t3_picked	
 				clr_country_flag = acw_artillery_temp_skill_t3_chose
 				}
-			}	
-			
+			}				
+}
+
+#v1.04 Boomerangs and boosters
+#new HD events
+
+
+#acw_hd_night_attack_of_the_sanjo_palace
+country_event = {
+	id = acw_hd.38 
+	title = acw_hd_38.t 
+	desc = acw_hd_38.d
+	picture = GFX_acw_hd_night_attack_of_the_sanjo_palace
+	is_triggered_only = yes
+	
+	trigger = {
+			NOT = {has_country_flag = acw_hd_38_done}
+	}
+
+	immediate = {set_country_flag = acw_hd_38_done}
+	option = {
+		name = "acw_hd_38.a"
+		trigger = {
+					OR = {	acw_hd_slot_1_filled = no
+							acw_hd_slot_2_filled = no
+							acw_hd_slot_3_filled = no
+									}
+				}
+		
+		IF = { limit = { acw_hd_slot_1_filled = no }
+					set_country_flag = acw_hd_s1_38
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_2_filled = no }
+					set_country_flag = acw_hd_s2_38
+				}
+				
+		ELSE_IF = { limit = { acw_hd_slot_3_filled = no }
+					set_country_flag = acw_hd_s3_38
+				}
+				
+		ELSE = {}
+		
+			add_country_modifier = { 
+							name = acw_hd_night_attack_of_the_sanjo_palace
+							duration = -1
+						}
+				
+		
+		ai_chance = {
+			factor = 50	
+		}	
+	}
+	
+	option = {
+		name = "acw_hd_38.b"
+		add_prestige = 20
+		ai_chance = {
+			factor = 50	
+		}	
+	}
 }

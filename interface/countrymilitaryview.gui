@@ -2976,6 +2976,7 @@ guiTypes = {
 				scripted = yes
 			}		
 		#armaments icons
+		
 			guiButtonType ={
 				name ="acw_arm_slot_row_1_1"
 				scripted = yes
@@ -3066,8 +3067,9 @@ guiTypes = {
 				scale = 1
 			}
 			
+			#PUCKLE GUN
 			guiButtonType ={
-				name ="acw_arm_slot_row_1_11"
+				name ="acw_arm_slot_row_1_41"
 				scripted = yes
 				quadTextureSprite = "GFX_acw_n_icon_none"
 				position = { x= 750 y = 490 }
@@ -3165,6 +3167,16 @@ guiTypes = {
 				scale = 1
 			}
 			
+			#BOOMERANG
+			guiButtonType ={
+				name ="acw_arm_slot_row_2_42"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 750 y = 250 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
 			guiButtonType ={
 				name ="acw_arm_slot_row_3_21"
 				scripted = yes
@@ -3251,6 +3263,16 @@ guiTypes = {
 				scripted = yes
 				quadTextureSprite = "GFX_acw_n_icon_none"
 				position = { x= 690 y = 370 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+			#KUMANA
+			guiButtonType ={
+				name ="acw_arm_slot_row_3_43"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 750 y = 370 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 			}
@@ -3345,6 +3367,17 @@ guiTypes = {
 				scale = 1
 			}
 			
+			#TOMAHAWK
+			guiButtonType ={
+				name ="acw_arm_slot_row_4_44"
+				scripted = yes
+				quadTextureSprite = "GFX_acw_n_icon_none"
+				position = { x= 750 y = 610 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+			}
+			
+		########################################	
 			#camp_followers
 			iconType = {
 				name = "acw_cf_selector_window_bg"
@@ -4300,7 +4333,9 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				scale = 0.7
 			}
-			
+		
+
+		
 			
 			
 		windowType = {
