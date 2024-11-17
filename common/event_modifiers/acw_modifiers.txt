@@ -292,114 +292,99 @@ acw_artillery_upgrade_t9  = {
 #acw skills infantry
 acw_infantry_temp_skill_t1a = {
 				assault_fort_cost_modifier = -0.1
+				possible_condottieri = 1
 					}	
 
 acw_infantry_temp_skill_t1b = {
 				drill_gain_modifier = 0.1
+				fire_damage_received = -0.1
 					}	
 
-acw_infantry_temp_skill_t1c = {
-				possible_condottieri = 1
-					}
 
 acw_infantry_temp_skill_t2a = {
 				infantry_fire = 1
+				garrison_damage = 1
 					}	
 
 acw_infantry_temp_skill_t2b = {
 				infantry_shock = 1
+				infantry_cost = -0.05
 					}
-
-acw_infantry_temp_skill_t2c = {
-				infantry_cost = -0.10
-					}					
+				
 					
 acw_infantry_temp_skill_t3a = {
 				leader_land_shock = 1
+				manpower_recovery_speed = 0.1
 					}	
 					
 acw_infantry_temp_skill_t3b = {
 				leader_land_fire = 1
+				max_general_fire = 1
 					}	
-
-acw_infantry_temp_skill_t3c = {
-				manpower_recovery_speed = 0.1
-					}						
+					
 					
 #acw skills cav
 acw_cavalry_temp_skill_t1a = {
 				cavalry_flanking = 0.5
+				reinforce_cost_modifier = -0.1
 					}	
 
 acw_cavalry_temp_skill_t1b = {
 				movement_speed = 0.1
+				cav_to_inf_ratio = 0.10
 					}	
 
-acw_cavalry_temp_skill_t1c = {
-				cav_to_inf_ratio = 0.10
-					}
-					
 acw_cavalry_temp_skill_t2a = {
 				cavalry_fire = 1
+				cavalry_cost = -0.10
 					}	
 
 acw_cavalry_temp_skill_t2b = {
 				cavalry_shock = 1
-					}
-					
-acw_cavalry_temp_skill_t2c = {
-				cavalry_cost = -0.10
+				drill_gain_modifier = 0.2
 					}
 					
 					
 acw_cavalry_temp_skill_t3a = {
 				army_tradition = 0.05
+				loot_amount = 0.50
 					}	
 					
 acw_cavalry_temp_skill_t3b = {
 				shock_damage_received = -0.05
+				drill_decay_modifier = -0.2
 					}
-
-acw_cavalry_temp_skill_t3c = {
-				loot_amount = 0.50
-					}						
-					
+										
 #acw skills arty
 acw_artillery_temp_skill_t1a = {
 				artillery_power = 0.1
+				global_supply_limit_modifier = 0.10
 					}	
 
 acw_artillery_temp_skill_t1b = {
 				backrow_artillery_damage = 0.1
-					}	
-
-acw_artillery_temp_skill_t1c = {
-				global_supply_limit_modifier = 0.10
+				max_general_fire = 1
 					}	
 
 acw_artillery_temp_skill_t2a = {
 				artillery_fire = 1
+				artillery_cost = -0.1
 					}	
 
 acw_artillery_temp_skill_t2b = {
 				artillery_shock = 1
-					}	
-
-acw_artillery_temp_skill_t2c = {
-				artillery_cost = -0.1
+				reserves_organisation = 0.1
 					}	
 					
 acw_artillery_temp_skill_t3a = {
 				artillery_barrage_cost = -0.1
+				fire_damage = 0.10
 					}	
 					
 acw_artillery_temp_skill_t3b = {
 				siege_ability = 0.1
-					}
-					
-acw_artillery_temp_skill_t3c = {
-				fire_damage = 0.10
-					}						
+				artillery_levels_available_vs_fort = 1
+					}					
 					
 #armaments
 acw_arma_armprof = {

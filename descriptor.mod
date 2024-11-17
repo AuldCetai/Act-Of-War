@@ -1,7 +1,6 @@
-version="1.36.*"
-path="mod/acw"
+version="1.37"
 tags={
 	"Military"
 }
 name="Act of War"
-supported_version="1.36.2"
+supported_version="v1.37.5.0"

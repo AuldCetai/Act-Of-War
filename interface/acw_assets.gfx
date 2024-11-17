@@ -163,7 +163,7 @@ spriteTypes = {
 		name = "GFX_acw_n_icon_none"
 		texturefile = "gfx/interface/acw_n_icon_none.dds"
 		transparencecheck = yes
-		noOfFrames = 43
+		noOfFrames = 46
 	}
 	
 	spriteType = {
@@ -531,7 +531,35 @@ spriteTypes = {
 		name = "GFX_acw_hd_night_attack_of_the_sanjo_palace"
 		texturefile = "gfx/event_pictures/acw_hd_night_attack_of_the_sanjo_palace.dds"
 		transparencecheck = yes
-	}	
+	}
+	
+	SpriteType = {		
+		name = "GFX_acw_arma_banner_aod"
+		texturefile = "gfx/interface/acw_arma_banner_aod.dds"
+		transparencecheck = yes
+		 noOfFrames = 2
+	}
+	
+	SpriteType = {		
+		name = "GFX_acw_arma_banner_aoref"
+		texturefile = "gfx/interface/acw_arma_banner_aoref.dds"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	SpriteType = {		
+		name = "GFX_acw_arma_banner_aoa"
+		texturefile = "gfx/interface/acw_arma_banner_aoa.dds"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	SpriteType = {		
+		name = "GFX_acw_arma_banner_aorev"
+		texturefile = "gfx/interface/acw_arma_banner_aorev.dds"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
 
 
 }

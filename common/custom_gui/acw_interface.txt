@@ -1230,14 +1230,15 @@ custom_button = {
 	name = acw_infantry_levels_bar_t1a
 	potential = {has_country_flag = acw_background_open_already}
 	tooltip = acw_infantry_temp_skill_t1a
-	trigger = {
-				AND = {
+	trigger = {	
+			AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t1_tt
-						NOT = {had_country_flag = { flag = acw_infantry_temp_skill_t1_picked
-												days = 9150}}
-						NOT = {has_country_flag = acw_infantry_temp_skill_t1_chose}	
-												}
+						OR = {
+							NOT = {has_country_flag = acw_infantry_temp_skill_t1_picked }
+							had_country_flag = { flag = acw_infantry_temp_skill_t1_picked days = 9150}
+							}
+						}
 					
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t1_atleast3_tt
@@ -1256,47 +1257,53 @@ custom_button = {
 			}
 	effect = { 
 				add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t1a
+					duration = 5475 }
 				hidden_effect = {
-				set_country_flag = acw_infantry_temp_skill_t1_chose
-				country_event = { id = acw_hd.37 }
-				}
+					set_country_flag = acw_infantry_temp_skill_t1_picked
+					}
 			}
 }
 
-#custom_button = {
-#	name = acw_infantry_levels_bar_t1b
-#	potential = {has_country_flag = acw_background_open_already}
-#	tooltip = acw_infantry_temp_skill_t1a	
-#	trigger = {
-#				AND = {
-#					custom_trigger_tooltip = {
-#						tooltip = acw_infantry_levels_bar_t1_tt
-#						NOT = {had_country_flag = { flag = acw_infantry_temp_skill_t1_picked
-#												days = 9150}}
-#												}
-#												
-#					custom_trigger_tooltip = {
-#						tooltip = acw_infantry_levels_bar_t1_atleast3_tt
-#							OR = {
-#										has_country_modifier = acw_infantry_upgrade_t3
-#										has_country_modifier = acw_infantry_upgrade_t4
-#										has_country_modifier = acw_infantry_upgrade_t5
-#										has_country_modifier = acw_infantry_upgrade_t6
-#										has_country_modifier = acw_infantry_upgrade_t7
-#										has_country_modifier = acw_infantry_upgrade_t8
-#										has_country_modifier = acw_infantry_upgrade_t9
-#								}
-#						}
-#					army_professionalism = 0.2
-#					}
-#			}
-#	effect = { add_army_professionalism = -0.2
-#				add_country_modifier = { 
-#					name = acw_infantry_temp_skill_t1b
-#					duration = 5475 }
-#				set_country_flag = acw_infantry_temp_skill_t1_picked
-#			}
-#}				
+custom_button = {
+	name = acw_infantry_levels_bar_t1b
+	potential = {has_country_flag = acw_background_open_already}
+	tooltip = acw_infantry_temp_skill_t1a	
+	trigger = {
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = acw_infantry_levels_bar_t1_tt
+						OR = {
+							NOT = {has_country_flag = acw_infantry_temp_skill_t1_picked }
+							had_country_flag = { flag = acw_infantry_temp_skill_t1_picked days = 9150}
+							}
+						}
+												
+					custom_trigger_tooltip = {
+						tooltip = acw_infantry_levels_bar_t1_atleast3_tt
+							OR = {
+										has_country_modifier = acw_infantry_upgrade_t3
+										has_country_modifier = acw_infantry_upgrade_t4
+										has_country_modifier = acw_infantry_upgrade_t5
+										has_country_modifier = acw_infantry_upgrade_t6
+										has_country_modifier = acw_infantry_upgrade_t7
+										has_country_modifier = acw_infantry_upgrade_t8
+										has_country_modifier = acw_infantry_upgrade_t9
+								}
+						}
+					army_professionalism = 0.2
+					}
+			}
+	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t1b
+					duration = 5475 }
+				hidden_effect = {
+					set_country_flag = acw_infantry_temp_skill_t1_picked
+					}
+			}
+}				
 
 custom_button = {
 	name = acw_infantry_levels_bar_t2a
@@ -1306,10 +1313,11 @@ custom_button = {
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t2_tt
-						NOT = {had_country_flag = { flag = acw_infantry_temp_skill_t2_picked
-												days = 9150}}
-						NOT = {has_country_flag = acw_infantry_temp_skill_t2_chose}						
-												}
+						OR = {
+							NOT = {has_country_flag = acw_infantry_temp_skill_t2_picked }
+							had_country_flag = { flag = acw_infantry_temp_skill_t2_picked days = 9150}
+							}					
+					}
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t2_atleast6_tt							
 						OR = {
@@ -1323,10 +1331,12 @@ custom_button = {
 					}
 			}
 	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t2a
+					duration = 5475 }
 				hidden_effect = {
-					set_country_flag = acw_infantry_temp_skill_t2_chose
-					country_event = { id = acw_hd.37 }
-				}
+					set_country_flag = acw_infantry_temp_skill_t2_picked
+					}
 			}
 }	
 
@@ -1338,9 +1348,11 @@ custom_button = {
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t2_tt
-						NOT = {had_country_flag = { flag = acw_infantry_temp_skill_t2_picked
-												days = 9150}}
-												}
+						OR = {
+							NOT = {has_country_flag = acw_infantry_temp_skill_t2_picked }
+							had_country_flag = { flag = acw_infantry_temp_skill_t2_picked days = 9150}
+							}
+						}
 												
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t2_atleast6_tt							
@@ -1358,7 +1370,9 @@ custom_button = {
 				add_country_modifier = { 
 					name = acw_infantry_temp_skill_t2b
 					duration = 5475 }
-				set_country_flag = acw_infantry_temp_skill_t2_picked
+				hidden_effect = {
+					set_country_flag = acw_infantry_temp_skill_t2_picked
+					}
 			}
 }
 
@@ -1370,10 +1384,11 @@ custom_button = {
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t3_tt
-						NOT = {had_country_flag = { flag = acw_infantry_temp_skill_t3_picked
-												days = 9150}}
-						NOT = {has_country_flag = acw_infantry_temp_skill_t3_chose}	
-												}
+						OR = {
+							NOT = {has_country_flag = acw_infantry_temp_skill_t3_picked }
+							had_country_flag = { flag = acw_infantry_temp_skill_t3_picked days = 9150}
+							}
+						}
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t3_atleast9_tt						
 						has_country_modifier = acw_infantry_upgrade_t9
@@ -1382,10 +1397,12 @@ custom_button = {
 					}
 			}
 	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t3a
+					duration = 5475 }
 				hidden_effect = {
-					set_country_flag = acw_infantry_temp_skill_t3_chose
-					country_event = { id = acw_hd.37 }
-				}
+					set_country_flag = acw_infantry_temp_skill_t3_picked
+					}
 			}
 }	
 
@@ -1397,9 +1414,11 @@ custom_button = {
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t3_tt
-						NOT = {had_country_flag = { flag = acw_infantry_temp_skill_t3_picked
-												days = 9150}}
-												}					
+						OR = {
+							NOT = {has_country_flag = acw_infantry_temp_skill_t3_picked }
+							had_country_flag = { flag = acw_infantry_temp_skill_t3_picked days = 9150}
+							}
+						}					
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t3_atleast9_tt						
 						has_country_modifier = acw_infantry_upgrade_t9
@@ -1411,7 +1430,9 @@ custom_button = {
 				add_country_modifier = { 
 					name = acw_infantry_temp_skill_t3b
 					duration = 5475 }
-				set_country_flag = acw_infantry_temp_skill_t3_picked
+				hidden_effect = {
+					set_country_flag = acw_infantry_temp_skill_t3_picked
+					}
 			}
 }		
 
@@ -1424,10 +1445,11 @@ custom_button = {
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t1_tt
-						NOT = {had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked
-												days = 9150}}
-						NOT = {has_country_flag = acw_cavalry_temp_skill_t1_chose}							
-												}
+						OR = {
+							NOT = {has_country_flag = acw_cavalry_temp_skill_t1_picked }
+							had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked days = 9150}
+							}					
+						}
 												
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t1_atleast3_tt
@@ -1445,10 +1467,12 @@ custom_button = {
 					}
 			}
 	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t1a
+					duration = 5475 }
 				hidden_effect = {
-					set_country_flag = acw_cavalry_temp_skill_t1_chose
-					country_event = { id = acw_hd.37 }
-				}
+					set_country_flag = acw_cavalry_temp_skill_t1_picked
+					}
 			}
 }
 
@@ -1460,9 +1484,11 @@ custom_button = {
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t1_tt
-						NOT = {had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked
-												days = 9150}}
-												}
+						OR = {
+							NOT = {has_country_flag = acw_cavalry_temp_skill_t1_picked }
+							had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked days = 9150}
+							}
+						}
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t1_atleast3_tt
 							OR = {
@@ -1482,7 +1508,9 @@ custom_button = {
 				add_country_modifier = { 
 					name = acw_cavalry_temp_skill_t1b
 					duration = 5475 }
-				set_country_flag = acw_cavalry_temp_skill_t1_picked
+				hidden_effect = {
+					set_country_flag = acw_cavalry_temp_skill_t1_picked
+					}
 			}
 }				
 
@@ -1494,10 +1522,11 @@ custom_button = {
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t2_tt
-						NOT = {had_country_flag = { flag = acw_cavalry_temp_skill_t2_picked
-												days = 9150}}
-						NOT = {has_country_flag = acw_cavalry_temp_skill_t2_chose}	
-												}
+						OR = {
+							NOT = {has_country_flag = acw_cavalry_temp_skill_t2_picked }
+							had_country_flag = { flag = acw_cavalry_temp_skill_t2_picked days = 9150}
+							}
+						}
 												
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t2_atleast6_tt							
@@ -1512,9 +1541,11 @@ custom_button = {
 					}
 			}
 	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t2a
+					duration = 5475 }
 				hidden_effect = {
-					set_country_flag = acw_cavalry_temp_skill_t2_chose
-					country_event = { id = acw_hd.37 }
+					set_country_flag = acw_cavalry_temp_skill_t2_picked
 				}
 			}
 }	
@@ -1527,9 +1558,11 @@ custom_button = {
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t2_tt
-						NOT = {had_country_flag = { flag = acw_cavalry_temp_skill_t2_picked
-												days = 9150}}
-												}
+						OR = {
+							NOT = {has_country_flag = acw_cavalry_temp_skill_t2_picked }
+							had_country_flag = { flag = acw_cavalry_temp_skill_t2_picked days = 9150}
+							}
+						}
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t2_atleast6_tt							
 						OR = {
@@ -1546,7 +1579,9 @@ custom_button = {
 				add_country_modifier = { 
 					name = acw_cavalry_temp_skill_t2b
 					duration = 5475 }
-				set_country_flag = acw_cavalry_temp_skill_t2_picked
+				hidden_effect = {
+					set_country_flag = acw_cavalry_temp_skill_t2_picked
+				}
 			}
 }
 
@@ -1558,10 +1593,12 @@ custom_button = {
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t3_tt
-						NOT = {had_country_flag = { flag = acw_cavalry_temp_skill_t3_picked
-												days = 9150}
-						NOT = {has_country_flag = acw_cavalry_temp_skill_t3_chose}							
-												}
+						OR = {
+							NOT = {has_country_flag = acw_cavalry_temp_skill_t3_picked }
+							had_country_flag = { flag = acw_cavalry_temp_skill_t3_picked days = 9150}
+							}
+						
+					}
 										}
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t3_atleast9_tt				
@@ -1569,11 +1606,12 @@ custom_button = {
 					}
 					army_professionalism = 0.2
 					}
-			}
 	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_cavalry_temp_skill_t3a
+					duration = 5475 }
 				hidden_effect = {
-					set_country_flag = acw_cavalry_temp_skill_t3_chose
-					country_event = { id = acw_hd.37 }
+					set_country_flag = acw_cavalry_temp_skill_t3_picked
 				}
 			}
 }	
@@ -1586,9 +1624,11 @@ custom_button = {
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t3_tt
-						NOT = {had_country_flag = { flag = acw_cavalry_temp_skill_t3_picked
-												days = 9150}}
-												}
+						OR = {
+							NOT = {has_country_flag = acw_cavalry_temp_skill_t3_picked }
+							had_country_flag = { flag = acw_cavalry_temp_skill_t3_picked days = 9150}
+							}
+						}
 												
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t3_atleast9_tt				
@@ -1601,7 +1641,9 @@ custom_button = {
 				add_country_modifier = { 
 					name = acw_cavalry_temp_skill_t3b
 					duration = 5475 }
-				set_country_flag = acw_cavalry_temp_skill_t3_picked
+				hidden_effect = {
+					set_country_flag = acw_cavalry_temp_skill_t3_picked
+				}
 			}
 }		
 	
@@ -1614,10 +1656,11 @@ custom_button = {
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_artillery_levels_bar_t1_tt
-						NOT = {had_country_flag = { flag = acw_artillery_temp_skill_t1_picked
-												days = 9150}}
-						NOT = {has_country_flag = acw_artillery_temp_skill_t1_chose}							
-												}
+						OR = {
+							NOT = {has_country_flag = acw_artillery_temp_skill_t1_picked }
+							had_country_flag = { flag = acw_artillery_temp_skill_t1_picked days = 9150}
+							}						
+						}
 												
 					custom_trigger_tooltip = {
 						tooltip = acw_artillery_levels_bar_t1_atleast3_tt
@@ -1635,10 +1678,12 @@ custom_button = {
 					}
 			}
 	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t1a
+					duration = 5475 }
 				hidden_effect = {
-					set_country_flag = acw_artillery_temp_skill_t1_chose
-					country_event = { id = acw_hd.37 }
-				}
+					set_country_flag = acw_artillery_temp_skill_t1_picked
+					}
 			}
 }
 
@@ -1673,7 +1718,9 @@ custom_button = {
 				add_country_modifier = { 
 					name = acw_artillery_temp_skill_t1b
 					duration = 5475 }
-				set_country_flag = acw_artillery_temp_skill_t1_picked
+				hidden_effect = {
+					set_country_flag = acw_artillery_temp_skill_t1_picked
+					}
 			}
 }				
 
@@ -1685,10 +1732,11 @@ custom_button = {
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_artillery_levels_bar_t2_tt
-						NOT = {had_country_flag = { flag = acw_artillery_temp_skill_t2_picked
-												days = 9150}}
-						NOT = {has_country_flag = acw_artillery_temp_skill_t2_chose}
-												}
+						OR = {
+							NOT = {has_country_flag = acw_artillery_temp_skill_t2_picked }
+							had_country_flag = { flag = acw_artillery_temp_skill_t2_picked days = 9150}
+							}
+						}
 												
 					custom_trigger_tooltip = {
 						tooltip = acw_artillery_levels_bar_t2_atleast6_tt							
@@ -1703,10 +1751,12 @@ custom_button = {
 					}
 			}
 	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t2a
+					duration = 5475 }
 				hidden_effect = {
-					set_country_flag = acw_artillery_temp_skill_t2_chose
-					country_event = { id = acw_hd.37 }
-				}
+					set_country_flag = acw_artillery_temp_skill_t2_picked
+					}
 			}
 }	
 
@@ -1738,7 +1788,9 @@ custom_button = {
 				add_country_modifier = { 
 					name = acw_artillery_temp_skill_t2b
 					duration = 5475 }
-				set_country_flag = acw_artillery_temp_skill_t2_picked
+				hidden_effect = {
+					set_country_flag = acw_artillery_temp_skill_t2_picked
+					}
 			}
 }
 
@@ -1750,10 +1802,11 @@ custom_button = {
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_artillery_levels_bar_t3_tt
-						NOT = {had_country_flag = { flag = acw_artillery_temp_skill_t3_picked
-												days = 9150}}
-						NOT = {has_country_flag = acw_artillery_temp_skill_t3_chose}						
-												}
+						OR = {
+							NOT = {has_country_flag = acw_artillery_temp_skill_t3_picked }
+							had_country_flag = { flag = acw_artillery_temp_skill_t3_picked days = 9150}
+							}
+					}
 					custom_trigger_tooltip = {
 						tooltip = acw_artillery_levels_bar_t3_atleast9_tt								
 						has_country_modifier = acw_artillery_upgrade_t9
@@ -1762,10 +1815,12 @@ custom_button = {
 					}
 			}
 	effect = { add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_artillery_temp_skill_t3a
+					duration = 5475 }
 				hidden_effect = {
-					set_country_flag = acw_artillery_temp_skill_t3_chose
-					country_event = { id = acw_hd.37 }
-				}
+					set_country_flag = acw_artillery_temp_skill_t3_picked
+					}
 			}
 }	
 
@@ -1792,7 +1847,9 @@ custom_button = {
 				add_country_modifier = { 
 					name = acw_artillery_temp_skill_t3b
 					duration = 5475 }
-				set_country_flag = acw_artillery_temp_skill_t3_picked
+				hidden_effect = {
+					set_country_flag = acw_artillery_temp_skill_t3_picked
+					}
 			}
 }		
 	
@@ -7893,7 +7950,7 @@ custom_button = {
 					}			
 	}							
 								
-	frame = { number = 45							
+	frame = { number = 46							
 				trigger = {always = yes}				
 				}				
 }				
@@ -7923,8 +7980,9 @@ custom_button = {
     potential = {
 						has_country_flag = acw_hd_arma_bg_open
 						has_country_flag = acw_background_open_already} 
-  	trigger = { 
-				has_country_flag = acw_hd_arma_bg_open
+  	trigger = { hidden_trigger = {
+					has_country_flag = acw_hd_arma_bg_open
+					}
 				}
   	effect = { 
 		clr_country_flag = acw_hd_arma_bg_open
@@ -12864,3 +12922,44 @@ custom_text_box = {
 				}
 }
 
+custom_icon = {
+	name = acw_arma_banner_aoa
+	potential = { 	has_country_flag = acw_hd_arma_bg_open }
+	frame = { 
+			number = 2
+			trigger = { current_age = age_of_absolutism }
+			 }
+	
+}
+
+
+custom_icon = {
+	name = acw_arma_banner_aod
+	potential = { 	has_country_flag = acw_hd_arma_bg_open }
+	frame = { 
+			number = 2
+			trigger = { current_age = age_of_discovery }
+			 }
+	
+}
+
+
+custom_icon = {
+	name = acw_arma_banner_aorev
+	potential = { 	has_country_flag = acw_hd_arma_bg_open }			  
+	frame = { 
+			number = 2
+			trigger = { current_age = age_of_revolutions }
+			 }
+}
+
+
+custom_icon = {
+	name = acw_arma_banner_aoref
+	potential = { 	has_country_flag = acw_hd_arma_bg_open }
+	frame = { 
+			number = 2
+			trigger = { current_age = age_of_reformation }
+			 }
+	
+}
