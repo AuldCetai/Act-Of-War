@@ -8966,3 +8966,176 @@ defined_text = {
 	}
 	
 }
+
+
+
+defined_text = {
+ name = trade_goods_value_color_cloth
+	random = no
+	text = {
+		localisation_key =  acw_color_green
+		trigger = { 
+			NOT = {
+				OR = {
+				has_country_modifier = acw_lack_of_cloth60
+				has_country_modifier = acw_lack_of_cloth50
+				has_country_modifier = acw_lack_of_cloth40
+				has_country_modifier = acw_lack_of_cloth30
+				has_country_modifier = acw_lack_of_cloth20
+				has_country_modifier = acw_lack_of_cloth10
+					}
+				}
+			}
+		}
+		
+	text = {
+		localisation_key =  acw_color_yellow
+		trigger = { 
+			OR = {
+				has_country_modifier = acw_lack_of_cloth60
+				has_country_modifier = acw_lack_of_cloth50
+				has_country_modifier = acw_lack_of_cloth40
+				}
+			}
+		}
+
+	text = {
+		localisation_key =  acw_color_red
+		trigger = { 
+			OR = {
+				has_country_modifier = acw_lack_of_cloth30
+				has_country_modifier = acw_lack_of_cloth20
+				has_country_modifier = acw_lack_of_cloth10
+				}
+			}
+		}
+}
+
+
+defined_text = {
+ name = trade_goods_value_color_naval_supplies
+	random = no
+	text = {
+		localisation_key =  acw_color_green
+		trigger = { 
+			NOT = {
+				OR = {
+				has_country_modifier = acw_lack_of_naval_supplies60
+				has_country_modifier = acw_lack_of_naval_supplies50
+				has_country_modifier = acw_lack_of_naval_supplies40
+				has_country_modifier = acw_lack_of_naval_supplies30
+				has_country_modifier = acw_lack_of_naval_supplies20
+				has_country_modifier = acw_lack_of_naval_supplies10
+					}
+				}
+			}
+		}
+		
+	text = {
+		localisation_key =  acw_color_yellow
+		trigger = { 
+			OR = {
+				has_country_modifier = acw_lack_of_naval_supplies60
+				has_country_modifier = acw_lack_of_naval_supplies50
+				has_country_modifier = acw_lack_of_naval_supplies40
+				}
+			}
+		}
+
+	text = {
+		localisation_key =  acw_color_red
+		trigger = { 
+			OR = {
+				has_country_modifier = acw_lack_of_naval_supplies30
+				has_country_modifier = acw_lack_of_naval_supplies20
+				has_country_modifier = acw_lack_of_naval_supplies10
+				}
+			}
+		}
+}				
+
+
+defined_text = {
+ name = trade_goods_value_color_iron
+	random = no
+	text = {
+		localisation_key =  acw_color_green
+		trigger = { 
+			NOT = {
+				OR = {
+				has_country_modifier = acw_lack_of_iron60
+				has_country_modifier = acw_lack_of_iron50
+				has_country_modifier = acw_lack_of_iron40
+				has_country_modifier = acw_lack_of_iron30
+				has_country_modifier = acw_lack_of_iron20
+				has_country_modifier = acw_lack_of_iron10
+					}
+				}
+			}
+		}
+		
+	text = {
+		localisation_key =  acw_color_yellow
+		trigger = { 
+			OR = {
+				has_country_modifier = acw_lack_of_iron60
+				has_country_modifier = acw_lack_of_iron50
+				has_country_modifier = acw_lack_of_iron40
+				}
+			}
+		}
+
+	text = {
+		localisation_key =  acw_color_red
+		trigger = { 
+			OR = {
+				has_country_modifier = acw_lack_of_iron30
+				has_country_modifier = acw_lack_of_iron20
+				has_country_modifier = acw_lack_of_iron10
+				}
+			}
+		}
+}		
+
+
+defined_text = {
+ name = trade_goods_value_color_paper
+	random = no
+	text = {
+		localisation_key =  acw_color_green
+		trigger = { 
+			NOT = {
+				OR = {
+				has_country_modifier = acw_lack_of_paper60
+				has_country_modifier = acw_lack_of_paper50
+				has_country_modifier = acw_lack_of_paper40
+				has_country_modifier = acw_lack_of_paper30
+				has_country_modifier = acw_lack_of_paper20
+				has_country_modifier = acw_lack_of_paper10
+					}
+				}
+			}
+		}
+		
+	text = {
+		localisation_key =  acw_color_yellow
+		trigger = { 
+			OR = {
+				has_country_modifier = acw_lack_of_paper60
+				has_country_modifier = acw_lack_of_paper50
+				has_country_modifier = acw_lack_of_paper40
+				}
+			}
+		}
+
+	text = {
+		localisation_key =  acw_color_red
+		trigger = { 
+			OR = {
+				has_country_modifier = acw_lack_of_paper30
+				has_country_modifier = acw_lack_of_paper20
+				has_country_modifier = acw_lack_of_paper10
+				}
+			}
+		}
+}		

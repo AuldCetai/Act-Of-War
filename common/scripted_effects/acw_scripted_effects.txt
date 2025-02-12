@@ -912,3 +912,75 @@ acw_remove_all_from_slot4 = {
 					clr_country_flag = acw_cf_company_11_s_bb_picked
 			}
 }
+
+acw_clear_all_n_tech_pages = {
+					clr_country_flag = acw_n_tech_pg1
+					clr_country_flag = acw_n_tech_pg2
+					clr_country_flag = acw_n_tech_pg3
+					clr_country_flag = acw_n_tech_pg4
+					clr_country_flag = acw_n_tech_pg5
+					clr_country_flag = acw_n_tech_pg6
+					clr_country_flag = acw_n_tech_pg7
+					clr_country_flag = acw_n_tech_pg8
+					clr_country_flag = acw_n_tech_pg9
+					clr_country_flag = acw_n_tech_pg10
+					clr_country_flag = acw_n_tech_pg11
+					clr_country_flag = acw_n_tech_pg12
+					clr_country_flag = acw_n_tech_pg13
+					clr_country_flag = acw_n_tech_pg14
+					clr_country_flag = acw_n_tech_pg15
+					clr_country_flag = acw_n_tech_pg16
+					clr_country_flag = acw_n_tech_pg17
+					clr_country_flag = acw_n_tech_pg18
+					clr_country_flag = acw_n_tech_pg19
+					clr_country_flag = acw_n_tech_pg20
+					clr_country_flag = acw_n_tech_pg21
+					clr_country_flag = acw_n_tech_pg22
+					clr_country_flag = acw_n_tech_pg23
+					clr_country_flag = acw_n_tech_pg24
+					clr_country_flag = acw_n_tech_pg25
+					clr_country_flag = acw_n_tech_pg26
+					clr_country_flag = acw_n_tech_pg27
+}
+
+acw_remove_all_modifiers_lack_of = {
+		remove_country_modifier = acw_lack_of_iron90
+		remove_country_modifier = acw_lack_of_iron80
+		remove_country_modifier = acw_lack_of_iron70
+		remove_country_modifier = acw_lack_of_iron60
+		remove_country_modifier = acw_lack_of_iron50
+		remove_country_modifier = acw_lack_of_iron40
+		remove_country_modifier = acw_lack_of_iron30
+		remove_country_modifier = acw_lack_of_iron20
+		remove_country_modifier = acw_lack_of_iron10
+
+		remove_country_modifier = acw_lack_of_cloth90
+		remove_country_modifier = acw_lack_of_cloth80
+		remove_country_modifier = acw_lack_of_cloth70
+		remove_country_modifier = acw_lack_of_cloth60
+		remove_country_modifier = acw_lack_of_cloth50
+		remove_country_modifier = acw_lack_of_cloth40
+		remove_country_modifier = acw_lack_of_cloth30
+		remove_country_modifier = acw_lack_of_cloth20
+		remove_country_modifier = acw_lack_of_cloth10
+
+		remove_country_modifier = acw_lack_of_paper90
+		remove_country_modifier = acw_lack_of_paper80
+		remove_country_modifier = acw_lack_of_paper70
+		remove_country_modifier = acw_lack_of_paper60
+		remove_country_modifier = acw_lack_of_paper50
+		remove_country_modifier = acw_lack_of_paper40
+		remove_country_modifier = acw_lack_of_paper30
+		remove_country_modifier = acw_lack_of_paper20
+		remove_country_modifier = acw_lack_of_paper10
+		
+		remove_country_modifier = acw_lack_of_naval_supplies90
+		remove_country_modifier = acw_lack_of_naval_supplies80
+		remove_country_modifier = acw_lack_of_naval_supplies70
+		remove_country_modifier = acw_lack_of_naval_supplies60
+		remove_country_modifier = acw_lack_of_naval_supplies50
+		remove_country_modifier = acw_lack_of_naval_supplies40
+		remove_country_modifier = acw_lack_of_naval_supplies30
+		remove_country_modifier = acw_lack_of_naval_supplies20
+		remove_country_modifier = acw_lack_of_naval_supplies10
+}

@@ -6,20 +6,18 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_acw_flag_army_back"
-		texturefile = "gfx/interface/prof_flag_army_back.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_acw_flag_navy"
-		texturefile = "gfx/interface/prof_flag_navy.dds"
+		texturefile = "gfx/interface/prof_flag_2_navy.dds"
 		transparencecheck = yes
 	}
 	
+	
 	spriteType = {
-		name = "GFX_acw_flag_navy_back"
-		texturefile = "gfx/interface/prof_flag_navy_back.dds"
+		name = "GFX_acw_flag_milsys"
+		texturefile = "gfx/interface/prof_flag_milsys.dds"
+		transparencecheck = yes
 	}
+	
 	
 	spriteType = {
 		name = "GFX_acw_power_bar_9"
@@ -560,6 +558,102 @@ spriteTypes = {
 		transparencecheck = yes
 		noOfFrames = 2
 	}
-
-
+	
+	SpriteType = {		
+		name = "GFX_acw_navy_background"
+		texturefile = "gfx/interface/prof_navy_background.dds"
+		transparencecheck = yes
+	}
+	
+	SpriteType = {		
+		name = "GFX_plus"
+		texturefile = "gfx/interface/acw_plus.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_drinks_map_bg"
+		texturefile = "gfx/interface/we_drinks_map_bg.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_drinks"
+		texturefile = "gfx/interface/we_drinks.dds"
+		transparencecheck = yes
+		noOfFrames = 14
+	}
+	
+	spriteType = {
+		name = "GFX_we_drinks_small"
+		texturefile = "gfx/interface/we_drinks_small.dds"
+		transparencecheck = yes
+		noOfFrames = 14
+	}
+	
+	
+	SpriteType = {		
+		name = "GFX_acw_journey_icon"
+		texturefile = "gfx/interface/acw_journey_icon.dds"
+		transparencecheck = yes
+	}
+	
+	SpriteType = {		
+		name = "GFX_acw_techtree_icon"
+		texturefile = "gfx/interface/acw_naval_tech_icon.dds"
+		transparencecheck = yes
+	}
+	
+	SpriteType = {		
+		name = "GFX_acw_tech_tree_row_1"
+		texturefile = "gfx/interface/acw_tech_tree_row_1.dds"
+		transparencecheck = yes
+		noOfFrames = 16
+	}
+	
+	SpriteType = {		
+		name = "GFX_acw_prof_bar"
+		texturefile = "gfx/interface/acw_prof_bar.dds"
+		transparencecheck = yes
+	}
+	
+	SpriteType = {		
+		name = "GFX_acw_prof_bar_marker"
+		texturefile = "gfx/interface/acw_prof_bar_marker.dds"
+		transparencecheck = yes
+		noOfFrames = 11
+	}
+	
+	
+	spriteType = {
+		name = "GFX_resource_counter_iron"
+		texturefile = "gfx/interface/resource_counter_iron.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_resource_counter_cloth"
+		texturefile = "gfx/interface/resource_counter_cloth.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_resource_counter_paper"
+		texturefile = "gfx/interface/resource_counter_paper.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_resource_counter_naval_supplies"
+		texturefile = "gfx/interface/resource_counter_naval_supplies.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_acw_naval_unit_levels_indicator"
+		texturefile = "gfx/interface/cont_focus_check_icon_10.dds"
+		transparencecheck = yes
+		noOfFrames = 11
+	}
+	
 }
