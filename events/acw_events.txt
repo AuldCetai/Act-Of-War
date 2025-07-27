@@ -1477,67 +1477,6 @@ country_event = {
 						}
 					}
 				}
-	option = {
-			name = acw_hd_25.a
-			trigger = {acw_has_stratagem = no}
-			
-			random_list = {
-					1 = {
-						modifier = { factor = 1}
-						set_country_flag = acw_stratagem_sfp_selected
-						set_country_flag = acw_stratagem_selected_already
-						add_country_modifier = {
-												name = acw_stratagem_sfp_selected 
-												duration = -1
-													
-												}
-						}
-						
-					1 = {
-						modifier = { factor = 1}
-						set_country_flag = acw_stratagem_dod_selected
-						set_country_flag = acw_stratagem_selected_already
-						add_country_modifier = {
-												name = acw_stratagem_dod_selected 
-												duration = -1
-													
-												}
-						}	
-			
-					1 = {
-						modifier = { factor = 1}
-						set_country_flag = acw_stratagem_rom_selected
-						set_country_flag = acw_stratagem_selected_already
-						add_country_modifier = {
-												name = acw_stratagem_rom_selected 
-												duration = -1
-													
-												}
-						}
-						
-					1 = {
-						modifier = { factor = 1}
-						set_country_flag = acw_stratagem_trc_selected
-						set_country_flag = acw_stratagem_selected_already
-						add_country_modifier = {
-												name = acw_stratagem_trc_selected 
-												duration = -1
-													
-												}
-						}
-						
-					1 = {
-						modifier = { factor = 1}
-						set_country_flag = acw_stratagem_has_selected
-						set_country_flag = acw_stratagem_selected_already
-						add_country_modifier = {
-												name = acw_stratagem_has_selected 
-												duration = -1
-													
-												}
-						}
-			}
-		}
 			
 		option = {
 			name = acw_hd_25.a
@@ -2932,7 +2871,7 @@ country_event = {
 	
 	trigger = { 
 				ai = yes
-				army_professionalism = 0.55
+				army_professionalism = 0.5
 				NOT = {
 					OR = {
 							has_country_modifier = acw_infantry_upgrade_t9
@@ -7590,4 +7529,80 @@ country_event = {
 			factor = 50	
 		}	
 	}
+}
+
+## 1.05 AI stratagem fix
+country_event = {
+	id = acw_hd.39
+	title = acw_hd_39.t 
+	desc = acw_hd_39.d
+	picture = GFX_acw_hd_siege_of_constantinople
+	is_triggered_only = yes
+	
+	trigger = { 
+			AND = {
+				ai = yes
+				acw_has_stratagem = no
+					}
+			}
+	option = {
+			name = acw_hd_39.a
+			
+			random_list = {
+					1 = {
+						modifier = { factor = 1}
+						set_country_flag = acw_stratagem_sfp_selected
+						set_country_flag = acw_stratagem_selected_already
+						add_country_modifier = {
+												name = acw_stratagem_sfp_selected 
+												duration = -1
+													
+												}
+						}
+						
+					1 = {
+						modifier = { factor = 1}
+						set_country_flag = acw_stratagem_dod_selected
+						set_country_flag = acw_stratagem_selected_already
+						add_country_modifier = {
+												name = acw_stratagem_dod_selected 
+												duration = -1
+													
+												}
+						}	
+			
+					1 = {
+						modifier = { factor = 1}
+						set_country_flag = acw_stratagem_rom_selected
+						set_country_flag = acw_stratagem_selected_already
+						add_country_modifier = {
+												name = acw_stratagem_rom_selected 
+												duration = -1
+													
+												}
+						}
+						
+					1 = {
+						modifier = { factor = 1}
+						set_country_flag = acw_stratagem_trc_selected
+						set_country_flag = acw_stratagem_selected_already
+						add_country_modifier = {
+												name = acw_stratagem_trc_selected 
+												duration = -1
+													
+												}
+						}
+						
+					1 = {
+						modifier = { factor = 1}
+						set_country_flag = acw_stratagem_has_selected
+						set_country_flag = acw_stratagem_selected_already
+						add_country_modifier = {
+												name = acw_stratagem_has_selected 
+												duration = -1
+													
+												}
+						}
+			}
+		}
 }

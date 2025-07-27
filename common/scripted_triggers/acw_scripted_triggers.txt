@@ -1117,4 +1117,3 @@ acw_cf_ai_has_company = {
 					has_country_modifier = acw_cf_company_11_mod
 			}
 }
-

@@ -42,10 +42,9 @@ on_new_age = {
 on_startup = {
 			events = {  
 						acw_hd.22
-						we.028
+						acw_hd.39
 						}
 }
-
 
 # country
 # root = winning country, from = location
@@ -404,5 +403,4 @@ on_pillaged_capital = {
 			ROOT = {country_event = { id = acw_hd.38 }}
 }
 
-on_monthly_pulse = {
-	events = { we.028 }
+	

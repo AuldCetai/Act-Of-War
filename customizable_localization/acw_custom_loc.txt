@@ -5134,6 +5134,82 @@ defined_text = {
 	}	
 }
 
+defined_text = {
+ name = acw_get_arma_age_s3
+	random = no
+	
+	text = {
+		localisation_key = acw_arma_age_discovery
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s3_11
+					 has_country_flag = acw_arma_s3_12
+					 has_country_flag = acw_arma_s3_13
+					 has_country_flag = acw_arma_s3_14
+					 has_country_flag = acw_arma_s3_15
+					 has_country_flag = acw_arma_s3_16
+					 has_country_flag = acw_arma_s3_17
+					 has_country_flag = acw_arma_s3_18
+					 has_country_flag = acw_arma_s3_19
+					 has_country_flag = acw_arma_s3_20
+					 }
+				}
+	}	
+	
+	text = {
+		localisation_key = acw_arma_age_reformation
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s3_21
+					 has_country_flag = acw_arma_s3_22
+					 has_country_flag = acw_arma_s3_23
+					 has_country_flag = acw_arma_s3_24
+					 has_country_flag = acw_arma_s3_25
+					 has_country_flag = acw_arma_s3_26
+					 has_country_flag = acw_arma_s3_27
+					 has_country_flag = acw_arma_s3_28
+					 has_country_flag = acw_arma_s3_29
+					 has_country_flag = acw_arma_s3_30
+					 }
+				}
+	}	
+	
+	text = {
+		localisation_key = acw_arma_age_absolutism
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s3_1
+					 has_country_flag = acw_arma_s3_2
+					 has_country_flag = acw_arma_s3_3
+					 has_country_flag = acw_arma_s3_4
+					 has_country_flag = acw_arma_s3_5
+					 has_country_flag = acw_arma_s3_6
+					 has_country_flag = acw_arma_s3_7
+					 has_country_flag = acw_arma_s3_8
+					 has_country_flag = acw_arma_s3_9
+					 has_country_flag = acw_arma_s3_10
+					 }
+				}
+	}	
+	
+	text = {
+		localisation_key = acw_arma_age_revolutions
+		trigger = {  
+			OR = {
+					 has_country_flag = acw_arma_s3_31
+					 has_country_flag = acw_arma_s3_32
+					 has_country_flag = acw_arma_s3_33
+					 has_country_flag = acw_arma_s3_34
+					 has_country_flag = acw_arma_s3_35
+					 has_country_flag = acw_arma_s3_36
+					 has_country_flag = acw_arma_s3_37
+					 has_country_flag = acw_arma_s3_38
+					 has_country_flag = acw_arma_s3_39
+					 has_country_flag = acw_arma_s3_40
+					 }
+				}
+	}	
+}
 
 
 defined_text = {
@@ -8966,176 +9042,3 @@ defined_text = {
 	}
 	
 }
-
-
-
-defined_text = {
- name = trade_goods_value_color_cloth
-	random = no
-	text = {
-		localisation_key =  acw_color_green
-		trigger = { 
-			NOT = {
-				OR = {
-				has_country_modifier = acw_lack_of_cloth60
-				has_country_modifier = acw_lack_of_cloth50
-				has_country_modifier = acw_lack_of_cloth40
-				has_country_modifier = acw_lack_of_cloth30
-				has_country_modifier = acw_lack_of_cloth20
-				has_country_modifier = acw_lack_of_cloth10
-					}
-				}
-			}
-		}
-		
-	text = {
-		localisation_key =  acw_color_yellow
-		trigger = { 
-			OR = {
-				has_country_modifier = acw_lack_of_cloth60
-				has_country_modifier = acw_lack_of_cloth50
-				has_country_modifier = acw_lack_of_cloth40
-				}
-			}
-		}
-
-	text = {
-		localisation_key =  acw_color_red
-		trigger = { 
-			OR = {
-				has_country_modifier = acw_lack_of_cloth30
-				has_country_modifier = acw_lack_of_cloth20
-				has_country_modifier = acw_lack_of_cloth10
-				}
-			}
-		}
-}
-
-
-defined_text = {
- name = trade_goods_value_color_naval_supplies
-	random = no
-	text = {
-		localisation_key =  acw_color_green
-		trigger = { 
-			NOT = {
-				OR = {
-				has_country_modifier = acw_lack_of_naval_supplies60
-				has_country_modifier = acw_lack_of_naval_supplies50
-				has_country_modifier = acw_lack_of_naval_supplies40
-				has_country_modifier = acw_lack_of_naval_supplies30
-				has_country_modifier = acw_lack_of_naval_supplies20
-				has_country_modifier = acw_lack_of_naval_supplies10
-					}
-				}
-			}
-		}
-		
-	text = {
-		localisation_key =  acw_color_yellow
-		trigger = { 
-			OR = {
-				has_country_modifier = acw_lack_of_naval_supplies60
-				has_country_modifier = acw_lack_of_naval_supplies50
-				has_country_modifier = acw_lack_of_naval_supplies40
-				}
-			}
-		}
-
-	text = {
-		localisation_key =  acw_color_red
-		trigger = { 
-			OR = {
-				has_country_modifier = acw_lack_of_naval_supplies30
-				has_country_modifier = acw_lack_of_naval_supplies20
-				has_country_modifier = acw_lack_of_naval_supplies10
-				}
-			}
-		}
-}				
-
-
-defined_text = {
- name = trade_goods_value_color_iron
-	random = no
-	text = {
-		localisation_key =  acw_color_green
-		trigger = { 
-			NOT = {
-				OR = {
-				has_country_modifier = acw_lack_of_iron60
-				has_country_modifier = acw_lack_of_iron50
-				has_country_modifier = acw_lack_of_iron40
-				has_country_modifier = acw_lack_of_iron30
-				has_country_modifier = acw_lack_of_iron20
-				has_country_modifier = acw_lack_of_iron10
-					}
-				}
-			}
-		}
-		
-	text = {
-		localisation_key =  acw_color_yellow
-		trigger = { 
-			OR = {
-				has_country_modifier = acw_lack_of_iron60
-				has_country_modifier = acw_lack_of_iron50
-				has_country_modifier = acw_lack_of_iron40
-				}
-			}
-		}
-
-	text = {
-		localisation_key =  acw_color_red
-		trigger = { 
-			OR = {
-				has_country_modifier = acw_lack_of_iron30
-				has_country_modifier = acw_lack_of_iron20
-				has_country_modifier = acw_lack_of_iron10
-				}
-			}
-		}
-}		
-
-
-defined_text = {
- name = trade_goods_value_color_paper
-	random = no
-	text = {
-		localisation_key =  acw_color_green
-		trigger = { 
-			NOT = {
-				OR = {
-				has_country_modifier = acw_lack_of_paper60
-				has_country_modifier = acw_lack_of_paper50
-				has_country_modifier = acw_lack_of_paper40
-				has_country_modifier = acw_lack_of_paper30
-				has_country_modifier = acw_lack_of_paper20
-				has_country_modifier = acw_lack_of_paper10
-					}
-				}
-			}
-		}
-		
-	text = {
-		localisation_key =  acw_color_yellow
-		trigger = { 
-			OR = {
-				has_country_modifier = acw_lack_of_paper60
-				has_country_modifier = acw_lack_of_paper50
-				has_country_modifier = acw_lack_of_paper40
-				}
-			}
-		}
-
-	text = {
-		localisation_key =  acw_color_red
-		trigger = { 
-			OR = {
-				has_country_modifier = acw_lack_of_paper30
-				has_country_modifier = acw_lack_of_paper20
-				has_country_modifier = acw_lack_of_paper10
-				}
-			}
-		}
-}		

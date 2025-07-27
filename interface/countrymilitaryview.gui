@@ -13,6 +13,7 @@ guiTypes = {
 		verticalBorder= ""
 		fullScreen = no	
 
+		
 		guiButtonType =
 		{
 			name ="leader_banner2"
@@ -227,769 +228,6 @@ guiTypes = {
 		Orientation = "UPPER_LEFT"
 		upsound = tab_military
 		
-		
-		### acw menu open buttons
-			guiButtonType = {
-				name = "acw_army_button_that_opens_menu"
-				position = { x=552 y =100}
-				spriteType ="GFX_acw_flag_army"
-				Orientation = "UPPER_LEFT"
-				scripted = yes
-				scale = 0.5
-			}	
-			guiButtonType = {
-				name = "acw_navy_button_that_opens_menu"
-				position = { x=552 y =175}
-				spriteType ="GFX_acw_flag_navy"
-				Orientation = "UPPER_LEFT"
-				scripted = yes
-				scale = 0.5
-			}
-			
-			guiButtonType = {
-				name = "acw_milsys_button_that_opens_menu"
-				position = { x=552 y =250}
-				spriteType ="GFX_acw_flag_milsys"
-				Orientation = "UPPER_LEFT"
-				scripted = yes
-				scale = 0.5
-			}
-			
-			
-		
-		
-		
-		
-		### naval interface
-		#ACW gui main window - navy
-
-		windowType = { 
-			name = "acw_navy_window"
-			position = { x=0 y=20 }	
-			##position = { x=-600 y=140 }	
-			size = { x=1024 y=600 }
-			moveable = 0
-			Orientation = "UPPER_LEFT"
-				
-
-						
-				iconType = {
-					name ="acw_navy_background"
-					scripted = yes
-					spriteType = "GFX_acw_navy_background"
-					position = { x= 552 y = -5 }
-					Orientation = "UPPER_LEFT"
-					scale = 0.8
-				}
-				
-				instantTextBoxType = {
-					name = "acw_navy_window_title"
-					position = { x = 750 y =40 }
-					format = centre
-					font = "vic_22s"
-					maxWidth = 420
-					maxHeight = 32	
-					Orientation = "UPPER_LEFT"
-					text = ""
-					format = centre
-					scripted = yes
-				}
-				
-				guiButtonType = {
-					name = "acw_navy_button_close"
-					position = { x=1322 y =-15}
-					scripted = yes
-					quadTextureSprite ="GFX_closebutton2"
-					Orientation = "UPPER_LEFT"
-					scale = 1.1
-				}
-			
-				guiButtonType = {
-						name ="we_drinks_map_open_button"
-						spriteType = "GFX_acw_journey_icon"
-						position = { x= 1200 y = 180 }
-						Orientation = "UPPER_LEFT"
-						scripted = yes
-					}
-			
-				# tech tree opener button
-				guiButtonType = {
-						name ="acw_naval_tech_tree_window_open_button"
-						spriteType = "GFX_acw_techtree_icon"
-						position = { x= 1200 y = 280 }
-						Orientation = "UPPER_LEFT"
-						scripted = yes
-					}
-					
-		## unit levels
-			##galley
-			instantTextBoxType = {
-				name = "acw_navy_window_galley_levels_indicator_text"
-				position = { x = 590 y =320 }
-				format = left
-				font = "vic_22s"
-				maxWidth = 420	
-				maxHeight = 32	
-				Orientation = "UPPER_LEFT"
-				text = ""
-				scripted = yes
-			}
-			
-			iconType ={
-				name ="acw_galley_levels_indicator_icon"
-				scripted = yes
-				quadTextureSprite = "GFX_acw_naval_unit_levels_indicator"
-				position = { x= 600 y = 350 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-				scripted = yes
-			}
-			
-			guiButtonType ={
-				name ="acw_galley_upgrade_plus"
-				scripted = yes
-				spriteType = "GFX_acw_add_to_que"
-				position = { x= 985 y = 350}
-				Orientation = "UPPER_LEFT"
-				scale = 1.6
-			}
-			guiButtonType ={
-				name ="acw_galley_upgrade_minus"
-				scripted = yes
-				spriteType = "GFX_acw_remove_from_que"
-				position = { x= 565 y = 350 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.6
-			}
-			
-			##heavy_ship
-			instantTextBoxType = {
-				name = "acw_navy_window_heavy_ship_levels_indicator_text"
-				position = { x = 590 y =390 }
-				format = centre
-				font = "vic_22s"
-				maxWidth = 420	
-				maxHeight = 32	
-				Orientation = "UPPER_LEFT"
-				text = ""
-				format = centre
-				scripted = yes
-			}
-			
-			iconType ={
-				name ="acw_heavy_ship_levels_indicator_icon"
-				scripted = yes
-				quadTextureSprite = "GFX_acw_naval_unit_levels_indicator"
-				position = { x= 600 y = 420 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-				scripted = yes
-			}
-			
-			guiButtonType ={
-				name ="acw_heavy_ship_upgrade_plus"
-				scripted = yes
-				spriteType = "GFX_acw_add_to_que"
-				position = { x= 985 y = 420 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-			}
-			guiButtonType ={
-				name ="acw_heavy_ship_upgrade_minus"
-				scripted = yes
-				spriteType = "GFX_acw_remove_from_que"
-				position = { x= 565 y = 420 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-			}
-			
-			##light_ship
-			instantTextBoxType = {
-				name = "acw_navy_window_light_ship_levels_indicator_text"
-				position = { x = 590 y =460 }
-				format = left
-				font = "vic_22s"
-				maxWidth = 420	
-				maxHeight = 32	
-				Orientation = "UPPER_LEFT"
-				text = ""
-				scripted = yes
-			}
-			
-			iconType ={
-				name ="acw_light_ship_levels_indicator_icon"
-				scripted = yes
-				quadTextureSprite = "GFX_acw_naval_unit_levels_indicator"
-				position = { x= 600 y = 490 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-				scripted = yes
-			}
-			
-			guiButtonType ={
-				name ="acw_light_ship_upgrade_plus"
-				scripted = yes
-				spriteType = "GFX_acw_add_to_que"
-				position = { x= 985 y = 490 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-			}
-			guiButtonType ={
-				name ="acw_light_ship_upgrade_minus"
-				scripted = yes
-				spriteType = "GFX_acw_remove_from_que"
-				position = { x= 565 y = 490 }
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-			}
-
-		#naval HD
-		
-			instantTextBoxType = {
-					name = "acw_navy_window_hd_text"
-					position = { x = 1020 y =390 }
-					format = centre
-					font = "vic_22s"
-					maxWidth = 420
-					maxHeight = 32	
-					Orientation = "UPPER_LEFT"
-					text = ""
-					format = centre
-					scripted = yes
-				}
-				
-			iconType = {
-					name = "acw_hd_navy_image_1"
-					position = { x=1110 y =460}
-					quadTextureSprite ="GFX_acw_hd_navy_image"
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-					pdx_tooltip = "acw_stratagem_none"
-				}	
-				
-			iconType = {
-					name = "acw_hd_navy_image_2"
-					position = { x=1110 y =540}
-					quadTextureSprite ="GFX_acw_hd_navy_image"
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-					pdx_tooltip = "acw_stratagem_none"
-				}	
-				
-			iconType = {
-					name = "acw_hd_navy_image_3"
-					position = { x=1110 y =620}
-					quadTextureSprite ="GFX_acw_hd_navy_image"
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-					pdx_tooltip = "acw_stratagem_none"
-				}	
-				
-				
-			iconType = {
-					name = "acw_hd_navy_slot_1"
-					position = { x=1100 y =450}
-					quadTextureSprite ="GFX_economy_linechart_frame"
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1.5
-					pdx_tooltip = "acw_stratagem_none"
-				}	
-				
-			iconType = {
-					name = "acw_hd_navy_slot_2"
-					position = { x=1100 y =530}
-					quadTextureSprite ="GFX_economy_linechart_frame"
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1.5
-					pdx_tooltip = "acw_stratagem_none"
-				}	
-				
-			iconType = {
-					name = "acw_hd_navy_slot_3"
-					position = { x=1100 y = 610}
-					quadTextureSprite ="GFX_economy_linechart_frame"
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1.5
-					pdx_tooltip = "acw_stratagem_none"
-				}
-				
-				
-	###GOODS AND STUFF		
-			iconType = {
-					name = "acw_naval_goods_counter_iron_bg"
-					position = { x=560 y =600}
-					spriteType = GFX_resource_counter_iron
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}	
-			
-			iconType = {
-					name = "acw_naval_goods_counter_cloth_bg"
-					position = { x = 560 y =650 }
-					spriteType = GFX_resource_counter_cloth
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-				
-			iconType = {
-					name = "acw_naval_goods_counter_naval_supplies_bg"
-					position = { x = 560 y =700 }
-					spriteType = GFX_resource_counter_naval_supplies
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-
-			iconType = {
-					name = "acw_naval_goods_counter_paper_bg"
-					position = { x = 560 y =750 }
-					spriteType = GFX_resource_counter_paper
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-			
-			instantTextBoxType = {
-					name = "acw_naval_goods_counter_iron"
-					position = { x = 405 y =615 }
-					format = right
-					font = "vic_22s"
-					maxWidth = 420
-					maxHeight = 32	
-					Orientation = "UPPER_LEFT"
-					text = ""
-					scripted = yes
-				}
-				
-			instantTextBoxType = {
-					name = "acw_naval_goods_counter_cloth"
-					position = { x = 405 y =665 }
-					format = right
-					font = "vic_22s"
-					maxWidth = 420
-					maxHeight = 32	
-					Orientation = "UPPER_LEFT"
-					text = ""
-					scripted = yes
-				}
-			
-			instantTextBoxType = {
-					name = "acw_naval_goods_counter_naval_supplies"
-					position = { x = 405 y =715 }
-					format = right
-					font = "vic_22s"
-					maxWidth = 420
-					maxHeight = 32	
-					Orientation = "UPPER_LEFT"
-					text = ""
-					scripted = yes
-				}
-			
-			instantTextBoxType = {
-					name = "acw_naval_goods_counter_paper"
-					position = { x = 405 y =765 }
-					format = right
-					font = "vic_22s"
-					maxWidth = 420
-					maxHeight = 32	
-					Orientation = "UPPER_LEFT"
-					text = ""
-					scripted = yes
-				}
-			
-				
-		
-									
-		windowType = {
-				name = "naval_professionalism"
-				backGround = ""
-				position = { x=610 y=180 }
-				size = { x=280 y=16 }
-				moveable = 0
-				dontRender = ""
-				horizontalBorder = ""
-				Orientation = "UPPER_LEFT"
-				
-				guiButtonType =	{
-					name = "naval_professionalism_study_btn"
-					quadTextureSprite= "GFX_np_study_btn"
-					if_resolution = {
-						max_height = 867
-						position = { x=160 y =30 }
-					}
-					if_resolution = {
-						min_height = 868
-						max_height = 1047
-						position = { x=160 y = 45 }
-					}
-					if_resolution = {
-						min_height = 1048
-						position = { x=160 y =45 }
-					}
-					scale = 0.75
-					scripted = yes
-				}
-				iconType = {
-					name = "naval_professionalism_study_mark"
-					spriteType = "GFX_np_study_yes"
-					if_resolution = {
-						max_height = 867
-						position = { x=190 y =30 }
-					}
-					if_resolution = {
-						min_height = 868
-						max_height = 1047
-						position = { x=190 y =45 }
-					}
-					if_resolution = {
-						min_height = 1048
-						position = { x=190 y =45 }
-					}
-					Orientation = "UPPER_LEFT"
-					alwaysTransparent = yes
-					scripted = yes
-					scale = 1.3
-				}
-				guiButtonType =	{
-					name = "naval_professionalism_ability1_btn"
-					quadTextureSprite= "GFX_np_ability1_btn"
-					if_resolution = {
-						max_height = 867
-						position = { x=220 y =30 }
-					}
-					if_resolution = {
-						min_height = 868
-						max_height = 1047
-						position = { x=220 y =45 }
-					}
-					if_resolution = {
-						min_height = 1048
-						position = { x=220 y =45 }
-					}
-					scale = 0.75
-					scripted = yes
-				}
-				guiButtonType =	{
-					name = "naval_professionalism_ability2_btn"
-					quadTextureSprite= "GFX_np_ability2_btn"
-					if_resolution = {
-						max_height = 867
-						position = { x=280 y =30 }
-					}
-					if_resolution = {
-						min_height = 868
-						max_height = 1047
-						position = { x=280 y =45 }
-					}
-					if_resolution = {
-						min_height = 1048
-						position = { x=280 y =45 }
-					}
-					scale = 0.75
-					scripted = yes
-				}
-
-				iconType = {
-					name = "naval_professionalism_progress"
-					spriteType = "GFX_naval_professionalism_bar"
-					position = { x=16 y=4 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-				}
-
-				iconType = {
-					name = "naval_professionalism_progress_frame"
-					spriteType = "GFX_naval_professionalism_bar_frame"
-					position = { x=-20 y=-24 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-				}
-
-				iconType = {
-					name = "naval_professionalism_icon"
-					spriteType = "GFX_naval_professionalism_icon"
-					position = { x=-14 y=-16 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-				}
-
-				iconType = {
-					name = "naval_professionalism_rank1_marker_base"
-					spriteType = "GFX_np_rank_1_base"
-					position = { x=101 y=-1 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-				}
-
-				iconType = {
-					name = "naval_professionalism_rank2_marker_base"
-					spriteType = "GFX_np_rank_2_base"
-					position = { x=197 y=-1 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-				}
-
-				iconType = {
-					name = "naval_professionalism_rank2_marker"
-					spriteType = "GFX_np_rank_2"
-					position = { x=197 y=-1 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-				}
-
-				iconType = {
-					name = "naval_professionalism_rank3_marker_base"
-					spriteType = "GFX_np_rank_3_base"
-					position = { x=294 y=-1 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-				}
-
-				iconType = {
-					name = "naval_professionalism_rank3_marker"
-					spriteType = "GFX_np_rank_3"
-					position = { x=294 y=-1 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-				}
-
-				iconType = {
-					name = "naval_professionalism_rank4_marker_base"
-					spriteType = "GFX_np_rank_4_base"
-					position = { x=390 y=-1 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-				}
-
-				iconType = {
-					name = "naval_professionalism_rank4_marker"
-					spriteType = "GFX_np_rank_4"
-					position = { x=390 y=-1 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-				}
-
-				iconType = {
-					name = "naval_professionalism_rank5_marker_base"
-					spriteType = "GFX_np_rank_5_base"
-					position = { x=488 y=-1 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-				}
-
-				iconType = {
-					name = "naval_professionalism_rank5_marker"
-					spriteType = "GFX_np_rank_5"
-					position = { x=488 y=-1 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-				}
-				
-				
-			}
-		
-		}
-		
-		##we drinks - exploration mapmode
-
-		windowType = {
-			name = "we_drinks_map_window"
-			backGround =""
-			position = { x=0 y=0 }
-			size = { x=1037 y=507 }
-			moveable = 0
-			dontRender = ""
-			horizontalBorder = ""
-			Orientation = "CENTER"
-			scripted = yes
-			
-			iconType ={
-					name ="we_drinks_map_bg"
-					spriteType = "GFX_we_drinks_map_bg"
-					position = { x = 25 y = -75 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-			
-			guiButtonType ={
-					name ="we_drinks_1"
-					quadTextureSprite = "GFX_we_drinks"
-					position = { x = 135 y = 25 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-			
-			guiButtonType ={
-					name ="we_drinks_2"
-					quadTextureSprite = "GFX_we_drinks"
-					position = { x = 265 y = 25 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-			
-			
-			guiButtonType ={
-					name ="we_drinks_3"
-					quadTextureSprite = "GFX_we_drinks"
-					position = { x = 395 y = 25 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-
-			guiButtonType ={
-					name ="we_drinks_4"
-					quadTextureSprite = "GFX_we_drinks"
-					position = { x = 525 y = 25 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-				
-				
-			guiButtonType ={
-					name ="we_drinks_5"
-					quadTextureSprite = "GFX_we_drinks"
-					position = { x = 655 y = 25 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-				
-
-			guiButtonType ={
-					name ="we_drinks_6"
-					quadTextureSprite = "GFX_we_drinks"
-					position = { x = 785 y = 25 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-				
-			#ROW2	
-			
-			guiButtonType ={
-					name ="we_drinks_7"
-					quadTextureSprite = "GFX_we_drinks"
-					position = { x = 200 y = 90 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-				
-				
-			guiButtonType ={
-					name ="we_drinks_8"
-					quadTextureSprite = "GFX_we_drinks"
-					position = { x = 330 y = 90 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-				
-
-			guiButtonType ={
-					name ="we_drinks_9"
-					quadTextureSprite = "GFX_we_drinks"
-					position = { x = 460 y = 90 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-				
-
-			guiButtonType ={
-					name ="we_drinks_10"
-					quadTextureSprite = "GFX_we_drinks"
-					position = { x = 590 y = 90 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-				
-
-			guiButtonType ={
-					name ="we_drinks_11"
-					quadTextureSprite = "GFX_we_drinks"
-					position = { x = 720 y = 90 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-				
-			guiButtonType ={
-					name ="we_drinks_12"
-					quadTextureSprite = "GFX_we_drinks"
-					position = { x = 850 y = 90 }
-					Orientation = "UPPER_LEFT"
-					scripted = yes
-					scale = 1
-				}
-				
-			## WE CLOSE MAP MENU BUTTON
-			guiButtonType = {
-				name = "we_close_map_button"
-				position = { x = 990 y = -85 }
-				quadTextureSprite ="GFX_closebutton2"
-				scripted = yes
-				Orientation = "UPPER_LEFT"
-				scale = 1.2
-				}	
-			}
-		
-		
-		windowType = { 
-			name = "acw_milsys_window"
-			position = { x=0 y=20 }	
-			##position = { x=-600 y=140 }	
-			size = { x=1024 y=600 }
-			moveable = 0
-			Orientation = "UPPER_LEFT"
-			scripted = yes
-				
-						
-				iconType = {
-					name ="acw_milsys_background"
-					scripted = yes
-					spriteType = "GFX_acw_navy_background"
-					position = { x= 552 y = -5 }
-					Orientation = "UPPER_LEFT"
-					scale = 0.8
-				}
-				
-				instantTextBoxType = {
-					name = "acw_milsys_window_title"
-					position = { x = 750 y =40 }
-					format = centre
-					font = "vic_22s"
-					maxWidth = 420
-					maxHeight = 32	
-					Orientation = "UPPER_LEFT"
-					text = ""
-					format = centre
-					scripted = yes
-				}
-				
-				guiButtonType = {
-					name = "acw_milsys_button_close"
-					position = { x=1322 y =-15}
-					scripted = yes
-					quadTextureSprite ="GFX_closebutton2"
-					Orientation = "UPPER_LEFT"
-					scale = 1.1
-				}
-		}
 		
 		
 		iconType =
@@ -2597,8 +1835,6 @@ guiTypes = {
 				scale = 0.8
 			}
 			
-			
-			
 			iconType ={
 				name ="acw_infantry_levels_indicator_text_banner"
 				scripted = yes
@@ -2681,42 +1917,46 @@ guiTypes = {
 				scale = 1.1
 			}
 			
-			###ACW PROFBAR
-			iconType ={
-				name ="acw_prof_bar"
-				scripted = yes
-				spriteType = "GFX_acw_prof_bar"
-				position = { x= 700 y = 100 }
+			instantTextBoxType = {
+				name = "acw_army_military_conduct_text"
+				position = { x = 700 y =77 }
+				format = left
+				font = "vic_22s"
+				maxWidth = 500
+				maxHeight = 32	
 				Orientation = "UPPER_LEFT"
-				scale = 0.8
+				text = ""
+				scripted = yes
 			}
 			
-			
-			iconType ={
-				name ="acw_prof_bar_marker"
+			#ACW gui main window - navy
+			guiButtonType = {
+				name = "acw_navy_button_close"
+				position = { x=1322 y =-15}
 				scripted = yes
-				quadTextureSprite = "GFX_acw_prof_bar_marker"
-				position = { x= 742 y = 105 }
+				quadTextureSprite ="GFX_closebutton2"
 				Orientation = "UPPER_LEFT"
+				scale = 1.1
+			}
+			
+			guiButtonType = {
+				name = "acw_navy_button_that_opens_menu"
+				position = { x=70 y =600}
+				spriteType ="GFX_acw_flag_navy"
+				Orientation = "UPPER_LEFT"
+				scripted = yes
 				scale = 1.2
 			}
 			
-			guiButtonType =	{
-			name = "acw_prof_bar_plus_fornow"
-				quadTextureSprite= "GFX_naval_doctrine_icons_small"
-				frame = 1
-				position = { x=690 y =110 }
+			guiButtonType = {
+				name = "acw_army_button_that_opens_menu"
+				position = { x=10 y =600}
+				spriteType ="GFX_acw_flag_army"
+				Orientation = "UPPER_LEFT"
 				scripted = yes
-			}
-			
-			guiButtonType =	{
-			name = "acw_prof_bar_minus_fornow"
-				quadTextureSprite= "GFX_naval_doctrine_icons_small"
-				frame = 1
-				position = { x=1220 y =110 }
-				scripted = yes
-			}
-			
+				scale = 1.2
+			}	
+
 			#ACW unit level indicators
 			#infantry
 			instantTextBoxType = {
@@ -2818,6 +2058,26 @@ guiTypes = {
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
 				position = { x= 850 y = 220 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+				scripted = yes
+			}
+			
+			iconType ={
+				name ="acw_infantry_levels_indicator_t3_marker"
+				scripted = yes
+				spriteType = "GFX_acw_scroll_up"
+				position = { x= 678 y = 240 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+				scripted = yes
+			}
+			
+			iconType ={
+				name ="acw_infantry_levels_indicator_t6_marker"
+				scripted = yes
+				spriteType = "GFX_acw_scroll_up"
+				position = { x= 768 y = 240 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -2930,6 +2190,26 @@ guiTypes = {
 				scripted = yes
 			}
 			
+			iconType ={
+				name ="acw_cavalry_levels_indicator_t3_marker"
+				scripted = yes
+				spriteType = "GFX_acw_scroll_up"
+				position = { x= 678 y = 340 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+				scripted = yes
+			}
+			
+			iconType ={
+				name ="acw_cavalry_levels_indicator_t6_marker"
+				scripted = yes
+				spriteType = "GFX_acw_scroll_up"
+				position = { x= 768	y = 340 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+				scripted = yes
+			}
+			
 			
 			#artillery
 			instantTextBoxType = {
@@ -3031,6 +2311,26 @@ guiTypes = {
 				scripted = yes
 				spriteType = "GFX_acw_unit_levels_indicator"
 				position = { x= 850 y = 420 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+				scripted = yes
+			}
+			
+			iconType ={
+				name ="acw_artillery_levels_indicator_t3_marker"
+				scripted = yes
+				spriteType = "GFX_acw_scroll_up"
+				position = { x= 678 y = 440 }
+				Orientation = "UPPER_LEFT"
+				scale = 1
+				scripted = yes
+			}
+			
+			iconType ={
+				name ="acw_artillery_levels_indicator_t6_marker"
+				scripted = yes
+				spriteType = "GFX_acw_scroll_up"
+				position = { x= 768 y = 440 }
 				Orientation = "UPPER_LEFT"
 				scale = 1
 				scripted = yes
@@ -3225,18 +2525,17 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_infantry_levels_bar_t1a"
 				scripted = yes
-				spriteType = "GFX_acw_infantry_levels_bar_t1a_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 940 y = 185 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
 				pdx_tooltip = acw_infantry_levels_bar_t1a
 			}
-	
 				
 			guiButtonType ={
 				name ="acw_infantry_levels_bar_t1b"
 				scripted = yes
-				spriteType = "GFX_acw_infantry_levels_bar_t1b_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 940 y = 235 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3245,7 +2544,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_infantry_levels_bar_t2a"
 				scripted = yes
-				spriteType = "GFX_acw_infantry_levels_bar_t2a_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 990 y = 185 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3254,7 +2553,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_infantry_levels_bar_t2b"
 				scripted = yes
-				spriteType = "GFX_acw_infantry_levels_bar_t2b_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 990 y = 235 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3263,7 +2562,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_infantry_levels_bar_t3a"
 				scripted = yes
-				spriteType = "GFX_acw_infantry_levels_bar_t3a_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 1040 y = 185 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3272,7 +2571,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_infantry_levels_bar_t3b"
 				scripted = yes
-				spriteType = "GFX_acw_infantry_levels_bar_t3b_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 1040 y = 235 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3283,7 +2582,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_cavalry_levels_bar_t1a"
 				scripted = yes
-				spriteType = "GFX_acw_cavalry_levels_bar_t1a_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 940 y = 285 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3292,7 +2591,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_cavalry_levels_bar_t1b"
 				scripted = yes
-				spriteType = "GFX_acw_cavalry_levels_bar_t1b_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 940 y = 335 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3301,7 +2600,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_cavalry_levels_bar_t2a"
 				scripted = yes
-				spriteType = "GFX_acw_cavalry_levels_bar_t3a_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 990 y = 285 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3310,7 +2609,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_cavalry_levels_bar_t2b"
 				scripted = yes
-				spriteType = "GFX_acw_cavalry_levels_bar_t3b_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 990 y = 335 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3319,7 +2618,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_cavalry_levels_bar_t3a"
 				scripted = yes
-				spriteType = "GFX_acw_cavalry_levels_bar_t1b_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 1040 y = 285 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3328,7 +2627,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_cavalry_levels_bar_t3b"
 				scripted = yes
-				spriteType = "GFX_acw_cavalry_levels_bar_t3a_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 1040 y = 335 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3341,7 +2640,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_artillery_levels_bar_t1a"
 				scripted = yes
-				spriteType = "GFX_acw_artillery_levels_bar_t1a_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 940 y = 385 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3350,7 +2649,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_artillery_levels_bar_t1b"
 				scripted = yes
-				spriteType = "GFX_acw_artillery_levels_bar_t1b_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 940 y = 435 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3359,7 +2658,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_artillery_levels_bar_t2a"
 				scripted = yes
-				spriteType = "GFX_acw_artillery_levels_bar_t2a_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 990 y = 385 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3368,7 +2667,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_artillery_levels_bar_t2b"
 				scripted = yes
-				spriteType = "GFX_acw_artillery_levels_bar_t1b_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 990 y = 435 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3377,7 +2676,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_artillery_levels_bar_t3a"
 				scripted = yes
-				spriteType = "GFX_acw_artillery_levels_bar_t2a_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 1040 y = 385 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -3386,7 +2685,7 @@ guiTypes = {
 			guiButtonType ={
 				name ="acw_artillery_levels_bar_t3b"
 				scripted = yes
-				spriteType = "GFX_acw_artillery_levels_bar_t1b_button"
+				quadTextureSprite = "GFX_acw_action_buttons"
 				position = { x= 1040 y = 435 }
 				Orientation = "UPPER_LEFT"
 				scale = 1.2
@@ -5146,7 +4445,7 @@ guiTypes = {
 				scale = 0.7
 			}
 		
-		
+
 		
 			
 			
@@ -5182,198 +4481,6 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 			}
 		}
-	
-		windowType = {
-				name = "acw_naval_tech_window"
-					backGround=""
-					position = { x=300 y=75 }	
-					size = { x=1350 y= 750 }
-					moveable = 0
-					dontRender = ""
-					horizontalBorder= ""
-					verticalBorder= ""
-					fullScreen = no	
-					scripted = yes
-
-			#ACW_NAVAL_TECH_TREE
-		
-						iconType ={
-							name ="acw_naval_tech_window_bg"
-							scripted = yes
-							spriteType = "GFX_we_drinks_map_bg"
-							position = { x= 0 y = 0 }
-							Orientation = "UPPER_LEFT"
-							scale = 1
-						}
-						
-						guiButtonType = {
-							name = "acw_naval_tech_window_close"
-							position = { x=1305 y =-10}
-							scripted = yes
-							quadTextureSprite ="GFX_closebutton2"
-							Orientation = "UPPER_LEFT"
-							scale = 1.1
-						}
-						
-						instantTextBoxType = {
-							name = "acw_naval_tech_title_text"
-							position = { x = 450 y =40 }
-							format = centre
-							font = "vic_22"
-							maxWidth = 420
-							maxHeight = 32	
-							Orientation = "UPPER_LEFT"
-							text = ""
-							format = centre
-							scripted = yes
-						}
-						
-						guiButtonType = {
-							name = "acw_techtree_upButton"
-							quadTextureSprite = "GFX_scroll_left_gold"
-							position = { x=500 y =160}
-							scripted = yes
-							scale = 5
-						}
-						guiButtonType = {
-							name = "acw_techtree_downButton"
-							quadTextureSprite = "GFX_scroll_right_gold"
-							position = { x=100 y =160}
-							scripted = yes
-							scale = 5
-						}
-			
-						guiButtonType = {
-							name = "acw_n_tech_button_r1_p1"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=60 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_n_tech_button_r1_p2"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=120 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_n_tech_button_r1_p3"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=180 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_n_tech_button_r1_p4"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=240 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_techtree_page5"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=300 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_techtree_page6"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=360 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_techtree_page7"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=420 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_techtree_page8"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=480 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_techtree_page9"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=540 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_techtree_page10"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=600 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_techtree_page11"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=660 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_techtree_page12"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=720 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_techtree_page13"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=780 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_techtree_page14"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=840 y =0}
-							scripted = yes
-							scale = 2
-							}
-
-						guiButtonType = {
-							name = "acw_techtree_page15"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=900 y =0}
-							scripted = yes
-							scale = 2
-							}
-							
-						guiButtonType = {
-							name = "acw_techtree_page16"
-							quadTextureSprite = "GFX_acw_tech_tree_row_1"
-							position = { x=960 y =0}
-							scripted = yes
-							scale = 2
-							}	
-	
-					}
-		
-			
 	}
 
 	### UNIT SELECT WINDOW

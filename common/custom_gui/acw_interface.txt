@@ -10,22 +10,17 @@ custom_button = {
   	trigger = { } 
   	effect = { 
 		set_country_flag = acw_background_open_already
-		clr_country_flag = acw_navy_background_open_already
-		IF = { 
-			limit = { 
-				NOT = { has_country_flag = acw_prof_bar_init }
-				} 
-				set_variable = {
-						which = acw_prof_bar_value
-						value = 50
-					}
-					set_country_flag = acw_prof_bar_init 
-					}
 	}
 }
 
 custom_text_box = {
 	name = acw_army_window_title
+    potential = {has_country_flag = acw_background_open_already} 
+		}
+
+
+custom_text_box = {
+	name = acw_army_military_conduct_text
     potential = {has_country_flag = acw_background_open_already} 
 		}
 		
@@ -353,6 +348,19 @@ custom_icon = {
 				}
 		
 }
+
+## lvl 3-6 markers
+
+custom_icon = {
+		name = acw_infantry_levels_indicator_t3_marker
+		potential = {has_country_flag = acw_background_open_already} 
+}
+
+custom_icon = {
+		name = acw_infantry_levels_indicator_t6_marker
+		potential = {has_country_flag = acw_background_open_already} 
+}
+
 
 #downgrade button
 
@@ -719,6 +727,18 @@ custom_icon = {
 		
 }
 
+## lvl 3-6 markers
+
+custom_icon = {
+		name = acw_cavalry_levels_indicator_t3_marker
+		potential = {has_country_flag = acw_background_open_already} 
+}
+
+custom_icon = {
+		name = acw_cavalry_levels_indicator_t6_marker
+		potential = {has_country_flag = acw_background_open_already} 
+}
+
 custom_button = {
 	name = acw_cavalry_upgrade_minus
     potential = {has_country_flag = acw_background_open_already} 
@@ -1079,6 +1099,19 @@ custom_icon = {
 				}
 		
 }
+
+## lvl 3-6 markers
+
+custom_icon = {
+		name = acw_artillery_levels_indicator_t3_marker
+		potential = {has_country_flag = acw_background_open_already} 
+}
+
+custom_icon = {
+		name = acw_artillery_levels_indicator_t6_marker
+		potential = {has_country_flag = acw_background_open_already} 
+}
+
 custom_button = {
 	name = acw_artillery_upgrade_minus
     potential = {has_country_flag = acw_background_open_already} 
@@ -1241,58 +1274,22 @@ custom_button = {
 	name = acw_infantry_levels_bar_t1a
 	potential = {has_country_flag = acw_background_open_already}
 	tooltip = acw_infantry_temp_skill_t1a
-	trigger = {	
-			AND = {
-					custom_trigger_tooltip = {
-						tooltip = acw_infantry_levels_bar_t1_tt
-						OR = {
-							NOT = {has_country_flag = acw_infantry_temp_skill_t1_picked }
-							had_country_flag = { flag = acw_infantry_temp_skill_t1_picked days = 9150}
-							}
-						}
-					
-					custom_trigger_tooltip = {
-						tooltip = acw_infantry_levels_bar_t1_atleast3_tt
-						OR = {
-									has_country_modifier = acw_infantry_upgrade_t3
-									has_country_modifier = acw_infantry_upgrade_t4
-									has_country_modifier = acw_infantry_upgrade_t5
-									has_country_modifier = acw_infantry_upgrade_t6
-									has_country_modifier = acw_infantry_upgrade_t7
-									has_country_modifier = acw_infantry_upgrade_t8
-									has_country_modifier = acw_infantry_upgrade_t9
-						}
-					}
-					army_professionalism = 0.2
-					}
-			}
-	effect = { 
-				add_army_professionalism = -0.2
-				add_country_modifier = { 
-					name = acw_infantry_temp_skill_t1a
-					duration = 5475 }
-				hidden_effect = {
-					set_country_flag = acw_infantry_temp_skill_t1_picked
-					}
-			}
-}
-
-custom_button = {
-	name = acw_infantry_levels_bar_t1b
-	potential = {has_country_flag = acw_background_open_already}
-	tooltip = acw_infantry_temp_skill_t1a	
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_infantry_temp_skill_t1a
+				}
 				AND = {
-					custom_trigger_tooltip = {
-						tooltip = acw_infantry_levels_bar_t1_tt
-						OR = {
-							NOT = {has_country_flag = acw_infantry_temp_skill_t1_picked }
-							had_country_flag = { flag = acw_infantry_temp_skill_t1_picked days = 9150}
+						custom_trigger_tooltip = {
+							tooltip = acw_infantry_levels_bar_t1_tt
+							OR = {
+								NOT = {has_country_flag = acw_infantry_temp_skill_t1_picked }
+								had_country_flag = { flag = acw_infantry_temp_skill_t1_picked days = 9150}
+								}
 							}
-						}
-												
-					custom_trigger_tooltip = {
-						tooltip = acw_infantry_levels_bar_t1_atleast3_tt
+						
+						custom_trigger_tooltip = {
+							tooltip = acw_infantry_levels_bar_t1_atleast3_tt
 							OR = {
 										has_country_modifier = acw_infantry_upgrade_t3
 										has_country_modifier = acw_infantry_upgrade_t4
@@ -1301,26 +1298,107 @@ custom_button = {
 										has_country_modifier = acw_infantry_upgrade_t7
 										has_country_modifier = acw_infantry_upgrade_t8
 										has_country_modifier = acw_infantry_upgrade_t9
-								}
+							}
 						}
-					army_professionalism = 0.2
+						army_professionalism = 0.2
+						}
 					}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+			IF = { limit = { 
+					NOT = { has_country_flag = acw_infantry_temp_skill_t1_picked } }
+				add_army_professionalism = -0.2
+				add_country_modifier = { 
+					name = acw_infantry_temp_skill_t1a
+					duration = 5475 }
+				hidden_effect = {
+					set_country_flag = acw_infantry_temp_skill_t1_picked
+					}
+				}
+			ELSE = {custom_tooltip = acw_infantry_temp_skill_t1a_tt}
+			}
+	frame = { 
+				number = 2
+				trigger = { 
+						has_country_modifier = acw_infantry_temp_skill_t1a
+					}
+				}		
+	frame = { 
+				number = 1
+				trigger = { always = yes }
+				}			
+}
+
+
+custom_button = {
+	name = acw_infantry_levels_bar_t1b
+	potential = {has_country_flag = acw_background_open_already}
+	tooltip = acw_infantry_temp_skill_t1b
+	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_infantry_temp_skill_t1b
+				}
+				AND = {
+						custom_trigger_tooltip = {
+							tooltip = acw_infantry_levels_bar_t1_tt
+							OR = {
+								NOT = {has_country_flag = acw_infantry_temp_skill_t1_picked }
+								had_country_flag = { flag = acw_infantry_temp_skill_t1_picked days = 9150}
+								}
+							}
+						
+						custom_trigger_tooltip = {
+							tooltip = acw_infantry_levels_bar_t1_atleast3_tt
+							OR = {
+										has_country_modifier = acw_infantry_upgrade_t3
+										has_country_modifier = acw_infantry_upgrade_t4
+										has_country_modifier = acw_infantry_upgrade_t5
+										has_country_modifier = acw_infantry_upgrade_t6
+										has_country_modifier = acw_infantry_upgrade_t7
+										has_country_modifier = acw_infantry_upgrade_t8
+										has_country_modifier = acw_infantry_upgrade_t9
+							}
+						}
+						army_professionalism = 0.2
+						}
+					}
+			}
+	effect = { 
+			IF = { limit = { 
+					NOT = { has_country_flag = acw_infantry_temp_skill_t1_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_infantry_temp_skill_t1b
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_infantry_temp_skill_t1_picked
 					}
+				}
+			ELSE = {custom_tooltip = acw_infantry_temp_skill_t1b_tt}
 			}
-}				
+	frame = { 
+				number = 4
+				trigger = { 
+						has_country_modifier = acw_infantry_temp_skill_t1b
+					}
+				}		
+	frame = { 
+				number = 3
+				trigger = { always = yes }
+				}			
+}
+	
 
 custom_button = {
 	name = acw_infantry_levels_bar_t2a
 	potential = {has_country_flag = acw_background_open_already} 
 	tooltip = acw_infantry_temp_skill_t2a
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_infantry_temp_skill_t2a
+				}
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t2_tt
@@ -1340,31 +1418,51 @@ custom_button = {
 						}
 					army_professionalism = 0.2
 					}
+				}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+			IF = { limit = {
+				NOT = { has_country_flag = acw_infantry_temp_skill_t2_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_infantry_temp_skill_t2a
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_infantry_temp_skill_t2_picked
 					}
+				}
+			ELSE = {custom_tooltip = acw_infantry_temp_skill_t2a_tt}	
 			}
+			
+	frame = { 
+				number = 6
+				trigger = { 
+						has_country_modifier = acw_infantry_temp_skill_t2a
+					}
+				}		
+	frame = { 
+				number = 5
+				trigger = { always = yes }
+				}					
 }	
 
 custom_button = {
 	name = acw_infantry_levels_bar_t2b
-	potential = {has_country_flag = acw_background_open_already}
-	tooltip = acw_infantry_temp_skill_t2a	
+	potential = {has_country_flag = acw_background_open_already} 
+	tooltip = acw_infantry_temp_skill_t2b
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_infantry_temp_skill_t2b
+				}
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t2_tt
 						OR = {
 							NOT = {has_country_flag = acw_infantry_temp_skill_t2_picked }
 							had_country_flag = { flag = acw_infantry_temp_skill_t2_picked days = 9150}
-							}
-						}
-												
+							}					
+					}
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t2_atleast6_tt							
 						OR = {
@@ -1376,15 +1474,32 @@ custom_button = {
 						}
 					army_professionalism = 0.2
 					}
+				}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+			IF = { limit = {
+				NOT = { has_country_flag = acw_infantry_temp_skill_t2_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_infantry_temp_skill_t2b
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_infantry_temp_skill_t2_picked
 					}
+				}
+			ELSE = {custom_tooltip = acw_infantry_temp_skill_t2b_tt}	
 			}
+			
+	frame = { 
+				number = 8
+				trigger = { 
+						has_country_modifier = acw_infantry_temp_skill_t2b
+					}
+				}		
+	frame = { 
+				number = 7
+				trigger = { always = yes }
+				}					
 }
 
 custom_button = {
@@ -1392,6 +1507,10 @@ custom_button = {
 	potential = {has_country_flag = acw_background_open_already}
 	tooltip = acw_infantry_temp_skill_t3a
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_infantry_temp_skill_t3a
+				}	
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t3_tt
@@ -1406,22 +1525,44 @@ custom_button = {
 						}
 					army_professionalism = 0.2
 					}
+				}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+		IF = { limit = {
+				NOT = { has_country_flag = acw_infantry_temp_skill_t3_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_infantry_temp_skill_t3a
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_infantry_temp_skill_t3_picked
 					}
+				}
+		ELSE = {custom_tooltip = acw_infantry_temp_skill_t3a_tt}			
 			}
+			
+	frame = { 
+				number = 10
+				trigger = { 
+						has_country_modifier = acw_infantry_temp_skill_t3a
+					}
+				}		
+	frame = { 
+				number = 9
+				trigger = { always = yes }
+				}		
 }	
 
 custom_button = {
 	name = acw_infantry_levels_bar_t3b
-	potential = {has_country_flag = acw_background_open_already} 
-	tooltip = acw_infantry_temp_skill_t3a
+	potential = {has_country_flag = acw_background_open_already}
+	tooltip = acw_infantry_temp_skill_t3b
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_infantry_temp_skill_t3b
+				}
+
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t3_tt
@@ -1429,41 +1570,62 @@ custom_button = {
 							NOT = {has_country_flag = acw_infantry_temp_skill_t3_picked }
 							had_country_flag = { flag = acw_infantry_temp_skill_t3_picked days = 9150}
 							}
-						}					
+						}
 					custom_trigger_tooltip = {
 						tooltip = acw_infantry_levels_bar_t3_atleast9_tt						
 						has_country_modifier = acw_infantry_upgrade_t9
 						}
 					army_professionalism = 0.2
 					}
+				}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+		IF = { limit = {
+				NOT = { has_country_flag = acw_infantry_temp_skill_t3_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_infantry_temp_skill_t3b
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_infantry_temp_skill_t3_picked
 					}
+				}
+		ELSE = {custom_tooltip = acw_infantry_temp_skill_t3b_tt}			
 			}
-}		
+			
+	frame = { 
+				number = 12
+				trigger = { 
+						has_country_modifier = acw_infantry_temp_skill_t3b
+					}
+				}		
+	frame = { 
+				number = 11
+				trigger = { always = yes }
+				}		
+}
 
 #cavalry
 custom_button = {
 	name = acw_cavalry_levels_bar_t1a
-	potential = {has_country_flag = acw_background_open_already} 
+	potential = {has_country_flag = acw_background_open_already}
 	tooltip = acw_cavalry_temp_skill_t1a
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_cavalry_temp_skill_t1a
+				}
 				AND = {
-					custom_trigger_tooltip = {
-						tooltip = acw_cavalry_levels_bar_t1_tt
-						OR = {
-							NOT = {has_country_flag = acw_cavalry_temp_skill_t1_picked }
-							had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked days = 9150}
-							}					
-						}
-												
-					custom_trigger_tooltip = {
-						tooltip = acw_cavalry_levels_bar_t1_atleast3_tt
+						custom_trigger_tooltip = {
+							tooltip = acw_cavalry_levels_bar_t1_tt
+							OR = {
+								NOT = {has_country_flag = acw_cavalry_temp_skill_t1_picked }
+								had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked days = 9150}
+								}
+							}
+						
+						custom_trigger_tooltip = {
+							tooltip = acw_cavalry_levels_bar_t1_atleast3_tt
 							OR = {
 										has_country_modifier = acw_cavalry_upgrade_t3
 										has_country_modifier = acw_cavalry_upgrade_t4
@@ -1472,36 +1634,58 @@ custom_button = {
 										has_country_modifier = acw_cavalry_upgrade_t7
 										has_country_modifier = acw_cavalry_upgrade_t8
 										has_country_modifier = acw_cavalry_upgrade_t9
-								}
+							}
 						}
-					army_professionalism = 0.2
+						army_professionalism = 0.2
+						}
 					}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+			IF = { limit = { 
+					NOT = { has_country_flag = acw_cavalry_temp_skill_t1_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_cavalry_temp_skill_t1a
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_cavalry_temp_skill_t1_picked
 					}
+				}
+			ELSE = {custom_tooltip = acw_cavalry_temp_skill_t1a_tt}
 			}
+	frame = { 
+				number = 14
+				trigger = { 
+						has_country_modifier = acw_cavalry_temp_skill_t1a
+					}
+				}		
+	frame = { 
+				number = 13
+				trigger = { always = yes }
+				}			
 }
+
 
 custom_button = {
 	name = acw_cavalry_levels_bar_t1b
-	potential = {has_country_flag = acw_background_open_already} 
-	tooltip = acw_cavalry_temp_skill_t1a
+	potential = {has_country_flag = acw_background_open_already}
+	tooltip = acw_cavalry_temp_skill_t1b
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_cavalry_temp_skill_t1b
+				}
 				AND = {
-					custom_trigger_tooltip = {
-						tooltip = acw_cavalry_levels_bar_t1_tt
-						OR = {
-							NOT = {has_country_flag = acw_cavalry_temp_skill_t1_picked }
-							had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked days = 9150}
+						custom_trigger_tooltip = {
+							tooltip = acw_cavalry_levels_bar_t1_tt
+							OR = {
+								NOT = {has_country_flag = acw_cavalry_temp_skill_t1_picked }
+								had_country_flag = { flag = acw_cavalry_temp_skill_t1_picked days = 9150}
+								}
 							}
-						}
-					custom_trigger_tooltip = {
-						tooltip = acw_cavalry_levels_bar_t1_atleast3_tt
+						
+						custom_trigger_tooltip = {
+							tooltip = acw_cavalry_levels_bar_t1_atleast3_tt
 							OR = {
 										has_country_modifier = acw_cavalry_upgrade_t3
 										has_country_modifier = acw_cavalry_upgrade_t4
@@ -1510,35 +1694,55 @@ custom_button = {
 										has_country_modifier = acw_cavalry_upgrade_t7
 										has_country_modifier = acw_cavalry_upgrade_t8
 										has_country_modifier = acw_cavalry_upgrade_t9
-								}
+							}
 						}
-					army_professionalism = 0.2
+						army_professionalism = 0.2
+						}
 					}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+			IF = { limit = { 
+					NOT = { has_country_flag = acw_cavalry_temp_skill_t1_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_cavalry_temp_skill_t1b
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_cavalry_temp_skill_t1_picked
 					}
+				}
+			ELSE = {custom_tooltip = acw_cavalry_temp_skill_t1b_tt}
 			}
-}				
+	frame = { 
+				number = 16
+				trigger = { 
+						has_country_modifier = acw_cavalry_temp_skill_t1b
+					}
+				}		
+	frame = { 
+				number = 15
+				trigger = { always = yes }
+				}			
+}
+	
 
 custom_button = {
 	name = acw_cavalry_levels_bar_t2a
 	potential = {has_country_flag = acw_background_open_already} 
 	tooltip = acw_cavalry_temp_skill_t2a
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_cavalry_temp_skill_t2a
+				}
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t2_tt
 						OR = {
 							NOT = {has_country_flag = acw_cavalry_temp_skill_t2_picked }
 							had_country_flag = { flag = acw_cavalry_temp_skill_t2_picked days = 9150}
-							}
-						}
-												
+							}					
+					}
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t2_atleast6_tt							
 						OR = {
@@ -1550,30 +1754,51 @@ custom_button = {
 						}
 					army_professionalism = 0.2
 					}
+				}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+			IF = { limit = {
+				NOT = { has_country_flag = acw_cavalry_temp_skill_t2_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_cavalry_temp_skill_t2a
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_cavalry_temp_skill_t2_picked
+					}
 				}
+			ELSE = {custom_tooltip = acw_cavalry_temp_skill_t2a_tt}	
 			}
+			
+	frame = { 
+				number =18
+				trigger = { 
+						has_country_modifier = acw_cavalry_temp_skill_t2a
+					}
+				}		
+	frame = { 
+				number = 17
+				trigger = { always = yes }
+				}					
 }	
 
 custom_button = {
 	name = acw_cavalry_levels_bar_t2b
-	potential = {has_country_flag = acw_background_open_already}
-	tooltip = acw_cavalry_temp_skill_t2a	
+	potential = {has_country_flag = acw_background_open_already} 
+	tooltip = acw_cavalry_temp_skill_t2b
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_cavalry_temp_skill_t2b
+				}
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t2_tt
 						OR = {
 							NOT = {has_country_flag = acw_cavalry_temp_skill_t2_picked }
 							had_country_flag = { flag = acw_cavalry_temp_skill_t2_picked days = 9150}
-							}
-						}
+							}					
+					}
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t2_atleast6_tt							
 						OR = {
@@ -1585,22 +1810,43 @@ custom_button = {
 						}
 					army_professionalism = 0.2
 					}
+				}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+			IF = { limit = {
+				NOT = { has_country_flag = acw_cavalry_temp_skill_t2_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_cavalry_temp_skill_t2b
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_cavalry_temp_skill_t2_picked
+					}
 				}
+			ELSE = {custom_tooltip = acw_cavalry_temp_skill_t2b_tt}	
 			}
+			
+	frame = { 
+				number = 20
+				trigger = { 
+						has_country_modifier = acw_cavalry_temp_skill_t2b
+					}
+				}		
+	frame = { 
+				number = 19
+				trigger = { always = yes }
+				}					
 }
 
 custom_button = {
 	name = acw_cavalry_levels_bar_t3a
-	potential = {has_country_flag = acw_background_open_already} 
+	potential = {has_country_flag = acw_background_open_already}
 	tooltip = acw_cavalry_temp_skill_t3a
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_cavalry_temp_skill_t3a
+				}	
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t3_tt
@@ -1608,30 +1854,51 @@ custom_button = {
 							NOT = {has_country_flag = acw_cavalry_temp_skill_t3_picked }
 							had_country_flag = { flag = acw_cavalry_temp_skill_t3_picked days = 9150}
 							}
-						
-					}
-										}
+						}
 					custom_trigger_tooltip = {
-						tooltip = acw_cavalry_levels_bar_t3_atleast9_tt				
+						tooltip = acw_cavalry_levels_bar_t3_atleast9_tt						
 						has_country_modifier = acw_cavalry_upgrade_t9
-					}
+						}
 					army_professionalism = 0.2
 					}
-	effect = { add_army_professionalism = -0.2
+				}
+			}
+	effect = { 
+		IF = { limit = {
+				NOT = { has_country_flag = acw_cavalry_temp_skill_t3_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_cavalry_temp_skill_t3a
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_cavalry_temp_skill_t3_picked
+					}
 				}
+		ELSE = {custom_tooltip = acw_cavalry_temp_skill_t3a_tt}			
 			}
+## FRAME SWITCHED WITH CAV_T1B			
+	frame = { 
+				number = 24
+				trigger = { 
+						has_country_modifier = acw_cavalry_temp_skill_t3a
+					}
+				}		
+	frame = { 
+				number = 22
+				trigger = { always = yes }
+				}		
 }	
 
 custom_button = {
 	name = acw_cavalry_levels_bar_t3b
 	potential = {has_country_flag = acw_background_open_already}
-	tooltip = acw_cavalry_temp_skill_t3a
+	tooltip = acw_cavalry_temp_skill_t3b
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_cavalry_temp_skill_t3b
+				}
+
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_cavalry_levels_bar_t3_tt
@@ -1640,41 +1907,61 @@ custom_button = {
 							had_country_flag = { flag = acw_cavalry_temp_skill_t3_picked days = 9150}
 							}
 						}
-												
 					custom_trigger_tooltip = {
-						tooltip = acw_cavalry_levels_bar_t3_atleast9_tt				
+						tooltip = acw_cavalry_levels_bar_t3_atleast9_tt						
 						has_country_modifier = acw_cavalry_upgrade_t9
-					}
+						}
 					army_professionalism = 0.2
 					}
+				}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+		IF = { limit = {
+				NOT = { has_country_flag = acw_cavalry_temp_skill_t3_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_cavalry_temp_skill_t3b
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_cavalry_temp_skill_t3_picked
+					}
 				}
+		ELSE = {custom_tooltip = acw_cavalry_temp_skill_t3b_tt}			
 			}
-}		
+## FRAME SWITCHED WITH CAV_T1A			
+	frame = { 
+				number = 22
+				trigger = { 
+						has_country_modifier = acw_cavalry_temp_skill_t3b
+					}
+				}		
+	frame = { 
+				number = 21
+				trigger = { always = yes }
+				}		
+}
 	
 #artillery
 custom_button = {
 	name = acw_artillery_levels_bar_t1a
 	potential = {has_country_flag = acw_background_open_already}
-	tooltip = acw_artillery_temp_skill_t1a	
+	tooltip = acw_artillery_temp_skill_t1a
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_artillery_temp_skill_t1a
+				}
 				AND = {
-					custom_trigger_tooltip = {
-						tooltip = acw_artillery_levels_bar_t1_tt
-						OR = {
-							NOT = {has_country_flag = acw_artillery_temp_skill_t1_picked }
-							had_country_flag = { flag = acw_artillery_temp_skill_t1_picked days = 9150}
-							}						
-						}
-												
-					custom_trigger_tooltip = {
-						tooltip = acw_artillery_levels_bar_t1_atleast3_tt
+						custom_trigger_tooltip = {
+							tooltip = acw_artillery_levels_bar_t1_tt
+							OR = {
+								NOT = {has_country_flag = acw_artillery_temp_skill_t1_picked }
+								had_country_flag = { flag = acw_artillery_temp_skill_t1_picked days = 9150}
+								}
+							}
+						
+						custom_trigger_tooltip = {
+							tooltip = acw_artillery_levels_bar_t1_atleast3_tt
 							OR = {
 										has_country_modifier = acw_artillery_upgrade_t3
 										has_country_modifier = acw_artillery_upgrade_t4
@@ -1683,35 +1970,58 @@ custom_button = {
 										has_country_modifier = acw_artillery_upgrade_t7
 										has_country_modifier = acw_artillery_upgrade_t8
 										has_country_modifier = acw_artillery_upgrade_t9
-								}
+							}
 						}
-					army_professionalism = 0.2
+						army_professionalism = 0.2
+						}
 					}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+			IF = { limit = { 
+					NOT = { has_country_flag = acw_artillery_temp_skill_t1_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_artillery_temp_skill_t1a
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_artillery_temp_skill_t1_picked
 					}
+				}
+			ELSE = {custom_tooltip = acw_artillery_temp_skill_t1a_tt}
 			}
+	frame = { 
+				number = 26
+				trigger = { 
+						has_country_modifier = acw_artillery_temp_skill_t1a
+					}
+				}		
+	frame = { 
+				number = 25
+				trigger = { always = yes }
+				}			
 }
+
 
 custom_button = {
 	name = acw_artillery_levels_bar_t1b
-	potential = {has_country_flag = acw_background_open_already} 
-	tooltip = acw_artillery_temp_skill_t1a
+	potential = {has_country_flag = acw_background_open_already}
+	tooltip = acw_artillery_temp_skill_t1b
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_artillery_temp_skill_t1b
+				}
 				AND = {
-					custom_trigger_tooltip = {
-						tooltip = acw_artillery_levels_bar_t1_tt
-						NOT = {had_country_flag = { flag = acw_artillery_temp_skill_t1_picked
-												days = 9150}}
-												}
-												
-					custom_trigger_tooltip = {
-						tooltip = acw_artillery_levels_bar_t1_atleast3_tt
+						custom_trigger_tooltip = {
+							tooltip = acw_artillery_levels_bar_t1_tt
+							OR = {
+								NOT = {has_country_flag = acw_artillery_temp_skill_t1_picked }
+								had_country_flag = { flag = acw_artillery_temp_skill_t1_picked days = 9150}
+								}
+							}
+						
+						custom_trigger_tooltip = {
+							tooltip = acw_artillery_levels_bar_t1_atleast3_tt
 							OR = {
 										has_country_modifier = acw_artillery_upgrade_t3
 										has_country_modifier = acw_artillery_upgrade_t4
@@ -1720,35 +2030,55 @@ custom_button = {
 										has_country_modifier = acw_artillery_upgrade_t7
 										has_country_modifier = acw_artillery_upgrade_t8
 										has_country_modifier = acw_artillery_upgrade_t9
-								}
+							}
 						}
-					army_professionalism = 0.2
+						army_professionalism = 0.2
+						}
 					}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+			IF = { limit = { 
+					NOT = { has_country_flag = acw_artillery_temp_skill_t1_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_artillery_temp_skill_t1b
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_artillery_temp_skill_t1_picked
 					}
+				}
+			ELSE = {custom_tooltip = acw_artillery_temp_skill_t1b_tt}
 			}
-}				
+	frame = { 
+				number = 28
+				trigger = { 
+						has_country_modifier = acw_artillery_temp_skill_t1b
+					}
+				}		
+	frame = { 
+				number = 27
+				trigger = { always = yes }
+				}			
+}
+	
 
 custom_button = {
 	name = acw_artillery_levels_bar_t2a
 	potential = {has_country_flag = acw_background_open_already} 
 	tooltip = acw_artillery_temp_skill_t2a
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_artillery_temp_skill_t2a
+				}
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_artillery_levels_bar_t2_tt
 						OR = {
 							NOT = {has_country_flag = acw_artillery_temp_skill_t2_picked }
 							had_country_flag = { flag = acw_artillery_temp_skill_t2_picked days = 9150}
-							}
-						}
-												
+							}					
+					}
 					custom_trigger_tooltip = {
 						tooltip = acw_artillery_levels_bar_t2_atleast6_tt							
 						OR = {
@@ -1760,29 +2090,51 @@ custom_button = {
 						}
 					army_professionalism = 0.2
 					}
+				}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+			IF = { limit = {
+				NOT = { has_country_flag = acw_artillery_temp_skill_t2_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_artillery_temp_skill_t2a
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_artillery_temp_skill_t2_picked
 					}
+				}
+			ELSE = {custom_tooltip = acw_artillery_temp_skill_t2a_tt}	
 			}
+			
+	frame = { 
+				number = 30
+				trigger = { 
+						has_country_modifier = acw_artillery_temp_skill_t2a
+					}
+				}		
+	frame = { 
+				number = 29
+				trigger = { always = yes }
+				}					
 }	
 
 custom_button = {
 	name = acw_artillery_levels_bar_t2b
-	potential = {has_country_flag = acw_background_open_already}
-	tooltip = acw_artillery_temp_skill_t2a	
+	potential = {has_country_flag = acw_background_open_already} 
+	tooltip = acw_artillery_temp_skill_t2b
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_artillery_temp_skill_t2b
+				}
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_artillery_levels_bar_t2_tt
-						NOT = {had_country_flag = { flag = acw_artillery_temp_skill_t2picked
-												days = 9150}}
-												}
-												
+						OR = {
+							NOT = {has_country_flag = acw_artillery_temp_skill_t2_picked }
+							had_country_flag = { flag = acw_artillery_temp_skill_t2_picked days = 9150}
+							}					
+					}
 					custom_trigger_tooltip = {
 						tooltip = acw_artillery_levels_bar_t2_atleast6_tt							
 						OR = {
@@ -1794,22 +2146,43 @@ custom_button = {
 						}
 					army_professionalism = 0.2
 					}
+				}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+			IF = { limit = {
+				NOT = { has_country_flag = acw_artillery_temp_skill_t2_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_artillery_temp_skill_t2b
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_artillery_temp_skill_t2_picked
 					}
+				}
+			ELSE = {custom_tooltip = acw_artillery_temp_skill_t2b_tt}	
 			}
+			
+	frame = { 
+				number =32
+				trigger = { 
+						has_country_modifier = acw_artillery_temp_skill_t2b
+					}
+				}		
+	frame = { 
+				number = 31
+				trigger = { always = yes }
+				}					
 }
 
 custom_button = {
 	name = acw_artillery_levels_bar_t3a
-	potential = {has_country_flag = acw_background_open_already} 
+	potential = {has_country_flag = acw_background_open_already}
 	tooltip = acw_artillery_temp_skill_t3a
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_artillery_temp_skill_t3a
+				}	
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_artillery_levels_bar_t3_tt
@@ -1817,51 +2190,91 @@ custom_button = {
 							NOT = {has_country_flag = acw_artillery_temp_skill_t3_picked }
 							had_country_flag = { flag = acw_artillery_temp_skill_t3_picked days = 9150}
 							}
-					}
+						}
 					custom_trigger_tooltip = {
-						tooltip = acw_artillery_levels_bar_t3_atleast9_tt								
+						tooltip = acw_artillery_levels_bar_t3_atleast9_tt						
 						has_country_modifier = acw_artillery_upgrade_t9
 						}
 					army_professionalism = 0.2
 					}
+				}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+		IF = { limit = {
+				NOT = { has_country_flag = acw_artillery_temp_skill_t3_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_artillery_temp_skill_t3a
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_artillery_temp_skill_t3_picked
 					}
+				}
+		ELSE = {custom_tooltip = acw_artillery_temp_skill_t3a_tt}			
 			}
+			
+	frame = { 
+				number = 34
+				trigger = { 
+						has_country_modifier = acw_artillery_temp_skill_t3a
+					}
+				}		
+	frame = { 
+				number = 33
+				trigger = { always = yes }
+				}		
 }	
 
 custom_button = {
 	name = acw_artillery_levels_bar_t3b
 	potential = {has_country_flag = acw_background_open_already}
-	tooltip = acw_artillery_temp_skill_t3a
+	tooltip = acw_artillery_temp_skill_t3b
 	trigger = {
+			OR = {
+				hidden_trigger = {
+					has_country_modifier = acw_artillery_temp_skill_t3b
+				}
+
 				AND = {
 					custom_trigger_tooltip = {
 						tooltip = acw_artillery_levels_bar_t3_tt
-						NOT = {had_country_flag = { flag = acw_artillery_temp_skill_t3_picked
-												days = 9150}}
-												}
-												
+						OR = {
+							NOT = {has_country_flag = acw_artillery_temp_skill_t3_picked }
+							had_country_flag = { flag = acw_artillery_temp_skill_t3_picked days = 9150}
+							}
+						}
 					custom_trigger_tooltip = {
-						tooltip = acw_artillery_levels_bar_t3_atleast9_tt								
+						tooltip = acw_artillery_levels_bar_t3_atleast9_tt						
 						has_country_modifier = acw_artillery_upgrade_t9
 						}
 					army_professionalism = 0.2
 					}
+				}
 			}
-	effect = { add_army_professionalism = -0.2
+	effect = { 
+		IF = { limit = {
+				NOT = { has_country_flag = acw_artillery_temp_skill_t3_picked } }
+				add_army_professionalism = -0.2
 				add_country_modifier = { 
 					name = acw_artillery_temp_skill_t3b
 					duration = 5475 }
 				hidden_effect = {
 					set_country_flag = acw_artillery_temp_skill_t3_picked
 					}
+				}
+		ELSE = {custom_tooltip = acw_artillery_temp_skill_t3b_tt}			
 			}
+			
+	frame = { 
+				number = 36
+				trigger = { 
+						has_country_modifier = acw_artillery_temp_skill_t3b
+					}
+				}		
+	frame = { 
+				number = 35
+				trigger = { always = yes }
+				}		
 }		
 	
 #arm text+buttons
@@ -4144,9 +4557,9 @@ custom_button = {
 				}					
 					
 					AND = {						
-						owns_or_non_sovereign_subject_of = 2971
+						owns_or_non_sovereign_subject_of = 1772
 						owns_or_non_sovereign_subject_of = 1763
-						owns_or_non_sovereign_subject_of = 4478
+						owns_or_non_sovereign_subject_of = 4778
 					}	
 
 					
@@ -8308,11 +8721,26 @@ custom_button = {
   	trigger = { }
   	effect = { 
 		clr_country_flag = acw_background_open_already
-		clr_country_flag = acw_navy_background_open_already
+	}
+}
+#Open Military conduct window - navy
+custom_button = {
+	name = acw_navy_button_that_opens_menu 
+    potential = {} 
+  	trigger = { always = no } 
+  	effect = { 
+		set_country_flag = acw_background_open_already
 	}
 }
 
-
+custom_button = {
+	name = acw_navy_button_close 
+    potential = {has_country_flag = acw_background_open_already} 
+  	trigger = { }
+  	effect = { 
+		clr_country_flag = acw_background_open_already
+	}
+}
 
 #open strategems window if none picked
 custom_button = {
@@ -12958,2584 +13386,4 @@ custom_icon = {
 			trigger = { current_age = age_of_reformation }
 			 }
 	
-}
-
-
-## NAVY
-custom_window = {
-	name = acw_navy_window
-	potential = {has_country_flag = acw_navy_background_open_already}
-	}
-
-custom_button = {
-	name = acw_navy_button_that_opens_menu 
-    potential = {} 
-  	trigger = { NOT = {has_country_flag = acw_navy_background_open_already}
-				num_of_ports = 1 } 
-  	effect = { 
-		clr_country_flag = acw_background_open_already
-		set_country_flag = acw_navy_background_open_already
-	}
-}
-
-custom_button = {
-	name = acw_navy_button_close 
-    potential = {has_country_flag = acw_navy_background_open_already} 
-  	trigger = { }
-  	effect = { 
-		clr_country_flag = acw_navy_background_open_already
-		clr_country_flag = acw_background_open_already
-	}
-}
-
-
-custom_icon = {
-	name = acw_navy_background
-	potential = {
-		has_country_flag = acw_navy_background_open_already
-	}
-}
-
-custom_text_box = {
-	name = acw_navy_window_title
-	potential = {
-		has_country_flag = acw_navy_background_open_already
-	}
-}
-		
-## WE DRINKS 
-
-custom_window = {
-	name = we_drinks_map_window
-	potential = { has_country_flag = we_drinks_map_open }
-}
-
-custom_icon = {
-	name = we_drinks_map_bg
-	potential = { has_country_flag = we_drinks_map_open }
-}
-
-
-custom_button = {
-	name = we_drinks_map_open_button
-    potential = { has_country_flag = acw_navy_background_open_already }
-  	trigger = { }
-  	effect = { 
-				clr_country_flag = acw_naval_tech_tree_open
-                acw_clear_all_n_tech_pages = yes
-				set_country_flag = we_drinks_map_open
-			}
-	}
-	
-custom_button = {
-	name = we_close_map_button
-    potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-				clr_country_flag = we_drinks_map_open
-			}
-	}	
-
-custom_button = {
-	name = we_drinks_1
-    potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			}
-			
-	
-	frame = {
-		number = 2
-		trigger = { has_country_flag = we_drinks_mead}
-				}
-	frame = {
-		number = 1
-		trigger = { always = yes }
-				}			
-}
-
-
-custom_button = {
-	name = we_drinks_2
-    potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
-	frame = {
-		number = 2
-		trigger = { has_country_flag = we_drinks_mead}
-				}
-	frame = {
-		number = 1
-		trigger = { always = yes }
-				}			
-}
-
-custom_button = {
-	name = we_drinks_3
-    potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
-	frame = {
-		number = 2
-		trigger = { has_country_flag = we_drinks_mead}
-				}
-	frame = {
-		number = 1
-		trigger = { always = yes }
-				}			
-}
-
-custom_button = {
-	name = we_drinks_4
-    potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
-	frame = {
-		number = 2
-		trigger = { has_country_flag = we_drinks_mead}
-				}
-	frame = {
-		number = 1
-		trigger = { always = yes }
-				}			
-}
-
-custom_button = {
-	name = we_drinks_5
-    potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
-	frame = {
-		number = 2
-		trigger = { has_country_flag = we_drinks_mead}
-				}
-	frame = {
-		number = 1
-		trigger = { always = yes }
-				}			
-}
-
-
-custom_button = {
-	name = we_drinks_6
-    potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
-	frame = {
-		number = 2
-		trigger = { has_country_flag = we_drinks_mead}
-				}
-	frame = {
-		number = 1
-		trigger = { always = yes }
-				}			
-}
-
-
-custom_button = {
-	name = we_drinks_7
-    potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
-	frame = {
-		number = 2
-		trigger = { has_country_flag = we_drinks_mead}
-				}
-	frame = {
-		number = 1
-		trigger = { always = yes }
-				}			
-}
-
-
-custom_button = {
-	name = we_drinks_8
-    potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
-	frame = {
-		number = 2
-		trigger = { has_country_flag = we_drinks_mead}
-				}
-	frame = {
-		number = 1
-		trigger = { always = yes }
-				}			
-}
-
-
-
-custom_button = {
-	name = we_drinks_9
-    potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
-	frame = {
-		number = 2
-		trigger = { has_country_flag = we_drinks_mead}
-				}
-	frame = {
-		number = 1
-		trigger = { always = yes }
-				}			
-}
-
-custom_button = {
-	name = we_drinks_10
-    potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
-	frame = {
-		number = 2
-		trigger = { has_country_flag = we_drinks_mead}
-				}
-	frame = {
-		number = 1
-		trigger = { always = yes }
-				}			
-}
-
-
-
-custom_button = {
-	name = we_drinks_11
-    potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
-	frame = {
-		number = 2
-		trigger = { has_country_flag = we_drinks_mead}
-				}
-	frame = {
-		number = 1
-		trigger = { always = yes }
-				}			
-}
-
-custom_button = {
-	name = we_drinks_12
-    potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
-	frame = {
-		number = 2
-		trigger = { has_country_flag = we_drinks_mead}
-				}
-	frame = {
-		number = 1
-		trigger = { always = yes }
-				}			
-}
-
-#TECH TREE WINDOW
-
-custom_window = {
-	name = acw_naval_tech_window
-	potential = { has_country_flag = acw_naval_tech_tree_open }
-}
-
-
-custom_button = {
-	name = acw_naval_tech_tree_window_open_button
-    potential = { has_country_flag = acw_navy_background_open_already }
-  	trigger = { }
-  	effect = { 
-				clr_country_flag = we_drinks_map_open
-				set_country_flag = acw_naval_tech_tree_open
-				set_country_flag = acw_n_tech_pg1
-			}
-	}	
-	
-custom_button = {
-	name = acw_naval_tech_window_close
-    potential = {} 
-  	trigger = { }
-  	effect = { 
-				clr_country_flag = acw_naval_tech_tree_open
-                acw_clear_all_n_tech_pages = yes
-			}
-	}
-	
-custom_text_box = {
-	name = acw_naval_tech_title_text
-    potential = { has_country_flag = acw_naval_tech_tree_open }
-}
-
-custom_icon = {
-	name = acw_naval_tech_window_bg
-	potential = { has_country_flag = acw_naval_tech_tree_open }
-}
-
-	
-	
-## NAVAL HD SLOTS
-#hd slot 1
-custom_icon = {
-	name = acw_hd_navy_image_1
-	tooltip = acw_hd_slot_1_tt
-	potential = { has_country_flag = acw_navy_background_open_already }
-	frame = {	number = 2
-				trigger = {has_country_flag = acw_hd_navy_s1_1}
-				}
-	
-	frame = {	number = 3
-				trigger = {has_country_flag = acw_hd_navy_s1_2}
-				}	
-				
-	frame = {	number = 4
-				trigger = {has_country_flag = acw_hd_navy_s1_3}
-				}
-	
-	frame = {	number = 5
-				trigger = {has_country_flag = acw_hd_navy_s1_4}
-				}	
-				
-	frame = {	number = 6
-				trigger = {has_country_flag = acw_hd_navy_s1_5}
-				}
-	
-	frame = {	number = 7
-				trigger = {has_country_flag = acw_hd_navy_s1_6}
-				}	
-				
-	frame = {	number = 8
-				trigger = {has_country_flag = acw_hd_navy_s1_7}
-				}
-	
-	frame = {	number = 9
-				trigger = {has_country_flag = acw_hd_navy_s1_8}
-				}	
-
-	frame = {	number = 10
-				trigger = {has_country_flag = acw_hd_navy_s1_9}
-				}
-	
-	frame = {	number = 11
-				trigger = {has_country_flag = acw_hd_navy_s1_10}
-				}	
-				
-	frame = {	number = 12
-				trigger = {has_country_flag = acw_hd_navy_s1_11}
-				}
-	
-	frame = {	number = 13
-				trigger = {has_country_flag = acw_hd_navy_s1_12}
-				}	
-
-	frame = {	number = 14
-				trigger = {has_country_flag = acw_hd_navy_s1_13}
-				}
-	
-	frame = {	number = 15
-				trigger = {has_country_flag = acw_hd_navy_s1_14}
-				}	
-				
-	frame = {	number = 16
-				trigger = {has_country_flag = acw_hd_navy_s1_15}
-				}
-	
-	frame = {	number = 17
-				trigger = {has_country_flag = acw_hd_navy_s1_16}
-				}	
-				
-	frame = {	number = 18
-				trigger = {has_country_flag = acw_hd_navy_s1_17}
-				}
-	
-	frame = {	number = 19
-				trigger = {has_country_flag = acw_hd_navy_s1_18}
-				}	
-				
-	frame = {	number = 20
-				trigger = {has_country_flag = acw_hd_navy_s1_19}
-				}
-	
-	frame = {	number = 21
-				trigger = {has_country_flag = acw_hd_navy_s1_20}
-				}
-}
-
-#hd slot 2
-custom_icon = {
-	name = acw_hd_navy_image_2
-	tooltip = acw_hd_slot_2_tt
-	potential = { has_country_flag = acw_navy_background_open_already }
-	frame = {	number = 2
-				trigger = {has_country_flag = acw_hd_navy_s2_1}
-				}
-	
-	frame = {	number = 3
-				trigger = {has_country_flag = acw_hd_navy_s2_2}
-				}	
-				
-	frame = {	number = 4
-				trigger = {has_country_flag = acw_hd_navy_s2_3}
-				}
-	
-	frame = {	number = 5
-				trigger = {has_country_flag = acw_hd_navy_s2_4}
-				}	
-				
-	frame = {	number = 6
-				trigger = {has_country_flag = acw_hd_navy_s2_5}
-				}
-	
-	frame = {	number = 7
-				trigger = {has_country_flag = acw_hd_navy_s2_6}
-				}	
-				
-	frame = {	number = 8
-				trigger = {has_country_flag = acw_hd_navy_s2_7}
-				}
-	
-	frame = {	number = 9
-				trigger = {has_country_flag = acw_hd_navy_s2_8}
-				}	
-
-	frame = {	number = 10
-				trigger = {has_country_flag = acw_hd_navy_s2_9}
-				}
-	
-	frame = {	number = 11
-				trigger = {has_country_flag = acw_hd_navy_s2_10}
-				}	
-				
-	frame = {	number = 12
-				trigger = {has_country_flag = acw_hd_navy_s2_11}
-				}
-	
-	frame = {	number = 13
-				trigger = {has_country_flag = acw_hd_navy_s2_12}
-				}	
-
-	frame = {	number = 14
-				trigger = {has_country_flag = acw_hd_navy_s2_13}
-				}
-	
-	frame = {	number = 15
-				trigger = {has_country_flag = acw_hd_navy_s2_14}
-				}	
-				
-	frame = {	number = 16
-				trigger = {has_country_flag = acw_hd_navy_s2_15}
-				}
-	
-	frame = {	number = 17
-				trigger = {has_country_flag = acw_hd_navy_s2_16}
-				}	
-				
-	frame = {	number = 18
-				trigger = {has_country_flag = acw_hd_navy_s2_17}
-				}
-	
-	frame = {	number = 19
-				trigger = {has_country_flag = acw_hd_navy_s2_18}
-				}	
-				
-	frame = {	number = 20
-				trigger = {has_country_flag = acw_hd_navy_s2_19}
-				}
-	
-	frame = {	number = 21
-				trigger = {has_country_flag = acw_hd_navy_s2_20}
-				}
-}
-
-#hd slot 3
-custom_icon = {
-	name = acw_hd_navy_image_3
-	tooltip = acw_hd_slot_3_tt
-	potential = { has_country_flag = acw_navy_background_open_already }
-	frame = {	number = 2
-				trigger = {has_country_flag = acw_hd_navy_s3_1}
-				}
-	
-	frame = {	number = 3
-				trigger = {has_country_flag = acw_hd_navy_s3_2}
-				}	
-				
-	frame = {	number = 4
-				trigger = {has_country_flag = acw_hd_navy_s3_3}
-				}
-	
-	frame = {	number = 5
-				trigger = {has_country_flag = acw_hd_navy_s3_4}
-				}	
-				
-	frame = {	number = 6
-				trigger = {has_country_flag = acw_hd_navy_s3_5}
-				}
-	
-	frame = {	number = 7
-				trigger = {has_country_flag = acw_hd_navy_s3_6}
-				}	
-				
-	frame = {	number = 8
-				trigger = {has_country_flag = acw_hd_navy_s3_7}
-				}
-	
-	frame = {	number = 9
-				trigger = {has_country_flag = acw_hd_navy_s3_8}
-				}	
-
-	frame = {	number = 10
-				trigger = {has_country_flag = acw_hd_navy_s3_9}
-				}
-	
-	frame = {	number = 11
-				trigger = {has_country_flag = acw_hd_navy_s3_10}
-				}	
-				
-	frame = {	number = 12
-				trigger = {has_country_flag = acw_hd_navy_s3_11}
-				}
-	
-	frame = {	number = 13
-				trigger = {has_country_flag = acw_hd_navy_s3_12}
-				}	
-
-	frame = {	number = 14
-				trigger = {has_country_flag = acw_hd_navy_s3_13}
-				}
-	
-	frame = {	number = 15
-				trigger = {has_country_flag = acw_hd_navy_s3_14}
-				}	
-				
-	frame = {	number = 16
-				trigger = {has_country_flag = acw_hd_navy_s3_15}
-				}
-	
-	frame = {	number = 17
-				trigger = {has_country_flag = acw_hd_navy_s3_16}
-				}	
-				
-	frame = {	number = 18
-				trigger = {has_country_flag = acw_hd_navy_s3_17}
-				}
-	
-	frame = {	number = 19
-				trigger = {has_country_flag = acw_hd_navy_s3_18}
-				}	
-				
-	frame = {	number = 20
-				trigger = {has_country_flag = acw_hd_navy_s3_19}
-				}
-	
-	frame = {	number = 21
-				trigger = {has_country_flag = acw_hd_navy_s3_20}
-				}
-}	
-
-#heroic deeds icons
-custom_icon = {
-	name = acw_hd_navy_slot_1 
-    potential = {has_country_flag = acw_navy_background_open_already}
-}
-
-custom_icon = {
-	name = acw_hd_navy_slot_2
-    potential = {has_country_flag = acw_navy_background_open_already} 
-}
-
-custom_icon = {
-	name = acw_hd_navy_slot_3
-    potential = {has_country_flag = acw_navy_background_open_already} 
-}
-
-custom_text_box = {
-	name = acw_navy_window_hd_text
-	potential = {has_country_flag = acw_navy_background_open_already}
-}
-
-custom_window = {
-	name = naval_professionalism
-	potential = {has_country_flag = acw_navy_background_open_already}
-}
-
-
-#unit levels banner+text, upgrades
-## galley
-
-custom_icon = {
-	name = acw_navy_window_galley_levels_indicator_text_banner
-    potential = {has_country_flag = acw_navy_background_open_already} 
-	}
-	
-custom_text_box = {
-	name = acw_navy_window_galley_levels_indicator_text
-    potential = {has_country_flag = acw_navy_background_open_already} 
-		}
-		
-custom_icon = {
-	name = acw_galley_levels_indicator_icon
-    potential = {has_country_flag = acw_navy_background_open_already } 
-	frame = {
-		number = 11
-		trigger = {has_country_modifier = acw_galley_upgrade_t10}
-		}
-	
-	frame = {
-		number = 10
-		trigger = {has_country_modifier = acw_galley_upgrade_t9}
-		}
-	
-	frame = {
-		number = 9
-		trigger = {has_country_modifier = acw_galley_upgrade_t8}
-		}	
-	frame = {
-		number = 8
-		trigger = {has_country_modifier = acw_galley_upgrade_t7}
-		}
-	frame = {
-		number = 7
-		trigger = {has_country_modifier = acw_galley_upgrade_t6}
-		}
-	frame = {
-		number = 6
-		trigger = {has_country_modifier = acw_galley_upgrade_t5}
-		}
-	frame = {
-		number = 5
-		trigger = {has_country_modifier = acw_galley_upgrade_t4}
-		}
-	frame = {
-		number = 4
-		trigger = {has_country_modifier = acw_galley_upgrade_t3}
-		}	
-	frame = {
-		number = 3
-		trigger = {has_country_modifier = acw_galley_upgrade_t2}
-		}	
-	frame = {
-		number = 2
-		trigger = {has_country_modifier = acw_galley_upgrade_t1}
-		}
-
-}
-
-custom_button = {
-	name = acw_galley_upgrade_minus
-    potential = {has_country_flag = acw_navy_background_open_already} 
-  	trigger = {	
-					hidden_trigger = {
-						OR = {	has_country_modifier	= 	acw_galley_upgrade_t10
-								has_country_modifier	= 	acw_galley_upgrade_t9
-								has_country_modifier	=	acw_galley_upgrade_t8
-								has_country_modifier	=	acw_galley_upgrade_t7
-								has_country_modifier	=	acw_galley_upgrade_t6
-								has_country_modifier	=	acw_galley_upgrade_t5
-								has_country_modifier	=	acw_galley_upgrade_t4
-								has_country_modifier	=	acw_galley_upgrade_t3
-								has_country_modifier	=	acw_galley_upgrade_t2
-								has_country_modifier	=	acw_galley_upgrade_t1
-								}	
-							}
-			}
-		
-  	effect = {	
-				if = {limit = {has_country_modifier=acw_galley_upgrade_t1}
-						add_army_professionalism = 0.02
-						hidden_effect = {
-							remove_country_modifier = acw_galley_upgrade_t1	
-						}	
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t2}
-					add_army_professionalism = 0.07
-					hidden_effect = {
-							remove_country_modifier = acw_galley_upgrade_t2	
-						}	
-					add_country_modifier = {name = acw_galley_upgrade_t1
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t3}
-					add_army_professionalism = 0.1
-					hidden_effect = {
-							remove_country_modifier = acw_galley_upgrade_t3	
-						}	
-					add_country_modifier = {name = acw_galley_upgrade_t2
-											duration = -1
-											}					
-					}
-				
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t4}
-					add_army_professionalism = 0.125
-					hidden_effect = {
-							remove_country_modifier = acw_galley_upgrade_t4	
-						}	
-					add_country_modifier = {name = acw_galley_upgrade_t3
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t5}
-					add_army_professionalism = 0.15
-					hidden_effect = {
-							remove_country_modifier = acw_galley_upgrade_t5	
-						}	
-					add_country_modifier = {name = acw_galley_upgrade_t4
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t6}
-					add_army_professionalism = 0.175
-					hidden_effect = {
-							remove_country_modifier = acw_galley_upgrade_t6
-						}	
-					add_country_modifier = {name = acw_galley_upgrade_t5
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t7}
-					add_army_professionalism = 0.2
-					hidden_effect = {
-							remove_country_modifier = acw_galley_upgrade_t7	
-						}	
-					add_country_modifier = {name = acw_galley_upgrade_t6
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t8}
-					add_army_professionalism = 0.22
-					hidden_effect = {
-							remove_country_modifier = acw_galley_upgrade_t8	
-						}	
-					add_country_modifier = {name = acw_galley_upgrade_t7
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t9}
-					add_army_professionalism = 0.25
-					hidden_effect = {
-							remove_country_modifier = acw_galley_upgrade_t9
-						}	
-					add_country_modifier = {name = acw_galley_upgrade_t8
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t10}
-					add_army_professionalism = 0.3
-					hidden_effect = {
-							remove_country_modifier = acw_galley_upgrade_t10
-						}	
-					add_country_modifier = {name = acw_galley_upgrade_t9
-											duration = -1
-											}					
-					}
-					
-				else = {}
-		}
-}
-
-
-custom_button = {
-	name = acw_galley_upgrade_plus
-    potential = {has_country_flag = acw_navy_background_open_already} 
-  	trigger = {	
-	hidden_trigger = {
-				NOT = {has_country_modifier = acw_galley_upgrade_t10 }
-			}
-			if = {limit = {has_country_modifier=acw_galley_upgrade_t1}
-				army_professionalism = 0.10 }
-			else_if = {limit = {has_country_modifier=acw_galley_upgrade_t2}
-				army_professionalism = 0.15 }
-			else_if = {limit = {has_country_modifier=acw_galley_upgrade_t3}
-				army_professionalism = 0.20 }
-			else_if = {limit = {has_country_modifier=acw_galley_upgrade_t4}
-				army_professionalism = 0.25 }
-			else_if = {limit = {has_country_modifier=acw_galley_upgrade_t5}
-				army_professionalism = 0.30 }
-			else_if = {limit = {has_country_modifier=acw_galley_upgrade_t6}
-				army_professionalism = 0.35 }
-			else_if = {limit = {has_country_modifier=acw_galley_upgrade_t7}
-				army_professionalism = 0.40 }
-			else_if = {limit = {has_country_modifier=acw_galley_upgrade_t8}
-				army_professionalism = 0.50 }
-			else_if = {limit = {has_country_modifier=acw_galley_upgrade_t9}
-				army_professionalism = 0.60 }
-			else = {army_professionalism = 0.05 }
-			 }
-		
-  	effect = {
-				if = {limit = {has_country_modifier=acw_galley_upgrade_t9}
-					add_army_professionalism = -0.6
-					hidden_effect = {
-						remove_country_modifier = acw_galley_upgrade_t9
-						}
-					add_country_modifier = {name = acw_galley_upgrade_t10
-											duration = -1
-											}					
-					}
-				
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t8}
-					add_army_professionalism = -0.5
-					hidden_effect = {
-						remove_country_modifier = acw_galley_upgrade_t8
-						}
-					add_country_modifier = {name = acw_galley_upgrade_t9
-											duration = -1
-											}					
-					}
-											
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t7}
-					add_army_professionalism = -0.4
-					hidden_effect = {
-						remove_country_modifier = acw_galley_upgrade_t7
-						}
-					add_country_modifier = {name = acw_galley_upgrade_t8
-											duration = -1
-											}					
-					}
-				
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t6}
-					add_army_professionalism = -0.35
-					hidden_effect = {
-						remove_country_modifier = acw_galley_upgrade_t6
-						}
-					add_country_modifier = {name = acw_galley_upgrade_t7
-											duration = -1
-											}					
-					}
-
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t5}
-					add_army_professionalism = -0.30
-					hidden_effect = {
-						remove_country_modifier = acw_galley_upgrade_t5
-						}
-					add_country_modifier = {name = acw_galley_upgrade_t6
-											duration = -1
-											}					
-					}			
-				
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t4}
-					add_army_professionalism = -0.25
-					hidden_effect = {
-						remove_country_modifier = acw_galley_upgrade_t4
-						}
-					add_country_modifier = {name = acw_galley_upgrade_t5
-											duration = -1
-											}					
-					}	
-				
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t3}
-					add_army_professionalism = -0.20
-					hidden_effect = {
-						remove_country_modifier = acw_galley_upgrade_t3
-						}
-					add_country_modifier = {name = acw_galley_upgrade_t4
-											duration = -1
-											}					
-					}		
-					
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t2}
-					add_army_professionalism = -0.15
-					hidden_effect = {
-						remove_country_modifier = acw_galley_upgrade_t2
-						}
-					add_country_modifier = {name = acw_galley_upgrade_t3
-											duration = -1
-											}					
-					}		
-					
-				else_if = {limit = {has_country_modifier=acw_galley_upgrade_t1}
-					add_army_professionalism = -0.10
-					hidden_effect = {
-						remove_country_modifier = acw_galley_upgrade_t1
-						}
-					add_country_modifier = {name = acw_galley_upgrade_t2
-											duration = -1
-											}					
-					}		
-					
-				else = {
-					add_army_professionalism = -0.05
-					add_country_modifier = {name = acw_galley_upgrade_t1
-											duration = -1
-											}					
-					}		
-	}
-}
-
-## heavy_ship
-
-custom_icon = {
-	name = acw_navy_window_heavy_ship_levels_indicator_text_banner
-    potential = {has_country_flag = acw_navy_background_open_already} 
-	}
-	
-custom_text_box = {
-	name = acw_navy_window_heavy_ship_levels_indicator_text
-    potential = {has_country_flag = acw_navy_background_open_already} 
-		}
-		
-custom_icon = {
-	name = acw_heavy_ship_levels_indicator_icon
-    potential = {has_country_flag = acw_navy_background_open_already } 
-	frame = {
-		number = 11
-		trigger = {has_country_modifier = acw_heavy_ship_upgrade_t10}
-		}
-	
-	frame = {
-		number = 10
-		trigger = {has_country_modifier = acw_heavy_ship_upgrade_t9}
-		}
-	
-	frame = {
-		number = 9
-		trigger = {has_country_modifier = acw_heavy_ship_upgrade_t8}
-		}	
-	frame = {
-		number = 8
-		trigger = {has_country_modifier = acw_heavy_ship_upgrade_t7}
-		}
-	frame = {
-		number = 7
-		trigger = {has_country_modifier = acw_heavy_ship_upgrade_t6}
-		}
-	frame = {
-		number = 6
-		trigger = {has_country_modifier = acw_heavy_ship_upgrade_t5}
-		}
-	frame = {
-		number = 5
-		trigger = {has_country_modifier = acw_heavy_ship_upgrade_t4}
-		}
-	frame = {
-		number = 4
-		trigger = {has_country_modifier = acw_heavy_ship_upgrade_t3}
-		}	
-	frame = {
-		number = 3
-		trigger = {has_country_modifier = acw_heavy_ship_upgrade_t2}
-		}	
-	frame = {
-		number = 2
-		trigger = {has_country_modifier = acw_heavy_ship_upgrade_t1}
-		}
-
-}
-
-custom_button = {
-	name = acw_heavy_ship_upgrade_minus
-    potential = {has_country_flag = acw_navy_background_open_already} 
-  	trigger = {	
-					hidden_trigger = {
-						OR = {	has_country_modifier	= 	acw_heavy_ship_upgrade_t10
-								has_country_modifier	= 	acw_heavy_ship_upgrade_t9
-								has_country_modifier	=	acw_heavy_ship_upgrade_t8
-								has_country_modifier	=	acw_heavy_ship_upgrade_t7
-								has_country_modifier	=	acw_heavy_ship_upgrade_t6
-								has_country_modifier	=	acw_heavy_ship_upgrade_t5
-								has_country_modifier	=	acw_heavy_ship_upgrade_t4
-								has_country_modifier	=	acw_heavy_ship_upgrade_t3
-								has_country_modifier	=	acw_heavy_ship_upgrade_t2
-								has_country_modifier	=	acw_heavy_ship_upgrade_t1
-								}	
-							}
-			}
-		
-  	effect = {	
-				if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t1}
-						add_army_professionalism = 0.02
-						hidden_effect = {
-							remove_country_modifier = acw_heavy_ship_upgrade_t1	
-						}	
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t2}
-					add_army_professionalism = 0.07
-					hidden_effect = {
-							remove_country_modifier = acw_heavy_ship_upgrade_t2	
-						}	
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t1
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t3}
-					add_army_professionalism = 0.1
-					hidden_effect = {
-							remove_country_modifier = acw_heavy_ship_upgrade_t3	
-						}	
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t2
-											duration = -1
-											}					
-					}
-				
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t4}
-					add_army_professionalism = 0.125
-					hidden_effect = {
-							remove_country_modifier = acw_heavy_ship_upgrade_t4	
-						}	
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t3
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t5}
-					add_army_professionalism = 0.15
-					hidden_effect = {
-							remove_country_modifier = acw_heavy_ship_upgrade_t5	
-						}	
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t4
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t6}
-					add_army_professionalism = 0.175
-					hidden_effect = {
-							remove_country_modifier = acw_heavy_ship_upgrade_t6
-						}	
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t5
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t7}
-					add_army_professionalism = 0.2
-					hidden_effect = {
-							remove_country_modifier = acw_heavy_ship_upgrade_t7	
-						}	
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t6
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t8}
-					add_army_professionalism = 0.22
-					hidden_effect = {
-							remove_country_modifier = acw_heavy_ship_upgrade_t8	
-						}	
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t7
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t9}
-					add_army_professionalism = 0.25
-					hidden_effect = {
-							remove_country_modifier = acw_heavy_ship_upgrade_t9
-						}	
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t8
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t10}
-					add_army_professionalism = 0.3
-					hidden_effect = {
-							remove_country_modifier = acw_heavy_ship_upgrade_t10
-						}	
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t9
-											duration = -1
-											}					
-					}
-					
-				else = {}
-		}
-}
-
-
-custom_button = {
-	name = acw_heavy_ship_upgrade_plus
-    potential = {has_country_flag = acw_navy_background_open_already} 
-  	trigger = {	
-	hidden_trigger = {
-				NOT = {has_country_modifier = acw_heavy_ship_upgrade_t10 }
-			}
-			if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t1}
-				army_professionalism = 0.10 }
-			else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t2}
-				army_professionalism = 0.15 }
-			else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t3}
-				army_professionalism = 0.20 }
-			else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t4}
-				army_professionalism = 0.25 }
-			else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t5}
-				army_professionalism = 0.30 }
-			else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t6}
-				army_professionalism = 0.35 }
-			else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t7}
-				army_professionalism = 0.40 }
-			else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t8}
-				army_professionalism = 0.50 }
-			else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t9}
-				army_professionalism = 0.60 }
-			else = {army_professionalism = 0.05 }
-			 }
-		
-  	effect = {
-				if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t9}
-					add_army_professionalism = -0.6
-					hidden_effect = {
-						remove_country_modifier = acw_heavy_ship_upgrade_t9
-						}
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t10
-											duration = -1
-											}					
-					}
-				
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t8}
-					add_army_professionalism = -0.5
-					hidden_effect = {
-						remove_country_modifier = acw_heavy_ship_upgrade_t8
-						}
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t9
-											duration = -1
-											}					
-					}
-											
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t7}
-					add_army_professionalism = -0.4
-					hidden_effect = {
-						remove_country_modifier = acw_heavy_ship_upgrade_t7
-						}
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t8
-											duration = -1
-											}					
-					}
-				
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t6}
-					add_army_professionalism = -0.35
-					hidden_effect = {
-						remove_country_modifier = acw_heavy_ship_upgrade_t6
-						}
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t7
-											duration = -1
-											}					
-					}
-
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t5}
-					add_army_professionalism = -0.30
-					hidden_effect = {
-						remove_country_modifier = acw_heavy_ship_upgrade_t5
-						}
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t6
-											duration = -1
-											}					
-					}			
-				
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t4}
-					add_army_professionalism = -0.25
-					hidden_effect = {
-						remove_country_modifier = acw_heavy_ship_upgrade_t4
-						}
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t5
-											duration = -1
-											}					
-					}	
-				
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t3}
-					add_army_professionalism = -0.20
-					hidden_effect = {
-						remove_country_modifier = acw_heavy_ship_upgrade_t3
-						}
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t4
-											duration = -1
-											}					
-					}		
-					
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t2}
-					add_army_professionalism = -0.15
-					hidden_effect = {
-						remove_country_modifier = acw_heavy_ship_upgrade_t2
-						}
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t3
-											duration = -1
-											}					
-					}		
-					
-				else_if = {limit = {has_country_modifier=acw_heavy_ship_upgrade_t1}
-					add_army_professionalism = -0.10
-					hidden_effect = {
-						remove_country_modifier = acw_heavy_ship_upgrade_t1
-						}
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t2
-											duration = -1
-											}					
-					}		
-					
-				else = {
-					add_army_professionalism = -0.05
-					add_country_modifier = {name = acw_heavy_ship_upgrade_t1
-											duration = -1
-											}					
-					}		
-	}
-}
-
-## light_ship
-
-custom_icon = {
-	name = acw_navy_window_light_ship_levels_indicator_text_banner
-    potential = {has_country_flag = acw_navy_background_open_already} 
-	}
-	
-custom_text_box = {
-	name = acw_navy_window_light_ship_levels_indicator_text
-    potential = {has_country_flag = acw_navy_background_open_already} 
-		}
-		
-custom_icon = {
-	name = acw_light_ship_levels_indicator_icon
-    potential = {has_country_flag = acw_navy_background_open_already } 
-	frame = {
-		number = 11
-		trigger = {has_country_modifier = acw_light_ship_upgrade_t10}
-		}
-	
-	frame = {
-		number = 10
-		trigger = {has_country_modifier = acw_light_ship_upgrade_t9}
-		}
-	
-	frame = {
-		number = 9
-		trigger = {has_country_modifier = acw_light_ship_upgrade_t8}
-		}	
-	frame = {
-		number = 8
-		trigger = {has_country_modifier = acw_light_ship_upgrade_t7}
-		}
-	frame = {
-		number = 7
-		trigger = {has_country_modifier = acw_light_ship_upgrade_t6}
-		}
-	frame = {
-		number = 6
-		trigger = {has_country_modifier = acw_light_ship_upgrade_t5}
-		}
-	frame = {
-		number = 5
-		trigger = {has_country_modifier = acw_light_ship_upgrade_t4}
-		}
-	frame = {
-		number = 4
-		trigger = {has_country_modifier = acw_light_ship_upgrade_t3}
-		}	
-	frame = {
-		number = 3
-		trigger = {has_country_modifier = acw_light_ship_upgrade_t2}
-		}	
-	frame = {
-		number = 2
-		trigger = {has_country_modifier = acw_light_ship_upgrade_t1}
-		}
-
-}
-
-custom_button = {
-	name = acw_light_ship_upgrade_minus
-    potential = {has_country_flag = acw_navy_background_open_already} 
-  	trigger = {	
-					hidden_trigger = {
-						OR = {	has_country_modifier	= 	acw_light_ship_upgrade_t10
-								has_country_modifier	= 	acw_light_ship_upgrade_t9
-								has_country_modifier	=	acw_light_ship_upgrade_t8
-								has_country_modifier	=	acw_light_ship_upgrade_t7
-								has_country_modifier	=	acw_light_ship_upgrade_t6
-								has_country_modifier	=	acw_light_ship_upgrade_t5
-								has_country_modifier	=	acw_light_ship_upgrade_t4
-								has_country_modifier	=	acw_light_ship_upgrade_t3
-								has_country_modifier	=	acw_light_ship_upgrade_t2
-								has_country_modifier	=	acw_light_ship_upgrade_t1
-								}	
-							}
-			}
-		
-  	effect = {	
-				if = {limit = {has_country_modifier=acw_light_ship_upgrade_t1}
-						add_army_professionalism = 0.02
-						hidden_effect = {
-							remove_country_modifier = acw_light_ship_upgrade_t1	
-						}	
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t2}
-					add_army_professionalism = 0.07
-					hidden_effect = {
-							remove_country_modifier = acw_light_ship_upgrade_t2	
-						}	
-					add_country_modifier = {name = acw_light_ship_upgrade_t1
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t3}
-					add_army_professionalism = 0.1
-					hidden_effect = {
-							remove_country_modifier = acw_light_ship_upgrade_t3	
-						}	
-					add_country_modifier = {name = acw_light_ship_upgrade_t2
-											duration = -1
-											}					
-					}
-				
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t4}
-					add_army_professionalism = 0.125
-					hidden_effect = {
-							remove_country_modifier = acw_light_ship_upgrade_t4	
-						}	
-					add_country_modifier = {name = acw_light_ship_upgrade_t3
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t5}
-					add_army_professionalism = 0.15
-					hidden_effect = {
-							remove_country_modifier = acw_light_ship_upgrade_t5	
-						}	
-					add_country_modifier = {name = acw_light_ship_upgrade_t4
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t6}
-					add_army_professionalism = 0.175
-					hidden_effect = {
-							remove_country_modifier = acw_light_ship_upgrade_t6
-						}	
-					add_country_modifier = {name = acw_light_ship_upgrade_t5
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t7}
-					add_army_professionalism = 0.2
-					hidden_effect = {
-							remove_country_modifier = acw_light_ship_upgrade_t7	
-						}	
-					add_country_modifier = {name = acw_light_ship_upgrade_t6
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t8}
-					add_army_professionalism = 0.22
-					hidden_effect = {
-							remove_country_modifier = acw_light_ship_upgrade_t8	
-						}	
-					add_country_modifier = {name = acw_light_ship_upgrade_t7
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t9}
-					add_army_professionalism = 0.25
-					hidden_effect = {
-							remove_country_modifier = acw_light_ship_upgrade_t9
-						}	
-					add_country_modifier = {name = acw_light_ship_upgrade_t8
-											duration = -1
-											}					
-					}
-					
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t10}
-					add_army_professionalism = 0.3
-					hidden_effect = {
-							remove_country_modifier = acw_light_ship_upgrade_t10
-						}	
-					add_country_modifier = {name = acw_light_ship_upgrade_t9
-											duration = -1
-											}					
-					}
-					
-				else = {}
-		}
-}
-
-
-custom_button = {
-	name = acw_light_ship_upgrade_plus
-    potential = {has_country_flag = acw_navy_background_open_already} 
-  	trigger = {	
-	hidden_trigger = {
-				NOT = {has_country_modifier = acw_light_ship_upgrade_t10 }
-			}
-			if = {limit = {has_country_modifier=acw_light_ship_upgrade_t1}
-				army_professionalism = 0.10 }
-			else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t2}
-				army_professionalism = 0.15 }
-			else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t3}
-				army_professionalism = 0.20 }
-			else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t4}
-				army_professionalism = 0.25 }
-			else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t5}
-				army_professionalism = 0.30 }
-			else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t6}
-				army_professionalism = 0.35 }
-			else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t7}
-				army_professionalism = 0.40 }
-			else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t8}
-				army_professionalism = 0.50 }
-			else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t9}
-				army_professionalism = 0.60 }
-			else = {army_professionalism = 0.05 }
-			 }
-		
-  	effect = {
-				if = {limit = {has_country_modifier=acw_light_ship_upgrade_t9}
-					add_army_professionalism = -0.6
-					hidden_effect = {
-						remove_country_modifier = acw_light_ship_upgrade_t9
-						}
-					add_country_modifier = {name = acw_light_ship_upgrade_t10
-											duration = -1
-											}					
-					}
-				
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t8}
-					add_army_professionalism = -0.5
-					hidden_effect = {
-						remove_country_modifier = acw_light_ship_upgrade_t8
-						}
-					add_country_modifier = {name = acw_light_ship_upgrade_t9
-											duration = -1
-											}					
-					}
-											
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t7}
-					add_army_professionalism = -0.4
-					hidden_effect = {
-						remove_country_modifier = acw_light_ship_upgrade_t7
-						}
-					add_country_modifier = {name = acw_light_ship_upgrade_t8
-											duration = -1
-											}					
-					}
-				
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t6}
-					add_army_professionalism = -0.35
-					hidden_effect = {
-						remove_country_modifier = acw_light_ship_upgrade_t6
-						}
-					add_country_modifier = {name = acw_light_ship_upgrade_t7
-											duration = -1
-											}					
-					}
-
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t5}
-					add_army_professionalism = -0.30
-					hidden_effect = {
-						remove_country_modifier = acw_light_ship_upgrade_t5
-						}
-					add_country_modifier = {name = acw_light_ship_upgrade_t6
-											duration = -1
-											}					
-					}			
-				
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t4}
-					add_army_professionalism = -0.25
-					hidden_effect = {
-						remove_country_modifier = acw_light_ship_upgrade_t4
-						}
-					add_country_modifier = {name = acw_light_ship_upgrade_t5
-											duration = -1
-											}					
-					}	
-				
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t3}
-					add_army_professionalism = -0.20
-					hidden_effect = {
-						remove_country_modifier = acw_light_ship_upgrade_t3
-						}
-					add_country_modifier = {name = acw_light_ship_upgrade_t4
-											duration = -1
-											}					
-					}		
-					
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t2}
-					add_army_professionalism = -0.15
-					hidden_effect = {
-						remove_country_modifier = acw_light_ship_upgrade_t2
-						}
-					add_country_modifier = {name = acw_light_ship_upgrade_t3
-											duration = -1
-											}					
-					}		
-					
-				else_if = {limit = {has_country_modifier=acw_light_ship_upgrade_t1}
-					add_army_professionalism = -0.10
-					hidden_effect = {
-						remove_country_modifier = acw_light_ship_upgrade_t1
-						}
-					add_country_modifier = {name = acw_light_ship_upgrade_t2
-											duration = -1
-											}					
-					}		
-					
-				else = {
-					add_army_professionalism = -0.05
-					add_country_modifier = {name = acw_light_ship_upgrade_t1
-											duration = -1
-											}					
-					}		
-	}
-}
-
-
-##TECHTREE
-custom_button = {
-	name = acw_techtree_upButton
-	potential = { has_country_flag = acw_naval_tech_tree_open}
-	trigger = { NOT = { has_country_flag = acw_n_tech_pg27 } }
-	effect = {
-		IF = { limit = { has_country_flag = acw_n_tech_pg1 } set_country_flag = acw_n_tech_pg2 clr_country_flag = acw_n_tech_pg1 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg2 } set_country_flag = acw_n_tech_pg3 clr_country_flag = acw_n_tech_pg2 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg3 } set_country_flag = acw_n_tech_pg4 clr_country_flag = acw_n_tech_pg3 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg4 } set_country_flag = acw_n_tech_pg5 clr_country_flag = acw_n_tech_pg4 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg5 } set_country_flag = acw_n_tech_pg6 clr_country_flag = acw_n_tech_pg5 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg6 } set_country_flag = acw_n_tech_pg7 clr_country_flag = acw_n_tech_pg6 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg7 } set_country_flag = acw_n_tech_pg8 clr_country_flag = acw_n_tech_pg7 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg8 } set_country_flag = acw_n_tech_pg9 clr_country_flag = acw_n_tech_pg8 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg9 } set_country_flag = acw_n_tech_pg10 clr_country_flag = acw_n_tech_pg9 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg10 } set_country_flag = acw_n_tech_pg11 clr_country_flag = acw_n_tech_pg10 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg11 } set_country_flag = acw_n_tech_pg12 clr_country_flag = acw_n_tech_pg11 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg12 } set_country_flag = acw_n_tech_pg13 clr_country_flag = acw_n_tech_pg12 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg13 } set_country_flag = acw_n_tech_pg14 clr_country_flag = acw_n_tech_pg13 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg14 } set_country_flag = acw_n_tech_pg15 clr_country_flag = acw_n_tech_pg14 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg15 } set_country_flag = acw_n_tech_pg16 clr_country_flag = acw_n_tech_pg15 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg16 } set_country_flag = acw_n_tech_pg17 clr_country_flag = acw_n_tech_pg16 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg17 } set_country_flag = acw_n_tech_pg18 clr_country_flag = acw_n_tech_pg17 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg18 } set_country_flag = acw_n_tech_pg19 clr_country_flag = acw_n_tech_pg18 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg19 } set_country_flag = acw_n_tech_pg20 clr_country_flag = acw_n_tech_pg19 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg20 } set_country_flag = acw_n_tech_pg21 clr_country_flag = acw_n_tech_pg20 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg21 } set_country_flag = acw_n_tech_pg22 clr_country_flag = acw_n_tech_pg21 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg22 } set_country_flag = acw_n_tech_pg23 clr_country_flag = acw_n_tech_pg22 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg23 } set_country_flag = acw_n_tech_pg24 clr_country_flag = acw_n_tech_pg23 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg24 } set_country_flag = acw_n_tech_pg25 clr_country_flag = acw_n_tech_pg24 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg25 } set_country_flag = acw_n_tech_pg26 clr_country_flag = acw_n_tech_pg25 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg26 } set_country_flag = acw_n_tech_pg27 clr_country_flag = acw_n_tech_pg26 }
-	}
-}
-	
-custom_button = {
-	name = acw_techtree_downButton
-	potential = { has_country_flag = acw_naval_tech_tree_open}
-	trigger = { NOT = { has_country_flag = acw_n_tech_pg1 } }
-	effect = {
-		IF = { limit = { has_country_flag = acw_n_tech_pg2 } set_country_flag = acw_n_tech_pg1 clr_country_flag = acw_n_tech_pg2 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg2 } set_country_flag = acw_n_tech_pg1 clr_country_flag = acw_n_tech_pg2 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg3 } set_country_flag = acw_n_tech_pg2 clr_country_flag = acw_n_tech_pg3 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg4 } set_country_flag = acw_n_tech_pg3 clr_country_flag = acw_n_tech_pg4 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg5 } set_country_flag = acw_n_tech_pg4 clr_country_flag = acw_n_tech_pg5 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg6 } set_country_flag = acw_n_tech_pg5 clr_country_flag = acw_n_tech_pg6 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg7 } set_country_flag = acw_n_tech_pg6 clr_country_flag = acw_n_tech_pg7 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg8 } set_country_flag = acw_n_tech_pg7 clr_country_flag = acw_n_tech_pg8 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg9 } set_country_flag = acw_n_tech_pg8 clr_country_flag = acw_n_tech_pg9 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg10 } set_country_flag = acw_n_tech_pg9 clr_country_flag = acw_n_tech_pg10 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg11 } set_country_flag = acw_n_tech_pg10 clr_country_flag = acw_n_tech_pg11 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg12 } set_country_flag = acw_n_tech_pg11 clr_country_flag = acw_n_tech_pg12 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg13 } set_country_flag = acw_n_tech_pg12 clr_country_flag = acw_n_tech_pg13 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg14 } set_country_flag = acw_n_tech_pg13 clr_country_flag = acw_n_tech_pg14 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg15 } set_country_flag = acw_n_tech_pg14 clr_country_flag = acw_n_tech_pg15 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg16 } set_country_flag = acw_n_tech_pg15 clr_country_flag = acw_n_tech_pg16 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg17 } set_country_flag = acw_n_tech_pg16 clr_country_flag = acw_n_tech_pg17 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg18 } set_country_flag = acw_n_tech_pg17 clr_country_flag = acw_n_tech_pg18 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg19 } set_country_flag = acw_n_tech_pg18 clr_country_flag = acw_n_tech_pg19 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg20 } set_country_flag = acw_n_tech_pg19 clr_country_flag = acw_n_tech_pg20 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg21 } set_country_flag = acw_n_tech_pg20 clr_country_flag = acw_n_tech_pg21 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg22 } set_country_flag = acw_n_tech_pg21 clr_country_flag = acw_n_tech_pg22 }		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg23 } set_country_flag = acw_n_tech_pg22 clr_country_flag = acw_n_tech_pg23 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg24 } set_country_flag = acw_n_tech_pg23 clr_country_flag = acw_n_tech_pg24 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg25 } set_country_flag = acw_n_tech_pg24 clr_country_flag = acw_n_tech_pg25 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg26 } set_country_flag = acw_n_tech_pg25 clr_country_flag = acw_n_tech_pg26 }
-		ELSE_IF = { limit = { has_country_flag = acw_n_tech_pg27 } set_country_flag = acw_n_tech_pg26 clr_country_flag = acw_n_tech_pg27 }
-	}
-}	
-
-custom_button = {
-	name = acw_techtree_TrackButton
-	potential = { has_country_flag = acw_naval_tech_tree_open}
-	trigger = { }
-	effect = {}
-}	
-
-custom_button = {
-	name = acw_techtree_SliderButton
-	potential = { has_country_flag = acw_naval_tech_tree_open}
-	trigger = {  }
-	effect = {}
-}		
-
-custom_button = {
-	name = acw_n_tech_button_r1_p1
-
-	potential = { has_country_flag = acw_naval_tech_tree_open }
-	trigger = { 
-			##	acw_n_tech_is_ready = yes
-				}
-	effect = { 
-				IF = {
-					limit = {
-						AND ={
-							OR = {
-								has_country_flag = acw_n_tech_pg1
-								has_country_flag = acw_n_tech_pg2
-								has_country_flag = acw_n_tech_pg3
-								}
-							NOT = { has_country_modifier = acw_improved_rams }
-							}
-						}
-					##	acw_remove_n_tech_cost = yes
-						add_country_modifier = { name = acw_improved_rams duration = -1}
-				}
-				
-				ELSE_IF = {
-					limit = {
-						AND ={
-							OR = {
-								has_country_flag = acw_n_tech_pg7
-								has_country_flag = acw_n_tech_pg8
-								has_country_flag = acw_n_tech_pg9
-								}
-							NOT = { has_country_modifier = acw_lateen_sails }
-							has_country_modifier = acw_improved_rams
-							}
-						}
-					##	acw_remove_n_tech_cost = yes
-						add_country_modifier = { name = acw_lateen_sails duration = -1}
-				}
-				
-				ELSE_IF = {
-					limit = {
-						AND ={
-							OR = {
-								has_country_flag = acw_n_tech_pg13
-								has_country_flag = acw_n_tech_pg14
-								has_country_flag = acw_n_tech_pg15
-								}
-							NOT = { has_country_modifier = acw_three_masted_ships }
-							has_country_modifier = acw_lateen_sails
-							}
-						}
-					##	acw_remove_n_tech_cost = yes
-						add_country_modifier = { name = acw_three_masted_ships duration = -1}
-				}
-				
-				ELSE_IF = {
-					limit = {
-						AND ={
-							OR = {
-								has_country_flag = acw_n_tech_pg19
-								has_country_flag = acw_n_tech_pg20
-								has_country_flag = acw_n_tech_pg21
-								}
-							NOT = { has_country_modifier = acw_full_rigged_ships }
-							has_country_modifier = acw_three_masted_ships
-							}
-						}
-					##	acw_remove_n_tech_cost = yes
-						add_country_modifier = { name = acw_full_rigged_ships duration = -1}
-				}
-				
-				ELSE_IF = {
-					limit = {
-						AND ={
-							OR = {
-								has_country_flag = acw_n_tech_pg25
-								has_country_flag = acw_n_tech_pg26
-								has_country_flag = acw_n_tech_pg27
-								}
-							NOT = { has_country_modifier = acw_improved_sail_materials }
-							has_country_modifier = acw_full_rigged_ships
-							}
-						}
-					##	acw_remove_n_tech_cost = yes
-						add_country_modifier = { name = acw_improved_sail_materials duration = -1}
-				}
-				
-			}
-	frame = {
-		number = 1
-		trigger = { 
-			OR = {
-				has_country_flag = acw_n_tech_pg4 
-				has_country_flag = acw_n_tech_pg5
-				has_country_flag = acw_n_tech_pg6
-				has_country_flag = acw_n_tech_pg10
-				has_country_flag = acw_n_tech_pg11
-				has_country_flag = acw_n_tech_pg12
-				has_country_flag = acw_n_tech_pg16
-				}
-		}
-	}
-
-	###1st image
-	frame = {
-		number = 2
-		trigger = { has_country_flag = acw_n_tech_pg1 }
-		}
-		
-	frame = {
-		number = 3
-		trigger = { has_country_flag = acw_n_tech_pg2 }
-		}
-		
-	frame = {
-		number = 4
-		trigger = { has_country_flag = acw_n_tech_pg3 }
-		}	
-		
-	## 2nd image	
-	frame = {
-		number = 5
-		trigger = { has_country_flag = acw_n_tech_pg7 }
-		}
-		
-	frame = {
-		number = 6
-		trigger = { has_country_flag = acw_n_tech_pg8 }
-		}
-		
-	frame = {
-		number = 7
-		trigger = { has_country_flag = acw_n_tech_pg9 }
-		}
-	
-	## 3rd image	
-	frame = {
-		number = 8
-		trigger = { has_country_flag = acw_n_tech_pg13 }
-		}
-		
-	frame = {
-		number = 9
-		trigger = { has_country_flag = acw_n_tech_pg14 }
-		}
-		
-	frame = {
-		number = 10
-		trigger = { has_country_flag = acw_n_tech_pg15 }
-		}
-		
-		
-}
-
-
-### TECHTREEPAGE2
-custom_button = {
-    name = acw_n_tech_button_r1_p2
-
-    potential = { has_country_flag = acw_naval_tech_tree_open }
-    trigger = { 
-            ##	acw_n_tech_is_ready = yes
-                }
-    effect = { 
-                IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg2
-                                has_country_flag = acw_n_tech_pg3
-                                has_country_flag = acw_n_tech_pg4
-                                }
-                            NOT = { has_country_modifier = acw_improved_rams }
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_improved_rams duration = -1}
-                }
-                
-                ELSE_IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg8
-                                has_country_flag = acw_n_tech_pg9
-                                has_country_flag = acw_n_tech_pg10
-                                }
-                            NOT = { has_country_modifier = acw_lateen_sails }
-                            has_country_modifier = acw_improved_rams
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_lateen_sails duration = -1}
-                }
-                
-                ELSE_IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg14
-                                has_country_flag = acw_n_tech_pg15
-                                has_country_flag = acw_n_tech_pg16
-                                }
-                            NOT = { has_country_modifier = acw_three_masted_ships }
-                            has_country_modifier = acw_lateen_sails
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_three_masted_ships duration = -1}
-                }
-                
-                ELSE_IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg20
-                                has_country_flag = acw_n_tech_pg21
-                                has_country_flag = acw_n_tech_pg22
-                                }
-                            NOT = { has_country_modifier = acw_full_rigged_ships }
-                            has_country_modifier = acw_three_masted_ships
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_full_rigged_ships duration = -1}
-                }
-                
-                ELSE_IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg26
-                                has_country_flag = acw_n_tech_pg27
-                                has_country_flag = acw_n_tech_pg28
-                                }
-                            NOT = { has_country_modifier = acw_improved_sail_materials }
-                            has_country_modifier = acw_full_rigged_ships
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_improved_sail_materials duration = -1}
-                }
-                
-            }
-    frame = {
-        number = 1
-        trigger = { 
-            OR = {
-                has_country_flag = acw_n_tech_pg5 
-                has_country_flag = acw_n_tech_pg6
-                has_country_flag = acw_n_tech_pg7
-                has_country_flag = acw_n_tech_pg11
-                has_country_flag = acw_n_tech_pg12
-                has_country_flag = acw_n_tech_pg13
-                has_country_flag = acw_n_tech_pg17
-                }
-        }
-    }
-
-    ###1st image
-    frame = {
-        number = 2
-        trigger = { has_country_flag = acw_n_tech_pg2 }
-        }
-        
-    frame = {
-        number = 3
-        trigger = { has_country_flag = acw_n_tech_pg3 }
-        }
-        
-    frame = {
-        number = 4
-        trigger = { has_country_flag = acw_n_tech_pg4 }
-        }    
-        
-    ## 2nd image    
-    frame = {
-        number = 5
-        trigger = { has_country_flag = acw_n_tech_pg8 }
-        }
-        
-    frame = {
-        number = 6
-        trigger = { has_country_flag = acw_n_tech_pg9 }
-        }
-        
-    frame = {
-        number = 7
-        trigger = { has_country_flag = acw_n_tech_pg10 }
-        }
-    
-    ## 3rd image    
-    frame = {
-        number = 8
-        trigger = { has_country_flag = acw_n_tech_pg14 }
-        }
-        
-    frame = {
-        number = 9
-        trigger = { has_country_flag = acw_n_tech_pg15 }
-        }
-        
-    frame = {
-        number = 10
-        trigger = { has_country_flag = acw_n_tech_pg16 }
-        }
-
- }
-
-## TECHTREEPAGE3
-
-custom_button = {
-    name = acw_n_tech_button_r1_p3
-
-    potential = { has_country_flag = acw_naval_tech_tree_open }
-    trigger = { 
-            ##	acw_n_tech_is_ready = yes
-                }
-    effect = { 
-                IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg3
-                                has_country_flag = acw_n_tech_pg4
-                                has_country_flag = acw_n_tech_pg5
-                                }
-                            NOT = { has_country_modifier = acw_improved_rams }
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_improved_rams duration = -1}
-                }
-                
-                ELSE_IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg9
-                                has_country_flag = acw_n_tech_pg10
-                                has_country_flag = acw_n_tech_pg11
-                                }
-                            NOT = { has_country_modifier = acw_lateen_sails }
-                            has_country_modifier = acw_improved_rams
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_lateen_sails duration = -1}
-                }
-                
-                ELSE_IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg15
-                                has_country_flag = acw_n_tech_pg16
-                                has_country_flag = acw_n_tech_pg17
-                                }
-                            NOT = { has_country_modifier = acw_three_masted_ships }
-                            has_country_modifier = acw_lateen_sails
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_three_masted_ships duration = -1}
-                }
-                
-                ELSE_IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg21
-                                has_country_flag = acw_n_tech_pg22
-                                has_country_flag = acw_n_tech_pg23
-                                }
-                            NOT = { has_country_modifier = acw_full_rigged_ships }
-                            has_country_modifier = acw_three_masted_ships
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_full_rigged_ships duration = -1}
-                }
-                
-                ELSE_IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg27
-                                has_country_flag = acw_n_tech_pg28
-                                has_country_flag = acw_n_tech_pg29
-                                }
-                            NOT = { has_country_modifier = acw_improved_sail_materials }
-                            has_country_modifier = acw_full_rigged_ships
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_improved_sail_materials duration = -1}
-                }
-                
-            }
-    frame = {
-        number = 1
-        trigger = { 
-            OR = {
-                has_country_flag = acw_n_tech_pg6 
-                has_country_flag = acw_n_tech_pg7
-                has_country_flag = acw_n_tech_pg8
-                has_country_flag = acw_n_tech_pg12
-                has_country_flag = acw_n_tech_pg13
-                has_country_flag = acw_n_tech_pg14
-                has_country_flag = acw_n_tech_pg18
-                }
-        }
-    }
-
-    ###1st image
-    frame = {
-        number = 2
-        trigger = { has_country_flag = acw_n_tech_pg3 }
-        }
-        
-    frame = {
-        number = 3
-        trigger = { has_country_flag = acw_n_tech_pg4 }
-        }
-        
-    frame = {
-        number = 4
-        trigger = { has_country_flag = acw_n_tech_pg5 }
-        }    
-        
-    ## 2nd image    
-    frame = {
-        number = 5
-        trigger = { has_country_flag = acw_n_tech_pg9 }
-        }
-        
-    frame = {
-        number = 6
-        trigger = { has_country_flag = acw_n_tech_pg10 }
-        }
-        
-    frame = {
-        number = 7
-        trigger = { has_country_flag = acw_n_tech_pg11 }
-        }
-    
-    ## 3rd image    
-    frame = {
-        number = 8
-        trigger = { has_country_flag = acw_n_tech_pg15 }
-        }
-        
-    frame = {
-        number = 9
-        trigger = { has_country_flag = acw_n_tech_pg16 }
-        }
-        
-    frame = {
-        number = 10
-        trigger = { has_country_flag = acw_n_tech_pg17 }
-        }    
-}
-
-## TECHTREEPAGE4
-
-custom_button = {
-    name = acw_n_tech_button_r1_p4
-	
-    potential = { has_country_flag = acw_naval_tech_tree_open }
-    trigger = { 
-            ##	acw_n_tech_is_ready = yes
-                }
-    effect = { 
-                IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg4
-                                has_country_flag = acw_n_tech_pg5
-                                has_country_flag = acw_n_tech_pg6
-                                }
-                            NOT = { has_country_modifier = acw_improved_rams }
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_improved_rams duration = -1}
-                }
-                
-                ELSE_IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg10
-                                has_country_flag = acw_n_tech_pg11
-                                has_country_flag = acw_n_tech_pg12
-                                }
-                            NOT = { has_country_modifier = acw_lateen_sails }
-                            has_country_modifier = acw_improved_rams
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_lateen_sails duration = -1}
-                }
-                
-                ELSE_IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg16
-                                has_country_flag = acw_n_tech_pg17
-                                has_country_flag = acw_n_tech_pg18
-                                }
-                            NOT = { has_country_modifier = acw_three_masted_ships }
-                            has_country_modifier = acw_lateen_sails
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_three_masted_ships duration = -1}
-                }
-                
-                ELSE_IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg22
-                                has_country_flag = acw_n_tech_pg23
-                                has_country_flag = acw_n_tech_pg24
-                                }
-                            NOT = { has_country_modifier = acw_full_rigged_ships }
-                            has_country_modifier = acw_three_masted_ships
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_full_rigged_ships duration = -1}
-                }
-                
-                ELSE_IF = {
-                    limit = {
-                        AND ={
-                            OR = {
-                                has_country_flag = acw_n_tech_pg28
-                                has_country_flag = acw_n_tech_pg29
-                                has_country_flag = acw_n_tech_pg30
-                                }
-                            NOT = { has_country_modifier = acw_improved_sail_materials }
-                            has_country_modifier = acw_full_rigged_ships
-                            }
-                        }
-                    ##	acw_remove_n_tech_cost = yes
-                        add_country_modifier = { name = acw_improved_sail_materials duration = -1}
-                }
-                
-            }
-    frame = {
-        number = 1
-        trigger = { 
-            OR = {
-                has_country_flag = acw_n_tech_pg7 
-                has_country_flag = acw_n_tech_pg8
-                has_country_flag = acw_n_tech_pg9
-                has_country_flag = acw_n_tech_pg13
-                has_country_flag = acw_n_tech_pg14
-                has_country_flag = acw_n_tech_pg15
-                has_country_flag = acw_n_tech_pg19
-                }
-        }
-    }
-
-    ###1st image
-    frame = {
-        number = 2
-        trigger = { has_country_flag = acw_n_tech_pg4 }
-        }
-        
-    frame = {
-        number = 3
-        trigger = { has_country_flag = acw_n_tech_pg5 }
-        }
-        
-    frame = {
-        number = 4
-        trigger = { has_country_flag = acw_n_tech_pg6 }
-        }    
-        
-    ## 2nd image    
-    frame = {
-        number = 5
-        trigger = { has_country_flag = acw_n_tech_pg10 }
-        }
-        
-    frame = {
-        number = 6
-        trigger = { has_country_flag = acw_n_tech_pg11 }
-        }
-        
-    frame = {
-        number = 7
-        trigger = { has_country_flag = acw_n_tech_pg12 }
-        }
-    
-    ## 3rd image    
-    frame = {
-        number = 8
-        trigger = { has_country_flag = acw_n_tech_pg16 }
-        }
-        
-    frame = {
-        number = 9
-        trigger = { has_country_flag = acw_n_tech_pg17 }
-        }
-        
-    frame = {
-        number = 10
-        trigger = { has_country_flag = acw_n_tech_pg18 }
-        }
-        
-        
-}
-
-###GOODS COUNTERS
-custom_text_box = {
-	name = acw_naval_goods_counter_iron
-	potential = {has_country_flag = acw_navy_background_open_already}
-	}
-
-custom_text_box = {
-	name = acw_naval_goods_counter_naval_supplies
-	potential = {has_country_flag = acw_navy_background_open_already}
-	}
-
-custom_text_box = {
-	name = acw_naval_goods_counter_cloth
-	potential = {has_country_flag = acw_navy_background_open_already}
-	}
-
-
-custom_text_box = {
-	name = acw_naval_goods_counter_paper
-	potential = {has_country_flag = acw_navy_background_open_already}
-	}
-
-custom_icon = {
-	name = acw_naval_goods_counter_iron_bg
-	potential = {has_country_flag = acw_navy_background_open_already}
-}
-
-custom_icon = {
-	name = acw_naval_goods_counter_cloth_bg
-	potential = {has_country_flag = acw_navy_background_open_already}
-}
-
-custom_icon = {
-	name = acw_naval_goods_counter_naval_supplies_bg
-	potential = {has_country_flag = acw_navy_background_open_already}
-}
-
-custom_icon = {
-	name = acw_naval_goods_counter_paper_bg
-	potential = {has_country_flag = acw_navy_background_open_already}
-}
-
-###MILSYS
-custom_window = {
-	name = acw_milsys_window
-	potential = {has_country_flag = acw_milsys_background_open_already}
-	}
-
-custom_button = {
-	name = acw_milsys_button_that_opens_menu 
-    potential = {} 
-  	trigger = { NOT = {has_country_flag = acw_milsys_background_open_already}
-				num_of_ports = 1 } 
-  	effect = { 
-		clr_country_flag = acw_background_open_already
-		clr_country_flag = acw_navy_background_open_already
-		set_country_flag = acw_milsys_background_open_already
-	}
-}
-
-custom_button = {
-	name = acw_milsys_button_close 
-    potential = {has_country_flag = acw_milsys_background_open_already} 
-  	trigger = { }
-  	effect = { 
-		clr_country_flag = acw_milsys_background_open_already
-		clr_country_flag = acw_background_open_already
-	}
-}
-
-
-custom_icon = {
-	name = acw_milsys_background
-	potential = {
-		has_country_flag = acw_milsys_background_open_already
-	}
-}
-
-custom_text_box = {
-	name = acw_navy_window_title
-	potential = {
-		has_country_flag = acw_navy_background_open_already
-	}
-}
-
-### PROFBAR
-
-custom_icon = {
-	name = acw_prof_bar
-	potential = { has_country_flag = acw_milsys_background_open_already }
-}
-
-custom_icon = {
-	name = acw_prof_bar_marker
-	potential = { has_country_flag = acw_milsys_background_open_already
-				  check_variable = {
-							which = acw_prof_bar_value
-							value = 0
-						}	
-	}
-	
-	frame = {
-		number = 6
-		trigger = {
-			AND = {
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 50
-				}
-			NOT = { 
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 51
-					}	
-				}
-			}
-		}
-	}
-	
-	
-	
-	frame = {
-		number = 1
-		trigger = {
-			AND = {
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 0
-				}
-			NOT = { 
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 10
-					}
-				}
-			}
-		}
-	}
-	
-	frame = {
-		number = 2
-		trigger = {
-			AND = {
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 10
-				}
-			NOT = { 
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 20
-					}
-				}
-			}
-		}
-	}
-	
-	frame = {
-		number = 3
-		trigger = {
-			AND = {
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 20
-				}
-			NOT = { 
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 30
-					}
-				}
-			}
-		}
-	}
-	
-	frame = {
-		number = 4
-		trigger = {
-			AND = {
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 30
-				}
-			NOT = { 
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 40
-					}
-				}
-			}
-		}
-	}
-	
-	frame = {
-		number = 5
-		trigger = {
-			AND = {
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 40
-				}
-			NOT = { 
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 50
-					}
-				}
-			}
-		}
-	}
-	
-	frame = {
-		number = 7
-		trigger = {
-			AND = {
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 51
-				}
-			NOT = { 
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 60
-					}
-				}
-			}
-		}
-	}
-	
-	frame = {
-		number = 8
-		trigger = {
-			AND = {
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 60
-				}
-			NOT = { 
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 70
-					}
-				}
-			}
-		}
-	}
-	
-	frame = {
-		number = 9
-		trigger = {
-			AND = {
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 70
-				}
-			NOT = { 
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 80
-					}
-				}
-			}
-		}
-	}
-	
-	frame = {
-		number = 10
-		trigger = {
-			AND = {
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 80
-				}
-			NOT = { 
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 90
-					}
-				}
-			}
-		}
-	}
-	
-	frame = {
-		number = 11
-		trigger = {
-				check_variable = {
-					which = acw_prof_bar_value
-					value = 90
-				}
-			}
-		}
-}
-	
-
-
-custom_button = {
-	name = acw_prof_bar_plus_fornow
-	potential = { has_country_flag = acw_milsys_background_open_already }
-	tooltip = acw_prof_bar_plus_fornow_tt
-	trigger = {
-		NOT = {
-			check_variable = {
-				which = acw_prof_bar_value
-				value = 100
-					}
-				}
-			}
-	effect = {
-			change_variable = {
-				which = acw_prof_bar_value
-				value = 5
-				}
-			}
-}
-
-
-custom_button = {
-	name = acw_prof_bar_minus_fornow
-	potential = { has_country_flag = acw_milsys_background_open_already }
-	trigger = { }
-	effect = {
-			subtract_variable = {
-				which = acw_prof_bar_value
-				value = 5
-				}
-			}					
 }

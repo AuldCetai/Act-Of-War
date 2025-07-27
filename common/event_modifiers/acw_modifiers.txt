@@ -27,11 +27,11 @@ acw_stratagem_rom_t4 = {
 
 acw_stratagem_trc_selected = {		
 								
-								army_tradition_decay = -0.05
+								army_tradition_decay = -0.005
 						}
 acw_stratagem_trc_t1 = {		
 								
-								army_tradition_decay = -0.05
+								army_tradition_decay = -0.005
 								cav_to_inf_ratio = 0.5
 						}
 acw_stratagem_trc_t2 = {		
@@ -291,7 +291,7 @@ acw_artillery_upgrade_t9  = {
 	
 #acw skills infantry
 acw_infantry_temp_skill_t1a = {
-				assault_fort_cost_modifier = -0.1
+				assault_fort_cost_modifier = -0.05
 				possible_condottieri = 1
 					}	
 
@@ -346,7 +346,7 @@ acw_cavalry_temp_skill_t2b = {
 					
 					
 acw_cavalry_temp_skill_t3a = {
-				army_tradition = 0.05
+				army_tradition = 0.5
 				loot_amount = 0.50
 					}	
 					

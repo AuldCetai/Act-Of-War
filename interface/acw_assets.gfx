@@ -6,28 +6,19 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_acw_flag_army_back"
+		texturefile = "gfx/interface/prof_flag_army_back.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_acw_flag_navy"
-		texturefile = "gfx/interface/prof_flag_2_navy.dds"
+		texturefile = "gfx/interface/prof_flag_navy.dds"
 		transparencecheck = yes
 	}
 	
-	
 	spriteType = {
-		name = "GFX_acw_flag_milsys"
-		texturefile = "gfx/interface/prof_flag_milsys.dds"
-		transparencecheck = yes
-	}
-	
-	
-	spriteType = {
-		name = "GFX_acw_power_bar_9"
-		texturefile = "gfx/interface/power_bar_9.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_power_bar_purple"
-		texturefile = "gfx/interface/bar_purple.dds"
-		
+		name = "GFX_acw_flag_navy_back"
+		texturefile = "gfx/interface/prof_flag_navy_back.dds"
 	}
 	
 	spriteType = {
@@ -162,114 +153,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/acw_n_icon_none.dds"
 		transparencecheck = yes
 		noOfFrames = 46
-	}
-	
-	spriteType = {
-		name = "GFX_acw_infantry_levels_bar_t1a_button"
-		texturefile = "gfx/interface/actions_button_inf_skill_t1a.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_infantry_levels_bar_t1b_button"
-		texturefile = "gfx/interface/actions_button_inf_skill_t1b.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_infantry_levels_bar_t2a_button"
-		texturefile = "gfx/interface/actions_button_inf_skill_t2a.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_infantry_levels_bar_t2b_button"
-		texturefile = "gfx/interface/actions_button_inf_skill_t2b.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_infantry_levels_bar_t3a_button"
-		texturefile = "gfx/interface/actions_button_inf_skill_t3a.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_infantry_levels_bar_t3b_button"
-		texturefile = "gfx/interface/actions_button_inf_skill_t3b.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_cavalry_levels_bar_t1a_button"
-		texturefile = "gfx/interface/actions_button_cav_skill_t1a.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_cavalry_levels_bar_t1b_button"
-		texturefile = "gfx/interface/actions_button_cav_skill_t1b.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_cavalry_levels_bar_t2a_button"
-		texturefile = "gfx/interface/actions_button_cav_skill_t2a.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_cavalry_levels_bar_t2b_button"
-		texturefile = "gfx/interface/actions_button_cav_skill_t2b.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_cavalry_levels_bar_t3a_button"
-		texturefile = "gfx/interface/actions_button_cav_skill_t3a.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_cavalry_levels_bar_t3b_button"
-		texturefile = "gfx/interface/actions_button_cav_skill_t3b.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_artillery_levels_bar_t1a_button"
-		texturefile = "gfx/interface/actions_button_arty_skill_t1a.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_artillery_levels_bar_t1b_button"
-		texturefile = "gfx/interface/actions_button_arty_skill_t1b.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_artillery_levels_bar_t2a_button"
-		texturefile = "gfx/interface/actions_button_arty_skill_t2a.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_artillery_levels_bar_t2b_button"
-		texturefile = "gfx/interface/actions_button_arty_skill_t2b.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_artillery_levels_bar_t3a_button"
-		texturefile = "gfx/interface/actions_button_arty_skill_t3a.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_artillery_levels_bar_t3b_button"
-		texturefile = "gfx/interface/actions_button_arty_skill_t3b.dds"
-		transparencecheck = yes
 	}
 	
 	spriteType = {
@@ -559,101 +442,25 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	
-	SpriteType = {		
-		name = "GFX_acw_navy_background"
-		texturefile = "gfx/interface/prof_navy_background.dds"
-		transparencecheck = yes
-	}
-	
-	SpriteType = {		
-		name = "GFX_plus"
-		texturefile = "gfx/interface/acw_plus.dds"
-		transparencecheck = yes
-	}
-	
 	spriteType = {
-		name = "GFX_we_drinks_map_bg"
-		texturefile = "gfx/interface/we_drinks_map_bg.dds"
+		name = "GFX_acw_action_buttons"
+		texturefile = "gfx/interface/acw_action_buttons.dds"
 		transparencecheck = yes
+		noOfFrames = 36
 	}
-	
-	spriteType = {
-		name = "GFX_we_drinks"
-		texturefile = "gfx/interface/we_drinks.dds"
-		transparencecheck = yes
-		noOfFrames = 14
-	}
-	
-	spriteType = {
-		name = "GFX_we_drinks_small"
-		texturefile = "gfx/interface/we_drinks_small.dds"
-		transparencecheck = yes
-		noOfFrames = 14
-	}
-	
 	
 	SpriteType = {		
-		name = "GFX_acw_journey_icon"
-		texturefile = "gfx/interface/acw_journey_icon.dds"
+		name = "GFX_acw_icon_trigger_yes"
+		texturefile = "gfx/interface/icon_trigger_yes.dds"
 		transparencecheck = yes
 	}
 	
 	SpriteType = {		
-		name = "GFX_acw_techtree_icon"
-		texturefile = "gfx/interface/acw_naval_tech_icon.dds"
+		name = "GFX_acw_scroll_up"
+		texturefile = "gfx/interface/scroll_up.dds"
 		transparencecheck = yes
 	}
 	
-	SpriteType = {		
-		name = "GFX_acw_tech_tree_row_1"
-		texturefile = "gfx/interface/acw_tech_tree_row_1.dds"
-		transparencecheck = yes
-		noOfFrames = 16
-	}
-	
-	SpriteType = {		
-		name = "GFX_acw_prof_bar"
-		texturefile = "gfx/interface/acw_prof_bar.dds"
-		transparencecheck = yes
-	}
-	
-	SpriteType = {		
-		name = "GFX_acw_prof_bar_marker"
-		texturefile = "gfx/interface/acw_prof_bar_marker.dds"
-		transparencecheck = yes
-		noOfFrames = 11
-	}
-	
-	
-	spriteType = {
-		name = "GFX_resource_counter_iron"
-		texturefile = "gfx/interface/resource_counter_iron.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_resource_counter_cloth"
-		texturefile = "gfx/interface/resource_counter_cloth.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_resource_counter_paper"
-		texturefile = "gfx/interface/resource_counter_paper.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_resource_counter_naval_supplies"
-		texturefile = "gfx/interface/resource_counter_naval_supplies.dds"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_acw_naval_unit_levels_indicator"
-		texturefile = "gfx/interface/cont_focus_check_icon_10.dds"
-		transparencecheck = yes
-		noOfFrames = 11
-	}
-	
+
+
 }
